@@ -12,6 +12,8 @@ leads_to: ["method-plan-do-review", "concept-self-regulation"]
 
 # Ca Thực Nghiệm Lịch Sử: HighScope Perry Preschool Project (1962–Theo dõi 40 năm)
 
+![Perry Preschool 40-Year ROI Timeline](../../assets/perry_preschool_40yr_roi_1789443186936.jpg)
+
 ## 1. Thiết Kế Nghiên Cứu & Quy Chuẩn Thực Nghiệm Vàng (RCT)
 * **Thời gian bắt đầu**: Năm 1962 tại Ypsilanti, Michigan (Mỹ).
 * **Chủ nhiệm đề tài**: David Weikart và cộng sự.

@@ -12,6 +12,8 @@ leads_to: ["practice-comment-only-marking", "method-hinge-point-questioning"]
 
 # Ca Thực Nghiệm KMOFAP: Dylan Wiliam & Paul Black (Anh Quốc, 1999–2001)
 
+![Formative Assessment Radar KMOFAP](../../assets/formative_assessment_radar_1789439921628.jpg)
+
 ## 1. Bối Cảnh Nghiên Cứu
 * **Tên dự án**: *King's Medway Oxfordshire Formative Assessment Project (KMOFAP)*.
 * **Chủ nhiệm đề tài**: Giáo sư Paul Black và Giáo sư Dylan Wiliam (King's College London).

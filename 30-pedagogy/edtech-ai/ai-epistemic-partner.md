@@ -10,6 +10,8 @@ sources: ["UNESCO AI Competency Framework for Teachers (2024)", "Mollick & Molli
 
 # Sư Phạm Trí Tuệ Nhân Tạo: Phòng Ngừa Teo Cơ Nhận Thức
 
+![AI Epistemic Partner Metacognitive Scaffolding](../../assets/ai_socratic_epistemic_partner_1789440054864.jpg)
+
 ## 1. Nguy Cơ "Teo Cơ Nhận Thức" (Cognitive Atrophy)
 * Khi người học sử dụng AI để tạo văn bản, giải bài tập và tóm tắt sách mà không cần nỗ lực tư duy nội tâm:
   * Quá trình mã hóa thông tin vào bộ nhớ dài hạn bị cắt đứt.

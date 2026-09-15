@@ -13,6 +13,8 @@ leads_to: ["method-peer-instruction", "concept-productive-failure"]
 
 # Ca Thực Nghiệm: Eric Mazur (Đại Học Harvard, 1990–2001)
 
+![Peer Instruction ConcepTest](../../assets/peer_instruction_conceptest_1789439965233.jpg)
+
 ## 1. Bối Cảnh Lịch Sử & Cuộc Khủng Hoảng Nhận Thức Tại Harvard
 * **Nhân vật**: Giáo sư Eric Mazur, Trưởng bộ môn Vật lý Ứng dụng tại Đại học Harvard.
 * **Thời điểm**: Mùa thu năm 1990.

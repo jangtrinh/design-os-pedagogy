@@ -12,6 +12,8 @@ leads_to: ["method-problem-based-learning", "concept-clinical-reasoning"]
 
 # Ca Thực Nghiệm: Howard Barrows & Sự Ra Đời Của PBL (McMaster, 1969 & Maastricht)
 
+![PBL Medical 7-Jump Console](../../assets/pbl_medical_7jump_console_1789440137416.jpg)
+
 ## 1. Bối Cảnh Lịch Sử & Bế Tắc Của Giảng Dạy Y Khoa Truyền Thống
 * **Nhân vật khởi xướng**: Bác sĩ thần kinh học Howard S. Barrows và các cộng sự tại Khoa Y, Đại học McMaster (Canada, 1969).
 * **Vấn đề quan sát lâm sàng**:

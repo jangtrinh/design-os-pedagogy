@@ -12,6 +12,8 @@ leads_to: ["method-explicit-instruction", "practice-direct-instruction"]
 
 # Ca Thực Nghiệm Lịch Sử: Project Follow Through (Mỹ, 1967–1977)
 
+![Direct Instruction Engine Project Follow Through](../../assets/direct_instruction_engine_1789439855985.jpg)
+
 ## 1. Quy Mô Của Đại Thử Nghiệm Giáo Dục Lớn Nhất Lịch Sử Nhân Loại
 * **Kinh phí**: Hơn **1 tỷ USD** (tương đương hơn 4 tỷ USD thời giá hiện nay).
 * **Quy mô mẫu**: Hơn **79.000 học sinh** có hoàn cảnh khó khăn (từ mẫu giáo đến lớp 3) thuộc 180 cộng đồng trên khắp nước Mỹ.
