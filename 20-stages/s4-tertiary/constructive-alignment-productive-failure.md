@@ -10,6 +10,8 @@ sources: ["Biggs & Tang (2011)", "Kapur (2016)", "Mazur (1997) Peer Instruction"
 
 # S4: Sư Phạm Đại Học - Chuyển Từ Giảng Thụ Động Sang Kiến Tạo Chuyên Sâu
 
+![Tertiary Constructive Alignment](../../assets/tertiary_constructive_alignment_1789441330802.jpg)
+
 ## 1. Thiết Kế Đối Xứng Mang Tính Xây Dựng (Constructive Alignment - John Biggs)
 Mọi khóa học đại học chất lượng cao phải bảo đảm sự nhất quán tuyệt đối giữa 3 đỉnh tam giác:
 1. **Intended Learning Outcomes (ILOs - Chuẩn đầu ra mong muốn)**: Dùng các động từ tư duy bậc cao (Phân tích, Đánh giá, Thiết kế, Tối ưu hóa - theo thang SOLO hoặc Bloom).

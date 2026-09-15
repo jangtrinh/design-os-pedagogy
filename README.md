@@ -25,6 +25,18 @@
 
 ---
 
+## 🏛️ Kiến Trúc Hệ Thống: Ma Trận 5 Chiều (5D Hyper-Matrix)
+
+Hệ thống được định nghĩa qua một khối ma trận trực giao 5 chiều: $\text{Stage} \times \text{Axis} \times \text{Capability} \times \text{Evidence} \times \text{Context}$. Mỗi khái niệm hay kỹ thuật sư phạm trong kho tri thức đều được định vị chính xác tại giao điểm của 5 trục này.
+
+<div align="center">
+
+![5D Ontology Hyper-Matrix](assets/ontology_5d_matrix_1789440399259.jpg)
+
+</div>
+
+---
+
 ## 🧭 Kiến Trúc Bản Đồ Điều Hướng Kép (Dual-Linking Graph)
 
 Hệ thống được thiết kế để phục vụ song song hai đối tượng:

@@ -10,6 +10,8 @@ sources: ["Knowles (1984)", "Kolb (1984)", "Revans (1982) Action Learning", "Has
 
 # S6: Sư Phạm Cho Người Trưởng Thành & Học Tập Suốt Đời
 
+![Kolb Experiential Learning Cycle](../../assets/adult_kolb_experiential_cycle_1789441691214.jpg)
+
 ## 1. 6 Giả Định Cốt Lõi Của Thuyết Andragogy (Malcolm Knowles)
 1. **Nhu cầu biết lý do (Need to Know)**: Người lớn chỉ học khi hiểu rõ "Tại sao tôi phải học điều này và nó giải quyết vấn đề gì của tôi?".
 2. **Khái niệm về bản thân (Self-Concept)**: Cần được đối xử như một cá nhân có quyền tự chủ và tự định hướng.

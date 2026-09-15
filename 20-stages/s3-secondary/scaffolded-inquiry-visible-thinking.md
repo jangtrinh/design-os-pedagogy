@@ -10,6 +10,8 @@ sources: ["Harvard Project Zero", "Bjork & Bjork (2011)", "Hattie (Visible Learn
 
 # S3: Sư Phạm Trung Học - Tư Duy Trừu Tượng & Siêu Nhận Thức
 
+![Secondary Visible Thinking Hub](../../assets/secondary_visible_thinking_hub_1789441192099.jpg)
+
 ## 1. Đặc Điểm Nhận Thức Lứa Tuổi
 Giai đoạn hình thành tư duy thao tác hình thức (Piaget Formal Operational). Học sinh bắt đầu khao khát khẳng định bản sắc cá nhân (Erikson), đặt câu hỏi về ý nghĩa của tri thức và nhạy cảm cao với ý kiến của bạn đồng trang lứa.
 

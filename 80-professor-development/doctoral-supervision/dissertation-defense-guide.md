@@ -10,6 +10,8 @@ sources: ["EUA Salzburg II", "Trafford & Leshem (2008) Stepping Stones to Achiev
 
 # Sổ Tay Giáo Sư: Huấn Luyện Nghiên Cứu Sinh Bảo Vệ Luận Án
 
+![Doctoral Viva Colloquium](../../assets/doctoral_viva_colloquium_1789440008026.jpg)
+
 ## 1. Bản Chất Của Buổi Bảo Vệ Luận Án (Viva Voce / Defense)
 Buổi bảo vệ luận án không phải là cuộc kiểm tra tra khảo kiến thức thuộc lòng, mà là **buổi thẩm định tư cách gia nhập cộng đồng khoa học quốc tế (Scholarly Peer Examination)**.
 

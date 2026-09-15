@@ -10,6 +10,8 @@ sources: ["NGSS Framework (NRC 2012)", "Driver et al. (2000) Establishing the No
 
 # Sư Phạm Chuyên Ngành STEM & Khoa Học Thực Nghiệm
 
+![STEM NGSS 3D Science Learning & CER Modeling](../../assets/stem_ngss_cer_modeling_1789442801886.jpg)
+
 ## 1. 3 Chiều Không Gian Của Giáo Dục Khoa Học Thế Hệ Mới (NGSS 3D Learning)
 1. **Science and Engineering Practices (Thực hành khoa học và kỹ thuật)**:
    * Không học khoa học như một tập hợp định nghĩa chết trong sách giáo khoa.
@@ -27,3 +29,9 @@ Mọi câu trả lời khoa học của học sinh phải tuân theo cấu trúc
 * **Claim (Tuyên bố)**: Câu trả lời trực tiếp cho câu hỏi khoa học.
 * **Evidence (Bằng chứng)**: Dữ liệu đo lường được, số liệu thí nghiệm hoặc quan sát thực tế (phải đầy đủ và chính xác).
 * **Reasoning (Lập luận)**: Nguyên lý khoa học nào giải thích tại sao bằng chứng đó lại ủng hộ tuyên bố trên?
+
+## 3. Mô Hình Thanh Toán Học Singapore (Singapore Math Bar Modeling)
+* **Bản chất trực quan hóa**: Sử dụng các thanh chữ nhật tỷ lệ để đại diện cho đại lượng đã biết và chưa biết.
+* Giúp học sinh chuyển đổi một bài toán đố phức tạp nhiều bước thành sơ đồ hình học trực quan, bắc cầu từ cụ thể sang đại số trừu tượng.
+
+![Singapore Math Bar Model](../../assets/singapore_math_bar_model_1789442974847.jpg)

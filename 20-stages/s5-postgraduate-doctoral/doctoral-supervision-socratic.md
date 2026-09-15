@@ -10,6 +10,8 @@ sources: ["EUA Salzburg II Recommendations (2010)", "Lee (2008) Models of Doctor
 
 # S5: Sư Phạm Sau Đại Học & Hướng Dẫn Nghiên Cứu Sinh Tiến Sĩ
 
+![Doctoral Viva Colloquium](../../assets/doctoral_viva_colloquium_1789440008026.jpg)
+
 ## 1. Bản Chất Của Đào Tạo Tiến Sĩ (Doctoral Education)
 Đào tạo tiến sĩ không phải là "học thêm nhiều môn học", mà là **quá trình chuyển đổi căn tính (Identity transformation)**: Từ một người tiêu thụ tri thức (Student) trở thành một nhà nghiên cứu độc lập tạo ra tri thức mới cho nhân loại (Scholar).
 

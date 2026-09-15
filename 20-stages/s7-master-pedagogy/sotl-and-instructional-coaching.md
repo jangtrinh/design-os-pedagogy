@@ -10,6 +10,8 @@ sources: ["Boyer (1990) Scholarship Reconsidered", "Advance HE PSF 2023", "Knigh
 
 # S7: Năng Lực Giáo Sư Sư Phạm & Đào Tạo Giảng Viên
 
+![Master Professor SoTL HUD Console](../../assets/master_professor_sotl_hud_1789441816312.jpg)
+
 ## 1. Nghiên Cứu Học Thuật Về Dạy Và Học (Scholarship of Teaching & Learning - SoTL)
 * Được khởi xướng bởi Ernest Boyer (1990).
 * Một Giáo sư Sư phạm thực thụ không chỉ dạy giỏi theo kinh nghiệm trực giác mà phải biến chính giảng đường thành phòng thí nghiệm khoa học:

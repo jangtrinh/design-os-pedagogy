@@ -15,6 +15,8 @@ clinical_cases: ["case-highschool-biology-retrieval-spacing"]
 
 # Bằng Chứng: Agarwal, Nunes & Blunt (2021) — Retrieval Practice Trong Lớp Học Thực Địa
 
+![Interleaving and Retrieval Practice Stack](../../../assets/interleaving_practice_stack_1789440687132.jpg)
+
 ## 1. Tuyên Bố Bằng Chứng (Empirical Claim)
 Thực hành gợi nhớ (Retrieval Practice) thông qua các bài kiểm tra ngắn đầu giờ không tính điểm (No-stakes / Low-stakes quizzes) nâng cao trực tiếp điểm số trong các kỳ thi học kỳ thực tế từ cấp tiểu học đến đại học.
 

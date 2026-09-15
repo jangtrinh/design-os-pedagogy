@@ -10,6 +10,8 @@ sources: ["CAST Universal Design for Learning Guidelines version 3.0 (2024)", "M
 
 # Thiết Kế Phổ Quát Cho Học Tập (UDL 3.0)
 
+![CAST UDL 3.0 Tri-Network Accessibility Nexus](../../assets/cast_udl_3_tri_network_1789442097694.jpg)
+
 ## 1. Nguyên Lý Cốt Lõi: Rào Cản Nằm Ở Thiết Kế Bài Giảng, Không Phải Ở Người Học
 * UDL coi sự đa dạng nhận thức (bao gồm ADHD, Tự kỷ, Rối loạn đọc - Dyslexia) là quy luật tự nhiên của bộ não loài người, không phải "khuyết tật cần sửa chữa".
 * Mục tiêu tối thượng của UDL: Phát triển người học thành **"Expert Learners"** (Có mục đích & Động lực; Giàu tri thức & Chiến lược; Tự chủ & Kiên định).

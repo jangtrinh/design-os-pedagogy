@@ -23,8 +23,14 @@ Quy trình **I Do -> We Do -> You Do**:
    * Học sinh chỉ được chuyển sang bước này khi đã đạt tỷ lệ thành công tối thiểu 80% ở bước We Do.
 
 ## 3. Các Trụ Cột Chuyên Ngành Tiểu Học
+
 * **Khoa học về Đọc (Science of Reading)**:
   * Phonics có hệ thống (Systematic Synthetic Phonics) + Phát triển vốn từ vựng nền tảng + Đọc trôi chảy (Fluency).
   * *Bác bỏ phương pháp Three-Cueing*: Tuyệt đối không dạy học sinh đoán chữ dựa trên hình vẽ minh họa.
+
+![Science of Reading Rope](../../assets/science_of_reading_rope_1789442896112.jpg)
+
 * **Toán học CPA (Concrete -> Pictorial -> Abstract)**:
   * Đi từ khối lập phương/que tính (C) -> Sơ đồ thanh Bar Model (P) -> Phép tính số học trừu tượng (A).
+
+![Primary Concrete-Pictorial-Abstract Math Bridge](../../assets/primary_cpa_math_bridge_1789441088605.jpg)

@@ -19,6 +19,8 @@ clinical_cases: ["case-highschool-biology-retrieval-spacing"]
 
 # Bằng Chứng: Mawson & Kang (2025) — Giãn Cách Thời Gian (Spacing Effect) Trong Lớp Học Thật
 
+![Spaced Practice and Memory Retrieval Waves](../../../assets/spaced_retrieval_waves_1789440579011.jpg)
+
 ## 1. Tuyên Bố Bằng Chứng (Empirical Claim)
 Phân bổ cùng một tổng lượng thời gian học tập thành các phiên ngắn giãn cách qua nhiều ngày/tuần (Distributed/Spaced Practice) mang lại mức độ ghi nhớ dài hạn cao hơn đáng kể ($d = 0.54$) so với việc dồn toàn bộ thời gian học vào một buổi duy nhất (Massed Practice / Cramming).
 

@@ -10,6 +10,8 @@ sources: ["Wiliam (2011) Embedded Formative Assessment", "Black & Wiliam (1998) 
 
 # Kỹ Thuật Đặt Câu Hỏi Bản Lề (Hinge-Point Questions)
 
+![KMOFAP Formative Wait Time Chronometer](../../assets/kmofap_wait_time_chronometer_1789443291874.jpg)
+
 ## 1. Định Nghĩa Câu Hỏi Bản Lề
 * Là một câu hỏi kiểm tra chẩn đoán được đưa ra tại **thời điểm bản lề** của tiết học (thời điểm giáo viên phải quyết định: Cả lớp đã hiểu để đi tiếp sang phần mới, hay phải dừng lại giảng lại?).
 * **Tiêu chuẩn thiết kế bắt buộc**:
