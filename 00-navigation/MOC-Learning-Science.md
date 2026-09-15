@@ -20,6 +20,7 @@ This map synthesizes the biological, cognitive, and neurological principles gove
 4. [[self-determination-theory|Self-Determination Theory]]: The triad of intrinsic motivation (Autonomy, Competence, Relatedness).
 5. [[cognitive-offloading-and-atrophy|Cognitive Offloading and Atrophy]]: The boundary between generative AI as cognitive scaffold vs generator of epistemic debt and synaptic disuse (Bastani et al. 2024 PNAS, d = -0.32).
 
+* [[dual-coding-theory-multimedia-learning|Dual Coding Theory & Multimedia Learning]]: Master module examining cognitive mechanisms, empirical RCTs, and clinical protocols.
 ## 2. Linked Empirical Evidence
 * [[evidence-barbieri-2023-worked-examples|Evidence — Barbieri et al. 2023 Worked Examples]]: Meta-analysis of 55 studies proving worked examples reduce cognitive load ($g = 0.48$).
 * [[evidence-mawson-2025-spacing|Evidence — Mawson & Kang 2025 Spacing]]: Meta-analysis demonstrating that spaced practice enhances long-term retention ($d = 0.54$).
