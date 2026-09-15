@@ -25,4 +25,4 @@ Mentoring junior faculty through collaborative, non-judgmental inquiry:
 2. **Phase 2: Target Teaching Behavior Identification**: Selecting a high-leverage micro-skill (e.g., extending wait-time from 1s to 3–5s, or using non-verbal thumbs-up checking).
 3. **Phase 3: Micro-Teaching Simulation & Feedback**: Iterative rehearsing in low-stakes peer simulations prior to live classroom execution.
 
-![Instructional Coaching & Video Reflection](../../assets/instructional_coaching_mirror_1789443833306.jpg)
+![Instructional Coaching & Video Reflection](../../assets/instructional_coaching_mirror_1789444024462.jpg)
