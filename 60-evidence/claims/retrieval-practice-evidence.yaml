@@ -1,0 +1,24 @@
+id: "claim-retrieval-practice-001"
+type: "claim"
+title: "Thực hành gợi nhớ (Retrieval Practice) tăng cường bền vững trí nhớ dài hạn vượt trội so với đọc lại thụ động"
+stage: ["S2-primary", "S3-secondary", "S4-tertiary", "S6-adult"]
+axes: ["AX-01: Learning Sciences", "AX-03: Instructional Design"]
+evidence_level: "A"
+effect_size: "d = 0.50 đến 0.74 (tương đương +6 đến +8 tháng tiến bộ học tập)"
+sources:
+  - "Roediger & Karpicke (2006) Psychological Science"
+  - "Adesope et al. (2017) Review of Educational Research"
+  - "EEF Metacognition & Self-regulated Learning Guidance Report"
+
+claim_statement: >
+  Việc buộc não bộ phải chủ động truy xuất thông tin từ bộ nhớ (qua bài kiểm tra ngắn không tính điểm, flashcard, viết tóm tắt không nhìn sách)
+  tạo ra dấu vết liên kết nơ-ron sâu sắc và bền vững hơn rất nhiều so với việc đọc lại bài giảng (re-reading) hoặc gạch chân sách giáo khoa (highlighting).
+
+boundary_conditions:
+  works_best_when:
+    - "Người học đã từng được mã hóa thông tin ban đầu (không hiệu quả nếu chưa từng học khái niệm)."
+    - "Độ khó của việc gợi nhớ ở mức 'Khó khăn mong muốn' (Desirable difficulty - có thể làm được nhưng cần nỗ lực)."
+    - "Có phản hồi đáp án đúng (Corrective feedback) ngay sau khi gợi nhớ để sửa các lỗi nhớ sai."
+  contraindications:
+    - "Không thay thế được việc giảng giải bản chất khái niệm ở giai đoạn đầu."
+    - "Nếu dùng làm bài kiểm tra tính điểm gắt gao (High-stakes) sẽ gây lo âu cản trở hoạt động của bộ nhớ làm việc."
