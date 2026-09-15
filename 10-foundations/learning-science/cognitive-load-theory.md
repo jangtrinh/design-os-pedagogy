@@ -5,6 +5,10 @@ type: concept
 stage: ["S2-primary", "S3-secondary", "S4-tertiary"]
 axes: ["AX-01: Learning Sciences", "AX-03: Instructional Design"]
 evidence_level: "A"
+prerequisites: ["concept-working-memory"]
+leads_to: ["practice-rosenshine-principles", "method-guidance-fading"]
+evidence_claims: ["evidence-barbieri-2023-worked-examples", "evidence-mawson-2025-spacing"]
+clinical_cases: ["case-grade-7-algebra-worked-examples", "case-university-physics-productive-failure"]
 sources: ["Sweller (1988)", "Sweller, Ayres & Kalyuga (2011)", "Kalyuga (2007)"]
 ---
 
@@ -29,3 +33,15 @@ sources: ["Sweller (1988)", "Sweller, Ayres & Kalyuga (2011)", "Kalyuga (2007)"]
 * **Quy luật đối kháng quan trọng nhất trong sư phạm**:
   * **Với người mới (Novice)**: Cung cấp bài giải mẫu (Worked Examples) và hướng dẫn trực tiếp từng bước (Explicit Instruction) mang lại hiệu quả học tập cao nhất. Yêu cầu họ tự mày mò khám phá (Inquiry/Discovery) sẽ làm tràn bộ nhớ làm việc, dẫn đến hiểu sai.
   * **Với người đã có kinh nghiệm (Expert)**: Khi schema đã hình thành, việc bắt họ đọc lại hướng dẫn từng bước chi tiết lại trở thành *Tải ngoại lai* gây ức chế. Lúc này, bài toán mở, khám phá tự định hướng (Inquiry-based, Problem-Based Learning) mới phát huy hiệu quả cao nhất.
+
+## 4. Mạng Lưới Liên Kết & Điều Hướng (Navigation Graph)
+* **Điều kiện tiên quyết**: [[Executive Functions]]
+* **Phương pháp áp dụng tiếp theo**:
+  * [[Rosenshine 10 Principles]] — Giảng dạy tường minh từng bước nhỏ.
+  * [[Formative Hinge Questions]] — Kiểm tra mức độ tải nhận thức theo thời gian thực.
+* **Bằng chứng khoa học đối chứng**:
+  * [[Evidence — Barbieri et al. 2023 Worked Examples]] ($g = 0.48$).
+  * [[Evidence — Mawson & Kang 2025 Spacing]] ($d = 0.54$).
+* **Ca lâm sàng thực tế**:
+  * [[Case — Grade 7 Algebra Worked Examples]] — Dạy đại số lớp 7 bằng cặp bài mẫu.
+  * [[Case — University Physics Productive Failure]] — Thất bại hiệu quả ở đại học.

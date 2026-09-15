@@ -5,6 +5,10 @@ type: practice
 stage: ["S2-primary", "S3-secondary", "S4-tertiary"]
 axes: ["AX-01: Learning Sciences", "AX-03: Instructional Design"]
 evidence_level: "A"
+prerequisites: ["concept-cognitive-load-theory"]
+leads_to: ["practice-formative-hinge-questions"]
+evidence_claims: ["evidence-barbieri-2023-worked-examples", "evidence-wisniewski-2020-feedback"]
+clinical_cases: ["case-grade-7-algebra-worked-examples", "case-highschool-biology-retrieval-spacing"]
 sources: ["Rosenshine (2012) American Educator"]
 ---
 
@@ -24,3 +28,16 @@ sources: ["Rosenshine (2012) American Educator"]
 | **8** | **Giàn giáo hỗ trợ (Scaffolds)** | Cung cấp các khung mẫu, bảng từ khóa tạm thời; rút dần giàn giáo khi học sinh đã vững vàng. |
 | **9** | **Luyện tập độc lập (Independent Practice)** | Cho học sinh tự giải bài tập độc lập để biến kỹ năng thành phản xạ tự động hóa. |
 | **10**| **Ôn tập định kỳ (Weekly & Monthly Review)** | Tổ chức các buổi ôn tập giãn cách hàng tuần và hàng tháng để củng cố sơ đồ vào trí nhớ dài hạn. |
+
+---
+
+## Mạng Lưới Điều Hướng & Thực Hành (Navigation Graph)
+* **Lý thuyết nền tảng**: [[Cognitive Load Theory]]
+* **Phương pháp đánh giá đi kèm**: [[Formative Hinge Questions]] & [[Learner Diagnostics Protocol]]
+* **Bằng chứng học thuật xác thực**:
+  * [[Evidence — Barbieri et al. 2023 Worked Examples]] ($g = 0.48$).
+  * [[Evidence — Wisniewski et al. 2020 Feedback]] ($d = 0.48$).
+  * [[Evidence — Agarwal et al. 2021 Retrieval Practice]].
+* **Ca thực chiến trên lớp**:
+  * [[Case — Grade 7 Algebra Worked Examples]]
+  * [[Case — High School Biology Spaced Retrieval]]
