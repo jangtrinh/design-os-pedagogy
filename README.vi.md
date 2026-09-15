@@ -161,6 +161,26 @@ $$\mathbf{Cấp\ độ\ trợ\ giúp \ne Năng\ lực\ làm\ chủ \quad\mid\qua
 
 ---
 
+## ⚡ Bộ Công Cụ Pipeline Tự Động Nghiên Cứu Sư Phạm (Turnkey CLI)
+
+Hệ thống tích hợp sẵn bộ pipeline dòng lệnh tự hành hoàn chỉnh (`./bin/pedagogy-pipeline` / [`tools/pedagogy_pipeline.py`](tools/pedagogy_pipeline.py)):
+
+```bash
+# 1. Tự động nghiên cứu, đối biện, soạn thảo chuẩn sư phạm và tích hợp MOC
+./bin/pedagogy-pipeline "Học nghề nhận thức trong đào tạo lâm sàng y khoa"
+
+# 2. Sử dụng mô hình suy luận sâu và tự động push lên GitHub
+./bin/pedagogy-pipeline "Khai thác nguồn và đối chiếu trong tư duy sử học" -m high -p
+
+# 3. Chạy thử nghiệm xem trước prompt và đường dẫn
+./bin/pedagogy-pipeline --dry-run "Khó khăn mong muốn trong thực hành ngắt quãng"
+
+# 4. Kiểm định toàn vẹn 100% liên kết và hình ảnh toàn bộ repo
+python3 tools/verify_links.py
+```
+
+---
+
 ## 🎨 Chuẩn Thiết Kế Trực Quan (Art Direction: Luminous Layered Precision)
 
 Toàn bộ các sơ đồ kiến trúc và mô hình nhận thức trong dự án đều được thiết kế theo tiêu chuẩn công nghiệp 3D Isometric nghiêm ngặt:
@@ -176,21 +196,28 @@ Toàn bộ các sơ đồ kiến trúc và mô hình nhận thức trong dự á
 ```text
 design-os-pedagogy/
 ├── 00-navigation/           # Bản đồ điều hướng MOCs & Bảng ma trận chẩn đoán nhanh
+│   ├── MOC-Master.md        # Bản đồ tổng quan & Router chẩn đoán triệu chứng
+│   ├── MOC-Learning-Science.md # Khoa học nhận thức & Sinh học thần kinh
+│   ├── MOC-Instructional-Design.md # Phương pháp sư phạm & Điểm nóng AI 2026
+│   ├── MOC-Assessment.md    # Hinge Questions, Bằng chứng học tập & Vấn đáp
+│   └── MOC-Classroom-Practice.md # Thử nghiệm RCT lịch sử & Biên bản lâm sàng
 ├── 00-system/               # Bản thể học 5D, Chính sách bằng chứng, Đặc tả quy chuẩn soạn thảo
-├── 10-foundations/          # Khoa học nhận thức: Tải nhận thức, Chức năng điều hành
+├── 10-foundations/          # Khoa học nhận thức: Tải nhận thức, Mã hoá kép, Chức năng điều hành
 ├── 20-stages/               # 8 Cấp độ sư phạm theo vòng đời (S0 đến S7)
 ├── 30-pedagogy/             # Phương pháp Rosenshine, Hinge Questions, UDL 3.0
 │   └── edtech-ai/           # Điểm nóng AI 2026: Ladder, Teo biến nhận thức, Học sinh tổng hợp, Vấn đáp
-├── 40-disciplines/          # Sư phạm chuyên ngành STEM (NGSS, CER), Ngôn ngữ, Toán CPA
+├── 40-disciplines/          # Sư phạm chuyên ngành STEM (NGSS), Ngôn ngữ, Lịch sử (SHEG)
 ├── 50-practice-library/     # Thư viện ca lâm sàng & 5 đại thử nghiệm sư phạm lịch sử
 ├── 60-evidence/             # Node bằng chứng độc lập (Meta-analyses chuẩn quốc tế)
 ├── 70-capabilities/         # Quy trình chẩn đoán 4 bước, giàn giáo, khai vấn
 ├── 80-professor-development/# Sổ tay Giáo sư: Hướng dẫn bảo vệ luận án Tiến sĩ, SoTL
 ├── 90-agent-runtime/        # Bộ Runtimes thực thi: State machines, Prompt schemas, Evals
-│   ├── evals/               # Protocol vấn đáp Oral Defense & Thang điểm Rubric 100đ
-│   ├── prompts/             # Bộ Prompt schema định hình tính cách học sinh tổng hợp
-│   └── workflows/           # State machine sư phạm & Bộ lọc chống rò rỉ lời giải
-├── assets/                  # Thư viện ảnh 3D Isometric Luminous Layered Precision
+├── assets/                  # 36 High-Key 3D Isometric Visual Illustrations
+├── bin/
+│   └── pedagogy-pipeline    # CLI công cụ tự động nghiên cứu và soạn thảo sư phạm
+├── tools/
+│   ├── pedagogy_pipeline.py # Động cơ tự động nghiên cứu, đối biện và tổng hợp
+│   └── verify_links.py      # Bộ kiểm định liên kết AST, ảnh, wikilink và đường dẫn
 ├── ART-DIRECTION.md         # Bản đặc tả quy chuẩn visual & meta-prompt schema
 ├── ASSETS_ROADMAP.md        # Danh mục lộ trình sản xuất 36 tác phẩm visual
 ├── MASTER_PEDAGOGY_GUIDE.md # Đại cương cẩm nang sư phạm toàn diện
@@ -211,9 +238,13 @@ cd design-os-pedagogy
 # 2. Mở Bản đồ Điều hướng Trung tâm bằng Obsidian hoặc Markdown Reader
 open "00-navigation/MOC-Master.md"
 
-# 3. Đọc Cẩm nang Sư phạm Đại cương từ Thai giáo đến Sau đại học
-open "MASTER_PEDAGOGY_GUIDE.md"
+# 3. Kiểm định độ toàn vẹn repository (0 lỗi ảnh 404, 0 link hỏng)
+python3 tools/verify_links.py
+
+# 4. Tự động nghiên cứu và xuất bản một chủ đề sư phạm mới
+./bin/pedagogy-pipeline "Cognitive Apprenticeship in Clinical Medicine"
 ```
+
 
 ---
 

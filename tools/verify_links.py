@@ -104,13 +104,17 @@ def audit_repository(repo_root: str = None) -> bool:
             if not os.path.exists(abs_target):
                 broken_rel_links.append((rel_path, target))
 
-        # Check wikilinks
-        for link in wikilink_regex.findall(content):
+        # Check wikilinks (ignoring fenced code blocks and inline backtick spans)
+        non_code_content = re.sub(r"```.*?```", "", content, flags=re.DOTALL)
+        non_code_content = re.sub(r"`[^`\n]+`", "", non_code_content)
+
+        for link in wikilink_regex.findall(non_code_content):
             target = link.split("|")[0].split("#")[0].strip()
             if target == "..." or not target:
                 continue
             if target.lower() not in filename_map:
                 unresolved_wikilinks.append((rel_path, link))
+
 
     print("=" * 60)
     print(f"🔍 AUDIT REPORT: {len(md_files)} Markdown Files Verified")
