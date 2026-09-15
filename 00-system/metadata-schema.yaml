@@ -1,0 +1,52 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: "PedagogicalAtomicUnit"
+description: "Chuẩn metadata cho từng đơn vị tri thức sư phạm để bảo đảm tính truy vấn và mở rộng quy mô (Scale lâu dài)"
+type: "object"
+required:
+  - "id"
+  - "type"
+  - "title"
+  - "stage"
+  - "axes"
+  - "evidence_level"
+  - "sources"
+properties:
+  id:
+    type: "string"
+    pattern: "^(claim|concept|practice|case|eval)-[a-z0-9-]+$"
+  type:
+    type: "string"
+    enum: ["claim", "concept", "practice", "case", "misconception", "eval"]
+  title:
+    type: "string"
+  stage:
+    type: "array"
+    items:
+      type: "string"
+      enum: ["S0-prenatal", "S1-early-childhood", "S2-primary", "S3-secondary", "S4-tertiary", "S5-postgraduate", "S6-adult", "S7-master-pedagogy"]
+  axes:
+    type: "array"
+    items:
+      type: "string"
+  evidence_level:
+    type: "string"
+    enum: ["A", "B", "C", "D", "E", "U"]
+  effect_size:
+    type: "string"
+    description: "Cohen's d hoặc tháng tiến bộ (Months of Progress theo EEF)"
+  boundary_conditions:
+    type: "object"
+    properties:
+      works_best_when:
+        type: "array"
+        items: { type: "string" }
+      contraindications:
+        type: "array"
+        items: { type: "string" }
+  sources:
+    type: "array"
+    items:
+      type: "string"
+  created_at:
+    type: "string"
+    format: "date"
