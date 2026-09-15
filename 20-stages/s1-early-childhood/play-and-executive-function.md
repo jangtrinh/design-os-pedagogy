@@ -10,6 +10,8 @@ sources: ["Harvard Center on the Developing Child", "HighScope Perry Preschool S
 
 # S1: Giáo Dục Mầm Non Dựa Trên Khoa Học Phát Triển
 
+![Early Childhood Plan-Do-Review Play Loop & Serve-and-Return](/Users/jang/Products/Agent%20Teacher/assets/early_childhood_play_loop_1789439818927.jpg)
+
 ## 1. Cơ Chế Thần Kinh: Sự Bùng Nổ Synap (Synaptogenesis)
 Giai đoạn 0–6 tuổi có độ mềm dẻo thần kinh (Neuroplasticity) cao nhất trong đời người. Trẻ học thông qua vận động cảm giác (Sensory-motor) và sự gắn bó xã hội (Social attachment).
 

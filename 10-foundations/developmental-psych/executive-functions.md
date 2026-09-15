@@ -10,6 +10,8 @@ sources: ["Miyake et al. (2000)", "Diamond (2013)", "Harvard Center on the Devel
 
 # Chức Năng Điều Hành (Executive Functions - EF)
 
+![Executive Functions Neurological Triad](/Users/jang/Products/Agent%20Teacher/assets/executive_functions_triangle_1789440861111.jpg)
+
 ## 1. Tam Giác Chức Năng Điều Hành
 Chức năng điều hành là "hệ thống kiểm soát không lưu của bộ não", quyết định khả năng tập trung, tư duy linh hoạt và kiểm soát xung động:
 
