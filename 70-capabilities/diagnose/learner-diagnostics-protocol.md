@@ -10,7 +10,7 @@ sources: ["Heritage (2010) Formative Assessment in Practice", "Wiliam (2011)"]
 
 # Learner Diagnostics Protocol: Clinical Cognitive Signal Detection
 
-![Learner Diagnostics Scanner](../../assets/learner_diagnostics_scanner_178943596318.jpg)
+![Learner Diagnostics Scanner](../../assets/learner_diagnostics_scanner_1789443596318.jpg)
 
 ## 1. The 4-Step Clinical Diagnostic Architecture
 1. **Signal Detection**:
