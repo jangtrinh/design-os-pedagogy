@@ -58,8 +58,11 @@ Hệ thống được thiết kế để phục vụ song song hai đối tượ
 | **Giải đúng công thức mẫu nhưng sai bài toán thực tế** | Chỉ có tri thức thủ tục, rỗng tri thức khái niệm | [`Learner Diagnostics Protocol`](70-capabilities/diagnose/learner-diagnostics-protocol.md) & [`STEM Pedagogy`](40-disciplines/stem-math-science/stem-disciplinary-pedagogy.md) | [`Case — Fraction Misconception Clinical Case`](50-practice-library/cases/fraction-misconception-clinical-case.md) |
 | **Gật gù hiểu bài khi nghe giảng nhưng khi thi điểm kém** | Ảo tưởng về sự hiểu (Illusion of Explanatory Depth) | [`Constructive Alignment`](20-stages/s4-tertiary/constructive-alignment-productive-failure.md) & [`Peer Instruction`](50-practice-library/cases/case-eric-mazur-harvard-peer-instruction.md) | [`Case — Eric Mazur Harvard Peer Instruction`](50-practice-library/cases/case-eric-mazur-harvard-peer-instruction.md) |
 | **NCS Tiến sĩ bế tắc, sợ bảo vệ luận án** | Khủng hoảng căn tính học thuật & Thiếu khung nhận thức luận | [`Doctoral Supervision Socratic`](20-stages/s5-postgraduate-doctoral/doctoral-supervision-socratic.md) | [`Dissertation Defense Guide`](80-professor-development/doctoral-supervision/dissertation-defense-guide.md) |
+| **Văn bản do AI viết hoàn hảo, không giải thích được cơ chế cốt lõi** | Nợ nhận thức luận & Thuê ngoài nhận thức sớm ($d = -0.32$) | [`Cognitive Offloading & Atrophy`](30-pedagogy/edtech-ai/cognitive-offloading-and-atrophy.md) & [`Process Assessment & Viva`](30-pedagogy/edtech-ai/process-based-assessment-viva.md) | [`Case — AI Oral Defense Viva Undergrad`](50-practice-library/cases/case-ai-oral-defense-viva-undergrad.md) |
+| **Giáo viên tập sự bối rối khi học sinh mắc ngộ nhận bất thường** | Thiếu kinh nghiệm mô phỏng lâm sàng / Hổng lược đồ phản ứng | [`Synthetic Learners`](30-pedagogy/edtech-ai/synthetic-learners.md) & [`Pedagogical State Machine`](90-agent-runtime/workflows/pedagogical-state-machine.md) | [`Case — AI Synthetic Student Rehearsal`](50-practice-library/cases/case-ai-synthetic-student-rehearsal.md) |
 
 ---
+
 
 ## 🧬 Phổ Giảng Dạy Theo Toàn Bộ Vòng Đời (S0 – S7)
 
@@ -133,6 +136,31 @@ Mọi phương pháp trong kho tri thức này đều có cơ sở từ các th�
 
 ---
 
+## 🤖 Sư Phạm AI & Hệ Thống Runtime Điểm Nóng (Cập Nhật 15/09/2026)
+
+Tích hợp AI Tạo Sinh vào thiết kế dạy học đòi hỏi một ranh giới nhận thức luận bất biến:
+$$\mathbf{AI\ có\ thể\ gánh\ vác\ tải\ nhận\ thức,\ nhưng\ tuyệt\ đối\ không\ được\ âm\ thầm\ thừa\ kế\ thẩm\ quyền\ nhận\ thức\ luận.}$$
+$$\mathbf{Cấp\ độ\ trợ\ giúp \ne Năng\ lực\ làm\ chủ \quad\mid\quad Tác\ quyền \ne Tinh\ thông}$$
+
+### 4 Trụ Cột Thực Thi Cốt Lõi:
+1. **Thang Hỗ Trợ AI (AI Assistance Ladder - S0 đến S7)**:
+   * Khung phân định 8 cấp độ phân bổ nhận thức giữa người và AI, chỉ rõ điểm chuyển giao tác quyền, kiểm soát nợ nhận thức luận (Epistemic Debt).
+   * 📖 Đặc tả: [`30-pedagogy/edtech-ai/ai-assistance-ladder.md`](30-pedagogy/edtech-ai/ai-assistance-ladder.md)
+2. **Thuê Ngoài Nhận Thức & Teo Biến Khả Năng (Cognitive Offloading & Atrophy)**:
+   * Mô hình hóa Ma sát nhận thức hiệu quả ($PCF$) đối trọng với teo biến tư duy. Tích hợp thử nghiệm ngẫu nhiên có đối chứng (RCT) của Bastani và cộng sự (PNAS 2024, độ sụt giảm $d = -0.32$ khi làm bài thi độc lập).
+   * 📖 Phân tích: [`30-pedagogy/edtech-ai/cognitive-offloading-and-atrophy.md`](30-pedagogy/edtech-ai/cognitive-offloading-and-atrophy.md)
+3. **Học Sinh Tổng Hợp (Synthetic Learners) Cho Huấn Luyện Lâm Sàng**:
+   * Tác tử học sinh mô phỏng có lưu trạng thái (Stateful) với độ bền ngộ nhận ($M_p$) và ngưỡng nản chí ($\theta_f$) giúp giáo viên tập sự diễn tập xử lý ngộ nhận an toàn (NSF/UMass 2026).
+   * 📖 Khung lý thuyết: [`30-pedagogy/edtech-ai/synthetic-learners.md`](30-pedagogy/edtech-ai/synthetic-learners.md) | Schema thực thi: [`90-agent-runtime/prompts/synthetic-learner-runtime.md`](90-agent-runtime/prompts/synthetic-learner-runtime.md) | Ca lâm sàng: [`50-practice-library/cases/case-ai-synthetic-student-rehearsal.md`](50-practice-library/cases/case-ai-synthetic-student-rehearsal.md)
+4. **Đánh Giá Dựa Trên Quá Trình & Vấn Đáp Thích Ứng (Oral Defense Viva)**:
+   * Kiến trúc đánh giá hậu đạo văn: Thay thế tiểu luận về nhà bằng Bằng chứng học tập (Proof-of-Learning Bundle) và vấn đáp Socrates 5 câu hỏi thích ứng (TEQSA 2025–2026, Jisc).
+   * 📖 Chính sách: [`30-pedagogy/edtech-ai/process-based-assessment-viva.md`](30-pedagogy/edtech-ai/process-based-assessment-viva.md) | Protocol & Rubric 100 điểm: [`90-agent-runtime/evals/adaptive-oral-defense-viva.md`](90-agent-runtime/evals/adaptive-oral-defense-viva.md) | Ca lâm sàng: [`50-practice-library/cases/case-ai-oral-defense-viva-undergrad.md`](50-practice-library/cases/case-ai-oral-defense-viva-undergrad.md)
+5. **Cỗ Máy Trạng Thái Sư Phạm (Agentic Pedagogical State Machine)**:
+   * State machine 5 bước (`Quan sát` $\rightarrow$ `Chẩn đoán` $\rightarrow$ `Bộ lọc chấp nhận` $\rightarrow$ `Rút dần giàn giáo` $\rightarrow$ `Cổng kiểm tra độc lập S0`) ngăn chặn tuyệt đối tình trạng rò rỉ đáp án trực tiếp.
+   * 📖 State Machine: [`90-agent-runtime/workflows/pedagogical-state-machine.md`](90-agent-runtime/workflows/pedagogical-state-machine.md)
+
+---
+
 ## 🎨 Chuẩn Thiết Kế Trực Quan (Art Direction: Luminous Layered Precision)
 
 Toàn bộ các sơ đồ kiến trúc và mô hình nhận thức trong dự án đều được thiết kế theo tiêu chuẩn công nghiệp 3D Isometric nghiêm ngặt:
@@ -145,24 +173,30 @@ Toàn bộ các sơ đồ kiến trúc và mô hình nhận thức trong dự á
 
 ## 📂 Cấu Trúc Cây Thư Mục Dự Án (Repository Layout)
 
-```
+```text
 design-os-pedagogy/
 ├── 00-navigation/           # Bản đồ điều hướng MOCs & Bảng ma trận chẩn đoán nhanh
-├── 00-system/               # Bản thể học 5D, Chính sách bằng chứng, Schema metadata
+├── 00-system/               # Bản thể học 5D, Chính sách bằng chứng, Đặc tả quy chuẩn soạn thảo
 ├── 10-foundations/          # Khoa học nhận thức: Tải nhận thức, Chức năng điều hành
 ├── 20-stages/               # 8 Cấp độ sư phạm theo vòng đời (S0 đến S7)
-├── 30-pedagogy/             # Phương pháp Rosenshine, Hinge Questions, UDL 3.0, AI Pedagogy
+├── 30-pedagogy/             # Phương pháp Rosenshine, Hinge Questions, UDL 3.0
+│   └── edtech-ai/           # Điểm nóng AI 2026: Ladder, Teo biến nhận thức, Học sinh tổng hợp, Vấn đáp
 ├── 40-disciplines/          # Sư phạm chuyên ngành STEM (NGSS, CER), Ngôn ngữ, Toán CPA
 ├── 50-practice-library/     # Thư viện ca lâm sàng & 5 đại thử nghiệm sư phạm lịch sử
 ├── 60-evidence/             # Node bằng chứng độc lập (Meta-analyses chuẩn quốc tế)
 ├── 70-capabilities/         # Quy trình chẩn đoán 4 bước, giàn giáo, khai vấn
 ├── 80-professor-development/# Sổ tay Giáo sư: Hướng dẫn bảo vệ luận án Tiến sĩ, SoTL
-├── 90-agent-runtime/        # Bộ Evals kiểm tra ca lâm sàng cho AI & Giảng viên
+├── 90-agent-runtime/        # Bộ Runtimes thực thi: State machines, Prompt schemas, Evals
+│   ├── evals/               # Protocol vấn đáp Oral Defense & Thang điểm Rubric 100đ
+│   ├── prompts/             # Bộ Prompt schema định hình tính cách học sinh tổng hợp
+│   └── workflows/           # State machine sư phạm & Bộ lọc chống rò rỉ lời giải
 ├── assets/                  # Thư viện ảnh 3D Isometric Luminous Layered Precision
 ├── ART-DIRECTION.md         # Bản đặc tả quy chuẩn visual & meta-prompt schema
 ├── ASSETS_ROADMAP.md        # Danh mục lộ trình sản xuất 36 tác phẩm visual
 ├── MASTER_PEDAGOGY_GUIDE.md # Đại cương cẩm nang sư phạm toàn diện
-└── README.md                # Tài liệu tổng quan dự án (Bản đang xem)
+├── MASTER_PEDAGOGY_GUIDE.vi.md # Bản Tiếng Việt Cẩm Nang Sư Phạm
+├── README.md                # Bản tổng quan tiếng Anh
+└── README.vi.md             # Bản tổng quan tiếng Việt (Bản đang xem)
 ```
 
 ---

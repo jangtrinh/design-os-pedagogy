@@ -74,8 +74,11 @@ The repository provides parallel navigation topologies:
 | **Correct formula execution, total failure on word problems** | Procedural mimicry without conceptual schema | [`Learner Diagnostics Protocol`](70-capabilities/diagnose/learner-diagnostics-protocol.md) & [`STEM Pedagogy`](40-disciplines/stem-math-science/stem-disciplinary-pedagogy.md) | [`Case — Fraction Misconception Clinical Case`](50-practice-library/cases/fraction-misconception-clinical-case.md) |
 | **Nodding along in class, failing midterm exams** | Illusion of Explanatory Depth | [`Constructive Alignment`](20-stages/s4-tertiary/constructive-alignment-productive-failure.md) & [`Peer Instruction`](50-practice-library/cases/case-eric-mazur-harvard-peer-instruction.md) | [`Case — Eric Mazur Harvard Peer Instruction`](50-practice-library/cases/case-eric-mazur-harvard-peer-instruction.md) |
 | **PhD candidate stalling, fearful of thesis defense** | Epistemic identity crisis & Deficient boundary defense | [`Doctoral Supervision Socratic`](20-stages/s5-postgraduate-doctoral/doctoral-supervision-socratic.md) | [`Dissertation Defense Guide`](80-professor-development/doctoral-supervision/dissertation-defense-guide.md) |
+| **Flawless AI text, zero ability to explain underlying mechanisms** | Epistemic Debt & Premature Cognitive Offloading ($d = -0.32$) | [`Cognitive Offloading & Atrophy`](30-pedagogy/edtech-ai/cognitive-offloading-and-atrophy.md) & [`Process Assessment & Viva`](30-pedagogy/edtech-ai/process-based-assessment-viva.md) | [`Case — AI Oral Defense Viva Undergrad`](50-practice-library/cases/case-ai-oral-defense-viva-undergrad.md) |
+| **Novice teacher freezes / reacts defensively to student errors** | Low Clinical Simulation Exposure / Schema Deficit | [`Synthetic Learners`](30-pedagogy/edtech-ai/synthetic-learners.md) & [`Pedagogical State Machine`](90-agent-runtime/workflows/pedagogical-state-machine.md) | [`Case — AI Synthetic Student Rehearsal`](50-practice-library/cases/case-ai-synthetic-student-rehearsal.md) |
 
 ---
+
 
 ## 🧬 The Pedagogical Life-Stage Spectrum (S0–S7)
 
@@ -141,6 +144,31 @@ Every pedagogical strategy in this operating system is verified against historic
 
 ---
 
+## 🤖 AI Pedagogy & Agentic Runtime (September 2026 Frontier)
+
+The integration of Generative AI into instructional design demands an uncompromising epistemic boundary:
+$$\mathbf{AI\ may\ carry\ cognitive\ load,\ but\ it\ must\ not\ silently\ inherit\ epistemic\ authority.}$$
+$$\mathbf{Assistance\ Level \ne Competence\ Level \quad\mid\quad Authorship \ne Mastery}$$
+
+### Core Operational Architecture
+1. **AI Assistance Ladder (Levels 0–7)**:
+   * Formal 8-level human-agent cognitive distribution framework defining explicit handoffs, epistemic agency ownership, and debt tracking.
+   * 📖 Specification: [`30-pedagogy/edtech-ai/ai-assistance-ladder.md`](30-pedagogy/edtech-ai/ai-assistance-ladder.md)
+2. **Cognitive Offloading & Epistemic Debt**:
+   * Mathematical modeling of productive cognitive friction ($PCF$) vs cognitive atrophy. Incorporates the landmark Bastani et al. (PNAS 2024) randomized controlled trial ($d = -0.32$ delayed exam penalty under unconstrained LLM assistance).
+   * 📖 Analysis: [`30-pedagogy/edtech-ai/cognitive-offloading-and-atrophy.md`](30-pedagogy/edtech-ai/cognitive-offloading-and-atrophy.md)
+3. **Synthetic Learners for Teacher Clinical Training**:
+   * Composable, stateful simulated student agents with Misconception Persistence ($M_p$) and Frustration Thresholds ($\theta_f$) for safe clinical teaching rehearsals (NSF/UMass 2026).
+   * 📖 Framework: [`30-pedagogy/edtech-ai/synthetic-learners.md`](30-pedagogy/edtech-ai/synthetic-learners.md) | Executable Schema: [`90-agent-runtime/prompts/synthetic-learner-runtime.md`](90-agent-runtime/prompts/synthetic-learner-runtime.md) | Clinical Case: [`50-practice-library/cases/case-ai-synthetic-student-rehearsal.md`](50-practice-library/cases/case-ai-synthetic-student-rehearsal.md)
+4. **Process-Based Assessment & Adaptive Oral Defense (Viva Voce)**:
+   * The post-plagiarism evaluation architecture replacing unproctored take-home essays with Proof-of-Learning bundles and 5-probe adaptive Socratic oral defense (TEQSA 2025–2026, Jisc).
+   * 📖 Policy: [`30-pedagogy/edtech-ai/process-based-assessment-viva.md`](30-pedagogy/edtech-ai/process-based-assessment-viva.md) | Viva Protocol & Rubric: [`90-agent-runtime/evals/adaptive-oral-defense-viva.md`](90-agent-runtime/evals/adaptive-oral-defense-viva.md) | Clinical Case: [`50-practice-library/cases/case-ai-oral-defense-viva-undergrad.md`](50-practice-library/cases/case-ai-oral-defense-viva-undergrad.md)
+5. **Agentic Pedagogical State Machine**:
+   * Deterministic 5-state execution engine (`Observe` $\rightarrow$ `Diagnose` $\rightarrow$ `Admissibility Filter` $\rightarrow$ `Scaffold Fading` $\rightarrow$ `S0 Autonomous Verification Gate`) preventing direct answer leaks and forcing active cognitive retrieval.
+   * 📖 State Machine: [`90-agent-runtime/workflows/pedagogical-state-machine.md`](90-agent-runtime/workflows/pedagogical-state-machine.md)
+
+---
+
 ## 🎨 Visual System: Luminous Layered Precision
 
 All visual diagrams adhere to a unified, mathematical 3D design system:
@@ -155,21 +183,26 @@ All visual diagrams adhere to a unified, mathematical 3D design system:
 
 ```text
 design-os-pedagogy/
-├── 00-navigation/           # Master MOCs & Diagnostic Router
-├── 00-system/               # 5D Ontology, Epistemic Policy, Metadata Schemas
+├── 00-navigation/           # Master MOCs & Fast Diagnostic Routers
+├── 00-system/               # 5D Ontology, Epistemic Policy, Pedagogical Authoring Spec
 ├── 10-foundations/          # Cognitive Science: Load Theory, Executive Functions
 ├── 20-stages/               # S0–S7 Life-Stage Pedagogical Guides
-├── 30-pedagogy/             # Rosenshine, Formative Assessment, UDL 3.0, AI Epistemic Partner
+├── 30-pedagogy/             # Rosenshine, Formative Assessment, UDL 3.0
+│   └── edtech-ai/           # 2026 AI Frontier: Ladder, Cognitive Atrophy, Synthetic Learners, Viva Voce
 ├── 40-disciplines/          # Disciplinary Pedagogy: STEM (NGSS), Reading, History
-├── 50-practice-library/     # Landmark Historical Experiments & Clinical Cases
+├── 50-practice-library/     # Landmark Historical RCTs & Clinical Classroom Transcripts
 ├── 60-evidence/             # Peer-Reviewed Meta-Analyses & Empirical Claims
 ├── 70-capabilities/         # 4-Step Learner Diagnostics & Scaffolding
 ├── 80-professor-development/# Master Professor Guide: Viva Voce & SoTL
-├── 90-agent-runtime/        # Clinical Benchmark Evals for AI & Instructors
+├── 90-agent-runtime/        # Executable Agent Runtimes: State Machines, Prompts, Evals
+│   ├── evals/               # Adaptive Oral Defense Viva Protocol & 100-pt Rubric
+│   ├── prompts/             # Composable Synthetic Learner Persona Schemas
+│   └── workflows/           # Pedagogical State Machine & Admissibility Filters
 ├── assets/                  # 36 High-Key 3D Isometric Visual Illustrations
 ├── ART-DIRECTION.md         # Visual Style Guide & Meta-Prompt Schema
 ├── ASSETS_ROADMAP.md        # 36-Piece Asset Production Pipeline
 ├── MASTER_PEDAGOGY_GUIDE.md # Comprehensive Pedagogical Master Guide (EN)
+
 ├── MASTER_PEDAGOGY_GUIDE.vi.md # Bản Tiếng Việt Cẩm Nang Sư Phạm
 ├── README.md                # Canonical Project Overview (English)
 └── README.vi.md             # Bản Dịch Tiếng Việt

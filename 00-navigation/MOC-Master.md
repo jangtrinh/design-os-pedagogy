@@ -31,10 +31,10 @@ graph TD
 
 ## 1. Domain Maps of Content (Sub-MOCs)
 
-1. [[MOC-Learning-Science]]: Cognitive Architecture, Working Memory, Cognitive Load Theory, Executive Functions.
-2. [[MOC-Instructional-Design]]: Explicit Instruction, Worked Examples, Productive Failure, UDL 3.0, Backward Design.
-3. [[MOC-Assessment]]: Embedded Formative Assessment, Hinge-Point Questions, Diagnostic Rubrics, Psychometrics.
-4. [[MOC-Classroom-Practice]]: Clinical Case Library, Socratic Dialogue Scripts, Targeted Intervention Protocols.
+1. [[MOC-Learning-Science]]: Cognitive Architecture, Working Memory, Cognitive Load Theory, Executive Functions, Cognitive Offloading & Epistemic Debt.
+2. [[MOC-Instructional-Design]]: Explicit Instruction, Worked Examples, Productive Failure, UDL 3.0, Backward Design, AI Assistance Ladder (S0–S7), Pedagogical State Machines.
+3. [[MOC-Assessment]]: Formative Assessment, Hinge Questions, Process-Based Assessment & Proof-of-Learning, Adaptive Oral Defense (Viva Voce), Synthetic Learner Evals.
+4. [[MOC-Classroom-Practice]]: Clinical Case Library, Landmark RCTs, Socratic Scripts, Teacher Clinical Simulations, Oral Defense Transcripts.
 
 ---
 
@@ -44,11 +44,15 @@ When observing learner difficulties in the classroom or tutoring environment, us
 
 | Observed Learner Symptom | Cognitive Root Cause | Target Construct & Intervention | Empirical Benchmark Case |
 | :--- | :--- | :--- | :--- |
-| **Paralysis at task onset / Staring blankly at problems** | Working Memory Overload (High intrinsic/search load) | [[Cognitive Load Theory]] & [[Worked Examples]] | [[Case — Grade 7 Algebra Worked Examples]] |
-| **High fluency today, total failure to recall next week** | Weak Synaptic Consolidation / Illusion of Competence | [[Spaced Practice]] & [[Retrieval Practice]] | [[Case — High School Biology Spaced Retrieval]] |
-| **Flawless procedural execution, complete word-problem failure** | Procedural mimicry without conceptual schema | [[Concrete-to-Abstract CPA]] & [[Learner Diagnostics Protocol]] | [[Case — Fraction Misconception Clinical Case]] |
-| **Passive nodding during lecture, failing exam questions** | Illusion of Explanatory Depth | [[Productive Failure]] & [[Peer Instruction]] | [[Case — Eric Mazur Harvard Peer Instruction]] |
-| **PhD candidate stalling, anxious about thesis defense** | Imposter Syndrome & Epistemic Boundary Deficit | [[Doctoral Supervision Socratic]] & [[Dissertation Defense Guide]] | [[Dissertation Defense Guide]] |
+| **Paralysis at task onset / Staring blankly at problems** | Working Memory Overload (High intrinsic/search load) | [[cognitive-load-theory|Cognitive Load Theory]] & [[rosenshine-10-principles|Rosenshine 10 Principles]] | [[case-grade-7-algebra-worked-examples|Case — Grade 7 Algebra Worked Examples]] |
+| **High fluency today, total failure to recall next week** | Weak Synaptic Consolidation / Illusion of Competence | [[evidence-mawson-2025-spacing|Spaced Practice]] & [[evidence-agarwal-2021-retrieval|Retrieval Practice]] | [[case-highschool-biology-retrieval-spacing|Case — High School Biology Spaced Retrieval]] |
+| **Flawless procedural execution, complete word-problem failure** | Procedural mimicry without conceptual schema | [[explicit-instruction-fln|Concrete-to-Abstract CPA]] & [[learner-diagnostics-protocol|Learner Diagnostics Protocol]] | [[fraction-misconception-clinical-case|Case — Fraction Misconception Clinical Case]] |
+| **Passive nodding during lecture, failing exam questions** | Illusion of Explanatory Depth | [[constructive-alignment-productive-failure|Productive Failure]] & [[case-eric-mazur-harvard-peer-instruction|Peer Instruction]] | [[case-eric-mazur-harvard-peer-instruction|Case — Eric Mazur Harvard Peer Instruction]] |
+| **PhD candidate stalling, anxious about thesis defense** | Imposter Syndrome & Epistemic Boundary Deficit | [[doctoral-supervision-socratic|Doctoral Supervision Socratic]] & [[dissertation-defense-guide|Dissertation Defense Guide]] | [[dissertation-defense-guide|Dissertation Defense Guide]] |
+| **Flawless AI-generated text, zero ability to explain underlying mechanisms** | Epistemic Debt & Premature Cognitive Offloading ($d = -0.32$) | [[cognitive-offloading-and-atrophy|Cognitive Offloading & Atrophy]] & [[process-based-assessment-viva|Process-Based Assessment & Adaptive Viva]] | [[case-ai-oral-defense-viva-undergrad|Case — AI Oral Defense Viva Undergrad]] |
+| **Novice teacher freezes / reacts defensively during student misconceptions** | Low Clinical Simulation Exposure / Schema Deficit | [[synthetic-learners|Synthetic Learners for Clinical Rehearsal]] & [[pedagogical-state-machine|Pedagogical State Machine]] | [[case-ai-synthetic-student-rehearsal|Case — AI Synthetic Student Rehearsal]] |
+
+
 
 ---
 
