@@ -24,6 +24,8 @@ High-impact undergraduate courses require absolute triangular alignment across t
   2. *Phase 2: Consolidation & Instruction*: The instructor systematically compares student attempts, diagnoses failure modes, and introduces the canonical formal structure.
 * **Empirical Outcome**: Yields a 200–300% increase in conceptual understanding and adaptive transfer over traditional direct lecture-first instruction.
 
+![Productive Failure 2-Phase Chamber](../../assets/productive_failure_2phase_chamber_1789444285670.jpg)
+
 ## 3. Interactive Peer Instruction (Eric Mazur / Harvard)
 * Replacing passive monologues with ConcepTest cycles:
   * 1-minute individual reflection $\rightarrow$ Silent voting via clicker/poll $\rightarrow$ 2-minute peer debate with a disagreeing neighbor $\rightarrow$ Revote $\rightarrow$ Targeted micro-lecture.
