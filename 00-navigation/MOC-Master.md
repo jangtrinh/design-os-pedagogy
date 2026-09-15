@@ -7,6 +7,8 @@ status: validated
 
 # Bản Đồ Điều Hướng Sư Phạm Toàn Hệ Thống (Master MOC)
 
+![Triple Graph Navigation Architecture](/Users/jang/Products/Agent%20Teacher/assets/triple_graph_navigation_1789439031378.jpg)
+
 Chào mừng bạn đến với mạng lưới tri thức sư phạm `design-os-pedagogy`. Hệ thống này được thiết kế theo cấu trúc **Triple Graph** (Khái niệm - Bằng chứng - Thực hành) tối ưu cho cả **Người đọc (qua Obsidian Wikilinks)** và **AI Agents (qua YAML Stable IDs)**.
 
 ```mermaid

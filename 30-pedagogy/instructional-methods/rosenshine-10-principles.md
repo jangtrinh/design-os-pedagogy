@@ -14,6 +14,8 @@ sources: ["Rosenshine (2012) American Educator"]
 
 # 10 Nguyên Lý Giảng Dạy Của Barak Rosenshine
 
+![Instructional Scaffolding & Rosenshine Stack](/Users/jang/Products/Agent%20Teacher/assets/instructional_scaffolding_stack_1789438956902.jpg)
+
 Được đúc kết từ 3 nguồn bằng chứng: (1) Nghiên cứu khoa học nhận thức, (2) Quan sát các giáo viên xuất sắc nhất, (3) Các can thiệp nhận thức thực nghiệm.
 
 | STT | Nguyên lý | Hành vi sư phạm thực chiến |

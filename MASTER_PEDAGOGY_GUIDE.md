@@ -1,6 +1,8 @@
 # ĐẠI CƯƠNG TRI THỨC SƯ PHẠM TOÀN DIỆN (TỪ THAI GIÁO ĐẾN SAU ĐẠI HỌC)
 ## Cẩm Nang Xây Dựng Năng Lực Của Một Vị Giáo Sư Sư Phạm Lỗi Lạc
 
+![Pedagogical Life-Stage Spectrum Ladder](/Users/jang/Products/Agent%20Teacher/assets/lifestage_spectrum_ladder_1789438897154.jpg)
+
 ---
 
 ## PHẦN I: PHỔ GIẢNG DẠY THEO VÒNG ĐỜI NGƯỜI HỌC (LIFE-STAGE PEDAGOGY)

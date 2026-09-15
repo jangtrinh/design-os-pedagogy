@@ -1,5 +1,7 @@
 # design-os-pedagogy: Hệ Thống Tri Thức & Khung Năng Lực Sư Phạm Tối Thượng
 
+![Master Pedagogical Operating System Console](/Users/jang/Products/Agent%20Teacher/assets/pedagogy_hero_console_1789438819020.jpg)
+
 > **Tầm nhìn:** Xây dựng kho lưu trữ tri thức, năng lực chẩn đoán và nghệ thuật giảng dạy toàn diện từ thai giáo đến sau đại học theo chuẩn mực của một Vị Giáo sư Sư phạm lỗi lạc.
 > **Kiến trúc:** Triple Graph (Concepts $\leftrightarrow$ Evidence $\leftrightarrow$ Cases) kết hợp Dual-Linking (Human Obsidian Wikilinks + AI YAML Stable IDs).
 
