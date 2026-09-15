@@ -1,28 +1,29 @@
 ---
 id: moc-instructional-design
 type: moc
-title: "Bản Đồ Điều Hướng: Thiết Kế & Phương Pháp Sư Phạm (Instructional Design & Methods)"
+title: "Map of Content: Instructional Design & Methods"
 status: validated
 ---
 
-# MOC: Thiết Kế & Phương Pháp Giảng Dạy
+# MOC: Instructional Design & Pedagogical Methods
 
-Hệ thống hóa các khung mẫu sư phạm từ cấp mầm non đến sau đại học.
+Systematic mapping of pedagogical architectures from early childhood through doctoral supervision.
 
 ---
 
-## 1. Theo Cấp Bậc Người Học (By Lifecycle Stage)
-* **S0**: [[Prenatal Neurodevelopment]] — Môi trường thai kỳ & chuẩn bị người nuôi dưỡng.
-* **S1**: [[Play and Executive Function]] — Chơi có định hướng & Serve and Return.
-* **S2**: [[Explicit Instruction FLN]] — Giảng dạy tường minh cho kỹ năng nền tảng đọc - toán.
-* **S3**: [[Scaffolded Inquiry Visible Thinking]] — Dạy học dự án có giàn giáo & thói quen tư duy tường minh.
-* **S4**: [[Constructive Alignment Productive Failure]] — Thiết kế đối xứng, Productive Failure & Peer Instruction.
-* **S5**: [[Doctoral Supervision Socratic]] — 5 vai trò hướng dẫn tiến sĩ & chuẩn Salzburg.
-* **S6**: [[Andragogy Experiential Learning]] — Thuyết Andragogy & Chu trình trải nghiệm Kolb.
-* **S7**: [[SoTL and Instructional Coaching]] — Nghiên cứu giảng dạy & Khai vấn vi mô giảng viên.
+## 1. By Lifecycle Stage
+* **S0**: [[Prenatal Neurodevelopment]] — Prenatal environment & caregiver attachment readiness.
+* **S1**: [[Play and Executive Function]] — Guided play & serve-and-return interaction.
+* **S2**: [[Explicit Instruction FLN]] — Explicit instruction (`I Do -> We Do -> You Do`) for foundational reading and numeracy.
+* **S3**: [[Scaffolded Inquiry Visible Thinking]] — Scaffolded project-based learning & visible thinking routines.
+* **S4**: [[Constructive Alignment Productive Failure]] — Constructive alignment, productive failure & peer instruction.
+* **S5**: [[Doctoral Supervision Socratic]] — 5 doctoral supervision models & Salzburg II recommendations.
+* **S6**: [[Andragogy Experiential Learning]] — Knowles andragogy & Kolb experiential learning cycle.
+* **S7**: [[SoTL and Instructional Coaching]] — Scholarship of Teaching & Learning (SoTL) & video micro-coaching.
 
-## 2. Các Khung Phương Pháp Trọng Điểm (High-Impact Methods)
-1. [[Rosenshine 10 Principles]]: 10 nguyên lý sư phạm thực chiến đạt hiệu quả cao nhất.
-2. [[CAST UDL 3.0 Framework]]: Thiết kế phổ quát cho học tập và hỗ trợ học sinh ADHD/đa dạng thần kinh.
-3. [[AI as Epistemic Partner]]: Sư phạm trong thời đại AI — Định vị AI làm Gia sư Socrates theo chuẩn UNESCO.
-4. [[STEM Disciplinary Pedagogy]]: Sư phạm chuyên ngành STEM theo chuẩn NGSS và lập luận CER.
+## 2. High-Impact Pedagogical Frameworks
+1. [[Rosenshine 10 Principles]]: 10 empirical instructional principles with highest effect sizes.
+2. [[Understanding by Design]]: 3-stage backward design (Desired Results -> Assessment Evidence -> Learning Plan).
+3. [[CAST UDL 3.0 Framework]]: Universal Design for Learning supporting neurodiversity and ADHD.
+4. [[AI as Epistemic Partner]]: Pedagogy in the AI era — Positioning AI as Socratic tutor (UNESCO Framework).
+5. [[STEM Disciplinary Pedagogy]]: Disciplinary science learning via NGSS 3D practices and CER argumentation.

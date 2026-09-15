@@ -10,6 +10,8 @@ sources: ["Heritage (2010) Formative Assessment in Practice", "Wiliam (2011)"]
 
 # Quy Trình Chẩn Đoán Người Học (Learner Diagnostics Protocol)
 
+![Learner Diagnostics Scanner](../../assets/learner_diagnostics_scanner_1789443596318.jpg)
+
 ## 1. 4 Bước Chẩn Đoán Chuẩn Của Giáo Sư Sư Phạm
 1. **Thu thập tín hiệu (Signal Detection)**:
    * Không dựa vào cảm giác "Lớp hôm nay có vẻ hiểu bài".

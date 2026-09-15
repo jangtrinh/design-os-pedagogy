@@ -1,62 +1,62 @@
 ---
 id: moc-master
 type: moc
-title: "Bản Đồ Điều Hướng Tổng Thể (Master Map of Content)"
+title: "Master Map of Content (Master MOC)"
 status: validated
 ---
 
-# Bản Đồ Điều Hướng Sư Phạm Toàn Hệ Thống (Master MOC)
+# Master Map of Content (Master MOC)
 
 ![Triple Graph Navigation Architecture](../assets/triple_graph_navigation_1789439031378.jpg)
 
-Chào mừng bạn đến với mạng lưới tri thức sư phạm `design-os-pedagogy`. Hệ thống này được thiết kế theo cấu trúc **Triple Graph** (Khái niệm - Bằng chứng - Thực hành) tối ưu cho cả **Người đọc (qua Obsidian Wikilinks)** và **AI Agents (qua YAML Stable IDs)**.
+Welcome to the `design-os-pedagogy` knowledge network. This system is architected as an orthogonal **Triple Graph** (Concepts - Evidence - Clinical Practice) optimized simultaneously for **Human Educators (via Obsidian Wikilinks)** and **AI Pedagogical Agents (via YAML Stable IDs)**.
 
 ```mermaid
 graph TD
-    MOC[Master MOC] --> LS[MOC: Khoa Học Học Tập]
-    MOC --> ID[MOC: Thiết Kế Bài Giảng]
-    MOC --> AS[MOC: Đánh Giá & Chẩn Đoán]
-    MOC --> CP[MOC: Thực Hành Lớp Học & Ca Lâm Sàng]
+    MOC[Master MOC] --> LS[MOC: Learning Sciences]
+    MOC --> ID[MOC: Instructional Design]
+    MOC --> AS[MOC: Assessment & Diagnostics]
+    MOC --> CP[MOC: Classroom Practice & Cases]
     
-    LS --> Concepts[Khái Niệm Nhận Thức]
-    ID --> Methods[Phương Pháp Sư Phạm]
-    AS --> Evals[Đo Lường & Evals]
-    CP --> Cases[Ca Thực Chiến & Lời Thoại]
+    LS --> Concepts[Cognitive Concepts]
+    ID --> Methods[Pedagogical Methods]
+    AS --> Evals[Psychometrics & Evals]
+    CP --> Cases[Clinical Cases & Protocols]
     
-    Concepts <--> Evidence[Bằng Chứng Thực Nghiệm A/B]
+    Concepts <--> Evidence[Empirical Evidence A/B]
     Methods <--> Cases
 ```
 
 ---
 
-## 1. Các Bản Đồ Chuyên Đề (Sub-MOCs)
+## 1. Domain Maps of Content (Sub-MOCs)
 
-1. [[MOC-Learning-Science]]: Não bộ, Bộ nhớ làm việc, Tải nhận thức, Chức năng điều hành.
-2. [[MOC-Instructional-Design]]: Giảng dạy tường minh, Worked Examples, Productive Failure, UDL 3.0.
-3. [[MOC-Assessment]]: Đánh giá quá trình, Câu hỏi bản lề, Rubrics, Chuẩn psychometrics.
-4. [[MOC-Classroom-Practice]]: Thư viện các ca lâm sàng, lời thoại giáo viên - học sinh, phác đồ can thiệp.
+1. [[MOC-Learning-Science]]: Cognitive Architecture, Working Memory, Cognitive Load Theory, Executive Functions.
+2. [[MOC-Instructional-Design]]: Explicit Instruction, Worked Examples, Productive Failure, UDL 3.0, Backward Design.
+3. [[MOC-Assessment]]: Embedded Formative Assessment, Hinge-Point Questions, Diagnostic Rubrics, Psychometrics.
+4. [[MOC-Classroom-Practice]]: Clinical Case Library, Socratic Dialogue Scripts, Targeted Intervention Protocols.
 
 ---
 
-## 2. Ma Trận Chẩn Đoán Tình Huống Sư Phạm Nhanh (Decision Router)
+## 2. Fast Diagnostic Decision Router
 
-Khi đối mặt với triệu chứng học tập trên lớp, hãy đi theo bảng dẫn đường dưới đây:
+When observing learner difficulties in the classroom or tutoring environment, use the routing matrix below:
 
-| Triệu chứng quan sát ở người học | Căn nguyên nhận thức | Khái niệm & Can thiệp cần tra cứu | Ca thực tế đối chiếu |
+| Observed Learner Symptom | Cognitive Root Cause | Target Construct & Intervention | Empirical Benchmark Case |
 | :--- | :--- | :--- | :--- |
-| **Không biết bắt đầu giải từ đâu, ngồi nhìn đề bài bất lực** | Quá tải bộ nhớ làm việc (High intrinsic/search load) | [[Cognitive Load Theory]] & [[Worked Examples]] | [[Case — Grade 7 Algebra Worked Examples]] |
-| **Hôm nay hiểu và làm bài tốt, tuần sau quên sạch** | Thiếu củng cố vết nơ-ron dài hạn (Weak consolidation) | [[Spaced Practice]] & [[Retrieval Practice]] | [[Case — High School Biology Spaced Retrieval]] |
-| **Giải trôi chảy bài tập mẫu nhưng sai toàn bộ bài toán thực tế** | Chỉ có tri thức thủ tục, rỗng tri thức khái niệm (Whole Number Bias) | [[Concrete-to-Abstract CPA]] & [[Learner Diagnostics Protocol]] | [[Case — Fraction Misconception Clinical Case]] |
-| **Ngồi nghe giảng thụ động gật gù nhưng khi thi điểm kém** | Ảo tưởng về năng lực (Illusion of Explanatory Depth) | [[Productive Failure]] & [[Peer Instruction]] | [[Case — University Physics Productive Failure]] |
-| **NCS Tiến sĩ bế tắc, sợ bảo vệ, mất phương hướng đề tài** | Hội chứng Imposter & Thiếu khung nhận thức luận | [[Doctoral Supervision Socratic]] & [[Dissertation Defense Guide]] | [[Dissertation Defense Guide]] |
+| **Paralysis at task onset / Staring blankly at problems** | Working Memory Overload (High intrinsic/search load) | [[Cognitive Load Theory]] & [[Worked Examples]] | [[Case — Grade 7 Algebra Worked Examples]] |
+| **High fluency today, total failure to recall next week** | Weak Synaptic Consolidation / Illusion of Competence | [[Spaced Practice]] & [[Retrieval Practice]] | [[Case — High School Biology Spaced Retrieval]] |
+| **Flawless procedural execution, complete word-problem failure** | Procedural mimicry without conceptual schema | [[Concrete-to-Abstract CPA]] & [[Learner Diagnostics Protocol]] | [[Case — Fraction Misconception Clinical Case]] |
+| **Passive nodding during lecture, failing exam questions** | Illusion of Explanatory Depth | [[Productive Failure]] & [[Peer Instruction]] | [[Case — Eric Mazur Harvard Peer Instruction]] |
+| **PhD candidate stalling, anxious about thesis defense** | Imposter Syndrome & Epistemic Boundary Deficit | [[Doctoral Supervision Socratic]] & [[Dissertation Defense Guide]] | [[Dissertation Defense Guide]] |
 
 ---
 
-## 3. Quy Ước Liên Kết Kép (Dual-Linking Contract)
+## 3. Dual-Linking Protocol
 
-* **Dành cho AI Agent**: Đọc YAML Frontmatter để duyệt đồ thị quan hệ:
-  * `prerequisites`: Điều kiện tiên quyết cần nạp trước.
-  * `leads_to`: Khái niệm/phương pháp tiếp theo.
-  * `evidence_claims`: Trỏ tới ID bài nghiên cứu thực nghiệm độc lập.
-  * `clinical_cases`: Trỏ tới ID ca lớp học cụ thể.
-* **Dành cho Con người**: Sử dụng cú pháp `[[Tên Khái Niệm]]` trong Obsidian để hiển thị Graph View và Backlinks tự động.
+* **For Autonomous AI Agents**: Query YAML Frontmatter for deterministic graph traversal:
+  * `prerequisites`: Required concept nodes to load first.
+  * `leads_to`: Downstream conceptual or instructional targets.
+  * `evidence_basis`: Direct pointer to empirical study and effect size.
+  * `clinical_cases`: Benchmarked classroom transcripts and problem sets.
+* **For Human Learners**: Navigate seamlessly using Obsidian bidirectional links (`[[...]]`) and the 2D visual graph view.

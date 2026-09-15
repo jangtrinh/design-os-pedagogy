@@ -1,190 +1,199 @@
-# ĐẠI CƯƠNG TRI THỨC SƯ PHẠM TOÀN DIỆN (TỪ THAI GIÁO ĐẾN SAU ĐẠI HỌC)
-## Cẩm Nang Xây Dựng Năng Lực Của Một Vị Giáo Sư Sư Phạm Lỗi Lạc
+# Comprehensive Master Pedagogical Guide: From Prenatal to Doctoral Viva
+## The Blueprint for Master Instructional Coaching and Distinguished Professorship
+
+<div align="center">
 
 ![Pedagogical Life-Stage Spectrum Ladder](assets/lifestage_spectrum_ladder_1789438897154.jpg)
 
----
+[English](MASTER_PEDAGOGY_GUIDE.md) • [🇻🇳 Bản Tiếng Việt](MASTER_PEDAGOGY_GUIDE.vi.md) • [Back to Overview](README.md)
 
-## PHẦN I: PHỔ GIẢNG DẠY THEO VÒNG ĐỜI NGƯỜI HỌC (LIFE-STAGE PEDAGOGY)
-
-### 1. Cấp Độ S0: Thai Giáo & Sẵn Sàng Nuôi Dưỡng (Prenatal & Caregiver Readiness)
-* **Bản chất khoa học**: Không phải "dạy toán hay ngoại ngữ trong bụng mẹ" (ngụy khoa học), mà là **tối ưu hóa môi trường phát triển thần kinh của thai nhi qua người mẹ** (Epigenetics & Neurodevelopmental Environment).
-* **Mục tiêu**: Thiết lập nền tảng sinh học thần kinh lành mạnh và sự sẵn sàng gắn kết của người chăm sóc (Responsive Caregiving).
-* **Phương pháp & Kỹ năng cốt lõi**:
-  * *Quản lý trục HPA (Hypothalamic-Pituitary-Adrenal axis)*: Hạn chế hormone căng thẳng (Cortisol) ngấm qua nhau thai gây rối loạn điều hòa cảm xúc của trẻ sau này.
-  * *Tương tác âm thanh có mục đích*: Trò chuyện, đọc sách có ngữ điệu nhịp nhàng của cha mẹ từ tuần 24+ (thính giác hoàn thiện). Thai nhi nhận diện và phản hồi nhịp tim với giọng nói của mẹ.
-  * *Dinh dưỡng thần kinh*: Bổ sung Folate, Choline, DHA, I-ốt hỗ trợ quá trình myelin hóa và tăng sinh tế bào thần kinh (neurogenesis).
-* **Best Practice Case**:
-  * Mô hình *WHO Nurturing Care Framework* (Giai đoạn thai kỳ đến 3 tuổi): Tập trung vào sức khỏe tinh thần người mẹ, an toàn, dinh dưỡng đầy đủ và chuẩn bị tâm lý nuôi con gắn bó (attachment parenting).
-* **Sai lầm cần tránh**: Ép thai nhi đeo tai nghe nhạc cổ điển âm lượng lớn, stress vì cố gắng "luyện thiên tài từ trong bụng".
+</div>
 
 ---
 
-### 2. Cấp Độ S1: Giáo Dục Mầm Non (Early Childhood Education: 0 - 6 Tuổi)
-* **Bản chất khoa học**: Não bộ tạo ra hàng triệu liên kết thần kinh mỗi giây. Trọng tâm là **Lý thuyết gắn bó (Attachment Theory - Bowlby)** và **Chức năng điều hành (Executive Functions)**.
-* **Mục tiêu**: Phát triển trí tuệ cảm xúc, khả năng tự điều chỉnh (Self-regulation), ngôn ngữ giàu ngữ cảnh và trí tò mò tự nhiên.
-* **Phương pháp & Kỹ năng cốt lõi**:
-  * *Học qua chơi có định hướng (Guided Play)*: Cân bằng giữa chơi tự do và chơi có chủ đích sư phạm của giáo viên.
-  * *Tương tác "Giao bóng và Đỡ bóng" (Serve and Return - Harvard Center on the Developing Child)*: Giáo viên nhạy bén nhận tín hiệu (ánh mắt, tiếng bi bô) và phản hồi lập tức để xây dựng mạng lưới thần kinh giao tiếp.
-  * *Môi trường là người thầy thứ ba (Reggio Emilia & Montessori)*: Học cụ thực tế, tự nhiên, kích thích đa giác quan, rèn tính tự lập vận động tinh/thô.
-* **Best Practice Case**:
-  * Mô hình *HighScope Perry Preschool Project*: Dạy trẻ quy trình *Plan - Do - Review* (Lập kế hoạch - Thực hiện - Đánh giá lại trải nghiệm chơi). Kết quả theo dõi 40 năm cho thấy tỷ lệ thành công xã hội và học vấn vượt trội.
-* **Sai lầm cần tránh**: Ép học chữ, viết chữ và làm toán sớm dạng bảng tính (worksheet drill) gây ức chế khả năng tưởng tượng và suy giảm động lực nội tại.
+## Part I: The Human Pedagogical Life-Stage Spectrum (S0–S7)
+
+### 1. Stage S0: Prenatal Neurodevelopment & Caregiver Readiness (Prenatal)
+* **Scientific Foundations**: Rejection of prenatal neuromyths (such as in-utero algebra or the Mozart effect). Focus on **epigenetics, intrauterine neurodevelopmental protection, and maternal-fetal biology**.
+* **Primary Objective**: Establish healthy biological neural foundations and caregiver responsive attachment readiness (*Responsive Caregiving*).
+* **Core Practices & Operational Protocols**:
+  * *HPA Axis Regulation*: Mitigate maternal psychological distress and elevated cortisol transmission across the placental barrier, preventing downstream emotional and behavioral dysregulation.
+  * *Rhythmic Auditory Stimulation*: Parent-infant vocal bonding, prosodic reading from week 24+ onward (auditory system functional onset). Fetus demonstrates acoustic habituation and deceleration of fetal heart rate to familiar maternal vocal tones.
+  * *Neurotrophic Nutrition*: Adequate dietary folate, choline, iodine, and long-chain DHA supporting neurogenesis, cortical neuronal migration, and initial myelination.
+* **Empirical Benchmark**:
+  * *WHO Nurturing Care Framework* (Prenatal to Age 3): Systematic maternal mental health, safe birth planning, adequate nutrition, and responsive emotional preparation.
+* **Anti-Patterns**: High-decibel belly headphones, parental anxiety over premature genius stimulation.
 
 ---
 
-### 3. Cấp Độ S2: Giáo Dục Tiểu Học (Primary Education: 6 - 11 Tuổi)
-* **Bản chất khoa học**: Giai đoạn thao tác cụ thể (Concrete Operational - Piaget). Cần xây dựng vững chắc các kỹ năng nền tảng (Foundational Literacy & Numeracy - FLN).
-* **Mục tiêu**: Đọc hiểu sâu, tư duy số học bản chất, hình thành thói quen học tập và mở rộng vốn từ vựng học thuật.
-* **Phương pháp & Kỹ năng cốt lõi**:
-  * *Giảng dạy tường minh (Explicit Instruction - Archer & Hughes)*: Mô hình *I Do -> We Do -> You Do* (Tôi làm mẫu -> Chúng ta cùng làm -> Bạn tự làm). Giảm thiểu quá tải bộ nhớ làm việc.
-  * *Phương pháp tiếp cận CPA trong Toán học (Concrete -> Pictorial -> Abstract)*: Đi từ vật thật (khối que) -> hình ảnh biểu diễn -> công thức số học trừu tượng (như cách dạy của Singapore Math).
-  * *Khoa học về Đọc (Science of Reading)*: Dạy âm vị học (Systematic Synthetic Phonics) kết hợp xây dựng vốn từ vựng nền tảng, không đoán mò chữ qua tranh.
-* **Best Practice Case**:
-  * Mô hình *Direct Instruction (DI - Zig Engelmann)*: Lời thoại sư phạm chuẩn mực, phân tách nhiệm vụ cực nhỏ, phản hồi tức thì, đạt tỷ lệ thông thạo cao nhất trong nghiên cứu thực nghiệm quy mô lớn *Project Follow Through*.
-* **Sai lầm cần tránh**: Tự do khám phá hoàn toàn (Pure Discovery Learning) khi học sinh chưa có sơ đồ tri thức nền tảng, khiến học sinh lạc lối và củng cố hiểu nhầm.
+### 2. Stage S1: Early Childhood Education (Ages 0–6)
+* **Scientific Foundations**: Synaptogenesis peak (>1 million neural connections formed per second). Theoretical grounding in **Attachment Theory (John Bowlby)** and **Executive Function Architecture (Barkley, Diamond)**.
+* **Primary Objective**: Nurture self-regulation, emotional resilience, contextual language acquisition, and organic exploratory curiosity.
+* **Core Practices & Operational Protocols**:
+  * *Guided Play*: Strategic balance between child-directed exploration and adult-scaffolded inquiry.
+  * *Serve-and-Return Interactions (Harvard Center on the Developing Child)*: Caregivers respond contingently and immediately to infant babbling, gestures, and gaze fixations to build foundational neural circuits.
+  * *Environment as the Third Teacher (Montessori & Reggio Emilia)*: Self-correcting tactile manipulatives, multi-sensory materials, fine and gross motor mastery.
+* **Empirical Benchmark**:
+  * *HighScope Perry Preschool Project*: Implementing the structured *Plan-Do-Review* cycle. 40-year longitudinal follow-up demonstrated superior educational attainment, higher earnings, and lower criminality.
+* **Anti-Patterns**: Rote flashcard drilling, premature desk-bound worksheet regimes inhibiting intrinsic motivation.
 
 ---
 
-### 4. Cấp Độ S3: Giáo Dục Trung Học (Secondary & High School: 11 - 18 Tuổi)
-* **Bản chất khoa học**: Vỏ não trước trán (Prefrontal Cortex) đang tái cấu trúc mạnh mẽ; bắt đầu xuất hiện tư duy thao tác hình thức (Formal Operational) và khủng hoảng căn tính (Identity - Erikson).
-* **Mục tiêu**: Tư duy trừu tượng, tư duy chuyên ngành (Disciplinary Literacy), tự chủ siêu nhận thức (Metacognition) và năng lực giải quyết vấn đề phức tạp.
-* **Phương pháp & Kỹ năng cốt lõi**:
-  * *Dạy học dựa trên dự án & truy vấn có giàn giáo (Scaffolded PBL & Inquiry)*: Gắn tri thức lý thuyết vào các vấn đề thực tiễn (Authentic Problems) như biến đổi khí hậu, kinh tế địa phương.
-  * *Tập luyện có chủ đích & Khó khăn mong muốn (Desirable Difficulties - Bjork)*: Thực hành gợi nhớ (Retrieval Practice), học xen kẽ (Interleaving Practice), giãn cách thời gian (Spaced Repetition).
-  * *Rèn luyện tư duy chuyên ngành*: Dạy học sinh "đọc như một nhà sử học" (xem nguồn, ngữ cảnh), "nghĩ như một nhà khoa học" (kiểm chứng giả thuyết, kiểm soát biến số).
-* **Best Practice Case**:
-  * *Harvard Project Zero - Visible Thinking Routines*: Sử dụng các cấu trúc tư duy như *"See - Think - Wonder"*, *"Claim - Support - Question"* để biến quá trình suy nghĩ bên trong của học sinh thành hữu hình.
-* **Sai lầm cần tránh**: Dạy nhồi nhét để vượt qua kỳ thi trắc nghiệm thuần túy; học sinh có thể ghi nhớ máy móc nhưng không thể chuyển giao tri thức (transfer of learning).
+### 3. Stage S2: Primary Education & Foundational Literacy/Numeracy (Ages 6–11)
+* **Scientific Foundations**: Concrete Operational Stage (Piaget). Imperative mastery of **Foundational Literacy and Numeracy (FLN)**.
+* **Primary Objective**: Deep reading comprehension, conceptual arithmetic fluencies, metacognitive study habits, and academic lexicon acquisition.
+* **Core Practices & Operational Protocols**:
+  * *Explicit Instruction (Archer & Hughes)*: Systematic `I Do -> We Do -> You Do` modeling to prevent working memory overload.
+  * *CPA Approach in Mathematics (Concrete -> Pictorial -> Abstract)*: Hands-on counters -> Bar modeling diagrams -> Abstract symbolic equations (Singapore Math framework).
+  * *The Science of Reading*: Systematic Synthetic Phonics combined with language comprehension (Scarborough’s Reading Rope). Rejection of the three-cueing guessing method.
+* **Empirical Benchmark**:
+  * *Direct Instruction (DI - Engelmann)*: Scripted pedagogical delivery, micro-task segmentation, immediate corrective feedback, verified as top-performing model in *Project Follow Through*.
+* **Anti-Patterns**: Pure discovery learning for novice primary learners without foundational schemas.
 
 ---
 
-### 5. Cấp Độ S4: Giáo Dục Đại Học (Tertiary / Higher Education: 18 - 22 Tuổi)
-* **Bản chất khoa học**: Thuyết học tập người lớn bước đầu, dịch chuyển từ tiếp nhận thụ động sang học nghề nhận thức (Cognitive Apprenticeship) và tư duy nhận thức luận (Epistemic Fluency).
-* **Mục tiêu**: Làm chủ tri thức chuyên sâu, năng lực phản biện, giải quyết vấn đề bất định và tác phong nghề nghiệp chuyên nghiệp.
-* **Phương pháp & Kỹ năng cốt lõi**:
-  * *Thiết kế đối xứng mang tính xây dựng (Constructive Alignment - John Biggs)*: Chuẩn đầu ra (Intended Learning Outcomes), Hoạt động dạy-học (TLAs) và Nhiệm vụ đánh giá (Assessment Tasks) phải ăn khớp 100%.
-  * *Thất bại có hiệu quả (Productive Failure - Kapur)*: Để sinh viên tự mày mò vật lộn giải quyết một bài toán phức tạp chưa được dạy trước -> Thất bại -> Giáo viên sau đó mới hệ thống hóa bài giảng. Hiệu quả hiểu sâu tăng gấp nhiều lần so với giảng bài trước.
-  * *Lớp học đảo ngược & Dạy học tích cực (Flipped Classroom & Peer Instruction - Eric Mazur)*: Đọc tài liệu trước ở nhà -> Giờ lên lớp dành hoàn toàn cho thảo luận, tranh luận phản biện qua ConceptTests và giải quyết tình huống thực tế (Case Studies).
-* **Best Practice Case**:
-  * Mô hình *Harvard Business School Case Method* & *Problem-Based Learning (PBL)* tại Đại học Maastricht: Sinh viên nhập vai người ra quyết định, phân tích dữ liệu đa chiều, bảo vệ quan điểm trước giảng viên và tập thể lớp.
-* **Sai lầm cần tránh**: Giảng đường 500 sinh viên nơi giáo viên độc thoại 90 phút đọc lại slide PowerPoint (Passive Lecturing).
+### 4. Stage S3: Secondary Education & Disciplinary Inquiry (Ages 11–18)
+* **Scientific Foundations**: Extensive prefrontal cortex pruning and myelination. Emergence of Formal Operational logic (Piaget) and Identity vs. Role Confusion (Erikson).
+* **Primary Objective**: Abstract reasoning, disciplinary literacy, metacognitive self-regulation, and ill-structured problem solving.
+* **Core Practices & Operational Protocols**:
+  * *Scaffolded Project-Based Learning (Scaffolded PBL)*: Grounding curricular theory in authentic socio-scientific challenges with clear rubric milestones.
+  * *Desirable Difficulties (Robert & Elizabeth Bjork)*: Spaced practice, interleaved problem variations, and active retrieval practice replacing passive rereading.
+  * *Disciplinary Thinking*: Reading like a historian (sourcing, corroboration), thinking like a scientist (CER framework: Claim-Evidence-Reasoning).
+* **Empirical Benchmark**:
+  * *Harvard Project Zero - Visible Thinking Routines*: Routines such as *See-Think-Wonder* and *Claim-Support-Question* externalizing internal cognitive processing.
+* **Anti-Patterns**: Teaching solely to the test; shallow memorization without transfer of learning.
 
 ---
 
-### 6. Cấp Độ S5: Giáo Dục Sau Đại Học & Tiến Sĩ (Postgraduate & Doctoral)
-* **Bản chất khoa học**: Sáng tạo tri thức mới (Knowledge Creation). Chuyển từ người tiêu thụ tri thức sang người tạo lập biên giới tri thức khoa học.
-* **Mục tiêu**: Độc lập nghiên cứu học thuật, phương pháp luận nghiên cứu thực nghiệm khắt khe, tư duy bảo vệ học thuyết và đạo đức khoa học.
-* **Phương pháp & Kỹ năng cốt lõi**:
-  * *Cố vấn học thuật kiểu đối thoại Socratic & Học việc nghiên cứu (Research Apprenticeship)*: Không "cầm tay chỉ việc" mà đặt câu hỏi thách thức các giả định tiên đề (Epistemological Assumptions).
-  * *Hội thảo chuyên đề phản biện (Doctoral Colloquium & Defenses)*: Rèn luyện kỹ năng mổ xẻ literature gap, thiết kế nghiên cứu (Causal Inference, Mixed Methods), bảo vệ bài báo trước các bình duyệt viên khó tính.
-  * *Salzburg Principles (EUA)*: Coi nghiên cứu sinh tiến sĩ là nhà nghiên cứu trẻ (Early Stage Researchers), bảo đảm sự tự chủ trí tuệ và quyền khám phá các đề tài mạo hiểm nhưng đột phá.
-* **Best Practice Case**:
-  * Mô hình Lab Research tại MIT / Cambridge: Kết hợp nhóm nghiên cứu đa ngành, liên tục tổ chức peer-review chéo, huấn luyện viết grant proposal và xuất bản trên các tạp chí top-tier (Nature, Science, ERIC indexed).
-* **Sai lầm cần tránh**: Biến nghiên cứu sinh thành "lao động chân tay làm thí nghiệm hộ giáo sư" (academic sweatshop) mà không huấn luyện tư duy nghiên cứu độc lập.
+### 5. Stage S4: Tertiary & Higher Education (Ages 18–22)
+* **Scientific Foundations**: Cognitive Apprenticeship (Collins, Brown & Newman) and developmental transitions toward epistemic fluency (Perry Scheme of Intellectual Development).
+* **Primary Objective**: Advanced domain mastery, critical epistemology, navigating ambiguity, and professional clinical competence.
+* **Core Practices & Operational Protocols**:
+  * *Constructive Alignment (John Biggs)*: Complete 100% coherence between Intended Learning Outcomes (ILOs), Teaching/Learning Activities (TLAs), and Assessment Tasks.
+  * *Productive Failure (Manu Kapur)*: Students engage in exploratory problem generation prior to explicit instruction, sensitizing cognitive schemas to knowledge gaps.
+  * *Peer Instruction & Flipped Learning (Eric Mazur / Harvard)*: Pre-class conceptual preparation; classroom time dedicated to peer debate of ConcepTests.
+* **Empirical Benchmark**:
+  * *McMaster & Maastricht Problem-Based Learning (PBL)*: Case-driven small group medical education utilizing the 7-Jump tutorial protocol.
+* **Anti-Patterns**: Passive 90-minute lecture hall monologues with slides read verbatim.
 
 ---
 
-### 7. Cấp Độ S6: Giáo Dục Người Trưởng Thành & Suốt Đời (Adult & Lifelong Learning)
-* **Bản chất khoa học**: Thuyết Andragogy (Malcolm Knowles) & Heutagogy (Self-determined learning). Người học có vốn sống phong phú, tính tự định hướng cao và học vì mục tiêu giải quyết vấn đề tức thì.
-* **Mục tiêu**: Tái đào tạo (Reskilling), nâng cao năng lực (Upskilling), năng lực xóa bỏ tri thức cũ để học tri thức mới (Unlearn & Relearn).
-* **Phương pháp & Kỹ năng cốt lõi**:
-  * *Học tập dựa trên vấn đề thực tiễn (Problem-Centered Learning)*: Gắn nội dung trực tiếp vào KPI, bài toán kinh doanh, dự án thực tế đang tắc nghẽn.
-  * *Học tập trải nghiệm (Kolb's Experiential Learning Cycle)*: Trải nghiệm cụ thể -> Quan sát suy ngẫm -> Trừu tượng hóa khái niệm -> Thử nghiệm chủ động.
-  * *Kích hoạt vốn trải nghiệm sẵn có*: Tôn trọng và dùng trải nghiệm phong phú của người học làm tài nguyên học liệu cho cả lớp.
-* **Best Practice Case**:
-  * Mô hình đào tạo lãnh đạo hành động (*Action Learning* của Reg Revans): Nhóm giải quyết vấn đề thực tế (Problem solving sets), cùng hành động và phản tỉnh liên tục.
-* **Sai lầm cần tránh**: Đối xử với người lớn như học sinh phổ thông (giảng đạo lý giáo điều, kiểm tra điểm danh hình thức).
+### 6. Stage S5: Postgraduate & Doctoral Research (PhD & Scholar Formation)
+* **Scientific Foundations**: Epistemic creation of original knowledge. Systematic transition from student to independent scholar.
+* **Primary Objective**: Autonomous research methodology, empirical rigor, theoretical synthesis, and academic defense capability.
+* **Core Practices & Operational Protocols**:
+  * *Socratic Research Apprenticeship (Anne Lee’s 5 Supervision Frameworks)*: Balancing Functional, Enculturation, Critical Thinking, Emancipation, and Relationship Development.
+  * *Doctoral Colloquium & Mock Viva*: Rigorous peer critique targeting the 5 fatal defense questions (So What, Epistemology, Boundary Conditions, Counterfactuals, Methodological Trade-offs).
+  * *EUA Salzburg II Principles*: Recognizing PhD candidates as early-stage research professionals with intellectual freedom and ethical integrity.
+* **Empirical Benchmark**:
+  * *MIT / Cambridge Interdisciplinary Laboratory Model*: Cross-lab peer reviews, competitive grant crafting, and high-impact peer-reviewed publications.
+* **Anti-Patterns**: Treating PhD candidates as uncompensated lab technicians without developing independent research vision.
 
 ---
 
-### 8. Cấp Độ S7: Giáo Sư Sư Phạm & Đào Tạo Giảng Viên (Master Pedagogy / Professor)
-* **Bản chất**: Đây là đỉnh cao năng lực — **"Người thầy của những người thầy" (Teacher of Teachers)**.
-* **Mục tiêu**: Dẫn dắt hệ thống giáo dục, chuyển giao nghệ thuật sư phạm, nghiên cứu học thuật về giảng dạy (SoTL) và khai phóng tiềm năng của các thế hệ học trò.
-* **6 Trục năng lực của một Vị Giáo sư Lỗi Lạc**:
-  1. *Chẩn đoán sư phạm (Pedagogical Diagnostics)*: Bước vào một lớp học, trong 15 phút nhận diện được mức độ tập trung, hiểu nhầm của sinh viên, và các điểm nghẽn nhận thức trong bài giảng của giáo viên đứng lớp.
-  2. *Nghiên cứu học thuật về dạy và học (Scholarship of Teaching and Learning - SoTL - Ernest Boyer)*: Xem chính lớp học là phòng thí nghiệm; thu thập dữ liệu, phân tích tác động của can thiệp sư phạm và công bố học thuật.
-  3. *Khai vấn & Phát triển giảng viên (Instructional Coaching & Micro-teaching)*: Huấn luyện giáo viên trẻ qua video reflection, mô phỏng giảng thử, phân tích từng câu hỏi, từng nhịp dừng (wait time) trong lớp.
-  4. *Kiến trúc chương trình vĩ mô (Curriculum Architecture)*: Xây dựng chuẩn đầu ra, ma trận kỹ năng, tích hợp liên môn và chuẩn bị cho thời đại AI.
-  5. *Đạo đức & Tư tưởng khai phóng*: Truyền cảm hứng về lòng nhân ái, sự trung thực học thuật và tinh thần phụng sự xã hội.
-* **Hệ quy chiếu quốc tế**:
-  * *Advance HE PSF 2023 (Professional Standards Framework)*: Khung tiêu chuẩn chức danh giáo sư đại học của Anh Quốc (Principal Fellow / Senior Fellow).
+### 7. Stage S6: Adult & Lifelong Learning (Andragogy & Professional Re-skilling)
+* **Scientific Foundations**: Andragogy (Malcolm Knowles) and Heutagogy (Self-determined learning). Adults bring vast prior experience and require immediate problem relevance.
+* **Primary Objective**: Workforce reskilling, unlearning obsolete paradigms, and adaptive professional expertise.
+* **Core Practices & Operational Protocols**:
+  * *Problem-Centered Curriculum*: Immediate application to workplace bottlenecks, strategic KPIs, or systemic organizational challenges.
+  * *Kolb’s Experiential Learning Cycle*: Concrete Experience $\rightarrow$ Reflective Observation $\rightarrow$ Abstract Conceptualization $\rightarrow$ Active Experimentation.
+  * *Experience Validation*: Leveraging the learner’s accumulated domain history as curricular material for peer cohort reflection.
+* **Empirical Benchmark**:
+  * *Action Learning (Reg Revans)*: Small peer sets tackling real organizational problems under continuous reflective questioning: $L = P + Q$ (Learning = Programmed Knowledge + Insightful Questioning).
+* **Anti-Patterns**: Treating experienced executives as passive pupils with condescending grading or rigid compliance attendance.
 
 ---
 
-## PHẦN II: NGUYÊN TẮC KHOA HỌC SƯ PHẠM ĐỈNH CAO (THE SCIENCE OF TEACHING)
-
-Mọi Giáo sư giỏi đều dựa trên 5 cột trụ khoa học vững chắc:
-
-### 1. Thuyết Tải Nhận Thức (Cognitive Load Theory - John Sweller)
-* **Bộ nhớ làm việc (Working Memory)** chỉ chứa được từ 4-7 thông tin tại một thời điểm.
-* Ba loại tải nhận thức:
-  * *Intrinsic Load (Nội tại)*: Độ khó tự thân của khái niệm -> Cần chia nhỏ (segmenting), phân bậc.
-  * *Extraneous Load (Ngoại lai)*: Tải rác do thiết kế slide rối, nói lan man, tài liệu lộn xộn -> Cần triệt tiêu 100%.
-  * *Germane Load (Hữu ích)*: Năng lượng não bộ dùng để nạp vào sơ đồ trí nhớ dài hạn (Schema construction) -> Cần tối đa hóa.
-
-### 2. Nguyên Lý Giảng Dạy Của Rosenshine (Barak Rosenshine - 10 Principles of Instruction)
-1. Ôn lại bài cũ hàng ngày (Daily review - 5-8 phút).
-2. Trình bày kiến thức mới theo từng bước nhỏ (Small steps).
-3. Đặt nhiều câu hỏi và kiểm tra sự hiểu của mọi học sinh (Ask questions).
-4. Cung cấp mô hình mẫu trực quan (Provide models & worked examples).
-5. Hướng dẫn luyện tập có giám sát (Guide student practice).
-6. Kiểm tra mức độ hiểu trước khi chuyển bước (Check for student understanding).
-7. Đạt tỷ lệ thành công cao (Target 80% success rate trước khi tự làm độc lập).
-8. Giàn giáo cho các nhiệm vụ khó (Provide scaffolds & temporary supports).
-9. Yêu cầu và giám sát luyện tập độc lập (Independent practice).
-10. Ôn tập định kỳ hàng tuần và hàng tháng (Weekly & monthly review).
-
-### 3. Thiết Kế Ngược (Backward Design / UbD - Wiggins & McTighe)
-* Không bắt đầu bằng: *"Hôm nay mình sẽ dạy bài gì, mở sách trang mấy?"*
-* Phải bắt đầu bằng:
-  1. **Stage 1**: Kết quả mong muốn là gì? (Sinh viên sẽ HIỂU sâu và LÀM được gì sau 5 năm nữa?)
-  2. **Stage 2**: Bằng chứng đánh giá nào chứng minh họ đã đạt được điều đó? (Assessment Evidence)
-  3. **Stage 3**: Kế hoạch trải nghiệm học tập và hoạt động dạy là gì? (Learning Plan)
-
-### 4. Đánh Giá Vì Học Tập (Assessment for Learning - Dylan Wiliam & Paul Black)
-* Đánh giá không phải để cho điểm và phán xét, mà là **ra-đa dẫn đường cho bài giảng**:
-  * Làm rõ và chia sẻ mục tiêu học tập cùng tiêu chí thành công (Rubrics).
-  * Tạo ra các hoạt động trên lớp đem lại bằng chứng học tập (Hinge questions, Polls).
-  * Cung cấp phản hồi giúp người học tiến bộ (Feedback must be more work for the recipient than the donor).
-  * Kích hoạt học sinh thành nguồn tài nguyên học tập cho nhau (Peer assessment).
-  * Kích hoạt học sinh làm chủ việc học của chính mình (Self-regulation).
-
-### 5. Thiết Kế Phổ Quát Cho Học Tập (CAST UDL 3.0)
-* Tôn trọng sự đa dạng thần kinh (Neurodiversity: ADHD, Autism, Dyslexia...):
-  * **Đa dạng cách thức tiếp nhận (Representation)**: Văn bản, âm thanh, sơ đồ tư duy, mô hình thực hành.
-  * **Đa dạng cách thức hành động & diễn đạt (Action & Expression)**: Viết luận, thuyết trình, làm video, lập trình, sản phẩm thực tế.
-  * **Đa dạng cách thức khơi gợi hứng thú (Engagement)**: Cho quyền lựa chọn, gắn với ngữ cảnh thực tế, tạo thách thức vừa tầm.
+### 8. Stage S7: Master Pedagogy & Professor of Practice (Teacher of Teachers)
+* **Scientific Foundations**: Peak pedagogical artistry — the master mentor who diagnoses classrooms and advances pedagogical science.
+* **Primary Objective**: Systemic educational leadership, instructional coaching, Scholarship of Teaching and Learning (SoTL), and institutional capacity building.
+* **6 Pillars of a Distinguished Master Professor**:
+  1. *Clinical Pedagogical Diagnostics*: Accurately identifying student cognitive bottlenecks and instructor misconceptions within 15 minutes of classroom observation.
+  2. *Scholarship of Teaching & Learning (SoTL - Boyer)*: Treating the lecture hall and seminar as empirical laboratories for publishable research.
+  3. *Micro-Teaching & Instructional Coaching (Jim Knight)*: Mentoring junior faculty through video reflection, pause-and-replay feedback, and targeted wait-time calibration.
+  4. *Macro-Curricular Architecture*: Designing comprehensive degree matrices, learning taxonomies, and AI-era competency maps.
+  5. *Epistemic & Ethical Integrity*: Fostering intellectual humility, scientific honesty, and equity-centered educational access.
+  6. *Advance HE PSF 2023 Compliance*: Alignment with global university professorial standards (Principal / Senior Fellow of the Higher Education Academy).
 
 ---
 
-## PHẦN III: HƯỚNG DẪN DỰNG HỆ THỐNG AGENT TEACHER & SCALE LÂU DÀI
+## Part II: Core Learning Science Foundations
 
-*(Dựa trên khuyến nghị chiến lược từ Codex Web Reasoning Engine)*
+Every distinguished instructor operates upon 5 robust empirical pillars:
 
-### 1. Cấu Trúc Tri Thức 5 Chiều (5D Hyper-Matrix)
-Hệ thống không lưu bài viết đơn lẻ mà vận hành theo cấu trúc:
+### 1. Cognitive Load Theory (John Sweller)
+* Working memory capacity is strictly bounded (4±1 chunks).
+* Three distinct load components:
+  * **Intrinsic Load**: Natural difficulty of the concept $\rightarrow$ Managed through segmentation and sequencing.
+  * **Extraneous Load**: Artificial friction introduced by poor slide layouts, disorganized lectures, or confusing directions $\rightarrow$ Must be eliminated.
+  * **Germane Load**: Working memory resources devoted to long-term memory schema acquisition $\rightarrow$ Must be maximized.
+
+### 2. Rosenshine’s 10 Principles of Instruction (Barak Rosenshine)
+1. Daily review of prerequisite material (5–8 minutes).
+2. Present new material in small, digestible increments.
+3. Ask frequent, probing questions to assess 100% of learners.
+4. Provide concrete models and worked examples.
+5. Guide student practice with immediate corrective cues.
+6. Verify student understanding before transitioning.
+7. Achieve a target 80% success rate before independent release.
+8. Scaffold difficult, multi-variable tasks.
+9. Monitor rigorous independent practice.
+10. Conduct weekly and monthly cumulative reviews.
+
+### 3. Understanding by Design (UbD / Backward Design - Wiggins & McTighe)
+* Avoid starting with: *"What textbook chapters will I teach today?"*
+* Start with:
+  1. **Stage 1 (Desired Results)**: What enduring understandings should students retain 5 years from now?
+  2. **Stage 2 (Acceptable Evidence)**: What authentic performance tasks prove they have reached genuine conceptual mastery?
+  3. **Stage 3 (Learning Plan)**: What sequential instructional activities will successfully lead them to that evidence?
+
+### 4. Embedded Formative Assessment (Dylan Wiliam & Paul Black)
+* Assessment serves as an instructional navigation radar, not a punitive grading hammer:
+  * Clarify learning intentions and success criteria with shared rubrics.
+  * Engineer effective classroom discussions that elicit evidence of learning (Hinge questions, diagnostic multiple-choice).
+  * Provide feedback that moves learners forward (Feedback should require more cognitive effort from the learner than from the instructor).
+  * Activate learners as instructional resources for one another (Peer assessment).
+  * Activate learners as owners of their own learning (Metacognition and self-regulation).
+
+### 5. Universal Design for Learning (CAST UDL 3.0)
+* Respecting neurodiversity (ADHD, Autism, Dyslexia, and varied executive function profiles):
+  * **Multiple Means of Representation**: Dual coding (visual + verbal), tactile manipulatives, adjustable typography, structured diagrams.
+  * **Multiple Means of Action & Expression**: Written synthesis, oral presentation, software code, physical portfolio artifacts.
+  * **Multiple Means of Engagement**: Student autonomy, real-world context relevance, optimal zone-of-proximal-development challenge.
+
+---
+
+## Part III: Autonomous Pedagogical Agent Architecture
+
+### 1. 5D Hyper-Matrix
+All system knowledge is localized in a five-dimensional schema:
 $$\text{STAGE} \times \text{AXIS} \times \text{CAPABILITY} \times \text{EVIDENCE} \times \text{CONTEXT}$$
 
-### 2. Quy Trình Khai Thác & Chuẩn Hóa Thông Tin (Harvesting Pipeline)
-Khi nạp một tài liệu/nghiên cứu học thuật vào hệ thống:
-1. **Source Note**: Lưu metadata, bối cảnh, phương pháp luận nghiên cứu.
-2. **Claim Extraction**: Tách các luận điểm sư phạm độc lập thành các file nguyên tử (Atomic Claims).
-3. **Evidence Grading**: Gán nhãn cấp độ bằng chứng (Level A/B/C/D/E) theo `00-system/epistemic-policy.md`.
-4. **Boundary Conditions**: Bắt buộc ghi rõ:
-   * *Nghiên cứu này CÓ ủng hộ điều gì?*
-   * *Nghiên cứu này KHÔNG ủng hộ điều gì? (Giới hạn, điều kiện thất bại).*
-5. **Operational Practice**: Chuyển hóa thành quy tắc thực hành lớp học hoặc câu lệnh can thiệp sư phạm.
+### 2. Knowledge Harvesting Pipeline
+When ingesting an empirical study or educational monograph:
+1. **Source Registry**: Record metadata, sample size, population, and effect size.
+2. **Claim Atomization**: Extract discrete, testable empirical claims into individual notes.
+3. **Evidence Grading**: Assign rigorous evidence tiers (Tier 1 Meta-analysis to Tier 5 Neuromyth warning).
+4. **Boundary Condition Enforcement**: Document explicitly where the intervention works and where it fails.
+5. **Operationalization**: Translate theoretical findings into classroom heuristics, prompt templates, and diagnostic questions.
 
-### 3. Tổ Chức Đồ Thị Tri Thức (Triple Graph Architecture)
-* **Concept Graph**: Sơ đồ mạng lưới các khái niệm sư phạm (ví dụ: `Working Memory` -> `Cognitive Load` -> `Worked Examples`).
-* **Evidence Graph**: Mạng lưới bằng chứng chứng minh (ví dụ: `Claim` -> `Meta-analysis (Hattie/EEF)` -> `RCT Studies`).
-* **Capability Graph**: Khung năng lực đo lường được (ví dụ: `Diagnose Misconception` -> `Design Probe Question` -> `Adaptive Feedback`).
+### 3. Triple Graph Navigation
+* **Concept Graph**: Pedagogical concept network (`Working Memory` $\rightarrow$ `Cognitive Load` $\rightarrow$ `Worked Examples`).
+* **Evidence Graph**: Empirical foundation network (`Claim` $\rightarrow$ `Meta-analysis` $\rightarrow$ `Primary RCT Studies`).
+* **Capability Graph**: Measurable competency nodes (`Diagnose Misconception` $\rightarrow$ `Design Hinge Question` $\rightarrow$ `Deliver Adaptive Feedback`).
 
-### 4. Hệ Thống Đánh Giá Năng Lực Sư Phạm (Agent Pedagogical Evals)
-Không đánh giá agent bằng việc "thuộc lòng lý thuyết", mà đánh giá bằng các ca lâm sàng sư phạm:
-* *Case Test*: Cho một tình huống: "Một học sinh lớp 8 giải đúng các phương trình toán cơ bản theo mẫu nhưng thất bại hoàn toàn khi gặp bài toán thực tế có lời văn. Hãy phân tích nguyên nhân và đưa ra can thiệp."
-* *Tiêu chí chấm điểm*:
-  * Agent có đoán bừa không? Hay yêu cầu dữ liệu chẩn đoán?
-  * Có nhận diện được sự khác nhau giữa tri thức thủ tục (procedural) và tri thức khái niệm (conceptual)?
-  * Can thiệp có sử dụng *Dual Coding*, *Schema activation*, hay *Scaffolding* có cơ sở khoa học không?
+### 4. Agent Clinical Evals
+Evaluating pedagogical AI agents via authentic classroom scenarios:
+* *Scenario Assessment*: Presenting ill-structured student cases (e.g., student solving routine algebraic equations but failing contextual word problems).
+* *Scoring Criteria*:
+  * Does the agent avoid guessing and request diagnostic signal data?
+  * Does the agent distinguish between procedural fluency and conceptual schema deficit?
+  * Does the agent prescribe scientifically grounded interventions (Dual coding, worked-example fading, refutation text)?
+
+---
+
+<div align="center">
+
+*DESIGN:OS Pedagogy — Engineering the Future of Human and Machine Learning.*
+
+</div>
