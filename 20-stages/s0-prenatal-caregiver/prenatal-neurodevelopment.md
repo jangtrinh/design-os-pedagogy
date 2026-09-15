@@ -10,7 +10,7 @@ sources: ["WHO Nurturing Care Framework (2018)", "National Scientific Council on
 
 # S0: Thai Giáo Dựa Trên Bằng Chứng Thần Kinh Học
 
-![Prenatal Neurodevelopment & Caregiver Cradle](/Users/jang/Products/Agent%20Teacher/assets/prenatal_caregiver_cradle_1789439768044.jpg)
+![Prenatal Neurodevelopment & Caregiver Cradle](../../assets/prenatal_caregiver_cradle_1789439768044.jpg)
 
 ## 1. Trọng Tâm Khoa Học: Epigenetics & Môi Trường Tử Cung
 * Trong giai đoạn thai kỳ, tốc độ sinh tế bào thần kinh (Neurogenesis) đạt 250.000 tế bào/phút.

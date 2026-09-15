@@ -1,6 +1,6 @@
 # Quy Chuẩn Nhận Thức & Thẩm Định Bằng Chứng Sư Phạm (Epistemic Policy)
 
-![Epistemic Evidence Hierarchy Ladder](/Users/jang/Products/Agent%20Teacher/assets/epistemic_evidence_ladder_1789440471771.jpg)
+![Epistemic Evidence Hierarchy Ladder](../assets/epistemic_evidence_ladder_1789440471771.jpg)
 
 > **Nguyên tắc cốt lõi của một Giáo sư Sư phạm thực thụ:**
 > *"Knowledge explains. Evidence constrains. Practice operationalizes. Assessment diagnoses. Reflection adapts. Research advances. Teaching teachers proves mastery."*

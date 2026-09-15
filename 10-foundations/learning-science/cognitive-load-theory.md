@@ -14,7 +14,7 @@ sources: ["Sweller (1988)", "Sweller, Ayres & Kalyuga (2011)", "Kalyuga (2007)"]
 
 # Thuyết Tải Nhận Thức (Cognitive Load Theory - CLT)
 
-![Cognitive Load Theory & Working Memory Architecture](/Users/jang/Products/Agent%20Teacher/assets/cognitive_load_slots_1789438844913.jpg)
+![Cognitive Load Theory & Working Memory Architecture](../../assets/cognitive_load_slots_1789438844913.jpg)
 
 ## 1. Bản Chất Sinh Học Nhận Thức
 * **Working Memory (Bộ nhớ làm việc)**: Cực kỳ hạn chế về dung lượng (chỉ xử lý đồng thời 4 ± 1 đơn vị thông tin mới) và thời gian duy trì (dưới 20 giây nếu không ôn lại).

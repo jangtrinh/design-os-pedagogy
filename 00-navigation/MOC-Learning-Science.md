@@ -7,7 +7,7 @@ status: validated
 
 # MOC: Khoa Học Học Tập & Thần Kinh Nhận Thức
 
-![Paivio Dual Coding Convergent Optical Prism](/Users/jang/Products/Agent%20Teacher/assets/dual_coding_prism_1789440523520.jpg)
+![Paivio Dual Coding Convergent Optical Prism](../assets/dual_coding_prism_1789440523520.jpg)
 
 Bản đồ hệ thống hóa các quy luật sinh học thần kinh chi phối khả năng tiếp nhận, xử lý và lưu giữ thông tin của não bộ con người.
 
