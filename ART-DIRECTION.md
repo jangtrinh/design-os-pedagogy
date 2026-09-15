@@ -10,7 +10,7 @@
 | Law | Specification | Anti-Pattern to Avoid |
 |---|---|---|
 | **1. Strict 35° Isometric Grid** | Every UI element (cognitive slots, developmental progression stages, diagnostic gauges, worked-example fading tiers) must be mapped flush onto the 3D surface plane of its glass wafer. | 2D flat text overlays, misaligned skew, floating billboards disconnected from plane |
-| **2. Radical Text Minimization** | Max 1–2 words per chip/badge (e.g., `Novice`, `Schema`, `g=0.48`, `ZPD`, `Align`). Never put explanatory paragraphs, headers, or bullet points on the canvas. | Text-heavy infographics, poster title blocks, illegible miniature text |
+| **2. Radical Textless Minimization (Strict)** | Aim for 100% textless tactile design. If required, max 1 single glyph, number, or 1-token abbreviation (e.g., `g`, `d`, `80%`, `S1`). NEVER permit phrases, sentences, headers, explanatory text, or floating labels. | Any multi-word phrases, sentences, paragraph blocks, poster headers, cluttered text |
 | **3. Tactile Glass & Material Physics** | Thick borosilicate glass wafers with rounded corners, 1px bright specular chamfers, soft caustic refractions, hovering over a brushed frosted aluminum chassis. | Flat opacity boxes, dirty smudge textures, harsh plastic reflections |
 | **4. Studio Atmospheric Lighting** | Clean seamless soft lilac studio gradient (`#F5F4FC` → `#ECE7FF`). Diffused royal-violet and electric-cyan subsurface glow radiating from underneath the glass wafers. | Pitch black sci-fi, cyberpunk neon bloom, dark gamer/hacker aesthetics |
 
