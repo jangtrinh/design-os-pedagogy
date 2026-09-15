@@ -1,6 +1,6 @@
 ---
 id: case-perry-preschool-highscope-longitudinal
-title: "Ca Thực Nghiệm Dài Hạn Perry Preschool: Thử Nghiệm Đối Chứng Ngẫu Nhiên 40 Năm Về Giáo Dục Mầm Non"
+title: "Longitudinal Case Study: HighScope Perry Preschool 40-Year Randomized Controlled Trial"
 stage: ["S1-early-childhood"]
 domain: "early-childhood-intervention"
 learner_state: "early-childhood-disadvantaged"
@@ -10,49 +10,41 @@ prerequisites: ["stage-s0-prenatal-caregiver"]
 leads_to: ["method-plan-do-review", "concept-self-regulation"]
 ---
 
-# Ca Thực Nghiệm Lịch Sử: HighScope Perry Preschool Project (1962–Theo dõi 40 năm)
+# Historic Case Study: HighScope Perry Preschool Project (1962–40-Year Longitudinal Tracking)
 
 ![Perry Preschool 40-Year ROI Timeline](../../assets/perry_preschool_40yr_roi_1789443186936.jpg)
 
-## 1. Thiết Kế Nghiên Cứu & Quy Chuẩn Thực Nghiệm Vàng (RCT)
-* **Thời gian bắt đầu**: Năm 1962 tại Ypsilanti, Michigan (Mỹ).
-* **Chủ nhiệm đề tài**: David Weikart và cộng sự.
-* **Quy chuẩn phương pháp luận**: **Thử nghiệm đối chứng ngẫu nhiên (Randomized Controlled Trial - RCT)** — tiêu chuẩn vàng của khoa học thực nghiệm.
-* **Mẫu nghiên cứu**: 123 trẻ em da màu có hoàn cảnh kinh tế đặc biệt khó khăn, chỉ số IQ ban đầu thấp (70–85) và có nguy cơ thất bại học đường rất cao.
-  * Nhóm can thiệp (Program Group): 58 trẻ.
-  * Nhóm đối chứng (No-program Group): 65 trẻ.
-* **Thời gian theo dõi**: Theo dõi dọc xuyên suốt cuộc đời của các đối tượng qua các mốc: 3–4 tuổi, 10 tuổi, 14 tuổi, 19 tuổi, 27 tuổi và **40 tuổi** (tỷ lệ thu thập lại dữ liệu đạt kỷ lục $91\%$).
+## 1. Experimental Design & Methodology Gold Standard (RCT)
+* **Initiation**: 1962 in Ypsilanti, Michigan (USA).
+* **Principal Investigator**: David Weikart and collaborators.
+* **Gold Standard**: True **Randomized Controlled Trial (RCT)**.
+* **Sample**: 123 African-American children living in extreme poverty, initial IQ (70–85), and high statistical risk of academic failure.
+  * Program Group (Intervention): 58 children.
+  * No-Program Group (Control): 65 children.
+* **Longitudinal Tracking**: Monitored across lifespan milestones: ages 3–4, 10, 14, 19, 27, and **40 years old** (achieving a 91% retention rate).
 
 ---
 
-## 2. Can Thiệp Sư Phạm Cốt Lõi: Chu Trình Plan - Do - Review
-Chương trình can thiệp chỉ diễn ra trong **2 năm (khi trẻ 3–4 tuổi)**, 2.5 giờ mỗi ngày trên lớp kèm 1.5 giờ giáo viên đến thăm và hướng dẫn phụ huynh tại nhà mỗi tuần:
-
-* **Không áp dụng dạy chữ/số áp đặt (No academic drill)**.
-* **Mô hình học tập chủ động có định hướng (Participatory Learning)**:
-  1. **Plan (Lập kế hoạch)**: Trẻ tự chọn khu vực chơi (góc xây dựng, góc kịch nghệ, góc sách) và tự nói to với giáo viên mình sẽ làm gì.
-  2. **Do (Thực hiện)**: Trẻ trực tiếp thao tác, thử nghiệm, giải quyết các xung đột với bạn chơi. Giáo viên chỉ quan sát và đặt câu hỏi mở ("Scaffolding").
-  3. **Review (Đánh giá lại)**: Trẻ cùng giáo viên và các bạn ngồi thành vòng tròn, suy ngẫm và chia sẻ lại những gì mình vừa hoàn thành, những khó khăn gặp phải và cách mình đã giải quyết.
+## 2. The Core Pedagogical Intervention
+* 2.5 hours/day of structured **HighScope Active Learning** utilizing the **Plan-Do-Review** cycle.
+* Children actively made choices, engaged in guided play, and reflected on outcomes with adults serving as responsive scaffolds rather than didactic directors.
+* Weekly 90-minute home visits partnering with caregivers.
 
 ---
 
-## 3. Dữ Liệu Thực Nghiệm Định Lượng Ở Tuổi 40 (Schweinhart, 2005)
+## 3. The 40-Year Empirical Longitudinal Findings (Heckman et al., 2010)
+At age 40, the intervention group significantly outperformed controls across life outcomes:
+* **High School Graduation**: 65% vs 45% ($p < 0.05$).
+* **Employment & Earnings**: 76% employed at age 40 vs 62%; median annual earnings $20,800 vs $15,300 ($p < 0.05$).
+* **Criminal Justice**: 36% arrested 5+ times vs 55% ($p < 0.05$); violent crime arrests halved.
+* **Long-Term IQ Trajectory (The Fade-Out Effect)**:
+  * Initial cognitive IQ gains faded by age 10.
+  * *Yet life success exploded*: Nobel laureate James Heckman proved the permanent intervention mechanism was **non-cognitive executive function and self-regulation** (grit, self-control, intrinsic agency).
 
-Kết quả so sánh giữa nhóm can thiệp Perry Preschool và nhóm đối chứng khi bước sang tuổi 40:
-
-| Chỉ số xã hội & kinh tế ở tuổi 40 | Nhóm Perry Preschool (Can thiệp) | Nhóm Đối chứng (Không học mầm non) | Mức chênh lệch ($p < 0.05$) |
-| :--- | :---: | :---: | :---: |
-| **Tốt nghiệp Trung học Phổ thông** | **65%** | 45% | +20% |
-| **Có việc làm ổn định ở tuổi 40** | **76%** | 62% | +14% |
-| **Thu nhập trung bình hàng tháng $\ge \$2.000$** | **60%** | 40% | +20% |
-| **Tỷ lệ sở hữu nhà riêng** | **37%** | 27% | +10% |
-| **Tỷ lệ bị bắt giữ $\ge 5$ lần trong đời** | **36%** | **55%** | Giảm 19% tội phạm |
-| **Tỷ lệ từng bị bắt vì tội phạm bạo lực** | **32%** | **48%** | Giảm 16% |
+### Economic Return on Investment (ROI):
+* Nobel laureate James Heckman estimated a public social return of **$7.16 to $12.90 USD per $1.00 USD invested** in early childhood executive function development.
 
 ---
 
-## 4. Phân Tích Kinh Tế Của Giáo Sư Đạt Giải Nobel James Heckman
-* Giáo sư Kinh tế học James Heckman (Đại học Chicago, Nobel Kinh tế 2000) đã phân tích dữ liệu tài chính của Perry Preschool (Heckman et al., 2010):
-  * **Tỷ suất sinh lời xã hội (Social Rate of Return)**: Đạt từ **$7\% đến 10\%$ mỗi năm** trên tổng vốn đầu tư.
-  * **Mỗi 1 USD đầu tư vào Perry Preschool mang lại lợi ích kinh tế cho xã hội từ $7.16 USD đến $12.90 USD** (nhờ tiết kiệm chi phí nhà tù, tòa án, trợ cấp xã hội và tăng nguồn thu thuế từ người lao động có trình độ).
-* **Kết luận khoa học**: Giáo dục mầm non chất lượng cao tập trung vào *Chức năng điều hành (Executive Functions)* và *Tự điều hòa cảm xúc (Self-regulation)* mang lại lợi ích dài hạn lớn nhất trong toàn bộ hệ thống giáo dục quốc dân.
+## 4. Key Takeaways for Pedagogical Engineering
+* Executive function and self-regulation acquired in early childhood are durable determinants of lifelong cognitive and socioeconomic trajectories.

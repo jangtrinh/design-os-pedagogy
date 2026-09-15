@@ -1,6 +1,6 @@
 ---
 id: stage-s0-prenatal-caregiver
-title: "S0: Môi Trường Thần Kinh Thai Kỳ & Sẵn Sàng Nuôi Dưỡng (Prenatal & Caregiver Readiness)"
+title: "S0: Prenatal Neurodevelopment & Caregiver Readiness"
 type: stage-guide
 stage: ["S0-prenatal"]
 axes: ["AX-01: Learning Sciences", "AX-02: Developmental Psychology"]
@@ -8,24 +8,24 @@ evidence_level: "A"
 sources: ["WHO Nurturing Care Framework (2018)", "National Scientific Council on the Developing Child"]
 ---
 
-# S0: Thai Giáo Dựa Trên Bằng Chứng Thần Kinh Học
+# S0: Evidence-Based Prenatal Neurodevelopment & Caregiver Preparation
 
 ![Prenatal Neurodevelopment & Caregiver Cradle](../../assets/prenatal_caregiver_cradle_1789439768044.jpg)
 
-## 1. Trọng Tâm Khoa Học: Epigenetics & Môi Trường Tử Cung
-* Trong giai đoạn thai kỳ, tốc độ sinh tế bào thần kinh (Neurogenesis) đạt 250.000 tế bào/phút.
-* Sự biểu hiện gen (Epigenetic programming) chịu tác động trực tiếp từ trạng thái sinh hóa của người mẹ.
+## 1. Scientific Foundations: Epigenetics & Intrauterine Environment
+* During gestational development, the rate of neurogenesis reaches peak velocity (~250,000 neurons/minute).
+* Epigenetic programming is continuously shaped by maternal biochemical, nutritional, and emotional environments.
 
-## 2. Các Trụ Cột Can Thiệp Sư Phạm Cho Người Chăm Sóc (Caregiver Interventions)
-1. **Quản Lý Căng Thẳng (Cortisol & Trục HPA)**:
-   * Cortisol liều cao kéo dài qua hàng rào nhau thai làm biến đổi cấu trúc hạch hạnh nhân (Amygdala) và hồi hải mã (Hippocampus) của thai nhi.
-   * Can thiệp: Thiền chánh niệm, môi trường gia đình an yên, bài tập thở và chia sẻ gánh nặng tâm lý.
-2. **Kích Thích Giác Quan Có Kiểm Soát**:
-   * Tuần 24+: Ốc tai hoàn thiện. Thai nhi nghe được tiếng tim đập, tiếng máu chảy và giọng nói người mẹ.
-   * Thực hành chuẩn: Cha mẹ trò chuyện nhẹ nhàng, hát ru đều đặn. Giọng nói quen thuộc này sẽ là tín hiệu an thần (soothing signal) giúp trẻ sơ sinh tự bình tĩnh sau khi chào đời.
-3. **Dinh Dưỡng Kiến Tạo Màng Tế Bào Thần Kinh**:
-   * Acid Folic (ngừa dị tật ống thần kinh), Choline & DHA (cấu tạo màng myelin và synap), Sắt & I-ốt (chuyển hóa năng lượng não bộ).
+## 2. Core Caregiver Pedagogical Interventions
+1. **Stress Management (Cortisol & The Maternal-Fetal HPA Axis)**:
+   * Chronic, elevated maternal cortisol crosses the placental barrier, altering the architecture of the developing fetal amygdala and hippocampus.
+   * Interventions: Mindfulness meditation, partner support networks, controlled breathing, and reduction of toxic psychosocial stressors.
+2. **Controlled Sensory Stimulation**:
+   * Week 24+: The auditory cochlea matures. The fetus detects internal sounds (maternal heartbeat, uterine blood flow) and external maternal voice contours.
+   * Best Practice: Parents engaging in low-register prosodic speech and rhythmic reading. Familiar maternal vocal frequencies act as post-birth soothing anchors that assist neonatal self-regulation.
+3. **Neurotrophic Nutrition**:
+   * Dietary folate (neural tube defect prevention), choline & DHA (synaptogenesis and axonal myelination), iron & iodine (cerebral energy metabolism).
 
-## 3. Phán Quyết Về Các Ngụy Khoa Học Thai Giáo
-* ❌ **Ép nghe nhạc Mozart để thông minh**: Không có nghiên cứu kiểm chứng nào xác nhận. Ép đeo tai nghe sát bụng mẹ với âm lượng lớn còn có nguy cơ tổn thương thính giác thai nhi.
-* ❌ **Thẻ flashcard toán/chữ cho thai nhi**: Hoàn toàn vô nghĩa về mặt sinh học thần kinh.
+## 3. Rebuttal of Prenatal Neuromyths
+* ❌ **Mozart Effect Belly Headphones**: Unsubstantiated by controlled clinical trials. Direct, high-decibel speaker placement against the abdomen risks acoustic trauma to fetal auditory hair cells.
+* ❌ **In-Utero Flashcards or Arithmetic Programs**: Biologically absurd and counter-productive.

@@ -1,6 +1,6 @@
 ---
 id: stage-s1-early-childhood
-title: "S1: Mầm Non (0-6 Tuổi) - Chơi Có Định Hướng & Gắn Kết An Toàn"
+title: "S1: Early Childhood (Ages 0-6) - Guided Play & Secure Attachment"
 type: stage-guide
 stage: ["S1-early-childhood"]
 axes: ["AX-01: Learning Sciences", "AX-02: Developmental Psychology", "AX-03: Instructional Design"]
@@ -8,24 +8,24 @@ evidence_level: "A"
 sources: ["Harvard Center on the Developing Child", "HighScope Perry Preschool Study", "Hirsh-Pasek et al. (2009)"]
 ---
 
-# S1: Giáo Dục Mầm Non Dựa Trên Khoa Học Phát Triển
+# S1: Early Childhood Education Grounded in Developmental Science
 
 ![Early Childhood Plan-Do-Review Play Loop & Serve-and-Return](../../assets/early_childhood_play_loop_1789439818927.jpg)
 
-## 1. Cơ Chế Thần Kinh: Sự Bùng Nổ Synap (Synaptogenesis)
-Giai đoạn 0–6 tuổi có độ mềm dẻo thần kinh (Neuroplasticity) cao nhất trong đời người. Trẻ học thông qua vận động cảm giác (Sensory-motor) và sự gắn bó xã hội (Social attachment).
+## 1. Neurological Mechanisms: Peak Synaptogenesis
+Ages 0–6 exhibit the highest rate of neuroplasticity in the human lifespan. Children acquire schemas through sensory-motor interaction and secure emotional attachment (John Bowlby).
 
-## 2. Phương Pháp Luận Cốt Lõi
-1. **Tương Tác "Serve and Return" (Giao Bóng & Đỡ Bóng)**:
-   * Khi trẻ chỉ tay, cười hoặc phát âm -> Người lớn phản hồi bằng ánh mắt, lặp lại ngữ điệu, đặt tên cho đồ vật.
-   * Đây là chất xúc tác sinh học xây dựng cấu trúc não bộ cho khả năng giao tiếp và ngôn ngữ.
-2. **Chơi Có Định Hướng (Guided Play)**:
-   * Nằm giữa "Chơi tự do hoàn toàn" (Free play) và "Dạy học áp đặt" (Direct instruction).
-   * Giáo viên chuẩn bị môi trường học liệu giàu tính gợi mở (Open-ended materials), đặt câu hỏi mở (*"Con nghĩ điều gì sẽ xảy ra nếu mình đặt khối gỗ này lên trên?"*) thay vì bảo trẻ phải làm gì.
-3. **Quy Trình Plan - Do - Review (Mô hình HighScope)**:
-   * Trẻ lập kế hoạch (Hôm nay con sẽ chơi ở góc nào, làm gì) -> Trực tiếp chơi -> Suy ngẫm và chia sẻ lại những gì đã làm.
-   * Xây dựng chức năng điều hành và tư duy chủ động (Agency) từ tuổi lên 3.
+## 2. Core Methodological Architecture
+1. **Serve-and-Return Interactions (Harvard Center on the Developing Child)**:
+   * When an infant vocalizes, points, or gestures, the adult responds contingently with eye contact, vocal mirroring, and linguistic labeling.
+   * This reciprocal biological feedback loop builds fundamental neural circuits for language and executive function.
+2. **Guided Play (Hirsh-Pasek et al.)**:
+   * Situated between unguided free play and didactic direct instruction.
+   * Educators arrange rich, open-ended environments and ask scaffolded questions (*"What do you think happens if we place the wide block on top?"*) rather than commanding task completion.
+3. **Plan - Do - Review Cycle (HighScope Model)**:
+   * Children articulate a plan (which learning area to explore, what materials to use) $\rightarrow$ Execute the plan $\rightarrow$ Reflect upon and narrate the outcome.
+   * Establishes executive functioning and intrinsic agency from age 3 onward.
 
-## 3. Best Practice & Case Study
-* **Reggio Emilia**: Coi không gian lớp học là "người thầy thứ ba", tôn vinh 100 ngôn ngữ của trẻ (vẽ, điêu khắc, kịch nghệ, chuyển động).
-* **Cảnh báo sư phạm**: Nghiêm cấm dạy luyện chữ, làm toán áp đặt dạng bài tập giấy (worksheets) ở lứa tuổi mầm non vì làm cùn mòn động lực nội tại và gây ức chế cơ vận động tinh chưa hoàn thiện.
+## 3. Best Practices & Clinical Cautions
+* **Reggio Emilia Philosophy**: The physical environment acts as the "third teacher," honoring the hundred languages of children (drawing, sculpting, dramatic play, rhythmic motion).
+* **Pedagogical Warning**: Rigid, seated worksheet drills and premature rote flashcards are strictly contraindicated; they induce toxic achievement stress and erode intrinsic curiosity.
