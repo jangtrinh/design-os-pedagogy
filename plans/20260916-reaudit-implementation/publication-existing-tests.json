@@ -1,0 +1,18 @@
+{
+  "cwd": "/Users/jang/Products/Agent Teacher",
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_publication.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_instructional_gate_rejects_audit_counterexamples (test_publication.PublicationTests.test_instructional_gate_rejects_audit_counterexamples) ... ok\ntest_invalid_manifest_json_is_not_accepted (test_publication.PublicationTests.test_invalid_manifest_json_is_not_accepted) ... ok\ntest_prepare_preserves_corpus_and_apply_changes_only_two_files (test_publication.PublicationTests.test_prepare_preserves_corpus_and_apply_changes_only_two_files) ... ok\ntest_real_cli_import_then_apply (test_publication.PublicationTests.test_real_cli_import_then_apply) ... ok\ntest_repeat_and_existing_target_preserve_user_content (test_publication.PublicationTests.test_repeat_and_existing_target_preserve_user_content) ... ok\ntest_replace_failure_rolls_back_module_and_preserves_moc (test_publication.PublicationTests.test_replace_failure_rolls_back_module_and_preserves_moc) ... ok\ntest_route_scope_and_metadata_mismatch_rejected (test_publication.PublicationTests.test_route_scope_and_metadata_mismatch_rejected) ... ok\ntest_similar_moc_link_does_not_suppress_new_entry (test_publication.PublicationTests.test_similar_moc_link_does_not_suppress_new_entry) ... ok\ntest_stale_moc_rejected (test_publication.PublicationTests.test_stale_moc_rejected) ... ok\ntest_symlink_and_hardlink_draft_files_rejected (test_publication.PublicationTests.test_symlink_and_hardlink_draft_files_rejected) ... ok\ntest_symlink_draft_folder_and_hardlinked_lock_rejected (test_publication.PublicationTests.test_symlink_draft_folder_and_hardlinked_lock_rejected) ... ok\ntest_tampering_and_rehashed_navigation_injection_rejected (test_publication.PublicationTests.test_tampering_and_rehashed_navigation_injection_rejected) ... ok\ntest_two_concurrent_applies_do_not_overwrite_each_other (test_publication.PublicationTests.test_two_concurrent_applies_do_not_overwrite_each_other) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.409s\n\nOK\n"
+}

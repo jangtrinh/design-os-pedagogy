@@ -7,7 +7,7 @@ learner_state: "novice-disadvantaged-k3"
 applies: ["stage-s2-primary", "practice-rosenshine-principles"]
 evidence_basis: ["Stebbins et al. (1977) Abt Associates", "Watkins (1997) Behavior & Social Issues"]
 prerequisites: ["concept-cognitive-load-theory"]
-leads_to: ["method-explicit-instruction", "practice-direct-instruction"]
+leads_to: ["explicit-instruction-i-we-you", "direct-instruction-engelmann"]
 ---
 
 # Landmark Case Study: Project Follow Through (USA, 1967–1977)

@@ -1,0 +1,19 @@
+{
+  "host": "jangtrinhs-MacBook-Pro-2.local",
+  "root": "/Users/jang/Products/Agent Teacher",
+  "argv": [
+    "/Users/jang/Products/Agent Teacher/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_provider_and_links.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_fenced_examples_and_body_ids_are_not_parsed_as_links_or_metadata (test_provider_and_links.LinkTests.test_fenced_examples_and_body_ids_are_not_parsed_as_links_or_metadata) ... ok\ntest_machine_paths_in_instructions_remain_visible_portability_warnings (test_provider_and_links.LinkTests.test_machine_paths_in_instructions_remain_visible_portability_warnings) ... ok\ntest_machine_specific_link_targets_still_fail_link_audit (test_provider_and_links.LinkTests.test_machine_specific_link_targets_still_fail_link_audit) ... ok\ntest_missing_root_and_bad_frontmatter_fail_closed (test_provider_and_links.LinkTests.test_missing_root_and_bad_frontmatter_fail_closed) ... ok\ntest_reference_html_and_anchor_targets_are_checked (test_provider_and_links.LinkTests.test_reference_html_and_anchor_targets_are_checked) ... ok\ntest_unsupported_schemes_are_reported_in_links_and_references (test_provider_and_links.LinkTests.test_unsupported_schemes_are_reported_in_links_and_references) ... ok\ntest_valid_alias_paths_and_encoded_targets (test_provider_and_links.LinkTests.test_valid_alias_paths_and_encoded_targets) ... ok\ntest_invalid_limits_and_explicit_routes (test_provider_and_links.ProviderTests.test_invalid_limits_and_explicit_routes) ... ok\ntest_large_streams_are_drained_and_limit_enforced (test_provider_and_links.ProviderTests.test_large_streams_are_drained_and_limit_enforced) ... ok\ntest_nonzero_utf8_and_timeout_fail_without_partial_output (test_provider_and_links.ProviderTests.test_nonzero_utf8_and_timeout_fail_without_partial_output) ... ok\ntest_stdin_stdout_and_stderr_are_separate (test_provider_and_links.ProviderTests.test_stdin_stdout_and_stderr_are_separate) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.269s\n\nOK\n"
+}

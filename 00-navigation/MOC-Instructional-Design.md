@@ -1,13 +1,22 @@
 ---
+schema_version: "2.0.0"
 id: moc-instructional-design
 title: "Map of Content: Instructional Design & AI-Pedagogy Architectures"
 type: moc
-status: validated
+stage: []
+axes: [AX-03, AX-04]
+capabilities: [CAP-02]
+context: [instructional-design-navigation]
+locale: en
+evidence_grade: U
+claim_status: not-applicable
+review_status: unreviewed
+provenance: {kind: authored}
 ---
 
 # MOC: Instructional Design & AI-Pedagogy Architectures
 
-Systematic mapping of pedagogical architectures from early childhood through doctoral supervision and cutting-edge AI-era learning science.
+Start a course with the [design assistant](../90-agent-runtime/prompts/course-design-assistant.md), [CAP-02 protocol](../70-capabilities/design/instructional-system-design-protocol.md) and [blueprint](../docs/templates/course-blueprint.yaml). The entries below are reading routes; their presence does not establish source appraisal or effectiveness.
 
 ---
 
@@ -24,13 +33,13 @@ Systematic mapping of pedagogical architectures from early childhood through doc
 ---
 
 ## 2. Core Instructional Methods & Disciplinary Pedagogies
-1. [[direct-instruction-engelmann|Direct Instruction (Engelmann)]]: Faultless communication, Project Follow Through ($d = 0.74$), and choral responding.
-2. [[productive-failure-kapur|Productive Failure (Kapur)]]: Preparation-for-future-learning via problem generation followed by canonical consolidation ($d = 0.62$).
+1. [[direct-instruction-engelmann|Direct Instruction (Engelmann)]]: Structured instructional design and response routines; inspect the historical evidence's comparison and scope.
+2. [[productive-failure-kapur|Productive Failure (Kapur)]]: Problem generation followed by consolidation, with attention to prerequisites and context.
 3. [[problem-based-learning-7jumps|Problem-Based Learning (7 Jumps)]]: The Maastricht 7-jump protocol for clinical and ill-structured challenges.
-4. [[science-of-reading-scarborough-rope|Science of Reading & Scarborough's Rope]]: Dual word-recognition and language-comprehension strands ($d = 0.70$).
-5. [[singapore-math-bar-modeling|Singapore Math Bar Modeling]]: Bruner's Concrete-Pictorial-Abstract (CPA) heuristic for algebraic schema transition ($d = 0.65$).
-6. [[clinical-reasoning-and-deliberate-practice|Clinical Reasoning & Deliberate Practice]]: Dual-process clinical decision making, Schön's studio critique, and error analysis ($d = 0.75$).
-7. [[rosenshine-10-principles|Rosenshine 10 Principles]]: 10 empirical instructional principles with highest effect sizes.
+4. [[science-of-reading-scarborough-rope|Science of Reading & Scarborough's Rope]]: Word-recognition and language-comprehension strands.
+5. [[singapore-math-bar-modeling|Singapore Math Bar Modeling]]: Representing quantitative relationships before or alongside algebra.
+6. [[clinical-reasoning-and-deliberate-practice|Clinical Reasoning & Deliberate Practice]]: Professional practice, critique and error analysis; domain supervision matters.
+7. [[rosenshine-10-principles|Rosenshine 10 Principles]]: Instructional guidance whose applicability should be checked for the intended task.
 8. [[backward-design-ubd|Understanding by Design (UbD)]]: 3-stage backward design (Desired Results -> Assessment Evidence -> Learning Plan).
 9. [[cast-udl-3-framework|CAST UDL 3.0 Framework]]: Universal Design for Learning supporting neurodiversity and ADHD.
 10. [[stem-disciplinary-pedagogy|STEM Disciplinary Pedagogy]]: Disciplinary science learning via NGSS 3D practices and CER argumentation.
@@ -39,17 +48,17 @@ Systematic mapping of pedagogical architectures from early childhood through doc
 ---
 
 ## 3. Instructional Systems & Protocols
-* [[instructional-system-design-protocol|Instructional System Design Protocol (CAP-02)]]: Formal state-machine for end-to-end curriculum design and cognitive load auditing.
+* [[instructional-system-design-protocol|Course and unit design (CAP-02)]]: Intake, subject sources, alignment, sequence, adaptation and reviewable outputs.
 * [[socratic-and-explicit-facilitation-protocol|Socratic & Explicit Facilitation Protocol (CAP-03)]]: Dual-mode switching heuristics and Paul-Elder question taxonomy.
 * [[worked-example-fading-protocol|Worked Example Fading Protocol]]: Backward fading, completion problems, and self-explanation scaffolds.
 * [[5e-instructional-model|BSCS 5E Instructional Model]]: Engage, Explore, Explain, Elaborate, Evaluate phased cycle.
-* [[explicit-instruction-i-we-you|Explicit Instruction (I Do, We Do, You Do)]]: Gradual release of responsibility with 2-minute CFU cycles.
+* [[explicit-instruction-i-we-you|Explicit Instruction (I Do, We Do, You Do)]]: Gradual release with checks chosen from the task and learner response.
 
 ---
 
 ## 4. Cutting-Edge AI-Era Pedagogy & Epistemic Scaffolding
-1. [[ai-epistemic-partner|AI as Epistemic Partner]]: Socratic scaffolding preventing cognitive atrophy (UNESCO 2024).
-2. [[ai-assistance-ladder|The AI Assistance Ladder]]: S0–S7 assistance hierarchy, Epistemic Agency, and Epistemic Debt tracking.
-3. [[cognitive-offloading-and-atrophy|Cognitive Offloading & Atrophy]]: Neurobiology of offloading, productive cognitive friction, and desirable difficulties.
-4. [[synthetic-learners|Synthetic Learners]]: Multi-agent simulated students for pre-service teacher clinical rehearsals.
-5. [[process-based-assessment-viva|Process-Based Assessment & Adaptive Viva]]: The Proof-of-Learning Bundle replacing unproctored take-home essays.
+1. [[ai-epistemic-partner|AI as Epistemic Partner]]: Proposed assistance and dialogue practices; independent performance needs separate evidence.
+2. [[ai-assistance-ladder|The AI Assistance Ladder]]: AL0-AL7 assistance levels, distinct from S0-S7 education settings.
+3. [[cognitive-offloading-and-atrophy|Cognitive offloading]]: Distinguish task performance findings from unsupported claims of neural damage.
+4. [[synthetic-learners|Synthetic Learners]]: Simulation proposals; inspect the implemented fraction rehearsal's narrower scope in README.
+5. [[process-based-assessment-viva|Process-Based Assessment & Adaptive Viva]]: Proposed assessment options selected to fit the learning goal and access needs.

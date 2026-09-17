@@ -8,7 +8,7 @@ learner_state: "undergraduate-premed-engineering"
 applies: ["stage-s4-tertiary", "practice-formative-hinge-questions"]
 evidence_basis: ["Crouch & Mazur (2001) Am. J. Phys.", "Hake (1998) Am. J. Phys."]
 prerequisites: ["concept-cognitive-load-theory"]
-leads_to: ["method-peer-instruction", "concept-productive-failure"]
+leads_to: ["method-peer-instruction", "productive-failure-kapur"]
 ---
 
 # Clinical Simulation Case: Eric Mazur & The Harvard Epistemic Crisis

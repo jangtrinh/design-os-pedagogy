@@ -1,0 +1,107 @@
+# Authoring template, version 1.0.0. This is not the knowledge-record v2 schema.
+# Replace nulls and example IDs; do not claim a completed course from this scaffold.
+# No executable blueprint validator or general course runtime is supplied here.
+blueprint_version: "1.0.0"
+status: draft
+course:
+  id: null
+  title: null
+  topic: null
+  purpose: null
+  scope_exclusions: []
+  language: null
+  locale_and_curriculum: null
+learner_profile:
+  stage: null # S0-S7 is setting/role, not age or prior knowledge.
+  age_range: null
+  learner_role: null # For S0, specify the caregiver who is learning.
+  prior_knowledge:
+    known_skills: []
+    diagnostic_task: null
+    diagnostic_evidence: null # Unknown until actually observed.
+  access_needs_and_accommodations: []
+  motivation_and_goals: []
+constraints:
+  delivery_mode: null
+  group_size: null
+  facilitator_and_supervision: null
+  contact_minutes: null
+  independent_minutes: null
+  followup_minutes: null
+  materials_and_device_access: []
+assumptions: []
+unresolved_questions: []
+sources:
+  - id: SRC1
+    knowledge_source_id: null # Existing corpus ID when applicable.
+    domain_or_pedagogy: null
+    url_or_local_path: null
+    edition_or_revision: null
+    locator: null
+    accessed_at: null
+    scope_actually_read: null
+    supported_statement: null
+    applicability_and_limits: null
+    review_status: unreviewed
+outcomes:
+  - id: O1
+    performance: null
+    conditions: null
+    success_criteria: []
+    prerequisite_skill_ids: []
+    content_source_ids: []
+    assessment_ids: [A1]
+    practice_ids: [P1]
+prerequisite_skills: [] # Define each ID, prerequisite IDs and diagnostic evidence.
+units:
+  - id: U1
+    title: null
+    outcome_ids: [O1]
+    prerequisite_unit_ids: []
+    contact_minutes: null
+    independent_minutes: null
+    activity_minutes: [] # Include breaks and assessment; check sums.
+    worked_example:
+      task: null
+      verified_answer_or_exemplar: null
+      decision_rationale: null
+    non_example: null
+    practice:
+      - id: P1
+        task: null
+        support_and_fading: null
+        feedback: null
+    diagnostic_checkpoint:
+      task: null
+      key_or_observable_criteria: null
+      alternative_error_explanations: []
+      followup_probe: null
+      insufficient_evidence_action: null
+    independent_attempt: null
+    transfer_task: null
+    retention_revisit:
+      proposed_interval: null
+      rationale: null
+      task_and_success_criteria: null
+    language_and_access_adaptations: []
+assessments:
+  - id: A1
+    outcome_ids: [O1]
+    task: null
+    key_or_performance_exemplar: null
+    rubric_criteria: []
+    allowed_access_support: []
+    allowed_ai_assistance: null # Separate from accommodations and stage.
+    feedback_and_retry: null
+alignment_review:
+  uncovered_outcomes: []
+  unpracticed_assessed_skills: []
+  orphan_assessments: []
+  content_accuracy_issues: []
+  time_or_resource_conflicts: []
+  review_performed: false
+review:
+  subject_expert: {status: not_run, reviewer: null, findings: []}
+  pedagogy_and_access: {status: not_run, reviewer: null, findings: []}
+  learner_pilot: {status: not_run, record_locator: null}
+  learning_effectiveness: not_assessed

@@ -5,7 +5,7 @@ type: intervention
 category: interventions
 stage_applicability: ["S1", "S2", "S3", "S4", "S5", "S6", "S7"]
 prerequisites: ["rosenshine-10-principles", "formative-hinge-questions"]
-leads_to: ["case-kmofap-formative-assessment-wiliam", "socratic-and-explicit-facilitation-protocol", "peer-instruction-conceptest"]
+leads_to: ["case-kmofap-formative-assessment-wiliam", "socratic-and-explicit-facilitation-protocol", "method-peer-instruction"]
 evidence_basis: "Grade A (Rowe 1972, 1986, Black & Wiliam 1998, Tobin 1987)"
 clinical_cases: ["case-kmofap-formative-assessment-wiliam"]
 ---

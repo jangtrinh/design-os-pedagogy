@@ -1,16 +1,26 @@
 ---
+schema_version: "2.0.0"
 id: practice-backward-design-ubd
 title: "Backward Design & Understanding by Design (UbD): Curricular Alignment & Transfer Architecture"
 type: practice
-stage: ["S2-primary", "S3-secondary", "S4-tertiary", "S5-postgraduate", "S7-master-pedagogy"]
-axes: ["AX-03: Instructional Design", "AX-04: Curriculum", "AX-05: Assessment"]
-evidence_level: "A"
+stage: [S2, S3, S4, S5, S6, S7]
+axes: [AX-03, AX-04, AX-05]
+capabilities: [CAP-02, CAP-04]
+context: [curriculum-design, backward-design]
+locale: en
+evidence_grade: U
+claim_status: unreviewed
+review_status: unreviewed
+provenance: {kind: authored}
 prerequisites: ["concept-cognitive-load-theory", "practice-rosenshine-principles"]
 leads_to: ["practice-formative-hinge-questions", "stage-s4-tertiary"]
 sources: ["Wiggins & McTighe (2005) Understanding by Design (2nd ed.)", "Hattie (2023) Visible Learning", "Biggs (2014) Constructive Alignment"]
+source_ids: [evidence-cmu-course-alignment]
 ---
 
 # Backward Design & Understanding by Design (UbD): Curricular Alignment & Transfer Architecture
+
+The examples below are authored teaching scenarios. The [checked CMU source](../../60-evidence/sources/evidence-cmu-course-alignment.md) supports alignment of objectives, assessment and instruction. The named UbD/GRASPS theoretical lineage and subject examples are not independently appraised by that source. Use the [course-design protocol](../../70-capabilities/design/instructional-system-design-protocol.md) for intake, subject verification and a complete output contract.
 
 ![Wiggins and McTighe Backward Design UbD Funnel](../../assets/backward_design_ubd_funnel_1789441920646.jpg)
 
@@ -27,7 +37,7 @@ After studying this master module, you will be able to:
 > **Pre-reading Recognition Challenge**:
 > An elementary school teacher designs a 3-week unit on Ancient Egypt. Students spend two weeks building shoebox dioramas of pyramids, wrapping hot dogs in gauze to simulate mummification, and drawing cartouches in hieroglyphics. On the final Friday, the teacher administers a 20-question multiple-choice test on dynasties.
 > 
-> *Before reading further, diagnose the fatal pedagogical error of this unit: Which of the "Twin Sins" was committed, and what will students actually retain five years from now?*
+> *Before reading further, identify the intended learning goal and the evidence each activity could provide. What information is missing before judging the unit's alignment?*
 
 ---
 
@@ -36,15 +46,15 @@ After studying this master module, you will be able to:
 Most traditional curricula and lesson plans are planned **forward**:
 $$\text{Textbook Chapter / Topic} \longrightarrow \text{Daily Activities} \longrightarrow \text{Friday Quiz}$$
 
-This forward sequence guarantees two ubiquitous educational failures (Wiggins & McTighe, 2005):
+Two useful failure patterns to inspect are weakly connected activities and coverage without adequate preparation or assessment:
 
 ### Sin 1: Activity-Oriented Teaching ("Hands-on without Minds-on")
 * **Symptom**: Students are busy, smiling, cutting, pasting, coloring, building papier-mâché volcanoes, or browsing the internet.
-* **The Cognitive Failure**: The mental effort is consumed by the mechanics of the craft (cutting cardboard, finding clip art) rather than processing the underlying conceptual principles. Students retain the memory of gluing glitter, but zero transferable schema.
+* **The Design Risk**: Work on the product may not exercise the intended concept. Inspect the learner's explanation and an aligned task instead of inferring either learning or its absence from engagement alone.
 
 ### Sin 2: Coverage-Oriented Teaching ("Marching Through the Textbook")
 * **Symptom**: The teacher races through 40 slides or 30 textbook pages per day, driven by anxiety to "cover the syllabus" before state exams.
-* **The Cognitive Failure**: Fast declarative pacing overwhelms working memory. Knowledge is encoded as superficial, disconnected factoids that rapidly decay through the Ebbinghaus curve within 14 days of the exam.
+* **The Design Risk**: The schedule may leave insufficient opportunity to connect ideas, practice or receive feedback. Check actual performance and a suitable later task; no universal forgetting deadline is assumed.
 
 ---
 
@@ -56,7 +66,7 @@ Backward Design inverts the planning sequence by asking: **What counts as eviden
 ┌────────────────────────────────────────────────────────────────────────┐
 │ STAGE 1: IDENTIFY DESIRED RESULTS                                      │
 │ - What should students hear, read, view, explore, or remember?         │
-│ - What are the Enduring Understandings (Big Ideas) that endure 10 yrs? │
+│ - What important concepts and capabilities should remain useful?    │
 │ - What are the open, provocative Essential Questions (EQs)?            │
 └───────────────────────────────────┬────────────────────────────────────┘
                                     ▼
@@ -115,7 +125,7 @@ When designing Stage 2 assessment tasks that require transfer, use the **GRASPS*
 ## 5. Fully Worked Unit Plan: High School Physics & Energy Conservation
 
 ### Stage 1: Desired Results
-* **Big Idea**: Energy cannot be created or destroyed, only transformed; yet useful energy degrades into thermal entropy.
+* **Big Idea**: Account for energy transfers and transformations, including energy that becomes less available for the intended work. A physics reviewer should check the scope and treatment of efficiency and entropy before learner use.
 * **Essential Question (EQ)**: *"If energy is always conserved, why do political leaders urge us to 'save energy'?"*
 * **Enduring Understanding (EU)**: Students will understand that while total energy is mathematically conserved, the quality (exergy/usability) of energy decreases with each mechanical transformation.
 
@@ -148,10 +158,10 @@ After reading *To Kill a Mockingbird*, the teacher tells students: *"Create a co
 ## 7. Formative Hinge Question & Diagnostic Map
 
 ### The Hinge Diagnostic Item
-A curriculum director is reviewing a teacher’s UbD Stage 1 draft for a 9th-grade World History unit on the Industrial Revolution. Which Essential Question best aligns with Wiggins & McTighe’s criteria for a genuine **Essential Question**?
+The intended goal is to compare technological changes across periods using historical evidence and explicit trade-offs. Which question most directly prepares learners for that goal?
 
 * **A)** *"What were the three major inventions of the British Industrial Revolution?"*
-* **B)** *"Does technological progress always improve human quality of life?"*
+* **B)** *"Compare two technological changes from different periods. What evidence supports benefits and costs for different groups?"*
 * **C)** *"How did the steam engine change textile factory production between 1780 and 1830?"*
 * **D)** *"What is the textbook definition of urbanization?"*
 
@@ -161,10 +171,12 @@ A curriculum director is reviewing a teacher’s UbD Stage 1 draft for a 9th-gra
 
 | Option | Diagnosis | Underlying Curricular Error | Immediate Remediation Route |
 | :--- | :--- | :--- | :--- |
-| **Option A** | **Misconception**: Factual Recall Question | Has a single factual answer; requires no deep argument or ongoing inquiry. | Review Stage 1 criteria: EQs must be open-ended and arguable. |
-| **Option B** | **TARGET (Correct)** | Provocative, open-ended, timeless, and transferable across eras (from the steam engine to artificial intelligence). | **Proceed to Stage 2 Planning**. |
-| **Option C** | **Misconception**: Leading Historical Prompt | Narrow historical description rather than an overarching essential dilemma. | Convert the prompt into an open ethical or causal trade-off. |
-| **Option D** | **Misconception**: Definitional Triviality | Low-level vocabulary recall with zero inquiry value. | Re-read Section 1 on Coverage-Oriented Teaching. |
+| **Option A** | Partial preparation | Recall may help but does not elicit the full comparison | Ask how the recalled facts support an evidence-based comparison |
+| **Option B** | Target | Elicits comparison, evidence and differing consequences | Inspect the evidence and criteria in the learner's response |
+| **Option C** | Narrower scope | May be a valuable historical inquiry, but addresses only one period | Ask what additional comparison would satisfy the stated goal |
+| **Option D** | Vocabulary prerequisite | A definition can support the task but is insufficient alone | Ask the learner to apply the term within the comparison |
+
+These interpretations need a follow-up; an option alone does not establish a unique misconception. If the learning goal changes, the preferred question may change.
 
 ---
 
@@ -173,15 +185,15 @@ A curriculum director is reviewing a teacher’s UbD Stage 1 draft for a 9th-gra
 | Dimension | Novice (Unacceptable) | Competent (Acceptable) | Master UbD Exemplar |
 | :--- | :--- | :--- | :--- |
 | **Alignment** | Activities do not clearly connect to assessments or goals. | Assessments measure stated goals, but lessons have filler tasks. | Complete, airtight alignment: every lesson move directly scaffolds the Stage 2 performance task. |
-| **Essential Questions** | Answerable with yes/no or single fact. | Requires some explanation, but can be answered in 1 lesson. | Open, thought-provoking, recurs across units, sparks genuine debate. |
-| **Evidence of Mastery** | Standard multiple-choice quiz only. | Performance task included, but artificial and disconnected from reality. | Authentic GRASPS task requiring novel transfer to an ill-structured situation. |
+| **Questions** | Do not elicit the intended thinking. | Support some parts of the stated goal. | Elicit the intended reasoning with suitable evidence and scope. |
+| **Evidence of Learning** | Does not measure the intended outcome. | Measures the outcome but has unclear criteria or conditions. | Matches the outcome with explicit criteria and suitable independence or transfer evidence. |
 
 ---
 
-## 9. Empirical Evidence & Meta-Analytic Parameters
+## 9. Evidence, practice and limits
 
-| Dimension | Source | Measured Impact | Finding |
-| :--- | :--- | :--- | :--- |
-| **Teacher Clarity & Curricular Intentionality** | Hattie (2023) Visible Learning Synthesis | $d = 0.75$ | Clearly communicating learning intentions, success criteria, and aligning assessments yields nearly double standard school growth. |
-| **Constructive Alignment (Biggs)** | Biggs & Tang (2011) Higher Education Research | $d = 0.62$ | When learning activities and assessment tasks are explicitly aligned to intended outcomes, surface learning drops by 68%. |
-| **UbD District Implementation Studies** | Brown (2004); Wiggins & McTighe (2005) | $g = 0.42$ | Schools implementing UbD district-wide saw significant outperformance on state standardized tests, particularly in open-ended reading and math problem solving. |
+The [CMU alignment guidance](../../60-evidence/sources/evidence-cmu-course-alignment.md) is institutional guidance rather than an intervention effect estimate. Earlier numerical benefits without a traceable comparison and locator are removed. The historical bibliography remains a reading lead; it does not establish that those works were read or appraised in this update.
+
+**Guided practice:** Map one existing outcome to its assessment and preparation task. Identify an assessed skill that has not been practiced, or an outcome without evidence. **Independent practice:** Repair that gap in a unit of your choice. **Transfer:** Adapt the unit to another learner group, checking subject accuracy, language, access and prerequisites before assuming the same task fits.
+
+Use the review table as a planning aid, not a validated psychometric scale. Recall checks, demonstrations, projects and written responses should be selected for the intended outcome; no format automatically demonstrates deeper learning. A reviewed plan still needs appropriate subject review and evidence from actual use.

@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-17",
+  "root": "/Users/jang/Products/Agent Teacher",
+  "host": "jangtrinhs-MacBook-Pro-2.local",
+  "seconds": 16.383,
+  "passed": true,
+  "tests": {
+    "command": ".venv/bin/python -B -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "count": 78,
+    "stdout": "",
+    "stderr": "test_aliases_resolve_and_evidence_cycles_terminate (test_knowledge_coverage.KnowledgeCoverageTests.test_aliases_resolve_and_evidence_cycles_terminate) ... ok\ntest_empty_corpus_retains_zero_rows_and_no_readiness_claim (test_knowledge_coverage.KnowledgeCoverageTests.test_empty_corpus_retains_zero_rows_and_no_readiness_claim) ... ok\ntest_evidence_trails_follow_claims_but_not_prerequisites (test_knowledge_coverage.KnowledgeCoverageTests.test_evidence_trails_follow_claims_but_not_prerequisites) ... ok\ntest_filters_intersect_without_age_or_assistance_inference (test_knowledge_coverage.KnowledgeCoverageTests.test_filters_intersect_without_age_or_assistance_inference) ... ok\ntest_invalid_references_remain_visible_and_cli_fails (test_knowledge_coverage.KnowledgeCoverageTests.test_invalid_references_remain_visible_and_cli_fails) ... ok\ntest_inventory_is_read_only_and_deterministic (test_knowledge_coverage.KnowledgeCoverageTests.test_inventory_is_read_only_and_deterministic) ... ok\ntest_legacy_validation_label_and_prose_do_not_confer_review (test_knowledge_coverage.KnowledgeCoverageTests.test_legacy_validation_label_and_prose_do_not_confer_review) ... ok\ntest_missing_root_reports_error_without_creation (test_knowledge_coverage.KnowledgeCoverageTests.test_missing_root_reports_error_without_creation) ... ok\ntest_alias_cannot_shadow_another_canonical_id (test_knowledge_registry.KnowledgeRegistryTests.test_alias_cannot_shadow_another_canonical_id) ... ok\ntest_estimate_requires_typed_source_and_specific_comparison (test_knowledge_registry.KnowledgeRegistryTests.test_estimate_requires_typed_source_and_specific_comparison) ... ok\ntest_frontmatter_preserves_body_and_rejects_duplicate_keys (test_knowledge_registry.KnowledgeRegistryTests.test_frontmatter_preserves_body_and_rejects_duplicate_keys) ... ok\ntest_generated_effect_claim_requires_estimate_link (test_knowledge_registry.KnowledgeRegistryTests.test_generated_effect_claim_requires_estimate_link) ... ok\ntest_generated_requires_v2_and_separate_assistance_namespace (test_knowledge_registry.KnowledgeRegistryTests.test_generated_requires_v2_and_separate_assistance_namespace) ... ok\ntest_legacy_grade_and_validated_flag_do_not_become_review (test_knowledge_registry.KnowledgeRegistryTests.test_legacy_grade_and_validated_flag_do_not_become_review) ... ok\ntest_missing_id_duplicate_id_and_bad_alias_are_errors (test_knowledge_registry.KnowledgeRegistryTests.test_missing_id_duplicate_id_and_bad_alias_are_errors) ... ok\ntest_path_escape_and_unsupported_schema_cannot_pass (test_knowledge_registry.KnowledgeRegistryTests.test_path_escape_and_unsupported_schema_cannot_pass) ... ok\ntest_review_and_observation_require_provenance (test_knowledge_registry.KnowledgeRegistryTests.test_review_and_observation_require_provenance) ... ok\ntest_unrelated_legacy_errors_remain_in_full_registry (test_knowledge_registry.KnowledgeRegistryTests.test_unrelated_legacy_errors_remain_in_full_registry) ... ok\ntest_unresolved_id_is_not_resolved_by_filename (test_knowledge_registry.KnowledgeRegistryTests.test_unresolved_id_is_not_resolved_by_filename) ... ok\ntest_valid_candidate_does_not_write_to_the_corpus (test_knowledge_registry.KnowledgeRegistryTests.test_valid_candidate_does_not_write_to_the_corpus) ... ok\ntest_corrupt_database_is_preserved_and_reported_without_traceback (test_process_startup.StartupBoundaryTests.test_corrupt_database_is_preserved_and_reported_without_traceback) ... ok\ntest_partial_stdout_cannot_extend_the_original_startup_deadline (test_process_startup.StartupBoundaryTests.test_partial_stdout_cannot_extend_the_original_startup_deadline) ... ok\ntest_fenced_examples_and_body_ids_are_not_parsed_as_links_or_metadata (test_provider_and_links.LinkTests.test_fenced_examples_and_body_ids_are_not_parsed_as_links_or_metadata) ... ok\ntest_machine_paths_in_instructions_remain_visible_portability_warnings (test_provider_and_links.LinkTests.test_machine_paths_in_instructions_remain_visible_portability_warnings) ... ok\ntest_machine_specific_link_targets_still_fail_link_audit (test_provider_and_links.LinkTests.test_machine_specific_link_targets_still_fail_link_audit) ... ok\ntest_missing_root_and_bad_frontmatter_fail_closed (test_provider_and_links.LinkTests.test_missing_root_and_bad_frontmatter_fail_closed) ... ok\ntest_reference_html_and_anchor_targets_are_checked (test_provider_and_links.LinkTests.test_reference_html_and_anchor_targets_are_checked) ... ok\ntest_unsupported_schemes_are_reported_in_links_and_references (test_provider_and_links.LinkTests.test_unsupported_schemes_are_reported_in_links_and_references) ... ok\ntest_valid_alias_paths_and_encoded_targets (test_provider_and_links.LinkTests.test_valid_alias_paths_and_encoded_targets) ... ok\ntest_invalid_limits_and_explicit_routes (test_provider_and_links.ProviderTests.test_invalid_limits_and_explicit_routes) ... ok\ntest_large_streams_are_drained_and_limit_enforced (test_provider_and_links.ProviderTests.test_large_streams_are_drained_and_limit_enforced) ... ok\ntest_nonzero_utf8_and_timeout_fail_without_partial_output (test_provider_and_links.ProviderTests.test_nonzero_utf8_and_timeout_fail_without_partial_output) ... ok\ntest_stdin_stdout_and_stderr_are_separate (test_provider_and_links.ProviderTests.test_stdin_stdout_and_stderr_are_separate) ... ok\ntest_cli_rejects_fifo_input_without_waiting_for_a_writer (test_publication.PublicationTests.test_cli_rejects_fifo_input_without_waiting_for_a_writer) ... ok\ntest_cli_rejects_linked_input_before_preparing_a_draft (test_publication.PublicationTests.test_cli_rejects_linked_input_before_preparing_a_draft) ... ok\ntest_instructional_gate_rejects_audit_counterexamples (test_publication.PublicationTests.test_instructional_gate_rejects_audit_counterexamples) ... ok\ntest_invalid_manifest_json_is_not_accepted (test_publication.PublicationTests.test_invalid_manifest_json_is_not_accepted) ... ok\ntest_prepare_preserves_corpus_and_apply_changes_only_two_files (test_publication.PublicationTests.test_prepare_preserves_corpus_and_apply_changes_only_two_files) ... ok\ntest_real_cli_import_then_apply (test_publication.PublicationTests.test_real_cli_import_then_apply) ... ok\ntest_repeat_and_existing_target_preserve_user_content (test_publication.PublicationTests.test_repeat_and_existing_target_preserve_user_content) ... ok\ntest_replace_failure_rolls_back_module_and_preserves_moc (test_publication.PublicationTests.test_replace_failure_rolls_back_module_and_preserves_moc) ... ok\ntest_route_scope_and_metadata_mismatch_rejected (test_publication.PublicationTests.test_route_scope_and_metadata_mismatch_rejected) ... ok\ntest_similar_moc_link_does_not_suppress_new_entry (test_publication.PublicationTests.test_similar_moc_link_does_not_suppress_new_entry) ... ok\ntest_stale_moc_rejected (test_publication.PublicationTests.test_stale_moc_rejected) ... ok\ntest_symlink_and_hardlink_draft_files_rejected (test_publication.PublicationTests.test_symlink_and_hardlink_draft_files_rejected) ... ok\ntest_symlink_draft_folder_and_hardlinked_lock_rejected (test_publication.PublicationTests.test_symlink_draft_folder_and_hardlinked_lock_rejected) ... ok\ntest_tampering_and_rehashed_navigation_injection_rejected (test_publication.PublicationTests.test_tampering_and_rehashed_navigation_injection_rejected) ... ok\ntest_two_concurrent_applies_do_not_overwrite_each_other (test_publication.PublicationTests.test_two_concurrent_applies_do_not_overwrite_each_other) ... ok\ntest_catchable_navigation_failure_rolls_back_owned_module (test_publication_recovery.PublicationRecoveryTests.test_catchable_navigation_failure_rolls_back_owned_module) ... ok\ntest_changed_draft_blocks_recovery (test_publication_recovery.PublicationRecoveryTests.test_changed_draft_blocks_recovery) ... ok\ntest_edited_module_is_preserved (test_publication_recovery.PublicationRecoveryTests.test_edited_module_is_preserved) ... ok\ntest_edited_navigation_is_preserved (test_publication_recovery.PublicationRecoveryTests.test_edited_navigation_is_preserved) ... ok\ntest_pending_transaction_blocks_another_publication (test_publication_recovery.PublicationRecoveryTests.test_pending_transaction_blocks_another_publication) ... ok\ntest_recovery_can_be_interrupted_and_restarted (test_publication_recovery.PublicationRecoveryTests.test_recovery_can_be_interrupted_and_restarted) ... ok\ntest_restart_after_module_creation (test_publication_recovery.PublicationRecoveryTests.test_restart_after_module_creation) ... ok\ntest_restart_after_navigation_replacement (test_publication_recovery.PublicationRecoveryTests.test_restart_after_navigation_replacement) ... ok\ntest_restart_before_module_creation (test_publication_recovery.PublicationRecoveryTests.test_restart_before_module_creation) ... ok\ntest_restart_before_navigation_replacement (test_publication_recovery.PublicationRecoveryTests.test_restart_before_navigation_replacement) ... ok\ntest_same_content_replacement_does_not_inherit_ownership (test_publication_recovery.PublicationRecoveryTests.test_same_content_replacement_does_not_inherit_ownership) ... ok\ntest_concurrent_writes_only_one_wins (test_rehearsal.RehearsalTests.test_concurrent_writes_only_one_wins) ... ok\ntest_create_and_event_retry_are_idempotent (test_rehearsal.RehearsalTests.test_create_and_event_retry_are_idempotent) ... ok\ntest_empty_reflection_rejected_and_completion_cannot_advance (test_rehearsal.RehearsalTests.test_empty_reflection_rejected_and_completion_cannot_advance) ... ok\ntest_every_instructional_strategy_has_explicit_responses (test_rehearsal.RehearsalTests.test_every_instructional_strategy_has_explicit_responses) ... ok\ntest_invalid_create_and_request_ids_are_rejected (test_rehearsal.RehearsalTests.test_invalid_create_and_request_ids_are_rejected) ... ok\ntest_pack_change_preserves_read_export_but_blocks_write_replay (test_rehearsal.RehearsalTests.test_pack_change_preserves_read_export_but_blocks_write_replay) ... ok\ntest_stale_revision_and_invalid_transition_do_not_mutate (test_rehearsal.RehearsalTests.test_stale_revision_and_invalid_transition_do_not_mutate) ... ok\ntest_symlink_database_is_rejected (test_rehearsal.RehearsalTests.test_symlink_database_is_rejected) ... ok\ntest_three_cases_complete_restart_and_replay (test_rehearsal.RehearsalTests.test_three_cases_complete_restart_and_replay) ... ok\ntest_transfer_key_and_coaching_not_available_before_submission (test_rehearsal.RehearsalTests.test_transfer_key_and_coaching_not_available_before_submission) ... ok\ntest_unicode_free_text_retained_without_semantic_score (test_rehearsal.RehearsalTests.test_unicode_free_text_retained_without_semantic_score) ... ok\ntest_unknown_database_and_hardlink_are_preserved (test_rehearsal.RehearsalTests.test_unknown_database_and_hardlink_are_preserved) ... ok\ntest_all_transitions_reload_replay_and_exports (test_rehearsal_http.RehearsalHttpTests.test_all_transitions_reload_replay_and_exports) ... ok\ntest_host_and_origin_boundaries (test_rehearsal_http.RehearsalHttpTests.test_host_and_origin_boundaries) ... ok\ntest_http_conflict_preserves_latest_state (test_rehearsal_http.RehearsalHttpTests.test_http_conflict_preserves_latest_state) ... ok\ntest_invalid_json_duplicate_keys_and_nonfinite_numbers (test_rehearsal_http.RehearsalHttpTests.test_invalid_json_duplicate_keys_and_nonfinite_numbers) ... ok\ntest_private_pack_keys_and_source_files_are_not_served (test_rehearsal_http.RehearsalHttpTests.test_private_pack_keys_and_source_files_are_not_served) ... ok\ntest_serves_actual_ui_and_declares_authored_mode (test_rehearsal_http.RehearsalHttpTests.test_serves_actual_ui_and_declares_authored_mode) ... ok\ntest_restart_preserves_committed_session_and_idempotency (test_rehearsal_process.RehearsalProcessTests.test_restart_preserves_committed_session_and_idempotency) ... ok\n\n----------------------------------------------------------------------\nRan 78 tests in 14.850s\n\nOK\n"
+  },
+  "registry_stats": {
+    "records": 94,
+    "edges": 346,
+    "unresolved_edges": 0,
+    "unreviewed_records": 86,
+    "errors": 0,
+    "warnings": 62
+  },
+  "registry_errors": [],
+  "links": {
+    "files": 112,
+    "errors": [],
+    "structural_errors": [],
+    "portability_warnings": [
+      "docs/local-workspace.md:10: machine-specific path",
+      "docs/local-workspace.md:3: machine-specific path",
+      "plans/20260916-reaudit-implementation/completion.md:5: machine-specific path",
+      "plans/20260916-reaudit-implementation/plan.md:3: machine-specific path",
+      "plans/20260917-knowledge-course-design/plan.md:4: machine-specific path"
+    ],
+    "scope": "Local Markdown files and anchors; external HTTP links are not fetched."
+  },
+  "generated_candidate_validation": {
+    "00-navigation/MOC-Instructional-Design.md": [],
+    "00-navigation/MOC-Master.md": [],
+    "20-stages/s1-early-childhood/play-and-executive-function.md": [],
+    "20-stages/s6-lifelong-adult/andragogy-experiential-learning.md": [],
+    "30-pedagogy/curriculum-design/backward-design-ubd.md": [],
+    "30-pedagogy/inclusion-udl/cast-udl-3-framework.md": [],
+    "60-evidence/sources/evidence-cast-2024-udl-guidelines.md": [],
+    "60-evidence/sources/evidence-cmu-course-alignment.md": [],
+    "60-evidence/sources/evidence-ies-2007-organizing-instruction.md": [],
+    "60-evidence/sources/evidence-naeyc-developmentally-appropriate-practice.md": [],
+    "60-evidence/sources/evidence-unesco-2015-adult-learning.md": [],
+    "70-capabilities/design/instructional-system-design-protocol.md": [],
+    "90-agent-runtime/evals/course-design-acceptance.md": [],
+    "90-agent-runtime/prompts/course-design-assistant.md": [],
+    "90-agent-runtime/workflows/knowledge-research-cycle.md": []
+  },
+  "blueprint_checks": {
+    "yaml_parse": true,
+    "separate_version": true,
+    "draft": true,
+    "review_not_claimed": true
+  },
+  "unrelated_baseline_changes": [],
+  "source_hashes": {
+    "00-navigation/MOC-Instructional-Design.md": "7449f47959fada681c6951c66705265ef210fe2a2bb9063e3bd0dfdaa45b41f1",
+    "00-navigation/MOC-Master.md": "5e20b5c806bf9a414b4ea30a5d07ef347b2f5e6ea77b9e40e382f4d765bc4f86",
+    "20-stages/s1-early-childhood/play-and-executive-function.md": "1ac583c22548606e476806f7215372b44660062a18d4a24229f3b8c9f86966d6",
+    "20-stages/s6-lifelong-adult/andragogy-experiential-learning.md": "03bef354cfc28477ec89572048ddfce1aed5d10ea2e89467d1595ee0d32d63d6",
+    "30-pedagogy/curriculum-design/backward-design-ubd.md": "03bd8ef6318bc8c2694916b4822b348dc69454683af8fda85f57513b780ad31a",
+    "30-pedagogy/inclusion-udl/cast-udl-3-framework.md": "dc8f41e20de92616b5b8126e133451079c964c27750141115c0aeb26cfc23c75",
+    "60-evidence/sources/evidence-cast-2024-udl-guidelines.md": "58e378b010458b699bb49b4e97006098d4e78cb0ed31ed33ec2aed288395ba84",
+    "60-evidence/sources/evidence-cmu-course-alignment.md": "272654ac5d8626d78b7a925281a64bcc9636fa063556e9c0ac8af14cedb34324",
+    "60-evidence/sources/evidence-ies-2007-organizing-instruction.md": "331cb480b208164f865cfb0dfd2d87cb756f8504c6719a38b29425a6bee1c50c",
+    "60-evidence/sources/evidence-naeyc-developmentally-appropriate-practice.md": "2f79c0969ef837b636c7acc41960342e4c853fa4d3b8e2af7a6243445eb1fe73",
+    "60-evidence/sources/evidence-unesco-2015-adult-learning.md": "379e21c58ae66279e85576890bf89fd851efe3d3d30f91d3a349d60e46500f0e",
+    "70-capabilities/design/instructional-system-design-protocol.md": "ef7c6f351923ac1a58586afb414fa35cb505c66101718b89a360cdf58d656488",
+    "90-agent-runtime/evals/course-design-acceptance.md": "e09935f447c9c0d0b5374d51ee30afb4223a9e1d3fa28070d368c1e837d51eb6",
+    "90-agent-runtime/prompts/course-design-assistant.md": "ce54b3fe09d6c6b34986efaa99368267c1a6a5c60a90bb5eab8db7d633275eca",
+    "90-agent-runtime/workflows/knowledge-research-cycle.md": "9e8f5d9bee23e2dce7176359e5eb0c39604812ff3794d67dfa4e00d64cfba1ff",
+    "tools/knowledge/coverage.py": "fadbc0b24ac50358f0e22b33d8a9359c0694f3ca0658316b7958b5b06d207112",
+    "tools/knowledge_coverage.py": "e4f7bbe2b5985c0b8ec799529e6c40f63c99c91275ee3f8b2895acedfe69d627",
+    "tests/test_knowledge_coverage.py": "def08bf385a595970a92b29474b2a261e57d5efa80eedc17577371c3a5906de2",
+    "docs/templates/course-blueprint.yaml": "0b5293b9b66b447d5e5c6bc22693fca585e21565446e70b0e33a833fbca4f4ec",
+    "docs/knowledge-roadmap.md": "2f768f120617951818673c29dceaba96e2086578cbf4d5361385d30103476080"
+  },
+  "limits": [
+    "No expert appraisal or learner pilot performed",
+    "Course acceptance scenarios authored, not executed as a model benchmark",
+    "Coverage is metadata inventory, not evidence of course completeness or effectiveness",
+    "Worker startup failed; no independent worker review completed"
+  ]
+}

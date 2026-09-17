@@ -7,7 +7,7 @@ learner_state: "secondary-gcse"
 applies: ["practice-formative-hinge-questions", "stage-s3-secondary"]
 evidence_basis: ["Black et al. (2003) Open University Press", "Wiliam et al. (2004) Assessment in Education"]
 prerequisites: ["concept-working-memory"]
-leads_to: ["practice-comment-only-marking", "method-hinge-point-questioning"]
+leads_to: ["method-formative-feedback", "practice-formative-hinge-questions"]
 ---
 
 # UK Empirical Case: KMOFAP (Dylan Wiliam & Paul Black, 1999–2001)

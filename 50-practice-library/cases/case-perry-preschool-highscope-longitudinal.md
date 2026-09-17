@@ -7,7 +7,7 @@ learner_state: "early-childhood-disadvantaged"
 applies: ["stage-s1-early-childhood", "concept-executive-functions"]
 evidence_basis: ["Schweinhart et al. (2005) HighScope Press", "Heckman et al. (2010) Journal of Public Economics"]
 prerequisites: ["stage-s0-prenatal-caregiver"]
-leads_to: ["method-plan-do-review", "concept-self-regulation"]
+leads_to: ["stage-s1-early-childhood", "concept-self-regulation"]
 ---
 
 # Historic Case Study: HighScope Perry Preschool Project (1962–40-Year Longitudinal Tracking)

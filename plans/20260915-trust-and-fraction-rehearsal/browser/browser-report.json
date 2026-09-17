@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "desktop renders three authored cases",
+    "409 from stale window preserves draft after reload",
+    "offline text retained and explicit retry succeeds",
+    "complete, reload and replay match eight events",
+    "Markdown download contains saved reflection",
+    "keyboard skip preserves selected session",
+    "390px layouts have no page overflow"
+  ],
+  "page_errors": []
+}

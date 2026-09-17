@@ -6,7 +6,7 @@ stage: ["S2-primary", "S3-secondary", "S4-tertiary"]
 axes: ["AX-01: Learning Sciences", "AX-03: Instructional Design"]
 evidence_level: "A"
 prerequisites: ["concept-working-memory", "concept-executive-functions"]
-leads_to: ["practice-rosenshine-principles", "method-guidance-fading", "method-worked-examples"]
+leads_to: ["practice-rosenshine-principles", "worked-example-fading-protocol"]
 evidence_claims: ["evidence-barbieri-2023-worked-examples", "evidence-mawson-2025-spacing"]
 clinical_cases: ["case-grade-7-algebra-worked-examples", "case-university-physics-productive-failure"]
 sources: ["Sweller (1988)", "Sweller, Ayres & Kalyuga (2011)", "Kalyuga (2007)", "Paas & van Merriënboer (2020)"]

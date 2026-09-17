@@ -9,7 +9,7 @@
 
 ## 1. The Evidence Source Hierarchy (Tier 1–Tier 5)
 
-To protect this knowledge repository from commercial educational fads and neuromyths, all ingested claims must adhere to strict epistemological strata:
+The tiers below guide source discovery. Institutional prestige does not establish study quality, an effect size or an intervention recommendation. Appraise each claim and comparison independently using Section 2.
 
 * **Tier 1 — Independent Evidence Clearinghouses & Systematic Meta-Analyses**:
   * *IES / What Works Clearinghouse (WWC)*: Gold-standard randomized trial evaluation standards.
@@ -38,12 +38,21 @@ To protect this knowledge repository from commercial educational fads and neurom
 
 ---
 
-## 2. The 5-Level Evidence Grading Scale
-* **Grade A (Gold Standard)**: Meta-analyses of $\ge 10$ randomized controlled trials (RCTs) with combined $N > 1,000$, low heterogeneity ($I^2 < 50\%$), and clear effect size ($d \ge 0.40$).
-* **Grade B (High Rigor)**: Multiple well-designed quasi-experimental field studies with matched control groups.
-* **Grade C (Emerging Empirical)**: Observational cohort studies, single-case experimental designs, mixed-methods field pilots.
-* **Grade D (Expert Theoretical Consensus)**: Peer-reviewed theoretical frameworks, professional standards (e.g., Advance HE PSF 2023).
-* **Grade E (Neuromyth / Refutation Gate)**: Explicitly refuted educational myths (VAK learning styles, left/right brain hemisphere learning, Mozart effect) flagged with hard refusal warnings.
+## 2. Evidence appraisal, claim status and provenance
+Grades describe the kind and appraisal of evidence, not the size or direction of an effect. A rigorous null or harmful result can have strong evidence.
+
+* **A**: Appraised synthesis of rigorous replicated studies; record risk of bias, heterogeneity, population and outcome limitations.
+* **B**: Appraised experimental or quasi-experimental evidence with credible controls.
+* **C**: Preliminary, observational, correlational or context-limited empirical evidence.
+* **D**: Professional consensus and institutional standards.
+* **E**: Classic theoretical or philosophical lineage; not proof of an intervention effect.
+* **U**: Unappraised or insufficiently documented. U does not mean false.
+
+Store the separate claim verdict as `unreviewed`, `supported`, `mixed`, `not-supported`, `refuted` or `not-applicable`. A refutation needs its own cited scope and evidence; it is not encoded as Grade E. `source-checked` means a traceable source extraction, while `reviewed` requires documented appraisal.
+
+Every quantitative estimate needs a source ID, exact URL and locator, metric, population, comparator, outcome and timepoint. Cohen's d, Hedges' g, normalized gain and relative change are different measures. Do not rank them together or convert them automatically into months of progress.
+
+An authored protocol is guidance. A simulation demonstrates its encoded behavior. An observed case needs a record locator. Cases without provenance remain `unreviewed`; neither a plausible transcript nor a passing schema creates empirical evidence. Legacy Grade A and `status: validated` remain historical metadata and are not promoted by the registry adapter.
 
 ---
 

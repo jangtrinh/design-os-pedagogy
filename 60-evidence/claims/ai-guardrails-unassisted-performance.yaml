@@ -1,0 +1,24 @@
+schema_version: "2.0.0"
+id: claim-bastani-2025-unassisted-performance
+type: claim
+title: "GPT Base and subsequent unassisted exam grades"
+stage: [S3]
+axes: [AX-07]
+capabilities: [CAP-04]
+context: [high-school-mathematics]
+locale: en
+evidence_grade: U
+claim_status: supported
+review_status: source-checked
+provenance:
+  kind: literature
+  reviewer: primary-source-extraction
+  reviewed_at: "2026-09-15"
+  citations:
+    - url: "https://pubmed.ncbi.nlm.nih.gov/40560616/"
+      locator: "Abstract: field experiment, tutor withdrawal and unassisted exam grades"
+claim_statement: >
+  In this high-school mathematics experiment, the GPT Base group had 17% lower
+  unassisted exam grades relative to the no-AI control after access was removed.
+source_ids: [evidence-bastani-2025-ai-guardrails]
+estimate_ids: [estimate-bastani-2025-relative-exam-grades]
