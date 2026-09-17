@@ -1,173 +1,104 @@
 ---
+schema_version: "2.0.0"
 id: practice-cast-udl-framework
-title: "Universal Design for Learning (CAST UDL 3.0): Neurodiversity & Inclusive Architecture"
+title: "UDL 3.0: identify barriers and preserve meaningful learning goals"
 type: practice
-stage: ["S1-early-childhood", "S2-primary", "S3-secondary", "S4-tertiary"]
-axes: ["AX-01: Learning Sciences", "AX-06: Inclusion & UDL"]
-evidence_level: "B"
-prerequisites: ["concept-cognitive-load-theory", "concept-executive-functions"]
-leads_to: ["capability-learner-diagnostics", "practice-backward-design-ubd"]
-sources: ["CAST Universal Design for Learning Guidelines version 3.0 (2024)", "Meyer, Rose, & Gordon (2014)", "Ok et al. (2017)"]
+stage: [S1, S2, S3, S4, S5, S6, S7]
+axes: [AX-03, AX-05, AX-06]
+capabilities: [CAP-01, CAP-02, CAP-03, CAP-04]
+context: [inclusive-design, access, course-design]
+locale: en
+evidence_grade: U
+claim_status: unreviewed
+review_status: unreviewed
+provenance: {kind: authored}
+prerequisites: [concept-cognitive-load-theory]
+leads_to: [capability-learner-diagnostics, practice-backward-design-ubd]
+source_ids: [evidence-cast-2024-udl-guidelines, evidence-cmu-course-alignment]
 ---
 
-# Universal Design for Learning (CAST UDL 3.0): Neurodiversity & Inclusive Architecture
+# UDL 3.0: identify barriers and preserve meaningful learning goals
 
-![CAST UDL 3.0 Tri-Network Accessibility Nexus](../../assets/cast_udl_3_tri_network_1789442097694.jpg)
+This is an authored implementation guide informed by CAST's framework. It does not diagnose learners, certify accessibility or establish a universal learning effect. Individual accommodations can remain necessary alongside broadly accessible course design.
 
----
+## 0. Capability contract and prediction
 
-## 0. Capability Contract
+The designer can identify a participation barrier, choose an appropriate alternative, preserve the intended assessment construct, and test whether the alternative actually works for the learner.
 
-After studying this master module, you will be able to:
-* **Apply** the core axiom of UDL: *Disability is located in the inflexibility of the instructional environment, not in the neurology of the learner.*
-* **Architect** lessons that simultaneously engage the 3 primary brain networks: **Affective** (Engagement), **Recognition** (Representation), and **Strategic** (Action & Expression).
-* **Eliminate** the "Retrofitted Accommodation" trap (scrambling to adapt a rigid lesson for individual IEPs after the fact) by building flexibility into the baseline design.
-* **Configure** human classrooms and AI conversational agents to foster **Expert Learners** (learners who are purposeful, resourceful, and strategic).
+**Puzzle:** A course assesses reasoning from a data table. A learner cannot access the image containing the table. Does replacing it with an accessible text table reduce the reasoning standard? Predict when the answer would differ if the goal instead required interpreting a particular visual representation.
 
-> **Pre-reading Recognition Challenge**:
-> Consider two instructional approaches in a 10th-grade biology class:
-> * **Approach A (Retrofitted Accommodation)**: The teacher assigns a 20-page textbook chapter to the entire class. When a student with dyslexia struggles, the teacher sends them to a separate resource room to have an aide read the text aloud, while giving an autistic student permission to skip the group discussion.
-> * **Approach B (Universal Design)**: The teacher provides the text in a digital reader with adjustable text size, text-to-speech audio narration, and dual-coded diagrams. All students choose between contributing to a live verbal discussion, an asynchronous digital debate forum, or a collaborative concept map.
-> 
-> *Analysis*: Approach A creates social stigma, depends on external human crutches, and isolates neurodivergent learners. **Approach B applies the Curb-Cut Principle**: curb cuts were engineered for wheelchairs, but they benefit parents with strollers, travelers with luggage, and bicyclists. Designing for neurodiversity elevates learning for 100% of students.
+The decision follows the stated skill and task conditions. Removing an incidental access barrier can preserve the goal; changing a response mode can also change what is assessed. Record the distinction explicitly.
 
----
+## 1. Framework and boundaries
 
-## 1. The Core Paradigm Shift: The "Myth of the Average"
+The [CAST source card](../../60-evidence/sources/evidence-cast-2024-udl-guidelines.md) records version 3.0. The organizer addresses engagement, representation, and action and expression, with learner agency as its goal. Its groupings are Access, Support and Executive Function.
 
-Traditional curriculum design assumes an imaginary construct: the "Average Student". 
-As neuroscientist Todd Rose demonstrated, when military cockpits were designed for the "average pilot", they fit zero pilots properly, leading to catastrophic crashes. When cockpits were made adjustable in seat height, pedal distance, and reach, pilot performance soared.
+Use this as a design framework rather than a literal map of three isolated brain regions. It is not a learning-styles classification. A diagnostic label does not tell the designer which particular formats a learner can use or what support they need.
 
-The human connectome exhibits jagged cognitive profiles: a student may have 99th-percentile spatial reasoning paired with 10th-percentile phonological processing speed (Dyslexia), or intense analytical focus paired with executive function initiation friction (ADHD/Autism).
+## 2. Barrier-to-goal protocol
 
-```
-TRADITIONAL DEFICIT MODEL:
-[ Defective Student Brain ] ──► Must be "fixed" or accommodated via special education.
+| Step | Action | Check |
+| --- | --- | --- |
+| Establish the goal | Specify the performance and assessment conditions | Can the designer identify what must stay constant? |
+| Locate the barrier | Inspect material, language, interaction, response and workload demands | Is the difficulty observed or merely assumed? |
+| Select an alternative | Change an incidental demand, representation or support | Does the alternative still elicit the intended skill? |
+| Test participation | Try the actual material and response route with relevant tools and feedback | Is it usable in practice, not just available in a menu? |
+| Assess and revise | Apply appropriate criteria and inspect remaining barriers | Did the design preserve the construct and requested accommodations? |
 
-UNIVERSAL DESIGN MODEL:
-[ Inflexible Instructional Design ] ──► Is the disability. Design must be made adjustable.
-```
+Accessibility requests and relevant learner feedback guide these decisions. Do not require a designer to infer a diagnosis before making an accessible format available.
 
----
+## 3. Worked example: accessible comparison of rates
 
-## 2. The 3 Brain Networks & The CAST UDL 3.0 Framework
+**Authored scenario:** A course asks learners to calculate and explain rates from a small data table. The initial material is an unlabeled image. The learner uses a screen reader and requests spoken responses.
 
-The human learning brain operates through three interconnected neurological networks:
+Goal O1: Calculate the requested rate and justify the comparison. The goal does not include identifying pixels or handwriting.
 
-```
-                            THE LEARNING BRAIN
-                                     ▲
-        ┌────────────────────────────┼────────────────────────────┐
-        ▼                            ▼                            ▼
-AFFECTIVE NETWORKS          RECOGNITION NETWORKS         STRATEGIC NETWORKS
-(Limbic System)             (Occipital / Temporal Lobes) (Prefrontal Cortex)
-The "WHY" of Learning       The "WHAT" of Learning       The "HOW" of Learning
-─────────────────────────   ─────────────────────────    ─────────────────────────
-MULTIPLE MEANS OF           MULTIPLE MEANS OF            MULTIPLE MEANS OF
-ENGAGEMENT                  REPRESENTATION               ACTION & EXPRESSION
-```
+| Component | Proposed revision | Rationale and verification |
+| --- | --- | --- |
+| Source material | Supply a structured text table with clear units and a linear reading alternative | Check that labels, values and row associations can be accessed correctly |
+| Explanation | Provide concise text with equivalent audio/transcript options where available | Check that the versions convey the same required content |
+| Practice | Offer a worked example followed by a new task with less instructional help | Record access support separately from hints that solve the task |
+| Response | Permit speech, typed work or an accessible calculation representation | Assess rate reasoning with equivalent criteria rather than handwriting |
+| Feedback | Explain the specific error and provide a different retry | Verify that feedback and the retry are accessible too |
 
-### 1. Affective Networks (The "Why" — Engagement)
-* **Neurological Substrate**: Limbic system, amygdala, ventral striatum.
-* **Instructional Goal**: Develop **Purposeful & Motivated** learners.
-* **Core Levers**:
-  * *Access*: Optimize individual choice, autonomy, and psychological safety.
-  * *Build*: Foster collaboration, community, and mastery-oriented feedback.
-  * *Internalize*: Promote self-regulation, personal coping mechanisms, and self-assessment.
+Example data: 12 items in 3 hours gives 4 items/hour; 15 items in 5 hours gives 3 items/hour. These are invented exercise data. The alternative formats must preserve the numbers and units. This design has not been tested with a learner in this project.
 
-### 2. Recognition Networks (The "What" — Representation)
-* **Neurological Substrate**: Visual cortex, auditory cortex, temporal language hubs.
-* **Instructional Goal**: Develop **Resourceful & Knowledgeable** learners.
-* **Core Levers**:
-  * *Access*: Offer customizable displays (font, contrast, audio alternatives).
-  * *Build*: Clarify vocabulary, mathematical notation, and syntax explicitly; illustrate through multi-modal dual coding.
-  * *Internalize*: Scaffold background knowledge activation and guide information processing.
+## 4. When an alternative changes the construct
 
-### 3. Strategic Networks (The "How" — Action & Expression)
-* **Neurological Substrate**: Prefrontal cortex, motor cortex, frontal eye fields.
-* **Instructional Goal**: Develop **Strategic & Goal-Directed** learners.
-* **Core Levers**:
-  * *Access*: Vary physical response options (speech-to-text, keyboard navigation).
-  * *Build*: Use multiple media for communication (video, written essays, diagrammatic flowcharts, oral presentations).
-  * *Internalize*: Scaffold executive functions (goal-setting templates, milestone checklists, self-monitoring prompts).
+If an assessment targets decoding written words, supplying a spoken answer may bypass the skill being assessed. If it targets reasoning about a passage's argument, a suitable accessible presentation may preserve the reasoning goal. Specify the construct and conditions before deciding equivalence; obtain appropriate subject/access review when uncertain.
 
----
+Likewise, a calculator may be appropriate for comparing rates when interpretation is the goal, while an assessment of unaided arithmetic needs a different condition. Never remove unrelated accommodations merely because the assessment is described as independent.
 
-## 3. Fully Worked Lesson Redesign: Photosynthesis & Energy Conversion
+## 5. Non-examples and diagnostic follow-up
 
-### Traditional Lesson (High Barriers, Rigid Media)
-* **Task**: Read textbook pages 140–155 silently. Answer review questions 1–10 in handwriting in a notebook by Friday.
-* **Barriers Identified**:
-  * *Dyslexic Learner*: Overwhelmed by decoding dense print; working memory exhausted before comprehension begins.
-  * *ADHD Learner*: Loses focus during 40 minutes of silent reading; fails to organize handwriting on the page.
-  * *English Language Learner (ELL)*: Trapped by specialized terminology (*chlorophyll, thylakoid, stroma*) with no visual anchors.
+| Non-example | What remains uncertain or wrong | Better check |
+| --- | --- | --- |
+| Offering three inaccessible formats | The number of formats does not establish access | Test each required task and tool interaction |
+| Assigning audio to every learner with the same diagnosis | The learner's actual preferences and access requirements are unknown | Ask and test a suitable route |
+| Replacing reasoning with decorative coloring | The intended skill has changed | Restore aligned evidence of the stated outcome |
+| Treating individual support as a failure of universal design | A broadly flexible design may still leave individual barriers | Preserve needed support and investigate the barrier |
+| Declaring a diagram accessible because it has an image label | Required relationships may remain unavailable | Inspect the text alternative against the instructional purpose |
 
-### UDL 3.0 Transformed Unit Architecture
+These are design checks, not judgments about a learner's ability.
 
-| UDL Pillar | Concrete Inclusive Scaffolding Built Into Baseline |
-| :--- | :--- |
-| **Representation (The What)** | • Text provided digitally with bionic-reading font options, screen-reader audio sync, and adjustable speed.<br>• Every technical term is hyperlinked to a 5-second micro-animation showing the molecular structure.<br>• Dual-coded diagram with labeled arrows provided alongside all text descriptions. |
-| **Action & Expression (The How)** | • Students choose their demonstration of mastery: (A) Written analytical lab report, (B) A narrated video walkthrough of a biological simulation, or (C) An annotated physical concept map.<br>• All options are evaluated using the **identical conceptual science rubric**.<br>• Digital assignment includes a collapsible executive-function checklist with progress checkboxes. |
-| **Engagement (The Why)** | • The unit opens with an authentic socio-scientific dilemma: *"How can agricultural scientists engineer crops to survive in drought-stricken regions?"*<br>• Choice of working solo in a quiet study pod or collaborating in an inquiry triad. |
+## 6. Hinge question
 
----
+The goal is to explain a causal relationship, not to demonstrate handwriting or visual acuity. Which plan best preserves that goal while addressing access?
 
-## 4. Non-Example: The "Lowering the Bar" Fallacy
+A. Require one format and classify anyone who cannot use it as unready. B. Remove the explanation goal for anyone requesting support. C. Provide tested accessible input and suitable response options, assessed against the explanation criteria. D. Withdraw existing accommodations because the course now includes several formats.
 
-**Anti-Pattern**:
-A teacher believes that applying UDL means making the curriculum easier. In a chemistry class, when neurodivergent students struggle with stoichiometry calculations, the teacher exempts them from math and asks them to color a picture of an atom instead.
+**Key: C.** A conflates access with subject readiness; inspect the barrier. B changes the learning goal without justification; look for equivalent evidence. D assumes general options meet every individual need; check actual use and retain needed accommodations. Probe the reasoning behind a response before interpreting it.
 
-*Why this is pseudopedagogy*:
-* **UDL does NOT lower academic standards; it eliminates unnecessary friction to the standard.**
-* The goal is *Firm Goals, Flexible Means*: the conceptual chemistry goal (understanding molar ratios) remains rigorous, but the access modality (calculators, formula cue sheets, digital manipulatives) is flexible.
-* Lowering expectations robs disabled and neurodivergent students of genuine academic achievement.
+## 7. Guided and independent practice
 
----
+**Guided practice:** Take the rate example and describe one barrier, one alternative and the evidence needed to show that the alternative preserves the goal.
 
-## 5. Formative Hinge Question & Diagnostic Map
+**Independent practice:** Audit one actual course task from intake through feedback. Record tool, language and response requirements, requested accommodations, remaining issues and which checks you performed.
 
-### The Hinge Diagnostic Item
-A school's instructional coach is evaluating whether a lesson plan adheres to CAST UDL 3.0 principles. Which scenario represents a genuine application of Universal Design for Learning?
+**Transfer:** Repeat the audit for a task where the response mode is part of the target skill, such as an oral-language performance or a particular practical action. Explain why the same alternative may no longer be equivalent.
 
-* **A)** Creating a single, standardized, mandatory PowerPoint lecture, but assigning a special-education paraprofessional to sit next to struggling students to re-explain the slides quietly.
-* **B)** Letting students skip the final exam entirely if they have an ADHD or Dyslexia diagnosis on file.
-* **C)** Providing all students with a choice between reading a primary text, listening to a professional podcast audio recording, or watching an annotated video transcript, followed by a common analytical evaluation.
-* **D)** Grading students on a curve so that the lowest-performing students automatically receive passing grades.
+## 8. Implementation and review
 
----
+Before authoring, define outcomes and gather known access requirements. During preparation, use meaningful headings, clear instructions, suitable labels and alternatives for essential information. Test relevant keyboard, reading and response routes when tools are available; record any untested route as pending. During delivery, invite feedback and adjust. Afterward, review participation and assessment evidence without treating access difficulties as automatic content deficits.
 
-### Diagnostic Distractor Analysis & Routing
-
-| Option | Diagnosis | Underlying Inclusion Error | Immediate Remediation Route |
-| :--- | :--- | :--- | :--- |
-| **Option A** | **Misconception**: Retrofitted Crutch Model | Relies on expensive human band-aids to patch an inflexible, inaccessible baseline design. | Revisit Section 1 on the Curb-Cut Principle. |
-| **Option B** | **Misconception**: Lowered Expectations Fallacy | Eliminates the standard rather than providing flexible pathways to meet the standard. | Revisit Section 4: Firm Goals, Flexible Means. |
-| **Option C** | **TARGET (Correct)** | Built-in multiple means of representation accessible to all learners without stigma. | **Proceed to Implementation Matrix**. |
-| **Option D** | **Misconception**: Superficial Equity Illusion | Alters the grade without building genuine cognitive capability or removing learning barriers. | Review Section 2: Building Expert Learners. |
-
----
-
-## 6. UDL 3.0 Implementation Matrix: Access, Build, Internalize
-
-```
-LEVEL           ENGAGEMENT (Why)            REPRESENTATION (What)          ACTION & EXPRESSION (How)
-─────────────────────────────────────────────────────────────────────────────────────────────────
-INTERNALIZE     Promote self-regulation &   Guide information processing   Support planning & strategy
-                metacognitive reflection    & schema visualization         development (Executive Fx)
-
-BUILD           Sustain effort, grit, &     Clarify vocabulary, symbols,   Facilitate fluent communication
-                collaborative peer culture  & mathematical syntax          across multiple media tools
-
-ACCESS          Optimize individual choice  Offer customizable displays    Provide multi-modal physical
-                & psychological safety      (audio, visual, tactile)       response options
-```
-
----
-
-## 7. Empirical Evidence & Meta-Analytic Parameters
-
-| Source | Scope / Study Type | Finding | Effect Size |
-| :--- | :--- | :--- | :--- |
-| **Ok et al. (2017)** | Systematic review of UDL interventions across K–12 | UDL interventions produced significant positive academic gains for both students with learning disabilities and general education peers. | $g = 0.44 - 0.58$ |
-| **Capp (2017)** | Meta-analysis of UDL implementations | UDL-based curriculum design significantly increased classroom participation and academic achievement across mixed-ability classrooms. | $d = 0.51$ |
-| **CAST Longitudinal Field Research (2024)** | Classroom implementations in urban public school districts | Fostering learner autonomy and multi-modal representation reduced dropout rates and behavioral referrals by $> 30\%$. | High Institutional Impact |
+The [alignment source](../../60-evidence/sources/evidence-cmu-course-alignment.md) supports checking the relationship between goals, preparation and evidence. CAST supplies a framework; the local choices and examples remain authored. The earlier unlocated numerical effects and dropout claim are not retained. This document does not replace specialist review, applicable accommodation arrangements or testing of actual materials.

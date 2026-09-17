@@ -1,6 +1,13 @@
-version: "1.0.0"
+version: "2.0.0"
 name: "Agent Teacher Pedagogical Ontology"
-description: "Core ontology defining the 5D hyper-matrix: Stage × Axis × Capability × Evidence × Context"
+description: "Stage, axis, capability, evidence and context are independent. Stage is not prior knowledge or AI assistance."
+
+namespaces:
+  stage: "S0-S7: educational setting or role, using the stages below."
+  assistance: "AL0-AL7: AI assistance; never store these in stage."
+  proficiency: "Domain-specific prior knowledge, assessed separately; an adult can be a novice."
+  capability: "CAP-01-CAP-06: educator capabilities."
+  legacy_policy: "Legacy metadata remains unreviewed; an alias changes resolution, not trust."
 
 dimensions:
   stages:
@@ -93,14 +100,18 @@ dimensions:
 
   evidence_levels:
     - grade: "A"
-      label: "Meta-analysis / Rigorous Systematic Reviews (EEF, WWC, Cochrane)"
+      label: "Appraised synthesis of rigorous replicated studies; quality is independent of effect magnitude or direction"
     - grade: "B"
-      label: "Multiple peer-reviewed RCTs / Quasi-experimental with strong controls"
+      label: "Appraised experimental or quasi-experimental evidence with credible controls"
     - grade: "C"
-      label: "Single study / Correlational / Promising emerging evidence"
+      label: "Preliminary, observational, correlational or context-limited empirical evidence"
     - grade: "D"
       label: "Expert consensus & Institutional frameworks (APA, OECD, UNESCO, Advance HE)"
     - grade: "E"
       label: "Classic Canon / Theory / Philosophical tradition (Piaget, Vygotsky, Dewey)"
     - grade: "U"
-      label: "Unverified / Contested / Disproven Neuro-myth (e.g., Learning Styles VAK)"
+      label: "Unappraised or insufficiently documented evidence; not a verdict that a claim is false"
+
+claim_statuses: ["unreviewed", "supported", "mixed", "not-supported", "refuted", "not-applicable"]
+review_statuses: ["unreviewed", "source-checked", "reviewed"]
+provenance_kinds: ["unreviewed", "literature", "authored", "simulation", "observed"]

@@ -1,0 +1,1229 @@
+{
+  "host": "jangtrinhs-MacBook-Pro-2.local",
+  "root": "/Users/jang/Products/Agent Teacher",
+  "baseline": "e4b14823c4532e121a1a889a5366beea53bc28a5",
+  "checks": [
+    {
+      "argv": [
+        "/Users/jang/Products/Agent Teacher/.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 15.319,
+      "stdout": "",
+      "stderr": "test_alias_cannot_shadow_another_canonical_id (test_knowledge_registry.KnowledgeRegistryTests.test_alias_cannot_shadow_another_canonical_id) ... ok\ntest_estimate_requires_typed_source_and_specific_comparison (test_knowledge_registry.KnowledgeRegistryTests.test_estimate_requires_typed_source_and_specific_comparison) ... ok\ntest_frontmatter_preserves_body_and_rejects_duplicate_keys (test_knowledge_registry.KnowledgeRegistryTests.test_frontmatter_preserves_body_and_rejects_duplicate_keys) ... ok\ntest_generated_effect_claim_requires_estimate_link (test_knowledge_registry.KnowledgeRegistryTests.test_generated_effect_claim_requires_estimate_link) ... ok\ntest_generated_requires_v2_and_separate_assistance_namespace (test_knowledge_registry.KnowledgeRegistryTests.test_generated_requires_v2_and_separate_assistance_namespace) ... ok\ntest_legacy_grade_and_validated_flag_do_not_become_review (test_knowledge_registry.KnowledgeRegistryTests.test_legacy_grade_and_validated_flag_do_not_become_review) ... ok\ntest_missing_id_duplicate_id_and_bad_alias_are_errors (test_knowledge_registry.KnowledgeRegistryTests.test_missing_id_duplicate_id_and_bad_alias_are_errors) ... ok\ntest_path_escape_and_unsupported_schema_cannot_pass (test_knowledge_registry.KnowledgeRegistryTests.test_path_escape_and_unsupported_schema_cannot_pass) ... ok\ntest_review_and_observation_require_provenance (test_knowledge_registry.KnowledgeRegistryTests.test_review_and_observation_require_provenance) ... ok\ntest_unrelated_legacy_errors_remain_in_full_registry (test_knowledge_registry.KnowledgeRegistryTests.test_unrelated_legacy_errors_remain_in_full_registry) ... ok\ntest_unresolved_id_is_not_resolved_by_filename (test_knowledge_registry.KnowledgeRegistryTests.test_unresolved_id_is_not_resolved_by_filename) ... ok\ntest_valid_candidate_does_not_write_to_the_corpus (test_knowledge_registry.KnowledgeRegistryTests.test_valid_candidate_does_not_write_to_the_corpus) ... ok\ntest_corrupt_database_is_preserved_and_reported_without_traceback (test_process_startup.StartupBoundaryTests.test_corrupt_database_is_preserved_and_reported_without_traceback) ... ok\ntest_partial_stdout_cannot_extend_the_original_startup_deadline (test_process_startup.StartupBoundaryTests.test_partial_stdout_cannot_extend_the_original_startup_deadline) ... ok\ntest_fenced_examples_and_body_ids_are_not_parsed_as_links_or_metadata (test_provider_and_links.LinkTests.test_fenced_examples_and_body_ids_are_not_parsed_as_links_or_metadata) ... ok\ntest_machine_paths_in_instructions_remain_visible_portability_warnings (test_provider_and_links.LinkTests.test_machine_paths_in_instructions_remain_visible_portability_warnings) ... ok\ntest_machine_specific_link_targets_still_fail_link_audit (test_provider_and_links.LinkTests.test_machine_specific_link_targets_still_fail_link_audit) ... ok\ntest_missing_root_and_bad_frontmatter_fail_closed (test_provider_and_links.LinkTests.test_missing_root_and_bad_frontmatter_fail_closed) ... ok\ntest_reference_html_and_anchor_targets_are_checked (test_provider_and_links.LinkTests.test_reference_html_and_anchor_targets_are_checked) ... ok\ntest_unsupported_schemes_are_reported_in_links_and_references (test_provider_and_links.LinkTests.test_unsupported_schemes_are_reported_in_links_and_references) ... ok\ntest_valid_alias_paths_and_encoded_targets (test_provider_and_links.LinkTests.test_valid_alias_paths_and_encoded_targets) ... ok\ntest_invalid_limits_and_explicit_routes (test_provider_and_links.ProviderTests.test_invalid_limits_and_explicit_routes) ... ok\ntest_large_streams_are_drained_and_limit_enforced (test_provider_and_links.ProviderTests.test_large_streams_are_drained_and_limit_enforced) ... ok\ntest_nonzero_utf8_and_timeout_fail_without_partial_output (test_provider_and_links.ProviderTests.test_nonzero_utf8_and_timeout_fail_without_partial_output) ... ok\ntest_stdin_stdout_and_stderr_are_separate (test_provider_and_links.ProviderTests.test_stdin_stdout_and_stderr_are_separate) ... ok\ntest_cli_rejects_fifo_input_without_waiting_for_a_writer (test_publication.PublicationTests.test_cli_rejects_fifo_input_without_waiting_for_a_writer) ... ok\ntest_cli_rejects_linked_input_before_preparing_a_draft (test_publication.PublicationTests.test_cli_rejects_linked_input_before_preparing_a_draft) ... ok\ntest_instructional_gate_rejects_audit_counterexamples (test_publication.PublicationTests.test_instructional_gate_rejects_audit_counterexamples) ... ok\ntest_invalid_manifest_json_is_not_accepted (test_publication.PublicationTests.test_invalid_manifest_json_is_not_accepted) ... ok\ntest_prepare_preserves_corpus_and_apply_changes_only_two_files (test_publication.PublicationTests.test_prepare_preserves_corpus_and_apply_changes_only_two_files) ... ok\ntest_real_cli_import_then_apply (test_publication.PublicationTests.test_real_cli_import_then_apply) ... ok\ntest_repeat_and_existing_target_preserve_user_content (test_publication.PublicationTests.test_repeat_and_existing_target_preserve_user_content) ... ok\ntest_replace_failure_rolls_back_module_and_preserves_moc (test_publication.PublicationTests.test_replace_failure_rolls_back_module_and_preserves_moc) ... ok\ntest_route_scope_and_metadata_mismatch_rejected (test_publication.PublicationTests.test_route_scope_and_metadata_mismatch_rejected) ... ok\ntest_similar_moc_link_does_not_suppress_new_entry (test_publication.PublicationTests.test_similar_moc_link_does_not_suppress_new_entry) ... ok\ntest_stale_moc_rejected (test_publication.PublicationTests.test_stale_moc_rejected) ... ok\ntest_symlink_and_hardlink_draft_files_rejected (test_publication.PublicationTests.test_symlink_and_hardlink_draft_files_rejected) ... ok\ntest_symlink_draft_folder_and_hardlinked_lock_rejected (test_publication.PublicationTests.test_symlink_draft_folder_and_hardlinked_lock_rejected) ... ok\ntest_tampering_and_rehashed_navigation_injection_rejected (test_publication.PublicationTests.test_tampering_and_rehashed_navigation_injection_rejected) ... ok\ntest_two_concurrent_applies_do_not_overwrite_each_other (test_publication.PublicationTests.test_two_concurrent_applies_do_not_overwrite_each_other) ... ok\ntest_catchable_navigation_failure_rolls_back_owned_module (test_publication_recovery.PublicationRecoveryTests.test_catchable_navigation_failure_rolls_back_owned_module) ... ok\ntest_changed_draft_blocks_recovery (test_publication_recovery.PublicationRecoveryTests.test_changed_draft_blocks_recovery) ... ok\ntest_edited_module_is_preserved (test_publication_recovery.PublicationRecoveryTests.test_edited_module_is_preserved) ... ok\ntest_edited_navigation_is_preserved (test_publication_recovery.PublicationRecoveryTests.test_edited_navigation_is_preserved) ... ok\ntest_pending_transaction_blocks_another_publication (test_publication_recovery.PublicationRecoveryTests.test_pending_transaction_blocks_another_publication) ... ok\ntest_recovery_can_be_interrupted_and_restarted (test_publication_recovery.PublicationRecoveryTests.test_recovery_can_be_interrupted_and_restarted) ... ok\ntest_restart_after_module_creation (test_publication_recovery.PublicationRecoveryTests.test_restart_after_module_creation) ... ok\ntest_restart_after_navigation_replacement (test_publication_recovery.PublicationRecoveryTests.test_restart_after_navigation_replacement) ... ok\ntest_restart_before_module_creation (test_publication_recovery.PublicationRecoveryTests.test_restart_before_module_creation) ... ok\ntest_restart_before_navigation_replacement (test_publication_recovery.PublicationRecoveryTests.test_restart_before_navigation_replacement) ... ok\ntest_same_content_replacement_does_not_inherit_ownership (test_publication_recovery.PublicationRecoveryTests.test_same_content_replacement_does_not_inherit_ownership) ... ok\ntest_concurrent_writes_only_one_wins (test_rehearsal.RehearsalTests.test_concurrent_writes_only_one_wins) ... ok\ntest_create_and_event_retry_are_idempotent (test_rehearsal.RehearsalTests.test_create_and_event_retry_are_idempotent) ... ok\ntest_empty_reflection_rejected_and_completion_cannot_advance (test_rehearsal.RehearsalTests.test_empty_reflection_rejected_and_completion_cannot_advance) ... ok\ntest_every_instructional_strategy_has_explicit_responses (test_rehearsal.RehearsalTests.test_every_instructional_strategy_has_explicit_responses) ... ok\ntest_invalid_create_and_request_ids_are_rejected (test_rehearsal.RehearsalTests.test_invalid_create_and_request_ids_are_rejected) ... ok\ntest_pack_change_preserves_read_export_but_blocks_write_replay (test_rehearsal.RehearsalTests.test_pack_change_preserves_read_export_but_blocks_write_replay) ... ok\ntest_stale_revision_and_invalid_transition_do_not_mutate (test_rehearsal.RehearsalTests.test_stale_revision_and_invalid_transition_do_not_mutate) ... ok\ntest_symlink_database_is_rejected (test_rehearsal.RehearsalTests.test_symlink_database_is_rejected) ... ok\ntest_three_cases_complete_restart_and_replay (test_rehearsal.RehearsalTests.test_three_cases_complete_restart_and_replay) ... ok\ntest_transfer_key_and_coaching_not_available_before_submission (test_rehearsal.RehearsalTests.test_transfer_key_and_coaching_not_available_before_submission) ... ok\ntest_unicode_free_text_retained_without_semantic_score (test_rehearsal.RehearsalTests.test_unicode_free_text_retained_without_semantic_score) ... ok\ntest_unknown_database_and_hardlink_are_preserved (test_rehearsal.RehearsalTests.test_unknown_database_and_hardlink_are_preserved) ... ok\ntest_all_transitions_reload_replay_and_exports (test_rehearsal_http.RehearsalHttpTests.test_all_transitions_reload_replay_and_exports) ... ok\ntest_host_and_origin_boundaries (test_rehearsal_http.RehearsalHttpTests.test_host_and_origin_boundaries) ... ok\ntest_http_conflict_preserves_latest_state (test_rehearsal_http.RehearsalHttpTests.test_http_conflict_preserves_latest_state) ... ok\ntest_invalid_json_duplicate_keys_and_nonfinite_numbers (test_rehearsal_http.RehearsalHttpTests.test_invalid_json_duplicate_keys_and_nonfinite_numbers) ... ok\ntest_private_pack_keys_and_source_files_are_not_served (test_rehearsal_http.RehearsalHttpTests.test_private_pack_keys_and_source_files_are_not_served) ... ok\ntest_serves_actual_ui_and_declares_authored_mode (test_rehearsal_http.RehearsalHttpTests.test_serves_actual_ui_and_declares_authored_mode) ... ok\ntest_restart_preserves_committed_session_and_idempotency (test_rehearsal_process.RehearsalProcessTests.test_restart_preserves_committed_session_and_idempotency) ... ok\n\n----------------------------------------------------------------------\nRan 70 tests in 15.166s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "/Users/jang/Products/Agent Teacher/.venv/bin/python",
+        "-B",
+        "tools/knowledge_registry.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.117,
+      "stdout": "{\"edges\": 326, \"errors\": 0, \"records\": 86, \"unresolved_edges\": 0, \"unreviewed_records\": 83, \"warnings\": 69}\nWARNING: 00-navigation/MOC-Assessment.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 00-navigation/MOC-Classroom-Practice.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 00-navigation/MOC-Instructional-Design.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 00-navigation/MOC-Learning-Science.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 00-navigation/MOC-Master.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 10-foundations/cognitive-neuroscience/neurobiology-of-learning.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 10-foundations/cognitive-neuroscience/neuromyths-debunked.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 10-foundations/developmental-psych/executive-functions.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 10-foundations/developmental-psych/self-determination-theory.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 10-foundations/learning-science/cognitive-load-theory.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 10-foundations/learning-science/dual-coding-theory-multimedia-learning.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 10-foundations/learning-science/interleaving-practice.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 10-foundations/learning-science/spaced-practice-retrieval.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 10-foundations/motivation/achievement-motivation-and-agency.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 10-foundations/philosophy-ethics/epistemic-ethics-and-critical-pedagogy.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 20-stages/s0-prenatal-caregiver/prenatal-neurodevelopment.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 20-stages/s1-early-childhood/play-and-executive-function.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 20-stages/s2-primary/explicit-instruction-fln.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 20-stages/s3-secondary/scaffolded-inquiry-visible-thinking.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 20-stages/s4-tertiary/constructive-alignment-productive-failure.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 20-stages/s5-postgraduate-doctoral/doctoral-supervision-socratic.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 20-stages/s6-lifelong-adult/andragogy-experiential-learning.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 20-stages/s7-master-pedagogy/sotl-and-instructional-coaching.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/assessment-psychometrics/formative-hinge-questions.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/curriculum-design/backward-design-ubd.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/edtech-ai/ai-epistemic-partner.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/edtech-ai/cognitive-offloading-and-atrophy.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/edtech-ai/process-based-assessment-viva.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/edtech-ai/synthetic-learners.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/inclusion-udl/cast-udl-3-framework.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/instructional-methods/direct-instruction-engelmann.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/instructional-methods/problem-based-learning-7jumps.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/instructional-methods/productive-failure-kapur.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 30-pedagogy/instructional-methods/rosenshine-10-principles.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 40-disciplines/arts-professional/clinical-reasoning-and-deliberate-practice.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 40-disciplines/humanities-social/historical-thinking-inquiry.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 40-disciplines/language-literacy/science-of-reading-scarborough-rope.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 40-disciplines/stem-math-science/singapore-math-bar-modeling.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 40-disciplines/stem-math-science/stem-disciplinary-pedagogy.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/case-ai-oral-defense-viva-undergrad.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/case-ai-synthetic-student-rehearsal.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/case-eric-mazur-harvard-peer-instruction.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/case-grade-7-algebra-worked-examples.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/case-highschool-biology-retrieval-spacing.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/case-kmofap-formative-assessment-wiliam.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/case-mcmaster-maastricht-pbl-medical.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/case-perry-preschool-highscope-longitudinal.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/case-project-follow-through-direct-instruction.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/case-university-physics-productive-failure.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/cases/fraction-misconception-clinical-case.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/interventions/wait-time-questioning-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/interventions/worked-example-fading-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/lesson-patterns/5e-instructional-model.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/lesson-patterns/explicit-instruction-i-we-you.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 50-practice-library/misconceptions/catalog-stem-and-humanities-misconceptions.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 60-evidence/claims/retrieval-practice-evidence.yaml: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 60-evidence/sources/evidence-agarwal-2021-retrieval.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 60-evidence/sources/evidence-barbieri-2023-worked-examples.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 60-evidence/sources/evidence-mawson-2025-spacing.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 60-evidence/sources/evidence-wisniewski-2020-feedback.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 70-capabilities/coach-mentor/instructional-coaching-observation-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 70-capabilities/design/instructional-system-design-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 70-capabilities/diagnose/learner-diagnostics-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 70-capabilities/teach/socratic-and-explicit-facilitation-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 80-professor-development/doctoral-supervision/dissertation-defense-guide.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 80-professor-development/faculty-dev/peer-observation-and-mentorship.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 80-professor-development/instructional-coaching/video-assisted-instructional-coaching.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 80-professor-development/sotl-scholarship/scholarship-of-teaching-and-learning.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\nWARNING: 90-agent-runtime/evals/adaptive-oral-defense-viva.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/jang/Products/Agent Teacher/.venv/bin/python",
+        "-B",
+        "tools/verify_links.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.38,
+      "stdout": "{\n  \"files\": 100,\n  \"errors\": [],\n  \"structural_errors\": [],\n  \"portability_warnings\": [\n    \"docs/local-workspace.md:10: machine-specific path\",\n    \"docs/local-workspace.md:3: machine-specific path\",\n    \"plans/20260916-reaudit-implementation/plan.md:3: machine-specific path\"\n  ],\n  \"scope\": \"Local Markdown files and anchors; external HTTP links are not fetched.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.017,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/node",
+        "--check",
+        "rehearsal/static/app.js"
+      ],
+      "exit_code": 0,
+      "seconds": 0.046,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/node",
+        "--check",
+        "rehearsal/static/views.js"
+      ],
+      "exit_code": 0,
+      "seconds": 0.047,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "source_inventory": {
+    ".gitignore": {
+      "sha256": "e268704fde568750e7efe95c3eb46ccf6dd36f8d9279d3fa843be765a9b89d0d",
+      "bytes": 154,
+      "mode": "0o644"
+    },
+    "00-navigation/MOC-Assessment.md": {
+      "sha256": "0cfe9942134012c0e8231118afd664eb3752e7cb630c49a7c10e7851adbefe69",
+      "bytes": 3142,
+      "mode": "0o644"
+    },
+    "00-navigation/MOC-Classroom-Practice.md": {
+      "sha256": "d31738d8212621e6b6d5fb7576dbb19a0506fe82d2b1c6efa4013c51b8593b6f",
+      "bytes": 3325,
+      "mode": "0o644"
+    },
+    "00-navigation/MOC-Instructional-Design.md": {
+      "sha256": "79b13afdef35fb106957c71998a3941dffbd76c4851e248fc2798e58daeee3c6",
+      "bytes": 5074,
+      "mode": "0o644"
+    },
+    "00-navigation/MOC-Learning-Science.md": {
+      "sha256": "e0b253aec272ba6485b3ddb6dcfcb7c39583119c83bd30ba347002f69c80a9cf",
+      "bytes": 4449,
+      "mode": "0o644"
+    },
+    "00-navigation/MOC-Master.md": {
+      "sha256": "85d8dd4e54de794bc4eb6945c1ae7577e9d4d6383e6b7116fab591b5d522f8e8",
+      "bytes": 6413,
+      "mode": "0o644"
+    },
+    "00-system/epistemic-policy.md": {
+      "sha256": "95a637e949563ff124d6f7629285f05b16a9d5682d08eaac29c16b4e6b891633",
+      "bytes": 4874,
+      "mode": "0o644"
+    },
+    "00-system/identifier-aliases.yaml": {
+      "sha256": "ed611fa3cdafc852c9da28ab09e57c054ff6c960d93cc4a84275d1a1dd8b11fa",
+      "bytes": 2054,
+      "mode": "0o644"
+    },
+    "00-system/metadata-schema.yaml": {
+      "sha256": "81363ff0756144786cf859b1f4797c1bfb16842c3caee8a5b9f81e68362a7a0b",
+      "bytes": 3759,
+      "mode": "0o644"
+    },
+    "00-system/ontology.yaml": {
+      "sha256": "1e8adfe35532b54305b34acb67a11f5410e7500b6fd908e29aa5653d98e344cf",
+      "bytes": 6161,
+      "mode": "0o644"
+    },
+    "00-system/pedagogical-authoring-spec.md": {
+      "sha256": "f7f07df878a9598f42d7c84593860a5452c0aada8f1f53878eb5eee4677675e5",
+      "bytes": 8342,
+      "mode": "0o644"
+    },
+    "10-foundations/cognitive-neuroscience/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "10-foundations/cognitive-neuroscience/neurobiology-of-learning.md": {
+      "sha256": "25ac5340ca8eb093b55c089b190864e22bc8bc6aecae7ca87db2cc29a7f3dcb0",
+      "bytes": 13893,
+      "mode": "0o644"
+    },
+    "10-foundations/cognitive-neuroscience/neuromyths-debunked.md": {
+      "sha256": "28b6b5fe956abdd64c755e98fd563ac371b029894e39e97e07d53f3b9b7aa3bf",
+      "bytes": 13731,
+      "mode": "0o644"
+    },
+    "10-foundations/developmental-psych/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "10-foundations/developmental-psych/executive-functions.md": {
+      "sha256": "3895c1ad3be0f20d6267e2f3e1a1815c6b9007cbc5a8d8964640e1f6764fb1a7",
+      "bytes": 16108,
+      "mode": "0o644"
+    },
+    "10-foundations/developmental-psych/self-determination-theory.md": {
+      "sha256": "585e50021f2c9483ba4078b3ab6a07845b0f716a381ca8abd3756668b86389d1",
+      "bytes": 14779,
+      "mode": "0o644"
+    },
+    "10-foundations/developmental-psych/self-regulation.md": {
+      "sha256": "a332cd18692f80603e74d28b523d22bd0c07cea2eaa7562a2e4e3b2fb35fe519",
+      "bytes": 3349,
+      "mode": "0o644"
+    },
+    "10-foundations/learning-science/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "10-foundations/learning-science/cognitive-load-theory.md": {
+      "sha256": "3fb8243b42de71f375bd205764efa70a49efb1064a7ae5b69e18e87feecba581",
+      "bytes": 16104,
+      "mode": "0o644"
+    },
+    "10-foundations/learning-science/dual-coding-theory-multimedia-learning.md": {
+      "sha256": "90364fbb1a22e47e125175a2c92cfbee0ff78e99ab1ffa9add5b6384cfe610ce",
+      "bytes": 54589,
+      "mode": "0o644"
+    },
+    "10-foundations/learning-science/interleaving-practice.md": {
+      "sha256": "1cc6da6efcb95f7d4c315c4456dc97bef1efc3a92095208b3d9b996b498ec69b",
+      "bytes": 12496,
+      "mode": "0o644"
+    },
+    "10-foundations/learning-science/spaced-practice-retrieval.md": {
+      "sha256": "f40ca15c18734c42aff848ba556445757fb17268e2b631f2440978f9dd710d29",
+      "bytes": 12136,
+      "mode": "0o644"
+    },
+    "10-foundations/learning-science/working-memory.md": {
+      "sha256": "f51f5390beae9485297aaa01443a24910142a33eb9dfad0ddf822c1864ad4aba",
+      "bytes": 3402,
+      "mode": "0o644"
+    },
+    "10-foundations/motivation/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "10-foundations/motivation/achievement-motivation-and-agency.md": {
+      "sha256": "0802687cd950d751b7104af5f83cdbad84618c0dbbef83de32c1d38fc583ae40",
+      "bytes": 14110,
+      "mode": "0o644"
+    },
+    "10-foundations/philosophy-ethics/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "10-foundations/philosophy-ethics/epistemic-ethics-and-critical-pedagogy.md": {
+      "sha256": "fad31c476ae88618111dabc56c3834277d5a8f83debfa30dcc1f10f5b19c46f0",
+      "bytes": 13736,
+      "mode": "0o644"
+    },
+    "20-stages/s0-prenatal-caregiver/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "20-stages/s0-prenatal-caregiver/prenatal-neurodevelopment.md": {
+      "sha256": "3215e6583721c5f0f814ea0a2e14a1403994abbb8ee52234f5e052828ca621f5",
+      "bytes": 13450,
+      "mode": "0o644"
+    },
+    "20-stages/s1-early-childhood/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "20-stages/s1-early-childhood/play-and-executive-function.md": {
+      "sha256": "1675ea104251995eab66c35ce78e3d9b73eaae4d12f16128fe55e9f4cd423e3f",
+      "bytes": 14031,
+      "mode": "0o644"
+    },
+    "20-stages/s2-primary/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "20-stages/s2-primary/explicit-instruction-fln.md": {
+      "sha256": "d4f39ebbd74643d982d638c5abc33bbb444faadac679e0df338ffbd13090bb51",
+      "bytes": 10220,
+      "mode": "0o644"
+    },
+    "20-stages/s3-secondary/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "20-stages/s3-secondary/scaffolded-inquiry-visible-thinking.md": {
+      "sha256": "424b8a86f357fc15280645b179bb851c846b6a5d03e5c8d1b84b9c8361471ca1",
+      "bytes": 12657,
+      "mode": "0o644"
+    },
+    "20-stages/s4-tertiary/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "20-stages/s4-tertiary/constructive-alignment-productive-failure.md": {
+      "sha256": "a9298c1bf7be4ed2758a2f472b056e4bf5e63db0df4825ab1c4eafa1603e9ca7",
+      "bytes": 13588,
+      "mode": "0o644"
+    },
+    "20-stages/s5-postgraduate-doctoral/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "20-stages/s5-postgraduate-doctoral/doctoral-supervision-socratic.md": {
+      "sha256": "c2036b240e56cbd4d2dfca775951d488999c93a54ee81d60e1dcd5d1a8ddfa78",
+      "bytes": 12741,
+      "mode": "0o644"
+    },
+    "20-stages/s6-lifelong-adult/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "20-stages/s6-lifelong-adult/andragogy-experiential-learning.md": {
+      "sha256": "6f76233012f8b9dd904d3b9c5f42047751eb774b2ee699e93b1a2d5652a980d1",
+      "bytes": 12867,
+      "mode": "0o644"
+    },
+    "20-stages/s7-master-pedagogy/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "20-stages/s7-master-pedagogy/sotl-and-instructional-coaching.md": {
+      "sha256": "5cb3b4fc27648fa8c18a8bc95b1beeb77aca4c94b87d2aa00cccddc508a83255",
+      "bytes": 13109,
+      "mode": "0o644"
+    },
+    "30-pedagogy/assessment-psychometrics/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "30-pedagogy/assessment-psychometrics/formative-feedback.md": {
+      "sha256": "730f9d8292cb2d42d807c7b92bb383bc15316994b8d4c5eb9433e6169dd5211b",
+      "bytes": 3244,
+      "mode": "0o644"
+    },
+    "30-pedagogy/assessment-psychometrics/formative-hinge-questions.md": {
+      "sha256": "c0ad279d3441be1d4f9a38c537101ef1e395138aaa9d4f1c7b346aa2ee05dfbc",
+      "bytes": 14150,
+      "mode": "0o644"
+    },
+    "30-pedagogy/curriculum-design/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "30-pedagogy/curriculum-design/backward-design-ubd.md": {
+      "sha256": "2eba9420f428d31eca1113a6eafafb1075a2f2ecb3c2d7110bc1ccbe113c3c23",
+      "bytes": 14229,
+      "mode": "0o644"
+    },
+    "30-pedagogy/edtech-ai/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "30-pedagogy/edtech-ai/ai-assistance-ladder.md": {
+      "sha256": "70970d64d18d44b71b4e5333f3c7f57a374112dc7fce474436e6730ec7917e32",
+      "bytes": 3332,
+      "mode": "0o644"
+    },
+    "30-pedagogy/edtech-ai/ai-epistemic-partner.md": {
+      "sha256": "04721d107bc279c56db7ab466a1c7a0bbfcd735dd73f6edabbe7601ed2f5b71c",
+      "bytes": 13007,
+      "mode": "0o644"
+    },
+    "30-pedagogy/edtech-ai/cognitive-offloading-and-atrophy.md": {
+      "sha256": "3c81e43bbfb2cab73713a4fa3aab8c9ee5345972c7b55fb5e5a5aa76a57eca7d",
+      "bytes": 12205,
+      "mode": "0o644"
+    },
+    "30-pedagogy/edtech-ai/process-based-assessment-viva.md": {
+      "sha256": "9b57b9b0ad7090b43dc8096818c3449a9e7711b51e4c8c65877616323984e044",
+      "bytes": 12400,
+      "mode": "0o644"
+    },
+    "30-pedagogy/edtech-ai/synthetic-learners.md": {
+      "sha256": "1f57d9fef61d2c4d26a76dae9f2f6cb3b9ea29abf641403146720abeea144beb",
+      "bytes": 13069,
+      "mode": "0o644"
+    },
+    "30-pedagogy/inclusion-udl/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "30-pedagogy/inclusion-udl/cast-udl-3-framework.md": {
+      "sha256": "9303d0387cd00f927425f213c3deb8d121aab77be57c5af46a91fee7bb019e22",
+      "bytes": 12635,
+      "mode": "0o644"
+    },
+    "30-pedagogy/instructional-methods/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "30-pedagogy/instructional-methods/autonomy-supportive-teaching.md": {
+      "sha256": "584d5a1e47dbd85adf29435361dcb1eb620fa9f058a7020b56fb0b82be1e5ff6",
+      "bytes": 3454,
+      "mode": "0o644"
+    },
+    "30-pedagogy/instructional-methods/direct-instruction-engelmann.md": {
+      "sha256": "6821fba804d9fda49d7bdd26010afc68977c0dfdecdd2cfe6ffbf478aec75ef5",
+      "bytes": 13164,
+      "mode": "0o644"
+    },
+    "30-pedagogy/instructional-methods/peer-instruction.md": {
+      "sha256": "5a099fef3d532c55bf216d36c20f12e9b4b94288e457e774386f172219cc0657",
+      "bytes": 3257,
+      "mode": "0o644"
+    },
+    "30-pedagogy/instructional-methods/problem-based-learning-7jumps.md": {
+      "sha256": "320307c82a833542c0d4277c6e3dffd97371b3e600142ff6df49e6b0b54c07d9",
+      "bytes": 12769,
+      "mode": "0o644"
+    },
+    "30-pedagogy/instructional-methods/productive-failure-kapur.md": {
+      "sha256": "b0a7ef62a824fd85cfdaf84840a1659659cbb4873b8529d1e462a71fc8e172b0",
+      "bytes": 13071,
+      "mode": "0o644"
+    },
+    "30-pedagogy/instructional-methods/rosenshine-10-principles.md": {
+      "sha256": "303c3f44772717136fd6f81f956f6b93bc0485af23d6ea75fbd83e2312fa8b8f",
+      "bytes": 15988,
+      "mode": "0o644"
+    },
+    "30-pedagogy/instructional-methods/self-regulated-learning.md": {
+      "sha256": "616c883ce7289811fa3947305e5350dfb99628c1abd1bef7862849a537f445fa",
+      "bytes": 3293,
+      "mode": "0o644"
+    },
+    "40-disciplines/arts-professional/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "40-disciplines/arts-professional/clinical-reasoning-and-deliberate-practice.md": {
+      "sha256": "39caef4f348a1b2bcaf421753101d747d8b2f4b6b7644398aafbf0c0fd50fcb4",
+      "bytes": 12602,
+      "mode": "0o644"
+    },
+    "40-disciplines/humanities-social/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "40-disciplines/humanities-social/historical-thinking-inquiry.md": {
+      "sha256": "cf36d8999c99a571a503bddef76f78497393dc7997a1167879fb425bd47e97fe",
+      "bytes": 10910,
+      "mode": "0o644"
+    },
+    "40-disciplines/language-literacy/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "40-disciplines/language-literacy/science-of-reading-scarborough-rope.md": {
+      "sha256": "b5d6fdfaf7ea607a84f45762090b89334bbc94bbc3982c35b3846ca5888cbb4d",
+      "bytes": 13206,
+      "mode": "0o644"
+    },
+    "40-disciplines/stem-math-science/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "40-disciplines/stem-math-science/singapore-math-bar-modeling.md": {
+      "sha256": "5213d2c2eda399c22ca644b1e22909e8e40afb43b889effe0bf8cc06f92c9642",
+      "bytes": 10775,
+      "mode": "0o644"
+    },
+    "40-disciplines/stem-math-science/stem-disciplinary-pedagogy.md": {
+      "sha256": "6a40f81017f39c39e1cfef252bc7111de1b01e2ed62fb35ec76fd870db12bd0e",
+      "bytes": 11549,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/case-ai-oral-defense-viva-undergrad.md": {
+      "sha256": "2688e209eb17ca8084d07d5f244f1fb195e6bcc78a26d2761499cf61eb629c7e",
+      "bytes": 7765,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/case-ai-synthetic-student-rehearsal.md": {
+      "sha256": "1ad53a99b5b301b3bd2240b00f326c4678e721e3199b789d4e1b99eba2c5933a",
+      "bytes": 6742,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/case-eric-mazur-harvard-peer-instruction.md": {
+      "sha256": "2459c01c3756a538d1f58f1a6072688b4b8cdddd192b934696c494632f4df260",
+      "bytes": 10946,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/case-grade-7-algebra-worked-examples.md": {
+      "sha256": "0a2fe326c9a7db1c159ad19d0b4219e37d33724b06cf39a619a89f026c487d22",
+      "bytes": 3521,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/case-highschool-biology-retrieval-spacing.md": {
+      "sha256": "33395c0de6a7947d75b47aaee8030000192bddd0f24d54c2cd78e8dd8e55a513",
+      "bytes": 2658,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/case-kmofap-formative-assessment-wiliam.md": {
+      "sha256": "6d1bb5f6b2778d635b5629b3fa892bd45221b12fabcbc7e1d5b89c1e7a59607f",
+      "bytes": 3144,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/case-mcmaster-maastricht-pbl-medical.md": {
+      "sha256": "faaa012c576354174b313e4d1f5aa05885d38de5f3fd18bde7aac66ad2ace8a6",
+      "bytes": 3182,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/case-perry-preschool-highscope-longitudinal.md": {
+      "sha256": "5a8918122cb32efbc0d85b98fe5451d031b6a7ae7c2a08c9722bfd480b42acb5",
+      "bytes": 2905,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/case-project-follow-through-direct-instruction.md": {
+      "sha256": "a24d776e19e806b363fbb42b1c1453b40c038982d5ea182dfb90bd036f6a3c7b",
+      "bytes": 3585,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/case-university-physics-productive-failure.md": {
+      "sha256": "19813e95c2912c605e75bc1d8dfb1af346bbff8a9003f84f0b0a49d245beabb6",
+      "bytes": 3704,
+      "mode": "0o644"
+    },
+    "50-practice-library/cases/fraction-misconception-clinical-case.md": {
+      "sha256": "6a1309df4dc5de4dfc60dc351e666e97c3ec5c110885ce46a8c751bd9418d274",
+      "bytes": 10981,
+      "mode": "0o644"
+    },
+    "50-practice-library/interventions/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "50-practice-library/interventions/wait-time-questioning-protocol.md": {
+      "sha256": "ff0704438740d017e8fd142ce23f22428b25729df6020d3cdb08f6b0b29535d1",
+      "bytes": 12570,
+      "mode": "0o644"
+    },
+    "50-practice-library/interventions/worked-example-fading-protocol.md": {
+      "sha256": "e5a6acfb382f2991436171b94ed16119111eb8b1e68aa595da56a203f635495f",
+      "bytes": 11014,
+      "mode": "0o644"
+    },
+    "50-practice-library/lesson-patterns/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "50-practice-library/lesson-patterns/5e-instructional-model.md": {
+      "sha256": "fd4b5da080db8cf0cf3850e778e789a8ff0250028421383592cd240889fb9627",
+      "bytes": 8696,
+      "mode": "0o644"
+    },
+    "50-practice-library/lesson-patterns/explicit-instruction-i-we-you.md": {
+      "sha256": "90ad125ec76ef25651ec6ab635b668ece8a319b37efce89b1fc804a02f9923d6",
+      "bytes": 7924,
+      "mode": "0o644"
+    },
+    "50-practice-library/misconceptions/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "50-practice-library/misconceptions/catalog-stem-and-humanities-misconceptions.md": {
+      "sha256": "31ce6da9a611c14f45d1b4a54022c2bbc866c69f80ee2bbaf3c578cc38ccedc3",
+      "bytes": 9331,
+      "mode": "0o644"
+    },
+    "60-evidence/claims/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "60-evidence/claims/ai-guardrails-unassisted-performance.yaml": {
+      "sha256": "267afaabeeb46f52bb31ca74eacfa44b79eaa7231c55fd50f9a9d6f613f57202",
+      "bytes": 847,
+      "mode": "0o644"
+    },
+    "60-evidence/claims/retrieval-practice-evidence.yaml": {
+      "sha256": "d8c41d7d2e95d2f1c359e690b07d77fbb151521064997050c2a28e1c8a006474",
+      "bytes": 1782,
+      "mode": "0o644"
+    },
+    "60-evidence/estimates/bastani-relative-exam-grades.yaml": {
+      "sha256": "e6a596dfad14a6007e99aab582667ed59c7b5e10c523843095e098204264f1bc",
+      "bytes": 1115,
+      "mode": "0o644"
+    },
+    "60-evidence/evidence-maps/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "60-evidence/evidence-maps/pedagogical-evidence-map.md": {
+      "sha256": "2ebee755cceff4dfc40a8c3bd0eaf300041984ebce679348f9e447b91cc11660",
+      "bytes": 3450,
+      "mode": "0o644"
+    },
+    "60-evidence/sources/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "60-evidence/sources/evidence-agarwal-2021-retrieval.md": {
+      "sha256": "d9630f48258316136db4ec4d59383e9494d843d902b392e235bf3224c0836d10",
+      "bytes": 2849,
+      "mode": "0o644"
+    },
+    "60-evidence/sources/evidence-barbieri-2023-worked-examples.md": {
+      "sha256": "fcd29c110a4fbf81733c7dcead269ed3e6a981e3cb378a27f961d147379691cb",
+      "bytes": 2355,
+      "mode": "0o644"
+    },
+    "60-evidence/sources/evidence-bastani-2025-ai-guardrails.md": {
+      "sha256": "8acf475c2d79c6eb8bb59e796470f4013d48c286d650cfcbd8ff6c999dc101a9",
+      "bytes": 1443,
+      "mode": "0o644"
+    },
+    "60-evidence/sources/evidence-mawson-2025-spacing.md": {
+      "sha256": "f27eb5bffa36472d3cae57f0f66ae66ea3476f4df7b68c66bf0d7eccbc38a4e8",
+      "bytes": 1547,
+      "mode": "0o644"
+    },
+    "60-evidence/sources/evidence-wisniewski-2020-feedback.md": {
+      "sha256": "475cae47e13276d25493700e50519796f693a5ce75b7b80374bf5da17df2124e",
+      "bytes": 2425,
+      "mode": "0o644"
+    },
+    "60-evidence/syntheses/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "60-evidence/syntheses/meta-analytic-effect-size-synthesis.md": {
+      "sha256": "5b54d52ec0c48e2419934aaf450d64bfa7f398af8f0a7f93917e215751820324",
+      "bytes": 2886,
+      "mode": "0o644"
+    },
+    "70-capabilities/assess-adapt/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "70-capabilities/assess-adapt/realtime-formative-adaptation-protocol.md": {
+      "sha256": "055a36642eb92b773cdd650c846d460742fed5f0416b11075dd49a17807b9989",
+      "bytes": 4212,
+      "mode": "0o644"
+    },
+    "70-capabilities/coach-mentor/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "70-capabilities/coach-mentor/instructional-coaching-observation-protocol.md": {
+      "sha256": "cb07e0db596aeaa26f9585a5f88988f5f82c084eda9c6a2f73549a8be30b1a2c",
+      "bytes": 5123,
+      "mode": "0o644"
+    },
+    "70-capabilities/design/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "70-capabilities/design/instructional-system-design-protocol.md": {
+      "sha256": "b14e0fe7cf2d870dc18f065ab198d4000308824ea5bffe98ba24a632ec560060",
+      "bytes": 5699,
+      "mode": "0o644"
+    },
+    "70-capabilities/diagnose/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "70-capabilities/diagnose/learner-diagnostics-protocol.md": {
+      "sha256": "4c4d9fe842ce80027eb97f00de3474cb838033a3a3a71270f7983acaa982da67",
+      "bytes": 10173,
+      "mode": "0o644"
+    },
+    "70-capabilities/teach/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "70-capabilities/teach/socratic-and-explicit-facilitation-protocol.md": {
+      "sha256": "6642493ac00b953c9f7961bc71892b2e7609dee608b746b55335c9e5ee1de486",
+      "bytes": 5614,
+      "mode": "0o644"
+    },
+    "80-professor-development/doctoral-supervision/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "80-professor-development/doctoral-supervision/dissertation-defense-guide.md": {
+      "sha256": "cca945d1829963f40fa8baeacc931893d74aa629750362f0a1ac356417e9ea6e",
+      "bytes": 1869,
+      "mode": "0o644"
+    },
+    "80-professor-development/faculty-dev/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "80-professor-development/faculty-dev/peer-observation-and-mentorship.md": {
+      "sha256": "1cafb8f42ab6f0285b7e9dd6a87cf925016cd0b6674680e38393c57a386611fd",
+      "bytes": 6378,
+      "mode": "0o644"
+    },
+    "80-professor-development/instructional-coaching/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "80-professor-development/instructional-coaching/video-assisted-instructional-coaching.md": {
+      "sha256": "670fde33d59cb858bfb4557eff39194f5a79d4ed60502657638a686c55f8ed2b",
+      "bytes": 7541,
+      "mode": "0o644"
+    },
+    "80-professor-development/sotl-scholarship/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "80-professor-development/sotl-scholarship/scholarship-of-teaching-and-learning.md": {
+      "sha256": "5670d237b8ee22aacabf4cac9e004847ec45d4aa14547fa1b0b74a8932dc9cb0",
+      "bytes": 7195,
+      "mode": "0o644"
+    },
+    "90-agent-runtime/evals/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "90-agent-runtime/evals/adaptive-oral-defense-viva.md": {
+      "sha256": "570b13971458a484fdbdf11b9bc2ebd869a0384807bccbea864a666abb646a7c",
+      "bytes": 4852,
+      "mode": "0o644"
+    },
+    "90-agent-runtime/evals/pedagogical-diagnosis-eval-01.md": {
+      "sha256": "b4ad26396a8e9f6b32df166fb8e54bf2354f54e8f7184881495c7dfea217b08e",
+      "bytes": 2348,
+      "mode": "0o644"
+    },
+    "90-agent-runtime/prompts/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "90-agent-runtime/prompts/synthetic-learner-runtime.md": {
+      "sha256": "de7d81afdc48105ae473a4a8fdbf87e26056854ba5cffe0bf077c231ff3153f7",
+      "bytes": 3399,
+      "mode": "0o644"
+    },
+    "90-agent-runtime/rubrics/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "90-agent-runtime/rubrics/pedagogical-interaction-rubric.md": {
+      "sha256": "266b5ab18ffd757aeb49366b3c3a0d75d44978cfb8fcd5dff9266d0262541684",
+      "bytes": 4192,
+      "mode": "0o644"
+    },
+    "90-agent-runtime/workflows/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "90-agent-runtime/workflows/pedagogical-state-machine.md": {
+      "sha256": "432bdc003bc72bc3da3915888503f1b7e4016b1575f2e637ff7b6414c99674ad",
+      "bytes": 3512,
+      "mode": "0o644"
+    },
+    "99-inbox/.gitkeep": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    "ART-DIRECTION.md": {
+      "sha256": "a0c13a4f171c4727ab8254ea89dc1d6313aa032e41335e972707efdfdfe91bf9",
+      "bytes": 5231,
+      "mode": "0o644"
+    },
+    "ASSETS_ROADMAP.md": {
+      "sha256": "8cdc7ac218dfcf0687b07f404135ce1ef5da19816664c07bc71e16e771ff2224",
+      "bytes": 4177,
+      "mode": "0o644"
+    },
+    "MASTER_PEDAGOGY_GUIDE.md": {
+      "sha256": "044013e8850ac39fc0c20f61c5f276e954ba8ff000e854b7bc257b1253e23142",
+      "bytes": 15587,
+      "mode": "0o644"
+    },
+    "MASTER_PEDAGOGY_GUIDE.vi.md": {
+      "sha256": "e630cdbbb737f8a580f328afd633f67625c5256ae4a52c1c51c9c130275f5716",
+      "bytes": 20372,
+      "mode": "0o644"
+    },
+    "README.md": {
+      "sha256": "4093b6594d1884fabe68cdd63b30e6072096b5a4e4c89e2bd364b33af7a61d44",
+      "bytes": 6259,
+      "mode": "0o644"
+    },
+    "README.vi.md": {
+      "sha256": "ce7827a70af5bcb9b1cd1a3dd7abe711960fe6035b6be5f66cab1a1d0b8db2c4",
+      "bytes": 6924,
+      "mode": "0o644"
+    },
+    "assets/adult_kolb_experiential_cycle_1789441691214.jpg": {
+      "sha256": "d742e1733048c640e1972889da6360ac2d1471f222d583f1db621d95474fbab9",
+      "bytes": 464628,
+      "mode": "0o644"
+    },
+    "assets/ai_socratic_epistemic_partner_1789440054864.jpg": {
+      "sha256": "d2e7891af43cb28f89a1a90ab7c1ae1bc20fdc5c714509da273a87e0b8cd573c",
+      "bytes": 536882,
+      "mode": "0o644"
+    },
+    "assets/backward_design_ubd_funnel_1789441920646.jpg": {
+      "sha256": "ab91fc9928e7442bb559a4552f0ccb5bfc6d8f12e1e61015eaa70365aaf39f4d",
+      "bytes": 465560,
+      "mode": "0o644"
+    },
+    "assets/cast_udl_3_tri_network_1789442097694.jpg": {
+      "sha256": "97362bc5d4b1718dd48fe16216e528a2916489a2b6ecdd07cc4f6d026a24b667",
+      "bytes": 497799,
+      "mode": "0o644"
+    },
+    "assets/cognitive_load_slots_1789438844913.jpg": {
+      "sha256": "59e1dff800d789720bffee01ea9ab828a9a1c591afafaa5cbb0bb5d76189524d",
+      "bytes": 374846,
+      "mode": "0o644"
+    },
+    "assets/direct_instruction_engine_1789439855985.jpg": {
+      "sha256": "4d322fe538be775f36bfde6cf8e355ecb06cd980bd1998f3f0e9b461526326b5",
+      "bytes": 467248,
+      "mode": "0o644"
+    },
+    "assets/doctoral_viva_colloquium_1789440008026.jpg": {
+      "sha256": "c892e0e3378c010140fa4d9b63acdd53a115062faa80fe184514ff585c7aa090",
+      "bytes": 385947,
+      "mode": "0o644"
+    },
+    "assets/dual_coding_prism_1789440523520.jpg": {
+      "sha256": "650972fa59038435c31cd0793234eda30e164ed0a82312c921abedd7fcd4ec64",
+      "bytes": 712163,
+      "mode": "0o644"
+    },
+    "assets/early_childhood_play_loop_1789439818927.jpg": {
+      "sha256": "fe0b996b2096924dfbf017f4508d1ac47013ada8a3addc136946affb7591f44d",
+      "bytes": 453891,
+      "mode": "0o644"
+    },
+    "assets/epistemic_evidence_ladder_1789440471771.jpg": {
+      "sha256": "795f53fe0b92589c497385b5ebb451fe718587330f6267d73142caa61acd2aed",
+      "bytes": 512675,
+      "mode": "0o644"
+    },
+    "assets/executive_functions_triangle_calibrated.jpg": {
+      "sha256": "01106c5da7dfef0e70cf1b1c944aa6b740ba20020e39482d032917daeca78504",
+      "bytes": 496495,
+      "mode": "0o644"
+    },
+    "assets/formative_assessment_radar_1789439921628.jpg": {
+      "sha256": "d30bbb71abe18577a970ce20f55abeb55976e184f9ce63e9a355a944b23bf407",
+      "bytes": 652766,
+      "mode": "0o644"
+    },
+    "assets/humanities_historical_inquiry_1789443048028.jpg": {
+      "sha256": "6330f0476d30ed69ffe603e9fb65ba13cdc9d755510f77b378d0d10b7ad580fe",
+      "bytes": 472259,
+      "mode": "0o644"
+    },
+    "assets/instructional_coaching_mirror_1789444024462.jpg": {
+      "sha256": "61a3d7ed3027a1996585d96154f34439642e18dc62186669c11fa25f2aa8495e",
+      "bytes": 464220,
+      "mode": "0o644"
+    },
+    "assets/instructional_scaffolding_stack_1789438956902.jpg": {
+      "sha256": "814988d13387d219cd5637e6245d4db9db52b3c836146dd1ffc345882906663c",
+      "bytes": 429389,
+      "mode": "0o644"
+    },
+    "assets/interleaving_practice_stack_1789440687132.jpg": {
+      "sha256": "7966a1014b04a3a631f07f5c5a8663fdb6a4f39d981d99f53011419d9f27c443",
+      "bytes": 644002,
+      "mode": "0o644"
+    },
+    "assets/kmofap_wait_time_chronometer_1789443291874.jpg": {
+      "sha256": "c1163dc957d60461e8d0febd38471abe24e6486c46bc7d3a59016472690104e5",
+      "bytes": 457901,
+      "mode": "0o644"
+    },
+    "assets/learner_diagnostics_scanner_1789443596318.jpg": {
+      "sha256": "d3c41756bc7d77bdf112c05aea2c8c1e111721746a5c2a841027d1f0d2c6db73",
+      "bytes": 509497,
+      "mode": "0o644"
+    },
+    "assets/lifestage_spectrum_ladder_1789438897154.jpg": {
+      "sha256": "64662b760b3ea0df7257f57728c9fddb3f7a6400153de5fa9604b0fde48599bb",
+      "bytes": 597036,
+      "mode": "0o644"
+    },
+    "assets/master_professor_sotl_hud_1789441816312.jpg": {
+      "sha256": "11184241fced143172825d2d93015368c90808efa9a98c08832e12777072870d",
+      "bytes": 453499,
+      "mode": "0o644"
+    },
+    "assets/ontology_5d_matrix_1789440399259.jpg": {
+      "sha256": "63c68af1b66e942f18e1aa1422346138e03361082afba4b141e014fc4017b50c",
+      "bytes": 558747,
+      "mode": "0o644"
+    },
+    "assets/pbl_medical_7jump_console_1789440137416.jpg": {
+      "sha256": "55ded3a124659637a0de384fd405e282208474a6b6f7e50938e4a5392350ae88",
+      "bytes": 550653,
+      "mode": "0o644"
+    },
+    "assets/pedagogy_hero_console_1789438819020.jpg": {
+      "sha256": "50fc811f8d7aba642f360846c2799d17df8d5db35cdd00c077bf0bdb55c9aa73",
+      "bytes": 194425,
+      "mode": "0o644"
+    },
+    "assets/peer_instruction_conceptest_1789439965233.jpg": {
+      "sha256": "efd92d099850decfcd3fa7a038ff4a0c2f76dc808b7af29467d5a7815d861753",
+      "bytes": 486427,
+      "mode": "0o644"
+    },
+    "assets/perry_preschool_40yr_roi_1789443186936.jpg": {
+      "sha256": "487d2db7f82a9ed41fd6e85057a777a211facdbbe143221637e64e5b4d551ffe",
+      "bytes": 646015,
+      "mode": "0o644"
+    },
+    "assets/prenatal_caregiver_cradle_1789439768044.jpg": {
+      "sha256": "f729f19b92c369942b68ca08c81a03b2424f828e9cf37c0ca2575e18e7dd3b80",
+      "bytes": 426645,
+      "mode": "0o644"
+    },
+    "assets/primary_cpa_math_bridge_1789441088605.jpg": {
+      "sha256": "fc842d68fc654f43d3a04b687528170e881edbcebd38de9aabb1ab4a8966f10b",
+      "bytes": 505805,
+      "mode": "0o644"
+    },
+    "assets/productive_failure_2phase_chamber_1789444285670.jpg": {
+      "sha256": "28f6bfcbb72a421a40f36eb8b181cdb3af26a73c8171007edfbb0b5bb0ae71c7",
+      "bytes": 553296,
+      "mode": "0o644"
+    },
+    "assets/science_of_reading_rope_1789442896112.jpg": {
+      "sha256": "c784cc9e0b6656969234cd357409e29e6d79f24b7f8c9652cde0222e380ccb7c",
+      "bytes": 519959,
+      "mode": "0o644"
+    },
+    "assets/secondary_visible_thinking_hub_1789441192099.jpg": {
+      "sha256": "67f0b85cb1985ccca8d7a149d72a517879d4af8cca0d553ca5e8ea1ff3dd3331",
+      "bytes": 635324,
+      "mode": "0o644"
+    },
+    "assets/self_determination_engine_1789440752835.jpg": {
+      "sha256": "61c5000ff23fc542b0cfca3e6467e4a325e5dc488aaa480126380043e6c9cf52",
+      "bytes": 506484,
+      "mode": "0o644"
+    },
+    "assets/singapore_math_bar_model_1789442974847.jpg": {
+      "sha256": "fccbb0b9a42aaab117f735464ed0a8b317b0321b0731b741fd0a806dbb1f6c5a",
+      "bytes": 541798,
+      "mode": "0o644"
+    },
+    "assets/spaced_retrieval_waves_1789440579011.jpg": {
+      "sha256": "e2ce1cf42b63e6b149611887e04a02c23003bac90d63153d1fac966a974cae10",
+      "bytes": 424923,
+      "mode": "0o644"
+    },
+    "assets/stem_ngss_cer_modeling_1789442801886.jpg": {
+      "sha256": "8d978aa770511acdd6d5fbc6367615792b44520af426a65cc61509c98a81188d",
+      "bytes": 478779,
+      "mode": "0o644"
+    },
+    "assets/tertiary_constructive_alignment_1789441330802.jpg": {
+      "sha256": "546c6dcac693e55c1bde5e53eddb6b06e0e829f10f7dd4543bf3eb6395700c7d",
+      "bytes": 621603,
+      "mode": "0o644"
+    },
+    "assets/triple_graph_navigation_1789439031378.jpg": {
+      "sha256": "6aa3577ac7c642e9c56922d14b74e9f50a315bf203febc2b4e775028ac417ad4",
+      "bytes": 567859,
+      "mode": "0o644"
+    },
+    "bin/pedagogy-pipeline": {
+      "symlink": "../tools/pedagogy_pipeline.py",
+      "mode": "0o755"
+    },
+    "docs/fraction-pilot.md": {
+      "sha256": "bff5de8cdc788d41abf66ffd23a53a4e3cfaa6857f4719e30fbcd0f94f9bc9fd",
+      "bytes": 4149,
+      "mode": "0o644"
+    },
+    "docs/implementation-status.md": {
+      "sha256": "c8b1a056d9ceb24ba97f421ae23478ba350056f38b2ed4dbd74cdd09961697a7",
+      "bytes": 3752,
+      "mode": "0o644"
+    },
+    "docs/local-delivery.md": {
+      "sha256": "08f82c65ad1d19bad63240481bac6e8ddeade315db24d8cdee59d5ac5be11602",
+      "bytes": 3079,
+      "mode": "0o644"
+    },
+    "docs/local-workspace.md": {
+      "sha256": "fb0a5e07bfb335eadbb372fe8e5f748081f1c5312a1a98b5c87ba5ed76b5bfca",
+      "bytes": 3107,
+      "mode": "0o644"
+    },
+    "docs/publication.md": {
+      "sha256": "29c8ddf7214587691e1c9fa363fcd59bab46bfa27ebf5da5b0bd36f6f1db90c6",
+      "bytes": 4998,
+      "mode": "0o644"
+    },
+    "docs/rehearsal-contract.md": {
+      "sha256": "ab3ebdf4a37997722ef39e85186cb5c0493ef1d56c3d6f83fa1ccba20d81822f",
+      "bytes": 3222,
+      "mode": "0o644"
+    },
+    "rehearsal/__init__.py": {
+      "sha256": "140e5b09c2e7484668613ca0b12916f9228f1481fcff7f9126d74d28663ee98b",
+      "bytes": 77,
+      "mode": "0o644"
+    },
+    "rehearsal/catalog.py": {
+      "sha256": "811a7d3b7ffd0621042ad9b122b63afd9a6fb0d87d46d9409783127c2e3e3c5e",
+      "bytes": 2181,
+      "mode": "0o644"
+    },
+    "rehearsal/data/fractions.vi.json": {
+      "sha256": "02cee96518c2d179a0756cc144feb2d5b25aecf8975b62e891a09845df9c5336",
+      "bytes": 14295,
+      "mode": "0o644"
+    },
+    "rehearsal/engine.py": {
+      "sha256": "33889821b94401c34308def7e48a49ea413fa36b2fe15721e48b12ba43547486",
+      "bytes": 6270,
+      "mode": "0o644"
+    },
+    "rehearsal/errors.py": {
+      "sha256": "5ed0ed58737a7127352486723dbe05cf0101501b77d59f6f2c92c38909048baa",
+      "bytes": 264,
+      "mode": "0o644"
+    },
+    "rehearsal/exporter.py": {
+      "sha256": "823a596588c56f9c9a7944c62b5fdd7df2134b0b3dfaf4522f0ee7fbe7e20919",
+      "bytes": 1235,
+      "mode": "0o644"
+    },
+    "rehearsal/http_server.py": {
+      "sha256": "7f541d3a7e5d36a07e858504c414f789731e55d138e879781fb82644f2924f27",
+      "bytes": 7396,
+      "mode": "0o644"
+    },
+    "rehearsal/static/app.js": {
+      "sha256": "7a864adca15323a46b51a6f5d0fc6cceff81f9cd716bfb2692cfd3e7a88ac5e8",
+      "bytes": 6701,
+      "mode": "0o644"
+    },
+    "rehearsal/static/index.html": {
+      "sha256": "5bef0fece2517494f52129feba668bde0d766ab397b687e3424168d2ab93ac85",
+      "bytes": 1521,
+      "mode": "0o644"
+    },
+    "rehearsal/static/styles.css": {
+      "sha256": "f0dcbf5acec2d7f00a8d296d1a11966ac20fd299dd5b6facf44e00a7cbb24c31",
+      "bytes": 10653,
+      "mode": "0o644"
+    },
+    "rehearsal/static/views.js": {
+      "sha256": "9a738ab9e8116ab95e2269c4dcafdb9bb6353e992c0601af7323b17438467f58",
+      "bytes": 9326,
+      "mode": "0o644"
+    },
+    "rehearsal/store.py": {
+      "sha256": "7d20cc6d9fd9a243afdd029741df517c85dbbddba184f647a5e46486f4be14fb",
+      "bytes": 6777,
+      "mode": "0o644"
+    },
+    "requirements.txt": {
+      "sha256": "8daba88b959f629207924ed95bce27182ba95ec6438bb2d44e7c1d851cc7be82",
+      "bytes": 42,
+      "mode": "0o644"
+    },
+    "run_rehearsal.py": {
+      "sha256": "54744b11a6bc73d886bedb29062c3816b2cadf57074081022cdb805a26328b05",
+      "bytes": 1602,
+      "mode": "0o644"
+    },
+    "tests/publication_support.py": {
+      "sha256": "070dc47b8a6f3005da10f9781498820953c5cea4895aeaf77ecabc05f15e47c6",
+      "bytes": 2459,
+      "mode": "0o644"
+    },
+    "tests/test_knowledge_registry.py": {
+      "sha256": "39043ccfaa681729503fc61115e1ca9a059bf6a64d23492a540f99a68a29db07",
+      "bytes": 8695,
+      "mode": "0o644"
+    },
+    "tests/test_process_startup.py": {
+      "sha256": "b2a83b3900cd12703ed6e0a5366d8950f852065569f8d5506e3958c96203dce0",
+      "bytes": 2751,
+      "mode": "0o644"
+    },
+    "tests/test_provider_and_links.py": {
+      "sha256": "fc342955311bd2a4b59a8a8da357e8acbdc62999e3c292ff82fe41b6f949713f",
+      "bytes": 5210,
+      "mode": "0o644"
+    },
+    "tests/test_publication.py": {
+      "sha256": "4ed3988aef18d901e47db1213921525f77facf6ae1c25e5cb3742b83123c9cde",
+      "bytes": 9444,
+      "mode": "0o644"
+    },
+    "tests/test_publication_recovery.py": {
+      "sha256": "7fe6554ae5d4525602bab894267672bf54e77955cf89adabe477166e18605c21",
+      "bytes": 6937,
+      "mode": "0o644"
+    },
+    "tests/test_rehearsal.py": {
+      "sha256": "0102dc1ed58c6c663077f8fd0a3987c91de485beac87bea41fb509135d2fe518",
+      "bytes": 8929,
+      "mode": "0o644"
+    },
+    "tests/test_rehearsal_http.py": {
+      "sha256": "c6c119f5f55da570b12113867a6f939d9495fb272c7597eb10e25880c97d3706",
+      "bytes": 5522,
+      "mode": "0o644"
+    },
+    "tests/test_rehearsal_process.py": {
+      "sha256": "cb591b3eaabe92855869ef44e26388a3e41ad8c12632419db41d84448d3aacd1",
+      "bytes": 3441,
+      "mode": "0o644"
+    },
+    "tools/knowledge/__init__.py": {
+      "sha256": "445f776bcfe13512c5874d676943b6c26b7227c0769f0cf4bb34355af73c8998",
+      "bytes": 69,
+      "mode": "0o644"
+    },
+    "tools/knowledge/adapter.py": {
+      "sha256": "be751cef9baa1a10fe706df8411bdf21c31748dd108c0574e282d26e44d884e8",
+      "bytes": 3222,
+      "mode": "0o644"
+    },
+    "tools/knowledge/frontmatter.py": {
+      "sha256": "f2367ef8331736ade6ba0e2cb85f969d6633f84857d9923825ec9c7ddcf6e853",
+      "bytes": 3211,
+      "mode": "0o644"
+    },
+    "tools/knowledge/registry.py": {
+      "sha256": "16af229d60ceb4b43e1b2e486b99fadddaa59f450d7577d95d1df692ffb51f08",
+      "bytes": 7669,
+      "mode": "0o644"
+    },
+    "tools/knowledge/schema.py": {
+      "sha256": "8770a1e727afb884329dcfe1d987be2567e91a41276ec15a3995dcb16ed9e5a7",
+      "bytes": 5482,
+      "mode": "0o644"
+    },
+    "tools/knowledge_registry.py": {
+      "sha256": "1fa10c6302907c539400d55c79c5c7ebc869ab38ee8c6611ee0f7c005d33f389",
+      "bytes": 1348,
+      "mode": "0o644"
+    },
+    "tools/link_support/__init__.py": {
+      "sha256": "92e40e01a82348142e22384918f6c24b497b43fb71cc50bb308bc9d91025424e",
+      "bytes": 68,
+      "mode": "0o644"
+    },
+    "tools/link_support/audit.py": {
+      "sha256": "b56ffb446b6d01e3a76adc041174a6f889fcae1edb11178b3d1f1d21b0741911",
+      "bytes": 5365,
+      "mode": "0o644"
+    },
+    "tools/link_support/frontmatter.py": {
+      "sha256": "4989179eb4943ff00af5436d3c27cf078bfd9eb165d173d90aef6b9535f0ca1f",
+      "bytes": 896,
+      "mode": "0o644"
+    },
+    "tools/link_support/markdown.py": {
+      "sha256": "8bae3708adec7e25bbb87c8e0797dace46026cf15e862f9bacd1de1b32899b05",
+      "bytes": 3819,
+      "mode": "0o644"
+    },
+    "tools/pedagogy_pipeline.py": {
+      "sha256": "4ce4ee6522874849b980ae4d2f58b34dfe6393ec2a2e13ae8c416f5d3a7f7004",
+      "bytes": 553,
+      "mode": "0o644"
+    },
+    "tools/pipeline_support/__init__.py": {
+      "sha256": "78207cc2d9306c89957c030b92e6498847aa2f823aae72bccee4ce215080bd60",
+      "bytes": 62,
+      "mode": "0o644"
+    },
+    "tools/pipeline_support/cli.py": {
+      "sha256": "ef326f3ab11c0b01e065dfa5101f629fb70b478cf9acf89e3739daff0f48b080",
+      "bytes": 4729,
+      "mode": "0o644"
+    },
+    "tools/pipeline_support/process.py": {
+      "sha256": "11fbd41fb50ccc96b7066d7d644af6dd7c27ec27e387d25d7a1ce186c2b6c332",
+      "bytes": 3454,
+      "mode": "0o644"
+    },
+    "tools/pipeline_support/publication.py": {
+      "sha256": "ee834dc53dc5fb6ec4d7a73091c5515eaecbaaed7f90ff3097a5a5024e3d007e",
+      "bytes": 6385,
+      "mode": "0o644"
+    },
+    "tools/pipeline_support/publication_journal.py": {
+      "sha256": "3ed65b356504d00fe1846ff24c7dce0c5d5c76f998d669973961e3e220f459e5",
+      "bytes": 7890,
+      "mode": "0o644"
+    },
+    "tools/pipeline_support/recovery.py": {
+      "sha256": "05d6614458e002a1e9488ead3d0b5da21cbd5e2a25ab1344c778298adfbf519d",
+      "bytes": 2262,
+      "mode": "0o644"
+    },
+    "tools/pipeline_support/routing.py": {
+      "sha256": "f158ff091467952cfb6859d26e95fb68379454536ac87f57e3dbdf08f2d81d66",
+      "bytes": 4368,
+      "mode": "0o644"
+    },
+    "tools/pipeline_support/transactions.py": {
+      "sha256": "f7e6e6ba1725deb623c9e843cf15ee2fb3e584753251131c45b283c942e0b967",
+      "bytes": 4724,
+      "mode": "0o644"
+    },
+    "tools/pipeline_support/validation.py": {
+      "sha256": "cf1d02956c77d1b1a1cf740f6bbc593d3891726c83e4304ac5bbe3ea35533990",
+      "bytes": 4084,
+      "mode": "0o644"
+    },
+    "tools/verify_links.py": {
+      "sha256": "902af3f22167730eb958338644e0be2b3bc1a3cedb3e12142969a05f56140dab",
+      "bytes": 956,
+      "mode": "0o644"
+    }
+  },
+  "source_unchanged_during_checks": true,
+  "all_passed": true,
+  "browser_verification": "Historical browser report retained; no new browser run or visual acceptance claimed",
+  "node_available": true
+}

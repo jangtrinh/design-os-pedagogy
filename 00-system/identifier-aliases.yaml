@@ -1,0 +1,36 @@
+schema_version: "2.0.0"
+description: "Explicit identity aliases; reading recommendations are edited separately, not aliased by similarity."
+aliases:
+  # Same document with its previous prefix, not a broader concept alias.
+  doc-dissertation-defense-guide: professor-dissertation-defense-guide
+  executive-functions: concept-executive-functions
+  cast-udl-3-framework: practice-cast-udl-framework
+  fraction-misconception-clinical-case: case-fraction-misconception
+  rosenshine-10-principles: practice-rosenshine-principles
+  formative-hinge-questions: practice-formative-hinge-questions
+  stem-disciplinary-pedagogy: discipline-stem-pedagogy
+  self-determination-theory: foundation-self-determination-theory
+  scaffolded-inquiry-visible-thinking: stage-s3-secondary
+  doctoral-supervision-socratic: stage-s5-postgraduate-doctoral
+  sotl-and-instructional-coaching: stage-s7-master-pedagogy
+  ai-epistemic-partner: practice-ai-epistemic-partner
+  explicit-instruction-fln: stage-s2-primary
+  constructive-alignment-productive-failure: stage-s4-tertiary
+  historical-thinking-inquiry: discipline-humanities-historical-inquiry
+  MOC-Learning-Science: moc-learning-science
+  MOC-Instructional-Design: moc-instructional-design
+  backward-design-ubd: practice-backward-design-ubd
+  cognitive-load-theory: concept-cognitive-load-theory
+  learner-diagnostics-protocol: capability-learner-diagnostics
+  ai-assistance-ladder: practice-ai-assistance-ladder
+  pedagogical-state-machine: runtime-pedagogical-state-machine
+  synthetic-learner-runtime: prompt-synthetic-learner-runtime
+  pedagogical-evidence-map: EVI-02
+  pedagogical-interaction-rubric: RUB-01
+  EVI-01: meta-analytic-effect-size-synthesis
+  CAP-01: capability-learner-diagnostics
+  CAP-02: instructional-system-design-protocol
+  CAP-03: socratic-and-explicit-facilitation-protocol
+  CAP-04: realtime-formative-adaptation-protocol
+  CAP-05: instructional-coaching-observation-protocol
+  70-capabilities/teach/socratic-and-explicit-facilitation-protocol.md: socratic-and-explicit-facilitation-protocol

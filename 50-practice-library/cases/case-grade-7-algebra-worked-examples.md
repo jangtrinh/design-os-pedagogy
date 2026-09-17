@@ -8,7 +8,7 @@ learner_state: "novice"
 applies: ["concept-cognitive-load-theory", "practice-rosenshine-principles"]
 evidence_basis: ["evidence-barbieri-2023-worked-examples"]
 prerequisites: ["concept-working-memory"]
-leads_to: ["method-guidance-fading"]
+leads_to: ["worked-example-fading-protocol"]
 ---
 
 # Ca Thực Chiến: Dạy Phương Trình Đại Số Bậc Nhất Lớp 7

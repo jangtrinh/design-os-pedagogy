@@ -1,8 +1,18 @@
 ---
+schema_version: "2.0.0"
 id: moc-master
 type: moc
 title: "Master Map of Content (Master MOC)"
-status: validated
+stage: []
+axes: []
+capabilities: []
+context: [knowledge-navigation]
+locale: en
+evidence_grade: U
+claim_status: not-applicable
+review_status: unreviewed
+provenance: {kind: authored}
+leads_to: [instructional-system-design-protocol, prompt-course-design-assistant, protocol-knowledge-research-cycle]
 ---
 
 # Master Map of Content (Master MOC)
@@ -10,6 +20,8 @@ status: validated
 ![Triple Graph Navigation Architecture](../assets/triple_graph_navigation_1789439031378.jpg)
 
 Welcome to the `design-os-pedagogy` knowledge network. This system is architected as an orthogonal **Triple Graph** (Concepts - Evidence - Clinical Practice) optimized simultaneously for **Human Educators (via Obsidian Wikilinks)** and **AI Pedagogical Agents (via YAML Stable IDs)**.
+
+For a course request, start with the [course-design assistant](../90-agent-runtime/prompts/course-design-assistant.md), [CAP-02 design protocol](../70-capabilities/design/instructional-system-design-protocol.md) and [blueprint template](../docs/templates/course-blueprint.yaml). The [knowledge roadmap](../docs/knowledge-roadmap.md) records coverage gaps and acceptance criteria. A complete file or resolved link is not evidence of educational effectiveness.
 
 ```mermaid
 graph TD
@@ -31,35 +43,36 @@ graph TD
 
 ## 1. Domain Maps of Content (Sub-MOCs)
 
-1. [[MOC-Learning-Science]]: Cognitive Architecture, Neurobiology of Learning, Neuromyths Debunked, Cognitive Load Theory, Spaced & Interleaving Practice, Achievement Motivation, Epistemic Ethics, and Cognitive Offloading Atrophy.
-2. [[MOC-Instructional-Design]]: Direct Instruction (Engelmann), Productive Failure (Kapur), Problem-Based Learning (7 Jumps), Science of Reading (Scarborough's Rope), Singapore Math Bar Modeling, Clinical Reasoning & Deliberate Practice, 5E Instructional Model, Explicit Instruction (I Do, We Do, You Do), and the AI Assistance Ladder (S0–S7).
-3. [[MOC-Assessment]]: Diagnostic Hinge Questions, Wait-Time Protocols, STEM & Humanities Misconception Catalog, Real-Time Formative Adaptation (CAP-04), Pedagogical Evidence Map (EVI-02), and Automated Pedagogical Interaction Rubric (RUB-01).
-4. [[MOC-Classroom-Practice]]: Clinical Case Library, Landmark RCTs (Project Follow Through, Eric Mazur, KMOFAP), Worked-Example Fading Protocols, Instructional Coaching (Knight), SoTL Scholarship (Boyer), and Peer Observation Firewalls.
+1. [[MOC-Learning-Science]]: Learning mechanisms, cognitive load, practice, motivation and evidence limitations.
+2. [[MOC-Instructional-Design]]: Methods, disciplinary guidance, course design and the AI Assistance Ladder (AL0-AL7).
+3. [[MOC-Assessment]]: Diagnostic questions, formative adaptation, evidence maps and proposed interaction rubrics.
+4. [[MOC-Classroom-Practice]]: Historical reports, authored cases and teacher development. Inspect each record's provenance and review status before treating it as empirical evidence.
 
 ---
 
 ## 2. Fast Diagnostic Decision Router
 
-When observing learner difficulties in the classroom or tutoring environment, use the routing matrix below:
+Use these authored prompts to gather more evidence. A visible behavior has several possible explanations; the table does not diagnose cognition or mental health.
 
-| Observed Learner Symptom | Cognitive Root Cause | Target Construct & Intervention | Empirical Benchmark Case / Protocol |
-| :--- | :--- | :--- | :--- |
-| **Paralysis at task onset / Staring blankly at problems** | Working Memory Overload (High intrinsic/search load) | [[cognitive-load-theory|Cognitive Load Theory]] & [[worked-example-fading-protocol|Worked Example Fading]] | [[case-grade-7-algebra-worked-examples|Case — Grade 7 Algebra Worked Examples]] |
-| **High fluency today, total failure to recall next week** | Weak Synaptic Consolidation / Illusion of Competence | [[spaced-practice-retrieval|Spaced Retrieval]] & [[interleaving-practice|Interleaving Practice]] | [[case-highschool-biology-retrieval-spacing|Case — High School Biology Spaced Retrieval]] |
-| **Flawless procedural execution, complete word-problem failure** | Procedural mimicry without conceptual schema | [[singapore-math-bar-modeling|Singapore Math Bar Modeling]] & [[explicit-instruction-fln|Concrete-to-Abstract CPA]] | [[fraction-misconception-clinical-case|Case — Fraction Misconception Clinical Case]] |
-| **Passive nodding during lecture, failing exam questions** | Illusion of Explanatory Depth | [[productive-failure-kapur|Productive Failure]] & [[case-eric-mazur-harvard-peer-instruction|Peer Instruction]] | [[case-eric-mazur-harvard-peer-instruction|Case — Eric Mazur Harvard Peer Instruction]] |
-| **Shallow answers; only 1-2 extroverted students participate** | Zero Processing Time / Rapid Interrogation Failure | [[wait-time-questioning-protocol|Wait-Time Questioning Protocol]] | [[case-kmofap-formative-assessment-wiliam|Case — KMOFAP Formative Assessment Wiliam]] |
-| **Persistent intuitive errors (e.g. heavier falls faster)** | Entrenched Naive Mental Model | [[catalog-stem-and-humanities-misconceptions|Misconception Catalog]] & [[realtime-formative-adaptation-protocol|Real-Time Adaptation]] | [[pedagogical-diagnosis-eval-01|Pedagogical Diagnosis Eval 01]] |
-| **PhD candidate stalling, anxious about thesis defense** | Imposter Syndrome & Epistemic Boundary Deficit | [[doctoral-supervision-socratic|Doctoral Supervision Socratic]] & [[dissertation-defense-guide|Dissertation Defense Guide]] | [[dissertation-defense-guide|Dissertation Defense Guide]] |
-| **Flawless AI-generated text, zero ability to explain underlying mechanisms** | Epistemic Debt & Premature Cognitive Offloading ($d = -0.32$) | [[cognitive-offloading-and-atrophy|Cognitive Offloading & Atrophy]] & [[process-based-assessment-viva|Process-Based Assessment & Adaptive Viva]] | [[case-ai-oral-defense-viva-undergrad|Case — AI Oral Defense Viva Undergrad]] |
-| **Novice teacher freezes / reacts defensively during student misconceptions** | Low Clinical Simulation Exposure / Schema Deficit | [[synthetic-learners|Synthetic Learners for Clinical Rehearsal]] & [[video-assisted-instructional-coaching|Video Coaching]] | [[case-ai-synthetic-student-rehearsal|Case — AI Synthetic Student Rehearsal]] |
+| Observation | Follow-up before choosing an intervention | Reading route |
+| --- | --- | --- |
+| Difficulty starting | Ask the learner to explain the task, identify a first step and describe unfamiliar terms; check access and prerequisite knowledge | [[cognitive-load-theory]] and [[worked-example-fading-protocol]] |
+| Immediate fluency but poor delayed recall | Compare task conditions, cues, practice opportunities and an independent delayed attempt | [[spaced-practice-retrieval]] and [[interleaving-practice]] |
+| Procedure succeeds but a word problem fails | Check reading demands, the learner's representation and their explanation of the quantities | [[singapore-math-bar-modeling]] and [[fraction-misconception-clinical-case]] |
+| Nodding without evidence of understanding | Request an explanation or small independent application before drawing conclusions | [[peer-instruction]] and [[realtime-formative-adaptation-protocol]] |
+| Few learners contribute | Offer thinking time and alternative response routes; ask about language, access and participation conditions | [[wait-time-questioning-protocol]] |
+| An error recurs | Elicit reasoning and test competing explanations with a discriminating follow-up | [[catalog-stem-and-humanities-misconceptions]] |
+| A research student is stalled | Clarify the research problem, feedback, resources and support needs without assigning a psychological diagnosis | [[doctoral-supervision-socratic]] and [[dissertation-defense-guide]] |
+| A polished AI-supported artifact exceeds independent explanation | Compare an appropriately accessible independent task and the learner's process; do not infer neural harm | [[cognitive-offloading-and-atrophy]] and [[process-based-assessment-viva]] |
+| A teacher struggles to respond | Review the actual interaction, rehearse an alternative and distinguish rehearsal performance from classroom outcomes | [[synthetic-learners]] and [[video-assisted-instructional-coaching]] |
 
 ---
 
 ## 3. Evidence Syntheses & Agent Runtime Standards
-* [[meta-analytic-effect-size-synthesis|Meta-Analytic Effect Size Synthesis (EVI-01)]]: Comprehensive ranking of 20 interventions benchmarked against Hattie's $d = 0.40$ hinge point.
-* [[pedagogical-evidence-map|Pedagogical Evidence Map (EVI-02)]]: 2D Stage-by-Intervention matrix (S0–S7) defining developmental zones of desired effects and contraindications.
-* [[pedagogical-interaction-rubric|Pedagogical Interaction Rubric (RUB-01)]]: 5-dimension automated LLM-as-a-judge rubric evaluating Socratic restraint, cognitive offloading defense, and stage adaptation.
+* [[meta-analytic-effect-size-synthesis|Evidence synthesis (EVI-01)]]: Inspect metrics, provenance and limits; do not rank incomparable results.
+* [[pedagogical-evidence-map|Evidence map (EVI-02)]]: Stage-by-method guidance with applicability limits.
+* [[pedagogical-interaction-rubric|Interaction rubric (RUB-01)]]: A proposed rubric, not an executed general tutor evaluation.
+* [Course-design acceptance](../90-agent-runtime/evals/course-design-acceptance.md): Authored scenarios and a manual review rubric.
 
 ---
 
@@ -68,6 +81,9 @@ When observing learner difficulties in the classroom or tutoring environment, us
 * **For Autonomous AI Agents**: Query YAML Frontmatter for deterministic graph traversal:
   * `prerequisites`: Required concept nodes to load first.
   * `leads_to`: Downstream conceptual or instructional targets.
-  * `evidence_basis`: Direct pointer to empirical study and effect size.
-  * `stage_applicability`: Developmental target stages (S0–S7).
+  * `source_ids`, `claim_ids`, `estimate_ids`: Typed evidence links; read the source scope and claim verdict separately.
+  * `stage`, `axes`, `capabilities`, `context`: Independent canonical dimensions. `assistance_level` uses AL0-AL7.
+  * `review_status`, `evidence_grade`, `provenance`: Review, appraisal and origin, not interchangeable trust labels.
 * **For Human Learners**: Navigate seamlessly using Obsidian bidirectional links (`[[...]]`) and the visual graph view.
+
+From the project root, run `.venv/bin/python -B tools/knowledge_coverage.py` for a read-only inventory. Add `--json` for record paths, missing tags and source trails. Counts indicate recorded coverage; inspect the actual content before using it to design a course.

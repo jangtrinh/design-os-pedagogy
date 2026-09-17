@@ -1,39 +1,48 @@
 $schema: "http://json-schema.org/draft-07/schema#"
-title: "PedagogicalAtomicUnit"
-description: "Chuẩn metadata cho từng đơn vị tri thức sư phạm để bảo đảm tính truy vấn và mở rộng quy mô (Scale lâu dài)"
+title: "PedagogicalKnowledgeRecord v2"
+$id: "urn:agent-teacher:knowledge:2"
+description: "Canonical metadata. Legacy adapter remains unreviewed; structural validity is not scientific validation."
 type: "object"
 required:
+  - "schema_version"
   - "id"
   - "type"
   - "title"
   - "stage"
   - "axes"
-  - "evidence_level"
-  - "sources"
+  - "capabilities"
+  - "context"
+  - "evidence_grade"
+  - "claim_status"
+  - "review_status"
+  - "provenance"
 properties:
+  schema_version: {type: string, enum: ["2.0.0"]}
   id:
     type: "string"
-    pattern: "^(claim|concept|practice|case|eval)-[a-z0-9-]+$"
+    pattern: "^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$"
   type:
     type: "string"
-    enum: ["claim", "concept", "practice", "case", "misconception", "eval"]
+    enum: [concept, practice, case, misconception, eval, source, claim, estimate, capability, stage-guide, discipline, faculty, moc, synthesis, evidence-map, protocol, rubric]
   title:
     type: "string"
+    minLength: 1
   stage:
     type: "array"
     items:
       type: "string"
-      enum: ["S0-prenatal", "S1-early-childhood", "S2-primary", "S3-secondary", "S4-tertiary", "S5-postgraduate", "S6-adult", "S7-master-pedagogy"]
+      enum: [S0, S1, S2, S3, S4, S5, S6, S7]
   axes:
     type: "array"
     items:
       type: "string"
-  evidence_level:
+      enum: [AX-01, AX-02, AX-03, AX-04, AX-05, AX-06, AX-07, AX-08]
+  evidence_grade:
     type: "string"
     enum: ["A", "B", "C", "D", "E", "U"]
   effect_size:
     type: "string"
-    description: "Cohen's d hoặc tháng tiến bộ (Months of Progress theo EEF)"
+    description: "Legacy display text only; new quantitative claims require typed estimate records and locators. No implicit months conversion."
   boundary_conditions:
     type: "object"
     properties:
@@ -50,3 +59,48 @@ properties:
   created_at:
     type: "string"
     format: "date"
+  assistance_level: {type: string, enum: [AL0, AL1, AL2, AL3, AL4, AL5, AL6, AL7]}
+  capabilities:
+    type: array
+    items: {type: string, enum: [CAP-01, CAP-02, CAP-03, CAP-04, CAP-05, CAP-06]}
+  context: {type: array, items: {type: string, minLength: 1}}
+  aliases: {type: array, uniqueItems: true, items: {type: string, minLength: 1}}
+  locale: {type: string, minLength: 2}
+  translation_of: {type: string, minLength: 1}
+  source_revision: {type: string, minLength: 1}
+  claim_status: {type: string, enum: [unreviewed, supported, mixed, not-supported, refuted, not-applicable]}
+  review_status: {type: string, enum: [unreviewed, source-checked, reviewed]}
+  provenance:
+    type: object
+    required: [kind]
+    properties:
+      kind: {type: string, enum: [unreviewed, literature, authored, simulation, observed]}
+      reviewer: {type: string, minLength: 1}
+      reviewed_at: {type: string, format: date}
+      record_locator: {type: string, minLength: 1}
+      run_id: {type: string, minLength: 1}
+      citations:
+        type: array
+        items:
+          type: object
+          required: [url, locator]
+          properties:
+            url: {type: string, format: uri}
+            locator: {type: string, minLength: 1}
+  prerequisites: {type: array, items: {type: string, minLength: 1}}
+  leads_to: {type: array, items: {type: string, minLength: 1}}
+  source_ids: {type: array, items: {type: string, minLength: 1}}
+  claim_ids: {type: array, items: {type: string, minLength: 1}}
+  estimate_ids: {type: array, items: {type: string, minLength: 1}}
+  source_id: {type: string, minLength: 1}
+  claim_id: {type: string, minLength: 1}
+  claim_statement: {type: string, minLength: 1}
+  metric: {type: string, enum: [cohen_d, hedges_g, normalized_gain, relative_change, odds_ratio, risk_ratio]}
+  value: {type: number}
+  population: {type: string, minLength: 1}
+  comparator: {type: string, minLength: 1}
+  outcome: {type: string, minLength: 1}
+  timepoint: {type: string, minLength: 1}
+  url: {type: string, format: uri}
+  locator: {type: string, minLength: 1}
+  uncertainty: {type: object}

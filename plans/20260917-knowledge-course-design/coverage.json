@@ -1,0 +1,2634 @@
+{
+  "report_version": "1.0.0",
+  "filters": {
+    "stage": null,
+    "axes": null,
+    "capabilities": null
+  },
+  "registry_stats": {
+    "records": 94,
+    "edges": 346,
+    "unresolved_edges": 0,
+    "unreviewed_records": 86,
+    "errors": 0,
+    "warnings": 62
+  },
+  "selected": {
+    "records": 94,
+    "source_records": 10,
+    "source_checked": 8,
+    "reviewed": 0,
+    "unreviewed": 86,
+    "legacy": 62,
+    "non_source_with_source_trail": 17
+  },
+  "types": {
+    "capability": 5,
+    "case": 5,
+    "claim": 2,
+    "concept": 11,
+    "discipline": 5,
+    "estimate": 1,
+    "eval": 3,
+    "evidence-map": 1,
+    "faculty": 4,
+    "moc": 5,
+    "practice": 21,
+    "protocol": 4,
+    "rubric": 1,
+    "source": 10,
+    "stage-guide": 8,
+    "synthesis": 1,
+    "unclassified": 7
+  },
+  "tagged_coverage": {
+    "stage": [
+      {
+        "id": "S0",
+        "records": 8,
+        "source_records": 0,
+        "source_checked": 0,
+        "reviewed": 0,
+        "unreviewed": 8,
+        "legacy": 3,
+        "non_source_with_source_trail": 4
+      },
+      {
+        "id": "S1",
+        "records": 26,
+        "source_records": 2,
+        "source_checked": 2,
+        "reviewed": 0,
+        "unreviewed": 24,
+        "legacy": 12,
+        "non_source_with_source_trail": 8
+      },
+      {
+        "id": "S2",
+        "records": 49,
+        "source_records": 3,
+        "source_checked": 3,
+        "reviewed": 0,
+        "unreviewed": 46,
+        "legacy": 28,
+        "non_source_with_source_trail": 13
+      },
+      {
+        "id": "S3",
+        "records": 59,
+        "source_records": 3,
+        "source_checked": 5,
+        "reviewed": 0,
+        "unreviewed": 54,
+        "legacy": 34,
+        "non_source_with_source_trail": 15
+      },
+      {
+        "id": "S4",
+        "records": 58,
+        "source_records": 3,
+        "source_checked": 3,
+        "reviewed": 0,
+        "unreviewed": 55,
+        "legacy": 36,
+        "non_source_with_source_trail": 13
+      },
+      {
+        "id": "S5",
+        "records": 41,
+        "source_records": 2,
+        "source_checked": 2,
+        "reviewed": 0,
+        "unreviewed": 39,
+        "legacy": 22,
+        "non_source_with_source_trail": 11
+      },
+      {
+        "id": "S6",
+        "records": 40,
+        "source_records": 2,
+        "source_checked": 2,
+        "reviewed": 0,
+        "unreviewed": 38,
+        "legacy": 19,
+        "non_source_with_source_trail": 12
+      },
+      {
+        "id": "S7",
+        "records": 43,
+        "source_records": 3,
+        "source_checked": 3,
+        "reviewed": 0,
+        "unreviewed": 40,
+        "legacy": 20,
+        "non_source_with_source_trail": 10
+      }
+    ],
+    "axes": [
+      {
+        "id": "AX-01",
+        "records": 15,
+        "source_records": 1,
+        "source_checked": 1,
+        "reviewed": 0,
+        "unreviewed": 14,
+        "legacy": 13,
+        "non_source_with_source_trail": 3
+      },
+      {
+        "id": "AX-02",
+        "records": 10,
+        "source_records": 2,
+        "source_checked": 2,
+        "reviewed": 0,
+        "unreviewed": 8,
+        "legacy": 3,
+        "non_source_with_source_trail": 2
+      },
+      {
+        "id": "AX-03",
+        "records": 29,
+        "source_records": 3,
+        "source_checked": 3,
+        "reviewed": 0,
+        "unreviewed": 26,
+        "legacy": 11,
+        "non_source_with_source_trail": 11
+      },
+      {
+        "id": "AX-04",
+        "records": 13,
+        "source_records": 2,
+        "source_checked": 2,
+        "reviewed": 0,
+        "unreviewed": 11,
+        "legacy": 4,
+        "non_source_with_source_trail": 5
+      },
+      {
+        "id": "AX-05",
+        "records": 22,
+        "source_records": 2,
+        "source_checked": 2,
+        "reviewed": 0,
+        "unreviewed": 20,
+        "legacy": 7,
+        "non_source_with_source_trail": 9
+      },
+      {
+        "id": "AX-06",
+        "records": 9,
+        "source_records": 3,
+        "source_checked": 3,
+        "reviewed": 0,
+        "unreviewed": 6,
+        "legacy": 0,
+        "non_source_with_source_trail": 6
+      },
+      {
+        "id": "AX-07",
+        "records": 15,
+        "source_records": 1,
+        "source_checked": 3,
+        "reviewed": 0,
+        "unreviewed": 12,
+        "legacy": 5,
+        "non_source_with_source_trail": 6
+      },
+      {
+        "id": "AX-08",
+        "records": 8,
+        "source_records": 1,
+        "source_checked": 1,
+        "reviewed": 0,
+        "unreviewed": 7,
+        "legacy": 6,
+        "non_source_with_source_trail": 0
+      }
+    ],
+    "capabilities": [
+      {
+        "id": "CAP-01",
+        "records": 16,
+        "source_records": 3,
+        "source_checked": 3,
+        "reviewed": 0,
+        "unreviewed": 13,
+        "legacy": 0,
+        "non_source_with_source_trail": 8
+      },
+      {
+        "id": "CAP-02",
+        "records": 20,
+        "source_records": 5,
+        "source_checked": 5,
+        "reviewed": 0,
+        "unreviewed": 15,
+        "legacy": 0,
+        "non_source_with_source_trail": 10
+      },
+      {
+        "id": "CAP-03",
+        "records": 14,
+        "source_records": 3,
+        "source_checked": 3,
+        "reviewed": 0,
+        "unreviewed": 11,
+        "legacy": 1,
+        "non_source_with_source_trail": 5
+      },
+      {
+        "id": "CAP-04",
+        "records": 25,
+        "source_records": 4,
+        "source_checked": 6,
+        "reviewed": 0,
+        "unreviewed": 19,
+        "legacy": 0,
+        "non_source_with_source_trail": 14
+      },
+      {
+        "id": "CAP-05",
+        "records": 2,
+        "source_records": 0,
+        "source_checked": 0,
+        "reviewed": 0,
+        "unreviewed": 2,
+        "legacy": 1,
+        "non_source_with_source_trail": 0
+      },
+      {
+        "id": "CAP-06",
+        "records": 2,
+        "source_records": 1,
+        "source_checked": 1,
+        "reviewed": 0,
+        "unreviewed": 1,
+        "legacy": 0,
+        "non_source_with_source_trail": 0
+      }
+    ]
+  },
+  "discipline_folders": {
+    "arts-professional": 1,
+    "humanities-social": 1,
+    "language-literacy": 1,
+    "stem-math-science": 2
+  },
+  "untagged": {
+    "stage": [
+      "moc-assessment",
+      "moc-classroom-practice",
+      "moc-instructional-design",
+      "moc-learning-science",
+      "moc-master",
+      "evidence-agarwal-2021-retrieval",
+      "evidence-barbieri-2023-worked-examples",
+      "evidence-mawson-2025-spacing",
+      "evidence-wisniewski-2020-feedback",
+      "eval-adaptive-oral-defense-viva"
+    ],
+    "axes": [
+      "moc-assessment",
+      "moc-classroom-practice",
+      "moc-learning-science",
+      "moc-master",
+      "neurobiology-of-learning",
+      "neuromyths-debunked",
+      "dual-coding-theory-multimedia-learning",
+      "interleaving-practice",
+      "spaced-practice-retrieval",
+      "achievement-motivation-and-agency",
+      "epistemic-ethics-and-critical-pedagogy",
+      "direct-instruction-engelmann",
+      "problem-based-learning-7jumps",
+      "productive-failure-kapur",
+      "clinical-reasoning-and-deliberate-practice",
+      "science-of-reading-scarborough-rope",
+      "singapore-math-bar-modeling",
+      "case-ai-oral-defense-viva-undergrad",
+      "case-ai-synthetic-student-rehearsal",
+      "case-eric-mazur-harvard-peer-instruction",
+      "case-grade-7-algebra-worked-examples",
+      "case-highschool-biology-retrieval-spacing",
+      "case-kmofap-formative-assessment-wiliam",
+      "case-mcmaster-maastricht-pbl-medical",
+      "case-perry-preschool-highscope-longitudinal",
+      "case-project-follow-through-direct-instruction",
+      "case-university-physics-productive-failure",
+      "case-fraction-misconception",
+      "wait-time-questioning-protocol",
+      "worked-example-fading-protocol",
+      "5e-instructional-model",
+      "explicit-instruction-i-we-you",
+      "catalog-stem-and-humanities-misconceptions",
+      "evidence-agarwal-2021-retrieval",
+      "evidence-barbieri-2023-worked-examples",
+      "evidence-mawson-2025-spacing",
+      "evidence-wisniewski-2020-feedback",
+      "instructional-coaching-observation-protocol",
+      "socratic-and-explicit-facilitation-protocol",
+      "peer-observation-and-mentorship",
+      "video-assisted-instructional-coaching",
+      "scholarship-of-teaching-and-learning"
+    ],
+    "capabilities": [
+      "moc-assessment",
+      "moc-classroom-practice",
+      "moc-learning-science",
+      "moc-master",
+      "neurobiology-of-learning",
+      "neuromyths-debunked",
+      "concept-executive-functions",
+      "foundation-self-determination-theory",
+      "concept-cognitive-load-theory",
+      "dual-coding-theory-multimedia-learning",
+      "interleaving-practice",
+      "spaced-practice-retrieval",
+      "achievement-motivation-and-agency",
+      "epistemic-ethics-and-critical-pedagogy",
+      "stage-s0-prenatal-caregiver",
+      "stage-s2-primary",
+      "stage-s3-secondary",
+      "stage-s4-tertiary",
+      "stage-s5-postgraduate-doctoral",
+      "stage-s7-master-pedagogy",
+      "practice-formative-hinge-questions",
+      "practice-ai-epistemic-partner",
+      "practice-cognitive-offloading-atrophy",
+      "practice-process-based-assessment-viva",
+      "practice-synthetic-learners",
+      "direct-instruction-engelmann",
+      "problem-based-learning-7jumps",
+      "productive-failure-kapur",
+      "practice-rosenshine-principles",
+      "clinical-reasoning-and-deliberate-practice",
+      "discipline-humanities-historical-inquiry",
+      "science-of-reading-scarborough-rope",
+      "singapore-math-bar-modeling",
+      "discipline-stem-pedagogy",
+      "case-ai-oral-defense-viva-undergrad",
+      "case-ai-synthetic-student-rehearsal",
+      "case-eric-mazur-harvard-peer-instruction",
+      "case-grade-7-algebra-worked-examples",
+      "case-highschool-biology-retrieval-spacing",
+      "case-kmofap-formative-assessment-wiliam",
+      "case-mcmaster-maastricht-pbl-medical",
+      "case-perry-preschool-highscope-longitudinal",
+      "case-project-follow-through-direct-instruction",
+      "case-university-physics-productive-failure",
+      "case-fraction-misconception",
+      "wait-time-questioning-protocol",
+      "worked-example-fading-protocol",
+      "5e-instructional-model",
+      "explicit-instruction-i-we-you",
+      "catalog-stem-and-humanities-misconceptions",
+      "claim-retrieval-practice-001",
+      "evidence-agarwal-2021-retrieval",
+      "evidence-barbieri-2023-worked-examples",
+      "evidence-mawson-2025-spacing",
+      "evidence-wisniewski-2020-feedback",
+      "capability-learner-diagnostics",
+      "professor-dissertation-defense-guide",
+      "peer-observation-and-mentorship",
+      "video-assisted-instructional-coaching",
+      "scholarship-of-teaching-and-learning",
+      "eval-adaptive-oral-defense-viva"
+    ]
+  },
+  "without_source_trail": [
+    "moc-assessment",
+    "moc-classroom-practice",
+    "moc-instructional-design",
+    "moc-learning-science",
+    "moc-master",
+    "neurobiology-of-learning",
+    "neuromyths-debunked",
+    "concept-executive-functions",
+    "foundation-self-determination-theory",
+    "concept-self-regulation",
+    "dual-coding-theory-multimedia-learning",
+    "interleaving-practice",
+    "spaced-practice-retrieval",
+    "concept-working-memory",
+    "achievement-motivation-and-agency",
+    "epistemic-ethics-and-critical-pedagogy",
+    "stage-s0-prenatal-caregiver",
+    "stage-s2-primary",
+    "stage-s3-secondary",
+    "stage-s4-tertiary",
+    "stage-s5-postgraduate-doctoral",
+    "stage-s7-master-pedagogy",
+    "practice-formative-hinge-questions",
+    "practice-ai-epistemic-partner",
+    "practice-process-based-assessment-viva",
+    "practice-synthetic-learners",
+    "practice-autonomy-supportive-teaching",
+    "direct-instruction-engelmann",
+    "method-peer-instruction",
+    "problem-based-learning-7jumps",
+    "productive-failure-kapur",
+    "method-self-regulated-learning",
+    "clinical-reasoning-and-deliberate-practice",
+    "discipline-humanities-historical-inquiry",
+    "science-of-reading-scarborough-rope",
+    "singapore-math-bar-modeling",
+    "discipline-stem-pedagogy",
+    "case-ai-oral-defense-viva-undergrad",
+    "case-ai-synthetic-student-rehearsal",
+    "case-eric-mazur-harvard-peer-instruction",
+    "case-grade-7-algebra-worked-examples",
+    "case-highschool-biology-retrieval-spacing",
+    "case-kmofap-formative-assessment-wiliam",
+    "case-mcmaster-maastricht-pbl-medical",
+    "case-perry-preschool-highscope-longitudinal",
+    "case-project-follow-through-direct-instruction",
+    "case-university-physics-productive-failure",
+    "case-fraction-misconception",
+    "wait-time-questioning-protocol",
+    "worked-example-fading-protocol",
+    "5e-instructional-model",
+    "explicit-instruction-i-we-you",
+    "catalog-stem-and-humanities-misconceptions",
+    "claim-retrieval-practice-001",
+    "instructional-coaching-observation-protocol",
+    "capability-learner-diagnostics",
+    "socratic-and-explicit-facilitation-protocol",
+    "professor-dissertation-defense-guide",
+    "peer-observation-and-mentorship",
+    "video-assisted-instructional-coaching",
+    "scholarship-of-teaching-and-learning",
+    "eval-adaptive-oral-defense-viva",
+    "eval-pedagogical-diagnosis-01",
+    "prompt-synthetic-learner-runtime",
+    "RUB-01",
+    "protocol-knowledge-research-cycle",
+    "runtime-pedagogical-state-machine"
+  ],
+  "unclassified": [
+    "dual-coding-theory-multimedia-learning",
+    "case-highschool-biology-retrieval-spacing",
+    "case-kmofap-formative-assessment-wiliam",
+    "case-mcmaster-maastricht-pbl-medical",
+    "case-perry-preschool-highscope-longitudinal",
+    "case-project-follow-through-direct-instruction",
+    "case-university-physics-productive-failure"
+  ],
+  "learning_effectiveness": "not_assessed",
+  "interpretation": [
+    "Counts describe declared tags and source trails, not complete curricula or learning gains.",
+    "Tags overlap. Missing tags may reflect missing metadata rather than absent prose.",
+    "Source trails follow evidence references, never navigation or prerequisite proximity.",
+    "A source trail does not establish support, applicability or independent appraisal.",
+    "Legacy prose citations are not silently converted into verified source records.",
+    "Any registry error prevents structural acceptance; review the full diagnostics."
+  ],
+  "records": [
+    {
+      "id": "moc-assessment",
+      "path": "00-navigation/MOC-Assessment.md",
+      "type": "moc",
+      "title": "Map of Content: Assessment & Psychometrics",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "moc-classroom-practice",
+      "path": "00-navigation/MOC-Classroom-Practice.md",
+      "type": "moc",
+      "title": "Map of Content: Classroom Practice & Clinical Cases",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "moc-instructional-design",
+      "path": "00-navigation/MOC-Instructional-Design.md",
+      "type": "moc",
+      "title": "Map of Content: Instructional Design & AI-Pedagogy Architectures",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "not-applicable",
+      "stage": [],
+      "axes": [
+        "AX-03",
+        "AX-04"
+      ],
+      "capabilities": [
+        "CAP-02"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "moc-learning-science",
+      "path": "00-navigation/MOC-Learning-Science.md",
+      "type": "moc",
+      "title": "Map of Content: Learning Sciences & Cognitive Neuroscience",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "moc-master",
+      "path": "00-navigation/MOC-Master.md",
+      "type": "moc",
+      "title": "Master Map of Content (Master MOC)",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "not-applicable",
+      "stage": [],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "neurobiology-of-learning",
+      "path": "10-foundations/cognitive-neuroscience/neurobiology-of-learning.md",
+      "type": "concept",
+      "title": "The Neurobiology of Learning: Synaptic Plasticity, Memory Consolidation, and Neural Architecture",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "neuromyths-debunked",
+      "path": "10-foundations/cognitive-neuroscience/neuromyths-debunked.md",
+      "type": "concept",
+      "title": "Neuromyths in Education: Empirical Refutations, Cognitive Realities, and Evidence-Based Substitutes",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "concept-executive-functions",
+      "path": "10-foundations/developmental-psych/executive-functions.md",
+      "type": "concept",
+      "title": "Executive Functions: Prefrontal Neurodevelopment & Self-Regulatory Scaffolding",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-02"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "foundation-self-determination-theory",
+      "path": "10-foundations/developmental-psych/self-determination-theory.md",
+      "type": "concept",
+      "title": "Self-Determination Theory: The Architecture of Intrinsic Motivation & Human Agency",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S6"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-02"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "concept-self-regulation",
+      "path": "10-foundations/developmental-psych/self-regulation.md",
+      "type": "concept",
+      "title": "Tự điều chỉnh trong hoạt động học",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-02"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-04"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "concept-cognitive-load-theory",
+      "path": "10-foundations/learning-science/cognitive-load-theory.md",
+      "type": "concept",
+      "title": "Cognitive Load Theory: Human Cognitive Architecture & Instructional Calibration",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-03"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": [
+        "evidence-barbieri-2023-worked-examples",
+        "evidence-mawson-2025-spacing"
+      ]
+    },
+    {
+      "id": "dual-coding-theory-multimedia-learning",
+      "path": "10-foundations/learning-science/dual-coding-theory-multimedia-learning.md",
+      "type": "unclassified",
+      "title": "Dual Coding Theory & Multimedia Learning",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "interleaving-practice",
+      "path": "10-foundations/learning-science/interleaving-practice.md",
+      "type": "concept",
+      "title": "Interleaving Practice: Cognitive Contrast, Category Boundary Formation, and Inductive Learning",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "spaced-practice-retrieval",
+      "path": "10-foundations/learning-science/spaced-practice-retrieval.md",
+      "type": "concept",
+      "title": "Spaced Practice and the Retrieval Effect: Cognitive Dynamics, Synaptic Reconsolidation, and Instructional Protocols",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "concept-working-memory",
+      "path": "10-foundations/learning-science/working-memory.md",
+      "type": "concept",
+      "title": "Bộ nhớ làm việc: thiết kế tác vụ có thể theo dõi",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-01"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "achievement-motivation-and-agency",
+      "path": "10-foundations/motivation/achievement-motivation-and-agency.md",
+      "type": "concept",
+      "title": "Achievement Motivation, Self-Efficacy, and Epistemic Agency: Psychological Architecture and Classroom Drivers",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "epistemic-ethics-and-critical-pedagogy",
+      "path": "10-foundations/philosophy-ethics/epistemic-ethics-and-critical-pedagogy.md",
+      "type": "concept",
+      "title": "Epistemic Ethics, Critical Pedagogy, and the Moral Architecture of Learning",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "stage-s0-prenatal-caregiver",
+      "path": "20-stages/s0-prenatal-caregiver/prenatal-neurodevelopment.md",
+      "type": "stage-guide",
+      "title": "Stage S0: Prenatal Neurodevelopment & Caregiver Preparation: Epigenetics, Stress Biology & Vocal Anchoring",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S0"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-02"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "stage-s1-early-childhood",
+      "path": "20-stages/s1-early-childhood/play-and-executive-function.md",
+      "type": "stage-guide",
+      "title": "Early childhood: responsive interaction, guided play and observation",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1"
+      ],
+      "axes": [
+        "AX-02",
+        "AX-03",
+        "AX-06"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-03",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-cast-2024-udl-guidelines",
+        "evidence-naeyc-developmentally-appropriate-practice"
+      ]
+    },
+    {
+      "id": "stage-s2-primary",
+      "path": "20-stages/s2-primary/explicit-instruction-fln.md",
+      "type": "stage-guide",
+      "title": "Stage S2: Primary Education (Ages 6–11): Foundational Literacy & Numeracy (FLN) & Explicit Scaffolding",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-03",
+        "AX-05"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "stage-s3-secondary",
+      "path": "20-stages/s3-secondary/scaffolded-inquiry-visible-thinking.md",
+      "type": "stage-guide",
+      "title": "Stage S3: Secondary Education (Ages 11–18): Disciplinary Inquiry, Visible Thinking & Desirable Difficulties",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-03",
+        "AX-04"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "stage-s4-tertiary",
+      "path": "20-stages/s4-tertiary/constructive-alignment-productive-failure.md",
+      "type": "stage-guide",
+      "title": "Stage S4: Tertiary & Undergraduate (Ages 18–22): Constructive Alignment, Productive Failure & Peer Instruction",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S4"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-04",
+        "AX-05"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "stage-s5-postgraduate-doctoral",
+      "path": "20-stages/s5-postgraduate-doctoral/doctoral-supervision-socratic.md",
+      "type": "stage-guide",
+      "title": "Stage S5: Postgraduate & Doctoral Education: Socratic Supervision, Epistemic Independence & The Viva Voce",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S5"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-08"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "stage-s6-lifelong-adult",
+      "path": "20-stages/s6-lifelong-adult/andragogy-experiential-learning.md",
+      "type": "stage-guide",
+      "title": "Adult and lifelong learning: goals, prior knowledge and flexible pathways",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S6"
+      ],
+      "axes": [
+        "AX-02",
+        "AX-03",
+        "AX-04",
+        "AX-06"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-03",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-cast-2024-udl-guidelines",
+        "evidence-ies-2007-organizing-instruction",
+        "evidence-unesco-2015-adult-learning"
+      ]
+    },
+    {
+      "id": "stage-s7-master-pedagogy",
+      "path": "20-stages/s7-master-pedagogy/sotl-and-instructional-coaching.md",
+      "type": "stage-guide",
+      "title": "Stage S7: Master Pedagogy & Professorial Leadership: SoTL & Clinical Instructional Coaching",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-05",
+        "AX-08"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "method-formative-feedback",
+      "path": "30-pedagogy/assessment-psychometrics/formative-feedback.md",
+      "type": "practice",
+      "title": "Phản hồi để người học biết và thử bước tiếp theo",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-05"
+      ],
+      "capabilities": [
+        "CAP-03",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-wisniewski-2020-feedback"
+      ]
+    },
+    {
+      "id": "practice-formative-hinge-questions",
+      "path": "30-pedagogy/assessment-psychometrics/formative-hinge-questions.md",
+      "type": "practice",
+      "title": "Formative Assessment & Diagnostic Hinge-Point Questions: Real-Time Signal Detection",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "axes": [
+        "AX-05",
+        "AX-01"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "practice-backward-design-ubd",
+      "path": "30-pedagogy/curriculum-design/backward-design-ubd.md",
+      "type": "practice",
+      "title": "Backward Design & Understanding by Design (UbD): Curricular Alignment & Transfer Architecture",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-04",
+        "AX-05"
+      ],
+      "capabilities": [
+        "CAP-02",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-cmu-course-alignment"
+      ]
+    },
+    {
+      "id": "practice-ai-assistance-ladder",
+      "path": "30-pedagogy/edtech-ai/ai-assistance-ladder.md",
+      "type": "practice",
+      "title": "AI Assistance Ladder AL0–AL7: Support and Independent Competence",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-07"
+      ],
+      "capabilities": [
+        "CAP-02",
+        "CAP-03",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-bastani-2025-ai-guardrails"
+      ]
+    },
+    {
+      "id": "practice-ai-epistemic-partner",
+      "path": "30-pedagogy/edtech-ai/ai-epistemic-partner.md",
+      "type": "practice",
+      "title": "AI as Epistemic Partner: Socratic Scaffolding, Cognitive Atrophy Prevention & UNESCO Alignment",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3",
+        "S4",
+        "S5",
+        "S7"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-07",
+        "AX-08"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "practice-cognitive-offloading-atrophy",
+      "path": "30-pedagogy/edtech-ai/cognitive-offloading-and-atrophy.md",
+      "type": "practice",
+      "title": "Cognitive Offloading, Epistemic Atrophy & Productive Friction: Desirable Difficulties in the AI Era",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-07"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": [
+        "evidence-bastani-2025-ai-guardrails"
+      ]
+    },
+    {
+      "id": "practice-process-based-assessment-viva",
+      "path": "30-pedagogy/edtech-ai/process-based-assessment-viva.md",
+      "type": "practice",
+      "title": "Process-Based Assessment & The Adaptive Viva: The Death of the Take-Home Essay in the AI Era",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "axes": [
+        "AX-05",
+        "AX-07",
+        "AX-08"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "practice-synthetic-learners",
+      "path": "30-pedagogy/edtech-ai/synthetic-learners.md",
+      "type": "practice",
+      "title": "Synthetic Learners: Multi-Agent Simulation for Clinical Teacher Training & Deliberate Practice",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S4",
+        "S5",
+        "S7"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-03",
+        "AX-07"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "practice-cast-udl-framework",
+      "path": "30-pedagogy/inclusion-udl/cast-udl-3-framework.md",
+      "type": "practice",
+      "title": "UDL 3.0: identify barriers and preserve meaningful learning goals",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-05",
+        "AX-06"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-03",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-cast-2024-udl-guidelines",
+        "evidence-cmu-course-alignment"
+      ]
+    },
+    {
+      "id": "practice-autonomy-supportive-teaching",
+      "path": "30-pedagogy/instructional-methods/autonomy-supportive-teaching.md",
+      "type": "practice",
+      "title": "Hỗ trợ quyền lựa chọn cùng hướng dẫn rõ ràng",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-02",
+        "AX-03"
+      ],
+      "capabilities": [
+        "CAP-02",
+        "CAP-03"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "direct-instruction-engelmann",
+      "path": "30-pedagogy/instructional-methods/direct-instruction-engelmann.md",
+      "type": "practice",
+      "title": "Direct Instruction (DI): Engelmann's Faultless Communication, Choral Responding, and the Follow Through Engine",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S6"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "method-peer-instruction",
+      "path": "30-pedagogy/instructional-methods/peer-instruction.md",
+      "type": "practice",
+      "title": "Peer Instruction: lựa chọn cá nhân, trao đổi lý do và kiểm tra lại",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3",
+        "S4",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-05"
+      ],
+      "capabilities": [
+        "CAP-03",
+        "CAP-04"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "problem-based-learning-7jumps",
+      "path": "30-pedagogy/instructional-methods/problem-based-learning-7jumps.md",
+      "type": "practice",
+      "title": "Problem-Based Learning (PBL): The Maastricht 7-Jump Protocol, Clinical Case Diagnostics, and Scaffolding Dynamics",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "productive-failure-kapur",
+      "path": "30-pedagogy/instructional-methods/productive-failure-kapur.md",
+      "type": "practice",
+      "title": "Productive Failure: The 2-Phase Architecture of Exploration, Generation, and Explicit Consolidation",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "practice-rosenshine-principles",
+      "path": "30-pedagogy/instructional-methods/rosenshine-10-principles.md",
+      "type": "practice",
+      "title": "Barak Rosenshine’s 10 Principles of Instruction: Direct Cognitive Scaffolding",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-03"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": [
+        "evidence-barbieri-2023-worked-examples",
+        "evidence-wisniewski-2020-feedback"
+      ]
+    },
+    {
+      "id": "method-self-regulated-learning",
+      "path": "30-pedagogy/instructional-methods/self-regulated-learning.md",
+      "type": "practice",
+      "title": "Lập kế hoạch, theo dõi và điều chỉnh cách học",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-02",
+        "AX-03"
+      ],
+      "capabilities": [
+        "CAP-02",
+        "CAP-04"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "clinical-reasoning-and-deliberate-practice",
+      "path": "40-disciplines/arts-professional/clinical-reasoning-and-deliberate-practice.md",
+      "type": "discipline",
+      "title": "Clinical Reasoning, Studio Critique, and Deliberate Practice: The Pedagogy of Expert Performance",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "discipline-humanities-historical-inquiry",
+      "path": "40-disciplines/humanities-social/historical-thinking-inquiry.md",
+      "type": "discipline",
+      "title": "Humanities & Social Sciences Disciplinary Pedagogy: Historical Thinking & Primary Source Sourcing",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3",
+        "S4"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-04"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "science-of-reading-scarborough-rope",
+      "path": "40-disciplines/language-literacy/science-of-reading-scarborough-rope.md",
+      "type": "discipline",
+      "title": "The Science of Reading: Scarborough's Reading Rope, Orthographic Mapping, and the Simple View of Reading",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "singapore-math-bar-modeling",
+      "path": "40-disciplines/stem-math-science/singapore-math-bar-modeling.md",
+      "type": "discipline",
+      "title": "Singapore Math Bar Modeling: Concrete-Pictorial-Abstract (CPA) Progression and Visual Algebraic Scaffolding",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "discipline-stem-pedagogy",
+      "path": "40-disciplines/stem-math-science/stem-disciplinary-pedagogy.md",
+      "type": "discipline",
+      "title": "STEM Disciplinary Pedagogy: 3D Science Learning (NGSS), CER Modeling & Bar Model Mathematics",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-04"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-ai-oral-defense-viva-undergrad",
+      "path": "50-practice-library/cases/case-ai-oral-defense-viva-undergrad.md",
+      "type": "case",
+      "title": "Clinical Case: Evaluating an AI-Assisted Undergraduate Capstone via Oral Defense",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S4",
+        "S5"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-ai-synthetic-student-rehearsal",
+      "path": "50-practice-library/cases/case-ai-synthetic-student-rehearsal.md",
+      "type": "case",
+      "title": "Clinical Simulation Case: Pre-Service Teacher Rehearsal Against a Synthetic Student",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S4",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-eric-mazur-harvard-peer-instruction",
+      "path": "50-practice-library/cases/case-eric-mazur-harvard-peer-instruction.md",
+      "type": "case",
+      "title": "Clinical Simulation Case: Eric Mazur & The Harvard Epistemic Crisis (Peer Instruction Invention)",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S4",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-grade-7-algebra-worked-examples",
+      "path": "50-practice-library/cases/case-grade-7-algebra-worked-examples.md",
+      "type": "case",
+      "title": "Ca Thực Chiến: Dạy Phương Trình Bậc Nhất Lớp 7 Bằng Worked Examples & Fading",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-highschool-biology-retrieval-spacing",
+      "path": "50-practice-library/cases/case-highschool-biology-retrieval-spacing.md",
+      "type": "unclassified",
+      "title": "Ca Thực Chiến: Dạy Sinh Học 10 Bằng Bài Kiểm Tra Nhẹ Đầu Giờ & Giãn Cách Ôn Tập",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-kmofap-formative-assessment-wiliam",
+      "path": "50-practice-library/cases/case-kmofap-formative-assessment-wiliam.md",
+      "type": "unclassified",
+      "title": "UK Empirical Case: Dylan Wiliam, Paul Black & The KMOFAP Formative Assessment Revolution",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-mcmaster-maastricht-pbl-medical",
+      "path": "50-practice-library/cases/case-mcmaster-maastricht-pbl-medical.md",
+      "type": "unclassified",
+      "title": "Medical Case Study: McMaster & Maastricht Medical Problem-Based Learning (PBL) Revolution",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S4",
+        "S5"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-perry-preschool-highscope-longitudinal",
+      "path": "50-practice-library/cases/case-perry-preschool-highscope-longitudinal.md",
+      "type": "unclassified",
+      "title": "Longitudinal Case Study: HighScope Perry Preschool 40-Year Randomized Controlled Trial",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-project-follow-through-direct-instruction",
+      "path": "50-practice-library/cases/case-project-follow-through-direct-instruction.md",
+      "type": "unclassified",
+      "title": "Historical Case Study: Project Follow Through & Empirical Direct Instruction Evidence",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-university-physics-productive-failure",
+      "path": "50-practice-library/cases/case-university-physics-productive-failure.md",
+      "type": "unclassified",
+      "title": "Ca Thực Chiến: Dạy Cơ Học Đại Học Bằng Thất Bại Hiệu Quả (Productive Failure)",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S4"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "case-fraction-misconception",
+      "path": "50-practice-library/cases/fraction-misconception-clinical-case.md",
+      "type": "case",
+      "title": "Clinical Pedagogical Case: Deconstructing the Whole Number Bias in Rational Numbers (Grade 6 Mathematics)",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "wait-time-questioning-protocol",
+      "path": "50-practice-library/interventions/wait-time-questioning-protocol.md",
+      "type": "practice",
+      "title": "The Wait-Time Questioning Protocol: Rowe's Twin Pauses, Cognitive Latency, and Dylan Wiliam Formative Calibration",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "worked-example-fading-protocol",
+      "path": "50-practice-library/interventions/worked-example-fading-protocol.md",
+      "type": "practice",
+      "title": "The Worked-Example Fading Protocol: Cognitive Scaffolding, Completion Problems, and Self-Explanation Prompts",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "5e-instructional-model",
+      "path": "50-practice-library/lesson-patterns/5e-instructional-model.md",
+      "type": "practice",
+      "title": "The BSCS 5E Instructional Model: Engage, Explore, Explain, Elaborate, and Evaluate",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "explicit-instruction-i-we-you",
+      "path": "50-practice-library/lesson-patterns/explicit-instruction-i-we-you.md",
+      "type": "practice",
+      "title": "Explicit Instruction Architecture: The 'I Do, We Do, You Do' Gradual Release Protocol",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S6"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "catalog-stem-and-humanities-misconceptions",
+      "path": "50-practice-library/misconceptions/catalog-stem-and-humanities-misconceptions.md",
+      "type": "practice",
+      "title": "The Master Catalog of Landmark Student Misconceptions: Diagnostic Cues, Probes, and Disconfirming Interventions",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "claim-bastani-2025-unassisted-performance",
+      "path": "60-evidence/claims/ai-guardrails-unassisted-performance.yaml",
+      "type": "claim",
+      "title": "GPT Base and subsequent unassisted exam grades",
+      "origin_schema": "2.0.0",
+      "review_status": "source-checked",
+      "evidence_grade": "U",
+      "claim_status": "supported",
+      "stage": [
+        "S3"
+      ],
+      "axes": [
+        "AX-07"
+      ],
+      "capabilities": [
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-bastani-2025-ai-guardrails"
+      ]
+    },
+    {
+      "id": "claim-retrieval-practice-001",
+      "path": "60-evidence/claims/retrieval-practice-evidence.yaml",
+      "type": "claim",
+      "title": "Thực hành gợi nhớ (Retrieval Practice) tăng cường bền vững trí nhớ dài hạn vượt trội so với đọc lại thụ động",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S6"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-03"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "estimate-bastani-2025-relative-exam-grades",
+      "path": "60-evidence/estimates/bastani-relative-exam-grades.yaml",
+      "type": "estimate",
+      "title": "Relative difference in unassisted exam grades",
+      "origin_schema": "2.0.0",
+      "review_status": "source-checked",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3"
+      ],
+      "axes": [
+        "AX-07"
+      ],
+      "capabilities": [
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-bastani-2025-ai-guardrails"
+      ]
+    },
+    {
+      "id": "EVI-02",
+      "path": "60-evidence/evidence-maps/pedagogical-evidence-map.md",
+      "type": "evidence-map",
+      "title": "Pedagogical Evidence Map: Context and Prior-Knowledge Decisions",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-05"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-agarwal-2021-retrieval",
+        "evidence-barbieri-2023-worked-examples",
+        "evidence-mawson-2025-spacing",
+        "evidence-wisniewski-2020-feedback"
+      ]
+    },
+    {
+      "id": "evidence-agarwal-2021-retrieval",
+      "path": "60-evidence/sources/evidence-agarwal-2021-retrieval.md",
+      "type": "source",
+      "title": "Thực Hành Gợi Nhớ Trong Trường Học: Tổng Quan Hệ Thống Thực Địa (Classroom Retrieval Practice Review)",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": [
+        "evidence-agarwal-2021-retrieval"
+      ]
+    },
+    {
+      "id": "evidence-barbieri-2023-worked-examples",
+      "path": "60-evidence/sources/evidence-barbieri-2023-worked-examples.md",
+      "type": "source",
+      "title": "Meta-analysis Về Hiệu Quả Của Bài Giải Mẫu (Worked Examples) Trong Giảng Dạy Toán Học",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": [
+        "evidence-barbieri-2023-worked-examples"
+      ]
+    },
+    {
+      "id": "evidence-bastani-2025-ai-guardrails",
+      "path": "60-evidence/sources/evidence-bastani-2025-ai-guardrails.md",
+      "type": "source",
+      "title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+      "origin_schema": "2.0.0",
+      "review_status": "source-checked",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S3"
+      ],
+      "axes": [
+        "AX-07"
+      ],
+      "capabilities": [
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-bastani-2025-ai-guardrails"
+      ]
+    },
+    {
+      "id": "evidence-cast-2024-udl-guidelines",
+      "path": "60-evidence/sources/evidence-cast-2024-udl-guidelines.md",
+      "type": "source",
+      "title": "CAST Universal Design for Learning Guidelines version 3.0",
+      "origin_schema": "2.0.0",
+      "review_status": "source-checked",
+      "evidence_grade": "D",
+      "claim_status": "not-applicable",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-06"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-03",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-cast-2024-udl-guidelines"
+      ]
+    },
+    {
+      "id": "evidence-cmu-course-alignment",
+      "path": "60-evidence/sources/evidence-cmu-course-alignment.md",
+      "type": "source",
+      "title": "CMU Eberly Center: alignment of objectives, assessment and instruction",
+      "origin_schema": "2.0.0",
+      "review_status": "source-checked",
+      "evidence_grade": "D",
+      "claim_status": "not-applicable",
+      "stage": [
+        "S4",
+        "S5",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-04",
+        "AX-05"
+      ],
+      "capabilities": [
+        "CAP-02",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-cmu-course-alignment"
+      ]
+    },
+    {
+      "id": "evidence-ies-2007-organizing-instruction",
+      "path": "60-evidence/sources/evidence-ies-2007-organizing-instruction.md",
+      "type": "source",
+      "title": "IES/WWC: Organizing Instruction and Study to Improve Student Learning",
+      "origin_schema": "2.0.0",
+      "review_status": "source-checked",
+      "evidence_grade": "U",
+      "claim_status": "not-applicable",
+      "stage": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-03",
+        "AX-05"
+      ],
+      "capabilities": [
+        "CAP-02",
+        "CAP-03",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-ies-2007-organizing-instruction"
+      ]
+    },
+    {
+      "id": "evidence-mawson-2025-spacing",
+      "path": "60-evidence/sources/evidence-mawson-2025-spacing.md",
+      "type": "source",
+      "title": "Hiệu Ứng Giãn Cách Trong Lớp Học Thực Tế (Classroom Spacing Effect Meta-analysis)",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": [
+        "evidence-mawson-2025-spacing"
+      ]
+    },
+    {
+      "id": "evidence-naeyc-developmentally-appropriate-practice",
+      "path": "60-evidence/sources/evidence-naeyc-developmentally-appropriate-practice.md",
+      "type": "source",
+      "title": "NAEYC: developmentally appropriate practice and learner variability",
+      "origin_schema": "2.0.0",
+      "review_status": "source-checked",
+      "evidence_grade": "D",
+      "claim_status": "not-applicable",
+      "stage": [
+        "S1",
+        "S2"
+      ],
+      "axes": [
+        "AX-02",
+        "AX-03",
+        "AX-06"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-03"
+      ],
+      "traceable_source_ids": [
+        "evidence-naeyc-developmentally-appropriate-practice"
+      ]
+    },
+    {
+      "id": "evidence-unesco-2015-adult-learning",
+      "path": "60-evidence/sources/evidence-unesco-2015-adult-learning.md",
+      "type": "source",
+      "title": "UNESCO Recommendation on Adult Learning and Education",
+      "origin_schema": "2.0.0",
+      "review_status": "source-checked",
+      "evidence_grade": "D",
+      "claim_status": "not-applicable",
+      "stage": [
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-02",
+        "AX-04",
+        "AX-06",
+        "AX-08"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-06"
+      ],
+      "traceable_source_ids": [
+        "evidence-unesco-2015-adult-learning"
+      ]
+    },
+    {
+      "id": "evidence-wisniewski-2020-feedback",
+      "path": "60-evidence/sources/evidence-wisniewski-2020-feedback.md",
+      "type": "source",
+      "title": "Bản Chất Của Phản Hồi Sư Phạm: Meta-analysis 435 Nghiên Cứu Về Feedback",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": [
+        "evidence-wisniewski-2020-feedback"
+      ]
+    },
+    {
+      "id": "meta-analytic-effect-size-synthesis",
+      "path": "60-evidence/syntheses/meta-analytic-effect-size-synthesis.md",
+      "type": "synthesis",
+      "title": "Evidence Comparisons: Extraction and Applicability Limits",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-05"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-agarwal-2021-retrieval",
+        "evidence-barbieri-2023-worked-examples",
+        "evidence-mawson-2025-spacing",
+        "evidence-wisniewski-2020-feedback"
+      ]
+    },
+    {
+      "id": "realtime-formative-adaptation-protocol",
+      "path": "70-capabilities/assess-adapt/realtime-formative-adaptation-protocol.md",
+      "type": "capability",
+      "title": "CAP-04: Adjust instruction from observable learner evidence",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-05"
+      ],
+      "capabilities": [
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-wisniewski-2020-feedback"
+      ]
+    },
+    {
+      "id": "instructional-coaching-observation-protocol",
+      "path": "70-capabilities/coach-mentor/instructional-coaching-observation-protocol.md",
+      "type": "capability",
+      "title": "Instructional Coaching & Observation Protocol (CAP-05): Partnership Principles, Low-Inference Field Notes, and Micro-Rehearsal",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [
+        "CAP-05"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "instructional-system-design-protocol",
+      "path": "70-capabilities/design/instructional-system-design-protocol.md",
+      "type": "capability",
+      "title": "Course and unit design: learner context, alignment, practice and review",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-04",
+        "AX-05",
+        "AX-06"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-cast-2024-udl-guidelines",
+        "evidence-cmu-course-alignment",
+        "evidence-ies-2007-organizing-instruction",
+        "evidence-naeyc-developmentally-appropriate-practice",
+        "evidence-unesco-2015-adult-learning"
+      ]
+    },
+    {
+      "id": "capability-learner-diagnostics",
+      "path": "70-capabilities/diagnose/learner-diagnostics-protocol.md",
+      "type": "capability",
+      "title": "Learner Diagnostics Protocol: Clinical Signal Detection & Misconception Deconstruction",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "axes": [
+        "AX-01",
+        "AX-05"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "socratic-and-explicit-facilitation-protocol",
+      "path": "70-capabilities/teach/socratic-and-explicit-facilitation-protocol.md",
+      "type": "capability",
+      "title": "Facilitation & Delivery Protocol (CAP-03): Socratic Dialectic, Explicit Modeling, and Classroom Flow",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [
+        "CAP-03"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "professor-dissertation-defense-guide",
+      "path": "80-professor-development/doctoral-supervision/dissertation-defense-guide.md",
+      "type": "faculty",
+      "title": "The Master Professor’s Doctoral Defense Coaching Guide (Viva Voce Preparation)",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S5",
+        "S7"
+      ],
+      "axes": [
+        "AX-08"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "peer-observation-and-mentorship",
+      "path": "80-professor-development/faculty-dev/peer-observation-and-mentorship.md",
+      "type": "faculty",
+      "title": "Peer Observation and Faculty Mentorship: Formative Non-Evaluative Protocols and Reciprocal Professional Growth",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "video-assisted-instructional-coaching",
+      "path": "80-professor-development/instructional-coaching/video-assisted-instructional-coaching.md",
+      "type": "faculty",
+      "title": "Video-Assisted Instructional Coaching: The Mirror Effect, Objective Self-Reflection, and Jim Knight's Impact Cycle",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "scholarship-of-teaching-and-learning",
+      "path": "80-professor-development/sotl-scholarship/scholarship-of-teaching-and-learning.md",
+      "type": "faculty",
+      "title": "The Scholarship of Teaching and Learning (SoTL): Boyer's Four Scholarships, Classroom Inquiry, and Empirical Pedagogy",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S7"
+      ],
+      "axes": [],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "eval-adaptive-oral-defense-viva",
+      "path": "90-agent-runtime/evals/adaptive-oral-defense-viva.md",
+      "type": "eval",
+      "title": "Adaptive Oral Defense (Viva Voce) Evaluation Benchmark Protocol",
+      "origin_schema": "legacy",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [],
+      "axes": [
+        "AX-05",
+        "AX-07",
+        "AX-08"
+      ],
+      "capabilities": [],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "eval-course-design-acceptance",
+      "path": "90-agent-runtime/evals/course-design-acceptance.md",
+      "type": "eval",
+      "title": "Course design acceptance scenarios and review rubric",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-04",
+        "AX-05",
+        "AX-06",
+        "AX-07"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-cast-2024-udl-guidelines",
+        "evidence-cmu-course-alignment"
+      ]
+    },
+    {
+      "id": "eval-pedagogical-diagnosis-01",
+      "path": "90-agent-runtime/evals/pedagogical-diagnosis-eval-01.md",
+      "type": "eval",
+      "title": "Pedagogical diagnosis: an authored physics scenario",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "not-applicable",
+      "stage": [
+        "S3",
+        "S7"
+      ],
+      "axes": [
+        "AX-05"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-04"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "prompt-course-design-assistant",
+      "path": "90-agent-runtime/prompts/course-design-assistant.md",
+      "type": "protocol",
+      "title": "Course design assistant: evidence-grounded authoring handoff",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-04",
+        "AX-05",
+        "AX-06",
+        "AX-07"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-02",
+        "CAP-04"
+      ],
+      "traceable_source_ids": [
+        "evidence-cast-2024-udl-guidelines",
+        "evidence-cmu-course-alignment"
+      ]
+    },
+    {
+      "id": "prompt-synthetic-learner-runtime",
+      "path": "90-agent-runtime/prompts/synthetic-learner-runtime.md",
+      "type": "protocol",
+      "title": "Synthetic Learner Rehearsal: Authored Scenario Protocol",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-07"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-03",
+        "CAP-04"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "RUB-01",
+      "path": "90-agent-runtime/rubrics/pedagogical-interaction-rubric.md",
+      "type": "rubric",
+      "title": "Pedagogical Interaction Rubric: Authored Evaluation Protocol",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-05",
+        "AX-07"
+      ],
+      "capabilities": [
+        "CAP-03",
+        "CAP-04",
+        "CAP-05"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "protocol-knowledge-research-cycle",
+      "path": "90-agent-runtime/workflows/knowledge-research-cycle.md",
+      "type": "protocol",
+      "title": "Knowledge research cycle: question, extraction, appraisal and revision",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-04",
+        "AX-05",
+        "AX-07",
+        "AX-08"
+      ],
+      "capabilities": [
+        "CAP-02",
+        "CAP-06"
+      ],
+      "traceable_source_ids": []
+    },
+    {
+      "id": "runtime-pedagogical-state-machine",
+      "path": "90-agent-runtime/workflows/pedagogical-state-machine.md",
+      "type": "protocol",
+      "title": "Pedagogical Control Loop: Specification and Validation Boundaries",
+      "origin_schema": "2.0.0",
+      "review_status": "unreviewed",
+      "evidence_grade": "U",
+      "claim_status": "unreviewed",
+      "stage": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "axes": [
+        "AX-03",
+        "AX-07"
+      ],
+      "capabilities": [
+        "CAP-01",
+        "CAP-03",
+        "CAP-04"
+      ],
+      "traceable_source_ids": []
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "00-navigation/MOC-Assessment.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "00-navigation/MOC-Classroom-Practice.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "00-navigation/MOC-Learning-Science.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "10-foundations/cognitive-neuroscience/neurobiology-of-learning.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "10-foundations/cognitive-neuroscience/neuromyths-debunked.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "10-foundations/developmental-psych/executive-functions.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "10-foundations/developmental-psych/self-determination-theory.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "10-foundations/learning-science/cognitive-load-theory.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "10-foundations/learning-science/dual-coding-theory-multimedia-learning.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "10-foundations/learning-science/interleaving-practice.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "10-foundations/learning-science/spaced-practice-retrieval.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "10-foundations/motivation/achievement-motivation-and-agency.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "10-foundations/philosophy-ethics/epistemic-ethics-and-critical-pedagogy.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "20-stages/s0-prenatal-caregiver/prenatal-neurodevelopment.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "20-stages/s2-primary/explicit-instruction-fln.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "20-stages/s3-secondary/scaffolded-inquiry-visible-thinking.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "20-stages/s4-tertiary/constructive-alignment-productive-failure.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "20-stages/s5-postgraduate-doctoral/doctoral-supervision-socratic.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "20-stages/s7-master-pedagogy/sotl-and-instructional-coaching.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "30-pedagogy/assessment-psychometrics/formative-hinge-questions.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "30-pedagogy/edtech-ai/ai-epistemic-partner.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "30-pedagogy/edtech-ai/cognitive-offloading-and-atrophy.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "30-pedagogy/edtech-ai/process-based-assessment-viva.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "30-pedagogy/edtech-ai/synthetic-learners.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "30-pedagogy/instructional-methods/direct-instruction-engelmann.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "30-pedagogy/instructional-methods/problem-based-learning-7jumps.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "30-pedagogy/instructional-methods/productive-failure-kapur.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "30-pedagogy/instructional-methods/rosenshine-10-principles.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "40-disciplines/arts-professional/clinical-reasoning-and-deliberate-practice.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "40-disciplines/humanities-social/historical-thinking-inquiry.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "40-disciplines/language-literacy/science-of-reading-scarborough-rope.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "40-disciplines/stem-math-science/singapore-math-bar-modeling.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "40-disciplines/stem-math-science/stem-disciplinary-pedagogy.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/case-ai-oral-defense-viva-undergrad.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/case-ai-synthetic-student-rehearsal.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/case-eric-mazur-harvard-peer-instruction.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/case-grade-7-algebra-worked-examples.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/case-highschool-biology-retrieval-spacing.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/case-kmofap-formative-assessment-wiliam.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/case-mcmaster-maastricht-pbl-medical.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/case-perry-preschool-highscope-longitudinal.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/case-project-follow-through-direct-instruction.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/case-university-physics-productive-failure.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/cases/fraction-misconception-clinical-case.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/interventions/wait-time-questioning-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/interventions/worked-example-fading-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/lesson-patterns/5e-instructional-model.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/lesson-patterns/explicit-instruction-i-we-you.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "50-practice-library/misconceptions/catalog-stem-and-humanities-misconceptions.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "60-evidence/claims/retrieval-practice-evidence.yaml: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "60-evidence/sources/evidence-agarwal-2021-retrieval.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "60-evidence/sources/evidence-barbieri-2023-worked-examples.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "60-evidence/sources/evidence-mawson-2025-spacing.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "60-evidence/sources/evidence-wisniewski-2020-feedback.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "70-capabilities/coach-mentor/instructional-coaching-observation-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "70-capabilities/diagnose/learner-diagnostics-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "70-capabilities/teach/socratic-and-explicit-facilitation-protocol.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "80-professor-development/doctoral-supervision/dissertation-defense-guide.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "80-professor-development/faculty-dev/peer-observation-and-mentorship.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "80-professor-development/instructional-coaching/video-assisted-instructional-coaching.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "80-professor-development/sotl-scholarship/scholarship-of-teaching-and-learning.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)",
+    "90-agent-runtime/evals/adaptive-oral-defense-viva.md: LEGACY_UNREVIEWED (metadata adapted; claims not verified)"
+  ]
+}

@@ -1,0 +1,30 @@
+schema_version: "2.0.0"
+id: estimate-bastani-2025-relative-exam-grades
+type: estimate
+title: "Relative difference in unassisted exam grades"
+stage: [S3]
+axes: [AX-07]
+capabilities: [CAP-04]
+context: [high-school-mathematics]
+locale: en
+evidence_grade: U
+claim_status: unreviewed
+review_status: source-checked
+provenance:
+  kind: literature
+  reviewer: primary-source-extraction
+  reviewed_at: "2026-09-15"
+  citations:
+    - url: "https://pubmed.ncbi.nlm.nih.gov/40560616/"
+      locator: "Abstract: field experiment, tutor withdrawal and unassisted exam grades"
+source_id: evidence-bastani-2025-ai-guardrails
+claim_id: claim-bastani-2025-unassisted-performance
+metric: relative_change
+value: -0.17
+scale: proportion
+population: "High-school mathematics students in the reported field experiment"
+comparator: "Students who did not receive generative AI access"
+outcome: "Unassisted exam grades for GPT Base relative to control"
+timepoint: "Study exam after tutor access was removed"
+locator: "Abstract: 17% reduction in grades for GPT Base"
+uncertainty: {status: "Not extracted in this abstract-only source check"}

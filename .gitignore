@@ -4,3 +4,16 @@ node_modules/
 dist/
 .env
 .env.local
+__pycache__/
+*.pyc
+.data/
+.pedagogy-drafts/
+.venv/
+
+# Machine-local ByteRover state; keep the Markdown context tree in Git.
+/.brv/config.json
+/.brv/context-tree/.snapshot.json
+/.brv/logs/
+
+# Generated native source bundle; retain locally without duplicating it in Git.
+/plans/**/Agent-Teacher-local-source-*.tar.gz

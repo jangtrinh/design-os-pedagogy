@@ -7,7 +7,7 @@ learner_state: "medical-students-physicians"
 applies: ["stage-s4-tertiary", "stage-s5-postgraduate-doctoral"]
 evidence_basis: ["Barrows (1986) Medical Education", "Schmidt et al. (2006) Medical Education"]
 prerequisites: ["concept-cognitive-load-theory"]
-leads_to: ["method-problem-based-learning", "concept-clinical-reasoning"]
+leads_to: ["problem-based-learning-7jumps", "clinical-reasoning-and-deliberate-practice"]
 ---
 
 # Landmark Case Study: Howard Barrows & The Invention of Medical PBL (McMaster 1969 & Maastricht)

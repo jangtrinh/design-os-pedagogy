@@ -1,0 +1,93 @@
+{
+  "version": "fractions-vi-0.1.0",
+  "notice": "Bạn đang luyện vai trò người dạy. Phản hồi của học sinh và gợi ý coaching được biên soạn theo nhánh lựa chọn. Bộ bài đang chờ chuyên gia review; không chấm tự động câu chữ và không chứng nhận năng lực.",
+  "sources": [
+    {"id": "evidence-barbieri-2023-worked-examples", "title": "Barbieri và cộng sự (2023): bài giải mẫu trong học toán", "url": "https://link.springer.com/article/10.1007/s10648-023-09745-1", "locator": "Abstract", "verification_status": "metadata_and_abstract_checked", "scope": "Nguồn chung về bài giải mẫu. Không xác nhận hiệu quả của kịch bản hay phản hồi trong ứng dụng này."},
+    {"id": "evidence-agarwal-2021-retrieval", "title": "Agarwal, Nunes và Blunt (2021): thực hành gợi nhớ", "url": "https://link.springer.com/article/10.1007/s10648-021-09595-9", "locator": "Abstract", "verification_status": "metadata_and_abstract_checked", "scope": "Nguồn chung về gợi nhớ trong lớp học. Một bài chuyển giao ở đây chưa đo được ghi nhớ dài hạn."}
+  ],
+  "prompts": {
+    "probe": {"title": "Tìm thêm dấu hiệu", "question": "Bạn sẽ hỏi gì trước khi lựa chọn cách dạy?", "options": [{"id": "explain", "label": "Hỏi cách em đi đến đáp án"}, {"id": "represent", "label": "Mời em biểu diễn hai phân số"}, {"id": "rule", "label": "Hỏi em nhớ quy tắc so sánh nào"}]},
+    "interpret": {"title": "Giữ lại sự chưa chắc chắn", "question": "Từ bài làm và phản hồi vừa nhận, bạn sẽ diễn giải thế nào?", "options": [{"id": "tentative", "label": "Nêu một giả thuyết và cách kiểm tra tiếp"}, {"id": "insufficient", "label": "Chưa đủ dữ liệu; ghi rõ điều cần hỏi thêm"}, {"id": "certain", "label": "Kết luận chắc chắn một nguyên nhân từ phản hồi này"}]},
+    "teach": {"title": "Thử một cách dạy", "question": "Chọn một hành động, rồi viết lời bạn sẽ nói. Có nhiều cách hợp lý tùy điều bạn vừa quan sát.", "options": [{"id": "number_line", "label": "Dùng trục số với cùng đơn vị từ 0 đến 1"}, {"id": "worked_example", "label": "Làm mẫu ví dụ khác, để em làm bước tiếp"}, {"id": "rule_only", "label": "Giải thích ngắn quy tắc và yêu cầu áp dụng"}]},
+    "check": {"title": "Kiểm tra cách hiểu", "question": "Bạn muốn quan sát thêm điều gì sau phần hướng dẫn?", "options": [{"id": "novel_reason", "label": "Cho bài mới và yêu cầu giải thích lý do"}, {"id": "repeat", "label": "Làm lại đúng bài vừa được hướng dẫn"}, {"id": "praise", "label": "Động viên và chuyển sang phần khác"}]},
+    "review": {"title": "Nhìn lại quyết định", "question": "Đọc phản hồi có trích đoạn từ phiên của bạn, rồi thử một tình huống khác.", "options": [{"id": "continue", "label": "Thử bài chuyển giao"}]},
+    "reflect": {"title": "Chọn điều sẽ thay đổi", "question": "Ở lần dạy tiếp theo, bạn sẽ thay đổi câu hỏi hay hành động nào? Vì sao?", "options": [{"id": "save", "label": "Lưu phản tư và hoàn thành phiên"}]}
+  },
+  "cases": [
+    {
+      "id": "fraction-magnitude", "title": "Mẫu số lớn hơn", "summary": "Một đáp án sai, vài cách giải thích có thể có. Tìm thêm dấu hiệu trước khi can thiệp.",
+      "stage": "S2–S3", "case_kind": "authored_simulation", "expert_review": "pending",
+      "context": "Bạn hướng dẫn một em lớp 6 so sánh phân số. Em đã làm được cộng hai phân số cùng mẫu. Bài này chưa có hướng dẫn.",
+      "observation": "Em chọn 1/8 lớn hơn 1/5. Em nói: Tám lớn hơn năm nên em chọn một phần tám.",
+      "fractions": [[1, 8], [1, 5]],
+      "probe_responses": {
+        "explain": "Em so số ở dưới. Khi so số tự nhiên thì số lớn hơn ở bên phải; em nghĩ ở đây cũng thế.",
+        "represent": "Em chia hai thanh bằng nhau thành tám và năm phần. Một mảnh ở thanh tám phần nhỏ hơn... nhưng em chưa hiểu vì sao khác đáp án mình viết.",
+        "rule": "Em nhớ thầy nói nhìn mẫu số, nhưng em không nhớ khi nào phải chọn số lớn hay nhỏ."
+      },
+      "teach_responses": {
+        "number_line": "Nếu cả hai đoạn đều từ 0 đến 1 thì một phần tám gần 0 hơn một phần năm. Em muốn thử đánh dấu một phần tư nữa.",
+        "worked_example": "Ở ví dụ 1/2 và 1/4, cùng một thanh được chia nhiều phần hơn thì mỗi phần nhỏ hơn. Với 1/5 và 1/8, em sẽ so kích thước một phần.",
+        "rule_only": "Với cùng tử số thì mẫu nhỏ hơn cho phân số lớn hơn. Em sẽ viết 1/5 lớn hơn 1/8 theo quy tắc đó."
+      },
+      "check_responses": {
+        "novel_reason": {"number_line": "Em chọn 1/7 lớn hơn 1/9: cùng đoạn từ 0 đến 1, chia bảy phần thì một phần dài hơn chia chín phần.", "worked_example": "Em chọn 1/7 lớn hơn 1/9 vì hai đơn vị bằng nhau được chia thành bảy hoặc chín phần bằng nhau; một phần trong bảy lớn hơn.", "rule_only": "Em chọn 1/7 theo quy tắc mẫu nhỏ hơn. Nếu tử khác nhau thì em chưa biết giải thích thế nào."},
+        "repeat": "Em viết lại 1/5 lớn hơn 1/8. Đây là đáp án mình vừa làm cùng nhau.",
+        "praise": "Dạ. Em chuyển sang bài tiếp theo; em chưa trình bày thêm cách hiểu."
+      },
+      "debrief": "Lời giải thích gợi ý em đang áp dụng quy tắc số tự nhiên hoặc nhớ quy tắc chưa đầy đủ. Cần đối chiếu thêm bằng cách biểu diễn và giải thích bài mới, không suy toàn bộ năng lực từ một đáp án.",
+      "alternative": "Ở lần luyện tiếp theo, thử một ví dụ mẫu khác trước khi yêu cầu tự làm. Quan sát phần lý do, kể cả khi em có đáp án đúng.",
+      "transfer": {"title": "Đúng đáp án, còn lý do?", "question": "Một em chọn 3/4 lớn hơn 2/3 và giải thích: 3 lớn hơn 2, 4 lớn hơn 3. Hành động nào giúp phân biệt đáp án đúng tình cờ với cách hiểu phù hợp?", "options": [{"id": "accept", "label": "Xác nhận em đã hiểu vì đáp án đúng"}, {"id": "probe", "label": "Đưa 2/3 và 3/8; hỏi em giải thích hoặc biểu diễn trên cùng đơn vị"}, {"id": "repeat_rule", "label": "Bắt em chép quy tắc so sánh mười lần"}], "answer": "probe", "feedback": "3/4 lớn hơn 2/3 là đúng, nhưng lý do so riêng các số không đủ. Ở cặp 2/3 và 3/8, cách nghĩ đó có thể bị phân biệt: 2/3 lớn hơn 3/8. Hỏi thêm để kiểm tra cách lập luận; không kết luận ngộ nhận chỉ từ lựa chọn."}
+    },
+    {
+      "id": "fraction-correct-reason", "title": "Đáp án đúng nói lên điều gì?", "summary": "Một bài làm có kết quả đúng. Chọn cách kiểm tra phần lý do và giới hạn của nó.",
+      "stage": "S2–S3", "case_kind": "authored_simulation", "expert_review": "pending",
+      "context": "Bạn review bài làm của một em lớp 6. Em chọn đúng ở ba câu, nhưng chưa viết phần giải thích.",
+      "observation": "Em chọn 8/9 lớn hơn 7/8 và nói: Nhìn hai số thì em đoán như vậy.",
+      "fractions": [[7, 8], [8, 9]],
+      "probe_responses": {
+        "explain": "Em chọn số có cả tử và mẫu lớn hơn: 8 lớn hơn 7, 9 lớn hơn 8. Em cũng làm vậy ở các câu trước.",
+        "represent": "Em biết cả hai đều gần 1. Em vẽ được 7 phần trong 8 phần, nhưng hai thanh của em đang dài khác nhau.",
+        "rule": "Em nhớ nhân chéo, nhưng câu này em chỉ so từng số nên chưa làm phép tính."
+      },
+      "teach_responses": {
+        "number_line": "Em nhìn phần còn thiếu đến 1. 7/8 thiếu 1/8; 8/9 thiếu 1/9. Với cùng đơn vị, 1/9 nhỏ hơn nên 8/9 gần 1 hơn.",
+        "worked_example": "Với 2/3 và 3/4, em so phần thiếu 1/3 và 1/4 trên hai thanh bằng nhau. Em sẽ áp dụng rồi kiểm tra lại điều kiện cùng đơn vị.",
+        "rule_only": "Em nhân chéo được 64 và 63 nên 8/9 lớn hơn 7/8. Em chưa giải thích được tại sao cách so từng số trước đó không dùng được."
+      },
+      "check_responses": {
+        "novel_reason": {"number_line": "Giữa 3/4 và 4/7, em chọn 3/4: nó lớn hơn 2/3, còn 4/7 nhỏ hơn 2/3. Em có thể kiểm tra bằng cùng mẫu hoặc trục số.", "worked_example": "Em sẽ đổi 3/4 thành 21/28 và 4/7 thành 16/28 để có phần cùng kích thước. Vì vậy 3/4 lớn hơn.", "rule_only": "Em nhân chéo được đáp án. Nhưng khi nhìn nhanh, em vẫn muốn chọn 4/7 vì 4 và 7 lớn hơn 3 và 4."},
+        "repeat": "Em vẫn chọn 8/9; câu này mình vừa giải thích cùng nhau.",
+        "praise": "Dạ, em nghĩ chỉ cần đúng đáp án là được."
+      },
+      "debrief": "Kết quả đúng và lý do hợp lệ là hai quan sát khác nhau. Nhiệm vụ tiếp theo nên phân biệt hai cách nghĩ, thay vì chỉ đổi số mà cả hai quy tắc đều cho cùng đáp án.",
+      "alternative": "Thử một bài có tử và mẫu lớn hơn nhưng phân số nhỏ hơn. Giữ thái độ trung tính khi đề nghị em kiểm tra lập luận.",
+      "transfer": {"title": "Người mới cần điểm bắt đầu", "question": "Một em nói chưa từng được giới thiệu ý nghĩa của phân số. Em không biết phải đặt 1/3 lên trục số thế nào. Bạn sẽ bắt đầu ra sao?", "options": [{"id": "conflict", "label": "Khẳng định em có ngộ nhận rồi yêu cầu phản bác nó"}, {"id": "model", "label": "Giới thiệu đơn vị, làm mẫu 1/2, rồi cùng em chia đoạn cho 1/3"}, {"id": "wait", "label": "Tiếp tục hỏi em tự tìm quy tắc mà không thêm thông tin"}], "answer": "model", "feedback": "Khi chưa có kiến thức khởi đầu, một ví dụ mẫu có giải thích và bước thực hành tiếp theo là lựa chọn hợp lý. Chưa có căn cứ gán một ngộ nhận cần xung đột nhận thức. Sau đó giảm hỗ trợ theo phản hồi thực tế."}
+    },
+    {
+      "id": "fraction-language", "title": "Ký hiệu và lời giải thích", "summary": "Bài viết, lời nói và hình biểu diễn có thể cung cấp các dấu hiệu khác nhau.",
+      "stage": "S2–S3", "case_kind": "authored_simulation", "expert_review": "pending",
+      "context": "Bạn xem một bài so sánh phân số. Em thường giải thích bằng hình nhưng viết câu ngắn, đôi khi dùng dấu không nhất quán.",
+      "observation": "Em viết 1/8 > 1/5, rồi nói: Một phần tám là miếng nhỏ hơn. Bạn chưa hỏi vì sao lời nói khác ký hiệu.",
+      "fractions": [[1, 8], [1, 5]],
+      "probe_responses": {
+        "explain": "Em định nói 1/8 nhỏ hơn. Em hay nhầm hướng dấu > và < khi viết nhanh.",
+        "represent": "Trên hai thanh bằng nhau, em tô một phần tám nhỏ hơn một phần năm. Em muốn dấu của mình thể hiện đúng hình này.",
+        "rule": "Em nhớ miệng dấu mở về phía số lớn, nhưng khi viết em lại đặt ngược."
+      },
+      "teach_responses": {
+        "number_line": "1/8 nằm bên trái 1/5. Em nói thành lời trước rồi kiểm tra hướng dấu: 1/8 nhỏ hơn 1/5.",
+        "worked_example": "Với 1/2 và 1/4, em đọc câu bằng lời rồi viết dấu tương ứng. Em sẽ tự làm lại với cặp đang học.",
+        "rule_only": "Em sửa hướng dấu theo câu mình muốn nói. Em sẽ đọc lại câu để kiểm tra trước khi nộp."
+      },
+      "check_responses": {
+        "novel_reason": {"number_line": "Em viết 1/6 < 1/4 vì chia cùng đơn vị thành sáu phần thì một phần nhỏ hơn chia bốn phần. Em cũng đọc dấu thành lời.", "worked_example": "Em chọn 1/4 lớn hơn 1/6 rồi viết 1/4 > 1/6. Em kiểm tra lại ký hiệu bằng lời giải thích.", "rule_only": "Em viết 1/6 < 1/4. Em có thể chỉ hai vị trí trên cùng trục số và đọc lại câu để kiểm tra."},
+        "repeat": "Em sửa thành 1/8 < 1/5. Chưa có bài khác để xem em tự kiểm tra dấu thế nào.",
+        "praise": "Dạ. Em chưa được thử viết dấu trong một bài khác."
+      },
+      "debrief": "Ở kịch bản này, hình và lời giải thích cho thêm căn cứ về việc dùng ký hiệu. Không cần mặc định dạy lại toàn bộ ý nghĩa mẫu số. Ở người thật vẫn cần kiểm tra thêm để phân biệt trượt tay, khó diễn đạt và hiểu chưa vững.",
+      "alternative": "Thử hỗ trợ ngắn: đọc thành lời, đối chiếu dấu, rồi tự kiểm trên bài mới. Đừng kéo dài giảng giải nếu các quan sát đã cho thấy phần khái niệm phù hợp.",
+      "transfer": {"title": "Cùng phân số, cùng đơn vị?", "question": "Một em nói: 1/2 chiếc bánh nhỏ chắc chắn nhiều bánh hơn 1/3 chiếc bánh lớn, vì 1/2 > 1/3. Bạn sẽ kiểm tra điều gì trước?", "options": [{"id": "units", "label": "Hỏi kích thước hai chiếc bánh và phân biệt giá trị phân số với lượng bánh"}, {"id": "accept", "label": "Đồng ý vì so sánh 1/2 và 1/3 đã đúng"}, {"id": "deny", "label": "Nói 1/3 luôn lớn hơn 1/2 khi bánh lớn hơn"}], "answer": "units", "feedback": "1/2 > 1/3 là so sánh số đúng. Lượng bánh còn phụ thuộc kích thước đơn vị: chưa đủ dữ liệu để so hai phần bánh. Hỏi về cả hai đơn vị và tránh biến một đáp án thành kết luận chung."}
+    }
+  ]
+}

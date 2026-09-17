@@ -97,8 +97,8 @@ Every substantive document in this system must incorporate the following compone
 
 A hinge question is an instructional diagnostic instrument, not an arbitrary quiz.
 * **Every question must have exactly 1 target answer and 3–4 functional distractors.**
-* **Every distractor must map uniquely to a verified learner misconception or procedural error.**
-* **The teacher or AI tutor must be able to inspect the response and instantly know the underlying faulty mental model without asking further open-ended questions.**
+* **Each distractor must state plausible explanations and a follow-up probe that distinguishes them.**
+* **A selected answer alone does not establish a unique mental model. Elicit reasoning when evidence is ambiguous, retain an insufficient-evidence state, and verify the interpretation before choosing an intervention.**
 
 Example Schema:
 ```yaml

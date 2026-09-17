@@ -4,10 +4,15 @@ title: "Cognitive Offloading, Epistemic Atrophy & Productive Friction: Desirable
 type: practice
 stage: ["S2-primary", "S3-secondary", "S4-tertiary", "S5-postgraduate", "S6-adult"]
 axes: ["AX-01: Learning Sciences", "AX-07: Educational Technology & AI"]
-evidence_level: "A"
+evidence_level: "U"
+review_status: unreviewed
+provenance: {kind: authored}
+source_ids: ["evidence-bastani-2025-ai-guardrails"]
+claim_ids: ["claim-bastani-2025-unassisted-performance"]
+estimate_ids: ["estimate-bastani-2025-relative-exam-grades"]
 prerequisites: ["concept-cognitive-load-theory", "practice-ai-assistance-ladder"]
 leads_to: ["practice-ai-epistemic-partner", "stage-s4-tertiary"]
-sources: ["Risko & Gilbert (2016) Cognitive Offloading Trends in Cognitive Sciences", "Bastani et al. (2024) PNAS", "Bjork & Bjork (2011) Desirable Difficulties"]
+sources: ["Risko & Gilbert (2016) Cognitive Offloading Trends in Cognitive Sciences", "Bastani et al. (2025) PNAS, doi:10.1073/pnas.2422633122", "Bjork & Bjork (2011) Desirable Difficulties"]
 ---
 
 # Cognitive Offloading, Epistemic Atrophy & Productive Friction
@@ -30,7 +35,7 @@ After studying this master module, an educator, learning scientist, or software 
 > 
 > *Before reading further, predict the outcome on state standardized exams 6 months later: What will happen to student geometry scores? Why did eliminating frustration destroy learning?*
 > 
-> *Analysis*: In large-scale randomized trials (Bastani et al., 2024), students utilizing instant, frictionless AI math assistants scored **significantly worse** on unassisted exams ($d = -0.32$). The feeling of "friction and frustration" during geometry problem-solving is not a bug—it is the biological sensation of prefrontal synaptic activation (Germane Load). When software removes all cognitive friction, the brain ceases neural consolidation. The students were not learning geometry; they were learning to operate a camera scanner.
+> *Evidence boundary*: Bastani et al. (2025) studied nearly a thousand high-school mathematics students. After AI access was removed, the GPT Base group had 17% lower exam grades relative to the no-AI control; guardrails in GPT Tutor largely mitigated that effect. This is not Cohen's d, a six-month geometry finding or a measurement of neural atrophy. The camera-app story above is an authored scenario, not a reported trial.
 
 ---
 
@@ -50,11 +55,11 @@ HISTORICAL COGNITIVE OFFLOADING TRAJECTORY:
 
 ### The Critical Threshold: Offloading Storage vs. Offloading Synthesis
 Offloading factual storage (e.g., looking up the boiling point of ethanol) preserves working memory for higher-order reasoning.
-However, generative AI is the first technology in human history that offloads **the synthesis and reasoning itself**. When students offload thesis formulation, paragraph structuring, and code logic to an LLM, the cognitive circuitry for logical coherence and critical evaluation atrophies through disuse (*Use It or Lose It Neuroplasticity*).
+Generative AI can perform synthesis and reasoning steps that the learner would otherwise attempt. Whether a particular use improves or impairs independent performance must be tested. This study did not measure neural atrophy or establish a biological mechanism for all AI use.
 
 ---
 
-## 2. The Four Stages of Epistemic Atrophy
+## 2. Authored Risk Scenario, Not a Validated Diagnostic Sequence
 
 ```
 STAGE 1: EFFICIENCY ADOPTION
@@ -63,7 +68,7 @@ Learner uses AI to eliminate tedious administrative tasks (formatting, typing).
                     ▼
 STAGE 2: COGNITIVE DELEGATION
 Learner begins asking AI to formulate initial outlines, thesis claims, and code architecture.
-Working memory engagement drops by 50%.
+Human cognitive work has not been quantified by this scenario.
                     │
                     ▼
 STAGE 3: ILLUSION OF EXPLANATORY DEPTH
@@ -98,7 +103,7 @@ Master pedagogy in the AI era rejects "frictionless" interfaces. Instead, it del
 │ Eliminating instant 0.2s streaming; inserting a mandatory 10-second    │
 │ reflection pause where the student reads a prompt guiding metacognition│
 ├────────────────────────────────────────────────────────────────────────┤
-│ 4. UNASSISTED ISOMORPHIC CHECK (The S0 Gate)                           │
+│ 4. UNASSISTED ISOMORPHIC CHECK (The AL0 Gate)                          │
 │ Requiring that for every AI-assisted problem solved, the student must  │
 │ solve an isomorphic problem in an air-gapped, AI-free window.          │
 └────────────────────────────────────────────────────────────────────────┘
@@ -114,7 +119,7 @@ Master pedagogy in the AI era rejects "frictionless" interfaces. Instead, it del
 * **Student Prompt**: *"Write an essay analyzing why the British Factory Act of 1833 was passed."*
 * **AI Output**: 500-word essay with introduction, 3 body paragraphs, and conclusion.
 * **Student**: Pastes into Google Docs.
-* *Cognitive Work*: 0%. Atrophy index: High.
+* *Observation*: The artifact alone cannot establish independent competence. No atrophy index is measured.
 
 #### High-Friction Master Pedagogical Design (Productive Friction)
 1. **Speed Bump 1 (Predict)**:
@@ -155,6 +160,6 @@ A software architect is designing an AI learning environment for medical student
 
 | Study | Cohort & Design | Metric | Critical Finding |
 | :--- | :--- | :--- | :--- |
-| **Bastani et al. (2024)** | PNAS Randomized Controlled Trial ($N = 1,000+$) | $d = -0.32$ on delayed unassisted exams | Students using frictionless generative AI math assistance suffered significant drops in unassisted exam performance compared to controls without AI. |
+| **Bastani et al. (2025)** | PNAS field experiment; nearly a thousand high-school mathematics students | 17% lower grades relative to control after GPT Base access was removed | Bounded comparison in the linked source, claim and relative-change estimate; not Cohen's d or an atrophy measure. |
 | **Risko & Gilbert (2016)** | Trends in Cognitive Sciences Review | Foundational Review | Human cognition automatically shifts to external storage whenever cost of retrieval from memory exceeds physical action cost, accelerating memory decay. |
-| **Bjork & Bjork (2011)** | *Making Things Hard on Yourself, But in a Good Way* | $d = 0.65$ on retention | Conditions that introduce difficulty during learning (slowing down pacing, interleaving, retrieval effort) feel inefficient to learners but produce the highest long-term retention. |
+| **Bjork & Bjork (2011)** | *Making Things Hard on Yourself, But in a Good Way* | Estimate not extracted | Review source and boundary conditions before selecting a difficulty manipulation; difficulty alone is not evidence of learning. |
