@@ -28,3 +28,16 @@
 - **LICENSE is missing.** A license badge would read "not identified"; the landing's FAQ says so. Adding one is a legal choice (MIT like the sibling repos?).
 - No release/tag: the repo has no version; a v0.1.0 tag is the owner's call.
 - Search Console: verify the property `https://jangtrinh.github.io/design-os-pedagogy/` with the token committed to `docs/`, submit `sitemap.xml`.
+
+## Executed 2026-09-18
+
+| Step | Result | Rollback |
+|---|---|---|
+| Topics 10 → 15; About rewritten to README scope (173 chars); homepage → Pages URL | FACT | `gh repo edit` |
+| `docs/` Pages site: landing + layout + CSS + config + real rehearsal captures + GSC token; `.project-agent.md` port 4322 | PR #1 `f388ee0`, Pages built | `git revert f388ee0`, `DELETE /pages` |
+| Live `ui gate`: landing PASS 0/0; 7 docs pages PASS (Rouge `container-nesting-depth` warnings only) | FACT | |
+| Tells DOM (1280×800): h1 352 / lede 489 / action 629, no gradient, nav hairline 0, 0 keyframes, 7 font sizes, wordmark → jang.work | FACT | |
+| 390: no overflow on landing and a docs page; sitemap lists 8 pages; token 200 | FACT | |
+| `course-audit.html` 404 | FACT: `docs/course-audit.md` is untracked in the owner's checkout (with `tools/course_audit.py`, `tests/test_course_audit.py`); README on main already links to it. Owner commits it; the page then renders and enters the sitemap. | |
+
+Owner-manual: Search Console verify + sitemap submit; LICENSE decision; release tag decision; commit the course-audit WIP.
