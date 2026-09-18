@@ -55,6 +55,8 @@ The [research cycle](90-agent-runtime/workflows/knowledge-research-cycle.md) exp
 
 Run `.venv/bin/python -B tools/knowledge_coverage.py` for a read-only inventory. Add `--stage S6 --axis AX-04 --capability CAP-02 --json` to intersect tags and inspect record paths and source trails. Metadata counts do not establish curriculum completeness or learning effectiveness.
 
+The first concrete full-year authoring exercise is [Vietnamese Grade 1 mathematics](courses/vi-vn-grade-1-math/README.md): 105 period plans, a requirements map, teacher guidance and sample assessments. Its [workflow evaluation](courses/vi-vn-grade-1-math/workflow-evaluation.md) records actual structural/key checks and remaining teacher/pilot work. The [bounded course auditor](docs/course-audit.md) does not validate every subject or establish learning gains.
+
 ## Prepare and apply a module
 
 Registry and publication require the packages in requirements.txt. Use the existing .venv, or create an environment when absent and install those requirements. Publication uses POSIX filesystem locking.

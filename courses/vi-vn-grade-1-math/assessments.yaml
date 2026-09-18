@@ -1,0 +1,41 @@
+data_version: "1.0.0"
+status: authored-samples-awaiting-school-review
+instructions:
+  time: "Trong tiết 35 phút: 3 phút hướng dẫn, 27 phút làm bài, 5 phút kiểm tra và thu bài; điều chỉnh thực tế do trường quyết định."
+  read_aloud: "Giáo viên đọc nguyên văn yêu cầu, có thể đọc lại, không nhấn từ hay gợi phép tính. Ghi lại điều chỉnh đã dùng."
+  scoring: "Mỗi câu 0 hoặc 1 điểm theo tiêu chí; tổng 10 điểm, không có điểm thập phân. Đây là thang đề mẫu, chưa phải đề kiểm tra chính thức."
+  interpretation: "Không dùng điểm để xếp hạng; kết hợp nhận xét và minh chứng thường xuyên, không tự động kết luận kết quả cả năm."
+  levels: "M1/M2/M3 là phân loại của người biên soạn để giáo viên xem xét; tỉ lệ dưới đây không được gán là tỉ lệ bắt buộc của TT27."
+groups:
+  - id: HK1
+    title: "Đề mẫu cuối học kì I"
+    period: 53
+    items:
+      - {id: HK1-01, standard_ids: [R01], level: 1, points: 1, prompt: "Viết số: tám.", kind: number, value: 8, answer: 8, criterion: "Viết hoặc chọn đúng số 8 theo điều chỉnh đã thống nhất."}
+      - {id: HK1-02, standard_ids: [R01], level: 1, points: 1, prompt: "Khay không có vật nào. Viết số thích hợp.", kind: count, value: 0, answer: 0, criterion: "Số 0."}
+      - {id: HK1-03, standard_ids: [R05], level: 1, points: 1, prompt: "Điền dấu: 7 ... 9.", kind: compare, values: [7, 9], answer: "<", criterion: "Dấu <, hoặc phản hồi tương đương nếu có điều chỉnh đáp ứng."}
+      - {id: HK1-04, standard_ids: [R07, R09], level: 1, points: 1, prompt: "Tính: 3 + 5.", kind: arithmetic, operands: [3, 5], operators: ["+"], answer: 8, criterion: "Kết quả 8."}
+      - {id: HK1-05, standard_ids: [R07, R09], level: 1, points: 1, prompt: "Tính: 9 - 4.", kind: arithmetic, operands: [9, 4], operators: ["-"], answer: 5, criterion: "Kết quả 5."}
+      - {id: HK1-06, standard_ids: [R05], level: 2, points: 1, prompt: "Xếp 8, 2, 5, 0 từ bé đến lớn.", kind: order, values: [8, 2, 5, 0], answer: [0, 2, 5, 8], criterion: "Đúng toàn bộ thứ tự; ghi nhận riêng lỗi sao chép nếu có."}
+      - {id: HK1-07, standard_ids: [R08], level: 2, points: 1, prompt: "Tính từ trái sang phải: 9 - 2 + 1.", kind: arithmetic, operands: [9, 2, 1], operators: ["-", "+"], answer: 8, criterion: "Kết quả 8; nhận xét riêng nếu cách làm chưa rõ."}
+      - {id: HK1-08, standard_ids: [R06, R11], level: 3, points: 1, prompt: "Có 4 que đỏ và 3 que xanh. Bạn An dùng phép trừ để tìm tất cả số que. Em hãy viết phép tính đúng.", kind: arithmetic, operands: [4, 3], operators: ["+"], answer: 7, criterion: "4 + 3 = 7 hoặc 3 + 4 = 7; thao tác/giải thích tương đương theo điều chỉnh. Chưa đúng phép tính thì nhận xét để hỗ trợ."}
+      - {id: HK1-09, standard_ids: [R13], level: 1, points: 1, prompt: "Khoanh vào chữ dưới hình tam giác.", kind: observation, answer: "C", visual_id: plane-shapes, criterion: "Hình C; bộ hình A tròn, B vuông, C tam giác, D chữ nhật. Không chấm dựa vào màu."}
+      - {id: HK1-10, standard_ids: [R14], level: 2, points: 1, prompt: "Khoanh vào chữ dưới khối lập phương.", kind: observation, answer: "A", visual_id: solids, criterion: "Khối A; A là lập phương, B là hộp chữ nhật dài. Hình mẫu cần giáo viên xác nhận rõ trước phát."}
+  - id: CN
+    title: "Đề mẫu cuối năm"
+    period: 104
+    items:
+      - {id: CN-01, standard_ids: [R03], level: 1, points: 1, prompt: "Viết số: sáu mươi tám.", kind: number, value: 68, answer: 68, criterion: "Số 68."}
+      - {id: CN-02, standard_ids: [R04], level: 1, points: 1, prompt: "Số 47 có ... chục và ... đơn vị.", kind: place, value: 47, answer: [4, 7], criterion: "4 chục, 7 đơn vị; không hoán đổi."}
+      - {id: CN-03, standard_ids: [R05], level: 1, points: 1, prompt: "Điền dấu: 72 ... 69.", kind: compare, values: [72, 69], answer: ">", criterion: "Dấu > hoặc biểu đạt tương đương đã thống nhất."}
+      - {id: CN-04, standard_ids: [R05], level: 2, points: 1, prompt: "Xếp 30, 13, 31, 3 từ bé đến lớn.", kind: order, values: [30, 13, 31, 3], answer: [3, 13, 30, 31], criterion: "Đúng toàn bộ thứ tự."}
+      - {id: CN-05, standard_ids: [R07], level: 1, points: 1, prompt: "Tính: 24 + 13.", kind: arithmetic, operands: [24, 13], operators: ["+"], answer: 37, criterion: "Kết quả 37."}
+      - {id: CN-06, standard_ids: [R07], level: 1, points: 1, prompt: "Tính: 68 - 24.", kind: arithmetic, operands: [68, 24], operators: ["-"], answer: 44, criterion: "Kết quả 44."}
+      - {id: CN-07, standard_ids: [R08], level: 2, points: 1, prompt: "Tính từ trái sang phải: 42 + 15 - 3.", kind: arithmetic, operands: [42, 15, 3], operators: ["+", "-"], answer: 54, criterion: "Kết quả 54; nhận xét riêng cách thực hiện hai bước."}
+      - {id: CN-08, standard_ids: [R06, R11], level: 3, points: 1, prompt: "Lớp có 36 nhãn. Các bạn dùng 12 nhãn. Một bạn nói phải cộng để tìm số còn lại. Em viết phép tính đúng.", kind: arithmetic, operands: [36, 12], operators: ["-"], answer: 24, criterion: "36 - 12 = 24; không bắt buộc chép câu lời giải dài."}
+      - {id: CN-09, standard_ids: [R17], level: 2, points: 1, prompt: "Đọc hình thước và viết độ dài dải giấy: ... cm.", kind: measurement, positions_cm: [0, 7], unit: cm, answer: 7, visual_id: ruler-7cm, criterion: "7 cm. Đây là đọc hình thước; năng lực tự cầm thước đo có minh chứng riêng ở tiết 88-90."}
+      - {id: CN-10, standard_ids: [R19], level: 2, points: 1, prompt: "Đồng hồ chỉ ... giờ.", kind: clock, hour: 7, minute: 0, answer: 7, visual_id: clock-7, criterion: "7 giờ. Không hỏi phút hay giờ rưỡi."}
+formative_record:
+  columns: ["ngày", "mã yêu cầu", "nhiệm vụ", "đáp ứng thực tế", "hỗ trợ đã dùng", "nhận xét", "nhiệm vụ kiểm tra lại"]
+  states: ["làm được trong điều kiện ghi nhận", "đang cần hỗ trợ", "chưa đủ minh chứng"]
+  note: "Đây là nhãn theo dõi hoạt động, không thay các mức đánh giá chính thức. Không điền giả dữ liệu trẻ em."

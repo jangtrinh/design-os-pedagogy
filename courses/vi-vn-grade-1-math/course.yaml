@@ -1,0 +1,1409 @@
+{
+  "blueprint_version": "1.0.0",
+  "audit_contract": "course-audit-1.0",
+  "status": "draft-for-teacher-review",
+  "course": {
+    "id": "vi-vn-grade-1-math",
+    "title": "Toán lớp 1 Việt Nam: học bằng thao tác, diễn đạt và vận dụng",
+    "topic": "Toán lớp 1",
+    "purpose": "Bản biên soạn cả năm để thử workflow; học sinh thực hiện các yêu cầu lớp 1 và giải thích bằng cách phù hợp.",
+    "scope_exclusions": [
+      "Nội dung bắt buộc vượt chuẩn lớp 1",
+      "Sao chép nội dung hoặc đánh số trang SGK chưa đọc",
+      "Chẩn đoán trẻ từ câu trả lời",
+      "Cam kết hiệu quả học tập khi chưa có dữ liệu"
+    ],
+    "language": "vi-VN",
+    "locale_and_curriculum": "Việt Nam; Chương trình GDPT 2018 môn Toán; phần lớp 1, kiểm tra nguồn 17/09/2026",
+    "school_year_context": "2026-2027",
+    "textbook_alignment": {
+      "status": "pending-teacher-confirmation",
+      "edition": null,
+      "pages": null,
+      "reason": "Đã đọc thông báo NXBGDVN 29/04/2026; chưa đọc trọn SGK để khẳng định thứ tự bài hoặc trang. Phân phối này do người biên soạn đề xuất."
+    }
+  },
+  "learner_profile": {
+    "stage": "S2",
+    "grade": 1,
+    "age_range": "Khoảng 6 tuổi; cần xác nhận lớp thực tế, không dùng tuổi làm chuẩn năng lực",
+    "learner_role": "Học sinh với giáo viên trực tiếp",
+    "prior_knowledge": {
+      "known_skills": [],
+      "diagnostic_task": "Tiết 1: lấy 2 vật, đếm nhóm 3, ghép nhóm với thẻ; ghi nhận diễn đạt/chỉ tay và khả năng tiếp cận.",
+      "diagnostic_evidence": null
+    },
+    "access_needs_and_accommodations": [
+      "Cô đọc yêu cầu; trẻ có thể chỉ, nói, thao tác hoặc viết số.",
+      "Cung cấp vật lớn, tương phản rõ; cho thời gian xử lí và trợ giúp vận động phù hợp.",
+      "Phân biệt đọc chữ chưa vững với chưa hiểu toán; dùng tiếng quen thuộc khi hỗ trợ hiểu yêu cầu.",
+      "Điều chỉnh theo nhu cầu và kế hoạch giáo dục cá nhân thực tế; không chẩn đoán từ hồ sơ mẫu."
+    ],
+    "motivation_and_goals": [
+      "Nhận ra toán trong đồ dùng và sinh hoạt gần gũi",
+      "Biết thử, giải thích, kiểm tra và sửa cách làm"
+    ]
+  },
+  "constraints": {
+    "delivery_mode": "Lớp học trực tiếp; bản in và đồ vật; không phụ thuộc internet",
+    "group_size": "Giả định 30-35 học sinh; xác nhận trước khi dạy thử",
+    "facilitator_and_supervision": "Giáo viên tiểu học; chia nhóm đôi và quan sát lượt cá nhân",
+    "weeks": 35,
+    "periods_per_week": 3,
+    "period_minutes": 35,
+    "total_periods": 105,
+    "contact_minutes": 3675,
+    "independent_minutes": 0,
+    "followup_minutes": 0,
+    "homework_policy": "Không có bài tập bắt buộc ngoài lớp. Gia đình có thể chơi 5 phút hai lần/tuần theo khả năng; không chấm, không làm điều kiện học bài sau.",
+    "materials_and_device_access": [
+      "Que lớn và bó chục",
+      "Khung mười ô",
+      "Thẻ số, dấu và hình",
+      "Hộp/khối mẫu an toàn",
+      "Thước cm, dải giấy",
+      "Đồng hồ học tập hai kim",
+      "Lịch tờ mẫu có thứ/ngày khớp",
+      "Bảng con hoặc thẻ chọn"
+    ]
+  },
+  "assumptions": [
+    "35 tuần, 3 tiết/tuần; lịch cụ thể do trường sắp xếp.",
+    "Học kì I dự kiến 18 tuần (54 tiết); học kì II 17 tuần (51 tiết). Đây là phân phối đề xuất.",
+    "Tỉ lệ theo mạch chính: 84 tiết số, 16 hình/đo, 5 trải nghiệm. Ôn/kiểm tra có thể tích hợp nhiều mạch; đây là xấp xỉ 80/15/5, không chỉ tiêu cứng.",
+    "Các câu trả lời, lỗi và hội thoại minh họa đều do biên soạn, chưa phải quan sát học sinh."
+  ],
+  "unresolved_questions": [
+    "Giáo viên dùng SGK/ấn bản và kế hoạch trường nào để đối chiếu bài/trang?",
+    "Quy mô, ngôn ngữ, nhu cầu tiếp cận và năng lực đầu vào thực tế?",
+    "Cần điều chỉnh tốc độ, học cụ hay nhiệm vụ nào sau dạy thử?"
+  ],
+  "sources": [
+    {
+      "id": "S-VN-MATH",
+      "knowledge_source_id": "evidence-vn-2018-grade1-mathematics",
+      "domain_or_pedagogy": "curriculum",
+      "locator": "trang in 21-24, 120-121",
+      "accessed_at": "2026-09-17",
+      "scope_actually_read": "Phần lớp 1, bảng thời lượng; đã xem ảnh trang",
+      "review_status": "source-checked"
+    },
+    {
+      "id": "S-VN-ASSESS",
+      "knowledge_source_id": "evidence-vn-2020-primary-assessment",
+      "domain_or_pedagogy": "assessment-regulation",
+      "locator": "Điều 5-9, TT27/2020 bản toàn văn tái đăng",
+      "accessed_at": "2026-09-17",
+      "scope_actually_read": "Phương pháp, thường xuyên, định kì và điều chỉnh tiếp cận",
+      "review_status": "source-checked"
+    },
+    {
+      "id": "S-VN-BOOK",
+      "knowledge_source_id": "evidence-vn-2026-textbook-context",
+      "domain_or_pedagogy": "textbook-context",
+      "locator": "Thông báo NXBGDVN 29/04/2026, mục 1-3",
+      "accessed_at": "2026-09-17",
+      "scope_actually_read": "Thông báo sử dụng SGK; không phải nội dung trọn SGK",
+      "review_status": "source-checked"
+    }
+  ],
+  "curriculum_alignment": {
+    "profile_id": "vn-grade1-math-2018-checked-20260917",
+    "requirement_ids": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07",
+      "R08",
+      "R09",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24"
+    ],
+    "scope": "core",
+    "extension_topics": []
+  },
+  "outcomes": [
+    {
+      "id": "O01",
+      "standard_ids": [
+        "R01"
+      ],
+      "performance": "Đếm, đọc, viết số đến 10",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P001",
+        "P003",
+        "P004",
+        "P005",
+        "P006",
+        "P007",
+        "P009",
+        "P010",
+        "P011",
+        "P012",
+        "P013",
+        "P014",
+        "P015",
+        "P018",
+        "P036",
+        "P050",
+        "P053",
+        "P054",
+        "P097"
+      ],
+      "assessment_ids": [
+        "A001",
+        "A003",
+        "A004",
+        "A005",
+        "A006",
+        "A007",
+        "A009",
+        "A010",
+        "A011",
+        "A012",
+        "A013",
+        "A014",
+        "A015",
+        "A018",
+        "A036",
+        "A050",
+        "A053",
+        "A054",
+        "A097"
+      ]
+    },
+    {
+      "id": "O02",
+      "standard_ids": [
+        "R02"
+      ],
+      "performance": "Đếm, đọc, viết số đến 20",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P055",
+        "P056",
+        "P057",
+        "P058",
+        "P059",
+        "P063",
+        "P097"
+      ],
+      "assessment_ids": [
+        "A055",
+        "A056",
+        "A057",
+        "A058",
+        "A059",
+        "A063",
+        "A097"
+      ]
+    },
+    {
+      "id": "O03",
+      "standard_ids": [
+        "R03"
+      ],
+      "performance": "Đếm, đọc, viết số đến 100",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P064",
+        "P065",
+        "P066",
+        "P067",
+        "P068",
+        "P069",
+        "P071",
+        "P072",
+        "P097",
+        "P102",
+        "P103",
+        "P104",
+        "P105"
+      ],
+      "assessment_ids": [
+        "A064",
+        "A065",
+        "A066",
+        "A067",
+        "A068",
+        "A069",
+        "A071",
+        "A072",
+        "A097",
+        "A102",
+        "A103",
+        "A104",
+        "A105"
+      ]
+    },
+    {
+      "id": "O04",
+      "standard_ids": [
+        "R04"
+      ],
+      "performance": "Chục, đơn vị và số tròn chục",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P055",
+        "P056",
+        "P057",
+        "P058",
+        "P063",
+        "P064",
+        "P065",
+        "P066",
+        "P067",
+        "P068",
+        "P069",
+        "P070",
+        "P072",
+        "P075",
+        "P076",
+        "P077",
+        "P078",
+        "P080",
+        "P097",
+        "P099",
+        "P103",
+        "P104",
+        "P105"
+      ],
+      "assessment_ids": [
+        "A055",
+        "A056",
+        "A057",
+        "A058",
+        "A063",
+        "A064",
+        "A065",
+        "A066",
+        "A067",
+        "A068",
+        "A069",
+        "A070",
+        "A072",
+        "A075",
+        "A076",
+        "A077",
+        "A078",
+        "A080",
+        "A097",
+        "A099",
+        "A103",
+        "A104",
+        "A105"
+      ]
+    },
+    {
+      "id": "O05",
+      "standard_ids": [
+        "R05"
+      ],
+      "performance": "So sánh và sắp xếp tối đa bốn số",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P009",
+        "P016",
+        "P018",
+        "P050",
+        "P053",
+        "P054",
+        "P059",
+        "P070",
+        "P071",
+        "P095",
+        "P097",
+        "P103",
+        "P104"
+      ],
+      "assessment_ids": [
+        "A009",
+        "A016",
+        "A018",
+        "A050",
+        "A053",
+        "A054",
+        "A059",
+        "A070",
+        "A071",
+        "A095",
+        "A097",
+        "A103",
+        "A104"
+      ]
+    },
+    {
+      "id": "O06",
+      "standard_ids": [
+        "R06"
+      ],
+      "performance": "Ý nghĩa cộng và trừ",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P019",
+        "P020",
+        "P024",
+        "P031",
+        "P032",
+        "P035",
+        "P036",
+        "P042",
+        "P043",
+        "P053",
+        "P099"
+      ],
+      "assessment_ids": [
+        "A019",
+        "A020",
+        "A024",
+        "A031",
+        "A032",
+        "A035",
+        "A036",
+        "A042",
+        "A043",
+        "A053",
+        "A099"
+      ]
+    },
+    {
+      "id": "O07",
+      "standard_ids": [
+        "R07"
+      ],
+      "performance": "Cộng, trừ không nhớ trong phạm vi 100",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P020",
+        "P021",
+        "P022",
+        "P023",
+        "P024",
+        "P025",
+        "P026",
+        "P027",
+        "P028",
+        "P030",
+        "P032",
+        "P033",
+        "P034",
+        "P035",
+        "P036",
+        "P037",
+        "P038",
+        "P039",
+        "P040",
+        "P042",
+        "P044",
+        "P048",
+        "P049",
+        "P053",
+        "P054",
+        "P060",
+        "P061",
+        "P062",
+        "P063",
+        "P073",
+        "P074",
+        "P075",
+        "P076",
+        "P077",
+        "P078",
+        "P079",
+        "P080",
+        "P081",
+        "P082",
+        "P083",
+        "P084",
+        "P098",
+        "P099",
+        "P100",
+        "P101",
+        "P103",
+        "P104",
+        "P105"
+      ],
+      "assessment_ids": [
+        "A020",
+        "A021",
+        "A022",
+        "A023",
+        "A024",
+        "A025",
+        "A026",
+        "A027",
+        "A028",
+        "A030",
+        "A032",
+        "A033",
+        "A034",
+        "A035",
+        "A036",
+        "A037",
+        "A038",
+        "A039",
+        "A040",
+        "A042",
+        "A044",
+        "A048",
+        "A049",
+        "A053",
+        "A054",
+        "A060",
+        "A061",
+        "A062",
+        "A063",
+        "A073",
+        "A074",
+        "A075",
+        "A076",
+        "A077",
+        "A078",
+        "A079",
+        "A080",
+        "A081",
+        "A082",
+        "A083",
+        "A084",
+        "A098",
+        "A099",
+        "A100",
+        "A101",
+        "A103",
+        "A104",
+        "A105"
+      ]
+    },
+    {
+      "id": "O08",
+      "standard_ids": [
+        "R08"
+      ],
+      "performance": "Biểu thức hai dấu cộng/trừ",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P045",
+        "P046",
+        "P047",
+        "P051",
+        "P053",
+        "P054",
+        "P063",
+        "P081",
+        "P084",
+        "P101",
+        "P103",
+        "P104"
+      ],
+      "assessment_ids": [
+        "A045",
+        "A046",
+        "A047",
+        "A051",
+        "A053",
+        "A054",
+        "A063",
+        "A081",
+        "A084",
+        "A101",
+        "A103",
+        "A104"
+      ]
+    },
+    {
+      "id": "O09",
+      "standard_ids": [
+        "R09"
+      ],
+      "performance": "Nhẩm cộng, trừ trong phạm vi 10",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P021",
+        "P022",
+        "P023",
+        "P025",
+        "P026",
+        "P027",
+        "P028",
+        "P030",
+        "P033",
+        "P034",
+        "P037",
+        "P038",
+        "P039",
+        "P040",
+        "P048",
+        "P049",
+        "P053",
+        "P095",
+        "P098"
+      ],
+      "assessment_ids": [
+        "A021",
+        "A022",
+        "A023",
+        "A025",
+        "A026",
+        "A027",
+        "A028",
+        "A030",
+        "A033",
+        "A034",
+        "A037",
+        "A038",
+        "A039",
+        "A040",
+        "A048",
+        "A049",
+        "A053",
+        "A095",
+        "A098"
+      ]
+    },
+    {
+      "id": "O10",
+      "standard_ids": [
+        "R10"
+      ],
+      "performance": "Nhẩm với số tròn chục",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P073",
+        "P074",
+        "P079",
+        "P095",
+        "P098"
+      ],
+      "assessment_ids": [
+        "A073",
+        "A074",
+        "A079",
+        "A095",
+        "A098"
+      ]
+    },
+    {
+      "id": "O11",
+      "standard_ids": [
+        "R11"
+      ],
+      "performance": "Viết phép tính từ tình huống",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P042",
+        "P043",
+        "P044",
+        "P051",
+        "P053",
+        "P054",
+        "P062",
+        "P082",
+        "P083",
+        "P084",
+        "P100",
+        "P102",
+        "P103",
+        "P104",
+        "P105"
+      ],
+      "assessment_ids": [
+        "A042",
+        "A043",
+        "A044",
+        "A051",
+        "A053",
+        "A054",
+        "A062",
+        "A082",
+        "A083",
+        "A084",
+        "A100",
+        "A102",
+        "A103",
+        "A104",
+        "A105"
+      ]
+    },
+    {
+      "id": "O12",
+      "standard_ids": [
+        "R12"
+      ],
+      "performance": "Vị trí và phương hướng có vật mốc",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P002",
+        "P052"
+      ],
+      "assessment_ids": [
+        "A002",
+        "A052"
+      ]
+    },
+    {
+      "id": "O13",
+      "standard_ids": [
+        "R13"
+      ],
+      "performance": "Nhận dạng bốn hình phẳng",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P008",
+        "P017",
+        "P041",
+        "P052",
+        "P053",
+        "P102",
+        "P103"
+      ],
+      "assessment_ids": [
+        "A008",
+        "A017",
+        "A041",
+        "A052",
+        "A053",
+        "A102",
+        "A103"
+      ]
+    },
+    {
+      "id": "O14",
+      "standard_ids": [
+        "R14"
+      ],
+      "performance": "Nhận dạng hai khối",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P029",
+        "P041",
+        "P052",
+        "P053",
+        "P102",
+        "P103"
+      ],
+      "assessment_ids": [
+        "A029",
+        "A041",
+        "A052",
+        "A053",
+        "A102",
+        "A103"
+      ]
+    },
+    {
+      "id": "O15",
+      "standard_ids": [
+        "R15"
+      ],
+      "performance": "Lắp ghép hình và xếp khối",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P041",
+        "P052",
+        "P102"
+      ],
+      "assessment_ids": [
+        "A041",
+        "A052",
+        "A102"
+      ]
+    },
+    {
+      "id": "O16",
+      "standard_ids": [
+        "R16"
+      ],
+      "performance": "So sánh độ dài",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P085",
+        "P086"
+      ],
+      "assessment_ids": [
+        "A085",
+        "A086"
+      ]
+    },
+    {
+      "id": "O17",
+      "standard_ids": [
+        "R17"
+      ],
+      "performance": "Đọc và viết số đo cm",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P087",
+        "P088",
+        "P089",
+        "P090",
+        "P103",
+        "P104"
+      ],
+      "assessment_ids": [
+        "A087",
+        "A088",
+        "A089",
+        "A090",
+        "A103",
+        "A104"
+      ]
+    },
+    {
+      "id": "O18",
+      "standard_ids": [
+        "R18"
+      ],
+      "performance": "Tên và thứ tự các ngày trong tuần",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P091",
+        "P093",
+        "P094"
+      ],
+      "assessment_ids": [
+        "A091",
+        "A093",
+        "A094"
+      ]
+    },
+    {
+      "id": "O19",
+      "standard_ids": [
+        "R19"
+      ],
+      "performance": "Đọc giờ đúng",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P092",
+        "P094",
+        "P096",
+        "P103",
+        "P104"
+      ],
+      "assessment_ids": [
+        "A092",
+        "A094",
+        "A096",
+        "A103",
+        "A104"
+      ]
+    },
+    {
+      "id": "O20",
+      "standard_ids": [
+        "R20"
+      ],
+      "performance": "Đo, ước lượng bằng đơn vị tự chọn",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P086",
+        "P089"
+      ],
+      "assessment_ids": [
+        "A086",
+        "A089"
+      ]
+    },
+    {
+      "id": "O21",
+      "standard_ids": [
+        "R21"
+      ],
+      "performance": "Dùng thước đo cm",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P088",
+        "P089",
+        "P090",
+        "P102"
+      ],
+      "assessment_ids": [
+        "A088",
+        "A089",
+        "A090",
+        "A102"
+      ]
+    },
+    {
+      "id": "O22",
+      "standard_ids": [
+        "R22"
+      ],
+      "performance": "Đọc thứ và ngày trên lịch tờ",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P093",
+        "P094",
+        "P096",
+        "P103"
+      ],
+      "assessment_ids": [
+        "A093",
+        "A094",
+        "A096",
+        "A103"
+      ]
+    },
+    {
+      "id": "O23",
+      "standard_ids": [
+        "R23"
+      ],
+      "performance": "Vận dụng đo lường, giờ, lịch",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P090",
+        "P094",
+        "P096"
+      ],
+      "assessment_ids": [
+        "A090",
+        "A094",
+        "A096"
+      ]
+    },
+    {
+      "id": "O24",
+      "standard_ids": [
+        "R24"
+      ],
+      "performance": "Thực hành và trải nghiệm toán học",
+      "conditions": "Bối cảnh lớp 1; được nghe yêu cầu, dùng phương thức phản hồi phù hợp; ghi riêng hỗ trợ giải toán.",
+      "success_criteria": [
+        "Hoàn thành nhiệm vụ theo đáp án hoặc tiêu chí hành động của tiết tương ứng.",
+        "Kiểm tra bằng nhiệm vụ khác khi cần; không suy ra thành thạo bền vững từ một đáp án."
+      ],
+      "content_source_ids": [
+        "S-VN-MATH"
+      ],
+      "practice_ids": [
+        "P018",
+        "P042",
+        "P072",
+        "P096",
+        "P102"
+      ],
+      "assessment_ids": [
+        "A018",
+        "A042",
+        "A072",
+        "A096",
+        "A102"
+      ]
+    }
+  ],
+  "prerequisite_skills": [
+    {
+      "id": "ENTRY",
+      "description": "Khả năng tham gia và đếm ban đầu cần được quan sát, không phải điều kiện loại học sinh",
+      "prerequisite_ids": [],
+      "diagnostic_evidence": null
+    }
+  ],
+  "units": [
+    {
+      "id": "U01",
+      "title": "Làm quen số 0-5 và cách học toán",
+      "start_period": 1,
+      "end_period": 9,
+      "prerequisite_unit_ids": [],
+      "contact_minutes": 315,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L001",
+        "L002",
+        "L003",
+        "L004",
+        "L005",
+        "L006",
+        "L007",
+        "L008",
+        "L009"
+      ]
+    },
+    {
+      "id": "U02",
+      "title": "Các số 6-10, thứ tự và hình",
+      "start_period": 10,
+      "end_period": 18,
+      "prerequisite_unit_ids": [
+        "U01"
+      ],
+      "contact_minutes": 315,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L010",
+        "L011",
+        "L012",
+        "L013",
+        "L014",
+        "L015",
+        "L016",
+        "L017",
+        "L018"
+      ]
+    },
+    {
+      "id": "U03",
+      "title": "Phép cộng trong phạm vi 10",
+      "start_period": 19,
+      "end_period": 30,
+      "prerequisite_unit_ids": [
+        "U02"
+      ],
+      "contact_minutes": 420,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L019",
+        "L020",
+        "L021",
+        "L022",
+        "L023",
+        "L024",
+        "L025",
+        "L026",
+        "L027",
+        "L028",
+        "L029",
+        "L030"
+      ]
+    },
+    {
+      "id": "U04",
+      "title": "Phép trừ trong phạm vi 10",
+      "start_period": 31,
+      "end_period": 42,
+      "prerequisite_unit_ids": [
+        "U03"
+      ],
+      "contact_minutes": 420,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L031",
+        "L032",
+        "L033",
+        "L034",
+        "L035",
+        "L036",
+        "L037",
+        "L038",
+        "L039",
+        "L040",
+        "L041",
+        "L042"
+      ]
+    },
+    {
+      "id": "U05",
+      "title": "Tình huống, hai bước và cuối học kì I",
+      "start_period": 43,
+      "end_period": 54,
+      "prerequisite_unit_ids": [
+        "U04"
+      ],
+      "contact_minutes": 420,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L043",
+        "L044",
+        "L045",
+        "L046",
+        "L047",
+        "L048",
+        "L049",
+        "L050",
+        "L051",
+        "L052",
+        "L053",
+        "L054"
+      ]
+    },
+    {
+      "id": "U06",
+      "title": "Các số và phép tính trong phạm vi 20",
+      "start_period": 55,
+      "end_period": 63,
+      "prerequisite_unit_ids": [
+        "U05"
+      ],
+      "contact_minutes": 315,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L055",
+        "L056",
+        "L057",
+        "L058",
+        "L059",
+        "L060",
+        "L061",
+        "L062",
+        "L063"
+      ]
+    },
+    {
+      "id": "U07",
+      "title": "Các số trong phạm vi 100",
+      "start_period": 64,
+      "end_period": 72,
+      "prerequisite_unit_ids": [
+        "U06"
+      ],
+      "contact_minutes": 315,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L064",
+        "L065",
+        "L066",
+        "L067",
+        "L068",
+        "L069",
+        "L070",
+        "L071",
+        "L072"
+      ]
+    },
+    {
+      "id": "U08",
+      "title": "Cộng, trừ không nhớ trong phạm vi 100",
+      "start_period": 73,
+      "end_period": 84,
+      "prerequisite_unit_ids": [
+        "U07",
+        "U04"
+      ],
+      "contact_minutes": 420,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L073",
+        "L074",
+        "L075",
+        "L076",
+        "L077",
+        "L078",
+        "L079",
+        "L080",
+        "L081",
+        "L082",
+        "L083",
+        "L084"
+      ]
+    },
+    {
+      "id": "U09",
+      "title": "Độ dài và đo lường",
+      "start_period": 85,
+      "end_period": 90,
+      "prerequisite_unit_ids": [
+        "U07"
+      ],
+      "contact_minutes": 210,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L085",
+        "L086",
+        "L087",
+        "L088",
+        "L089",
+        "L090"
+      ]
+    },
+    {
+      "id": "U10",
+      "title": "Tuần, giờ đúng và lịch ngày",
+      "start_period": 91,
+      "end_period": 96,
+      "prerequisite_unit_ids": [
+        "U07"
+      ],
+      "contact_minutes": 210,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L091",
+        "L092",
+        "L093",
+        "L094",
+        "L095",
+        "L096"
+      ]
+    },
+    {
+      "id": "U11",
+      "title": "Vận dụng tổng hợp",
+      "start_period": 97,
+      "end_period": 102,
+      "prerequisite_unit_ids": [
+        "U08",
+        "U09",
+        "U10"
+      ],
+      "contact_minutes": 210,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L097",
+        "L098",
+        "L099",
+        "L100",
+        "L101",
+        "L102"
+      ]
+    },
+    {
+      "id": "U12",
+      "title": "Đánh giá cuối năm và hỗ trợ tiếp nối",
+      "start_period": 103,
+      "end_period": 105,
+      "prerequisite_unit_ids": [
+        "U11"
+      ],
+      "contact_minutes": 105,
+      "independent_minutes": 0,
+      "followup_minutes": 0,
+      "session_ids": [
+        "L103",
+        "L104",
+        "L105"
+      ]
+    }
+  ],
+  "session_files": [
+    "sessions-sem1.yaml",
+    "sessions-sem2.yaml"
+  ],
+  "assessment_events": [
+    {
+      "id": "HK1",
+      "kind": "periodic-written",
+      "period": 53,
+      "task_file": "assessments.yaml",
+      "task_group": "HK1",
+      "max_score": 10,
+      "selection": "Đề mẫu cần trường duyệt; không ấn định tỉ lệ mức khó quốc gia."
+    },
+    {
+      "id": "CN",
+      "kind": "periodic-written",
+      "period": 104,
+      "task_file": "assessments.yaml",
+      "task_group": "CN",
+      "max_score": 10,
+      "selection": "Kết hợp hồ sơ thường xuyên; không dùng điểm để xếp hạng hoặc tự động quyết định hoàn thành lớp."
+    }
+  ],
+  "retention_policy": {
+    "within_class": "Bốn phút đầu hoạt động sau mở đầu ôn một việc ở tiết trước và một việc từ 1-2 tuần trước; chọn từ các tiết đã dạy.",
+    "delayed_check": "Sau chủ đề, dùng nhiệm vụ cùng cấu trúc khác số/vật; lịch 1-2 tuần là đề xuất thiết kế, chưa tối ưu hóa bằng dữ liệu.",
+    "outside_class_required": false
+  },
+  "alignment_review": {
+    "review_performed": false,
+    "uncovered_outcomes": [],
+    "orphan_assessments": [],
+    "content_accuracy_issues": [],
+    "time_or_resource_conflicts": []
+  },
+  "review": {
+    "authoring_run": "Một lượt thực hiện trong hội thoại hiện tại, dùng workflow đã đọc; không gọi một mô hình khác.",
+    "subject_expert": {
+      "status": "not_run",
+      "reviewer": null
+    },
+    "pedagogy_and_access": {
+      "status": "not_run",
+      "reviewer": null
+    },
+    "learner_pilot": {
+      "status": "not_run",
+      "record_locator": null
+    },
+    "learning_effectiveness": "not_assessed"
+  }
+}

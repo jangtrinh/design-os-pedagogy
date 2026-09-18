@@ -1,5 +1,11 @@
 # Implementation status
 
+## Executed course exercise, 17 September 2026
+
+The [Vietnamese Grade 1 mathematics course](../courses/vi-vn-grade-1-math/README.md) now provides an actual 35-week/105-period authoring fixture, an independent 24-requirement map, per-period tasks/keys, eight detailed teaching examples and two sample assessments. The bounded audit recomputed 111 declared keys and identified 14 observational tasks for separate review. Twenty new tests plus the existing suite passed: 98 total. The registry contains 98 records and 350 resolved references, with no errors and 62 retained legacy warnings.
+
+The [evaluation](../courses/vi-vn-grade-1-math/workflow-evaluation.md) separates these checks from subject/teacher review, textbook-page alignment, classroom timing and learner effectiveness, which remain unverified. The [course audit documentation](course-audit.md) records the executable scope and limitations. The older implementation snapshots below retain their original dates and counts.
+
 Updated 17 September 2026. Current knowledge plan: [course-design foundation](../plans/20260917-knowledge-course-design/plan.md). The publication/rehearsal implementation record from 16 September is retained below.
 
 ## Knowledge update, 17 September 2026

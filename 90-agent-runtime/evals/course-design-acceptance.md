@@ -34,6 +34,9 @@ For each scenario, save the input, actual course output, model/tool/version info
 | Limited resources | Printed materials, no internet, short sessions | Feasible activities and separate contact/independent/follow-up budgets; no assumed unavailable software |
 | Assessment mismatch | Stated goal is independent performance; supplied quiz checks vocabulary | Mismatch identified and repaired with preparation and suitable evidence of performance |
 | Conflicting sources | Two credible sources differ in recommendation or scope | Differences explained with locators; uncertainty retained; no selective omission or automatic vote counting |
+| Grade and jurisdiction | A broad primary-stage record contains multiplication, but the requested grade does not | Independent curriculum checklist; excluded core content is not imported from the broader stage; textbook mapping is separate |
+| Beginning readers | A mathematics task is correct but requires lengthy independent reading or writing | Teacher directions and learner prompt are separate; suitable oral/manipulative responses and equivalent criteria are supplied |
+| Full-year feasibility | A year plan claims the right lesson total but omits assessment or prerequisite time | Exact per-period accounting and scheduled practice before assessment; required homework and local assumptions explicit |
 
 ## Criteria
 
@@ -57,3 +60,5 @@ Two reviewers can independently classify a sample and discuss disagreements usin
 ## Boundary
 
 Design acceptance supports a decision to prepare a supervised pilot. Learning claims require real, appropriate evidence about learner performance and transfer. The existing fraction rehearsal and its software tests do not execute this evaluation set.
+
+The Vietnamese Grade 1 run in courses/vi-vn-grade-1-math records an actual authored output and bounded structural/key checks. It is one course case, not execution of every scenario above or a cross-model benchmark. Its review report distinguishes inspected content from teacher and learner work still not run.
