@@ -47,6 +47,12 @@ First appraise consequential legacy claims and primary quotations and give the s
 
 Keep unknown-topic behavior explicit: obtain a bounded subject foundation or produce a provisional outline with unresolved dependencies. Do not generate generic pages simply to increase coverage counts.
 
+## Vietnamese Grade 1 exercise, 17 September 2026
+
+The executed case lives at `courses/vi-vn-grade-1-math/`: independent 24-requirement profile, 105 periods/35 weeks, per-period models/practice/keys, eight detailed teaching examples and two sample tests. `tools/course_audit.py` supports only the declared VN Grade 1 profile; `tools/render_course.py --write` regenerates teacher-facing Markdown. Read its evaluation and `plans/20260917-vietnam-grade1-course-test/final-checks.json` for actual results, not a blanket readiness claim. Textbook page alignment, teacher review and learner evidence remain pending.
+
+Durable lesson from this case: a broad stage tag and correct arithmetic do not guarantee the right grade scope or prerequisite language. A draft period-85 prompt used cm before its introduction in period 87; structural checks passed, then content review corrected the learner prompt while keeping teacher preparation measurements. Keep an independent jurisdiction/grade checklist, separate teacher and learner fields, and review semantic dependencies alongside mechanical checks.
+
 ## Local verification and preservation
 
 Run from the complete Agent Teacher checkout:

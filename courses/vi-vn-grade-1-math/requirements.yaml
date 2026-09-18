@@ -1,0 +1,50 @@
+profile_version: "1.0.0"
+profile_id: vn-grade1-math-2018-checked-20260917
+title: "Bản đồ yêu cầu Toán lớp 1 Việt Nam"
+source_id: evidence-vn-2018-grade1-mathematics
+source_url: "https://fileth.hcm.shieldix.app/data/hcmedu/thbausen/2020_3/cttoan_193202020.pdf"
+source_locator: "Trang in 21-24, 120-121"
+checked_at: "2026-09-17"
+interpretation: "Các mã R là phân rã do người biên soạn tạo; không phải mã chính thức của Bộ. Nội dung diễn đạt lại, không thêm chuẩn nâng cao."
+weeks: 35
+periods_per_week: 3
+period_minutes: 35
+total_periods: 105
+limits:
+  whole_number_min: 0
+  whole_number_max: 100
+  ordered_group_max: 4
+  carrying: false
+  borrowing: false
+  operations: [add, subtract]
+  expression_operator_max: 2
+  clock_minutes: [0]
+  length_units: [cm, nonstandard]
+requirements:
+  - {id: R01, strand: number, locator: "tr.21", expectation: "Đếm, đọc, viết số trong phạm vi 10, bao gồm 0."}
+  - {id: R02, strand: number, locator: "tr.21", expectation: "Đếm, đọc, viết số trong phạm vi 20."}
+  - {id: R03, strand: number, locator: "tr.21", expectation: "Đếm, đọc, viết số trong phạm vi 100."}
+  - {id: R04, strand: number, locator: "tr.21", expectation: "Nhận biết chục, đơn vị, số tròn chục."}
+  - {id: R05, strand: number, locator: "tr.21", expectation: "So sánh, xếp thứ tự nhóm không quá bốn số trong phạm vi 100."}
+  - {id: R06, strand: number, locator: "tr.21", expectation: "Nhận biết ý nghĩa phép cộng và phép trừ qua đồ vật, tranh và hành động."}
+  - {id: R07, strand: number, locator: "tr.21", expectation: "Thực hiện cộng, trừ không nhớ trong phạm vi 100."}
+  - {id: R08, strand: number, locator: "tr.21", expectation: "Làm quen biểu thức có hai dấu cộng/trừ và tính từ trái sang phải."}
+  - {id: R09, strand: number, locator: "tr.21", expectation: "Cộng, trừ nhẩm trong phạm vi 10."}
+  - {id: R10, strand: number, locator: "tr.21", expectation: "Cộng, trừ nhẩm các số tròn chục."}
+  - {id: R11, strand: number, locator: "tr.22", expectation: "Nhận biết tình huống cộng/trừ và viết phép tính thích hợp với bài toán qua tranh hoặc lời đọc."}
+  - {id: R12, strand: geometry, locator: "tr.22", expectation: "Nhận biết trên/dưới, trái/phải, trước/sau, ở giữa trong bối cảnh chỉ rõ vật/người mốc."}
+  - {id: R13, strand: geometry, locator: "tr.22", expectation: "Nhận dạng hình vuông, tròn, tam giác, chữ nhật qua vật thật và hình vẽ."}
+  - {id: R14, strand: geometry, locator: "tr.22", expectation: "Nhận dạng khối lập phương, khối hộp chữ nhật qua vật thật."}
+  - {id: R15, strand: geometry, locator: "tr.22", expectation: "Lắp ghép, xếp hình từ các hình phẳng và khối đơn giản."}
+  - {id: R16, strand: geometry, locator: "tr.22", expectation: "Nhận biết dài hơn, ngắn hơn và so sánh độ dài trực tiếp."}
+  - {id: R17, strand: geometry, locator: "tr.22-23", expectation: "Nhận biết cm và đọc, viết số đo trong phạm vi 100 cm."}
+  - {id: R18, strand: geometry, locator: "tr.23", expectation: "Nhận biết một tuần có bảy ngày, tên gọi và thứ tự các ngày."}
+  - {id: R19, strand: geometry, locator: "tr.23", expectation: "Nhận biết và đọc giờ đúng trên đồng hồ."}
+  - {id: R20, strand: geometry, locator: "tr.23", expectation: "Đo, ước lượng độ dài bằng đơn vị tự chọn như gang tay, bước chân hoặc đoạn thẳng."}
+  - {id: R21, strand: geometry, locator: "tr.23", expectation: "Dùng thước đo độ dài theo cm."}
+  - {id: R22, strand: geometry, locator: "tr.23", expectation: "Xác định thứ và ngày khi xem lịch tờ hằng ngày."}
+  - {id: R23, strand: geometry, locator: "tr.23", expectation: "Giải quyết vấn đề thực tế đơn giản về đo độ dài, đọc giờ, xem lịch."}
+  - {id: R24, strand: experience, locator: "tr.24", expectation: "Tham gia thực hành/trải nghiệm vận dụng số, hình, đo lường vào tình huống gần gũi; đây là nhóm hoạt động, không bắt buộc mọi ví dụ nêu trong chương trình."}
+excluded_from_core: ["cộng có nhớ", "trừ có mượn", "nhân", "chia", "phân số", "phương trình chứa x", "đọc giờ rưỡi/phút", "mét và đổi đơn vị", "thống kê/xác suất chính thức", "nhóm sắp thứ tự trên bốn số"]
+review_status: source-checked
+human_curriculum_review: not_run

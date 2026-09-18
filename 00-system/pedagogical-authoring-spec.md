@@ -96,9 +96,12 @@ Every substantive document in this system must incorporate the following compone
 ## 3. Hinge Question Diagnostic Standard
 
 A hinge question is an instructional diagnostic instrument, not an arbitrary quiz.
-* **Every question must have exactly 1 target answer and 3–4 functional distractors.**
+* **For a single-answer multiple-choice hinge, specify one target answer and functional distractors that fit the task. Three or four distractors are an authoring option, not a requirement for every learner or diagnostic format.**
+* **A diagnostic may instead use an oral response, construction, gesture, sorting task or observed action. Specify the target evidence, plausible alternative explanations, a follow-up probe and an insufficient-evidence route. Do not turn an early-primary mathematics check into a reading test merely to satisfy a multiple-choice template.**
 * **Each distractor must state plausible explanations and a follow-up probe that distinguishes them.**
 * **A selected answer alone does not establish a unique mental model. Elicit reasoning when evidence is ambiguous, retain an insufficient-evidence state, and verify the interpretation before choosing an intervention.**
+
+For grade-specific courses, an S0-S7 stage tag is only a retrieval starting point. Confirm jurisdiction, grade, curriculum revision, subject limits and assessment conditions against the relevant source. A worked example suitable for another grade within S2 must not become mandatory Grade 1 content through stage tagging alone.
 
 Example Schema:
 ```yaml

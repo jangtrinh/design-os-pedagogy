@@ -1,0 +1,2225 @@
+{
+  "data_version": "1.0.0",
+  "semester": 2,
+  "sessions": [
+    {
+      "id": "L055",
+      "period": 55,
+      "week": 19,
+      "unit_id": "U06",
+      "strand": "number",
+      "title": "Các số 11, 12, 13",
+      "standard_ids": [
+        "R02",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô bó 10 que, thêm 2 que rời: 12 gồm một chục và hai đơn vị.",
+      "practice": {
+        "id": "P055",
+        "prompt": "Tạo 11 và 13 bằng bó chục và que rời.",
+        "answer": "1 chục 1 đơn vị; 1 chục 3 đơn vị."
+      },
+      "exit_task": {
+        "id": "A055",
+        "prompt": "Số 12 gồm mấy chục và mấy đơn vị?",
+        "materials": "Bó 10 que và que rời.",
+        "kind": "place",
+        "value": 12,
+        "answer": [
+          1,
+          2
+        ]
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L056",
+      "period": 56,
+      "week": 19,
+      "unit_id": "U06",
+      "strand": "number",
+      "title": "Các số 14, 15, 16",
+      "standard_ids": [
+        "R02",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô giữ một bó chục, thay số que rời để đọc 14, 15, 16.",
+      "practice": {
+        "id": "P056",
+        "prompt": "Nghe cô đọc mười bốn, mười sáu rồi viết số.",
+        "answer": "14; 16."
+      },
+      "exit_task": {
+        "id": "A056",
+        "prompt": "Viết số cô đọc: mười lăm.",
+        "materials": "Que và thẻ số.",
+        "kind": "number",
+        "value": 15,
+        "answer": 15
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L057",
+      "period": 57,
+      "week": 19,
+      "unit_id": "U06",
+      "strand": "number",
+      "title": "Các số 17, 18, 19",
+      "standard_ids": [
+        "R02",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô minh họa 18 bằng một bó chục và tám que; không coi 18 là hai nhóm 1 và 8 rời.",
+      "practice": {
+        "id": "P057",
+        "prompt": "Tạo 17 và 19, đếm để kiểm.",
+        "answer": "1 chục 7 đơn vị; 1 chục 9 đơn vị."
+      },
+      "exit_task": {
+        "id": "A057",
+        "prompt": "Có một bó 10 que và 8 que rời. Có bao nhiêu que?",
+        "materials": "Một bó chục, 8 que rời.",
+        "kind": "count",
+        "value": 18,
+        "answer": 18
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L058",
+      "period": 58,
+      "week": 20,
+      "unit_id": "U06",
+      "strand": "number",
+      "title": "Số 20 và hai chục",
+      "standard_ids": [
+        "R02",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô bó tiếp 10 que thành bó thứ hai; 20 là hai chục, không còn que rời.",
+      "practice": {
+        "id": "P058",
+        "prompt": "Tạo 10, 20 và giải thích bằng các bó.",
+        "answer": "1 bó chục; 2 bó chục."
+      },
+      "exit_task": {
+        "id": "A058",
+        "prompt": "Số 20 gồm mấy chục và mấy đơn vị?",
+        "materials": "Hai bó chục.",
+        "kind": "place",
+        "value": 20,
+        "answer": [
+          2,
+          0
+        ]
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L059",
+      "period": 59,
+      "week": 20,
+      "unit_id": "U06",
+      "strand": "number",
+      "title": "So sánh các số trong phạm vi 20",
+      "standard_ids": [
+        "R02",
+        "R05"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô so một bó chục + 4 que với một bó chục + 7 que.",
+      "practice": {
+        "id": "P059",
+        "prompt": "So sánh 13 với 16; xếp 11, 19, 15.",
+        "answer": "13 < 16; 11, 15, 19."
+      },
+      "exit_task": {
+        "id": "A059",
+        "prompt": "Điền dấu: 18 ... 15.",
+        "materials": "Bó chục, que rời, thẻ dấu.",
+        "kind": "compare",
+        "values": [
+          18,
+          15
+        ],
+        "answer": ">"
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L060",
+      "period": 60,
+      "week": 20,
+      "unit_id": "U06",
+      "strand": "number",
+      "title": "Cộng không nhớ trong phạm vi 20",
+      "standard_ids": [
+        "R07"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô giữ bó chục, gộp 2 que với 3 que: 12 + 3 = 15.",
+      "practice": {
+        "id": "P060",
+        "prompt": "Tính 11 + 4 và 13 + 2 bằng que rồi bằng số.",
+        "answer": "15; 15."
+      },
+      "exit_task": {
+        "id": "A060",
+        "prompt": "Tính: 14 + 3.",
+        "materials": "Bó chục và que; không dùng bài qua chục.",
+        "kind": "arithmetic",
+        "operands": [
+          14,
+          3
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 17
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L061",
+      "period": 61,
+      "week": 21,
+      "unit_id": "U06",
+      "strand": "number",
+      "title": "Trừ không nhớ trong phạm vi 20",
+      "standard_ids": [
+        "R07"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô biểu diễn 17 - 4: giữ bó chục, lấy 4 trong 7 que rời.",
+      "practice": {
+        "id": "P061",
+        "prompt": "Tính 16 - 2 và 19 - 5.",
+        "answer": "14; 14."
+      },
+      "exit_task": {
+        "id": "A061",
+        "prompt": "Tính: 18 - 6.",
+        "materials": "Bó chục, que rời.",
+        "kind": "arithmetic",
+        "operands": [
+          18,
+          6
+        ],
+        "operators": [
+          "-"
+        ],
+        "answer": 12
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L062",
+      "period": 62,
+      "week": 21,
+      "unit_id": "U06",
+      "strand": "number",
+      "title": "Tình huống cộng và trừ trong phạm vi 20",
+      "standard_ids": [
+        "R11",
+        "R07"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đọc chuyện có 12 que, thêm 5; học sinh diễn trước khi viết.",
+      "practice": {
+        "id": "P062",
+        "prompt": "Có 18 bút, dùng 3 bút. Viết phép tính.",
+        "answer": "18 - 3 = 15."
+      },
+      "exit_task": {
+        "id": "A062",
+        "prompt": "Có 13 nhãn, được thêm 4 nhãn. Có tất cả bao nhiêu?",
+        "materials": "Que thay bút/nhãn; cô đọc đề.",
+        "kind": "arithmetic",
+        "operands": [
+          13,
+          4
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 17
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L063",
+      "period": 63,
+      "week": 21,
+      "unit_id": "U06",
+      "strand": "number",
+      "title": "Ôn trong phạm vi 20 và hai bước",
+      "standard_ids": [
+        "R02",
+        "R04",
+        "R07",
+        "R08"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô tính 15 - 2 + 3: 13, rồi 16.",
+      "practice": {
+        "id": "P063",
+        "prompt": "Tính 12 + 3 - 1 và nêu bước đầu.",
+        "answer": "14; 12 + 3 = 15."
+      },
+      "exit_task": {
+        "id": "A063",
+        "prompt": "Tính: 18 - 3 - 2.",
+        "materials": "Bó chục và que.",
+        "kind": "arithmetic",
+        "operands": [
+          18,
+          3,
+          2
+        ],
+        "operators": [
+          "-",
+          "-"
+        ],
+        "answer": 13
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L064",
+      "period": 64,
+      "week": 22,
+      "unit_id": "U07",
+      "strand": "number",
+      "title": "Các số tròn chục đến 100",
+      "standard_ids": [
+        "R03",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô tạo 30 bằng ba bó chục, lần lượt tới mười bó là 100.",
+      "practice": {
+        "id": "P064",
+        "prompt": "Đếm bó chục tương ứng 40, 70, 100.",
+        "answer": "4 bó; 7 bó; 10 bó."
+      },
+      "exit_task": {
+        "id": "A064",
+        "prompt": "Viết số cô đọc: bảy mươi.",
+        "materials": "10 bó chục; 100 chỉ là giới hạn số, không mở bài hàng trăm.",
+        "kind": "number",
+        "value": 70,
+        "answer": 70
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L065",
+      "period": 65,
+      "week": 22,
+      "unit_id": "U07",
+      "strand": "number",
+      "title": "Các số từ 21 đến 40",
+      "standard_ids": [
+        "R03",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô tạo 24 bằng hai bó chục và bốn que; đọc hai mươi tư.",
+      "practice": {
+        "id": "P065",
+        "prompt": "Viết số cô đọc: hai mươi bảy, ba mươi lăm.",
+        "answer": "27; 35; chấp nhận cách đọc vùng miền phù hợp."
+      },
+      "exit_task": {
+        "id": "A065",
+        "prompt": "Số 32 gồm mấy chục và mấy đơn vị?",
+        "materials": "Bó chục và que.",
+        "kind": "place",
+        "value": 32,
+        "answer": [
+          3,
+          2
+        ]
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L066",
+      "period": 66,
+      "week": 22,
+      "unit_id": "U07",
+      "strand": "number",
+      "title": "Các số từ 41 đến 60",
+      "standard_ids": [
+        "R03",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô dùng bảng chục/đơn vị để tạo 46.",
+      "practice": {
+        "id": "P066",
+        "prompt": "Đọc 41, 54, 60 và dựng một số bằng que.",
+        "answer": "Bốn mươi mốt; năm mươi tư; sáu mươi."
+      },
+      "exit_task": {
+        "id": "A066",
+        "prompt": "Viết số cô đọc: năm mươi sáu.",
+        "materials": "Thẻ số, bảng chục/đơn vị.",
+        "kind": "number",
+        "value": 56,
+        "answer": 56
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L067",
+      "period": 67,
+      "week": 23,
+      "unit_id": "U07",
+      "strand": "number",
+      "title": "Các số từ 61 đến 80",
+      "standard_ids": [
+        "R03",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô so cấu tạo 67 với 76 để phân biệt vị trí chữ số.",
+      "practice": {
+        "id": "P067",
+        "prompt": "Tạo 63 và 78 bằng thẻ chục/đơn vị.",
+        "answer": "6 chục 3 đơn vị; 7 chục 8 đơn vị."
+      },
+      "exit_task": {
+        "id": "A067",
+        "prompt": "Số 74 gồm mấy chục và mấy đơn vị?",
+        "materials": "Thẻ chục, đơn vị.",
+        "kind": "place",
+        "value": 74,
+        "answer": [
+          7,
+          4
+        ]
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L068",
+      "period": 68,
+      "week": 23,
+      "unit_id": "U07",
+      "strand": "number",
+      "title": "Các số từ 81 đến 100",
+      "standard_ids": [
+        "R03",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đi từ 98 tới 99 và 100 bằng nhóm vật; không yêu cầu cộng có nhớ theo thuật toán.",
+      "practice": {
+        "id": "P068",
+        "prompt": "Đọc và viết 85, 90, 100.",
+        "answer": "Tám mươi lăm; chín mươi; một trăm."
+      },
+      "exit_task": {
+        "id": "A068",
+        "prompt": "Viết số cô đọc: chín mươi tám.",
+        "materials": "Bảng số và thẻ bó chục.",
+        "kind": "number",
+        "value": 98,
+        "answer": 98
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L069",
+      "period": 69,
+      "week": 23,
+      "unit_id": "U07",
+      "strand": "number",
+      "title": "Chục và đơn vị: phân biệt 47 với 74",
+      "standard_ids": [
+        "R03",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đặt bốn bó chục và bảy que dưới số 47; đối chiếu 74.",
+      "practice": {
+        "id": "P069",
+        "prompt": "Tạo 35 và 53, nêu chục/đơn vị.",
+        "answer": "3 chục 5 đơn vị; 5 chục 3 đơn vị."
+      },
+      "exit_task": {
+        "id": "A069",
+        "prompt": "Số 47 gồm mấy chục và mấy đơn vị?",
+        "materials": "Bó chục và que; bảng vị trí.",
+        "kind": "place",
+        "value": 47,
+        "answer": [
+          4,
+          7
+        ]
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L070",
+      "period": 70,
+      "week": 24,
+      "unit_id": "U07",
+      "strand": "number",
+      "title": "So sánh số trong phạm vi 100",
+      "standard_ids": [
+        "R05",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô so 46 và 64 theo số bó chục, rồi so 62 và 67 theo que rời.",
+      "practice": {
+        "id": "P070",
+        "prompt": "Điền dấu 35 ... 53; 72 ... 75.",
+        "answer": "35 < 53; 72 < 75."
+      },
+      "exit_task": {
+        "id": "A070",
+        "prompt": "Điền dấu: 68 ... 63.",
+        "materials": "Thẻ số và bảng chục/đơn vị.",
+        "kind": "compare",
+        "values": [
+          68,
+          63
+        ],
+        "answer": ">"
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L071",
+      "period": 71,
+      "week": 24,
+      "unit_id": "U07",
+      "strand": "number",
+      "title": "Xếp thứ tự nhóm tối đa bốn số",
+      "standard_ids": [
+        "R03",
+        "R05"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô xếp 24, 42, 37 bằng chục rồi đơn vị.",
+      "practice": {
+        "id": "P071",
+        "prompt": "Xếp 65, 56, 70 từ bé đến lớn.",
+        "answer": "56, 65, 70."
+      },
+      "exit_task": {
+        "id": "A071",
+        "prompt": "Xếp 80, 18, 81, 8 từ bé đến lớn.",
+        "materials": "Bốn thẻ số.",
+        "kind": "order",
+        "values": [
+          80,
+          18,
+          81,
+          8
+        ],
+        "answer": [
+          8,
+          18,
+          80,
+          81
+        ]
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L072",
+      "period": 72,
+      "week": 24,
+      "unit_id": "U07",
+      "strand": "experience",
+      "title": "Trải nghiệm: đóng gói theo chục",
+      "standard_ids": [
+        "R03",
+        "R04",
+        "R24"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đóng 10 que vào một bó rồi giữ các que dư; cả lớp kiểm tổng.",
+      "practice": {
+        "id": "P072",
+        "prompt": "Nhóm chuẩn bị 36 que cho góc toán bằng bó chục và que rời.",
+        "answer": "3 bó chục, 6 que rời, tổng 36."
+      },
+      "exit_task": {
+        "id": "A072",
+        "prompt": "Có 5 bó chục và 2 que rời. Có bao nhiêu que?",
+        "materials": "Que lớn hoặc thẻ nhóm chục; không dùng tiền vượt phạm vi 100.",
+        "kind": "count",
+        "value": 52,
+        "answer": 52
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L073",
+      "period": 73,
+      "week": 25,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Cộng nhẩm số tròn chục",
+      "standard_ids": [
+        "R10",
+        "R07"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô gộp 2 bó và 3 bó: 20 + 30 = 50.",
+      "practice": {
+        "id": "P073",
+        "prompt": "Nhẩm 40 + 20 và 30 + 60.",
+        "answer": "60; 90."
+      },
+      "exit_task": {
+        "id": "A073",
+        "prompt": "Tính nhẩm: 50 + 30.",
+        "materials": "Bó chục.",
+        "kind": "arithmetic",
+        "operands": [
+          50,
+          30
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 80
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L074",
+      "period": 74,
+      "week": 25,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Trừ nhẩm số tròn chục",
+      "standard_ids": [
+        "R10",
+        "R07"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô bớt 3 trong 7 bó: 70 - 30 = 40.",
+      "practice": {
+        "id": "P074",
+        "prompt": "Nhẩm 80 - 20, 90 - 50.",
+        "answer": "60; 40."
+      },
+      "exit_task": {
+        "id": "A074",
+        "prompt": "Tính nhẩm: 100 - 40.",
+        "materials": "10 bó chục; trừ theo bó, không dạy mượn từ hàng trăm.",
+        "kind": "arithmetic",
+        "operands": [
+          100,
+          40
+        ],
+        "operators": [
+          "-"
+        ],
+        "answer": 60
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L075",
+      "period": 75,
+      "week": 25,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Cộng số hai chữ số với số một chữ số",
+      "standard_ids": [
+        "R07",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô biểu diễn 24 + 3 = 27; đặt cột đơn vị thẳng nhau.",
+      "practice": {
+        "id": "P075",
+        "prompt": "Tính 42 + 5, 63 + 4.",
+        "answer": "47; 67."
+      },
+      "exit_task": {
+        "id": "A075",
+        "prompt": "Tính: 35 + 2.",
+        "materials": "Bảng cột chục/đơn vị.",
+        "kind": "arithmetic",
+        "operands": [
+          35,
+          2
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 37
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L076",
+      "period": 76,
+      "week": 26,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Cộng một số với số tròn chục",
+      "standard_ids": [
+        "R07",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô gộp chục trong 23 + 40 = 63, giữ 3 đơn vị.",
+      "practice": {
+        "id": "P076",
+        "prompt": "Tính 35 + 20, 41 + 30.",
+        "answer": "55; 71."
+      },
+      "exit_task": {
+        "id": "A076",
+        "prompt": "Tính: 46 + 30.",
+        "materials": "Bó chục và thẻ đơn vị.",
+        "kind": "arithmetic",
+        "operands": [
+          46,
+          30
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 76
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L077",
+      "period": 77,
+      "week": 26,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Cộng hai số có hai chữ số, không nhớ",
+      "standard_ids": [
+        "R07",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô làm 23 + 14: 3 + 4 = 7 đơn vị, 2 + 1 = 3 chục, được 37.",
+      "practice": {
+        "id": "P077",
+        "prompt": "Tính 32 + 25 và 41 + 18.",
+        "answer": "57; 59."
+      },
+      "exit_task": {
+        "id": "A077",
+        "prompt": "Tính: 42 + 35.",
+        "materials": "Bảng con kẻ cột; bó chục/que khi cần.",
+        "kind": "arithmetic",
+        "operands": [
+          42,
+          35
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 77
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L078",
+      "period": 78,
+      "week": 26,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Trừ số một chữ số, không mượn",
+      "standard_ids": [
+        "R07",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô làm 58 - 3 = 55 bằng bớt que rời.",
+      "practice": {
+        "id": "P078",
+        "prompt": "Tính 47 - 2, 69 - 5.",
+        "answer": "45; 64."
+      },
+      "exit_task": {
+        "id": "A078",
+        "prompt": "Tính: 76 - 4.",
+        "materials": "Bảng chục/đơn vị.",
+        "kind": "arithmetic",
+        "operands": [
+          76,
+          4
+        ],
+        "operators": [
+          "-"
+        ],
+        "answer": 72
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L079",
+      "period": 79,
+      "week": 27,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Trừ số tròn chục",
+      "standard_ids": [
+        "R07",
+        "R10"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô làm 68 - 20 = 48, bớt hai bó chục.",
+      "practice": {
+        "id": "P079",
+        "prompt": "Tính 75 - 30, 94 - 40.",
+        "answer": "45; 54."
+      },
+      "exit_task": {
+        "id": "A079",
+        "prompt": "Tính: 87 - 50.",
+        "materials": "Bó chục.",
+        "kind": "arithmetic",
+        "operands": [
+          87,
+          50
+        ],
+        "operators": [
+          "-"
+        ],
+        "answer": 37
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L080",
+      "period": 80,
+      "week": 27,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Trừ hai số có hai chữ số, không mượn",
+      "standard_ids": [
+        "R07",
+        "R04"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô làm 57 - 23: 7 - 3 = 4 đơn vị, 5 - 2 = 3 chục, được 34.",
+      "practice": {
+        "id": "P080",
+        "prompt": "Tính 68 - 24, 95 - 32.",
+        "answer": "44; 63."
+      },
+      "exit_task": {
+        "id": "A080",
+        "prompt": "Tính: 86 - 42.",
+        "materials": "Bảng con và vật mô hình.",
+        "kind": "arithmetic",
+        "operands": [
+          86,
+          42
+        ],
+        "operators": [
+          "-"
+        ],
+        "answer": 44
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L081",
+      "period": 81,
+      "week": 27,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Biểu thức hai dấu trong phạm vi 100",
+      "standard_ids": [
+        "R08",
+        "R07"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô làm 32 + 15 - 4: 47, rồi 43; không tự đổi thứ tự.",
+      "practice": {
+        "id": "P081",
+        "prompt": "Tính 54 - 20 + 3.",
+        "answer": "37."
+      },
+      "exit_task": {
+        "id": "A081",
+        "prompt": "Tính: 43 + 12 - 5.",
+        "materials": "Que/bảng chục; ở bước 55 - 5 không cần mượn.",
+        "kind": "arithmetic",
+        "operands": [
+          43,
+          12,
+          5
+        ],
+        "operators": [
+          "+",
+          "-"
+        ],
+        "answer": 50
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L082",
+      "period": 82,
+      "week": 28,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Đọc tình huống và viết phép tính phù hợp",
+      "standard_ids": [
+        "R11",
+        "R07"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đọc 24 cây, trồng thêm 13 cây; trẻ chọn mô hình và phép tính.",
+      "practice": {
+        "id": "P082",
+        "prompt": "Có 56 nhãn, dùng 24 nhãn. Còn mấy nhãn?",
+        "answer": "56 - 24 = 32."
+      },
+      "exit_task": {
+        "id": "A082",
+        "prompt": "Có 32 quyển vở, thêm 15 quyển. Có tất cả bao nhiêu?",
+        "materials": "Thẻ nhóm chục; cô đọc đề ngắn.",
+        "kind": "arithmetic",
+        "operands": [
+          32,
+          15
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 47
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L083",
+      "period": 83,
+      "week": 28,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Kiểm tra kết quả bằng phép tính ngược",
+      "standard_ids": [
+        "R07",
+        "R11"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô kiểm 46 - 23 = 23 bằng 23 + 23 = 46.",
+      "practice": {
+        "id": "P083",
+        "prompt": "Kiểm 35 + 12 = 47 bằng lấy 47 bớt 12.",
+        "answer": "47 - 12 = 35."
+      },
+      "exit_task": {
+        "id": "A083",
+        "prompt": "Tính: 67 - 25.",
+        "materials": "Bảng con.",
+        "kind": "arithmetic",
+        "operands": [
+          67,
+          25
+        ],
+        "operators": [
+          "-"
+        ],
+        "answer": 42
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L084",
+      "period": 84,
+      "week": 28,
+      "unit_id": "U08",
+      "strand": "number",
+      "title": "Ôn cộng, trừ và lời giải có lí",
+      "standard_ids": [
+        "R07",
+        "R08",
+        "R11"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô chỉ hai lời giải cho 64 - 32, cho trẻ chọn và chứng minh.",
+      "practice": {
+        "id": "P084",
+        "prompt": "Tính 25 + 13 và 79 - 26.",
+        "answer": "38; 53."
+      },
+      "exit_task": {
+        "id": "A084",
+        "prompt": "Tính: 54 + 23.",
+        "materials": "Thẻ lời giải; nhận xét cách làm.",
+        "kind": "arithmetic",
+        "operands": [
+          54,
+          23
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 77
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L085",
+      "period": 85,
+      "week": 29,
+      "unit_id": "U09",
+      "strand": "geometry",
+      "title": "Dài hơn, ngắn hơn: đặt chung một đầu",
+      "standard_ids": [
+        "R16"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đặt hai dải giấy lệch đầu để gây câu hỏi, sau đó đặt chung đầu và so.",
+      "practice": {
+        "id": "P085",
+        "prompt": "So sánh hai bút bằng đặt chung đầu; thử xoay vị trí.",
+        "answer": "Chọn đúng vật dài/ngắn sau khi căn đầu."
+      },
+      "exit_task": {
+        "id": "A085",
+        "prompt": "Đặt hai dải giấy chung một đầu. Dải nào dài hơn?",
+        "materials": "Hai dải giấy cắt đúng 8 và 5 cm; số đo là thông tin giáo viên.",
+        "kind": "observation",
+        "answer": "Dải đỏ dài hơn; phải so từ chung một đầu, không dựa riêng vào đầu bên phải."
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L086",
+      "period": 86,
+      "week": 29,
+      "unit_id": "U09",
+      "strand": "geometry",
+      "title": "Đo bằng đơn vị tự chọn",
+      "standard_ids": [
+        "R20",
+        "R16"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô dùng các đoạn giấy bằng nhau, đặt nối tiếp không chồng/khuyết; đếm 4 đoạn.",
+      "practice": {
+        "id": "P086",
+        "prompt": "Đo một mép bàn bằng gang tay và bằng đoạn giấy; nêu tên đơn vị đã dùng.",
+        "answer": "Kết quả theo vật thật; hai đơn vị khác nhau có thể cho số khác nhau."
+      },
+      "exit_task": {
+        "id": "A086",
+        "prompt": "Hãy đo dải dài bằng các đoạn giấy đơn vị, không để hở.",
+        "materials": "Các đoạn giấy cùng độ dài; không dùng hạt quá nhỏ.",
+        "kind": "observation",
+        "answer": "Đặt liên tiếp cùng một đơn vị, đếm đúng và nói tên đơn vị; không áp đặt số đo trước khi đo."
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L087",
+      "period": 87,
+      "week": 29,
+      "unit_id": "U09",
+      "strand": "geometry",
+      "title": "Xăng-ti-mét và cách viết cm",
+      "standard_ids": [
+        "R17"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô chỉ khoảng từ vạch 0 tới vạch 1 trên thước, đọc một xăng-ti-mét.",
+      "practice": {
+        "id": "P087",
+        "prompt": "Đọc 3 cm, 12 cm; viết 8 cm theo lời cô đọc.",
+        "answer": "Ba xăng-ti-mét; mười hai xăng-ti-mét; 8 cm."
+      },
+      "exit_task": {
+        "id": "A087",
+        "prompt": "Viết số đo cô đọc: bảy xăng-ti-mét.",
+        "materials": "Thước cm; đáp án viết đủ 7 cm.",
+        "kind": "measurement",
+        "positions_cm": [
+          0,
+          7
+        ],
+        "answer": 7,
+        "unit": "cm"
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L088",
+      "period": 88,
+      "week": 30,
+      "unit_id": "U09",
+      "strand": "geometry",
+      "title": "Đo bằng thước, bắt đầu ở vạch 0",
+      "standard_ids": [
+        "R21",
+        "R17"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đặt đầu dải ở vạch 0, đọc đầu kia tại vạch 6; không bắt đầu ở mép nhựa thước.",
+      "practice": {
+        "id": "P088",
+        "prompt": "Đo hai dải cô chuẩn bị dài 4 cm và 9 cm.",
+        "answer": "4 cm; 9 cm, nếu vật thật đúng kích thước."
+      },
+      "exit_task": {
+        "id": "A088",
+        "prompt": "Đo dải giấy đặt từ vạch 0 đến vạch 8.",
+        "materials": "Thước có vạch rõ; dải đúng 8 cm.",
+        "kind": "measurement",
+        "positions_cm": [
+          0,
+          8
+        ],
+        "answer": 8,
+        "unit": "cm"
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L089",
+      "period": 89,
+      "week": 30,
+      "unit_id": "U09",
+      "strand": "geometry",
+      "title": "Ước lượng rồi đo kiểm tra",
+      "standard_ids": [
+        "R20",
+        "R21",
+        "R17"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô dự đoán chiều dài bút bằng một đoạn 1 cm quen thuộc rồi đo; phân biệt ước lượng và đo chính xác.",
+      "practice": {
+        "id": "P089",
+        "prompt": "Ước lượng một dải rồi đo; ghi cả dự đoán và số đo thật.",
+        "answer": "Dự đoán có lí và biết kiểm bằng thước; không coi lệch dự đoán là sai toàn bài."
+      },
+      "exit_task": {
+        "id": "A089",
+        "prompt": "Đo dải từ vạch 0 đến vạch 12 và đọc kết quả.",
+        "materials": "Dải 12 cm; thước không bị co khi in.",
+        "kind": "measurement",
+        "positions_cm": [
+          0,
+          12
+        ],
+        "answer": 12,
+        "unit": "cm"
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L090",
+      "period": 90,
+      "week": 30,
+      "unit_id": "U09",
+      "strand": "geometry",
+      "title": "Bài toán đơn giản với độ dài",
+      "standard_ids": [
+        "R17",
+        "R21",
+        "R23"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đo hai dải 5 cm và 3 cm, ghép nối thẳng để có 8 cm.",
+      "practice": {
+        "id": "P090",
+        "prompt": "Nối hai dải 4 cm và 2 cm, tìm tổng độ dài.",
+        "answer": "6 cm."
+      },
+      "exit_task": {
+        "id": "A090",
+        "prompt": "Nối dải 6 cm với dải 3 cm, không chồng lên nhau. Dài tất cả mấy cm?",
+        "materials": "Hai dải đúng số đo; câu trả lời ghi 9 cm.",
+        "kind": "arithmetic",
+        "operands": [
+          6,
+          3
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 9
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L091",
+      "period": 91,
+      "week": 31,
+      "unit_id": "U10",
+      "strand": "geometry",
+      "title": "Bảy ngày trong tuần",
+      "standard_ids": [
+        "R18"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô xếp thẻ thứ Hai đến Chủ nhật, quay vòng về thứ Hai.",
+      "practice": {
+        "id": "P091",
+        "prompt": "Nêu ngày sau thứ Ba; đếm số ngày trong tuần.",
+        "answer": "Thứ Tư; bảy ngày."
+      },
+      "exit_task": {
+        "id": "A091",
+        "prompt": "Ngày sau Chủ nhật là ngày nào?",
+        "materials": "Bảy thẻ ngày, cô đọc khi trẻ cần.",
+        "kind": "observation",
+        "answer": "Thứ Hai; hiểu tuần tiếp tục, không có thứ Tám."
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L092",
+      "period": 92,
+      "week": 31,
+      "unit_id": "U10",
+      "strand": "geometry",
+      "title": "Đọc giờ đúng trên đồng hồ",
+      "standard_ids": [
+        "R19"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đặt kim phút ở 12, kim giờ ở 7; đọc 7 giờ, phân biệt kim.",
+      "practice": {
+        "id": "P092",
+        "prompt": "Đọc đồng hồ 3 giờ, 10 giờ; trẻ tự chỉnh 6 giờ.",
+        "answer": "3 giờ; 10 giờ; chỉnh đúng 6 giờ."
+      },
+      "exit_task": {
+        "id": "A092",
+        "prompt": "Đồng hồ có kim phút chỉ 12, kim giờ chỉ 9. Mấy giờ?",
+        "materials": "Đồng hồ hai kim, cả lớp nhìn rõ; cô không đọc hộ vị trí kim trong kiểm tra thực tế.",
+        "kind": "clock",
+        "hour": 9,
+        "minute": 0,
+        "answer": 9
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L093",
+      "period": 93,
+      "week": 31,
+      "unit_id": "U10",
+      "strand": "geometry",
+      "title": "Xem lịch tờ hằng ngày",
+      "standard_ids": [
+        "R18",
+        "R22"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đưa tờ lịch mẫu ghi Thứ Năm, ngày 17, tháng 9, năm 2026; chỉ phần thứ và ngày.",
+      "practice": {
+        "id": "P093",
+        "prompt": "Đọc tờ lịch Thứ Sáu, ngày 18/9/2026; chỉ số ngày.",
+        "answer": "Thứ Sáu; ngày 18."
+      },
+      "exit_task": {
+        "id": "A093",
+        "prompt": "Tờ lịch này cho biết thứ mấy, ngày mấy?",
+        "materials": "Tờ lịch mẫu có thứ và ngày rõ; kiểm tra tính khớp giữa thứ và ngày.",
+        "kind": "calendar",
+        "date": "2026-09-17",
+        "answer": {
+          "weekday": 3,
+          "day": 17
+        }
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L094",
+      "period": 94,
+      "week": 32,
+      "unit_id": "U10",
+      "strand": "geometry",
+      "title": "Thời gian trong một ngày gần gũi",
+      "standard_ids": [
+        "R18",
+        "R19",
+        "R22",
+        "R23"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đưa tranh hoạt động và đồng hồ giờ đúng; trẻ nối theo thông tin được cung cấp, không đoán thói quen mọi gia đình.",
+      "practice": {
+        "id": "P094",
+        "prompt": "Chọn đồng hồ 7 giờ cho hoạt động ghi 7 giờ; đọc ngày trên tờ lịch.",
+        "answer": "Đúng giờ và ngày ghi trên vật liệu, không chấm theo lịch sinh hoạt riêng."
+      },
+      "exit_task": {
+        "id": "A094",
+        "prompt": "Đồng hồ cho hoạt động bắt đầu có kim phút ở 12, kim giờ ở 8. Bắt đầu lúc mấy giờ?",
+        "materials": "Tranh lịch ngày mẫu, đồng hồ, không hỏi thời lượng qua đêm.",
+        "kind": "clock",
+        "hour": 8,
+        "minute": 0,
+        "answer": 8
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L095",
+      "period": 95,
+      "week": 32,
+      "unit_id": "U10",
+      "strand": "number",
+      "title": "Ôn tính nhẩm và so sánh số",
+      "standard_ids": [
+        "R05",
+        "R09",
+        "R10"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô nhẩm 30 + 40 = 70, kiểm bằng bó chục và so 70 với 67.",
+      "practice": {
+        "id": "P095",
+        "prompt": "Nhẩm 8 - 4, 80 - 30; so 54 với 45.",
+        "answer": "4; 50; 54 > 45."
+      },
+      "exit_task": {
+        "id": "A095",
+        "prompt": "Tính nhẩm: 90 - 60.",
+        "materials": "Thẻ số; nhận xét độ chính xác trước tốc độ.",
+        "kind": "arithmetic",
+        "operands": [
+          90,
+          60
+        ],
+        "operators": [
+          "-"
+        ],
+        "answer": 30
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L096",
+      "period": 96,
+      "week": 32,
+      "unit_id": "U10",
+      "strand": "experience",
+      "title": "Trải nghiệm: một ngày ở lớp",
+      "standard_ids": [
+        "R19",
+        "R22",
+        "R23",
+        "R24"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Nhóm chọn hoạt động theo đồng hồ và tờ lịch mẫu; cô kiểm trẻ đọc thông tin thật trên đồ dùng.",
+      "practice": {
+        "id": "P096",
+        "prompt": "Luân phiên trạm đồng hồ, lịch ngày và đoạn đường đo bằng bước chân.",
+        "answer": "Đọc giờ/ngày và nói rõ đơn vị bước chân; ghi từng em chứ không chỉ kết quả nhóm."
+      },
+      "exit_task": {
+        "id": "A096",
+        "prompt": "Hãy chỉnh đồng hồ tới 6 giờ rồi chỉ thứ trên tờ lịch.",
+        "materials": "Đồng hồ học tập, lịch mẫu; sàn phẳng, có giám sát.",
+        "kind": "observation",
+        "answer": "Kim phút 12, kim giờ 6; chỉ đúng phần thứ trên tờ lịch đang dùng."
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L097",
+      "period": 97,
+      "week": 33,
+      "unit_id": "U11",
+      "strand": "number",
+      "title": "Ôn số trong phạm vi 100",
+      "standard_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô dựng 58 bằng 5 chục 8 đơn vị, đọc và so với 85.",
+      "practice": {
+        "id": "P097",
+        "prompt": "Xếp 32, 23, 50, 5 từ bé đến lớn.",
+        "answer": "5, 23, 32, 50."
+      },
+      "exit_task": {
+        "id": "A097",
+        "prompt": "Số 86 gồm mấy chục và mấy đơn vị?",
+        "materials": "Thẻ chục/đơn vị; bốn số mỗi lượt.",
+        "kind": "place",
+        "value": 86,
+        "answer": [
+          8,
+          6
+        ]
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L098",
+      "period": 98,
+      "week": 33,
+      "unit_id": "U11",
+      "strand": "number",
+      "title": "Ôn cộng và trừ không nhớ",
+      "standard_ids": [
+        "R07",
+        "R09",
+        "R10"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô cho trẻ chọn cách tính 42 + 26 và kiểm kết quả bằng mô hình.",
+      "practice": {
+        "id": "P098",
+        "prompt": "Tính 68 - 24, 50 + 40.",
+        "answer": "44; 90."
+      },
+      "exit_task": {
+        "id": "A098",
+        "prompt": "Tính: 37 + 21.",
+        "materials": "Bảng con và bó chục khi cần.",
+        "kind": "arithmetic",
+        "operands": [
+          37,
+          21
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 58
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L099",
+      "period": 99,
+      "week": 33,
+      "unit_id": "U11",
+      "strand": "number",
+      "title": "Sửa lỗi đặt cột và dấu phép tính",
+      "standard_ids": [
+        "R04",
+        "R06",
+        "R07"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô trình bày một bài 43 + 5 bị đặt 5 vào cột chục, hỏi mô hình nào đúng.",
+      "practice": {
+        "id": "P099",
+        "prompt": "Tính 52 + 4 và 76 - 3, giải thích hàng đơn vị.",
+        "answer": "56; 73."
+      },
+      "exit_task": {
+        "id": "A099",
+        "prompt": "Tính: 64 + 5.",
+        "materials": "Bảng kẻ chục/đơn vị; ví dụ sai ghi rõ là ví dụ sai.",
+        "kind": "arithmetic",
+        "operands": [
+          64,
+          5
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 69
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L100",
+      "period": 100,
+      "week": 34,
+      "unit_id": "U11",
+      "strand": "number",
+      "title": "Bài toán có lời: hành động trước, kí hiệu sau",
+      "standard_ids": [
+        "R11",
+        "R07"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đọc 36 nhãn, dùng 12, hỏi trẻ dùng que diễn điều xảy ra.",
+      "practice": {
+        "id": "P100",
+        "prompt": "Có 23 bút, thêm 14 bút; viết phép tính.",
+        "answer": "23 + 14 = 37."
+      },
+      "exit_task": {
+        "id": "A100",
+        "prompt": "Có 48 quyển vở, chuyển đi 23 quyển. Còn bao nhiêu?",
+        "materials": "Cô đọc từng câu; không buộc trẻ chép lại đề.",
+        "kind": "arithmetic",
+        "operands": [
+          48,
+          23
+        ],
+        "operators": [
+          "-"
+        ],
+        "answer": 25
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L101",
+      "period": 101,
+      "week": 34,
+      "unit_id": "U11",
+      "strand": "number",
+      "title": "Ôn biểu thức hai dấu",
+      "standard_ids": [
+        "R08",
+        "R07"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô đánh dấu bước thứ nhất trong 46 - 12 + 3, được 34 rồi 37.",
+      "practice": {
+        "id": "P101",
+        "prompt": "Tính 35 + 12 - 4.",
+        "answer": "43."
+      },
+      "exit_task": {
+        "id": "A101",
+        "prompt": "Tính: 68 - 24 + 3.",
+        "materials": "Bảng con, gạch dưới bước đang tính.",
+        "kind": "arithmetic",
+        "operands": [
+          68,
+          24,
+          3
+        ],
+        "operators": [
+          "-",
+          "+"
+        ],
+        "answer": 47
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L102",
+      "period": 102,
+      "week": 34,
+      "unit_id": "U11",
+      "strand": "experience",
+      "title": "Trải nghiệm: góc toán của lớp",
+      "standard_ids": [
+        "R03",
+        "R11",
+        "R13",
+        "R14",
+        "R15",
+        "R21",
+        "R24"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô bố trí ba trạm: gói que theo chục, ghép hình/khối, đo dải cm; mỗi em có lượt cá nhân.",
+      "practice": {
+        "id": "P102",
+        "prompt": "Dựng 24 que rồi thêm 13; ghép mẫu và đo dải chuẩn.",
+        "answer": "37 que; ghép đúng mẫu; đo theo vật thật."
+      },
+      "exit_task": {
+        "id": "A102",
+        "prompt": "Có 24 que, thêm 13 que. Có tất cả bao nhiêu?",
+        "materials": "Đồ dùng đã dùng cả năm; không mua sắm bằng tiền lớn hay tính nhân/chia.",
+        "kind": "arithmetic",
+        "operands": [
+          24,
+          13
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 37
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L103",
+      "period": 103,
+      "week": 35,
+      "unit_id": "U12",
+      "strand": "number",
+      "title": "Ôn cuối năm theo hồ sơ từng em",
+      "standard_ids": [
+        "R03",
+        "R04",
+        "R05",
+        "R07",
+        "R08",
+        "R11",
+        "R13",
+        "R14",
+        "R17",
+        "R19",
+        "R22"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô dùng kết quả quan sát thực nếu có để chọn bài; ví dụ minh họa không ghi là dữ liệu học sinh.",
+      "practice": {
+        "id": "P103",
+        "prompt": "Nhóm cần hỗ trợ làm một nhiệm vụ cùng cấu trúc khác số; nhóm đã làm được giải thích cách kiểm.",
+        "answer": "Ghi rõ nhiệm vụ, cách đáp và mức hỗ trợ."
+      },
+      "exit_task": {
+        "id": "A103",
+        "prompt": "Tính: 57 - 23.",
+        "materials": "Bộ thẻ và đồ dùng; không luyện thuộc đáp án đề mẫu.",
+        "kind": "arithmetic",
+        "operands": [
+          57,
+          23
+        ],
+        "operators": [
+          "-"
+        ],
+        "answer": 34
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L104",
+      "period": 104,
+      "week": 35,
+      "unit_id": "U12",
+      "strand": "number",
+      "title": "Bài kiểm tra mẫu cuối năm",
+      "standard_ids": [
+        "R03",
+        "R04",
+        "R05",
+        "R07",
+        "R08",
+        "R11",
+        "R17",
+        "R19"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        27,
+        5
+      ],
+      "teacher_model": "Cô hướng dẫn, đọc đề thống nhất, không nhắc cách giải.",
+      "practice": {
+        "id": "P104",
+        "prompt": "Làm đề cuối năm tại assessment.md; thu phiếu và ghi hỗ trợ thực tế.",
+        "answer": "Theo đáp án và thang điểm của đề cuối năm."
+      },
+      "exit_task": {
+        "id": "A104",
+        "prompt": "Kết quả được ghi theo từng câu và đối chiếu hồ sơ thường xuyên.",
+        "materials": "Phiếu cuối năm, đồ dùng và điều chỉnh đã được trường thống nhất.",
+        "kind": "observation",
+        "answer": "Dùng rubric đề cuối năm; chưa có kết quả học sinh khi chưa tổ chức."
+      },
+      "response_mode": "written-with-read-aloud",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    },
+    {
+      "id": "L105",
+      "period": 105,
+      "week": 35,
+      "unit_id": "U12",
+      "strand": "number",
+      "title": "Phản hồi cuối năm và kế hoạch tiếp nối",
+      "standard_ids": [
+        "R03",
+        "R04",
+        "R07",
+        "R11"
+      ],
+      "minutes": 35,
+      "activity_minutes": [
+        3,
+        4,
+        6,
+        8,
+        7,
+        4,
+        3
+      ],
+      "teacher_model": "Cô trả bài, chỉ một điểm đã làm được và một việc luyện tiếp từ dữ liệu thật nếu có.",
+      "practice": {
+        "id": "P105",
+        "prompt": "Trẻ làm nhiệm vụ mới tương tự phần cần hỗ trợ; chọn một sản phẩm giải thích.",
+        "answer": "Theo nhiệm vụ được chọn; không kết luận đạt lớp chỉ bằng một điểm."
+      },
+      "exit_task": {
+        "id": "A105",
+        "prompt": "Tính: 34 + 25.",
+        "materials": "Hồ sơ cá nhân; trò chuyện ngắn với gia đình theo quy trình của trường.",
+        "kind": "arithmetic",
+        "operands": [
+          34,
+          25
+        ],
+        "operators": [
+          "+"
+        ],
+        "answer": 59
+      },
+      "response_mode": "oral-manipulative-or-written",
+      "reading_required": false,
+      "mandatory_homework_minutes": 0
+    }
+  ]
+}

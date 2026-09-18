@@ -28,9 +28,15 @@ Begin from the user's topic, learner ages and setting, prior knowledge, goals, l
 
 Inspect relevant stage, domain and method records, including their review status and source scope. Run the read-only knowledge coverage command when available. Its filters match tags, not semantic relevance; also inspect bodies and untagged records. A folder, source count or graph edge does not establish adequate coverage. Build a subject-source map and identify missing content expertise before composing lessons.
 
+For a school course, pin jurisdiction, actual grade, curriculum version, subject limits and assessment rules. Create an independent checklist of required outcomes before writing the syllabus, then map it to lessons, practice and evidence. Distinguish national requirements, the textbook edition, and the school's pacing plan. State a missing textbook/page crosswalk rather than inventing page references. Separate mandatory core from optional extension; broad stage examples cannot override the checked grade scope.
+
 Research missing load-bearing claims through primary sources using 90-agent-runtime/workflows/knowledge-research-cycle.md. Record what you actually read, the edition/date, locator, limits and unresolved disagreements. Local-only work must state unavailable verification. Never invent citations, observed classroom results, expert review or learner diagnoses.
 
 Create an outcome-to-assessment-to-practice map and a prerequisite sequence before writing the syllabus. Produce worked examples with checked answers, error analysis, guided and independent practice, feedback, transfer, suitable revisits, and feasible resource/time budgets. Include access accommodations without accidentally changing the assessed construct. Use meaningful labelled diagrams when helpful; brand illustration rules do not determine instructional representations.
+
+Keep teacher directions, learner prompts and answer keys in separate fields or sections. For beginning readers, specify how prompts can be heard and how learners can show mathematics without extended writing. Use observations and follow-up probes where multiple-choice distractors add irrelevant reading demands. Count assessment, review, breaks and required homework in the time budget. Check keys with an independent computation where possible, while retaining a separate review of mathematical meaning and visuals.
+
+The executed Vietnamese Grade 1 example is in courses/vi-vn-grade-1-math. Its bounded checker is tools/course_audit.py; the supported profile and limits are documented in docs/course-audit.md. Do not describe that checker as a general validator for all courses or as evidence of learner gains.
 
 Apply 90-agent-runtime/evals/course-design-acceptance.md as a design review and report actual findings, including unresolved issues. Keep software validation, design review, subject review, pilot observations and effectiveness evidence separate. Finish with the completed blueprint and an understandable course report. Where subject evidence is missing, provide a provisional outline and the exact research dependency rather than filling it with unsupported assertions.
 

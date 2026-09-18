@@ -1,6 +1,8 @@
 # Authoring template, version 1.0.0. This is not the knowledge-record v2 schema.
 # Replace nulls and example IDs; do not claim a completed course from this scaffold.
 # No executable blueprint validator or general course runtime is supplied here.
+# For the bounded VN Grade 1 fixture, see docs/course-audit.md and course-audit-1.0.
+# The optional fields below do not make this general scaffold executable.
 blueprint_version: "1.0.0"
 status: draft
 course:
@@ -13,6 +15,7 @@ course:
   locale_and_curriculum: null
 learner_profile:
   stage: null # S0-S7 is setting/role, not age or prior knowledge.
+  grade: null # Actual school grade when relevant; S2 alone is not Grade 1.
   age_range: null
   learner_role: null # For S0, specify the caregiver who is learning.
   prior_knowledge:
@@ -31,6 +34,16 @@ constraints:
   materials_and_device_access: []
 assumptions: []
 unresolved_questions: []
+curriculum_alignment:
+  jurisdiction: null
+  source_revision: null
+  source_locators: []
+  requirement_ids: [] # Independently enumerate standards before authoring.
+  core_scope_limits: []
+  extension_topics: []
+  textbook_edition: null
+  textbook_page_crosswalk_status: pending
+session_files: [] # Optional per-period schedule; see the bounded fixture.
 sources:
   - id: SRC1
     knowledge_source_id: null # Existing corpus ID when applicable.
@@ -45,6 +58,7 @@ sources:
     review_status: unreviewed
 outcomes:
   - id: O1
+    standard_ids: []
     performance: null
     conditions: null
     success_criteria: []
