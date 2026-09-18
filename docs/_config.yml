@@ -1,0 +1,34 @@
+# GitHub Pages site for design-os-pedagogy (Agent Teacher), built from this docs/ folder.
+# _layouts/default.html wraps every Markdown page in the studio design language;
+# index.html is a hand-built page (layout: null) sharing assets/site.css.
+title: Agent Teacher
+description: An evidence-graded pedagogy knowledge library (stages S0–S7, evidence tiers), a local teacher rehearsal on authored fraction cases, and a draft publication pipeline. Python, no model calls.
+url: https://jangtrinh.github.io
+baseurl: /design-os-pedagogy
+lang: en
+repository: jangtrinh/design-os-pedagogy
+repository_url: https://github.com/jangtrinh/design-os-pedagogy
+wordmark: JANG<span>®</span>
+eyebrow: agent teacher
+nav:
+  - { title: Status, url: /implementation-status.html }
+  - { title: Rehearsal, url: /rehearsal-contract.html }
+  - { title: Publication, url: /publication.html }
+  - { title: Roadmap, url: /knowledge-roadmap.html }
+footer:
+  - { title: GitHub, url: https://github.com/jangtrinh/design-os-pedagogy }
+  - { title: "Tiếng Việt", url: https://github.com/jangtrinh/design-os-pedagogy/blob/main/README.vi.md }
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: false
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+  - scope: { path: "googleae78e602a0d5d5db.html" }
+    values: { sitemap: false }
+  - scope: { path: "templates" }
+    values: { sitemap: false }
