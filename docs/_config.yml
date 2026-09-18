@@ -14,7 +14,7 @@ nav:
   - { title: Status, url: /implementation-status.html }
   - { title: Rehearsal, url: /rehearsal-contract.html }
   - { title: Publication, url: /publication.html }
-  - { title: Roadmap, url: /knowledge-roadmap.html }
+  - { title: "Toán lớp 1", url: /course/grade-1-math/ }
 footer:
   - { title: GitHub, url: https://github.com/jangtrinh/design-os-pedagogy }
   - { title: "Tiếng Việt", url: https://github.com/jangtrinh/design-os-pedagogy/blob/main/README.vi.md }
@@ -32,3 +32,5 @@ defaults:
     values: { sitemap: false }
   - scope: { path: "templates" }
     values: { sitemap: false }
+  - scope: { path: "course" }
+    values: { lang: vi }
