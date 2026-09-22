@@ -1,0 +1,19 @@
+# Agent Teacher (design-os-pedagogy)
+
+> Evidence-graded pedagogy knowledge library (stages S0–S7, evidence tiers), local teacher rehearsal on authored fraction cases, and draft publication pipeline. Built with Python, zero model calls.
+
+Agent Teacher is an educational engineering project that develops course designs and publication pipelines validated against executable audits before application. Its first worked artifact is a Grade 1 Vietnamese mathematics course covering 35 weeks and 105 period sheets.
+
+## Documentation
+
+- [Course Overview](https://jangtrinh.github.io/design-os-pedagogy/): Landing page with core course proposition, evidence tiers, and trial materials.
+- [Fraction Pilot](https://jangtrinh.github.io/design-os-pedagogy/fraction-pilot.html): Vietnamese fraction rehearsal pilot and classroom trial specification.
+- [Course Audit](https://jangtrinh.github.io/design-os-pedagogy/course-audit.html): Verification gates and compliance checks for course structure.
+- [Rehearsal Contract](https://jangtrinh.github.io/design-os-pedagogy/rehearsal-contract.html): Pedagogical knowledge contracts and rehearsal constraints.
+- [GitHub Repository](https://github.com/jangtrinh/design-os-pedagogy): Complete source code and test suite.
+
+## Technical Architecture
+
+- **Language**: Python 3.10+
+- **Model Invocations**: None (deterministic rule-based knowledge verification).
+- **Core Modules**: S0–S7 curriculum stage verifier, fraction pilot generator, and markdown-to-print publication engine.
