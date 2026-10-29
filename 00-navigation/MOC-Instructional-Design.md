@@ -44,6 +44,8 @@ Start a course with the [design assistant](../90-agent-runtime/prompts/course-de
 9. [[cast-udl-3-framework|CAST UDL 3.0 Framework]]: Universal Design for Learning supporting neurodiversity and ADHD.
 10. [[stem-disciplinary-pedagogy|STEM Disciplinary Pedagogy]]: Disciplinary science learning via NGSS 3D practices and CER argumentation.
 11. [[historical-thinking-inquiry|Historical Thinking and Inquiry]]: Sourcing, corroboration, contextualization, and close reading (SHEG framework).
+12. [[forward-reference-management|Forward-Reference Management]]: Flag concepts used before they are explained, keep an open-reference ledger, close each with closed-book retrieval and a spaced revisit (authored, unreviewed).
+13. [[learning-from-primary-docs|Learning from Primary Documentation]]: Map, retrieval-check, definition-probe and spaced-revisit passes for official docs, fading tutor help toward AL0 (authored, unreviewed).
 
 ---
 

@@ -69,6 +69,27 @@ answer boundaries, tests of false positives and false negatives, and an explicit
 fallback when uncertain. A prompt, regular expression or semantic check cannot
 be described as a guaranteed prevention mechanism without supporting evidence.
 
+## Forward-reference ledger
+
+When a turn must use a concept whose explanation is scheduled later, record it
+as an open reference ([method](../../30-pedagogy/instructional-methods/forward-reference-management.md)).
+The ledger is tutor-side state, kept outside the conversation context.
+
+```yaml
+forward_reference_ledger:
+  states: [open, due, closing, closed, reopened]
+  transitions:
+    open -> due: "the planned payoff session or lesson is reached"
+    due -> closing: "closed-book recall attempt collected before any explanation"
+    closing -> closed: "explanation given and a new discriminating item answered independently; a spaced revisit is scheduled"
+    closing -> reopened: "the discriminating item fails or reveals a misconception"
+    reopened -> due: "a new payoff point is scheduled"
+  rule: "Check due entries in Observe; do not close an entry by rereading or learner self-report"
+```
+
+This is an authored specification, not a validated scheduler; it sets no
+numeric revisit interval.
+
 ## Outcomes and reporting
 
 Store observed attempts, assistance levels, explanations and independent-check
