@@ -1,6 +1,6 @@
 ---
 schema_version: "2.0.0"
-id: evidence-hulleman-2009-utility-value-c
+id: evidence-hulleman-2009-utility-value
 type: source
 title: "Promoting interest and performance in high school science classes"
 stage: [S3]
