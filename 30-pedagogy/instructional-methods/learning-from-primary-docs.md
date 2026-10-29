@@ -292,7 +292,8 @@ Lộ trình hạ hỗ trợ dùng thang AL, vốn là khung thiết kế chưa �
 **Không lấy từ sách nguồn:**
 - Đọc lại nhiều lượt làm vòng chính. Thay bằng truy hồi đóng tài liệu sau mỗi lượt.
 - "Đọc từng chữ" hiểu là đọc chậm lại. Ở đây từng chữ thành dự đoán chạy thử được.
-- Hoãn mọi luyện tập ở giai đoạn đọc. Ở đây luyện ngay trên ví dụ nhỏ.
+- Để việc tự viết chương trình sau giai đoạn đọc (sách vẫn khuyên sửa và chạy code
+  mẫu trong lúc đọc). Ở đây luyện truy hồi ngay trên ví dụ nhỏ.
 - Không có lịch giãn cách. Ở đây lượt 4 là bắt buộc.
 - Mở rộng "chỉ cần đọc là học được" sang kỹ năng vận động. Ở đây đó là chống chỉ
   định.

@@ -1,6 +1,6 @@
 # Worker A: forward-reference management + learning from primary docs
 
-Worktree: `/Users/jang/Products/Agent Teacher/.claude/worktrees/agent-a69636e4ffb88ceb6`
+Worktree: isolated worktree (removed after merge)
 Branch: `worktree-agent-a69636e4ffb88ceb6`
 
 ## Not verified (read first)
@@ -8,7 +8,7 @@ Branch: `worktree-agent-a69636e4ffb88ceb6`
 - All 5 new evidence records rest on **PubMed abstracts only** (no full text, no effect sizes, no appraisal). Kept `review_status: unreviewed`.
 - Karpicke & Blunt 2011 has a published comment (PMID 22034416); not read.
 - No study of the full "flag + ledger + closure" protocol or the 4-pass docs protocol was found or read. Both modules are authored (`U`).
-- Gate command deviation: the worktree guard refused to execute `/Users/jang/Products/Agent Teacher/.venv/bin/python` (path outside worktree). Gates ran with system `python3` 3.14.6 plus `PYTHONPATH=<venv>/lib/python3.14/site-packages` (same Python minor as the venv). INFERENCE: equivalent interpreter + packages; not proven identical.
+- Gate command deviation: the worktree guard refused to execute `the project venv python` (path outside worktree). Gates ran with system `python3` 3.14.6 plus `PYTHONPATH=<venv>/lib/python3.14/site-packages` (same Python minor as the venv). INFERENCE: equivalent interpreter + packages; not proven identical.
 - Unit tests: worktree baseline is **98 tests** (11 test files), not 143. Main checkout has 16 test files (uncommitted/other state). Baseline 98 OK before edits = 98 OK after.
 
 ## Delivered (FACT, on disk)

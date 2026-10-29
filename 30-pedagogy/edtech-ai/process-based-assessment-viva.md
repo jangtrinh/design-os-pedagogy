@@ -169,7 +169,7 @@ A university curriculum committee is debating assessment reform in response to g
 
 1. The learner forks the course repository (or creates their own), and works on a branch named for study, for example `study`.
 2. After each unit the learner commits their exercises and notes, with a message stating what they tried, what failed and what they changed.
-3. The commit trail becomes one input to Bundle component 2 (Process Trace & Version History). It does **not** add a new weighted component; the Section 2 weights are unchanged.
+3. The commit trail becomes one input to Bundle component 2 (Process Trace & Version History). It does **not** add a new weighted component. Note the tension with Section 2: that legacy component carries a 20% weight and names "time-stamped diff logs showing keystroke evolution". Under this section, any marks for component 2 are awarded **only from the learner's viva defence of the trace** (7.3), never from dates, commit counts, streaks or keystroke data. Whether the 20% weight itself is still endorsed is an open review question for this module.
 4. Before the viva, the assessor picks 2–3 commits and turns them into probes.
 
 ### 7.2. Signal, Not Proof

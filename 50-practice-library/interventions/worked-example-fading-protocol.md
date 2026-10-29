@@ -186,10 +186,10 @@ Sections 2–7 fade the **solution steps**. Summary fading applies the same back
 
 | Tier | When | What the learner receives | What the learner produces |
 | :--- | :--- | :--- | :--- |
-| **S1. Model organizer** | First units of a topic | A complete teacher-made table with a one-line note on why each column exists | A self-explanation: "Which column would you have left out, and what would break?" |
-| **S2. Partial organizer** | After the first completion problems | The same table with the column headers and 1–2 rows filled | The remaining rows, from memory, then checked against worked examples |
-| **S3. Blank organizer** | After Tier 4 independent problems | Only the topic name | A table, list or diagram of their own design, written closed-book |
-| **S4. Revision passes** | Following units and spaced reviews | Nothing new | A dated revision of their own organizer: added rows, corrected cells, merged categories |
+| **O1. Model organizer** | First units of a topic | A complete teacher-made table with a one-line note on why each column exists | A self-explanation: "Which column would you have left out, and what would break?" |
+| **O2. Partial organizer** | After the first completion problems | The same table with the column headers and 1–2 rows filled | The remaining rows, from memory, then checked against worked examples |
+| **O3. Blank organizer** | After Tier 4 independent problems | Only the topic name | A table, list or diagram of their own design, written closed-book |
+| **O4. Revision passes** | Following units and spaced reviews | Nothing new | A dated revision of their own organizer: added rows, corrected cells, merged categories |
 
 **Two rules carry the design:**
 1. **Expect the first version to be incomplete or wrong.** Tell learners so before they start. A gap found later is the intended outcome of a revision pass, not a failure.
@@ -238,16 +238,16 @@ hinge_question:
   distractor_analysis:
     A: "May treat recognising a correct summary as building one, or may believe highlighting is active processing."
     C: "May believe generation alone is sufficient, ignoring that an unchecked wrong row is rehearsed in later passes."
-    D: "May treat paraphrasing a provided organizer as constructing one; or may be applying the S1 tier, which is correct only in the first units."
+    D: "May treat paraphrasing a provided organizer as constructing one; or may be applying the O1 tier, which is correct only in the first units."
   follow_up_probes:
     A: "Without the sheet, which rows could a student produce? How would you find out?"
     C: "A student's table says 'divide both sides by any number'. What in your plan would surface that?"
-    D: "Is this class at S1 or S3? What evidence from Tier 4 work tells you?"
+    D: "Is this class at O1 or O3? What evidence from Tier 4 work tells you?"
   remediation_routing:
     A: "Re-read 9.3 (Beautiful Copy); compare recognition with closed-book production."
     C: "Re-read rule 2 in 9.1 and the gap-check step in 9.2."
-    D: "If the answer reflects S1 timing, confirm the tier from Tier 4 evidence; otherwise re-read rule 2."
-    B: "Proceed: design the S4 revision prompt for the next unit."
+    D: "If the answer reflects O1 timing, confirm the tier from Tier 4 evidence; otherwise re-read rule 2."
+    B: "Proceed: design the O4 revision prompt for the next unit."
   insufficient_evidence: "If B is chosen but the teacher cannot say why the reference comes after the draft, ask them to predict what students would write if they saw the reference first."
 ```
 
@@ -257,7 +257,7 @@ hinge_question:
 protocol: SUMMARY-FADING-ADDENDUM
 attach_to: WORKED-EXAMPLE-FADING-ENGINE
 tiers: [S1_model_organizer, S2_partial, S3_blank_closed_book, S4_dated_revision]
-advance_rule: "Move from S2 to S3 only after the learner completes Tier 4 problems without the worked example."
+advance_rule: "Move from O2 to O3 only after the learner completes Tier 4 problems without the worked example."
 reference_rule: "Reference summaries are released after the learner's own draft, for gap-checking only."
 revision_rule: "Each later unit or spaced review opens with a 5-minute closed-book revision pass on the existing organizer."
 feedback_rule: "Teacher or tutor checks at least one row per pass; an unchecked wrong row is a known failure mode."
@@ -267,5 +267,6 @@ feedback_rule: "Teacher or tutor checks at least one row per pass; an unchecked 
 
 * **Generation versus reading:** a meta-analysis of 86 studies reports that information people generate is remembered better than material they only read, with substantial variation by moderator ([Bertsch et al., 2007](../../60-evidence/sources/evidence-bertsch-2007-generation-effect.md), abstract only). Most of those tasks are short verbal items.
 * **Learner use of maps:** a meta-analysis of 55 studies (Grade 4 to postsecondary) reports that learning by constructing, modifying or viewing concept maps was associated with better retention, with effects ranging from small to large by use and comparison condition, and significant heterogeneity ([Nesbit & Adesope, 2006](../../60-evidence/sources/evidence-nesbit-2006-concept-maps.md), abstract only). The abstract does not settle whether constructing beats studying an expert map.
+* **Counterevidence:** Dunlosky et al. (2013) rate *summarization* as a low-utility technique, in part because many learners summarise poorly without training ([Dunlosky et al., 2013](../../60-evidence/sources/evidence-dunlosky-2013-learning-techniques.md), abstract only). Summary fading is therefore used here as a scaffolded generation task that is checked against worked examples and closed-book retrieval (O2, O3), not as a stand-alone study strategy; if learners cannot yet produce accurate organizers, prefer retrieval practice.
 * **What is not established:** no source opened in this run tests the full four-tier schedule, the "expect it to be wrong" framing, or tables and prose summaries specifically. The extension of these findings to summary fading is **authored and untested**.
-* **Boundaries:** S3 is contraindicated before learners have a working schema (they will build wrong organizers fluently); start at S1, consistent with Section 5's expertise-reversal row. Construction costs time; for very young learners or heavy writing loads, allow oral or card-sort organizers instead of written tables.
+* **Boundaries:** O3 is contraindicated before learners have a working schema (they will build wrong organizers fluently); start at O1, consistent with Section 5's expertise-reversal row. Construction costs time; for very young learners or heavy writing loads, allow oral or card-sort organizers instead of written tables.

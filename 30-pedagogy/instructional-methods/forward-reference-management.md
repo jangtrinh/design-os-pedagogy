@@ -306,7 +306,8 @@ lịch ôn.
 - Đọc lại là vòng lặp chính. Sách khuyên đọc hết dù chưa hiểu rồi lặp nhiều lần
   (nguyên văn: "读不懂也要读完，然后重复很多遍", Lý Tiếu Lai, chương `Part.1.F`). Module này giữ ý "đọc lướt hết để
   có bản đồ", nhưng thay vòng lặp đọc lại bằng truy hồi đóng sách.
-- Hoãn mọi luyện tập ở giai đoạn "học". Ở đây luyện tập tiếp tục; chỉ phần giải
+- Để việc tự viết chương trình sau khi đã đọc được code cơ bản (sách vẫn khuyên
+  sửa và chạy code mẫu trong lúc đọc). Ở đây luyện truy hồi bắt đầu ngay; chỉ phần giải
   thích bị hoãn.
 - Không có lịch giãn cách. Ở đây mọi mục đã khép đều có lịch ôn.
 - Quy việc quên cho sự lười biếng. Quên là bình thường; sổ và lịch ôn tồn tại vì
