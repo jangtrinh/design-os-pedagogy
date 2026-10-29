@@ -8,6 +8,7 @@ prerequisites: ["learner-diagnostics-protocol", "formative-hinge-questions"]
 leads_to: ["fraction-misconception-clinical-case", "historical-thinking-inquiry", "stem-disciplinary-pedagogy"]
 evidence_basis: "Grade A (Driver 1994, Hestenes 1992, Vosniadou 2002, Wineburg 2001)"
 clinical_cases: ["fraction-misconception-clinical-case", "case-university-physics-productive-failure"]
+source_ids: ["evidence-buehler-1994-planning-fallacy", "evidence-hulleman-2009-utility-value-c", "evidence-dunlosky-2013-learning-techniques", "evidence-karpicke-2009-student-study-strategies"]
 ---
 
 # The Master Catalog of Landmark Student Misconceptions: Diagnostic Cues, Probes, and Disconfirming Interventions
@@ -86,3 +87,28 @@ Student (smiling): "Yes, it balances!"
 * **Vosniadou (2002)**: *Mental Models of the Earth: A Study of Conceptual Change in Childhood* (*Cognitive Psychology*). Proved children construct coherent "synthetic models" (e.g. flat hollow Earth) to reconcile adult testimony with sensory gravity.
 * **Hestenes, Wells, & Swackhamer (1992)**: *Force Concept Inventory (FCI)* (*The Physics Teacher*). Demonstrated that traditional physics lectures leave 80% of Newtonian misconceptions intact.
 * **Wineburg (2001)**: *Historical Thinking and Other Unnatural Acts*. Established that historical thinking requires overcoming instinctive presentism through sourcing, contextualization, and corroboration.
+
+---
+
+## 4. Metacognitive Misconceptions: Learner Beliefs About Learning Itself
+
+Rows 1–12 are beliefs about the world. The four rows below are beliefs a learner holds about **their own learning**: how long it should take, how hard it is, whether it is worth it, and whether it has worked. They decide whether the learner keeps going, so they belong in the same diagnostic routine.
+
+**Idea lineage:** the time, difficulty and felt-need illusions are named in *The Craft of Self-Teaching* (自学是门手艺) by Li Xiaolai ([github.com/xiaolai/the-craft-of-selfteaching](https://github.com/xiaolai/the-craft-of-selfteaching), CC BY-NC-ND 3.0). The rows below paraphrase the ideas and adjust them toward the cited evidence; no passage is translated or copied. The felt-need row departs from the book's advice.
+
+**Status:** authored extension, `unreviewed`. The probes, crises and replacement models are design proposals, not tested interventions. A cited source supports only the sentence it is attached to, within the scope recorded in its source record.
+
+| Domain | # | Landmark Misconception | Intuitive Naive Model | Diagnostic Hinge Probe | Disconfirming Cognitive Crisis | Replacement Model |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Metacognition** | 13 | **Time Illusion** | *"If I'm suited to this, it will take about as long as I planned. Running over means I'm not cut out for it."* | *"Estimate the hours you need to reach the goal. Now list how long the last two comparable skills actually took you."* Cue: an estimate built only from the plan, and talk of quitting at the first overrun. | The learner logs predicted against actual time for two or three sub-goals and sees that the overrun is systematic and common, not a personal verdict. | Budget from past comparable cases and add explicit slack; read an overrun as a forecasting error to correct, not as a sign of low ability. |
+| **Metacognition** | 14 | **Difficulty Illusion** | *"This skill is simply too hard for me. I can't see where to start."* | *"Name the smallest step you could finish in ten minutes."* Cue: the learner cannot name any sub-step and judges the skill as one undivided block. | The task is split until each part is attemptable; after completing two or three parts, the learner re-rates the whole. | Felt difficulty depends partly on how big the current step is. Segmenting manages load; integrating the parts is a separate practice step and can remain hard. |
+| **Metacognition** | 15 | **Felt-Need Illusion** | *"I don't see what I'd use this for, so it isn't worth learning."* | *"Write two specific situations in your own life or work where this could help, and one person who uses it."* Cue: an empty list, or a refusal grounded only in present usefulness. | The learner generates their own connections and reviews them after early practice, when more uses become visible. | Current felt need underestimates the value of a skill you do not yet have; respond by building personal relevance, not by ignoring usefulness. |
+| **Metacognition** | 16 | **Fluency Illusion (rereading)** | *"I reread the chapter and everything looked familiar, so I know it."* | *"Close the book. Write the three main ideas and one example from memory."* Cue: confident self-rating with thin or wrong recall. | The gap between the familiarity felt while rereading and what closed-book recall produces is made visible to the learner. | Familiarity is not retrieval. Use closed-book practice testing and spaced revisits as the main repeat activity; rereading becomes a check after recall. |
+
+### 4.1 Evidence notes and boundaries
+
+* **Row 13.** Buehler, Griffin & Ross (1994) report that people's predictions of their own completion times were too optimistic across academic and nonacademic tasks, and that predictions focused on future plans rather than past experience. In one study the bias disappeared when participants were told to connect relevant past experiences to their predictions ([source record](../../60-evidence/sources/evidence-buehler-1994-planning-fallacy.md)). Applying this to multi-week skill learning, and the link to quitting, are authored extrapolations.
+* **Row 14.** No source specific to perceived difficulty was opened in this run; the row is authored and untested. For the load rationale see segmenting and element interactivity in [Cognitive Load Theory](../../10-foundations/learning-science/cognitive-load-theory.md), itself a legacy, unreviewed file. Do not promise that difficulty disappears after decomposition.
+* **Row 15.** The book's advice is to stop asking what a skill is useful for and decide on available time. Hulleman & Harackiewicz (2009) report a randomized field experiment in high-school science in which a relevance intervention, where students connected course material to their own lives, raised interest and course grades for students with low success expectations ([source record](../../60-evidence/sources/evidence-hulleman-2009-utility-value-c.md)). The replacement model therefore keeps the book's observation but uses learner-generated relevance. The finding comes from one study and one subject.
+* **Row 16.** Dunlosky et al. (2013) rate rereading as low utility and practice testing and distributed practice as high utility ([source record](../../60-evidence/sources/evidence-dunlosky-2013-learning-techniques.md)). Karpicke, Butler & Roediger (2009) found in a survey of 177 college students that most reread and few self-test, and proposed illusions of competence as the explanation ([source record](../../60-evidence/sources/evidence-karpicke-2009-student-study-strategies.md)); the illusion account is their interpretation, not a result of that survey.
+* **All rows.** One answer to a probe does not establish the belief. Ask for reasoning, keep an insufficient-evidence state, and do not label the learner.
