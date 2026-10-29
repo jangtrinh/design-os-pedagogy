@@ -173,3 +173,100 @@ scaffolding_rules:
 | **Sweller & Cooper (1985)** | High School Mathematics | $d = 0.82$ | Students studying worked examples solved subsequent test problems in half the time and with significantly fewer errors than students who solved problems during learning. |
 | **Renkl, Atkinson, & Maier (2002)** | Cognitive Architecture Research | $d = 0.65$ | Backward fading from worked examples to completion problems significantly outperformed forward fading and traditional problem-solving on far-transfer tasks. |
 | **Barbieri et al. (2023)** | Large-Scale Middle School Algebra RCT ($N=1,400$) | $g = 0.42 - 0.58$ | Integrating worked examples with error analysis into standard algebra curricula significantly boosted procedural flexibility and state assessment scores, especially for struggling learners. |
+
+---
+
+## 9. Extension: Summary Fading (Learner-Built Organizers)
+
+> **Status:** authored extension, `unreviewed`, not piloted. **Idea lineage:** the self-built, expected-to-be-wrong summary comes from *The Craft of Self-Teaching* (自学是门手艺) by Li Xiaolai, [github.com/xiaolai/the-craft-of-selfteaching](https://github.com/xiaolai/the-craft-of-selfteaching) (CC BY-NC-ND 3.0). The idea is restated here in our own words; no passage is translated or adapted. The book frames it as advice to a self-learner; the fading schedule, hinge and boundaries below are this library's additions.
+
+Sections 2–7 fade the **solution steps**. Summary fading applies the same backward logic to the **organizing layer** of a unit: the summary, comparison table or diagram that holds the schema together.
+
+### 9.1. The Four Summary Tiers
+
+| Tier | When | What the learner receives | What the learner produces |
+| :--- | :--- | :--- | :--- |
+| **O1. Model organizer** | First units of a topic | A complete teacher-made table with a one-line note on why each column exists | A self-explanation: "Which column would you have left out, and what would break?" |
+| **O2. Partial organizer** | After the first completion problems | The same table with the column headers and 1–2 rows filled | The remaining rows, from memory, then checked against worked examples |
+| **O3. Blank organizer** | After Tier 4 independent problems | Only the topic name | A table, list or diagram of their own design, written closed-book |
+| **O4. Revision passes** | Following units and spaced reviews | Nothing new | A dated revision of their own organizer: added rows, corrected cells, merged categories |
+
+**Two rules carry the design:**
+1. **Expect the first version to be incomplete or wrong.** Tell learners so before they start. A gap found later is the intended outcome of a revision pass, not a failure.
+2. **Reference sheets come after, not before.** Another person's cheat sheet or the textbook summary is used only once the learner's own draft exists, as a gap-check: mark what is missing or wrong in a different colour, then close the reference.
+
+### 9.2. Worked Example with Think-Aloud (Linear Equations, after Tier 4)
+
+```text
+[Prompt, closed book] "Build a table of the moves you are allowed to make on an equation."
+
+[Learner draft, pass 1]
+| Move                        | Example           |
+| add/subtract same number    | x + 5 = 9 -> x = 4 |
+| divide both sides           | 4x = 16 -> x = 4   |
+| distribute                  | 4(x+3) -> 4x + 12  |
+
+[Teacher think-aloud while reviewing]
+"Three useful rows, but no column says WHEN a move is allowed. Division is missing
+its boundary: dividing by zero. Distribution is a rewrite of one side, not a move
+on both sides; that distinction is what Step 1 of the Tier 1 example relied on."
+
+[Gap-check against the textbook summary, done only now]
+Learner adds a 'Condition' column, adds 'multiply both sides (by a non-zero number)',
+and moves 'distribute' into a separate 'rewrite one side' section.
+
+[Pass 2, next unit on inequalities]
+Learner adds a row: multiplying or dividing by a negative flips the inequality sign.
+```
+
+### 9.3. Non-Example: The Beautiful Copy
+
+The teacher distributes a polished one-page summary on day one of the unit and asks students to "make their own version". Students reproduce it neatly with coloured headings. The output looks generated but is transcription: nothing was retrieved, so nothing tells the learner or teacher which rows they could not have produced. Copying a correct organizer also removes the gap-finding that the revision passes depend on.
+
+### 9.4. Hinge Question & Distractor Map
+
+> **Scenario**: A Grade 8 class has finished the Tier 4 independent problems on linear equations. The teacher wants to apply summary fading. Which plan fits Section 9?
+
+* **A**: Hand out the teacher's summary sheet and ask students to highlight the three most important rules.
+* **B**: Ask students to build their own table of equation moves from memory, warn them it will probably be incomplete, then gap-check it against the textbook summary in a different colour and revise it again in the inequalities unit.
+* **C**: Ask students to build their own table from memory and grade it on neatness; no comparison with any reference.
+* **D**: Give the textbook summary first, then ask students to rewrite it in their own words before they attempt any problem.
+
+```yaml
+hinge_question:
+  target: B
+  distractor_analysis:
+    A: "May treat recognising a correct summary as building one, or may believe highlighting is active processing."
+    C: "May believe generation alone is sufficient, ignoring that an unchecked wrong row is rehearsed in later passes."
+    D: "May treat paraphrasing a provided organizer as constructing one; or may be applying the O1 tier, which is correct only in the first units."
+  follow_up_probes:
+    A: "Without the sheet, which rows could a student produce? How would you find out?"
+    C: "A student's table says 'divide both sides by any number'. What in your plan would surface that?"
+    D: "Is this class at O1 or O3? What evidence from Tier 4 work tells you?"
+  remediation_routing:
+    A: "Re-read 9.3 (Beautiful Copy); compare recognition with closed-book production."
+    C: "Re-read rule 2 in 9.1 and the gap-check step in 9.2."
+    D: "If the answer reflects O1 timing, confirm the tier from Tier 4 evidence; otherwise re-read rule 2."
+    B: "Proceed: design the O4 revision prompt for the next unit."
+  insufficient_evidence: "If B is chosen but the teacher cannot say why the reference comes after the draft, ask them to predict what students would write if they saw the reference first."
+```
+
+### 9.5. Protocol Addendum
+
+```yaml
+protocol: SUMMARY-FADING-ADDENDUM
+attach_to: WORKED-EXAMPLE-FADING-ENGINE
+tiers: [O1_model_organizer, O2_partial, O3_blank_closed_book, O4_dated_revision]
+advance_rule: "Move from O2 to O3 only after the learner completes Tier 4 problems without the worked example."
+reference_rule: "Reference summaries are released after the learner's own draft, for gap-checking only."
+revision_rule: "Each later unit or spaced review opens with a 5-minute closed-book revision pass on the existing organizer."
+feedback_rule: "Teacher or tutor checks at least one row per pass; an unchecked wrong row is a known failure mode."
+```
+
+### 9.6. Evidence & Boundary Conditions
+
+* **Generation versus reading:** a meta-analysis of 86 studies reports that information people generate is remembered better than material they only read, with substantial variation by moderator ([Bertsch et al., 2007](../../60-evidence/sources/evidence-bertsch-2007-generation-effect.md), abstract only). Most of those tasks are short verbal items.
+* **Learner use of maps:** a meta-analysis of 55 studies (Grade 4 to postsecondary) reports that learning by constructing, modifying or viewing concept maps was associated with better retention, with effects ranging from small to large by use and comparison condition, and significant heterogeneity ([Nesbit & Adesope, 2006](../../60-evidence/sources/evidence-nesbit-2006-concept-maps.md), abstract only). The abstract does not settle whether constructing beats studying an expert map.
+* **Counterevidence:** Dunlosky et al. (2013) rate *summarization* as a low-utility technique ([Dunlosky et al., 2013](../../60-evidence/sources/evidence-dunlosky-2013-learning-techniques.md), abstract only). Summary fading is therefore used here as a scaffolded generation task that is checked against worked examples and closed-book retrieval (O2, O3), not as a stand-alone study strategy; if learners cannot yet produce accurate organizers, prefer retrieval practice.
+* **What is not established:** no source opened in this run tests the full four-tier schedule, the "expect it to be wrong" framing, or tables and prose summaries specifically. The extension of these findings to summary fading is **authored and untested**.
+* **Boundaries:** O3 is contraindicated before learners have a working schema (they will build wrong organizers fluently); start at O1, consistent with Section 5's expertise-reversal row. Construction costs time; for very young learners or heavy writing loads, allow oral or card-sort organizers instead of written tables.

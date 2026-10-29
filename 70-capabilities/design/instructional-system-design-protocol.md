@@ -68,6 +68,29 @@ For each unit provide a worked example, an error/non-example, guided practice, a
 
 Plan revisits and a delayed check where useful, stating the proposed interval and practical rationale. Budget contact time, breaks, assessment, independent work and follow-up separately. Check their sums. No fixed number of cognitive chunks, lesson-minute cutoff or universal spacing interval is used as an acceptance rule.
 
+### 4.1 Two-axis decomposition of a hard skill
+
+**Authored heuristic, unreviewed.** Idea lineage: the horizontal and vertical ("layered") decomposition comes from *The Craft of Self-Teaching* (自学是门手艺) by Li Xiaolai ([github.com/xiaolai/the-craft-of-selfteaching](https://github.com/xiaolai/the-craft-of-selfteaching), CC BY-NC-ND 3.0), paraphrased here as a design step. No study of the combined procedure was opened in this run; treat each decomposition as a design hypothesis to check with learner evidence.
+
+When a unit's target performance is too large to attempt as a whole, decompose it on two axes before writing practice:
+
+| Axis | Question | Design output |
+| --- | --- | --- |
+| **Horizontal** (split the task) | Which parts of the performance can be attempted on their own with a visible success check? | An ordered list of parts. Each part is practised slowly and accurately first, then brought up to normal speed, then joined to its neighbour; joined sequences are practised until the whole is attempted. |
+| **Vertical** (split the layers) | Which ideas hold across tools, languages or settings, and which belong to one implementation? | A concept layer taught once, and an implementation layer labelled as tool-specific. A second implementation is added as a contrast, so the shared concept becomes visible. |
+
+**Link to load.** Horizontal splitting is the segmenting move in [Cognitive Load Theory](../../10-foundations/learning-science/cognitive-load-theory.md): it reduces how many interacting elements the learner handles at once. The same file notes that intrinsic load cannot be removed without changing the goal. The joining steps therefore need planned practice and an assessment of the whole performance; passing every part does not show the integrated skill. Vertical splitting keeps elements from different layers (a concept and one tool's notation for it) from being learned as a single tangled element. That file is a legacy, unreviewed record; this link explains the rationale and is not an effect claim.
+
+**Worked example (authored; syntax checked locally on 2026-10-29 with Python 3.14, Node and BSD `grep` 2.6.0).** Outcome: extract year, month and day from ISO dates (`2024-01-02`) in a log file.
+
+* *Horizontal:* (1) a digit class (`\d` in Python, JavaScript and PCRE, but not defined by POSIX regular expressions, so `[0-9]` is the portable form for `grep`-style tools; whether a given `grep` accepts `\d` as an extension is itself a dialect difference to check); (2) a fixed count `\d{4}`; (3) the literal hyphen; (4) the full date pattern `\d{4}-\d{2}-\d{2}`; (5) capture groups for each field; (6) run it on a real log and check misses. Each step is first written with an explanation of every token, then written from memory under a short time limit, then joined to the previous step.
+* *Vertical:* concept layer: character class, quantifier, group, anchor. Implementation layer: POSIX basic regular expressions, as used by default `grep`, need `\{4\}` for a count, while extended mode (`grep -E`) and Python accept `{4}`. Python's `re` names a group with `(?P<year>...)` and rejects `(?<year>...)`, which JavaScript accepts.
+* *Diagnostic:* a learner's pattern works in Python but fails in `grep`. Probe which layer failed: ask what `{4}` means (concept) and then whether this tool treats braces literally (implementation). Route a concept error to the concept layer and a dialect error to the tool's documentation.
+
+**Non-examples.** Teaching ten tools' regex syntaxes side by side without naming the shared core. Drilling every part to speed and never practising the joins. Splitting a performance so finely that the parts no longer contain the interactions the outcome depends on; if that happens, practise a simplified whole at reduced speed or complexity instead.
+
+**Alignment check.** Each part maps to an outcome or a prerequisite; the final assessment samples the whole performance; time for joining and integration is included in the unit's time budget.
+
 ## 5. Worked design example
 
 **Authored example, not classroom data:** An adult beginner wants to compare fractions of the same whole. Proposed duration: one 30-minute session plus a five-minute revisit the following week. Confirm fraction notation and equal partitioning first.

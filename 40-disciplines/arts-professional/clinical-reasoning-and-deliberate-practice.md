@@ -166,3 +166,40 @@ steps:
 | **Ericsson, Krampe, & Tesch-Römer (1993)** | Violinists and Pianists (Berlin Music Academy) | Landmark | Accumulated hours of deliberate practice (not innate talent) was the primary variable separating international soloists from music teachers. |
 | **McGaghie, Issenberg, Cohen, Barsuk, & Wayne (2014)** | Meta-Analysis of Simulation-Based Medical Education (*Med Educ*) | $d = 0.71 - 1.20$ | Simulation-based deliberate practice with mastery learning produced superior procedural skills, diagnostic accuracy, and patient clinical outcomes compared to traditional clinical training. |
 | **Schön (1983, 1987)** | *The Reflective Practitioner* | Canon | Established the epistemology of professional artistry: how professionals solve unique, uncertain problems through reflection-in-action. |
+
+---
+
+## 9. Extension: Weakness-Targeted Drills for Programming Learners, and the Limits of Practice
+
+> **Status:** authored extension, `unreviewed`, not piloted. **Idea lineage:** the habit of first thinking deliberately about *where* to practise, and the two programming drills below, come from *The Craft of Self-Teaching* (自学是门手艺) by Li Xiaolai, [github.com/xiaolai/the-craft-of-selfteaching](https://github.com/xiaolai/the-craft-of-selfteaching) (CC BY-NC-ND 3.0). They are restated in our own words; no passage is translated or adapted. The book's claim that talent plays no role is **not adopted** (see 9.3).
+
+### 9.1. From Weakness Ledger to Drill
+
+Section 7 isolates "the single lowest-scoring sub-component" with a coach. A self-taught programmer usually has no coach, so the selection step must be done by the learner or a tutor. Use the weakness ledger in [self-regulated learning](../../30-pedagogy/instructional-methods/self-regulated-learning.md): record a suspected weak spot, confirm it with a short closed-book task, design one drill, recheck later.
+
+### 9.2. Two Example Drills (candidate desirable difficulties)
+
+| Drill | Weak spot it targets | How to run it | Evidence status |
+| :--- | :--- | :--- | :--- |
+| **Paper trace: be the interpreter** | Predicting what code does; misreading control flow and variable updates | Print a 10–20 line program. Before running it, trace line by line on paper, keeping a written table of every variable's value after each line. Then run the code and mark the first line where the prediction diverged. | A small block-randomized CS1 study (24 novices) reports that a briefly taught line-by-line strategy with an external memory record improved scores on tracing problems ([Xie, Nelson & Ko, 2018](../../60-evidence/sources/evidence-xie-2018-program-tracing.md), abstract only). That study tested a *written* memory record; pure in-head tracing is not what it tested. |
+| **Autocomplete off, time-boxed** | Syntax and API names the learner can recognise but not produce | Disable editor completion for practice files only, for a fixed period (for example two weeks), and keep a tally of lookups. Re-enable it for project and assessed work. | **Authored and untested.** No source opened in this run tests the effect of disabling autocomplete. Classifying it as a desirable difficulty is an inference from retrieval-based learning, not a finding. |
+
+**Why "desirable" is a condition, not a label.** Bjork & Bjork describe desirable difficulties as conditions that slow apparent progress yet support retention and transfer, and limit the term to difficulties the learner has enough knowledge or skill to respond to; otherwise the difficulty is undesirable ([source record](../../60-evidence/sources/evidence-bjork-2011-desirable-difficulties.md), pp. 57–58). Their named examples are varied practice, interleaving, spacing and testing; the two drills above are our extrapolation.
+
+**Contraindications.** Do not start paper tracing before the learner has seen the constructs used in the program. Do not remove completion or other tooling that serves as an accessibility accommodation. Stop a drill when errors no longer change after feedback, and redesign it rather than adding hours.
+
+### 9.3. Boundary: Practice Explains Part of the Variance, Not All of It
+
+The book asserts that talent is irrelevant to skill. This library does not adopt that claim, and two legacy, unreviewed passages overstate the same position: the first row of Section 5's misconception table, and the Ericsson, Krampe & Tesch-Römer (1993) row in Section 8 ("not innate talent"). A meta-analysis across domains reports that deliberate practice explained 26% of performance variance in games, 21% in music, 18% in sports, 4% in education and less than 1% in professions, and concludes that practice is important but less important than had been argued ([Macnamara, Hambrick & Oswald, 2014](../../60-evidence/sources/evidence-macnamara-2014-deliberate-practice.md), abstract only). These are proportions of variance explained, not effect sizes; do not compare them with the $d$ values in Section 8.
+
+**Design consequence:** practice design is the part an educator controls, so keep investing in it, but do not tell a struggling learner that ability differences do not exist or that more hours guarantee expert performance. Frame setbacks as information about what to practise next, not as proof of a fixed limit.
+
+### 9.4. Quick Hinge Check
+
+> A CS1 tutor's learner keeps misreading nested loops. Which plan matches Section 9?
+
+* **A**: "Talent doesn't matter; do 50 more loop exercises tonight." (Overclaims 9.3 and repeats unselected volume. Probe: which exact step of the loop is the learner getting wrong?)
+* **B**: Confirm the weak spot with three short trace tasks, then run paper traces with a written variable table and recheck in a week with new loops. (**Target.**)
+* **C**: Disable autocomplete in all of the learner's work immediately. (Mismatched drill: autocomplete targets syntax recall, not loop tracing; also removes support from assessed work. Probe: what weak spot is this drill aimed at?)
+
+If the learner's answer is B but they cannot say how the recheck will be scored, treat the evidence as insufficient and ask them to write the recheck task first.
