@@ -256,7 +256,7 @@ hinge_question:
 ```yaml
 protocol: SUMMARY-FADING-ADDENDUM
 attach_to: WORKED-EXAMPLE-FADING-ENGINE
-tiers: [S1_model_organizer, S2_partial, S3_blank_closed_book, S4_dated_revision]
+tiers: [O1_model_organizer, O2_partial, O3_blank_closed_book, O4_dated_revision]
 advance_rule: "Move from O2 to O3 only after the learner completes Tier 4 problems without the worked example."
 reference_rule: "Reference summaries are released after the learner's own draft, for gap-checking only."
 revision_rule: "Each later unit or spaced review opens with a 5-minute closed-book revision pass on the existing organizer."
@@ -267,6 +267,6 @@ feedback_rule: "Teacher or tutor checks at least one row per pass; an unchecked 
 
 * **Generation versus reading:** a meta-analysis of 86 studies reports that information people generate is remembered better than material they only read, with substantial variation by moderator ([Bertsch et al., 2007](../../60-evidence/sources/evidence-bertsch-2007-generation-effect.md), abstract only). Most of those tasks are short verbal items.
 * **Learner use of maps:** a meta-analysis of 55 studies (Grade 4 to postsecondary) reports that learning by constructing, modifying or viewing concept maps was associated with better retention, with effects ranging from small to large by use and comparison condition, and significant heterogeneity ([Nesbit & Adesope, 2006](../../60-evidence/sources/evidence-nesbit-2006-concept-maps.md), abstract only). The abstract does not settle whether constructing beats studying an expert map.
-* **Counterevidence:** Dunlosky et al. (2013) rate *summarization* as a low-utility technique, in part because many learners summarise poorly without training ([Dunlosky et al., 2013](../../60-evidence/sources/evidence-dunlosky-2013-learning-techniques.md), abstract only). Summary fading is therefore used here as a scaffolded generation task that is checked against worked examples and closed-book retrieval (O2, O3), not as a stand-alone study strategy; if learners cannot yet produce accurate organizers, prefer retrieval practice.
+* **Counterevidence:** Dunlosky et al. (2013) rate *summarization* as a low-utility technique ([Dunlosky et al., 2013](../../60-evidence/sources/evidence-dunlosky-2013-learning-techniques.md), abstract only). Summary fading is therefore used here as a scaffolded generation task that is checked against worked examples and closed-book retrieval (O2, O3), not as a stand-alone study strategy; if learners cannot yet produce accurate organizers, prefer retrieval practice.
 * **What is not established:** no source opened in this run tests the full four-tier schedule, the "expect it to be wrong" framing, or tables and prose summaries specifically. The extension of these findings to summary fading is **authored and untested**.
 * **Boundaries:** O3 is contraindicated before learners have a working schema (they will build wrong organizers fluently); start at O1, consistent with Section 5's expertise-reversal row. Construction costs time; for very young learners or heavy writing loads, allow oral or card-sort organizers instead of written tables.
