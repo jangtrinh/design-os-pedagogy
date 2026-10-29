@@ -10,11 +10,9 @@ context: [high-school-science, motivation, utility-value]
 locale: en
 evidence_grade: U
 claim_status: not-applicable
-review_status: source-checked
+review_status: unreviewed
 provenance:
   kind: literature
-  reviewer: "AI source extraction; not expert appraisal"
-  reviewed_at: "2026-10-29"
   citations:
     - url: "https://europepmc.org/article/MED/19965759"
       locator: "Abstract (Europe PMC record of PMID 19965759)"

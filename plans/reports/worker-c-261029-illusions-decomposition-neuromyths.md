@@ -12,7 +12,7 @@
 | `50-practice-library/misconceptions/catalog-stem-and-humanities-misconceptions.md` | +§4 metacognitive misconceptions, rows 13–16 (time, difficulty, felt-need, fluency/rereading) in existing matrix columns + Replacement Model; §4.1 evidence notes; frontmatter `source_ids` added (4) |
 | `70-capabilities/design/instructional-system-design-protocol.md` | +§4.1 two-axis decomposition (horizontal/vertical table, CLT segmenting/element-interactivity link, regex worked example, diagnostic, non-examples, alignment check). Frontmatter unchanged |
 | `10-foundations/cognitive-neuroscience/neuromyths-debunked.md` | +§9 self-help claims non-example set (5 claims), prediction challenge, hinge + distractor map; frontmatter `source_ids` added (6) |
-| `60-evidence/sources/` | 9 new v2 source records (source-checked = extraction only; claim_status not-applicable; grade U) |
+| `60-evidence/sources/` | 9 new v2 source records (review_status unreviewed after merge review: abstract-only extraction; claim_status not-applicable; grade U) |
 
 New evidence: `evidence-hulleman-2009-utility-value`, `evidence-macnamara-2014-deliberate-practice`, `evidence-melby-lervag-2013-working-memory-training`, `evidence-dunlosky-2013-learning-techniques`, `evidence-karpicke-2009-student-study-strategies`, `evidence-buehler-1994-planning-fallacy`, `evidence-hickok-2009-mirror-neurons`, `evidence-sala-2017-far-transfer`, `evidence-scherer-2019-programming-transfer`.
 

@@ -10,11 +10,9 @@ context: [computer-programming, transfer, computational-thinking]
 locale: en
 evidence_grade: U
 claim_status: not-applicable
-review_status: source-checked
+review_status: unreviewed
 provenance:
   kind: literature
-  reviewer: "AI source extraction; not expert appraisal"
-  reviewed_at: "2026-10-29"
   citations:
     - url: "https://api.openalex.org/works/doi:10.1037/edu0000314"
       locator: "Abstract (OpenAlex record of DOI 10.1037/edu0000314)"
