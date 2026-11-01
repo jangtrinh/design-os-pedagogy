@@ -4,6 +4,7 @@ Two audiences share one generator. The student build is safe to publish: it neve
 lesson plans, lab solution outlines or open technical issues. The teacher build adds them.
 """
 import json
+from datetime import date, timedelta
 from html import escape
 
 from markdown_it import MarkdownIt
@@ -26,8 +27,18 @@ def md(text):
     return _md.render(text or "")
 
 
+def mdi(text):
+    """Inline Markdown (bold, italics, code) with raw HTML disabled, so authored text stays escaped."""
+    return _md.renderInline("" if text is None else str(text))
+
+
+def num(value):
+    """Vietnamese decimal comma."""
+    return f"{value:g}".replace(".", ",")
+
+
 def hours(value):
-    return f"{value:g} giờ"
+    return f"{num(value)} giờ"
 
 
 def date_vi(iso):
@@ -86,15 +97,15 @@ class Site:
 
     @staticmethod
     def items(values):
-        return "<ul>" + "".join(f"<li>{e(v)}</li>" for v in values) + "</ul>" if values else ""
+        return "<ul>" + "".join(f"<li>{mdi(v)}</li>" for v in values) + "</ul>" if values else ""
 
     def mcq(self, item):
         options = "".join(
-            f'<li><button type="button" class="c-mcq-option" data-index="{i}">{e(o)}</button>'
-            f'<div class="c-mcq-feedback" hidden>{e(f)}</div></li>'
+            f'<li><button type="button" class="c-mcq-option" data-index="{i}">{mdi(o)}</button>'
+            f'<div class="c-mcq-feedback" hidden>{mdi(f)}</div></li>'
             for i, (o, f) in enumerate(zip(item["options"], item["feedback"])))
         return (f'<div class="c-mcq" id="{e(item["id"])}" data-answer="{item["answer"]}">'
-                f'<p class="c-mcq-prompt">{e(item["prompt"])}</p><ol class="c-mcq-options">{options}</ol></div>')
+                f'<p class="c-mcq-prompt">{mdi(item["prompt"])}</p><ol class="c-mcq-options">{options}</ol></div>')
 
     def quiz(self, key, items, title=None):
         if not items:
@@ -119,7 +130,7 @@ class Site:
                 f'<p class="c-sim-note">Mô phỏng minh họa trên trình duyệt, không thay cho thử trên kit.</p></div>')
 
     def checklist(self, key, values):
-        lis = "".join(f'<li><label><input type="checkbox"><span>{e(v)}</span></label></li>' for v in values)
+        lis = "".join(f'<li><label><input type="checkbox"><span>{mdi(v)}</span></label></li>' for v in values)
         return (f'<div class="c-checklist" data-key="{e(key)}"><ul>{lis}</ul>'
                 f'<p class="c-checklist-progress" aria-live="polite"></p></div>')
 
@@ -150,13 +161,13 @@ class Site:
 <dt>Thực hành</dt><dd>{program["practice_hours"]} giờ</dd><dt>Thi</dt><dd>{program["exam_hours"]} giờ</dd>
 <dt>Học kỳ</dt><dd>{e(self.schedule["class"]["semester"])} · {e(self.schedule["class"]["school_year"])}</dd></dl></div>
 {self.callout("draft", "Bản nháp do AI soạn", "<p>Nội dung được viết lại từ tài liệu giảng dạy và lịch trình của khoa, chưa được giáo viên duyệt. Thông số kỹ thuật theo bộ kit giả định bên dưới; khi lớp dùng thiết bị khác, giáo viên sẽ cập nhật.</p>")}
-<section class="c-section" id="tuan-nay"><h2>Tuần này</h2><p data-today>Mở trang Lịch học để xem buổi hiện tại.</p><p><a href="lich.html">Xem toàn bộ lịch 15 tuần →</a></p></section>
+<section class="c-section" id="tuan-nay"><h2>Tuần này</h2><p>Hôm nay: <span data-today="date"></span>. Trang Lịch học tô đậm tuần đang học.</p><p><a href="lich.html">Xem toàn bộ lịch 15 tuần →</a></p></section>
 <section class="c-section" id="bai-hoc"><h2>Bài học</h2><div class="c-cards">{"".join(cards)}</div></section>
 <section class="c-section" id="muc-tieu"><h2>Sau mô đun, bạn có thể</h2><div class="c-prose"><ul>{outcomes}</ul></div></section>
 <section class="c-section" id="danh-gia"><h2>Đánh giá</h2><div class="c-prose">
 <p>Hai bài kiểm tra định kỳ (tuần 10 và 14) và thi kết thúc mô đun (tuần 15), đều là bài thực hành chấm theo phiếu.</p>
-<p><strong>Điểm mô đun</strong> = {g["test_average_share"]:g} × điểm trung bình kiểm tra + {g["final_exam_share"]:g} × điểm thi (thang {g["scale"]}, làm tròn {g["rounding_decimals"]} chữ số thập phân). Kiểm tra định kỳ hệ số {g["periodic_weight"]}, thường xuyên hệ số {g["continuous_weight"]}. Đạt khi từ {g["pass_mark"]:g} điểm.</p>
-<p>Điều kiện dự thi: tham gia ít nhất {round(g["exam_eligibility"]["min_attendance"] * 100)}% thời gian học và điểm trung bình kiểm tra từ {g["exam_eligibility"]["min_test_average"]:g}.</p></div></section>
+<p><strong>Điểm mô đun</strong> = {num(g["test_average_share"])} × điểm trung bình kiểm tra + {num(g["final_exam_share"])} × điểm thi (thang {g["scale"]}, làm tròn {g["rounding_decimals"]} chữ số thập phân). Kiểm tra định kỳ hệ số {g["periodic_weight"]}, thường xuyên hệ số {g["continuous_weight"]}. Đạt khi từ {num(g["pass_mark"])} điểm.</p>
+<p>Điều kiện dự thi: tham gia ít nhất {round(g["exam_eligibility"]["min_attendance"] * 100)}% thời gian học và điểm trung bình kiểm tra từ {num(g["exam_eligibility"]["min_test_average"])}.</p></div></section>
 <section class="c-section" id="thiet-bi"><h2>Thiết bị giả định</h2>{self.callout("info", "Chờ giáo viên xác nhận", self.items([hw["logo"]["base"], hw["logo"]["expansion"], hw["logo"]["software"], hw["zen"]["base"], hw["zen"]["software"]]))}</section>"""
         return self.page(0, "home", "Tổng quan", body)
 
@@ -172,7 +183,9 @@ class Site:
                                  f'{KIND_LABELS[b["kind"]].lower()} {hours(b["hours"])}'
                                  + (f' <small>({e(", ".join(b["items"]))})</small>' if b["items"] else ""))
             label = f"Tuần {s['week']}" if s["id"].startswith("W") else f"Học bù (tuần {s['week']})"
-            rows.append(f'<tr data-start="{s["start"]}" data-end="{s["end"]}"><th scope="row">{e(label)}</th>'
+            # Highlight covers the whole calendar week (through Sunday), not only class days.
+            until = (date.fromisoformat(s["start"]) + timedelta(days=6)).isoformat()
+            rows.append(f'<tr data-start="{s["start"]}" data-end="{until}"><th scope="row">{e(label)}</th>'
                         f'<td>{date_vi(s["start"])} – {date_vi(s["end"])}</td><td>{"<br>".join(parts)}</td>'
                         f'<td><a href="tuan/{s["id"]}.html">Chi tiết</a></td></tr>')
         body = f"""<div class="c-hero"><p class="c-kicker">Lịch học</p><h1>Lịch 15 tuần</h1>
@@ -192,7 +205,7 @@ class Site:
                                                            "columns": ["Địa chỉ", "Thiết bị", "Mô tả"], "rows": rows}) + "</div>")
         parts.append(self.callout("safety", "An toàn", self.items(lab["safety"])))
         if practice.get("steps"):
-            parts.append("<h4>Các bước</h4><ol>" + "".join(f"<li>{e(s)}</li>" for s in practice["steps"]) + "</ol>")
+            parts.append("<h4>Các bước</h4><ol>" + "".join(f"<li>{mdi(s)}</li>" for s in practice["steps"]) + "</ol>")
         parts.append("<h4>Tự kiểm trước khi gọi giáo viên chấm</h4>"
                      + self.checklist(f"{lab['id']}-check", practice.get("self_check") or lab["rubric"]))
         faults = [[f["fault"], f["remedy"]] for f in lab["common_faults"]]
@@ -212,7 +225,7 @@ class Site:
     def lesson(self, lid):
         lesson, doc = self.lessons[lid], self.content["lessons"].get(lid)
         sessions = self.lesson_sessions(lid)
-        weeks = ", ".join(f'<a href="../tuan/{s["id"]}.html">tuần {s["week"]}</a>' for s in sessions)
+        weeks = ",&nbsp;".join(f'<a href="../tuan/{s["id"]}.html">tuần {s["week"]}</a>' for s in sessions)
         toc, body = [], []
         outcomes = [o for o in self.course["outcomes"] if lid in o["lesson_ids"]]
         if doc:
@@ -239,14 +252,14 @@ class Site:
                     steps = []
                     for n, step in enumerate(ex["steps"]):
                         if step.get("blank"):
-                            steps.append(f'<li class="c-we-step is-blank"><p class="c-we-prompt">{e(step["prompt"])}</p>'
+                            steps.append(f'<li class="c-we-step is-blank"><p class="c-we-prompt">{mdi(step["prompt"])}</p>'
                                          f'<textarea class="c-we-input" data-key="{e(ex["id"])}-{n}" rows="3" '
                                          f'aria-label="Bước bạn tự viết"></textarea><details class="c-we-reveal">'
-                                         f'<summary>Xem bước mẫu</summary><div>{e(step["text"])}</div></details></li>')
+                                         f'<summary>Xem bước mẫu</summary><div>{mdi(step["text"])}</div></details></li>')
                         else:
-                            steps.append(f'<li class="c-we-step">{e(step["text"])}</li>')
+                            steps.append(f'<li class="c-we-step">{mdi(step["text"])}</li>')
                     examples.append(f'<div class="c-we" data-fading="{e(ex["fading"])}"><h3>{e(ex["title"])}</h3>'
-                                    f'<p class="c-we-problem">{e(ex["problem"])}</p><ol class="c-we-steps">{"".join(steps)}</ol></div>')
+                                    f'<p class="c-we-problem">{mdi(ex["problem"])}</p><ol class="c-we-steps">{"".join(steps)}</ol></div>')
                 body.append('<section class="c-section" id="vi-du"><h2>Ví dụ mẫu</h2>'
                             '<p>Ví dụ đầu có lời giải đầy đủ. Ví dụ sau để trống vài bước: tự viết trước, rồi mới mở bước mẫu.</p>'
                             + "".join(examples) + "</section>")
@@ -309,7 +322,7 @@ class Site:
         previous = self.lessons.get(s["previous_lesson_id"], {}).get("title", "Không có (buổi đầu)")
         total_hours = sum(b["hours"] for b in s["blocks"])
         head = (f'<table class="c-ga c-ga-head"><tr><th>GIÁO ÁN SỐ: {s["ga_number"]}</th>'
-                f'<td>Thời gian thực hiện: {total_hours:g} giờ<br>Bài học trước: <strong>{e(previous)}</strong><br>'
+                f'<td>Thời gian thực hiện: {num(total_hours)} giờ<br>Bài học trước: <strong>{e(previous)}</strong><br>'
                 f'Thực hiện từ ngày {date_vi(s["start"])} đến ngày {date_vi(s["end"])}</td></tr></table>')
         if not doc:
             rows = "".join(f'<tr><td>{n}</td><td>{e(PHASE_LABELS[p["kind"]])}</td><td></td><td></td><td>{p["minutes"]}</td></tr>'

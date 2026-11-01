@@ -1,6 +1,6 @@
 # Điều khiển lập trình cỡ nhỏ (PLC LOGO!, ZEN): khóa học nghề theo lịch trình
 
-Trạng thái: `draft`. Đây là khung khóa học (pha P1). Chưa có giáo án hay phiếu học tập nào được sinh ra, và chưa có lời giải lab nào được giáo viên kiểm chứng. Nghiên cứu và thiết kế nằm ở [`plans/20261101-tvet-plc-teacher-agent/`](../../plans/20261101-tvet-plc-teacher-agent/plan.md).
+Trạng thái: `draft`. Pha P3 (thử nghiệm): bài B1–B3 và giáo án tuần 1–3 đã có nội dung; các bài khác mới có khung. Chưa có lời giải lab nào được giáo viên kiểm chứng. Nghiên cứu và thiết kế nằm ở [`plans/20261101-tvet-plc-teacher-agent/`](../../plans/20261101-tvet-plc-teacher-agent/plan.md).
 
 ## Tệp
 
@@ -9,6 +9,10 @@ Trạng thái: `draft`. Đây là khung khóa học (pha P1). Chưa có giáo á
 | `course.yaml` | Chương trình mô đun: bài học, giờ chuẩn LT/TH, điều kiện tiên quyết, thiết bị, chuẩn đầu ra, bài thực hành (lab), đánh giá, chính sách thời gian, chấm điểm, sĩ số, giả định phần cứng, nguồn | Người soạn khóa học |
 | `schedules/cd9-k5-2026.yaml` | Lịch trình của một lớp trong một học kỳ, kèm danh sách `exceptions` | Giáo viên, khi lịch thay đổi |
 | `sessions/cd9-k5-2026.yaml` | Các buổi đã ghép (khối nội dung, số giáo án, bài học trước, khung phút theo pha giáo án). **Tệp sinh tự động** | `tools/plan_schedule.py` |
+| `content/lessons/Bn.yaml` | Trang bài học của giáo trình web: giải thích, bảng, mô phỏng khối LOGO!, câu hỏi kiểm tra nhanh, ví dụ mẫu rút dần, phiếu thực hành, tự kiểm tra | Agent soạn (Sonnet), giáo viên duyệt |
+| `content/sessions/Wnn.yaml` | Giáo án từng buổi theo mẫu của trường | Agent soạn (Sonnet), giáo viên duyệt |
+| `content/glossary.yaml` | 88 thuật ngữ Việt–Anh | Agent soạn (Haiku) |
+| `content/SCHEMA.md` | Hợp đồng nội dung `tvet-content-1.0` | |
 
 Các tệp `.yaml` thực chất là JSON (một tập con của YAML), đọc bằng bộ nạp nghiêm ngặt `tools/knowledge/frontmatter.py`.
 
@@ -42,6 +46,27 @@ Quy tắc xếp:
 - Một bài chỉ bắt đầu khi các bài tiên quyết đã xong. Bài kiểm tra chỉ diễn ra sau khi phạm vi của nó đã dạy xong.
 - Thi kết thúc mô đun được **ghim** vào tuần của lịch gốc. Kiểm tra định kỳ thì được dời theo nội dung.
 - Thiếu giờ thì planner **không cắt bớt nội dung**. Nó liệt kê `unscheduled` và audit báo lỗi, để giáo viên chọn giữa thêm buổi bù và bỏ bớt nội dung.
+
+## Giáo trình web
+
+```bash
+# Bản học viên (công khai trên GitHub Pages): docs/course/plc-logo-zen/
+python3 tools/render_course_site.py courses/vi-vn-tvet-plc-logo-zen \
+  --schedule schedules/cd9-k5-2026.yaml --sessions sessions/cd9-k5-2026.yaml --write
+
+# Bản giáo viên (thêm giáo án in được và lời giải nháp): .data/teacher-site/ (không commit)
+python3 tools/render_course_site.py courses/vi-vn-tvet-plc-logo-zen \
+  --schedule schedules/cd9-k5-2026.yaml --sessions sessions/cd9-k5-2026.yaml --audience teacher --write
+```
+
+Cả hai lệnh chỉ ghi khi audit lịch và audit nội dung đều qua. Bản học viên không bao giờ chứa giáo án, lời giải nháp, mục "cần xác nhận" hay ghi chú giáo viên; điều này có test kiểm (`tests/test_vocational_site.py`).
+
+Thành phần tương tác (HTML/CSS/JS tĩnh, không phụ thuộc, không gửi dữ liệu đi đâu; tiến độ lưu trong `localStorage` của trình duyệt):
+- câu hỏi trắc nghiệm có giải thích cho từng lựa chọn, đếm "đúng ngay lần đầu";
+- mô phỏng khối FBD kiểu LOGO! (AND/OR/NOT/RS/On-delay/Off-delay/…) với giản đồ thời gian;
+- ví dụ mẫu dạng "rút dần": tự viết bước còn trống rồi mới mở bước mẫu;
+- danh sách tự kiểm trước khi gọi giáo viên chấm;
+- lịch tự tô tuần hiện tại; tra cứu thuật ngữ không cần gõ dấu.
 
 ## Bất biến audit (`course-audit-vocational-1.0`)
 

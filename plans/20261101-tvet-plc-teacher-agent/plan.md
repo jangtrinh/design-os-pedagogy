@@ -22,7 +22,8 @@ Nghiên cứu ba tài liệu thật của một mô đun cao đẳng nghề: l�
 - [x] Tổng hợp [research.md](research.md) và thiết kế [agent-design.md](agent-design.md).
 - [x] Research các câu hỏi mở (phần cứng/phần mềm, quy định đào tạo nghề): [`source-notes/05`](source-notes/05-hardware-software-facts.md), [`source-notes/06`](source-notes/06-tvet-regulations.md), tóm tắt ở [agent-design §7](agent-design.md#7-câu-hỏi-mở-đã-research-chờ-giáo-viên-xác-nhận).
 - [x] P1: khóa học [`courses/vi-vn-tvet-plc-logo-zen/`](../../courses/vi-vn-tvet-plc-logo-zen/README.md), `tools/course_support/vocational/` (planner + audit `course-audit-vocational-1.0`), `tools/plan_schedule.py`, `tools/vocational_audit.py`, `tests/test_vocational_course.py` (22 test). Toàn bộ suite: 120 test qua.
-- [ ] P2–P5 theo lộ trình trong agent-design §6.
+- [x] P3 (thử nghiệm): giáo trình web tại `docs/course/plc-logo-zen/` (bản học viên) và bản giáo viên dựng ra `.data/`; nội dung B1–B3, giáo án W01–W03, 88 thuật ngữ; audit nội dung `tvet-content-1.0`; 16 test site. Toàn bộ suite: 136 test qua. Rà soát kỹ thuật đã sửa 3 lỗi của agent: thao tác menu LOGO! 8 (ESC, không phải tổ hợp ba phím), điện áp "ma" do đồng hồ số trở kháng cao, và tiêu chí chấm "động cơ chạy lại sau mất nguồn" (đổi thành không tự khởi động).
+- [ ] P2 (giáo viên kiểm chứng lab trên kit), P3 cho các bài B4–B9, P4 xếp lại lịch từ "Rút kinh nghiệm", P5 mở rộng mô đun khác.
 
 ## Acceptance
 
