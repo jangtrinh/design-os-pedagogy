@@ -1,0 +1,841 @@
+{
+  "content_version": "tvet-content-1.0",
+  "terms": [
+    {
+      "vi": "Ngõ vào số",
+      "en": "digital input",
+      "definition": "Đầu vào chỉ nhận hai trạng thái 0 hoặc 1 từ nút nhấn, công tắc hoặc cảm biến. Chương trình chỉ thấy mạch đang đóng hay đang mở.",
+      "lesson_ids": [
+        "B1",
+        "B7"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Ngõ vào tương tự",
+      "en": "analog input",
+      "definition": "Đầu vào nhận tín hiệu liên tục (ví dụ 0–10 V) và đổi thành giá trị số để chương trình xử lý. Chỉ một số model LOGO! và ZEN có ngõ vào này.",
+      "lesson_ids": [
+        "B1",
+        "B7"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Ngõ ra relay",
+      "en": "relay output",
+      "definition": "Ngõ ra dùng tiếp điểm cơ khí, cách ly với mạch điều khiển và đóng cắt được cả tải xoay chiều lẫn một chiều. Tuổi thọ phụ thuộc số lần đóng cắt và loại tải.",
+      "lesson_ids": [
+        "B1",
+        "B7"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Ngõ ra transistor",
+      "en": "transistor output",
+      "definition": "Ngõ ra bán dẫn không có tiếp điểm cơ khí, chỉ chịu dòng nhỏ (giáo trình ghi khoảng 0,3 A, cần đối chiếu catalogue). Tải lớn phải đi qua relay hoặc contactor trung gian.",
+      "lesson_ids": [
+        "B1"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Module mở rộng",
+      "en": "expansion module",
+      "definition": "Thiết bị ghép thêm vào CPU để tăng số ngõ vào và ngõ ra. Cần kiểm tra số module tối đa và cách đánh địa chỉ theo tài liệu hãng.",
+      "lesson_ids": [
+        "B1",
+        "B7"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Module mở rộng DM8",
+      "en": "DM8 expansion module",
+      "definition": "Module mở rộng số của LOGO! có 4 ngõ vào và 4 ngõ ra, dùng khi CPU không đủ I/O, ví dụ cho bài đèn giao thông.",
+      "lesson_ids": [
+        "B1",
+        "B4"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Module mở rộng AM2",
+      "en": "AM2 analog expansion module",
+      "definition": "Module mở rộng tương tự của LOGO! có các ngõ vào analog để đọc cảm biến tín hiệu liên tục. Cần đối chiếu tài liệu hãng về loại tín hiệu được hỗ trợ.",
+      "lesson_ids": [
+        "B1"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Module mở rộng ZEN-8E1AR",
+      "en": "ZEN-8E1AR expansion module",
+      "definition": "Module mở rộng của ZEN có 4 ngõ vào AC và 4 ngõ ra relay, đặt bên phải CPU. Tài liệu hãng cho phép ghép tối đa ba module.",
+      "lesson_ids": [
+        "B7"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Ray DIN",
+      "en": "DIN rail",
+      "definition": "Thanh ray kim loại tiêu chuẩn để cố định PLC và thiết bị điện trong tủ. Khi lắp hoặc tháo phải cắt điện trước.",
+      "lesson_ids": [
+        "B1",
+        "B7"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Cực chung M",
+      "en": "common terminal M",
+      "definition": "Cực 0 V chung của các ngõ ra transistor trên LOGO!. Tải nối giữa ngõ ra Q và cực M, cùng dùng nguồn 24 VDC.",
+      "lesson_ids": [
+        "B1"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Cực chung COM",
+      "en": "common terminal COM",
+      "definition": "Cực chung của ngõ vào DC trên ZEN. Theo giáo trình, cực âm của nguồn nối vào COM và cực dương đi qua công tắc.",
+      "lesson_ids": [
+        "B7"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Tải thuần trở",
+      "en": "resistive load",
+      "definition": "Tải có dòng cùng pha với điện áp, ví dụ bóng đèn sợi đốt hoặc điện trở sưởi. Tiếp điểm relay chịu tải này tốt hơn tải cảm.",
+      "lesson_ids": [
+        "B1"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Tải cảm",
+      "en": "inductive load",
+      "definition": "Tải có cuộn dây như contactor, cuộn hút hoặc động cơ. Khi ngắt, tải cảm sinh quá điện áp làm mòn tiếp điểm, nên định mức dòng cho tải cảm thường thấp hơn tải thuần trở.",
+      "lesson_ids": [
+        "B1",
+        "B3"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Mạch dập xung",
+      "en": "surge suppression circuit",
+      "definition": "Diode, mạch RC hoặc varistor mắc song song với cuộn tải cảm để hấp thụ quá điện áp khi ngắt.",
+      "lesson_ids": [
+        "B1"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Cầu chì ngoài",
+      "en": "external fuse",
+      "definition": "Cầu chì lắp bên ngoài PLC để bảo vệ mạch khi quá dòng hoặc ngắn mạch. Một số model relay LOGO! yêu cầu có cầu chì ngoài theo sổ tay sản phẩm.",
+      "lesson_ids": [
+        "B1"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Dây pha L",
+      "en": "live wire L",
+      "definition": "Dây mang điện áp so với dây trung tính N trong mạng xoay chiều. Khi đấu nối phải đúng chân L, không được đảo với N.",
+      "lesson_ids": [
+        "B1",
+        "B3"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Dây trung tính N",
+      "en": "neutral wire N",
+      "definition": "Dây trở về của mạch xoay chiều, khép kín mạch cùng dây L. Phải nối đúng chân N trên PLC và trên nguồn.",
+      "lesson_ids": [
+        "B1",
+        "B3"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Tiếp địa",
+      "en": "protective earth",
+      "definition": "Nối vỏ kim loại thiết bị xuống hệ thống đất để dòng rò đi xuống đất khi cách điện hỏng, bảo vệ người sử dụng. Cần đối chiếu sổ tay về cực tiếp địa (FE) của từng model.",
+      "lesson_ids": [
+        "B1",
+        "B3"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Cách ly",
+      "en": "electrical isolation",
+      "definition": "Tách điện giữa mạch công suất, nguồn và mạch điều khiển để không có liên kết điện trực tiếp. Tiếp điểm relay của LOGO! cách ly với nguồn và ngõ vào.",
+      "lesson_ids": [
+        "B1"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Đo thông mạch",
+      "en": "continuity test",
+      "definition": "Dùng đồng hồ kiểm tra hai điểm có liên kết điện hay không khi công tắc ở trạng thái đã định. Thao tác này giúp tìm dây hở hoặc dây đấu nhầm.",
+      "lesson_ids": [
+        "B1",
+        "B3"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Đồng hồ vạn năng (VOM)",
+      "en": "multimeter (VOM)",
+      "definition": "Dụng cụ đo điện áp, dòng và điện trở. Khi kiểm tra ngõ vào nên đo có tải, vì đồng hồ có trở kháng cao có thể hiển thị điện áp giả.",
+      "lesson_ids": [
+        "B1"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Rơ-le trung gian",
+      "en": "interposing relay",
+      "definition": "Relay đặt giữa ngõ ra PLC và tải công suất lớn, dùng khi tải vượt dòng định mức của ngõ ra.",
+      "lesson_ids": [
+        "B1",
+        "B3"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Contactor",
+      "en": "contactor",
+      "definition": "Khí cụ đóng cắt tải công suất lớn như động cơ, điều khiển bằng cuộn hút điện từ. Ngõ ra PLC thường điều khiển cuộn hút thay vì nối trực tiếp tải lớn.",
+      "lesson_ids": [
+        "B3",
+        "B9"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Rơ-le nhiệt",
+      "en": "thermal overload relay",
+      "definition": "Bảo vệ động cơ khỏi quá tải bằng phần tử nhiệt. Tiếp điểm của rơ-le nhiệt được đưa vào PLC để dừng máy khi quá tải.",
+      "lesson_ids": [
+        "B3",
+        "B9"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Tiếp điểm thường mở (NO)",
+      "en": "normally open contact (NO)",
+      "definition": "Tiếp điểm hở khi không tác động và đóng khi có tác động. Ngõ vào nhận mức 1 khi tiếp điểm đóng.",
+      "lesson_ids": [
+        "B3",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Tiếp điểm thường đóng (NC)",
+      "en": "normally closed contact (NC)",
+      "definition": "Tiếp điểm đóng khi không tác động và hở khi có tác động. Khi dây đứt, PLC nhận trạng thái giống như đang tác động, nên loại này thường dùng cho nút dừng và công tắc an toàn.",
+      "lesson_ids": [
+        "B3",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Nút nhấn",
+      "en": "push button",
+      "definition": "Khí cụ điều khiển bằng tay, có loại thường mở (NO) và thường đóng (NC). Nút dừng khẩn cấp dùng loại NC.",
+      "lesson_ids": [
+        "B3",
+        "B5"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Công tắc hành trình",
+      "en": "limit switch",
+      "definition": "Công tắc được kích khi bộ phận chuyển động đến vị trí giới hạn. Dùng để báo cửa hoặc băng tải đã tới cuối hành trình.",
+      "lesson_ids": [
+        "B5",
+        "B6"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Cảm biến PNP",
+      "en": "PNP sensor",
+      "definition": "Cảm biến đưa tín hiệu về cực dương (+) của nguồn khi tác động. Phải đấu đúng kiểu với ngõ vào PLC và nguồn 24 V.",
+      "lesson_ids": [
+        "B6"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Cảm biến NPN",
+      "en": "NPN sensor",
+      "definition": "Cảm biến kéo tín hiệu về cực âm (0 V) khi tác động. Không được lẫn với cảm biến PNP khi đấu nối vào cùng một ngõ vào.",
+      "lesson_ids": [
+        "B6"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Dừng khẩn cấp",
+      "en": "emergency stop",
+      "definition": "Chức năng dừng ưu tiên cao nhất để cắt nguồn động lực khi có nguy hiểm. LOGO! và ZEN không thay thế mạch dừng khẩn cấp bằng phần cứng.",
+      "lesson_ids": [
+        "B3",
+        "B5",
+        "B6"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "An toàn khi đứt dây (fail-safe)",
+      "en": "fail-safe design",
+      "definition": "Thiết kế để khi dây đứt hoặc thiết bị hỏng, hệ thống chuyển về trạng thái an toàn. Ví dụ là dùng tiếp điểm thường đóng cho nút dừng và công tắc hành trình.",
+      "lesson_ids": [
+        "B3",
+        "B5"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Khóa liên động",
+      "en": "interlock",
+      "definition": "Điều kiện logic ngăn hai đầu ra cùng bật, ví dụ thuận và nghịch. Cần bổ sung khóa điện hoặc khóa cơ khí giữa các contactor.",
+      "lesson_ids": [
+        "B3",
+        "B5",
+        "B9"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Sơ đồ khối chức năng (FBD)",
+      "en": "function block diagram (FBD)",
+      "definition": "Ngôn ngữ lập trình của LOGO! dùng các khối nối với nhau từ ngõ vào đến ngõ ra. Chương trình được soạn trong LOGO!Soft Comfort hoặc trực tiếp trên LOGO!.",
+      "lesson_ids": [
+        "B2",
+        "B4"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Sơ đồ bậc thang (LAD)",
+      "en": "ladder diagram (LAD)",
+      "definition": "Ngôn ngữ lập trình dạng tiếp điểm và cuộn dây giống mạch rơ-le, đọc từ trái sang phải. ZEN lập trình theo dạng này; LOGO!Soft Comfort cũng có chế độ LAD.",
+      "lesson_ids": [
+        "B2",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Khối",
+      "en": "function block",
+      "definition": "Thành phần chức năng của chương trình, có ngõ vào, tham số và ngõ ra. LOGO! tự gán số cho từng khối như B01, B02.",
+      "lesson_ids": [
+        "B2"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Co",
+      "en": "connectors (Co)",
+      "definition": "Nhóm khối đầu nối của LOGO!, gồm ngõ vào, ngõ ra, bit nhớ và hằng số. Đây là điểm đầu và điểm cuối của mạch.",
+      "lesson_ids": [
+        "B2"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "BF",
+      "en": "basic functions (BF)",
+      "definition": "Nhóm hàm logic cơ bản của LOGO! như AND, OR, NOT, NAND, NOR và XOR.",
+      "lesson_ids": [
+        "B2"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "SF",
+      "en": "special functions (SF)",
+      "definition": "Nhóm hàm đặc biệt có tham số thời gian hoặc bộ nhớ, như On-delay, bộ đếm và chốt relay. Mỗi khối cần cài tham số riêng.",
+      "lesson_ids": [
+        "B2",
+        "B4"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Ngõ vào không dùng (X)",
+      "en": "unused connection (X)",
+      "definition": "Ký hiệu X cho ngõ vào không nối. Khối AND coi X bằng 1, còn OR, NOR và XOR coi X bằng 0, nên phải gán đúng để không làm sai kết quả.",
+      "lesson_ids": [
+        "B2"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Bit nhớ trung gian M",
+      "en": "intermediate memory bit (M)",
+      "definition": "Bit nhớ của LOGO! dùng để lưu kết quả giữa các khối trong chương trình, không đưa ra ngoài.",
+      "lesson_ids": [
+        "B2"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Bit nhớ M8 (cờ khởi động)",
+      "en": "start-up flag M8",
+      "definition": "Bit có giá trị 1 chỉ trong chu kỳ quét đầu tiên sau khi khởi động, sau đó về 0. Thường dùng để khởi tạo trạng thái ban đầu.",
+      "lesson_ids": [
+        "B2"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Bit trung gian M",
+      "en": "auxiliary relay M",
+      "definition": "Bit trung gian của ZEN dùng trong chương trình và không đưa ra ngoài. Theo giáo trình, trạng thái của M mất khi mất điện.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Bit giữ H",
+      "en": "holding relay H",
+      "definition": "Bit giống M nhưng giữ trạng thái khi mất điện, dùng khi cần nhớ trạng thái sau khi cấp lại nguồn.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Chu kỳ quét",
+      "en": "scan cycle",
+      "definition": "PLC lặp liên tục các bước đọc ngõ vào, chạy chương trình rồi cập nhật ngõ ra. Thứ tự các khối trong một vòng quét ảnh hưởng đến kết quả.",
+      "lesson_ids": [
+        "B2",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Cạnh lên",
+      "en": "rising edge",
+      "definition": "Thời điểm tín hiệu chuyển từ 0 sang 1. Khối cạnh như AND cạnh và nhiều bộ đếm chỉ tác động tại thời điểm này.",
+      "lesson_ids": [
+        "B2",
+        "B6"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Cạnh xuống",
+      "en": "falling edge",
+      "definition": "Thời điểm tín hiệu chuyển từ 1 sang 0. Off-delay của LOGO! bắt đầu đếm từ cạnh xuống của ngõ kích.",
+      "lesson_ids": [
+        "B2",
+        "B4"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Mức logic",
+      "en": "logic level",
+      "definition": "Trạng thái 1 (có tín hiệu) hoặc 0 (không có tín hiệu). Khi đấu nối phải xác định tiếp điểm NO hoặc NC đang cho mức nào.",
+      "lesson_ids": [
+        "B2"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Tự giữ",
+      "en": "self-holding circuit",
+      "definition": "Mạch dùng tiếp điểm của chính đầu ra mắc song song với nút start để giữ đầu ra sau khi thả nút. LOGO! có thể làm bằng khối RS hoặc hồi tiếp từ đầu ra.",
+      "lesson_ids": [
+        "B3",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Bộ chốt relay (RS)",
+      "en": "latching relay (RS)",
+      "definition": "Khối SF có ngõ S (đặt) và R (đặt lại). S = 1 làm Q = 1 và giữ lại sau khi S về 0; R = 1 làm Q = 0. Khi S và R cùng bằng 1 thì R ưu tiên, Q = 0.",
+      "lesson_ids": [
+        "B3",
+        "B5",
+        "B6"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Ưu tiên reset",
+      "en": "reset priority",
+      "definition": "Khi S và R cùng bằng 1, khối RS của LOGO! cho Q = 0. Cần nhớ quy tắc này khi thiết kế tự giữ có lệnh dừng.",
+      "lesson_ids": [
+        "B3"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Bộ relay xung",
+      "en": "pulse relay",
+      "definition": "Mỗi cạnh lên của ngõ kích Trg đảo trạng thái Q. Khi S hoặc R bằng 1 thì ngõ kích Trg bị bỏ qua.",
+      "lesson_ids": [
+        "B5"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Mô phỏng",
+      "en": "simulation",
+      "definition": "Chạy thử chương trình trên máy tính để kiểm tra logic trước khi nạp xuống thiết bị thật.",
+      "lesson_ids": [
+        "B2",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Nạp chương trình",
+      "en": "program download",
+      "definition": "Gửi chương trình từ máy tính xuống PLC qua cáp. Sau khi nạp cần kiểm tra thiết bị đã chuyển sang chế độ chạy đúng.",
+      "lesson_ids": [
+        "B2",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Giám sát trực tuyến",
+      "en": "online monitoring",
+      "definition": "Xem trạng thái tiếp điểm, khối và ngõ ra của PLC đang chạy ngay trên máy tính. ZEN Support Software hiển thị mạch đóng bằng màu xanh.",
+      "lesson_ids": [
+        "B2",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Chế độ RUN",
+      "en": "RUN mode",
+      "definition": "Trạng thái PLC thực thi chương trình và điều khiển ngõ ra.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Chế độ STOP",
+      "en": "STOP mode",
+      "definition": "Trạng thái PLC ngừng thực thi chương trình. ZEN phải ở STOP khi sửa ladder bằng phím.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Lập trình bằng phím (LOGO!)",
+      "en": "keypad programming (LOGO!)",
+      "definition": "Nhập chương trình trực tiếp trên LOGO! bằng phím mũi tên và OK. Lập trình từ ngõ ra Q về các ngõ vào, và ngõ vào không dùng ghi X.",
+      "lesson_ids": [
+        "B2"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Lập trình bằng phím (ZEN)",
+      "en": "keypad programming (ZEN)",
+      "definition": "Nhập ladder trực tiếp trên ZEN khi ở STOP, đi từ trái sang phải. Loại bit và địa chỉ được chọn bằng phím.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "LOGO!Soft Comfort",
+      "en": "LOGO!Soft Comfort",
+      "definition": "Phần mềm trên máy tính để soạn FBD hoặc LAD, mô phỏng và nạp chương trình cho LOGO!. Phiên bản dùng trên lớp cần giáo viên xác nhận.",
+      "lesson_ids": [
+        "B2"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "ZEN Support Software",
+      "en": "ZEN Support Software",
+      "definition": "Phần mềm của Omron để soạn ladder, nạp, giám sát và mô phỏng cho ZEN. Tài liệu còn gọi phần mềm này bằng tên khác như ZEN-SOFT01.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Cáp ZEN-CIF01",
+      "en": "ZEN-CIF01 cable",
+      "definition": "Cáp nối máy tính với ZEN theo chuẩn RS-232C.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Bộ chuyển USB–RS232",
+      "en": "USB-to-RS232 adapter",
+      "definition": "Thiết bị đổi cổng USB thành cổng nối tiếp RS-232 để dùng cáp ZEN-CIF01 khi máy tính không có cổng COM. Cần kiểm tra driver và hệ điều hành trước khi dùng.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Bộ định thời (timer)",
+      "en": "timer",
+      "definition": "Khối đếm thời gian và tác động đầu ra khi đủ thời gian đặt. Dùng để tạo trễ, chu kỳ hoặc chuỗi thời gian trong chương trình.",
+      "lesson_ids": [
+        "B4",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Thời gian đặt (T)",
+      "en": "preset time (T)",
+      "definition": "Giá trị thời gian cài sẵn. Khi thời gian đếm đạt giá trị này, đầu ra của timer đổi trạng thái theo chế độ của nó.",
+      "lesson_ids": [
+        "B4",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Thời gian đã đếm (Ta)",
+      "en": "elapsed time (Ta)",
+      "definition": "Giá trị thời gian mà khối LOGO! đã đếm từ lúc bắt đầu. Khi Ta bằng T thì đầu ra thay đổi.",
+      "lesson_ids": [
+        "B4"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Ngõ kích (Trg)",
+      "en": "trigger input (Trg)",
+      "definition": "Ngõ vào khởi động đếm của khối thời gian LOGO!. Mức và cạnh của Trg quyết định khối bắt đầu đếm hay hủy đếm.",
+      "lesson_ids": [
+        "B4"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Đặt lại (reset)",
+      "en": "reset",
+      "definition": "Đưa bộ đếm, timer hoặc chốt về trạng thái ban đầu qua ngõ đặt lại của khối hoặc qua cuộn reset.",
+      "lesson_ids": [
+        "B2",
+        "B6"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "On-delay (trễ bật)",
+      "en": "on-delay timer",
+      "definition": "Đầu ra Q = 1 sau khi Trg ở mức 1 đủ thời gian T. Nếu Trg xuống 0 trước khi đủ T thì Q không bật và thời gian đếm bị đặt lại.",
+      "lesson_ids": [
+        "B4"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Off-delay (trễ tắt)",
+      "en": "off-delay timer",
+      "definition": "Q = 1 ngay khi Trg lên 1. Sau khi Trg xuống 0, Q chỉ tắt khi đã đếm đủ T kể từ cạnh xuống.",
+      "lesson_ids": [
+        "B5",
+        "B6"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "On-delay có nhớ",
+      "en": "retentive on-delay",
+      "definition": "Khối trễ bật mà đầu ra vẫn giữ 1 sau khi đủ thời gian, kể cả khi Trg xuống 0. Chỉ ngõ R mới đặt lại được đầu ra.",
+      "lesson_ids": [
+        "B2",
+        "B4"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Rem (giữ trạng thái khi mất điện)",
+      "en": "retentivity (Rem)",
+      "definition": "Tham số quyết định khối có giữ thời gian đã đếm và trạng thái khi mất nguồn hay không. Hành vi chi tiết cần kiểm chứng bằng mô phỏng.",
+      "lesson_ids": [
+        "B2",
+        "B4"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Bộ phát xung không đồng bộ",
+      "en": "asynchronous pulse generator",
+      "definition": "Khối tạo xung lặp: đầu ra bật trong thời gian TH rồi tắt trong thời gian TL khi ngõ En bằng 1. Dùng để tạo nhấp nháy hoặc chu kỳ cho đèn giao thông.",
+      "lesson_ids": [
+        "B4"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Bộ đếm (counter)",
+      "en": "counter",
+      "definition": "Khối đếm số lần tín hiệu xuất hiện. Khi đạt giá trị đặt thì đầu ra thay đổi, muốn đếm lại phải đặt lại bộ đếm.",
+      "lesson_ids": [
+        "B6",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Bộ đếm lên xuống",
+      "en": "up/down counter",
+      "definition": "Khối SF đếm tăng hoặc giảm theo cạnh tín hiệu, có ngưỡng On/Off và ngõ R để đặt lại. Dùng để đếm sản phẩm trên băng tải.",
+      "lesson_ids": [
+        "B6"
+      ],
+      "platform": "logo"
+    },
+    {
+      "vi": "Bộ đếm C (ZEN)",
+      "en": "counter C (ZEN)",
+      "definition": "Bộ đếm của ZEN, ký hiệu C, đếm theo tín hiệu vào và có chức năng reset. Chi tiết chân đếm và giới hạn số đếm cần đối chiếu manual.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Bộ định thời theo tuần",
+      "en": "weekly timer",
+      "definition": "Bật hoặc tắt đầu ra theo ngày và giờ trong tuần. LOGO! gọi là ngày giờ trong tuần, còn ZEN dùng ký hiệu @.",
+      "lesson_ids": [
+        "B2",
+        "B8"
+      ],
+      "platform": "chung"
+    },
+    {
+      "vi": "Timer ZEN chế độ X",
+      "en": "ON-delay timer, mode X (ZEN)",
+      "definition": "Chế độ ON-delay của timer ZEN: bit timer bật khi tín hiệu kích được giữ đủ thời gian đặt.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Timer ZEN chế độ ■/N",
+      "en": "OFF-delay timer, mode ■/N (ZEN)",
+      "definition": "Chế độ OFF-delay: bit bật ngay khi được kích và chỉ tắt sau khi tín hiệu kích mất đủ thời gian đặt.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Timer ZEN chế độ O",
+      "en": "one-shot timer, mode O (ZEN)",
+      "definition": "Chế độ one-shot: khi được kích, bit bật trong đúng khoảng thời gian đặt rồi tắt, tạo ra xung ngắn.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Timer ZEN chế độ F",
+      "en": "flashing timer, mode F (ZEN)",
+      "definition": "Chế độ flashing: bit bật và tắt lặp lại theo chu kỳ đặt, dùng cho đèn nhấp nháy.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Holding timer (#)",
+      "en": "holding timer # (ZEN)",
+      "definition": "Bộ định thời giữ: khi tín hiệu kích tắt, giá trị đã đếm được giữ lại và đếm tiếp khi kích lại. Phạm vi áp dụng và hành vi khi mất nguồn cần đối chiếu manual.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Cuộn dây kiểu S",
+      "en": "set coil S (ZEN)",
+      "definition": "Cuộn S đặt bit lên ON khi đầu vào ON, và giữ ON kể cả khi đầu vào tắt cho đến khi có cuộn R tác động.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Cuộn dây kiểu R",
+      "en": "reset coil R (ZEN)",
+      "definition": "Cuộn R đưa bit về OFF khi đầu vào ON. Thường dùng cùng cuộn S để chốt và nhả đầu ra.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Cuộn dây kiểu A",
+      "en": "alternate coil A (ZEN)",
+      "definition": "Mỗi lần đầu vào chuyển sang ON, trạng thái bit đảo (từ ON thành OFF hoặc ngược lại). Giáo trình đối chiếu kiểu này với bộ relay xung của LOGO!.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Nhánh song song (đường nối OR)",
+      "en": "parallel branch (OR) (ZEN)",
+      "definition": "Đường nối trong ladder ZEN tạo nhánh song song, tương đương phép OR. Ví dụ là tiếp điểm tự giữ đấu song song với nút start.",
+      "lesson_ids": [
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Đánh địa chỉ từ 0",
+      "en": "zero-based addressing",
+      "definition": "ZEN đánh ngõ vào I0 và ngõ ra Q0 từ 0, còn LOGO! đánh I1 và Q1 từ 1. Khi chuyển chương trình giữa hai hệ phải đổi địa chỉ cho đúng.",
+      "lesson_ids": [
+        "B7",
+        "B8"
+      ],
+      "platform": "zen"
+    },
+    {
+      "vi": "Ký hiệu model LOGO!",
+      "en": "LOGO! model code",
+      "definition": "Mã model cho biết điện áp nguồn, loại ngõ ra (R là relay, không R là transistor), có bộ định thời 7 ngày (C) hay không có màn hình (o). Phải đọc nhãn và đối chiếu sơ đồ trước khi đấu dây.",
+      "lesson_ids": [
+        "B1"
+      ],
+      "platform": "logo"
+    }
+  ]
+}
