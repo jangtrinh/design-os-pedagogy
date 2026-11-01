@@ -1,0 +1,362 @@
+{
+  "content_version": "tvet-content-1.0",
+  "session_id": "W02",
+  "status": "draft",
+  "authoring": {
+    "model_tier": "sonnet",
+    "date": "2026-11-01"
+  },
+  "title_line": "Bài 2: Các lệnh cơ bản lập trình cho PLC LOGO",
+  "lesson_section_ids": [
+    "B2-s1",
+    "B2-s2",
+    "B2-s3",
+    "B2-s4",
+    "B2-s5",
+    "B2-s6",
+    "B2-s7"
+  ],
+  "objectives": {
+    "knowledge": [
+      "Nêu vai trò của Co, BF, SF và giá trị của đầu nối hở x trong AND, OR.",
+      "Mô tả đáp ứng thời gian của On-delay, Off-delay và quy tắc R ưu tiên của Latching relay.",
+      "Nêu bốn nguyên tắc vàng và quy trình nhập chương trình bằng phím từ ngõ ra về ngõ vào."
+    ],
+    "skills": [
+      "Tạo dự án FBD trong LOGO!Soft Comfort V8.4, nối khối bằng Connect (F5), mô phỏng (F3) và lưu.",
+      "Nhập chương trình OR (S1 song song S2 điều khiển Q1) bằng phím trên LOGO! và chạy thử trên kit."
+    ],
+    "attitude": [
+      "Cài phần mềm từ nguồn hợp lệ, ngắt nguồn khi đấu dây và xin kiểm tra trước khi cấp điện.",
+      "Tự dự đoán rồi kiểm chứng bằng mô phỏng thay vì thử bừa trên thiết bị."
+    ]
+  },
+  "materials": [
+    "Máy vi tính có LOGO!Soft Comfort V8.4 (bộ cài hợp lệ của nhà trường)",
+    "Tivi hoặc máy chiếu, trang bài B2 (widget logic-sim)",
+    "Kit thực hành PLC Siemens LOGO! (giả định 12/24RCE, có hoặc không DM8), nút nhấn S1, S2, đèn hoặc tải Q1, dây nối",
+    "Bảng con A/B/C cho câu hỏi bản lề",
+    "Phiếu tiêu chí LOGO-PRAC-2 (6 tiêu chí), phiếu bảng trạng thái"
+  ],
+  "organization": "Lý thuyết xen trình diễn với cả lớp trong phần đầu; phần thực hành chia nhóm theo số kit (2 đến 3 HS/kit, tối đa 18 HS/nhóm thực hành), mỗi HS có một máy tính cho LSC.",
+  "phases": [
+    {
+      "kind": "on_dinh_lop",
+      "minutes": 10,
+      "content": [
+        "Điểm danh, nhắc nội quy xưởng và an toàn điện: ngắt nguồn khi đấu dây, xin kiểm tra trước khi cấp điện",
+        "Kiểm tra bài cũ B1 bằng truy hồi không nhìn tài liệu"
+      ],
+      "teacher": [
+        "Điểm danh, nhắc nội quy xưởng, kiểm tra kit và máy.",
+        "Đọc từng câu truy hồi B1, cho 20 giây nghĩ rồi gọi ngẫu nhiên; ghi lại điểm mà nhiều HS chưa nhớ để nhắc ở phần sau."
+      ],
+      "student": [
+        "Viết câu trả lời vào bảng con hoặc vở trước khi được gọi.",
+        "Chữa chéo với bạn cạnh và sửa lại phần sai."
+      ],
+      "retrieval_questions": [
+        "Đọc mã LOGO! 12/24RCE: chữ R, C, E nghĩa là gì? Khác gì so với mã 230RCE về nguồn cấp?",
+        "Ngõ ra rơ-le và ngõ ra transistor khác nhau thế nào về loại tải, dòng tối đa và cách đấu dây?",
+        "Với kit lớp, nguồn cấp là bao nhiêu volt và dòng tối đa của ngõ ra rơ-le là bao nhiêu?",
+        "Trước khi đấu dây vào LOGO! em phải làm gì đầu tiên, và cần ai kiểm tra trước khi cấp nguồn?"
+      ]
+    },
+    {
+      "kind": "dan_nhap",
+      "minutes": 5,
+      "content": [
+        "Tình huống: thêm một nút thứ ba hay đèn phải sáng thêm 10 s sau khi nhả nút thì mạch rơ-le cần đổi gì"
+      ],
+      "teacher": [
+        "Chiếu mạch rơ-le S1 // S2 → K1 và hỏi: muốn đèn sáng thêm 10 s sau khi nhả cả hai nút thì phải thêm gì, mất bao lâu để đấu lại?",
+        "Gọi 2 nhóm trả lời rồi gợi ý một chương trình trong LOGO! chỉ cần đổi khối."
+      ],
+      "student": [
+        "Thảo luận cặp 1 phút và viết ra danh sách linh kiện, số dây phải thêm trong mạch rơ-le.",
+        "Báo cáo một ý với lớp."
+      ]
+    },
+    {
+      "kind": "gioi_thieu_chu_de",
+      "minutes": 5,
+      "content": [
+        "Mục tiêu buổi học và tiêu chí thành công (6 tiêu chí LOGO-PRAC-2)",
+        "Phạm vi: học sâu Co, BF và 6 SF; các SF còn lại tra cứu khi cần",
+        "Cấu trúc buổi: làm mẫu, hỏi nhanh, cùng làm, tự làm"
+      ],
+      "teacher": [
+        "Nêu mục tiêu, sản phẩm cuối buổi (OR chạy trên phần mềm và trên kit) và phiếu tiêu chí.",
+        "Nói rõ vì sao không học hết các SF."
+      ],
+      "student": [
+        "Đọc phiếu tiêu chí, khoanh tiêu chí khó nhất và viết một câu hỏi muốn được trả lời trong buổi.",
+        "Tự đánh giá mức tự tin 1 đến 5 về On-delay và nhập chương trình bằng phím."
+      ]
+    },
+    {
+      "kind": "giai_quyet_van_de",
+      "minutes": 170,
+      "content": [
+        "Co và BF; On-delay, Off-delay, Latching relay, Pulse relay, bộ phát xung, bộ đếm",
+        "LOGO!Soft Comfort V8.4: tạo dự án FBD, Connect (F5), Simulation (F3)",
+        "Lập trình bằng phím và ví dụ OR; thực hành LOGO-PRAC-2"
+      ],
+      "teacher": [
+        "Làm mẫu theo i_do, kiểm tra hiểu bằng câu hỏi bản lề, cùng làm ví dụ hoàn thành, rồi giám sát thực hành.",
+        "Quyết định tiến hoặc dạy lại dựa trên tỷ lệ đúng của các câu hỏi bản lề."
+      ],
+      "student": [
+        "Dự đoán trước, giơ bảng con, tự làm các bước trống và thực hành trên máy và kit.",
+        "Hoàn thành OR bằng phần mềm rồi bằng phím và lập bảng trạng thái."
+      ],
+      "steps": [
+        {
+          "mode": "i_do",
+          "minutes": 10,
+          "title": "GV làm mẫu: Co và BF, đọc mạch rơ-le thành khối",
+          "teacher": [
+            "Chiếu mạch rơ-le S1 song song S2 cấp cho K1 và chuyển từng phần sang I1, I2, OR, Q1; nói to lý do chọn OR và vì sao ngõ vào thừa phải ghi x.",
+            "Mở widget OR, đóng/mở S1 và S2 để HS nhìn giản đồ; chỉ vào bảng chân trị 6 cột và nói chậm cách đọc từng dòng.",
+            "Nêu điểm khác nhau giữa mức và cạnh bằng ví dụ nút nhấn giữ 5 s."
+          ],
+          "student": [
+            "Ghi vào vở bảng ánh xạ rơ-le sang LOGO!: nối tiếp = AND, song song = OR, thường đóng = NOT.",
+            "Dự đoán Q1 của widget OR trước mỗi lần GV đổi S1, S2 rồi giơ ngón tay 0/1 để GV thấy.",
+            "Tự điền các cột còn trống của bảng chân trị trước khi GV hiện đáp án."
+          ],
+          "lesson_section_ids": [
+            "B2-s1",
+            "B2-s2"
+          ]
+        },
+        {
+          "mode": "check",
+          "minutes": 4,
+          "title": "Câu hỏi bản lề: x của AND và AND theo cạnh",
+          "teacher": [
+            "Đọc câu hỏi, cho 20 giây suy nghĩ rồi cả lớp giơ bảng A/B/C cùng lúc; đếm nhanh tỷ lệ chọn đúng.",
+            "Nếu từ 85% trở lên đúng thì đi tiếp; nếu dưới 80% thì gọi 1 HS chọn sai giải thích suy nghĩ rồi nhắc lại quy tắc x và cạnh bằng ví dụ khác."
+          ],
+          "student": [
+            "Chọn đáp án trên bảng con và giơ đồng loạt khi GV hô.",
+            "Nếu chọn khác bạn bên cạnh thì thuyết phục nhau trong 30 giây rồi chọn lại."
+          ],
+          "check_ids": [
+            "B2-c1",
+            "B2-c3"
+          ]
+        },
+        {
+          "mode": "i_do",
+          "minutes": 10,
+          "title": "GV làm mẫu: On-delay và Off-delay trên giản đồ",
+          "teacher": [
+            "Giải thích Trg, T, Ta, Q rồi vừa nói vừa vẽ giản đồ tay cho On-delay: Trg giữ đủ T và Trg ngắt sớm.",
+            "Chạy widget so sánh On-delay/Off-delay: giữ nút chưa đủ 3 s để lớp thấy Q1 không lên còn Q2 lên ngay và tắt sau 3 s; nhấn mạnh Off-delay đo T từ lúc nhả nút.",
+            "Nói rõ giới hạn: tình huống Trg lên lại khi Off-delay đang đếm chưa dùng làm đáp án chắc chắn."
+          ],
+          "student": [
+            "Vẽ lại giản đồ On-delay và Off-delay vào vở với cùng một tín hiệu Trg.",
+            "Trước khi GV thử, dự đoán Q1 và Q2 khi giữ nút 1 s, rồi so với widget.",
+            "Gạch chân câu \"đếm từ cạnh xuống\" ở Off-delay và \"reset khi Trg xuống sớm\" ở On-delay."
+          ],
+          "lesson_section_ids": [
+            "B2-s3"
+          ]
+        },
+        {
+          "mode": "check",
+          "minutes": 4,
+          "title": "Câu hỏi bản lề: On-delay bị ngắt và mốc đếm của Off-delay",
+          "teacher": [
+            "Cho cả lớp chọn A/B/C bằng bảng con. Câu c4 chọn \"tạm dừng\" là tín hiệu hiểu lầm số 1 cần sửa ngay.",
+            "Gọi 2 HS chọn khác nhau giải thích bằng cách vẽ giản đồ lên bảng."
+          ],
+          "student": [
+            "Chọn đáp án và vẽ nhanh giản đồ minh chứng ở góc vở trước khi giơ bảng.",
+            "Giải thích bằng lời cho bạn cạnh vì sao đáp án còn lại sai."
+          ],
+          "check_ids": [
+            "B2-c4",
+            "B2-c5"
+          ]
+        },
+        {
+          "mode": "i_do",
+          "minutes": 8,
+          "title": "GV làm mẫu: Latching relay, Pulse relay, xung và bộ đếm; bảng tra cứu",
+          "teacher": [
+            "Trên widget Latching relay: nhấn S, nhả; nhấn R, nhả; nhấn cả hai để thấy R thắng. Nói \"không phải ai đến trước thắng\".",
+            "Giới thiệu Pulse relay (một nút bật/tắt luân phiên), Asynchronous pulse generator, Up/down counter qua bảng tóm tắt, mỗi hàm một câu \"nhớ gì, khi nào đổi\".",
+            "Chỉ vào bảng \"tra cứu khi cần\" và nói rõ những hàm này không học thuộc."
+          ],
+          "student": [
+            "Đóng vai máy: dự đoán Q1 của widget RS khi GV nhấn S và R theo thứ tự, ghi lên bảng con.",
+            "Đánh dấu trong bảng tóm tắt hàm nào hợp với: đèn nhấp nháy, một nút bật/tắt, đếm đủ 10 hộp.",
+            "Tìm trong bảng tra cứu một hàm có thể dùng cho đèn hành lang tự tắt và đọc to tên hàm."
+          ],
+          "lesson_section_ids": [
+            "B2-s4",
+            "B2-s5"
+          ]
+        },
+        {
+          "mode": "check",
+          "minutes": 4,
+          "title": "Câu hỏi bản lề: ưu tiên R và chọn hàm cho một nút",
+          "teacher": [
+            "Cho chọn bằng bảng con, đếm tỷ lệ. Câu c6 chọn A hoặc B là hiểu lầm \"ai đến trước thắng\": cho chạy lại widget với S = R = 1 để HS tự thấy.",
+            "Từ 85% đúng trở lên thì chuyển sang phần phần mềm."
+          ],
+          "student": [
+            "Chọn đáp án và thử lại trên widget nếu thắc mắc.",
+            "Viết một câu vào vở: \"S = R = 1 thì Q = ... vì ...\"."
+          ],
+          "check_ids": [
+            "B2-c6",
+            "B2-c7"
+          ]
+        },
+        {
+          "mode": "i_do",
+          "minutes": 6,
+          "title": "GV làm mẫu: LOGO!Soft Comfort V8.4 (tạo dự án, Connect F5, Simulation F3)",
+          "teacher": [
+            "Trên máy chiếu: mở LSC, kiểm tra phiên bản ở Help > About, File > New, chọn FBD và loại thiết bị đúng nhãn kit.",
+            "Kéo I1, Q1 và một khối OR từ thư viện, dùng Connect (F5) nối, rồi bật Simulation (F3) và đóng/mở công tắc ảo; nhấn mạnh F5 để nối, F3 để chạy thử.",
+            "Nhắc: chỉ cài từ bộ cài hợp lệ của trường, không theo ảnh V7 trong giáo trình."
+          ],
+          "student": [
+            "Mở LSC trên máy của mình, theo thao tác của GV đến bước chọn thiết bị và đọc nhãn kit để chọn đúng.",
+            "Ghi lại phiên bản LSC trên máy mình và báo GV nếu khác V8.4.",
+            "Đọc lại chú thích F5/F3 và khoanh chỗ chưa rõ để hỏi ngay."
+          ],
+          "lesson_section_ids": [
+            "B2-s6"
+          ]
+        },
+        {
+          "mode": "i_do",
+          "minutes": 8,
+          "title": "GV làm mẫu (ví dụ có lời giải): nhập OR bằng phím trên LOGO!",
+          "teacher": [
+            "Làm mẫu trên kit qua camera hoặc màn hình phụ: Clear Prg, Edit Prg, bắt đầu ở Q1, chọn BF > OR, gán I1, I2, X, duyệt lại, Start. Đọc to từng phím.",
+            "Nói lý do từng bước theo ví dụ B2-we1: vì sao từ ngõ ra về ngõ vào, vì sao ngõ vào thừa ghi X.",
+            "Chỉ ra bốn nguyên tắc vàng và đặt tên thống nhất cho phím: mũi tên trái, phải, lên, xuống, ESC, OK."
+          ],
+          "student": [
+            "Theo dõi ví dụ B2-we1 trên giấy, đánh dấu bước nào giống phần mềm, bước nào khác.",
+            "Gọi tên phím trước mỗi thao tác của GV (\"mũi tên phải\", \"OK\"...).",
+            "Ghi lại cách vào menu (ESC trên LOGO! 8, hoặc tổ hợp ba phím trên đời cũ) trên kit của nhóm sau khi GV xác nhận."
+          ],
+          "lesson_section_ids": [
+            "B2-s7"
+          ]
+        },
+        {
+          "mode": "check",
+          "minutes": 5,
+          "title": "Câu hỏi bản lề: F3 hay F5, thứ tự nhập và quy tắc nối",
+          "teacher": [
+            "Ba câu c9, c10, c11 hỏi liên tiếp bằng bảng con, mỗi câu khoảng 1 phút; ghi nhanh số HS chọn sai từng câu.",
+            "Câu c10 sai nhiều thì làm lại một nhịp ở ví dụ B2-we1, bước 5 đến 8."
+          ],
+          "student": [
+            "Chọn đáp án bằng bảng con cho từng câu.",
+            "Nếu chọn sai thì tự sửa và nói lại quy tắc đúng bằng lời của mình cho bạn cạnh."
+          ],
+          "check_ids": [
+            "B2-c9",
+            "B2-c10",
+            "B2-c11"
+          ]
+        },
+        {
+          "mode": "we_do",
+          "minutes": 15,
+          "title": "Cùng làm ví dụ hoàn thành: đèn hành lang với Off-delay trong LSC",
+          "teacher": [
+            "Cùng cả lớp làm B2-we2; các bước trống GV nêu câu gợi ý rồi gọi từng HS đề xuất thao tác trước khi làm.",
+            "Đi quanh lớp xem màn hình, đặc biệt kiểm tra T = 5 s và R đã xử lý; yêu cầu dự đoán giản đồ trước khi bấm F3.",
+            "Khi lớp làm đúng từ 85% trở lên thì cho chuyển sang thực hành; HS còn lỗi ghép với bạn khá."
+          ],
+          "student": [
+            "Tự thực hiện từng bước trống của B2-we2 trên máy: đặt khối Off-delay, đặt T, nối bằng F5.",
+            "Vẽ dự đoán giản đồ I1 và Q1 vào vở, chạy F3 và đo thời gian Q1 tắt sau khi nhả nút.",
+            "Đổi T hoặc đổi nhầm sang On-delay một lần để quan sát khác biệt và ghi nhận xét."
+          ],
+          "lesson_section_ids": [
+            "B2-s3",
+            "B2-s6"
+          ]
+        },
+        {
+          "mode": "you_do",
+          "minutes": 96,
+          "title": "Thực hành LOGO-PRAC-2: cài, mô phỏng và nhập chương trình OR",
+          "teacher": [
+            "Chia nhóm theo số kit (2 đến 3 HS/kit, tối đa 18 HS/nhóm thực hành). Kiểm tra nhãn kit, điện áp nguồn và dây trước khi cho cấp nguồn.",
+            "Đi quanh các nhóm theo phiếu tiêu chí: phần mềm mở được, nối khối đúng, mô phỏng 4 tổ hợp, nhập bằng phím từ Q1 về ngõ vào, ngõ vào thừa là X. Chỉ hỏi gợi ý, không làm hộ.",
+            "Theo dõi lỗi thường gặp: lập trình từ ngõ vào sang ngõ ra, để trống ngõ vào OR, nối nhiều ngõ ra vào một ngõ vào, thoát khi chương trình chưa xong."
+          ],
+          "student": [
+            "Thực hiện các bước của LOGO-PRAC-2: cài hoặc mở LSC V8.4, tạo dự án FBD, nối OR, mô phỏng (F3) và lập bảng trạng thái, lưu dự án.",
+            "Ngắt nguồn, đấu S1, S2, tải; chờ GV kiểm tra dây rồi cấp nguồn; nhập OR bằng phím và chạy Start.",
+            "Chuyển vai thao tác giữa các bạn trong nhóm để ai cũng nhập bằng phím một lần; so sánh bảng trạng thái giữa mô phỏng và kit.",
+            "Nếu xong sớm: thay OR bằng AND, mô phỏng lại và ghi sự khác nhau vào bảng trạng thái."
+          ],
+          "lab_id": "LOGO-PRAC-2"
+        }
+      ]
+    },
+    {
+      "kind": "ket_thuc_van_de",
+      "minutes": 15,
+      "content": [
+        "Chấm sản phẩm theo phiếu tiêu chí LOGO-PRAC-2",
+        "Kiểm tra nhanh: câu 2 và 3 trong phần tự kiểm tra B2",
+        "Tóm tắt: x, mức và cạnh, On-delay và Off-delay, R ưu tiên, từ ngõ ra về ngõ vào"
+      ],
+      "teacher": [
+        "Chấm từng nhóm theo 6 tiêu chí: yêu cầu HS thao tác lại một lần nhập OR bằng phím và đóng/mở S1, S2 trên kit.",
+        "Phát 2 câu thoát lớp (self-test t2, t3), thu trả lời, ghi nhận lỗi chung."
+      ],
+      "student": [
+        "Trình bày sản phẩm: mô phỏng (F3) và chạy trên kit, đưa bảng trạng thái cho GV.",
+        "Chấm chéo với nhóm khác theo phiếu rồi trả lời hai câu thoát lớp trên giấy.",
+        "Dọn dụng cụ, tắt nguồn kit và đóng phần mềm đúng quy trình."
+      ]
+    },
+    {
+      "kind": "huong_dan_tu_hoc",
+      "minutes": 5,
+      "content": [
+        "Làm bài tự kiểm tra B2 (5 câu)",
+        "Ôn tự giữ và dừng ưu tiên trong mạch rơ-le động cơ cho bài B3",
+        "Thử Off-delay trong mô phỏng với các tổ hợp khác và ghi lại quan sát"
+      ],
+      "teacher": [
+        "Giao bài tự kiểm tra B2, nhắc ôn mạch tự giữ cho bài sau.",
+        "Nhắc: tình huống Trg lên lại khi Off-delay đang đếm chỉ là quan sát, chưa phải quy tắc kết luận."
+      ],
+      "student": [
+        "Ghi nhiệm vụ về nhà vào vở và hỏi lại phần chưa rõ.",
+        "Chuẩn bị: viết mạch rơ-le start/stop có tự giữ của động cơ để so sánh với Latching relay ở buổi sau.",
+        "Lên lịch thời điểm tự làm B2-t1 đến B2-t5 và ghi lại câu sai."
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "BẢN QUYỀN PHẦN MỀM: giáo trình mô tả cài V7 rồi nâng cấp lên V8.1 từ nguồn không rõ (có bước \"mở V7 bắt buộc\" không giải thích). Không làm theo. Dùng bộ cài LOGO!Soft Comfort V8.4 hợp lệ của nhà trường (mã đặt hàng Siemens 6ED1058-0BA08-0YA1, ghi nhận từ nguồn thương mại, cần xác nhận). Không dùng bản bẻ khóa; ảnh trong giáo trình là bản cũ (V5.0/V7/V8.1) nên giao diện V8.4 sẽ khác.",
+    "KIỂM TRA PHIÊN BẢN trước giờ dạy: Help > About trên mọi máy; bảo đảm cùng V8.4 (định dạng tệp V8.4 không mở ngược bằng V8.3, nguồn bên thứ ba, chưa xác minh). Kiểm tra chạy được trên Windows 10/11 của phòng máy và chọn đúng loại thiết bị theo nhãn kit (12/24RCE hay 230RCE).",
+    "SỐ NGÕ VÀO CỦA OR: giáo trình/rubric mô tả OR có 3 ngõ vào (I1, I2, X); LOGO! 8 có thể có 4 ngõ vào, khi đó còn hai X. Kiểm tra trên kit; bảng x của NAND = 1 lấy từ manual Siemens, giáo trình chỉ nêu AND, OR, NOR, XOR: xác nhận trên mô phỏng.",
+    "OFF-DELAY, KHÔNG KIỂM TRA MÉP: giáo trình tự mâu thuẫn (một câu nói Ta khởi động lại khi Trg xuống, câu khác nói cạnh lên Trg reset Ta). Bài dạy theo manual: Q = 1 khi Trg = 1, bắt đầu đếm ở cạnh Trg 1 sang 0, Q = 0 sau T, R reset. Các trường hợp chưa xác minh, cần chạy trên kit hoặc Simulation V8.4 trước khi khẳng định: (a) Trg lên lại khi đang đếm (bị hủy hay retrigger); (b) R = 1 trong khi Trg còn 1 và sau khi R về 0; (c) tham số Rem giữ Ta qua mất điện. KHÔNG dùng các tình huống này để chấm HS; câu hỏi và bài tự kiểm tra B2 chỉ dùng các hành vi đã thống nhất.",
+    "HIỂU LẦM CẦN BẮT QUA CÂU HỎI BẢN LỀ: (1) On-delay bị ngắt chỉ \"tạm dừng\" (B2-c4, t2); (2) AND cạnh giữ nhiều chu kỳ (B2-c3); (3) Off-delay đếm từ cạnh lên (B2-c5, t3); (4) ưu tiên S/R là ai đến trước (B2-c6); (5) x luôn bằng 0 hoặc hở là 0 (B2-c1, t1); (6) nhầm F5/F3 (B2-c9). Các hiểu lầm về Retentive on-delay, Weekly timer, Hour counter không nằm trong phạm vi buổi này.",
+    "AN TOÀN VÀ MODEL: ảnh sơ đồ nối trong giáo trình ghi LOGO! 12/24RC (nguồn DC) nhưng nối L1/N 230 V AC; xác nhận nhãn và nguồn từng kit trước khi cấp điện. Ngắt nguồn khi đấu S1, S2, tải; tải Q1 không vượt định mức (rơ-le 10 A tải trở, 3 A tải cảm; transistor tối đa 0,3 A). Thông số kit là giả định tới khi giáo viên xác nhận.",
+    "NỘI DUNG GIÁO TRÌNH THIẾU (mức đầy đủ 2/5): không có chọn model, truyền chương trình PC sang LOGO!, giám sát online, mục soạn thảo FBD trống; bài này không dạy phần đó. Nếu kit có cáp, có thể trình diễn truyền chương trình như phần mở rộng, không đưa vào đánh giá.",
+    "KIỂM TRA TRƯỚC GIỜ DẠY: dựng lại OR bằng phím và bằng LSC trên chính kit; chạy 4 widget trong trang bài; xác nhận câu truy hồi B1 khớp nội dung B1 đã soạn (mã model, relay và transistor). Widget chỉ minh họa, không thay lời giải lab; lời giải của LOGO-PRAC-2 chỉ ở bản giáo viên.",
+    "QUẢN LÝ THỜI GIAN: các bước i_do rất ngắn (6 đến 10 phút). Nếu chậm, bỏ bảng tra cứu s5 (chỉ nêu tên) hoặc rút bước we_do còn bước 1 đến 5 để giữ ít nhất 90 phút thực hành. Nếu thiếu kit, HS luân phiên: nhóm nhập OR trên LSC trước, nhóm khác dùng kit, rồi đổi.",
+    "MENU VÀ PHÍM (đã rà soát): bài viết theo LOGO! 8 — ESC mở menu chính; Program → Edit → Edit Prg; Setup → Clock → Set Clock. Tổ hợp ba phím trong giáo trình là cách của các đời LOGO! cũ. Chạy thử toàn bộ ví dụ B2-we1 trên kit trước giờ dạy và sửa tên mục menu nếu firmware khác."
+  ]
+}

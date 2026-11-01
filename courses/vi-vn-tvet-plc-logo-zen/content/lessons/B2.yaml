@@ -1,0 +1,821 @@
+{
+  "content_version": "tvet-content-1.0",
+  "lesson_id": "B2",
+  "status": "draft",
+  "authoring": {
+    "model_tier": "sonnet",
+    "date": "2026-11-01",
+    "source_notes": [
+      "source-notes/02-logo-instructions.md",
+      "source-notes/03-logo-software-labs.md",
+      "source-notes/05-hardware-software-facts.md"
+    ]
+  },
+  "summary": "Bài này giúp em đọc và dùng được các khối cơ bản của LOGO! (Co, BF và các hàm đặc biệt hay gặp), cài và dùng LOGO!Soft Comfort V8.4 để vẽ và mô phỏng chương trình FBD, rồi nhập đúng chương trình đó trực tiếp bằng phím trên LOGO!.",
+  "objectives": [
+    "Phân biệt ngõ vào, ngõ ra, bit nhớ, hằng hi/lo và đầu nối hở x, và nêu giá trị của x trong AND, OR.",
+    "Lập bảng chân trị cho AND, OR, NOT, NAND, NOR, XOR và phân biệt hàm theo mức với hàm theo cạnh.",
+    "Dự đoán ngõ ra của On-delay, Off-delay và Latching relay từ giản đồ thời gian của ngõ vào.",
+    "Chọn hàm đặc biệt phù hợp (Pulse relay, bộ phát xung, bộ đếm…) cho một yêu cầu đơn giản và tra bảng khi gặp hàm chưa học.",
+    "Tạo dự án FBD trong LOGO!Soft Comfort V8.4, nối khối bằng Connect (F5), mô phỏng bằng F3 và lưu.",
+    "Nhập chương trình OR trên phím LOGO! theo quy tắc từ ngõ ra về ngõ vào và nêu bốn nguyên tắc vàng."
+  ],
+  "sections": [
+    {
+      "id": "B2-s1",
+      "title": "Co: các đầu nối của LOGO!",
+      "items": [
+        "2.1"
+      ],
+      "body_md": "Mọi chương trình LOGO! được ghép từ ba nhóm khối trong thư viện: **Co** (đầu nối, Connectors), **BF** (hàm cơ bản, Basic Functions) và **SF** (hàm đặc biệt, Special Functions). Giáo trình có chỗ ghi nhầm \"GF\", đó là lỗi đánh máy của BF.\n\nNhóm **Co** là chỗ chương trình chạm vào thế giới thật: **I** là tín hiệu từ nút nhấn, cảm biến đi vào; **Q** là lệnh đi ra đóng rơ-le cho đèn, cuộn K. So với mạch rơ-le em đã học: nút S1 tương ứng I1, cuộn K1 hoặc đèn E1 tương ứng Q1, còn các dây nối giữa tiếp điểm và cuộn chính là các khối BF và SF.\n\nHai điểm hay gây lỗi nhất ở nhóm này:\n\n- **hi và lo** chỉ là hằng 1 và 0, nối cứng vào ngõ vào của khối khi cần ép mức.\n- **x** là đầu nối hở (không dùng). LOGO! tự gán cho x một giá trị sao cho *không làm đổi kết quả của khối*: với **AND** và **NAND** thì x = 1, với **OR**, **NOR**, **XOR** thì x = 0. Vì vậy ngõ vào không dùng của OR phải ghi x, không phải để trống.\n\nKit mẫu của lớp (giả định LOGO! 12/24RCE) có ngõ vào I1 đến I8 và 4 ngõ ra rơ-le Q1 đến Q4; lắp thêm module DM8 thì có tổng 8 ngõ ra. Hãy đọc nhãn trên kit của nhóm trước khi nối dây.",
+      "table": {
+        "caption": "Các đầu nối (Co) dùng trong mô đun",
+        "columns": [
+          "Ký hiệu",
+          "Ý nghĩa",
+          "Ghi chú"
+        ],
+        "rows": [
+          [
+            "I1, I2, …",
+            "Ngõ vào số (nút nhấn, công tắc, cảm biến)",
+            "Số lượng tùy model; kit mẫu có I1 đến I8"
+          ],
+          [
+            "Q1, Q2, …",
+            "Ngõ ra số (đóng rơ-le cho tải)",
+            "Kit cơ sở 4 ngõ ra; thêm DM8 thành 8"
+          ],
+          [
+            "M1, M2, …",
+            "Bit nhớ trung gian",
+            "Giữ kết quả giữa chừng để dùng lại ở nhiều chỗ"
+          ],
+          [
+            "M8",
+            "Cờ khởi động (Start-up flag)",
+            "Bằng 1 trong chu kỳ quét đầu tiên, sau đó bằng 0 (theo giáo trình)"
+          ],
+          [
+            "hi / lo",
+            "Hằng mức 1 / mức 0",
+            "Dùng để ép một ngõ vào của khối ở mức cố định"
+          ],
+          [
+            "x",
+            "Đầu nối hở (không dùng)",
+            "AND, NAND: x = 1; OR, NOR, XOR: x = 0"
+          ],
+          [
+            "AI, AQ",
+            "Ngõ vào / ngõ ra tương tự (analog)",
+            "Chưa học trong bài này"
+          ]
+        ]
+      },
+      "checks": [
+        {
+          "id": "B2-c1",
+          "kind": "mcq",
+          "prompt": "Khối AND có 3 ngõ vào. I1 = 1, I2 = 1, ngõ vào thứ ba để hở (x). Ngõ ra khối AND bằng bao nhiêu?",
+          "options": [
+            "0, vì ngõ vào hở nghĩa là không có tín hiệu nên coi như 0",
+            "1, vì với AND thì x = 1 nên không làm đổi kết quả",
+            "Không xác định, LOGO! báo lỗi khi còn ngõ vào hở"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Đây là suy nghĩ \"hở = 0\" hay gặp. LOGO! gán x theo từng loại khối: với AND thì x = 1, nếu hở = 0 thì AND không bao giờ bật được.",
+            "Đúng. x của AND bằng 1 nên chỉ I1 và I2 quyết định ngõ ra: 1 AND 1 = 1. Với OR thì ngược lại, x = 0.",
+            "Sai. Chương trình vẫn hợp lệ: ngõ vào không dùng được coi là x và có giá trị mặc định tùy khối."
+          ],
+          "misconception": "Ngõ vào hở luôn bằng 0"
+        }
+      ]
+    },
+    {
+      "id": "B2-s2",
+      "title": "BF: AND, OR, NOT, NAND, NOR, XOR và hàm theo cạnh",
+      "items": [
+        "2.1"
+      ],
+      "body_md": "BF là các hàm logic không có trí nhớ: ngõ ra chỉ phụ thuộc giá trị các ngõ vào ở thời điểm hiện tại. Từ mạch rơ-le em đã biết, ánh xạ nhanh như sau: **tiếp điểm nối tiếp = AND**, **tiếp điểm song song = OR**, **tiếp điểm thường đóng = NOT** (đảo mức). Ví dụ của bài này: hai nút S1 song song điều khiển một đèn chính là OR.\n\n- **AND**: Q = 1 khi *tất cả* ngõ vào bằng 1 (tối đa 4 ngõ vào). Dùng cho điều kiện đồng thời, ví dụ nút Start và cảm biến an toàn.\n- **OR**: Q = 1 khi *ít nhất một* ngõ vào bằng 1. Dùng cho hai nút nhấn song song.\n- **NOT**: Q là đảo của ngõ vào. Dùng để đảo tiếp điểm thường đóng.\n- **NAND**: ngược với AND, Q = 0 chỉ khi tất cả bằng 1.\n- **NOR**: Q = 1 chỉ khi tất cả bằng 0. Dùng cho \"cho phép chạy khi không có tín hiệu dừng nào\".\n- **XOR**: Q = 1 khi hai ngõ vào *khác nhau*. Dùng cho công tắc hai vị trí.\n\n**Mức và cạnh.** Các hàm ở trên làm việc theo *mức*: Q giữ nguyên chừng nào tổ hợp ngõ vào còn giữ nguyên. Riêng AND và NAND còn có phiên bản **theo cạnh** (edge): ngõ ra chỉ bằng 1 đúng *một chu kỳ quét* tại thời điểm điều kiện vừa xuất hiện (AND cạnh: tổ hợp vừa chuyển từ không đủ sang đủ cả 1; NAND cạnh: tổ hợp vừa chuyển từ cả 1 sang có ít nhất một ngõ vào về 0). Dùng để đếm đúng một lần cho mỗi lần nhấn hay mỗi lần vật đi qua.\n\nThử ngay: trong mô phỏng bên dưới, nhấn giữ S1, nhả S1, rồi bật công tắc S2 và quan sát giản đồ thời gian. Mô phỏng này chỉ minh họa khối OR; việc em tự làm trong phần mềm và trên kit ở phần thực hành.",
+      "table": {
+        "caption": "Bảng chân trị của các BF hai ngõ vào (mức, không xét cạnh)",
+        "columns": [
+          "I1",
+          "I2",
+          "AND",
+          "OR",
+          "NAND",
+          "NOR",
+          "XOR"
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "1",
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "widget": {
+        "kind": "logic-sim",
+        "title": "Khối OR: S1 song song S2 điều khiển Q1",
+        "spec": {
+          "inputs": [
+            {
+              "id": "I1",
+              "label": "S1 – nút nhấn (giữ để đóng)",
+              "mode": "momentary"
+            },
+            {
+              "id": "I2",
+              "label": "S2 – công tắc gạt",
+              "mode": "toggle"
+            }
+          ],
+          "blocks": [
+            {
+              "id": "B001",
+              "type": "OR",
+              "in": [
+                "I1",
+                "I2"
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "Q1",
+              "label": "Q1 – đèn E1 / cuộn K1",
+              "from": "B001"
+            }
+          ],
+          "chart": [
+            "I1",
+            "I2",
+            "Q1"
+          ]
+        }
+      },
+      "checks": [
+        {
+          "id": "B2-c2",
+          "kind": "mcq",
+          "prompt": "Cần Q1 = 1 chỉ khi cả I1 (nút dừng 1) và I2 (nút dừng 2) đều không có tín hiệu, tức bằng 0. Dùng khối BF nào?",
+          "options": [
+            "NAND, vì NAND là phủ định của AND nên cho 1 khi không có tín hiệu",
+            "XOR, vì XOR cho 1 khi hai ngõ vào giống nhau",
+            "NOR, vì Q = 1 chỉ khi tất cả ngõ vào bằng 0",
+            "OR, vì OR kiểm tra các ngõ vào"
+          ],
+          "answer": 2,
+          "feedback": [
+            "Sai. NAND chỉ cho 0 khi tất cả bằng 1; với (0, 1) NAND vẫn cho 1, trong khi yêu cầu cần 0.",
+            "Sai. XOR cho 1 khi hai ngõ vào *khác nhau*, không phải khi giống nhau; (1, 1) cho 0 nhưng (0, 1) cho 1.",
+            "Đúng. NOR = NOT(OR): chỉ bằng 1 khi mọi ngõ vào bằng 0.",
+            "Sai. OR cho 1 khi *có ít nhất một* ngõ vào bằng 1, ngược với yêu cầu."
+          ],
+          "misconception": "Nhầm NAND/NOR/XOR với nhau"
+        },
+        {
+          "id": "B2-c3",
+          "kind": "mcq",
+          "prompt": "Khối AND theo cạnh có 4 ngõ vào đều được giữ ở mức 1 liên tục trong 5 giây. Ngõ ra Q bằng 1 trong bao lâu?",
+          "options": [
+            "Suốt 5 giây, vì tất cả ngõ vào đều bằng 1",
+            "Đúng một chu kỳ quét, tại lúc tổ hợp vừa chuyển lên đủ 1",
+            "Không lúc nào bằng 1, vì cạnh chỉ xuất hiện khi ngõ vào về 0"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Đó là hành vi của AND theo *mức*. Bản theo cạnh chỉ cho xung đúng một chu kỳ quét.",
+            "Đúng. Q = 1 một chu kỳ quét khi điều kiện vừa xuất hiện (cạnh lên), sau đó về 0 dù ngõ vào còn giữ 1.",
+            "Sai. Cạnh ở đây là lúc tổ hợp chuyển từ chưa đủ lên đủ 1, nên vẫn có xung ở đầu 5 giây."
+          ],
+          "misconception": "AND theo cạnh giữ ngõ ra nhiều chu kỳ"
+        }
+      ]
+    },
+    {
+      "id": "B2-s3",
+      "title": "SF định thời: On-delay và Off-delay",
+      "items": [
+        "2.1"
+      ],
+      "body_md": "Khác BF, các **hàm đặc biệt (SF)** có *trí nhớ* và thường có tham số. Hai hàm định thời dưới đây là nền của bài đèn giao thông, cửa tự động và băng tải ở các buổi sau. Chung các ký hiệu: **Trg** (Trigger) là ngõ vào kích, **T** là thời gian đặt, **Ta** là thời gian đã đếm, **Q** là ngõ ra, **R** (Reset) xóa hàm.\n\n**On-delay (trễ khi bật).** Cạnh lên của Trg (0 sang 1) bắt đầu đếm Ta. Nếu Trg còn bằng 1 khi Ta chạm T thì Q = 1. Nếu Trg về 0 *trước khi* Ta đạt T thì Ta bị reset về 0 và Q vẫn bằng 0. Hãy nhớ: On-delay *không tạm dừng* mà *làm lại từ đầu*. Dùng khi cần \"giữ nút đủ lâu mới chạy\" hoặc chuyển Y sang Δ sau T giây.\n\n**Off-delay (trễ khi tắt).** Q = 1 ngay khi Trg = 1. Thời gian đếm bắt đầu ở *cạnh xuống* của Trg (1 sang 0); khi Ta chạm T thì Q = 0. Ngõ vào R, nếu bằng 1, xóa ngay Q và Ta. Dùng khi cần \"nhả nút rồi vẫn chạy thêm T giây\", ví dụ đèn hành lang, băng tải chạy nốt hàng.\n\n**Rem** (Retentivity) là tham số giữ trạng thái của hàm khi mất nguồn; không liên quan đến việc Trg bị ngắt tạm thời.\n\nTrong mô phỏng, hai khối cùng nhận I1 với T = 3 giây. Hãy: (1) giữ I1 chưa đầy 3 giây rồi nhả, xem Q1 (On-delay) và Q2 (Off-delay); (2) giữ I1 hơn 3 giây rồi nhả; (3) đoán trước giản đồ rồi mới thử. Giáo trình mô tả Off-delay chưa nhất quán khi Trg lên lại giữa lúc đang đếm; em chỉ cần thử và ghi lại quan sát trên phần mềm, chưa coi đó là quy tắc.",
+      "widget": {
+        "kind": "logic-sim",
+        "title": "So sánh On-delay và Off-delay (cùng T = 3 s)",
+        "spec": {
+          "inputs": [
+            {
+              "id": "I1",
+              "label": "Trg – nút nhấn (giữ để đóng)",
+              "mode": "momentary"
+            }
+          ],
+          "blocks": [
+            {
+              "id": "B001",
+              "type": "ONDELAY",
+              "in": [
+                "I1"
+              ],
+              "T": 3
+            },
+            {
+              "id": "B002",
+              "type": "OFFDELAY",
+              "in": [
+                "I1"
+              ],
+              "T": 3
+            }
+          ],
+          "outputs": [
+            {
+              "id": "Q1",
+              "label": "Q1 – từ On-delay",
+              "from": "B001"
+            },
+            {
+              "id": "Q2",
+              "label": "Q2 – từ Off-delay",
+              "from": "B002"
+            }
+          ],
+          "chart": [
+            "I1",
+            "Q1",
+            "Q2"
+          ]
+        }
+      },
+      "checks": [
+        {
+          "id": "B2-c4",
+          "kind": "mcq",
+          "prompt": "On-delay T = 10 s. Trg = 1 trong 6 s, rồi Trg = 0 trong 1 s, rồi Trg = 1 trở lại và giữ. Q bật sau bao lâu tính từ lần Trg lên thứ hai?",
+          "options": [
+            "Sau 4 s, vì timer chỉ tạm dừng rồi đếm tiếp phần còn lại",
+            "Sau 10 s, vì Ta bị reset khi Trg về 0 nên đếm lại từ đầu",
+            "Không bao giờ bật, vì Trg đã từng bị ngắt"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Đây là hiểu lầm \"timer tạm dừng\". On-delay không nhớ phần đã đếm khi Trg xuống.",
+            "Đúng. Trg về 0 trước khi Ta đạt T thì Ta reset; lần lên thứ hai đếm lại đủ 10 s.",
+            "Sai. Trg lên lại là cạnh lên mới nên khối bắt đầu một lần đếm mới."
+          ],
+          "misconception": "Trg ngắt tạm thời chỉ làm timer tạm dừng"
+        },
+        {
+          "id": "B2-c5",
+          "kind": "mcq",
+          "prompt": "Off-delay T = 5 s. Trg lên 1 lúc 0 s và xuống 0 lúc 2 s (không có R). Q về 0 vào thời điểm nào?",
+          "options": [
+            "Lúc 5 s, vì đếm từ lúc Trg lên",
+            "Lúc 7 s, vì đếm T từ lúc Trg xuống",
+            "Lúc 2 s, vì Q theo Trg"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Với Off-delay, thời gian không đếm từ cạnh lên. Lúc 5 s Trg đã xuống được 3 s, Q vẫn còn 1.",
+            "Đúng. Cạnh xuống ở 2 s bắt đầu đếm 5 s nên Q về 0 lúc 7 s; trước đó Q = 1 từ 0 s.",
+            "Sai. Nếu Q theo Trg thì không cần Off-delay; hàm này giữ Q thêm T giây sau khi Trg xuống."
+          ],
+          "misconception": "Off-delay đếm từ cạnh lên"
+        }
+      ]
+    },
+    {
+      "id": "B2-s4",
+      "title": "SF nhớ, xung và đếm: Latching relay, Pulse relay, bộ phát xung, bộ đếm",
+      "items": [
+        "2.1"
+      ],
+      "body_md": "Bốn hàm còn lại trong nhóm \"cần cho các lab sắp tới\" đều dễ hiểu nếu em hỏi: *nó nhớ gì, và khi nào nó đổi trạng thái?*\n\n- **Latching relay (RS)**: S đặt Q lên 1 và Q *giữ* 1 sau khi S nhả; R đưa Q về 0. Nếu S = R = 1 cùng lúc thì **R thắng** (Q = 0). Đây là cách \"tự giữ\" bằng một khối, thay cho tiếp điểm tự giữ của mạch rơ-le. Quy tắc ưu tiên là *R thắng khi cả hai cùng bằng 1*, không phải \"ai đến trước thắng\".\n- **Pulse relay**: mỗi *cạnh lên* của Trg đảo trạng thái Q (bật rồi tắt, rồi bật…): một nút nhấn làm công tắc bật/tắt luân phiên. S = 1 ép Q = 1, R = 1 ép Q = 0, và khi S hoặc R đang bằng 1 thì Trg bị bỏ qua. Tham số cho biết R hay S ưu tiên khi cả hai cùng bằng 1.\n- **Asynchronous pulse generator**: khi En = 1, Q lặp lại: bật trong TH, tắt trong TL; INV = 1 đảo pha. Dùng cho đèn nhấp nháy. Giáo trình không nêu Q khi En = 0, hãy quan sát trên mô phỏng.\n- **Up/down counter**: mỗi cạnh lên ở Cnt đếm thêm 1 (Dir = 0 đếm lên, Dir = 1 đếm xuống), R = 1 đưa bộ đếm về 0. Hai ngưỡng On và Off quyết định Q; trong bài này hãy đặt On = Off = số cần báo, khi đó Q = 1 từ lúc đếm đạt số đó. Cảm biến đứng yên ở mức 1 chỉ tính là *một* lần đếm vì chỉ cạnh lên mới được đếm.\n\nMô phỏng dưới đây chỉ minh họa Latching relay với nhãn S và R chung chung. Hãy thử: bấm S rồi nhả, bấm R rồi nhả, rồi giữ cả hai cùng lúc.",
+      "table": {
+        "caption": "Tóm tắt các SF dùng cho các lab sắp tới",
+        "columns": [
+          "Hàm (EN)",
+          "Ngõ vào",
+          "Tham số",
+          "Hành vi chính",
+          "Ví dụ dùng"
+        ],
+        "rows": [
+          [
+            "On-delay",
+            "Trg",
+            "T, Rem",
+            "Trg lên và giữ đủ T thì Q = 1; Trg xuống sớm thì reset, Q = 0",
+            "Chuyển Y sang Δ sau T giây"
+          ],
+          [
+            "Off-delay",
+            "Trg, R",
+            "T, Rem",
+            "Q = 1 khi Trg = 1; đếm T từ cạnh xuống của Trg rồi Q = 0; R xóa ngay",
+            "Đèn hành lang, băng tải chạy thêm"
+          ],
+          [
+            "Latching relay (RS)",
+            "S, R",
+            "(không)",
+            "S đặt Q = 1 và giữ; R đặt Q = 0; S = R = 1 thì Q = 0 (R ưu tiên)",
+            "Tự giữ, dừng ưu tiên"
+          ],
+          [
+            "Pulse relay",
+            "Trg, S, R",
+            "Chọn R hoặc S ưu tiên",
+            "Mỗi cạnh lên Trg đảo Q; S = 1 thì Q = 1; R = 1 thì Q = 0",
+            "Một nút bật/tắt luân phiên"
+          ],
+          [
+            "Asynchronous pulse generator",
+            "En, INV",
+            "TH, TL",
+            "En = 1: Q bật TH rồi tắt TL, lặp lại; INV = 1 đảo pha",
+            "Đèn nhấp nháy"
+          ],
+          [
+            "Up/down counter",
+            "R, Cnt, Dir",
+            "On, Off",
+            "Mỗi cạnh lên Cnt đếm ±1 (Dir = 0 lên, 1 xuống); R về 0; Q theo ngưỡng On/Off",
+            "Đếm sản phẩm, báo đủ số"
+          ]
+        ]
+      },
+      "widget": {
+        "kind": "logic-sim",
+        "title": "Latching relay: R ưu tiên hơn S",
+        "spec": {
+          "inputs": [
+            {
+              "id": "I1",
+              "label": "S – đặt (set), nhấn giữ",
+              "mode": "momentary"
+            },
+            {
+              "id": "I2",
+              "label": "R – xóa (reset), nhấn giữ",
+              "mode": "momentary"
+            }
+          ],
+          "blocks": [
+            {
+              "id": "B001",
+              "type": "RS",
+              "S": "I1",
+              "R": "I2"
+            }
+          ],
+          "outputs": [
+            {
+              "id": "Q1",
+              "label": "Q1 – ngõ ra của Latching relay",
+              "from": "B001"
+            }
+          ],
+          "chart": [
+            "I1",
+            "I2",
+            "Q1"
+          ]
+        }
+      },
+      "checks": [
+        {
+          "id": "B2-c6",
+          "kind": "mcq",
+          "prompt": "Latching relay có S = 1 và R = 1 cùng lúc. Ngõ ra Q bằng bao nhiêu và vì sao?",
+          "options": [
+            "Q = 1, vì S được nhấn trước nên S thắng",
+            "Q = 1, vì S đặt Q lên 1 và R chỉ có tác dụng khi S đã nhả",
+            "Q = 0, vì R luôn ưu tiên hơn S",
+            "Giữ nguyên trạng thái trước đó"
+          ],
+          "answer": 2,
+          "feedback": [
+            "Sai. Hàm không quan tâm ai đến trước; chỉ xét giá trị ngõ vào ở thời điểm hiện tại.",
+            "Sai. R không phải chờ S nhả: khi S = R = 1 thì R thắng.",
+            "Đúng. Latching relay: S = R = 1 thì Q = 0 (R ưu tiên), nên nút dừng luôn thắng nút khởi động.",
+            "Sai. Trạng thái không \"giữ nguyên\"; khi cả hai bằng 1 kết quả đã xác định là 0."
+          ],
+          "misconception": "Ưu tiên S/R là ai đến trước thắng"
+        },
+        {
+          "id": "B2-c7",
+          "kind": "mcq",
+          "prompt": "Một nút nhấn duy nhất, nhấn lần 1 thì bật đèn, nhấn lần 2 thì tắt đèn. Hàm nào phù hợp nhất?",
+          "options": [
+            "Pulse relay, vì mỗi cạnh lên của Trg đảo Q",
+            "Latching relay, vì S đặt Q còn nhả nút thì Q vẫn giữ",
+            "On-delay, vì cần phân biệt hai lần nhấn bằng thời gian",
+            "Asynchronous pulse generator, vì nó tạo xung bật/tắt"
+          ],
+          "answer": 0,
+          "feedback": [
+            "Đúng. Pulse relay đảo trạng thái ở mỗi cạnh lên của Trg nên chỉ cần một nút.",
+            "Sai. Latching relay cần hai ngõ vào riêng cho S và R; với một nút thì nhấn lần hai vẫn chỉ đặt S, không tắt được.",
+            "Sai. On-delay chỉ trễ việc bật, không nhớ số lần nhấn.",
+            "Sai. Bộ phát xung tự lặp bật/tắt theo thời gian khi En = 1, không đảo theo số lần nhấn."
+          ],
+          "misconception": "Nhầm tên \"pulse\" của các hàm"
+        }
+      ]
+    },
+    {
+      "id": "B2-s5",
+      "title": "Các SF còn lại: tra cứu khi cần",
+      "items": [
+        "2.1"
+      ],
+      "body_md": "Thư viện SF của LOGO! còn nhiều hàm khác. Em *chưa phải học thuộc* chúng trong bài này: chỉ cần biết chúng tồn tại và biết tìm. Khi gặp một yêu cầu mới, hãy đọc cột \"Khi nào cần\", chọn một hàm, rồi **mở bảng tham số và mô phỏng** để kiểm tra hành vi trước khi dùng.\n\nMẹo đọc một SF lạ: (1) tìm ngõ vào kích (Trg, En, Cnt), (2) tìm ngõ vào xóa (R), (3) xem tham số thời gian hay ngưỡng, (4) vẽ giản đồ thời gian bằng tay cho một tình huống rồi so với mô phỏng.",
+      "table": {
+        "caption": "Các SF khác (tra cứu khi cần; chưa học sâu)",
+        "columns": [
+          "Hàm",
+          "Một dòng mô tả",
+          "Khi nào cần"
+        ],
+        "rows": [
+          [
+            "On/Off-delay",
+            "Trễ khi bật (TH) và trễ khi tắt (TL) trên cùng một khối",
+            "Lọc cảm biến có nhiễu hai chiều"
+          ],
+          [
+            "Retentive on-delay",
+            "Đếm khi Trg lên, Q giữ 1 cho đến khi R reset",
+            "Báo động phải reset tay"
+          ],
+          [
+            "Wiping relay",
+            "Trg lên thì Q = 1 ngay và tự tắt sau tối đa T",
+            "Còi hay đèn báo kéo dài đúng T giây"
+          ],
+          [
+            "Edge triggered wiping relay",
+            "Mỗi cạnh lên Trg tạo chuỗi N xung với TL, TH",
+            "Phát N xung sau một lệnh"
+          ],
+          [
+            "Random generator",
+            "Bật hoặc tắt sau thời gian trễ ngẫu nhiên",
+            "Mô phỏng có người ở nhà"
+          ],
+          [
+            "Staircase lighting switch",
+            "Bật ngay, tắt sau T khi Trg xuống, có cảnh báo nhấp nháy trước khi tắt",
+            "Đèn hành lang tự tắt"
+          ],
+          [
+            "Multiple function switch",
+            "Một nút: nhấn ngắn thì sáng rồi tự tắt; giữ lâu thì sáng liên tục",
+            "Đèn một nút hai chế độ"
+          ],
+          [
+            "Weekly timer, Yearly timer",
+            "Lịch bật/tắt theo ngày giờ trong tuần, theo ngày trong năm",
+            "Chiếu sáng, tưới theo lịch"
+          ],
+          [
+            "Hour counter",
+            "Đếm giờ chạy và báo khi đến mốc",
+            "Nhắc bảo dưỡng"
+          ],
+          [
+            "Analog, thông báo, thanh ghi dịch bit…",
+            "Xử lý tín hiệu tương tự, hiển thị chữ, dịch bit",
+            "Chưa dùng trong mô đun này"
+          ]
+        ]
+      },
+      "checks": [
+        {
+          "id": "B2-c8",
+          "kind": "mcq",
+          "prompt": "Theo bảng tra cứu, em cần một đèn báo bật ngay khi nhấn nút và *tự tắt sau tối đa T giây dù nút vẫn bị giữ*. Hàm nào khớp nhất?",
+          "options": [
+            "Off-delay, vì Off-delay chỉ tắt sau khi nút được nhả",
+            "Wiping relay, vì Q là xung dài tối đa T kể từ khi Trg lên",
+            "Latching relay, vì nó giữ Q cho đến khi có R"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Off-delay đếm T từ lúc Trg xuống; nếu nút bị giữ thì Q không bao giờ tắt.",
+            "Đúng. Wiping relay: Trg lên thì Q = 1 ngay và Q = 0 khi hết T (hoặc khi Trg xuống sớm hơn).",
+            "Sai. Latching relay không có thời gian; Q chỉ tắt khi R = 1."
+          ],
+          "misconception": "Chọn Off-delay cho mọi yêu cầu \"tắt trễ\""
+        }
+      ]
+    },
+    {
+      "id": "B2-s6",
+      "title": "Cài đặt và sử dụng LOGO!Soft Comfort V8.4",
+      "items": [
+        "2.2"
+      ],
+      "body_md": "**LOGO!Soft Comfort** (LSC) là phần mềm trên máy tính để vẽ chương trình, mô phỏng và sau đó nạp xuống LOGO!. Lớp dùng **V8.4** ngôn ngữ **FBD** (sơ đồ khối chức năng), trên Windows 10 hoặc 11.\n\n**Cài đặt.** Chỉ cài từ bộ cài **hợp lệ do nhà trường cung cấp**, không tải bản không rõ nguồn hay bản bẻ khóa. Chạy tệp cài đặt, chọn ngôn ngữ, chấp nhận điều khoản bản quyền, chọn nhóm chương trình và thư mục, bấm Install rồi Finish. Giáo trình mô tả cài V7 rồi nâng cấp lên V8.1; lớp dùng bộ cài V8.4 nên làm theo hướng dẫn của giáo viên, không theo ảnh trong giáo trình.\n\n**Sử dụng.**\n\n1. Khởi động từ Start, nhóm Siemens, LOGO!Soft Comfort. Kiểm tra phiên bản ở Help, About.\n2. File, New: chọn **FBD**, chọn *loại thiết bị đúng với nhãn trên kit* (ví dụ LOGO! 12/24RCE), điền tên dự án và người tạo, bấm OK.\n3. Soạn: nhấp đúp hoặc kéo-thả khối từ thư viện bên trái (nhóm **Co**, **BF**, **SF**) vào vùng soạn thảo.\n4. Nối khối bằng công cụ **Connect (F5)**: kéo từ ngõ ra của một khối đến ngõ vào của khối khác. Nhớ quy tắc: một ngõ ra nối được nhiều ngõ vào, nhưng không nối nhiều ngõ ra vào cùng một ngõ vào.\n5. Mô phỏng: **Tools, Simulation (F3)**. Đóng/mở các công tắc ảo ở ngõ vào, quan sát ngõ ra và giản đồ.\n6. Lưu: File, Save (hoặc Save as). Mở lại: File, Open.\n\nHai phím dễ nhầm: **F5 để nối dây (Connect)**, **F3 để chạy mô phỏng (Simulation)**. Phần truyền chương trình từ máy xuống LOGO! và giám sát khi chạy thật không thuộc bài này; giáo viên sẽ hướng dẫn ở buổi sau nếu kit có cáp.",
+      "checks": [
+        {
+          "id": "B2-c9",
+          "kind": "mcq",
+          "prompt": "Em đã vẽ xong sơ đồ OR trong LSC và muốn xem Q1 thay đổi thế nào khi đóng/mở S1, S2 mà chưa cần kit. Em làm gì?",
+          "options": [
+            "Bấm F5 (Connect) để chương trình chạy thử",
+            "Bấm F3 (Simulation) rồi đóng/mở các công tắc ảo ở ngõ vào",
+            "Chỉ cần lưu file, LSC tự cập nhật trạng thái ngõ ra"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. F5 chọn công cụ nối dây giữa các khối, không chạy chương trình.",
+            "Đúng. Simulation (F3) cho phép bật/tắt ngõ vào ảo và xem ngõ ra trước khi chạy trên kit.",
+            "Sai. Lưu file chỉ ghi dự án; không mô phỏng được nếu chưa vào chế độ Simulation."
+          ],
+          "misconception": "Nhầm Connect (F5) với Simulation (F3)"
+        }
+      ]
+    },
+    {
+      "id": "B2-s7",
+      "title": "Lập trình trực tiếp trên LOGO! bằng phím",
+      "items": [
+        "2.3"
+      ],
+      "body_md": "LOGO! có màn hình và các phím: **bốn phím mũi tên** (trái, phải, lên, xuống), **ESC** và **OK**. Chương trình có thể nhập thẳng bằng phím mà không cần máy tính. Các bước dưới đây theo giáo trình; ký hiệu phím trong giáo trình bị mất khi in nên giáo viên sẽ chỉ ra tổ hợp phím đúng trên kit của lớp (kit đời LOGO! 8 có thể khác mô tả ở chi tiết menu).\n\n**Vào menu.** Cấp nguồn. Trên LOGO! 8 (kit của lớp), khi chưa có chương trình màn hình hiện \"No Program / Press ESC\": nhấn **ESC** để vào menu chính (Start/Stop, Program, Setup, Card…). Khi LOGO! đang chạy, nhấn ESC cũng mở menu. Giáo trình mô tả cách vào menu bằng *tổ hợp ba phím* (mũi tên và OK) cùng menu Program, PC/Card, Clock, Start: đó là cách của các đời LOGO! cũ; nếu kit của nhóm là đời cũ thì làm theo giáo trình.\n\n**Đặt đồng hồ (Set Clock).** Trên LOGO! 8: Setup → Clock → Set Clock (đời cũ: mục Clock ở menu chính). Vào Set Clock, chọn thứ trong tuần (SU, MO, TU, WE, TH, FR, SA) bằng phím mũi tên rồi OK, chỉnh giờ hh.mm bằng phím mũi tên rồi OK, kết thúc bằng OK.\n\n**Xóa chương trình (Clear Prg).** Program, Clear Prg, OK, chọn YES để xóa hoặc NO để hủy, rồi OK. Làm bước này trước khi nhập chương trình mới để khỏi lẫn khối cũ.\n\n**Nhập chương trình (Edit Prg).** Program → Edit → Edit Prg, OK (đời cũ: Program → Edit Prg); màn hình hiện Q1 (phím lên/xuống đổi sang Q2, Q3…). *Lập trình từ ngõ ra về phía ngõ vào*, tức từ phải sang trái so với sơ đồ. Con trỏ gạch chân dùng để di chuyển; nhấn OK thì con trỏ thành khối đậm nhấp nháy để chọn. Chọn nhóm Co, BF hoặc SF, chọn khối; LOGO! đánh số khối B01, B02… Rồi lần lượt nối từng ngõ vào của khối đó với một Co (ví dụ I1) hoặc khối khác. Ngõ vào không dùng ghi **X**. Xong thì nhấn OK để chốt, dùng phím mũi tên duyệt lại cấu trúc.\n\n**Chạy (Start).** Nhấn ESC (hai lần nếu cần) để về menu chính, chọn Start, OK; LOGO! vào chế độ Run và hiển thị trạng thái ngõ vào/ngõ ra.\n\n**Bốn nguyên tắc vàng.**\n\n1. Biết cách vào menu trên đúng đời thiết bị: LOGO! 8 dùng ESC; đời cũ dùng tổ hợp ba phím (giáo trình). Chỉnh thông số khi đang chạy cũng đi qua menu.\n2. Lập trình từ ngõ ra đến ngõ vào; một ngõ ra nối được nhiều ngõ vào, *không* nối nhiều ngõ ra vào một ngõ vào.\n3. Con trỏ gạch chân là di chuyển, OK là chọn, ESC là thoát hoặc lùi một bước; con trỏ khối đậm là đang chọn khối hay đầu nối.\n4. LOGO! chỉ lưu chương trình đã hoàn tất, nên hoàn tất chương trình trước khi thoát.\n\n**Ví dụ OR (S1 song song S2 điều khiển Q1).** Mạch rơ-le có hai nút S1 và S2 mắc song song đóng điện cho đèn E1 (hoặc cuộn K1). Trên LOGO!, S1 nối I1, S2 nối I2, đèn nối Q1, và logic là một khối OR có ngõ vào I1, I2, ngõ vào thứ ba ghi X. Em sẽ xem giáo viên làm mẫu từng bước trong ví dụ có lời giải, rồi tự làm ở phần thực hành.",
+      "checks": [
+        {
+          "id": "B2-c10",
+          "kind": "mcq",
+          "prompt": "Em muốn nhập Q1 = OR(I1, I2) trên phím LOGO!. Thứ tự nào đúng?",
+          "options": [
+            "Chọn I1 và I2 trước, sau đó chọn khối OR và nối đầu ra của OR tới Q1",
+            "Bắt đầu ở Q1, chọn khối OR (nhóm BF), rồi gán ngõ vào 1 = I1, ngõ vào 2 = I2, ngõ vào còn lại = X",
+            "Bắt đầu ở Q1, chọn I1 trước rồi mới chọn khối OR"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Đó là thứ tự vẽ từ ngõ vào sang ngõ ra như trên phần mềm; trên LOGO! phải đi từ ngõ ra về ngõ vào.",
+            "Đúng. Mỗi khối mới được tạo ở vị trí ngõ vào của khối đang xét, nên phải có OR trước rồi mới gán các ngõ vào của nó.",
+            "Sai. Q1 chỉ nhận một khối (hoặc Co) nối vào; I1 phải gán vào ngõ vào của khối OR sau khi khối OR đã tồn tại."
+          ],
+          "misconception": "Lập trình từ ngõ vào sang ngõ ra"
+        },
+        {
+          "id": "B2-c11",
+          "kind": "mcq",
+          "prompt": "Phát biểu nào về quy tắc nối khi lập trình LOGO! là đúng?",
+          "options": [
+            "Một ngõ ra chỉ được nối vào đúng một ngõ vào",
+            "Nhiều ngõ ra được nối chung vào một ngõ vào để tạo hàm OR",
+            "Một ngõ ra có thể nối vào nhiều ngõ vào, nhưng không nối nhiều ngõ ra vào cùng một ngõ vào"
+          ],
+          "answer": 2,
+          "feedback": [
+            "Sai. Một ngõ ra (ví dụ I1) có thể cấp cho nhiều khối cùng lúc.",
+            "Sai. Muốn OR thì dùng khối OR; không được chập nhiều ngõ ra vào một ngõ vào.",
+            "Đúng. Đây là nguyên tắc vàng số 2. Nhiều ngõ ra vào một ngõ vào sẽ không rõ giá trị, vì vậy bị cấm."
+          ],
+          "misconception": "Nối chung nhiều ngõ ra vào một ngõ vào"
+        }
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "B2-we1",
+      "title": "Nhập chương trình OR (S1 song song S2 điều khiển Q1) bằng phím trên LOGO!",
+      "problem": "Mạch rơ-le có hai nút nhấn S1 và S2 mắc song song điều khiển đèn E1. Hãy nhập chương trình tương đương lên LOGO! bằng phím: S1 vào I1, S2 vào I2, đèn vào Q1, dùng khối OR.",
+      "fading": "full",
+      "steps": [
+        {
+          "text": "An toàn trước: ngắt nguồn LOGO!, đấu S1 vào I1, S2 vào I2 và tải vào Q1, nhờ giáo viên kiểm tra rồi mới cấp nguồn. Lý do: đấu dây khi có điện dễ chạm và làm hỏng ngõ vào."
+        },
+        {
+          "text": "Cấp nguồn. Nếu màn hình hiện \"No Program / Press ESC\" thì nhấn ESC để mở menu chính."
+        },
+        {
+          "text": "Trên LOGO! 8, menu chính có Start/Stop, Program, Setup, Card. (Đời cũ: nhấn đồng thời tổ hợp ba phím theo giáo trình, menu Program, PC/Card, Clock, Start.) Lý do: phải biết mình đang ở menu nào trước khi chọn."
+        },
+        {
+          "text": "Dùng phím mũi tên đưa dấu \">\" tới Program, nhấn OK. Chọn Clear Prg, OK, chọn YES, OK để xóa chương trình cũ. Lý do: khối cũ còn lại sẽ làm sai kết quả. Sau đó vào lại Program → Edit → Edit Prg, OK (đời cũ: Program → Edit Prg)."
+        },
+        {
+          "text": "Màn hình hiện Q1 với con trỏ gạch chân. Nhấn OK để con trỏ thành khối đậm nhấp nháy. Lý do: ta lập trình từ ngõ ra về ngõ vào, nên Q1 là điểm xuất phát."
+        },
+        {
+          "text": "Chọn nhóm BF rồi chọn OR, nhấn OK. LOGO! tạo khối B01 nối vào Q1 và hiện các ngõ vào của OR."
+        },
+        {
+          "text": "Chuyển con trỏ tới ngõ vào thứ nhất của B01, nhấn OK, chọn nhóm Co, chọn I1, nhấn OK. Lý do: I1 là nút S1."
+        },
+        {
+          "text": "Chuyển con trỏ tới ngõ vào thứ hai của B01, nhấn OK, chọn Co, chọn I2, nhấn OK. I2 là nút S2."
+        },
+        {
+          "text": "Với ngõ vào thứ ba (chưa dùng) của B01 chọn Co rồi chọn X. Lý do: với OR thì x = 0 nên không ảnh hưởng kết quả; để trống thì chương trình chưa hoàn tất."
+        },
+        {
+          "text": "Nhấn OK để hoàn tất, rồi dùng phím mũi tên duyệt lại: Q1 nối B01, B01 nối I1, I2, X. Lý do: kiểm tra trước khi chạy, nhất là khi con trỏ có thể nhảy nhầm đầu nối. Nếu sai, ESC lùi một bước."
+        },
+        {
+          "text": "Nhấn ESC (hai lần nếu cần) về menu chính, chọn Start, OK để vào Run. Nhấn S1 thì Q1 bật, nhả thì tắt; làm tương tự với S2; nhấn cả hai thì Q1 vẫn bật. Đối chiếu với dòng OR trong bảng chân trị."
+        }
+      ]
+    },
+    {
+      "id": "B2-we2",
+      "title": "Đèn hành lang sáng thêm vài giây sau khi nhả nút (Off-delay trong LOGO!Soft Comfort)",
+      "problem": "Một nút nhấn S1 (thường hở, nối I1) điều khiển đèn Q1: nhấn nút thì đèn sáng ngay; thả nút thì đèn còn sáng thêm 5 giây rồi tắt. Hãy vẽ và mô phỏng chương trình trong LSC. (Thư viện còn có hàm Staircase lighting switch làm việc tương tự và có cảnh báo nhấp nháy; ở đây em tự dựng bằng Off-delay để hiểu rõ cơ chế.)",
+      "fading": "completion",
+      "steps": [
+        {
+          "text": "Phân tích: đèn sáng *ngay* khi nhấn và tắt *trễ sau khi nhả*, nên chọn Off-delay (Q = 1 khi Trg = 1, đếm T từ cạnh xuống của Trg). On-delay sai vì nó trễ lúc bật."
+        },
+        {
+          "text": "Bảng vào/ra: I1 = S1 (nút nhấn), Q1 = đèn. Khối trung gian B001 là Off-delay, Trg nối I1, T = 5 s."
+        },
+        {
+          "text": "Mở LSC, File, New, chọn FBD và loại thiết bị đúng với nhãn kit. Kéo I1 và Q1 từ nhóm Co vào vùng soạn thảo."
+        },
+        {
+          "text": "Đặt khối Off-delay vào vùng soạn thảo.",
+          "blank": true,
+          "prompt": "Hàm định thời thuộc nhóm nào của thư viện: Co, BF hay SF? Tìm tên khối và đặt nó giữa I1 và Q1."
+        },
+        {
+          "text": "Đặt tham số thời gian cho khối.",
+          "blank": true,
+          "prompt": "Nhấp đúp khối để mở bảng tham số. Giá trị T cần đặt là bao nhiêu và đơn vị là gì? Rem để mặc định là gì?"
+        },
+        {
+          "text": "Nối các khối bằng Connect (F5).",
+          "blank": true,
+          "prompt": "Nối ngõ ra nào vào ngõ vào nào? Ngõ vào R chưa dùng: có cần nối không, hay để hở? Thử cả hai cách và xem khác nhau gì khi mô phỏng."
+        },
+        {
+          "text": "Dự đoán rồi mô phỏng.",
+          "blank": true,
+          "prompt": "Trước khi bấm F3, hãy vẽ giản đồ I1 và Q1 khi nhấn giữ I1 trong 2 s rồi nhả. Sau đó chạy mô phỏng (F3) và so sánh: Q1 tắt sau khi nhả bao lâu?"
+        },
+        {
+          "text": "Giải thích lỗi thường gặp: nếu Q1 tắt ngay khi nhả nút thì kiểm tra xem có dùng nhầm On-delay không; nếu Q1 không bao giờ bật thì kiểm tra Trg đã nối vào I1 chưa. Với Off-delay luôn đo thời gian từ lúc *nhả* nút."
+        },
+        {
+          "text": "Lưu dự án và đặt tên theo quy ước của nhóm.",
+          "blank": true,
+          "prompt": "Dùng lệnh nào trong menu File để lưu? Đặt tên file gồm những thông tin gì để lần sau mở lại tìm được ngay?"
+        }
+      ]
+    }
+  ],
+  "practice": {
+    "lab_id": "LOGO-PRAC-2",
+    "brief_md": "**Nhiệm vụ.** Cài (hoặc kiểm tra và mở) LOGO!Soft Comfort V8.4, rồi nhập chương trình OR: nút **S1 song song S2** điều khiển **Q1** (đèn E1 hoặc cuộn K1), trước hết bằng phần mềm (FBD), mô phỏng, sau đó nhập lại *cùng chương trình* trực tiếp bằng phím trên LOGO!.\n\n| Địa chỉ | Thiết bị | Ghi chú |\n|---|---|---|\n| I1 | S1 | Ngõ vào của OR, song song với S2 |\n| I2 | S2 | Ngõ vào của OR, song song với S1 |\n| Q1 | Đèn E1 / cuộn K1 | Tải do OR điều khiển |\n\nHàm sử dụng: Co (I1, I2, Q1, X) và BF OR.\n\n**An toàn.** Chỉ cài phần mềm từ bộ cài hợp lệ do nhà trường cung cấp. Ngắt nguồn LOGO! khi đấu S1, S2 và tải Q1. Tải Q1 không vượt dòng định mức của ngõ ra (rơ-le: 10 A tải trở, 3 A tải cảm; nếu kit dùng ngõ ra transistor thì tối đa 0,3 A).",
+    "steps": [
+      "Ngắt nguồn. Đọc nhãn kit (model, điện áp nguồn 12/24 V DC hay 230 V AC) và ghi lại; nhờ giáo viên xác nhận trước khi cấp nguồn.",
+      "Cài LOGO!Soft Comfort V8.4 từ bộ cài nhà trường cung cấp (hoặc xác nhận đã cài) và mở được chương trình. Ghi lại phiên bản ở Help, About.",
+      "File, New: chọn ngôn ngữ FBD và loại thiết bị đúng với nhãn kit; đặt tên dự án.",
+      "Kéo I1, I2, Q1 và khối OR vào vùng soạn thảo; dùng Connect (F5) nối I1, I2 vào OR và OR vào Q1. Ngõ vào còn lại của OR (nếu có) xử lý theo nguyên tắc ngõ vào không dùng.",
+      "Chạy mô phỏng (F3): thử bốn tổ hợp S1, S2 và lập bảng trạng thái Q1 vào vở. Lưu dự án.",
+      "Ngắt nguồn, đấu S1 vào I1, S2 vào I2 và tải vào Q1. Giáo viên kiểm tra dây rồi mới cấp nguồn.",
+      "Xóa chương trình cũ (Clear Prg) và nhập chương trình OR bằng phím theo quy trình trong ví dụ có lời giải. Hoàn tất chương trình trước khi thoát.",
+      "Chạy (Start) và thử bốn tổ hợp S1, S2; so sánh với bảng trạng thái ở bước mô phỏng.",
+      "Mở rộng: thay OR bằng AND cho cùng hai ngõ vào, mô phỏng lại và nêu điểm khác biệt trong bảng trạng thái."
+    ],
+    "self_check": [
+      "Mình đã cài (hoặc mở được) LOGO!Soft Comfort đủ các bước và chương trình chạy bình thường.",
+      "Mình nhập được khối OR bằng phím đúng quy trình: vào soạn thảo đúng cách của đời LOGO! trên kit, lập trình từ Q1 về ngõ vào, ngõ vào không dùng ghi X.",
+      "Mình nhập được OR bằng phần mềm: nối I1, I2 vào OR và OR vào Q1 bằng Connect (F5).",
+      "Mô phỏng (F3) cho kết quả đúng: S1 hoặc S2 đóng thì Q1 bật; cả hai mở thì Q1 tắt.",
+      "Mình tuân thủ quy tắc nối: một ngõ ra nối được nhiều ngõ vào, không nối nhiều ngõ ra vào một ngõ vào.",
+      "Mình đã hoàn tất chương trình trên LOGO! trước khi thoát (vì LOGO! chỉ lưu chương trình đã hoàn tất) và đã lưu dự án trên máy."
+    ]
+  },
+  "self_test": [
+    {
+      "id": "B2-t1",
+      "kind": "mcq",
+      "prompt": "Khối XOR có hai ngõ vào: I1 = 1 và ngõ vào thứ hai để hở (x). Ngõ ra bằng bao nhiêu?",
+      "options": [
+        "0, vì x = 1 nên hai ngõ vào giống nhau",
+        "1, vì x = 0 nên hai ngõ vào khác nhau",
+        "0, vì ngõ vào hở nên khối không hoạt động"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Sai. Với XOR, x = 0 chứ không phải 1. Quy tắc x = 1 chỉ áp dụng cho AND (và NAND).",
+        "Đúng. Với XOR thì x = 0; I1 = 1 khác 0 nên Q = 1.",
+        "Sai. Ngõ vào hở không làm khối ngừng hoạt động; nó nhận giá trị mặc định của loại khối."
+      ],
+      "misconception": "Ngõ vào hở luôn bằng 0 hoặc luôn bằng 1"
+    },
+    {
+      "id": "B2-t2",
+      "kind": "mcq",
+      "prompt": "On-delay T = 4 s. Trg: bằng 1 từ 0 s đến 3 s, bằng 0 từ 3 s đến 5 s, bằng 1 từ 5 s đến 11 s. Q bằng 1 trong khoảng nào?",
+      "options": [
+        "Từ 4 s đến 11 s, vì Ta tích lũy qua cả hai lần Trg lên",
+        "Từ 9 s đến 11 s, vì Ta reset ở 3 s và đếm lại từ 5 s",
+        "Không lúc nào, vì lần đầu Trg chưa đủ 4 s"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Sai. Ta không cộng dồn giữa các lần Trg lên; chỉ đếm lại sau khi Trg ngắt.",
+        "Đúng. Lần đầu Trg chỉ giữ 3 s nên không có Q; lần hai đếm từ 5 s, đạt 4 s ở 9 s, Q = 1 đến khi Trg xuống ở 11 s.",
+        "Sai. Lần Trg thứ hai kéo dài 6 s, lớn hơn T nên vẫn có Q."
+      ],
+      "misconception": "Trg ngắt tạm thời chỉ làm timer tạm dừng"
+    },
+    {
+      "id": "B2-t3",
+      "kind": "mcq",
+      "prompt": "Off-delay T = 3 s, không có R. Trg bằng 1 từ 2 s đến 4 s rồi về 0. Q bằng 1 trong khoảng nào?",
+      "options": [
+        "Từ 2 s đến 5 s",
+        "Từ 2 s đến 7 s",
+        "Từ 5 s đến 7 s"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Sai. 5 s là T tính từ lúc Trg lên (2 s + 3 s), nhưng Off-delay đếm từ lúc Trg xuống.",
+        "Đúng. Q = 1 ngay từ 2 s khi Trg lên; Trg xuống ở 4 s bắt đầu đếm 3 s nên Q = 0 lúc 7 s.",
+        "Sai. Q không đợi trễ để bật; Off-delay bật ngay khi Trg = 1."
+      ],
+      "misconception": "Off-delay đếm từ cạnh lên"
+    },
+    {
+      "id": "B2-t4",
+      "kind": "mcq",
+      "prompt": "Một cảm biến mức 1 trong 2 s khi mỗi hộp đi qua, nối vào Cnt của bộ đếm lên/xuống (Dir = 0). Mỗi hộp làm số đếm tăng bao nhiêu?",
+      "options": [
+        "Tăng liên tục trong 2 s, theo số chu kỳ quét",
+        "Tăng đúng 1, tại cạnh lên của tín hiệu",
+        "Tăng 2, vì tín hiệu có mức 1 trong 2 giây"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Sai. Bộ đếm không đếm theo mức hay thời gian; chỉ cạnh lên mới được tính một lần.",
+        "Đúng. Mỗi cạnh lên ở Cnt đếm thêm 1 (với Dir = 0), bất kể tín hiệu giữ ở mức 1 lâu bao nhiêu.",
+        "Sai. Số đếm không phụ thuộc số giây tín hiệu ở mức 1."
+      ],
+      "misconception": "Bộ đếm đếm theo mức"
+    },
+    {
+      "id": "B2-t5",
+      "kind": "mcq",
+      "prompt": "Trong mạch rơ-le, hai tiếp điểm S1 và S2 mắc *nối tiếp* cùng đóng điện cuộn K1. Khối BF tương ứng khi chuyển sang LOGO! là gì?",
+      "options": [
+        "OR, vì cả hai tiếp điểm cùng dẫn điện cho K1",
+        "AND, vì K1 chỉ có điện khi cả S1 và S2 cùng đóng",
+        "XOR, vì cần hai tiếp điểm khác trạng thái"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Sai. OR tương ứng tiếp điểm *song song*: chỉ cần một đóng là đủ.",
+        "Đúng. Nối tiếp là AND; song song là OR.",
+        "Sai. XOR dùng cho công tắc hai vị trí; nó cho Q = 1 khi hai ngõ vào khác nhau, không phải khi cả hai cùng đóng."
+      ],
+      "misconception": "Nhầm nối tiếp/song song với AND/OR"
+    }
+  ]
+}
