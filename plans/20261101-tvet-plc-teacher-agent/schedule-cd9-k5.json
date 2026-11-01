@@ -1,0 +1,543 @@
+{
+  "data_version": "tvet-schedule-draft-0.1",
+  "status": "draft-extracted-unreviewed",
+  "source": {
+    "kind": "lich-trinh-giang-day",
+    "locator": "LichTrinh_DKLTCN_CD9_K5.doc (bản tải lên phiên 2026-11-01, không lưu trong repo)",
+    "institution": "Trường Cao đẳng Kiên Giang, Khoa Điện - Điện tử",
+    "note": "Tên giáo viên được lược bỏ có chủ đích."
+  },
+  "module": {
+    "title": "Điều khiển lập trình cỡ nhỏ",
+    "total_hours": 60,
+    "school_year": "2026-2027",
+    "semester": "I",
+    "class": "KTML&ĐHKK - CĐ9+ K5",
+    "year_of_study": 3
+  },
+  "calendar": {
+    "session_hours": 4,
+    "sessions_per_week": 1,
+    "week_starts_on": "monday",
+    "first_week_start": "2026-09-07",
+    "holidays": [],
+    "exceptions": []
+  },
+  "lessons": {
+    "B1": {
+      "title": "Giới thiệu chương trình mô đun + Giới thiệu chung về PLC LOGO",
+      "textbook": "Chương 1",
+      "program_hours": [
+        1,
+        3
+      ]
+    },
+    "B2": {
+      "title": "Các lệnh cơ bản lập trình cho PLC LOGO",
+      "textbook": "Chương 2",
+      "program_hours": [
+        1,
+        3
+      ]
+    },
+    "B3": {
+      "title": "Ứng dụng LOGO - Điều khiển động cơ điện",
+      "textbook": "Mục 3.1",
+      "program_hours": [
+        2,
+        6
+      ]
+    },
+    "B4": {
+      "title": "Ứng dụng LOGO - Điều khiển đèn giao thông",
+      "textbook": "Mục 3.2",
+      "program_hours": [
+        2,
+        6
+      ]
+    },
+    "B5": {
+      "title": "Ứng dụng LOGO - Điều khiển đóng mở cửa tự động",
+      "textbook": "Mục 3.3",
+      "program_hours": [
+        2,
+        6
+      ]
+    },
+    "B6": {
+      "title": "Ứng dụng LOGO - Điều khiển băng tải công nghiệp",
+      "textbook": "Mục 3.4",
+      "program_hours": [
+        2,
+        6
+      ]
+    },
+    "B7": {
+      "title": "Giới thiệu chung về PLC ZEN",
+      "textbook": "Chương 4",
+      "program_hours": [
+        1,
+        3
+      ]
+    },
+    "B8": {
+      "title": "Các lệnh cơ bản lập trình cho PLC ZEN",
+      "textbook": "Chương 5",
+      "program_hours": [
+        1,
+        3
+      ]
+    },
+    "B9": {
+      "title": "Ứng dụng PLC ZEN (động cơ, đèn giao thông, cửa tự động)",
+      "textbook": "Mục 6.1-6.3 (6.4 băng tải không có trong lịch)",
+      "program_hours": [
+        2,
+        6
+      ]
+    },
+    "EXAM": {
+      "title": "Thi kết thúc mô đun",
+      "textbook": null,
+      "program_hours": [
+        0,
+        0
+      ],
+      "program_exam_hours": 4
+    }
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "start": "2026-09-07",
+      "end": "2026-09-12",
+      "lesson_ids": [
+        "B1"
+      ],
+      "items": [
+        "Giới thiệu chương trình mô đun",
+        "1.1",
+        "1.2"
+      ],
+      "theory_hours": 2,
+      "practice_hours": 2,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "LOGO!Soft Comfort V8.4",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Siemens LOGO!"
+      ]
+    },
+    {
+      "week": 2,
+      "start": "2026-09-14",
+      "end": "2026-09-19",
+      "lesson_ids": [
+        "B2"
+      ],
+      "items": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ],
+      "theory_hours": 2,
+      "practice_hours": 2,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "LOGO!Soft Comfort V8.4",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Siemens LOGO!"
+      ]
+    },
+    {
+      "week": 3,
+      "start": "2026-09-21",
+      "end": "2026-09-26",
+      "lesson_ids": [
+        "B3"
+      ],
+      "items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4"
+      ],
+      "theory_hours": 1,
+      "practice_hours": 3,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "LOGO!Soft Comfort V8.4",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Siemens LOGO!"
+      ]
+    },
+    {
+      "week": 4,
+      "start": "2026-09-28",
+      "end": "2026-10-03",
+      "lesson_ids": [
+        "B3"
+      ],
+      "items": [
+        "3.4 (tt)"
+      ],
+      "theory_hours": 1,
+      "practice_hours": 3,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "LOGO!Soft Comfort V8.4",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Siemens LOGO!"
+      ]
+    },
+    {
+      "week": 5,
+      "start": "2026-10-05",
+      "end": "2026-10-10",
+      "lesson_ids": [
+        "B4"
+      ],
+      "items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "theory_hours": 1,
+      "practice_hours": 3,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "LOGO!Soft Comfort V8.4",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Siemens LOGO!"
+      ]
+    },
+    {
+      "week": 6,
+      "start": "2026-10-12",
+      "end": "2026-10-17",
+      "lesson_ids": [
+        "B4"
+      ],
+      "items": [
+        "4.4 (tt)"
+      ],
+      "theory_hours": 1,
+      "practice_hours": 3,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "LOGO!Soft Comfort V8.4",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Siemens LOGO!"
+      ]
+    },
+    {
+      "week": 7,
+      "start": "2026-10-19",
+      "end": "2026-10-24",
+      "lesson_ids": [
+        "B5"
+      ],
+      "items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "theory_hours": 1,
+      "practice_hours": 3,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "LOGO!Soft Comfort V8.4",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Siemens LOGO!"
+      ]
+    },
+    {
+      "week": 8,
+      "start": "2026-10-26",
+      "end": "2026-10-31",
+      "lesson_ids": [
+        "B5"
+      ],
+      "items": [
+        "5.4 (tt)"
+      ],
+      "theory_hours": 0,
+      "practice_hours": 4,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "LOGO!Soft Comfort V8.4",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Siemens LOGO!"
+      ]
+    },
+    {
+      "week": 9,
+      "start": "2026-11-02",
+      "end": "2026-11-07",
+      "lesson_ids": [
+        "B6"
+      ],
+      "items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4"
+      ],
+      "theory_hours": 1,
+      "practice_hours": 3,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "LOGO!Soft Comfort V8.4",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Siemens LOGO!"
+      ]
+    },
+    {
+      "week": 10,
+      "start": "2026-11-09",
+      "end": "2026-11-14",
+      "lesson_ids": [
+        "B6"
+      ],
+      "items": [
+        "6.4 (tt)"
+      ],
+      "theory_hours": 0,
+      "practice_hours": 4,
+      "assessment_ids": [
+        "KTDK1"
+      ],
+      "equipment": [
+        "Máy vi tính",
+        "LOGO!Soft Comfort V8.4",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Siemens LOGO!"
+      ]
+    },
+    {
+      "week": 11,
+      "start": "2026-11-16",
+      "end": "2026-11-21",
+      "lesson_ids": [
+        "B7"
+      ],
+      "items": [
+        "7.1",
+        "7.2"
+      ],
+      "theory_hours": 1,
+      "practice_hours": 3,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "ZEN-SOFT (ZEN Support Software)",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Omron ZEN"
+      ]
+    },
+    {
+      "week": 12,
+      "start": "2026-11-23",
+      "end": "2026-11-28",
+      "lesson_ids": [
+        "B8"
+      ],
+      "items": [
+        "8.1",
+        "8.2",
+        "8.3"
+      ],
+      "theory_hours": 1,
+      "practice_hours": 3,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "ZEN-SOFT (ZEN Support Software)",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Omron ZEN"
+      ]
+    },
+    {
+      "week": 13,
+      "start": "2026-11-30",
+      "end": "2026-12-05",
+      "lesson_ids": [
+        "B9"
+      ],
+      "items": [
+        "9.1",
+        "9.2"
+      ],
+      "theory_hours": 1,
+      "practice_hours": 3,
+      "assessment_ids": [],
+      "equipment": [
+        "Máy vi tính",
+        "ZEN-SOFT (ZEN Support Software)",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Omron ZEN"
+      ]
+    },
+    {
+      "week": 14,
+      "start": "2026-12-07",
+      "end": "2026-12-12",
+      "lesson_ids": [
+        "B9"
+      ],
+      "items": [
+        "9.2 (tt)",
+        "9.3"
+      ],
+      "theory_hours": 1,
+      "practice_hours": 3,
+      "assessment_ids": [
+        "KTDK2"
+      ],
+      "equipment": [
+        "Máy vi tính",
+        "ZEN-SOFT (ZEN Support Software)",
+        "Tivi hoặc máy chiếu",
+        "Kit thực hành PLC Omron ZEN"
+      ]
+    },
+    {
+      "week": 15,
+      "start": "2026-12-14",
+      "end": "2026-12-19",
+      "lesson_ids": [
+        "EXAM"
+      ],
+      "items": [
+        "Thi kết thúc mô đun"
+      ],
+      "theory_hours": 0,
+      "practice_hours": 4,
+      "assessment_ids": [
+        "THI-KT"
+      ],
+      "equipment": []
+    }
+  ],
+  "program_vs_schedule": [
+    {
+      "lesson": "B1",
+      "program_lt_th": [
+        1,
+        3
+      ],
+      "schedule_lt_th": [
+        2,
+        2
+      ],
+      "note": "Lịch dồn thêm 1h lý thuyết"
+    },
+    {
+      "lesson": "B2",
+      "program_lt_th": [
+        1,
+        3
+      ],
+      "schedule_lt_th": [
+        2,
+        2
+      ],
+      "note": "Lịch dồn thêm 1h lý thuyết"
+    },
+    {
+      "lesson": "B5",
+      "program_lt_th": [
+        2,
+        6
+      ],
+      "schedule_lt_th": [
+        1,
+        7
+      ],
+      "note": "Bớt 1h lý thuyết"
+    },
+    {
+      "lesson": "B6",
+      "program_lt_th": [
+        2,
+        6
+      ],
+      "schedule_lt_th": [
+        1,
+        7
+      ],
+      "note": "Bớt 1h lý thuyết; Kiểm tra định kỳ 1 nằm trong 4h thực hành tuần 10"
+    },
+    {
+      "lesson": "B9",
+      "program_lt_th": [
+        2,
+        6
+      ],
+      "schedule_lt_th": [
+        2,
+        6
+      ],
+      "note": "Kiểm tra định kỳ 2 nằm trong tuần 14, không có giờ riêng"
+    },
+    {
+      "lesson": "EXAM",
+      "program_lt_th": [
+        0,
+        0
+      ],
+      "schedule_lt_th": [
+        0,
+        4
+      ],
+      "note": "Chương trình xếp 4h vào cột Kiểm tra; lịch ghi vào cột TH"
+    }
+  ],
+  "assessments": [
+    {
+      "id": "KTDK1",
+      "kind": "kiem-tra-dinh-ky",
+      "week": 10,
+      "scope": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "minutes": null,
+      "note": "Lịch không ghi thời lượng; agent phải hỏi GV"
+    },
+    {
+      "id": "KTDK2",
+      "kind": "kiem-tra-dinh-ky",
+      "week": 14,
+      "scope": [
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "minutes": null,
+      "note": "Như trên"
+    },
+    {
+      "id": "THI-KT",
+      "kind": "thi-ket-thuc-mo-dun",
+      "week": 15,
+      "scope": "all",
+      "minutes": 240
+    }
+  ]
+}
