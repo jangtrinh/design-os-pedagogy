@@ -601,7 +601,7 @@
         "Nhấn S1 thì Q1 (động cơ) chạy và giữ khi thả S1.",
         "Nhấn S2 thì động cơ dừng ngay.",
         "Giả lập quá tải (I3 mở): động cơ dừng và đèn Q2 sáng.",
-        "Chương trình được lưu; sau mất nguồn và cấp lại, LOGO chạy đúng trạng thái trước đó.",
+        "Mất nguồn rồi có điện lại: động cơ KHÔNG tự khởi động, phải nhấn S1 (không bật Rem cho phần tự giữ).",
         "Nếu nhập trên phím, thao tác đúng quy trình mục 2.3."
       ],
       "safety": [
@@ -647,7 +647,8 @@
         "Sơ đồ mục 3.1.3 (image109) là mạch OR của ví dụ 1 (S1/S2 → Q1), không phải mạch start/stop; mục 3.1.4 trống; chưa có sơ đồ động cơ và rơ-le nhiệt.",
         "Loại tiếp điểm của S2 và F (thường hở hay thường đóng) chưa xác định; quyết định này ảnh hưởng đến đầu vào R của RS.",
         "Model nguồn chưa rõ: ảnh ghi 12/24 RC (DC) nhưng đấu L1/N 230 V.",
-        "Đèn báo Q2 và tiếp điểm F là bổ sung suy luận; giáo viên xác nhận có trong bộ thiết bị."
+        "Đèn báo Q2 và tiếp điểm F là bổ sung suy luận; giáo viên xác nhận có trong bộ thiết bị.",
+        "Đã sửa khi rà soát (2026-11-01): tiêu chí mất nguồn chuyển thành 'không tự khởi động' theo nguyên tắc an toàn."
       ]
     },
     {

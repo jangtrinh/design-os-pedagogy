@@ -1,0 +1,730 @@
+{
+  "content_version": "tvet-content-1.0",
+  "lesson_id": "B3",
+  "status": "draft",
+  "authoring": {
+    "model_tier": "sonnet",
+    "date": "2026-11-01",
+    "source_notes": [
+      "source-notes/03-logo-software-labs.md",
+      "source-notes/02-logo-instructions.md",
+      "source-notes/05-hardware-software-facts.md"
+    ]
+  },
+  "summary": "Bài này giúp bạn hiểu mạch khởi động từ có tự giữ, biết đấu nút dừng và tiếp điểm quá tải thường đóng vào LOGO!, rồi tự lập trình, mô phỏng, nạp và kiểm tra mạch điều khiển động cơ: S1 chạy, S2 dừng, quá tải thì dừng và đèn báo sáng.",
+  "objectives": [
+    "Giải thích được vai trò của tiếp điểm tự giữ, nút dừng và rơ-le nhiệt trong mạch khởi động từ cổ điển.",
+    "Xác định được giá trị mà ngõ vào LOGO! đọc từ nút thường hở và thường đóng, kể cả khi đứt dây, và giải thích vì sao nút dừng đấu thường đóng.",
+    "Giải thích được vì sao phải dùng contactor giữa ngõ ra rơ-le của LOGO! và động cơ, dựa trên định mức tiếp điểm.",
+    "Lập được bảng I/O và bảng trạng thái cho yêu cầu điều khiển động cơ có dừng ưu tiên và báo quá tải.",
+    "Đấu mạch điều khiển an toàn, mô phỏng, nạp và kiểm tra chương trình theo danh sách kiểm tra.",
+    "Tuân thủ quy trình an toàn: cắt nguồn khi đấu dây, giả lập quá tải thay vì tạo quá tải thật, giáo viên kiểm tra trước khi cấp nguồn động lực."
+  ],
+  "sections": [
+    {
+      "id": "B3-s1",
+      "title": "Mạch khởi động từ cổ điển: tự giữ, dừng ưu tiên, rơ-le nhiệt",
+      "items": [
+        "3.1"
+      ],
+      "body_md": "Trước khi lập trình, hãy đọc lại mạch mà PLC sẽ thay thế: **mạch khởi động từ đơn** dùng contactor K để đóng cắt một động cơ ba pha.\n\nMạch có hai phần. **Mạch động lực** (dòng lớn) đi từ CB qua tiếp điểm chính của K, qua phần tử nhiệt của rơ-le nhiệt F rồi đến động cơ M. **Mạch điều khiển** (dòng nhỏ, chỉ cấp cho cuộn dây K) gồm các phần tử mắc nối tiếp theo thứ tự: tiếp điểm thường đóng của F, nút dừng S2 (thường đóng), rồi hai nhánh song song là nút mở máy S1 (thường hở) và tiếp điểm phụ thường hở của K, cuối cùng là cuộn dây K.\n\n**Tự giữ (self-holding).** Nhấn S1, cuộn K có điện và hút. Contactor hút làm đóng luôn tiếp điểm phụ của K đang mắc song song với S1. Thả S1, dòng vẫn đi qua tiếp điểm phụ nên K vẫn có điện. Nếu thiếu nhánh này, contactor chỉ hút khi tay còn giữ trên S1.\n\n**Dừng ưu tiên.** S2 và tiếp điểm của F mắc nối tiếp với cả hai nhánh (S1 và tự giữ). Chỉ cần một trong hai mở, cuộn K mất điện, dù S1 đang nhấn hay tự giữ đang đóng. Nguyên tắc là \"dừng thắng khởi động\".\n\n**Rơ-le nhiệt (thermal overload relay).** Dòng quá tải kéo dài làm dải lưỡng kim trong rơ-le nóng lên, uốn cong và làm tiếp điểm tác động. Rơ-le nhiệt thường có một tiếp điểm thường đóng (đầu nối ký hiệu 95-96) đưa vào mạch điều khiển và một tiếp điểm thường hở (97-98) dùng để báo tín hiệu. Nó bảo vệ **quá tải kéo dài**, không bảo vệ ngắn mạch (việc đó thuộc CB hoặc cầu chì). Sau khi tác động phải chờ bimetal nguội rồi reset theo chế độ của rơ-le (tay hoặc tự động).\n\n**Mất điện rồi có điện lại.** Khi mất điện, K nhả và tiếp điểm tự giữ mở ra. Khi có điện lại, động cơ **không** tự chạy cho đến khi có người nhấn S1. Đây là đặc tính an toàn cần giữ nguyên khi chuyển sang PLC: người đang vệ sinh hoặc sửa máy trong lúc mất điện không bị máy tự chạy khi điện trở lại.\n\nGhi chú nguồn: nội dung này viết lại từ kiến thức khí cụ điện và trang bị điện đã học, đối chiếu với mục 3.1 của giáo trình nội bộ (giáo trình chỉ nêu đề bài, không giảng về tự giữ hay rơ-le nhiệt).",
+      "table": {
+        "caption": "Phần tử của mạch cổ điển và vị trí tương ứng khi dùng PLC",
+        "columns": [
+          "Phần tử mạch cổ điển",
+          "Vai trò",
+          "Khi dùng PLC LOGO!"
+        ],
+        "rows": [
+          [
+            "Nút S1 (thường hở)",
+            "Ra lệnh mở máy",
+            "Tín hiệu vào ngõ vào số I"
+          ],
+          [
+            "Nút S2 (thường đóng)",
+            "Ra lệnh dừng, được ưu tiên",
+            "Tín hiệu vào ngõ vào số I (đấu thường đóng)"
+          ],
+          [
+            "Tiếp điểm phụ K song song với S1",
+            "Tự giữ",
+            "Nằm trong chương trình: hồi tiếp ngõ ra về đầu vào khối, hoặc khối nhớ"
+          ],
+          [
+            "Tiếp điểm F của rơ-le nhiệt (95-96)",
+            "Cắt mạch khi quá tải",
+            "Tín hiệu vào ngõ vào số I (đấu thường đóng)"
+          ],
+          [
+            "Cuộn dây K của contactor",
+            "Đóng cắt mạch động lực",
+            "Tải của ngõ ra Q (qua tiếp điểm rơ-le của LOGO!)"
+          ],
+          [
+            "Đèn báo",
+            "Báo trạng thái",
+            "Tải của một ngõ ra Q khác"
+          ]
+        ]
+      },
+      "checks": [
+        {
+          "id": "B3-c1",
+          "kind": "mcq",
+          "prompt": "Trong mạch khởi động từ cổ điển, sau khi nhấn rồi thả S1 mà contactor vẫn giữ trạng thái hút. Nhờ phần tử nào?",
+          "options": [
+            "Tiếp điểm thường đóng của rơ-le nhiệt F giữ dòng cho cuộn K.",
+            "Tiếp điểm phụ thường hở của K, mắc song song với S1, đã đóng lại khi K hút.",
+            "Nút S2 thường đóng giữ mạch kín nên K không nhả."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Tiếp điểm của F chỉ cắt mạch khi quá tải; nó không tạo đường dòng thay cho S1.",
+            "Đúng. Đây là tự giữ: K hút làm đóng tiếp điểm phụ, tiếp điểm này thay S1 giữ dòng cho cuộn K.",
+            "Sai. S2 chỉ có vai trò dừng; nó nối tiếp trong mạch nên chỉ có thể cắt, không thể giữ K hút khi S1 đã thả."
+          ],
+          "misconception": "Quên tự giữ: tưởng chỉ cần S1 nối tiếp với cuộn dây."
+        }
+      ]
+    },
+    {
+      "id": "B3-s2",
+      "title": "Chuyển sang PLC: nút dừng và tiếp điểm quá tải đấu thường đóng",
+      "items": [
+        "3.1"
+      ],
+      "body_md": "Khi đưa mạch điều khiển vào PLC, các tiếp điểm ngoài không còn mắc nối tiếp với cuộn dây nữa. Mỗi thiết bị chỉ báo cho **ngõ vào số (digital input)** biết một điều: có điện áp (1) hay không có (0). Chương trình mới quyết định phần còn lại.\n\n**Vì sao nút dừng và tiếp điểm quá tải đấu thường đóng (NC)?** Đây là nguyên tắc **an toàn khi hỏng (fail-safe)**. Nếu S2 đấu thường đóng thì khi đứt dây, lỏng đầu nối hay mất nguồn cấp cho nút, ngõ vào về 0 và chương trình hiểu là \"có lệnh dừng\": máy dừng. Nếu S2 đấu thường hở thì đứt dây làm nút dừng \"câm\": nhấn S2 không còn tác dụng và không ai biết. Với nút mở máy S1 thì ngược lại: đứt dây chỉ làm máy không chạy được, vô hại, nên dùng thường hở. Tiếp điểm quá tải F cũng vậy: dùng tiếp điểm thường đóng (95-96) để dây đứt được coi là sự cố.\n\n**Hệ quả với logic chương trình.** Tiếp điểm thường đóng, chưa tác động thì mạch kín nên ngõ vào đọc **1**; nhấn nút (hoặc F tác động, hoặc đứt dây) thì mạch hở, ngõ vào đọc **0**. Vậy \"tín hiệu dừng\" của S2 là ngõ vào bằng 0, ngược với suy nghĩ quen thuộc \"nhấn = 1\". Có hai cách viết cùng một ý:\n\n- Dùng thẳng ngõ vào làm điều kiện **cho phép chạy**: máy chỉ được chạy khi ngõ vào đó bằng 1 (đưa vào cổng AND).\n- Dùng cổng NOT để đổi thành tín hiệu **lệnh dừng** (bằng 1 khi có lệnh dừng) rồi đưa vào chân dừng của khối.\n\nCách nào cũng được, nhưng cả nhóm phải ghi rõ trong bảng I/O để mọi người đọc cùng một nghĩa. Lỗi hay gặp là viết logic như thể S2 thường hở (nhấn = 1) trong khi dây đấu thường đóng.\n\n**Thử với ví dụ mẫu 1 (quạt thông gió, xem phần ví dụ có lời giải).** Trong mô phỏng bên dưới, hãy bật công tắc I2 trước (nút dừng chưa nhấn nên đọc 1). Nhấn rồi thả I1 và quan sát Q1. Sau đó tắt I2 (giả lập nhấn dừng hoặc đứt dây) và thử nhấn I1.\n\n**Mất điện rồi có điện lại với PLC.** Khi LOGO! vừa có điện, ngõ ra bắt đầu ở 0 và S1 chưa nhấn nên động cơ chưa chạy. Chú ý: một số khối nhớ của LOGO! có tham số nhớ trạng thái qua mất điện (retentivity, ký hiệu Rem). Với động cơ, không dùng tính năng này để động cơ không tự chạy lại. Hãy kiểm chứng hành vi này bằng mô phỏng và trên kit, vì chưa có xác nhận của giáo viên.",
+      "table": {
+        "caption": "Giá trị ngõ vào của nút thường hở (S1) và nút thường đóng (S2) trong các tình huống thực tế",
+        "columns": [
+          "Tình huống thực tế",
+          "Ngõ vào của S1 (thường hở)",
+          "Ngõ vào của S2 (thường đóng)",
+          "Chương trình hiểu là"
+        ],
+        "rows": [
+          [
+            "Chưa nhấn nút nào",
+            "0",
+            "1",
+            "Bình thường, sẵn sàng"
+          ],
+          [
+            "Nhấn S1",
+            "1",
+            "1",
+            "Có lệnh mở máy"
+          ],
+          [
+            "Nhấn S2",
+            "0",
+            "0",
+            "Có lệnh dừng"
+          ],
+          [
+            "Đứt dây hoặc lỏng đầu nối ở S2",
+            "0",
+            "0",
+            "Giống lệnh dừng: máy dừng (an toàn)"
+          ],
+          [
+            "Đứt dây ở S1",
+            "0",
+            "1",
+            "Không mở máy được (vô hại)"
+          ]
+        ]
+      },
+      "widget": {
+        "kind": "logic-sim",
+        "title": "Ví dụ mẫu 1: quạt thông gió, nút dừng thường đóng",
+        "spec": {
+          "inputs": [
+            {
+              "id": "I1",
+              "label": "S1 – nút mở máy, thường hở (nhấn = 1)",
+              "mode": "momentary"
+            },
+            {
+              "id": "I2",
+              "label": "S2 – nút dừng, thường đóng (bật = chưa nhấn; tắt = đang nhấn hoặc đứt dây)",
+              "mode": "toggle"
+            }
+          ],
+          "blocks": [
+            {
+              "id": "B001",
+              "type": "OR",
+              "in": [
+                "I1",
+                "Q1"
+              ]
+            },
+            {
+              "id": "B002",
+              "type": "AND",
+              "in": [
+                "B001",
+                "I2"
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "Q1",
+              "label": "Q1 – contactor quạt",
+              "from": "B002"
+            }
+          ],
+          "chart": [
+            "I1",
+            "I2",
+            "B001",
+            "Q1"
+          ]
+        }
+      },
+      "checks": [
+        {
+          "id": "B3-c2",
+          "kind": "mcq",
+          "prompt": "Nút dừng S2 là loại thường đóng, đấu vào I2. Khi chưa nhấn S2, ngõ vào I2 của LOGO! đọc giá trị nào?",
+          "options": [
+            "0, vì nút chưa tác động nên chưa có tín hiệu.",
+            "1, vì mạch qua tiếp điểm thường đóng đang kín nên có điện áp ở ngõ vào.",
+            "Không xác định, phụ thuộc vào chương trình."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Nhầm \"chưa nhấn = 0\" áp dụng cho nút thường hở. Với thường đóng, chưa nhấn thì mạch kín.",
+            "Đúng. Thường đóng chưa tác động thì dẫn điện, ngõ vào = 1; nhấn thì mạch hở, ngõ vào = 0.",
+            "Sai. Giá trị ngõ vào do mạch ngoài quyết định (có điện áp hay không), không do chương trình."
+          ],
+          "misconception": "Đọc nút thường đóng như nút thường hở: cho rằng chưa nhấn thì ngõ vào bằng 0."
+        },
+        {
+          "id": "B3-c3",
+          "kind": "mcq",
+          "prompt": "Máy đang chạy, dây dẫn từ nút dừng S2 (thường đóng) vào I2 bị đứt. Điều gì xảy ra với chương trình đúng?",
+          "options": [
+            "Động cơ vẫn chạy vì không ai nhấn S2.",
+            "Động cơ dừng vì I2 về 0, chương trình hiểu là có lệnh dừng.",
+            "Động cơ nhấp nháy vì I2 không ổn định."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Đây là suy nghĩ của nút thường hở: dây đứt thì nút dừng mất tác dụng. Thường đóng thì ngược lại.",
+            "Đúng. Đứt dây làm ngõ vào về 0, giống nhấn dừng. Đó chính là lý do chọn thường đóng.",
+            "Sai. Dây đứt cho mức 0 ổn định, không phải tín hiệu nhấp nháy."
+          ],
+          "misconception": "Không thấy được lợi ích fail-safe của nút dừng thường đóng."
+        }
+      ]
+    },
+    {
+      "id": "B3-s3",
+      "title": "Ngõ ra rơ-le và contactor trung gian",
+      "items": [
+        "3.1"
+      ],
+      "body_md": "Ngõ ra Q của LOGO! (bộ cơ sở có đuôi R, ví dụ 12/24RCE) là **tiếp điểm rơ-le** khô. Với bộ cơ sở được giả định cho lớp này, định mức nhà sản xuất thường nêu là **10 A với tải thuần trở** và **3 A với tải cảm**; đây là giá trị cần đối chiếu với nhãn và datasheet của thiết bị thật. Ngõ ra rơ-le **không có bảo vệ ngắn mạch**: mạch phải có cầu chì hoặc CB phía ngoài.\n\n**Động cơ là tải cảm** và có dòng khởi động lớn (thường gấp vài lần dòng định mức). Hồ quang mỗi lần đóng cắt làm mòn hoặc làm dính tiếp điểm. Động cơ ba pha còn cần ba tiếp điểm đóng cắt đồng thời, trong khi mỗi ngõ ra Q chỉ là một tiếp điểm riêng. Vì vậy **không bao giờ đấu động cơ trực tiếp vào ngõ ra Q**.\n\nGiải pháp là dùng **contactor** (hoặc rơ-le trung gian) làm khâu trung gian: LOGO! chỉ đóng cắt cuộn dây A1-A2, một tải nhỏ; tiếp điểm chính của contactor, được chọn theo loại sử dụng cho động cơ, mới đóng cắt dòng của động cơ.\n\nKhi nối ngõ ra Q với cuộn dây contactor, hãy kiểm tra:\n\n- **Điện áp cuộn dây** phải khớp với nguồn cấp cho tiếp điểm Q (24 V DC, 24 V AC hay 230 V AC). Nếu cuộn dây là 230 V AC thì mạch ngõ ra là điện lưới: chỉ giáo viên đấu hoặc kiểm tra.\n- **Dòng cuộn dây** (đọc nhãn, thường rất nhỏ so với 3 A) phải nằm trong định mức tải cảm của tiếp điểm Q.\n- **Dập quá áp** khi ngắt cuộn dây: cuộn dây một chiều thường cần diode mắc song song ngược chiều, cuộn xoay chiều thường cần mạch RC. Nhiều contactor có sẵn module dập, hãy hỏi giáo viên.\n\nCác số liệu trên là giả định theo bộ LOGO! 12/24RCE, chờ giáo viên xác nhận trên kit thực tế.",
+      "table": {
+        "caption": "Hai dòng điện khác nhau trong mạch điều khiển động cơ bằng PLC",
+        "columns": [
+          "Phần mạch",
+          "Dòng đi qua",
+          "Thiết bị chịu dòng",
+          "Điều cần kiểm"
+        ],
+        "rows": [
+          [
+            "Mạch ngõ ra của LOGO!",
+            "Dòng cuộn dây contactor (nhỏ)",
+            "Tiếp điểm rơ-le Q (10 A tải trở / 3 A tải cảm, giả định)",
+            "Điện áp và dòng cuộn dây trên nhãn; cầu chì ngoài"
+          ],
+          [
+            "Mạch động lực",
+            "Dòng động cơ, gồm dòng khởi động",
+            "Tiếp điểm chính của contactor và CB",
+            "Định mức contactor theo loại sử dụng cho động cơ; do giáo viên đấu"
+          ]
+        ]
+      },
+      "checks": [
+        {
+          "id": "B3-c4",
+          "kind": "mcq",
+          "prompt": "Một nhóm định nối thẳng động cơ ba pha 0,75 kW (dòng định mức khoảng 2 A) vào ngõ ra Q1, với lý do 2 A nhỏ hơn mức 3 A của tải cảm. Nhận định nào đúng?",
+          "options": [
+            "Chấp nhận được, vì dòng định mức nhỏ hơn 3 A.",
+            "Không nên: dòng khởi động lớn hơn nhiều, động cơ ba pha cần ba tiếp điểm đồng thời và ngõ ra Q không có bảo vệ ngắn mạch, nên phải qua contactor.",
+            "Không nên chỉ vì ngõ ra Q dành riêng cho đèn báo."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Chỉ so dòng định mức là chưa đủ: dòng khởi động và hồ quang khi cắt tải cảm mới là điều làm hỏng tiếp điểm.",
+            "Đúng. Contactor nhận phần đóng cắt công suất; LOGO! chỉ đóng cắt cuộn dây nhỏ.",
+            "Sai. Ngõ ra Q đóng cắt được nhiều loại tải nhỏ, kể cả cuộn dây contactor; vấn đề nằm ở công suất động cơ, không phải loại tải."
+          ],
+          "misconception": "Đấu động cơ trực tiếp vào ngõ ra rơ-le của PLC."
+        }
+      ]
+    },
+    {
+      "id": "B3-s4",
+      "title": "Yêu cầu bài tập: khởi động, dừng và báo quá tải",
+      "items": [
+        "3.2"
+      ],
+      "body_md": "**Bài tập (LOGO-LAB-1).** Điều khiển một động cơ bằng PLC LOGO!:\n\n- Nhấn nút S1: động cơ chạy và **vẫn chạy khi thả S1**.\n- Nhấn nút S2: động cơ dừng.\n- Khi **quá tải** (rơ-le nhiệt F tác động): động cơ dừng và **đèn báo sáng**.\n- Bài không có yêu cầu về thời gian.\n\nĐề chỉ nêu bấy nhiêu. Có hai việc nhóm cần chủ động: (1) đề không nói S2 và F thuộc loại tiếp điểm nào, nhóm phải quyết định và ghi vào bảng I/O (xem nguyên tắc ở phần trước); (2) tiếp điểm F và đèn báo là thiết bị bổ sung theo suy luận từ đề, chưa chắc có đủ trên mọi kit, giáo viên sẽ xác nhận.\n\nCó những tình huống đề **không** nói rõ, ví dụ: vẫn đang quá tải mà nhấn S1 thì sao? Sau khi hết quá tải, động cơ có tự chạy lại không? Nhóm thống nhất cách xử lý theo nguyên tắc an toàn (không để máy tự chạy bất ngờ), ghi vào bảng trạng thái và hỏi giáo viên khi chưa chắc.\n\nViệc đầu tiên là phân loại thiết bị thành **đầu vào** (thiết bị gửi tín hiệu đến PLC) và **đầu ra** (thiết bị PLC điều khiển):",
+      "table": {
+        "caption": "Phân loại thiết bị của bài tập",
+        "columns": [
+          "Thiết bị",
+          "Đầu vào hay đầu ra",
+          "Vai trò"
+        ],
+        "rows": [
+          [
+            "Nút S1",
+            "Đầu vào",
+            "Lệnh mở máy"
+          ],
+          [
+            "Nút S2",
+            "Đầu vào",
+            "Lệnh dừng máy"
+          ],
+          [
+            "Tiếp điểm rơ-le nhiệt F",
+            "Đầu vào",
+            "Cho biết có quá tải hay không"
+          ],
+          [
+            "Cuộn dây contactor K",
+            "Đầu ra",
+            "Đóng cắt mạch động lực của động cơ"
+          ],
+          [
+            "Đèn báo quá tải",
+            "Đầu ra",
+            "Báo sự cố cho người vận hành"
+          ]
+        ]
+      },
+      "checks": [
+        {
+          "id": "B3-c5",
+          "kind": "mcq",
+          "prompt": "Trong bài tập này, thiết bị nào được nối vào ngõ ra Q của LOGO!?",
+          "options": [
+            "Tiếp điểm rơ-le nhiệt F, vì đây là thiết bị bảo vệ.",
+            "Cuộn dây contactor K và đèn báo quá tải.",
+            "Nút S1 và S2, vì đây là các nút điều khiển."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. F gửi thông tin về cho PLC nên là đầu vào, dù mục đích là bảo vệ.",
+            "Đúng. Ngõ ra Q điều khiển các tải: cuộn dây contactor và đèn.",
+            "Sai. Nút nhấn là thiết bị ra lệnh nên nối vào ngõ vào I."
+          ],
+          "misconception": "Phân loại theo \"quan trọng\" hay \"điều khiển\" thay vì theo chiều của tín hiệu."
+        }
+      ]
+    },
+    {
+      "id": "B3-s5",
+      "title": "Sơ đồ kết nối thiết bị ngoài",
+      "items": [
+        "3.3"
+      ],
+      "body_md": "**Bộ thiết bị giả định.** Lớp này giả định dùng bộ LOGO! 12/24RCE (nguồn một chiều 12/24 V, 8 ngõ vào số, 4 ngõ ra rơ-le), có thể kèm một module mở rộng. Đây là giả định chờ giáo viên xác nhận. **Hãy đọc nhãn trên thiết bị:** nếu là bản 230RC/230RCE (nguồn và ngõ vào 230 V xoay chiều) thì cách đấu và mức an toàn khác hẳn.\n\n**Cảnh báo về hình trong giáo trình.** Sơ đồ đấu dây ở mục 3.1.3 của giáo trình nội bộ là của một ví dụ khác (hai nút song song điều khiển một đèn, hay mạch OR), không có rơ-le nhiệt, contactor hay động cơ, và vẽ thiết bị ghi 12/24RC nhưng đấu vào L1/N 230 V. Vì vậy **không dùng hình đó để đấu**; hãy đấu theo bảng dưới đây và theo sơ đồ giáo viên xác nhận trên kit.\n\n**Nguyên tắc đấu (với bộ nguồn một chiều giả định):**\n\n1. Cấp nguồn 12/24 V DC cho LOGO! đúng cực, theo nhãn thiết bị.\n2. **Ngõ vào:** mỗi thiết bị (S1, S2, F) đấu từ cực dương nguồn (L+) qua tiếp điểm của nó đến một ngõ vào. Nút S1 dùng tiếp điểm thường hở; S2 và F dùng tiếp điểm thường đóng.\n3. **Ngõ ra:** tiếp điểm Q1 đóng cắt nguồn cấp cho cuộn dây contactor (A1-A2); tiếp điểm Q2 đóng cắt nguồn cấp cho đèn báo.\n4. **Mạch động lực** (CB, tiếp điểm chính contactor, phần tử nhiệt của F, động cơ): chỉ giáo viên đấu hoặc đấu dưới sự giám sát trực tiếp của giáo viên, sau khi mạch điều khiển đã chạy đúng khi không tải.\n5. Vỏ động cơ và thiết bị phải có tiếp địa; mạch phải có CB hoặc cầu chì.\n\n**Thứ tự an toàn:** cắt nguồn khi đấu dây, đấu mạch điều khiển trước, kiểm tra thông mạch bằng đồng hồ ở trạng thái bình thường (S2 và F phải thông, S1 phải hở), gọi giáo viên kiểm tra rồi mới cấp nguồn.\n\n**Giả lập quá tải.** Không làm nóng rơ-le nhiệt và không tạo quá tải thật. Cách giả lập an toàn: bấm nút thử (TEST) hoặc cần kích tác động có sẵn trên rơ-le nhiệt nếu giáo viên cho phép, hoặc dùng một công tắc thường đóng đặt nối tiếp thay vị trí F rồi mở nó ra. Sau khi F tác động phải reset rơ-le trước khi thử tiếp.",
+      "table": {
+        "caption": "Đề xuất gán I/O, chờ giáo viên xác nhận trên kit (loại tiếp điểm là đề xuất của bài, đề không nêu)",
+        "columns": [
+          "Địa chỉ",
+          "Thiết bị",
+          "Loại tiếp điểm đề xuất",
+          "Giá trị khi bình thường",
+          "Ghi chú"
+        ],
+        "rows": [
+          [
+            "I1",
+            "S1 – nút mở máy",
+            "Thường hở",
+            "0",
+            "Nhấn thì bằng 1"
+          ],
+          [
+            "I2",
+            "S2 – nút dừng",
+            "Thường đóng",
+            "1",
+            "Nhấn hoặc đứt dây thì bằng 0"
+          ],
+          [
+            "I3",
+            "F – tiếp điểm rơ-le nhiệt (95-96)",
+            "Thường đóng",
+            "1",
+            "Quá tải hoặc đứt dây thì bằng 0"
+          ],
+          [
+            "Q1",
+            "Cuộn dây contactor K của động cơ",
+            "–",
+            "0",
+            "Chạy động cơ khi bằng 1"
+          ],
+          [
+            "Q2",
+            "Đèn báo quá tải",
+            "–",
+            "0",
+            "Cần đủ ngõ ra Q; chờ giáo viên xác nhận"
+          ]
+        ]
+      },
+      "checks": [
+        {
+          "id": "B3-c6",
+          "kind": "mcq",
+          "prompt": "Cách nào là an toàn và đúng để kiểm tra phản ứng của chương trình khi quá tải trong giờ thực hành?",
+          "options": [
+            "Hơ nóng rơ-le nhiệt (hoặc cho động cơ chạy quá tải thật) cho đến khi tiếp điểm tác động.",
+            "Giả lập: bấm nút TEST trên rơ-le nhiệt hoặc mở công tắc thường đóng thay F, đúng theo hướng dẫn của giáo viên, rồi quan sát Q1 và đèn báo.",
+            "Nối tắt ngõ vào I3 xuống cực âm để chương trình tưởng đã quá tải."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Làm nóng rơ-le hoặc quá tải thật gây nguy hiểm và hỏng thiết bị; bài chỉ kiểm tra logic, không cần tạo quá tải thật.",
+            "Đúng. Giả lập mở tiếp điểm thường đóng cho cùng kết quả về logic mà không có rủi ro.",
+            "Sai. Nối tắt xuống cực âm không phải thao tác giả lập đúng và dễ gây chạm mạch."
+          ],
+          "misconception": "Kiểm tra quá tải bằng cách làm nóng rơ-le thay vì giả lập tiếp điểm."
+        },
+        {
+          "id": "B3-c7",
+          "kind": "mcq",
+          "prompt": "Trước lần cấp nguồn đầu tiên cho kit, trình tự nào đúng?",
+          "options": [
+            "Cấp nguồn LOGO! trước để thấy các ngõ vào nhảy, rồi vừa đấu vừa sửa.",
+            "Cắt nguồn, đọc nhãn model, đấu mạch điều khiển, đo thông mạch và mô phỏng chương trình, rồi gọi giáo viên kiểm tra trước khi cấp nguồn động lực.",
+            "Đấu mạch động lực trước vì dòng lớn quan trọng nhất, mạch điều khiển để sau."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Đấu dây khi đang có điện dễ gây chạm mạch và điện giật.",
+            "Đúng. Mạch điều khiển điện áp thấp được kiểm chứng trước; mạch động lực chỉ được cấp khi giáo viên đã kiểm tra.",
+            "Sai. Mạch động lực chỉ do giáo viên đấu, và chỉ khi mạch điều khiển đã chạy đúng khi không tải."
+          ],
+          "misconception": "Bỏ qua trình tự an toàn khi đấu và cấp nguồn."
+        }
+      ]
+    },
+    {
+      "id": "B3-s6",
+      "title": "Lập trình theo yêu cầu",
+      "items": [
+        "3.4"
+      ],
+      "body_md": "Bài này không đưa chương trình mẫu cho bài tập. Thay vào đó bạn đi theo **sáu bước** có thể dùng cho mọi bài điều khiển:\n\n1. **Lập bảng I/O:** địa chỉ, thiết bị, loại tiếp điểm, giá trị khi bình thường (xem bảng ở phần 3.3).\n2. **Mô tả hành vi dưới dạng bảng trạng thái:** mỗi dòng là một tình huống (các ngõ vào và trạng thái ngõ ra trước đó), cột kết quả là ngõ ra mong muốn. Điền bằng giá trị 0 và 1, đọc nút thường đóng đúng như phần 3.1.\n3. **Chọn khối:** nhìn bảng trạng thái. Dòng nào cho thấy ngõ ra phụ thuộc vào chính trạng thái trước đó của nó? Khi đó cần một cách ghi nhớ: hồi tiếp ngõ ra về đầu vào khối, hoặc khối nhớ (Latching relay, đã học ở B2). Điều kiện dừng nào phải thắng? Cần cổng nào (AND, OR, NOT) để đổi nghĩa tín hiệu? Vẽ ra giấy trước khi đặt khối.\n4. **Mô phỏng:** trong LOGO!Soft Comfort chạy mô phỏng (phím F3), đặt nút thường đóng ở mức 1 lúc đầu, rồi chạy lần lượt **mọi dòng** của bảng trạng thái. Chỉ khi mô phỏng đúng mới nạp xuống.\n5. **Nạp xuống LOGO!** theo cách đã làm ở B2, và chạy thử **không tải** (chưa nối mạch động lực).\n6. **Kiểm tra theo danh sách (checklist)** bên dưới, ghi kết quả từng mục.\n\n**Hộp công cụ gợi ý:** cổng OR, AND, NOT và khối Latching relay. Ghi ý nghĩa mỗi ngõ vào ngay cạnh khối trên giấy để tránh nhầm nghĩa của tín hiệu thường đóng.\n\n**Danh sách kiểm tra khi chạy thử:**\n\n- Vừa cấp điện, chưa nhấn gì: động cơ có đứng yên không?\n- Nhấn S1 rồi thả: động cơ chạy và giữ?\n- Nhấn S2: động cơ dừng ngay? Nhấn đồng thời S1 và S2: động cơ có dừng không?\n- Giả lập quá tải: động cơ dừng và đèn báo sáng? Trong lúc đang quá tải, nhấn S1 thì sao?\n- Cắt nguồn một chốc rồi cấp lại: trạng thái động cơ và đèn là gì? Có đúng dự đoán của nhóm không?\n- Cắt nguồn, tháo một đầu dây của S2, cấp nguồn lại: nhấn S1 có làm động cơ chạy không? (Không được chạy.)\n- Chương trình đã lưu với tên rõ ràng?\n\n**Lỗi hay gặp và cách tìm:**\n\n- Viết logic như S2 thường hở trong khi dây đấu thường đóng (hoặc ngược lại): xem lại bảng I/O, dùng NOT khi cần.\n- Thả S1 là động cơ dừng: thiếu tự giữ.\n- Nhấn S2 mà động cơ không dừng ngay khi đang giữ S1: dừng chưa được ưu tiên. Với khối nhớ, kiểm tra chân nào có ưu tiên khi cả hai chân cùng bằng 1.\n- Nhấn S1 mà động cơ không chạy dù mô phỏng đúng: đo thông mạch kiểm tra F hoặc S2 có đấu nhầm sang tiếp điểm thường hở không.\n- Nối nhầm ngõ vào của khối (con trỏ nối vào đầu vào \"X\", tức đầu vào chưa dùng, khi lập trình): duyệt lại từng khối, kể cả bằng phím mũi tên nếu nhập trên LOGO!.\n",
+      "table": {
+        "caption": "Mẫu bảng trạng thái cho bài tập (tự điền các ô dấu ?; thêm dòng nếu cần)",
+        "columns": [
+          "Tình huống",
+          "S1",
+          "Ngõ vào I2 (S2)",
+          "Ngõ vào I3 (F)",
+          "Q1 trước đó",
+          "Q1 mong muốn",
+          "Q2 mong muốn"
+        ],
+        "rows": [
+          [
+            "Máy đang dừng, chưa nhấn gì, F bình thường",
+            "?",
+            "?",
+            "?",
+            "0",
+            "?",
+            "?"
+          ],
+          [
+            "Nhấn S1",
+            "?",
+            "?",
+            "?",
+            "0",
+            "?",
+            "?"
+          ],
+          [
+            "Thả S1 sau khi máy đã chạy",
+            "?",
+            "?",
+            "?",
+            "1",
+            "?",
+            "?"
+          ],
+          [
+            "Nhấn S2 khi máy đang chạy",
+            "?",
+            "?",
+            "?",
+            "1",
+            "?",
+            "?"
+          ],
+          [
+            "Quá tải khi máy đang chạy (F tác động)",
+            "?",
+            "?",
+            "?",
+            "1",
+            "?",
+            "?"
+          ],
+          [
+            "Đang quá tải, nhấn S1 (nhóm thống nhất, hỏi giáo viên nếu cần)",
+            "?",
+            "?",
+            "?",
+            "0",
+            "?",
+            "?"
+          ],
+          [
+            "Nhấn S1 và S2 cùng lúc",
+            "?",
+            "?",
+            "?",
+            "0",
+            "?",
+            "?"
+          ],
+          [
+            "F vừa hết quá tải, chưa nhấn gì (nhóm thống nhất, hỏi giáo viên nếu cần)",
+            "?",
+            "?",
+            "?",
+            "0",
+            "?",
+            "?"
+          ]
+        ]
+      },
+      "checks": [
+        {
+          "id": "B3-c8",
+          "kind": "mcq",
+          "prompt": "Một nhóm viết chương trình: Q1 = I1 AND I2 (I2 là nút dừng thường đóng, bình thường bằng 1). Họ nhấn rồi thả S1. Điều gì xảy ra?",
+          "options": [
+            "Q1 giữ bằng 1 sau khi thả S1, vì I2 vẫn bằng 1.",
+            "Q1 trở về 0 ngay khi thả S1, vì chương trình không có cách nào nhớ lệnh mở máy.",
+            "Q1 nhấp nháy giữa 0 và 1."
+          ],
+          "answer": 1,
+          "feedback": [
+            "Sai. Q1 = I1 AND I2 chỉ bằng 1 khi cả hai bằng 1; thả S1 thì I1 = 0 nên Q1 = 0. I2 = 1 chỉ cho phép chạy, không giữ.",
+            "Đúng. Thiếu tự giữ: kết quả chỉ phụ thuộc vào ngõ vào hiện tại, không có thành phần nhớ trạng thái trước.",
+            "Sai. Không có phần tử nào tạo dao động; Q1 đổi giá trị đúng một lần khi thả S1."
+          ],
+          "misconception": "Quên tự giữ."
+        },
+        {
+          "id": "B3-c9",
+          "kind": "mcq",
+          "prompt": "Hai nhóm cùng viết chương trình tự giữ cho nút dừng S2 thường đóng (I2). Nhóm 1: Q1 = (I1 OR Q1) AND I2. Nhóm 2: Q1 = (I1 AND I2) OR Q1. Chương trình nào để nút dừng luôn thắng?",
+          "options": [
+            "Chỉ nhóm 1: điều kiện I2 nằm ngoài cùng nên I2 = 0 làm Q1 = 0 dù tự giữ đang bằng 1.",
+            "Chỉ nhóm 2: tự giữ nằm ngoài cùng nên không có gì làm mất trạng thái.",
+            "Cả hai như nhau vì cùng dùng I1, I2 và Q1."
+          ],
+          "answer": 0,
+          "feedback": [
+            "Đúng. Nhóm 2 sai vì khi Q1 đã bằng 1, tự giữ giữ luôn nó bằng 1 dù I2 = 0: máy không dừng được, lỗi nghiêm trọng về an toàn.",
+            "Sai. Nhóm 2 sẽ không bao giờ tắt được Q1 bằng S2 sau khi đã chạy; đó là dừng không được ưu tiên.",
+            "Sai. Thứ tự lồng nhau của OR và AND quyết định điều kiện nào thắng; hai biểu thức khác nhau về ưu tiên dừng."
+          ],
+          "misconception": "Đặt tự giữ ngoài điều kiện dừng, hay chọn ưu tiên set thay vì reset, khiến dừng không thắng."
+        }
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "B3-we1",
+      "title": "Ví dụ mẫu 1: quạt thông gió, nút dừng thường đóng (đầy đủ)",
+      "problem": "Quạt thông gió: nhấn S1 (thường hở) quạt chạy và giữ khi thả; nhấn S2 (thường đóng) quạt dừng. Không có bảo vệ quá tải và không có đèn báo. Dùng LOGO! lập trình FBD, Q1 nối cuộn dây contactor của quạt.",
+      "fading": "full",
+      "steps": [
+        {
+          "text": "Lập bảng I/O và ghi cả giá trị khi bình thường: I1 = S1 (thường hở, bình thường 0); I2 = S2 (thường đóng, bình thường 1); Q1 = cuộn dây contactor quạt. Lý do: giá trị bình thường quyết định nghĩa của từng ngõ vào."
+        },
+        {
+          "text": "Mô tả hành vi bằng bảng trạng thái (I1, I2, Q1 trước đó, Q1 sau). (0, 1, 0) cho 0: máy nghỉ. (1, 1, 0) cho 1: mở máy. (0, 1, 1) cho 1: giữ khi thả S1. (0, 0, 1) cho 0: nhấn dừng. (1, 0, 0) cho 0 và (1, 0, 1) cho 0: nhấn đồng thời thì dừng thắng. Nhận xét: dòng (0, 1, 0) và (0, 1, 1) có cùng ngõ vào nhưng kết quả khác nhau, nên Q1 phụ thuộc vào trạng thái trước đó. Cần tự giữ."
+        },
+        {
+          "text": "Chọn khối theo mạch cổ điển. Nhánh S1 song song với tiếp điểm tự giữ tương ứng cổng OR(I1, Q1). Phần S2 nối tiếp tương ứng cổng AND với I2, vì máy chỉ được chạy khi I2 = 1. Hồi tiếp Q1 về một đầu của khối OR chính là tiếp điểm phụ tự giữ."
+        },
+        {
+          "text": "Nối khối: B001 = OR(I1, Q1); B002 = AND(B001, I2); Q1 = B002. Cổng AND nằm sau cùng nên I2 nằm \"nối tiếp\" với toàn bộ phần còn lại."
+        },
+        {
+          "text": "Mô phỏng bằng widget ở phần 3.1: bật I2 trước, rồi thử lần lượt sáu dòng của bảng ở bước 2, kể cả hai dòng có I2 = 0 và I1 = 1."
+        },
+        {
+          "text": "Giải thích tại sao đúng: khi I2 = 0, đầu ra AND bằng 0 bất kể OR đang bằng gì, nên dừng luôn thắng, giống mạch cổ điển. Đứt dây S2 cho I2 = 0 nên quạt dừng và không mở lại được: hành vi an toàn. Nếu đặt tự giữ ngoài AND thì dừng không còn thắng."
+        },
+        {
+          "text": "Nạp xuống LOGO! và chạy thử không tải theo danh sách kiểm tra ở phần 3.4, ghi kết quả từng mục."
+        }
+      ]
+    },
+    {
+      "id": "B3-we2",
+      "title": "Ví dụ mẫu 2: bơm nước có đèn \"đang chạy\" (hoàn thành các bước trống)",
+      "problem": "Bơm nước: nhấn S1 (thường hở) bơm chạy và giữ; nhấn S2 (thường đóng) bơm dừng. Có thêm đèn H1 \"đang chạy\" sáng khi bơm chạy. Không có bảo vệ quá tải trong ví dụ này. Q1 nối cuộn dây contactor của bơm, Q2 nối đèn H1. Lần này dùng khối nhớ Latching relay (RS) cho Q1.",
+      "fading": "completion",
+      "steps": [
+        {
+          "text": "Lập bảng I/O: I1 = S1 (thường hở, bình thường 0); I2 = S2 (thường đóng, bình thường 1); Q1 = cuộn dây contactor bơm; Q2 = đèn H1. Hành vi của Q1 giống bảng trạng thái ở ví dụ mẫu 1; yêu cầu mới là H1 sáng khi và chỉ khi bơm đang chạy."
+        },
+        {
+          "text": "Chọn đầu vào cho khối Latching relay: chân S và chân R nối vào đâu?",
+          "blank": true,
+          "prompt": "Nhớ I2 = 1 khi chưa nhấn dừng. Chân R cần bằng 1 vào lúc nào? Cần thêm khối NOT không? Tính chất ưu tiên của khối RS khi S = R = 1 là gì (xem lại B2)?"
+        },
+        {
+          "text": "Nối đèn H1 (Q2): lấy tín hiệu từ đâu, có cần khối thêm không?",
+          "blank": true,
+          "prompt": "H1 phải luôn bằng trạng thái của bơm. Có cần thêm logic ngoài việc nối đúng một tín hiệu đã có không?"
+        },
+        {
+          "text": "Mô phỏng và dự đoán: nhấn giữ S1 và đồng thời nhấn S2 (I2 = 0). Q1 và Q2 bằng bao nhiêu, và vì sao?",
+          "blank": true,
+          "prompt": "Dùng quy tắc ưu tiên của khối RS. Kết quả này có giống yêu cầu \"dừng thắng\" không?"
+        },
+        {
+          "text": "Dự đoán: đang chạy mà dây S2 bị đứt thì điều gì xảy ra với bơm và đèn, và vì sao đó là hành vi an toàn?",
+          "blank": true,
+          "prompt": "Ngõ vào I2 đọc giá trị nào khi đứt dây? So sánh với trường hợp S2 đấu thường hở."
+        },
+        {
+          "text": "Nạp xuống LOGO! và chạy thử không tải theo danh sách kiểm tra ở phần 3.4. Ghi lại trạng thái của bơm và đèn sau khi cắt rồi cấp lại nguồn."
+        }
+      ]
+    }
+  ],
+  "practice": {
+    "lab_id": "LOGO-LAB-1",
+    "brief_md": "**Nhiệm vụ (LOGO-LAB-1):** điều khiển động cơ bằng LOGO!.\n\n- S1: nhấn thì động cơ chạy và giữ khi thả.\n- S2: nhấn thì động cơ dừng.\n- Quá tải (rơ-le nhiệt F tác động): động cơ dừng và đèn báo sáng.\n- Không có yêu cầu về thời gian.\n\nNhóm làm việc theo kit, mỗi người đều tham gia đấu dây hoặc lập trình và luân phiên vai trò. Sản phẩm nộp: bảng I/O (đã được giáo viên xác nhận), bảng trạng thái đã điền, chương trình đã lưu, và phiếu kiểm tra chạy thử đã ghi kết quả. Nội dung lập trình 3.4 còn được học tiếp ở buổi sau, nên nếu chưa xong thì hoàn thiện ở buổi đó.\n\nBộ thiết bị và loại tiếp điểm trong bài là giả định chờ giáo viên xác nhận trên kit: hãy đọc nhãn thiết bị thật và đối chiếu bảng gán I/O ở phần 3.3 trước khi đấu.",
+    "steps": [
+      "Cắt toàn bộ nguồn của kit (CB, phích cắm) và treo biển \"đang thực hành\". Không đấu hay tháo dây khi còn điện.",
+      "Đọc nhãn: model LOGO! (12/24RCE hay 230RCE), điện áp cuộn dây contactor, loại rơ-le nhiệt. Ghi lại và báo giáo viên nếu khác giả định. Mọi mạch 230 V hoặc 380 V chỉ giáo viên đấu hoặc kiểm tra.",
+      "Lập bảng I/O (địa chỉ, thiết bị, loại tiếp điểm, giá trị bình thường) và điền bảng trạng thái ở phần 3.4. Nhờ giáo viên xác nhận loại tiếp điểm của S2 và F.",
+      "Đấu mạch điều khiển trước: nguồn LOGO!, ngõ vào I1-I3, ngõ ra Q1 tới cuộn dây contactor, Q2 tới đèn báo. Mạch động lực chưa nối.",
+      "Dùng đồng hồ đo thông mạch ở trạng thái bình thường: S2 và F phải thông, S1 phải hở. Kiểm tra lại dây có chạm hay hở không.",
+      "Viết chương trình trong LOGO!Soft Comfort và mô phỏng (F3) đủ mọi dòng của bảng trạng thái, kể cả giả lập quá tải bằng cách đặt ngõ vào của F ở mức 0, trước khi nạp xuống LOGO!.",
+      "Nạp chương trình và chạy thử **không tải** theo danh sách kiểm tra ở phần 3.4. Giả lập quá tải bằng nút TEST của rơ-le nhiệt hoặc công tắc thường đóng, không làm nóng rơ-le.",
+      "Gọi giáo viên kiểm tra toàn bộ mạch (dây, nhãn, tiếp địa, CB) **trước khi cấp nguồn động lực**. Chỉ giáo viên đấu hoặc giám sát việc đấu mạch động lực.",
+      "Chạy thử có động cơ theo danh sách kiểm tra, luôn đứng sẵn tay ở nút dừng, không chạm vào phần quay hay đầu nối. Ghi kết quả từng mục; nếu sai, cắt nguồn rồi mới sửa.",
+      "Cắt nguồn, lưu chương trình với tên rõ ràng, dọn kit và ghi các lỗi nhóm đã gặp vào phiếu."
+    ],
+    "self_check": [
+      "Đã đấu đúng I1, I2, I3, Q1, Q2, không có dây hở hay chạm mạch, và giáo viên đã kiểm tra trước khi cấp nguồn động lực.",
+      "Nhấn S1 thì Q1 (động cơ) chạy và vẫn giữ khi thả S1.",
+      "Nhấn S2 thì động cơ dừng ngay.",
+      "Giả lập quá tải (ngõ vào I3 mở): động cơ dừng và đèn Q2 sáng.",
+      "Chương trình đã được lưu. Cắt nguồn rồi cấp lại: động cơ KHÔNG tự chạy lại, phải nhấn S1 mới chạy; nhóm giải thích được vì sao đây là yêu cầu an toàn.",
+      "Nếu nhập chương trình trên phím LOGO!, đã thao tác đúng quy trình nhập chương trình ở bài B2 (mục 2.3)."
+    ]
+  },
+  "self_test": [
+    {
+      "id": "B3-t1",
+      "kind": "mcq",
+      "prompt": "Nhóm viết Q1 = (I1 OR Q1) AND NOT I2, nhưng S2 đã đấu thường đóng vào I2. Khi chưa nhấn gì và nhấn S1, kết quả là gì?",
+      "options": [
+        "Q1 chạy và giữ khi thả S1.",
+        "Q1 không bao giờ chạy, vì NOT I2 = 0 khi chưa nhấn dừng.",
+        "Q1 chạy khi nhấn S1 nhưng không giữ."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Sai. NOT I2 bằng 0 khi I2 = 1 (chưa nhấn) nên AND luôn cho 0.",
+        "Đúng. Đã dùng NOT cho tín hiệu thường đóng, nên nghĩa bị ngược: logic viết cho nút thường hở.",
+        "Sai. Q1 = (I1 OR Q1) AND 0 luôn bằng 0, không chạy cả lúc đang nhấn S1."
+      ]
+    },
+    {
+      "id": "B3-t2",
+      "kind": "mcq",
+      "prompt": "Tải nào dưới đây phù hợp để đấu trực tiếp vào ngõ ra rơ-le Q của LOGO! (10 A tải trở / 3 A tải cảm, giả định)?",
+      "options": [
+        "Động cơ ba pha 380 V, 0,75 kW.",
+        "Cuộn dây contactor có dòng cuộn dây nhỏ và điện áp khớp với nguồn cấp cho tiếp điểm Q.",
+        "Động cơ một pha 1,5 kW khởi động trực tiếp."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Sai. Tải cảm công suất động cơ, ba pha, dòng khởi động lớn: phải qua contactor.",
+        "Đúng. Cuộn dây contactor là tải cảm nhỏ, nằm trong định mức tiếp điểm Q khi điện áp và dòng khớp.",
+        "Sai. Công suất và dòng khởi động của động cơ này vượt xa mức an toàn của một tiếp điểm Q."
+      ]
+    },
+    {
+      "id": "B3-t3",
+      "kind": "mcq",
+      "prompt": "Rơ-le nhiệt trong mạch khởi động từ bảo vệ chống sự cố nào?",
+      "options": [
+        "Ngắn mạch tức thời trong mạch động lực.",
+        "Quá tải kéo dài làm động cơ nóng lên.",
+        "Mất điện tạm thời của lưới."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Sai. Ngắn mạch do CB hoặc cầu chì cắt; bimetal tác động quá chậm.",
+        "Đúng. Bimetal nóng dần theo dòng quá tải kéo dài rồi mở tiếp điểm.",
+        "Sai. Việc không tự chạy lại sau mất điện đến từ mạch tự giữ, không phải từ rơ-le nhiệt."
+      ]
+    },
+    {
+      "id": "B3-t4",
+      "kind": "mcq",
+      "prompt": "Chương trình tự giữ bằng hồi tiếp ngõ ra Q1 (không dùng tính năng nhớ qua mất điện). Động cơ đang chạy thì mất điện, rồi có điện lại, S1 chưa nhấn. Động cơ ở trạng thái nào?",
+      "options": [
+        "Đứng yên, chờ nhấn S1.",
+        "Tự chạy lại vì chương trình nhớ lệnh mở máy.",
+        "Tự chạy lại nếu S2 đang ở vị trí chưa nhấn."
+      ],
+      "answer": 0,
+      "feedback": [
+        "Đúng. Khi vừa có điện, Q1 bắt đầu ở 0 và I1 = 0 nên không có gì khởi động lại động cơ.",
+        "Sai. Chương trình không có thành phần nhớ qua mất điện, nên không có lệnh nào được giữ lại.",
+        "Sai. S2 chưa nhấn chỉ cho phép chạy, không gây khởi động."
+      ]
+    },
+    {
+      "id": "B3-t5",
+      "kind": "mcq",
+      "prompt": "Mô phỏng chạy đúng, nhưng sau khi nạp và đấu dây, nhấn S1 động cơ không chạy. Kiểm tra nào hợp lý nhất đầu tiên?",
+      "options": [
+        "Nhấn S1 giữ vài giây vì LOGO! quét chậm.",
+        "Đo thông mạch xem F hoặc S2 có đấu nhầm sang tiếp điểm thường hở nên I2 hoặc I3 đang bằng 0 không.",
+        "Kết luận phần cứng đúng vì mô phỏng đã đúng, nên thay contactor."
+      ],
+      "answer": 1,
+      "feedback": [
+        "Sai. Chu kỳ quét của LOGO! rất ngắn; nhấn giữ lâu không phải nguyên nhân.",
+        "Đúng. Ngõ vào bằng 0 do đấu nhầm loại tiếp điểm làm chương trình hiểu là có lệnh dừng hoặc quá tải.",
+        "Sai. Mô phỏng chỉ kiểm tra logic, không kiểm tra dây; thay thiết bị khi chưa đo là suy đoán."
+      ]
+    }
+  ]
+}

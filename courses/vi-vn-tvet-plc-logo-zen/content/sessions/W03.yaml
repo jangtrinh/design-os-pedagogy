@@ -1,0 +1,247 @@
+{
+  "content_version": "tvet-content-1.0",
+  "session_id": "W03",
+  "status": "draft",
+  "authoring": {
+    "model_tier": "sonnet",
+    "date": "2026-11-01"
+  },
+  "title_line": "Bài 3: Ứng dụng LOGO: lập trình điều khiển động cơ điện (buổi 1/2: kiến thức liên quan, yêu cầu, sơ đồ kết nối, bắt đầu lập trình)",
+  "lesson_section_ids": [
+    "B3-s1",
+    "B3-s2",
+    "B3-s3",
+    "B3-s4",
+    "B3-s5",
+    "B3-s6"
+  ],
+  "objectives": {
+    "knowledge": [
+      "Giải thích được tự giữ, dừng ưu tiên và vai trò rơ-le nhiệt trong mạch khởi động từ cổ điển.",
+      "Phát biểu được vì sao nút dừng và tiếp điểm quá tải đấu thường đóng, và giá trị ngõ vào LOGO! đọc được trong từng tình huống (kể cả đứt dây).",
+      "Giải thích được vì sao ngõ ra rơ-le của LOGO! chỉ điều khiển cuộn dây contactor, không đấu thẳng vào động cơ."
+    ],
+    "skills": [
+      "Lập được bảng I/O và bảng trạng thái cho yêu cầu start/stop có báo quá tải.",
+      "Đấu mạch điều khiển của kit đúng sơ đồ đã được giáo viên xác nhận, kiểm tra thông mạch bằng đồng hồ.",
+      "Viết và mô phỏng (F3) chương trình đáp ứng bảng trạng thái, rồi nạp và chạy thử không tải theo danh sách kiểm tra."
+    ],
+    "attitude": [
+      "Tuân thủ quy trình: cắt nguồn khi đấu dây, giáo viên kiểm tra trước khi cấp nguồn động lực.",
+      "Cẩn thận, chính xác khi ghi bảng I/O và khi kiểm tra từng dòng của bảng trạng thái.",
+      "Hợp tác trong nhóm: luân phiên vai trò đấu dây, lập trình và kiểm tra chéo."
+    ]
+  },
+  "materials": [
+    "Kit thực hành PLC Siemens LOGO! (giả định LOGO! 12/24RCE, có thể kèm DM8 12/24R; chờ giáo viên xác nhận), mỗi kit đủ nút nhấn thường hở và thường đóng, đèn báo, contactor, rơ-le nhiệt hoặc công tắc thường đóng giả lập F",
+    "Máy tính cài LOGO!Soft Comfort V8.4, cáp lập trình",
+    "Tivi hoặc máy chiếu để làm mẫu và mô phỏng",
+    "Đồng hồ vạn năng đo thông mạch, dây nối, tua vít, biển \"đang thực hành\"",
+    "Trang bài học B3 (bản học viên), phiếu bảng I/O và bảng trạng thái mẫu (phần 3.4), phiếu chấm LOGO-LAB-1",
+    "Thẻ hoặc giấy A/B/C để trả lời câu hỏi bản lề"
+  ],
+  "organization": "Giờ lý thuyết tập trung cả lớp; giờ thực hành chia nhóm theo số kit, tối đa 18 người một nhóm thực hành theo quy chế (kiểm tra quy chế nội bộ), mỗi kit 2 đến 3 sinh viên để ai cũng được đấu dây hoặc lập trình. Giáo viên kiểm tra từng kit trước khi cấp nguồn động lực.",
+  "phases": [
+    {
+      "kind": "on_dinh_lop",
+      "minutes": 10,
+      "content": [
+        "Điểm danh, nhắc nội quy xưởng và quy tắc an toàn điện (cắt nguồn khi đấu dây, một người ra lệnh cấp điện)",
+        "Chia nhóm theo kit, phân vai ban đầu (đấu dây, lập trình, kiểm tra chéo)",
+        "Truy hồi kiến thức B2 và B1"
+      ],
+      "teacher": [
+        "Điểm danh, chia nhóm theo kit, nhắc 3 quy tắc an toàn điện",
+        "Đọc lần lượt câu truy hồi, mỗi câu cho 1 phút trả lời trước khi gọi bất kỳ sinh viên",
+        "Chốt đáp án nhanh, ghi lên bảng các chỗ còn sai để quay lại ở i_do"
+      ],
+      "student": [
+        "Trả lời từng câu truy hồi trên giấy nháp, không nhìn tài liệu",
+        "Đối chiếu đáp án với bạn kề và sửa lỗi",
+        "Nhận kit, kiểm tra kit có đủ thiết bị chưa và báo lại nếu thiếu"
+      ],
+      "retrieval_questions": [
+        "Khối Latching relay (RS): khi S = 1 và R = 1 cùng lúc thì Q bằng bao nhiêu, đầu vào nào ưu tiên?",
+        "On-delay: Trg lên 1 rồi xuống 0 trước khi hết thời gian T thì Q bằng bao nhiêu? (B2)",
+        "Nêu các bước mô phỏng một chương trình trong LOGO!Soft Comfort trước khi nạp xuống LOGO!.",
+        "Ngõ ra Q của LOGO! 12/24RCE là loại gì và tải tối đa bao nhiêu? (B1)"
+      ]
+    },
+    {
+      "kind": "dan_nhap",
+      "minutes": 5,
+      "content": [
+        "Tình huống (giả định để suy ngẫm): sau một lần mất điện, băng tải/động cơ tự chạy lại khi điện trở về lúc có người đang vệ sinh phía trong. Máy dùng công tắc gạt hoặc chương trình đã lưu \"đang chạy\" qua mất điện. Nếu lại đứt dây nút dừng, không ai dừng được máy."
+      ],
+      "teacher": [
+        "Kể tình huống và nêu hai câu hỏi: vì sao máy tự chạy được, và nếu nút dừng bị đứt dây thì nên xảy ra điều gì?",
+        "Gọi 2 nhóm trả lời, ghi các ý lên bảng (tự giữ, nút dừng thường đóng)"
+      ],
+      "student": [
+        "Viết 1 câu dự đoán nguyên nhân khiến máy tự chạy lại",
+        "Trao đổi cặp 1 phút: mạch phải có đặc tính gì để tình huống này không xảy ra",
+        "Nêu ý kiến của cặp khi được gọi"
+      ]
+    },
+    {
+      "kind": "gioi_thieu_chu_de",
+      "minutes": 5,
+      "content": [
+        "Mục tiêu buổi học và yêu cầu LOGO-LAB-1: S1 chạy và giữ, S2 dừng, quá tải thì dừng và đèn sáng",
+        "Tiêu chí chấm theo phiếu và trình tự an toàn khi đấu và cấp nguồn",
+        "Lộ trình buổi: làm mẫu, hỏi nhanh, làm chung, rồi tự thực hành theo nhóm"
+      ],
+      "teacher": [
+        "Chiếu yêu cầu bài tập và phiếu chấm, đọc to các tiêu chí",
+        "Nhấn mạnh: mạch động lực chỉ giáo viên đấu hoặc giám sát, hôm nay chạy thử không tải trước"
+      ],
+      "student": [
+        "Nhắc lại yêu cầu bằng lời của mình với bạn kề",
+        "Liệt kê 3 thứ nhóm cần chuẩn bị trước khi đấu dây (nhãn, bảng I/O, bảng trạng thái)",
+        "Ghi vào phiếu tiêu chí chấm nhóm sẽ tự kiểm"
+      ]
+    },
+    {
+      "kind": "giai_quyet_van_de",
+      "minutes": 185,
+      "content": [
+        "Làm mẫu quạt thông gió: tự giữ và nút dừng thường đóng (B3-we1, B3-s1 đến B3-s3)",
+        "Câu hỏi bản lề về cách đọc ngõ vào thường đóng và ưu tiên dừng",
+        "Làm chung bài bơm nước có đèn đang chạy (B3-we2)",
+        "Thực hành LOGO-LAB-1 theo nhóm theo kit"
+      ],
+      "teacher": [
+        "Làm mẫu, hỏi nhanh, dẫn dắt làm chung rồi thả dần cho nhóm tự làm",
+        "Kiểm tra dây từng kit trước khi cấp nguồn động lực, ghi nhận lỗi vào phiếu"
+      ],
+      "student": [
+        "Theo dõi và trả lời câu hỏi trong lúc làm mẫu, tự làm các bước trống ở ví dụ 2",
+        "Tự đấu, lập trình, mô phỏng và kiểm tra theo bảng trạng thái của nhóm"
+      ],
+      "steps": [
+        {
+          "mode": "i_do",
+          "minutes": 25,
+          "title": "GV làm mẫu: quạt thông gió có tự giữ và nút dừng thường đóng",
+          "teacher": [
+            "Chiếu mạch khởi động từ cổ điển (B3-s1), chỉ rõ nhánh tự giữ và vị trí nối tiếp của S2 và F; nêu thành lời vì sao dừng được ưu tiên",
+            "Giải thích fail-safe: so sánh đứt dây ở nút dừng thường đóng và thường hở (B3-s2); đọc bảng giá trị ngõ vào",
+            "Làm mẫu worked example 1 (B3-we1) đủ 7 bước: bảng I/O, bảng trạng thái, chọn khối OR rồi AND, nối, mô phỏng bằng widget, giải thích tại sao dừng thắng. Nói to suy nghĩ ở mỗi quyết định",
+            "Giải thích ngắn vì sao ngõ ra rơ-le chỉ cấp cuộn dây contactor (10 A tải trở / 3 A tải cảm, giả định) (B3-s3)"
+          ],
+          "student": [
+            "Không chép nguyên văn; chỉ ghi lại bảng trạng thái của ví dụ 1 vào phiếu",
+            "Dự đoán kết quả mô phỏng trước khi GV bấm (nêu Q1 sau mỗi dòng của bảng)",
+            "Trả lời câu hỏi nhanh \"vì sao AND nằm sau OR?\" bằng thẻ hoặc giơ tay"
+          ],
+          "lesson_section_ids": [
+            "B3-s1",
+            "B3-s2",
+            "B3-s3"
+          ]
+        },
+        {
+          "mode": "check",
+          "minutes": 5,
+          "title": "Câu hỏi bản lề: đọc ngõ vào thường đóng và dừng ưu tiên",
+          "teacher": [
+            "Chiếu lần lượt B3-c2, B3-c3, B3-c9; mỗi câu 1 phút, thu câu trả lời đồng loạt bằng thẻ A/B/C",
+            "Quyết định theo tỉ lệ đúng: từ 80% trở lên thì sang we_do; từ 30% đến 80% thì cho trao đổi cặp 1 phút rồi hỏi lại; dưới 30% thì giải thích lại bảng giá trị ngõ vào bằng ví dụ khác"
+          ],
+          "student": [
+            "Giơ thẻ trả lời cùng lúc theo hiệu lệnh, không nhìn bạn",
+            "Giải thích với bạn kề lý do chọn khi GV yêu cầu"
+          ],
+          "check_ids": [
+            "B3-c2",
+            "B3-c3",
+            "B3-c9"
+          ]
+        },
+        {
+          "mode": "we_do",
+          "minutes": 30,
+          "title": "Làm chung ví dụ 2: bơm nước có đèn \"đang chạy\" (hoàn thành các bước trống)",
+          "teacher": [
+            "Đọc bài toán B3-we2; bước 1 và bước nạp-chạy thử đã có lời giải, các bước 2 đến 5 để nhóm tự nghĩ",
+            "Với từng bước trống: cho nhóm 2 phút làm trên phiếu theo gợi ý, gọi 1 nhóm trình bày, cả lớp góp ý, rồi nhập lên màn hình và mô phỏng. Cho gợi ý vừa đủ (hỏi ngược, trỏ về B2) trước khi đưa đáp án",
+            "Đáp án (chỉ GV): S nối I1; R nối NOT I2 (R = 1 khi I2 = 0 tức nhấn hoặc đứt dây); Q1 = đầu ra của RS; Q2 nối thẳng từ đầu ra của RS (hoặc từ Q1), không cần khối thêm; S = R = 1 thì Q = 0 vì R ưu tiên. Đứt dây S2: I2 = 0, R = 1, bơm dừng và không mở được lại",
+            "Đi quanh lớp xem nhóm nào còn viết theo \"nhấn = 1\" cho S2 và sửa ngay"
+          ],
+          "student": [
+            "Điền các ô trống của ví dụ 2 trên phiếu với bạn kề trước khi GV hỏi",
+            "Trình bày lý do chọn chân S và R, dự đoán Q1 và Q2 khi nhấn đồng thời S1 và S2",
+            "Chạy mô phỏng F3 trên máy nhóm để kiểm tra dự đoán"
+          ],
+          "lesson_section_ids": [
+            "B3-s6"
+          ]
+        },
+        {
+          "mode": "you_do",
+          "minutes": 125,
+          "title": "Thực hành LOGO-LAB-1 theo nhóm: động cơ start/stop có báo quá tải",
+          "teacher": [
+            "Phát phiếu LOGO-LAB-1; nhắc 10 bước của phần thực hành ở B3 (cắt nguồn, đọc nhãn, bảng I/O, đấu điều khiển, đo thông mạch, mô phỏng F3, nạp, chạy thử không tải, kiểm tra trước khi cấp nguồn động lực, chạy thử có tải)",
+            "Cuối 20 phút đầu: xác nhận bảng I/O và loại tiếp điểm của từng nhóm (đề xuất của bài: S2 và F thường đóng) trước khi nhóm đấu dây",
+            "Kiểm tra dây từng kit theo danh sách (nhãn model, thông mạch S2 và F, cực nguồn, tiếp địa, CB) trước khi cấp nguồn; chỉ đấu hoặc giám sát mạch động lực sau khi nhóm chạy đúng khi không tải",
+            "Đi tuần theo kit; gợi ý bằng câu hỏi (ngõ vào đọc bao nhiêu? dòng nào của bảng trạng thái chưa đúng?), không chỉ thẳng chỗ sai",
+            "Theo dõi lỗi thường gặp và ghi lại: S2 hoặc F đấu hoặc viết ngược logic, thiếu tự giữ, dừng không thắng, đấu F nhầm thường hở, nối nhầm ngõ vào \"X\"; nhóm xong sớm làm biến thể thêm đèn \"đang chạy\""
+          ],
+          "student": [
+            "Làm theo thứ tự: bảng I/O, bảng trạng thái, đấu mạch điều khiển, đo thông mạch, mô phỏng, nạp, chạy thử không tải",
+            "Kiểm tra chéo: một người đọc bảng, một người đo thông mạch, người còn lại kiểm tra dây; đổi vai sau mỗi giai đoạn",
+            "Gọi giáo viên kiểm tra trước khi cấp nguồn động lực; chạy thử có tải theo danh sách kiểm tra khi được cho phép",
+            "Giả lập quá tải bằng nút TEST hoặc công tắc thường đóng, ghi kết quả từng mục vào phiếu"
+          ],
+          "lab_id": "LOGO-LAB-1"
+        }
+      ]
+    },
+    {
+      "kind": "ket_thuc_van_de",
+      "minutes": 15,
+      "content": [
+        "Chấm sản phẩm theo phiếu LOGO-LAB-1: từng nhóm trình diễn các hành vi theo danh sách kiểm tra",
+        "Điểm lại lỗi thường gặp trong buổi: logic ngược với tiếp điểm thường đóng, thiếu tự giữ, dừng không thắng, đấu F nhầm",
+        "Hỏi nhanh: vì sao nút dừng và F đấu thường đóng?"
+      ],
+      "teacher": [
+        "Chấm từng nhóm theo phiếu: nhấn S1, thả, S2, giả lập quá tải, cắt rồi cấp lại nguồn; ghi điểm và nhận xét ngắn",
+        "Tổng kết 3 lỗi gặp nhiều nhất và cách phát hiện, nêu ví dụ trên màn hình",
+        "Nhắc nhóm chưa xong còn thời gian ở buổi sau (cùng bài B3)"
+      ],
+      "student": [
+        "Trình diễn mạch và chương trình cho giáo viên và nhóm bạn xem, trả lời câu hỏi vì sao",
+        "Đối chiếu tự kiểm với phiếu và ghi những mục chưa đạt",
+        "Cắt nguồn, dọn kit, lưu chương trình và ghi lỗi nhóm đã gặp"
+      ]
+    },
+    {
+      "kind": "huong_dan_tu_hoc",
+      "minutes": 5,
+      "content": [
+        "Hoàn thành bảng I/O và bảng trạng thái của nhóm nếu chưa xong; làm bài tự kiểm tra của B3",
+        "Chuẩn bị buổi sau: tiếp tục phần 3.4 và biến thể (đèn \"đang chạy\", tự khởi động lại sau khi hết quá tải)"
+      ],
+      "teacher": [
+        "Giao việc về nhà và chỉ vào các mục B3 cần xem lại",
+        "Nêu câu hỏi gợi mở cho buổi sau: sau khi hết quá tải máy có nên tự chạy lại không, vì sao"
+      ],
+      "student": [
+        "Ghi lại việc cần làm và mục cần xem lại",
+        "Tự làm 5 câu tự kiểm tra B3 và ghi các câu sai để hỏi ở buổi sau"
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "CHƯA KIỂM CHỨNG: lời giải nháp của LOGO-LAB-1 nằm ở course.yaml (labs[].solution_outline) và chỉ là suy luận từ đề bài. Phải chạy thử trên đúng kit trước giờ dạy: bảng I/O, loại tiếp điểm của S2 và F, hành vi khi S = R = 1, trạng thái ngõ ra sau mất điện rồi cấp lại, và tham số nhớ (retentivity, Rem) của khối Latching relay trong LOGO!Soft Comfort V8.4 (bản này chưa kiểm). Không đưa lời giải này cho sinh viên.",
+    "Hình ở mục 3.1.3 của giáo trình nội bộ là hình của ví dụ 1 (mạch OR của S1 và S2 điều khiển đèn Q1), không phải mạch start/stop, không có rơ-le nhiệt, contactor hay động cơ, và vẽ LOGO! 12/24RC nhưng đấu L1/N 230 V. Mục 3.1.4 của giáo trình để trống. Đừng dùng hình đó để đấu dây; hãy chuẩn bị sơ đồ đấu dây riêng cho kit và vẽ lên bảng. Xác nhận nhãn model (12/24RC hay 230RC) trước khi cấp điện.",
+    "Giả lập quá tải: dùng nút TEST của rơ-le nhiệt (nếu cho phép) hoặc công tắc thường đóng thay F; trong mô phỏng đặt ngõ vào của F ở 0. Cấm hơ nóng rơ-le hay cho động cơ quá tải thật. Sau khi F tác động phải reset rơ-le trước khi thử tiếp.",
+    "Định mức ngõ ra rơ-le (giả định LOGO! 12/24RCE: 10 A thuần trở, 3 A tải cảm, không có bảo vệ ngắn mạch) so với cuộn dây contactor: kiểm tra điện áp và dòng cuộn dây trên nhãn trước khi đấu. Nếu cuộn dây là 230 V AC thì mạch ngõ ra là điện lưới, chỉ GV đấu và kiểm tra. Xem có diode hoặc mạch RC dập quá áp chưa. Xác nhận số ngõ ra Q của kit có đủ Q1 và Q2 hay cần DM8.",
+    "Tiêu chí mất nguồn đã được chốt khi rà soát: động cơ không được tự khởi động sau khi có điện lại; nếu nhóm bật Rem cho khối tự giữ và động cơ tự chạy lại thì chấm không đạt và phân tích nguy cơ.",
+    "Hiểu lầm cần để ý: cho rằng nút thường đóng chưa nhấn thì ngõ vào bằng 0; viết NOT thừa cho tiếp điểm đã thường đóng; quên tự giữ; đặt tự giữ ngoài điều kiện dừng nên dừng không thắng; cho rằng đứt dây nút dừng thì máy vẫn chạy bình thường; đấu động cơ thẳng vào ngõ ra rơ-le; kiểm tra quá tải bằng cách làm nóng rơ-le.",
+    "Khung thời gian của bước you_do (125 phút) gợi ý: 20 phút bảng I/O và bảng trạng thái; 25 phút đấu mạch điều khiển và đo thông mạch; 25 phút viết và mô phỏng; 10 phút GV kiểm tra; 30 phút nạp và chạy thử; phần còn lại là chạy thử có tải và ghi phiếu. Nếu thiếu kit, chia hai lượt luân phiên giữa giai đoạn đấu dây và giai đoạn lập trình trên máy.",
+    "Nhóm thực hành tối đa 18 người theo Thông tư 04/2022 (nghề nguy hiểm 10); Thông tư 79/2026 hiệu lực 10/11/2026 nâng lên 25 và 15; ưu tiên quy chế nội bộ của trường. Cần xác nhận số sinh viên mỗi kit."
+  ]
+}
