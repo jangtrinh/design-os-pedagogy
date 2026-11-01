@@ -20,7 +20,9 @@ Nghiên cứu ba tài liệu thật của một mô đun cao đẳng nghề: l�
 - [x] Kiểm chứng trực tiếp phát hiện then chốt: các mục sơ đồ và chương trình của lab 3.x đúng là dòng chấm trống.
 - [x] Số hóa lịch trình thành [`schedule-cd9-k5.json`](schedule-cd9-k5.json). Script đã kiểm 14 LT + 46 TH, 15 tuần, mỗi tuần 4 giờ, kết thúc 19/12/2026.
 - [x] Tổng hợp [research.md](research.md) và thiết kế [agent-design.md](agent-design.md).
-- [ ] P1–P5 theo lộ trình trong agent-design §6. Cần giáo viên trả lời các câu hỏi ở §7 trước P2.
+- [x] Research các câu hỏi mở (phần cứng/phần mềm, quy định đào tạo nghề): [`source-notes/05`](source-notes/05-hardware-software-facts.md), [`source-notes/06`](source-notes/06-tvet-regulations.md), tóm tắt ở [agent-design §7](agent-design.md#7-câu-hỏi-mở-đã-research-chờ-giáo-viên-xác-nhận).
+- [x] P1: khóa học [`courses/vi-vn-tvet-plc-logo-zen/`](../../courses/vi-vn-tvet-plc-logo-zen/README.md), `tools/course_support/vocational/` (planner + audit `course-audit-vocational-1.0`), `tools/plan_schedule.py`, `tools/vocational_audit.py`, `tests/test_vocational_course.py` (22 test). Toàn bộ suite: 120 test qua.
+- [ ] P2–P5 theo lộ trình trong agent-design §6.
 
 ## Acceptance
 
@@ -28,4 +30,4 @@ Bộ nguồn được mô tả có vị trí trích dẫn. Chênh lệch giữa 
 
 ## Limits
 
-Các bản trích xuất là đầu ra AI, chưa có chuyên gia PLC hay giáo viên duyệt. Agent tầng Haiku và Sonnet chỉ mở một số ảnh có giới hạn. Một số hộp thoại phần mềm ZEN (image124–126) không đọc được. Tên tiếng Anh đánh dấu `*` trong ghi chú Ch.2 lấy từ hiểu biết chung về LOGO! Manual, chưa đối chiếu manual. Chưa có mã, schema hay test nào được thêm. Đây là pha nghiên cứu và thiết kế.
+Các bản trích xuất là đầu ra AI, chưa có chuyên gia PLC hay giáo viên duyệt. Agent tầng Haiku và Sonnet chỉ mở một số ảnh có giới hạn. Một số hộp thoại phần mềm ZEN (image124–126) không đọc được. Tên tiếng Anh đánh dấu `*` trong ghi chú Ch.2 lấy từ hiểu biết chung về LOGO! Manual, chưa đối chiếu manual. P1 chỉ kiểm cấu trúc, thứ tự, thời lượng và thiết bị. Chưa có giáo án hay phiếu học tập nào được sinh (P3), và chưa có lab nào được giáo viên kiểm chứng (P2). `schedule-cd9-k5.json` là bản số hóa đầu tiên; bản dùng thật là `courses/vi-vn-tvet-plc-logo-zen/schedules/cd9-k5-2026.yaml`. Lỗi trong dữ liệu lab do Haiku soạn (ZEN-LAB-2 thiếu đường reset timer) đã được phát hiện khi rà soát và sửa lại.

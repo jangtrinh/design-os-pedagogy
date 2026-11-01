@@ -5,7 +5,7 @@
 # D_zen: PLC Omron ZEN (Ch4-6, "Điều khiển lập trình cỡ nhỏ")
 
 Nguồn: chunk `D_ch4-6_zen.md` (L = số dòng file). Ảnh: `media/imageNNN`. Nhãn: **[ĐỌC]** = có trong tài liệu/ảnh; **[SUY RA]** = tôi suy luận, chưa chạy thử trên ZEN.
-**Phát hiện quan trọng nhất:** Mục 6.1.3-6.4.4 chỉ là các dòng chấm trống (L903-1107). Chương 6 chỉ có đúng 1 ảnh (image154, sơ đồ rơ-le 6.1). Toàn bộ sơ đồ nối dây và ladder cho bài lab phải do giáo viên tự soạn.
+**Phát hiện quan trọng nhất:** Các mục "Sơ đồ kết nối" và "Lập trình theo yêu cầu" (6.x.3, 6.x.4) cùng 6.4.1–6.4.2 chỉ là các dòng chấm trống (L903-1107); phần "Yêu cầu bài tập" 6.1.2–6.3.2 có văn bản. Chương 6 chỉ có đúng 1 ảnh (image154, sơ đồ rơ-le 6.1). Toàn bộ sơ đồ nối dây và ladder cho bài lab phải do giáo viên tự soạn.
 
 ## Ch4 đơn vị nội dung
 

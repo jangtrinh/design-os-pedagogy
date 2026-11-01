@@ -111,11 +111,25 @@ Theo báo cáo kiến trúc: `tools/course_support/structure.py` và `render_cou
 | P4 | Xếp lại lịch từ `feedback/` và `exceptions` | Kịch bản thử: nghỉ tuần 6, buổi rút còn 3 giờ, thiếu kit ZEN tuần 11 |
 | P5 | Mở rộng sang mô đun khác của khoa | Chỉ thay `course.yaml`, `units/`, `labs/`, không đổi mã |
 
-## 7. Câu hỏi cần giáo viên trả lời trước P2
+## 7. Câu hỏi mở: đã research, chờ giáo viên xác nhận
 
-1. Kit thực tế dùng model nào: LOGO! 12/24RC hay 230RC, thế hệ 0BA6, 0BA8 hay mới hơn, có module DM8 không? ZEN loại 10 hay 20 I/O, có module mở rộng không? Bài đèn giao thông cần 6 ngõ ra, nên câu trả lời quyết định lời giải.
-2. Hình thức và thời lượng KTĐK 1, KTĐK 2 (lý thuyết, thực hành hay sản phẩm). Thang điểm và trọng số.
-3. Lớp có bao nhiêu sinh viên và bao nhiêu kit, để chia nhóm.
-4. Khoa có sẵn lời giải các bài lab (tệp .lsc/.zen) ngoài giáo trình không?
-5. Có cần docx khớp từng ô theo mẫu trường, hay Markdown/PDF là đủ cho giai đoạn đầu?
-6. Repo này công khai. Có được phép đưa trích đoạn giáo trình nội bộ vào không, hay chỉ giữ ở dạng tham chiếu như hiện nay?
+Nguồn web của hãng và trang luật không truy cập được trong phiên nghiên cứu, nên các câu trả lời dưới đây chỉ dựa trên đoạn trích từ kết quả tìm kiếm. Chi tiết và nguồn ở [`source-notes/05`](source-notes/05-hardware-software-facts.md) và [`source-notes/06`](source-notes/06-tvet-regulations.md). Các giá trị đã đưa vào `courses/vi-vn-tvet-plc-logo-zen/course.yaml` và được đánh dấu là giả định.
+
+| Câu hỏi | Mặc định đang dùng | Tin cậy |
+|---|---|---|
+| Model kit | LOGO! 12/24RCE + 1 DM8 12/24R (đủ 6 ngõ ra cho đèn giao thông). ZEN-10C1AR-A-V2, có thể thêm ZEN-8E1AR. ZEN đã ngừng sản xuất (hỗ trợ đến 2029), dòng kế nhiệm CP2E | Trung bình |
+| Phần mềm | LOGO!Soft Comfort V8.4 (Win 7–11). ZEN-SOFT01-V4 (đến Win 10) + cáp RS-232 ZEN-CIF01 và bộ chuyển USB | Trung bình |
+| Phút mỗi giờ | Lý thuyết 45, thực hành và tích hợp 60 | Cao |
+| KTĐK | 2 bài thực hành theo phiếu chấm, mỗi bài 1 giờ, tách khỏi giờ thực hành tuần 10 và 14 | Trung bình (thời lượng là giả định) |
+| Điểm mô đun | ĐTB kiểm tra (TX hệ số 1, ĐK hệ số 2) × 0,4 + điểm thi × 0,6. Đạt từ 5,0. Dự thi cần ≥ 80% thời gian học | Cao |
+| Sĩ số nhóm thực hành | 18. TT 79/2026 (hiệu lực 10/11/2026) nâng lên 25 | Trung bình |
+| File lời giải có sẵn | Không tìm thấy nguồn công khai cho cửa tự động, băng tải hay start/stop. Lời giải vẫn là `draft` và cần kiểm trên kit | — |
+| Xuất docx | Quyết định: Markdown trước. Docx dùng pandoc với `reference.docx` dựng từ GA20 (pha P3) | Quyết định thiết kế |
+| Trích giáo trình vào repo công khai | Quyết định: chỉ giữ tham chiếu và phân tích, không chép nguyên văn | Quyết định thiết kế |
+
+## 8. Quyết định khi làm P1
+
+- Thiết bị **có sẵn** (`calendar.available_equipment_ids`, cả học kỳ) tách khỏi thiết bị **dự kiến** theo từng tuần của lịch gốc. Nếu không tách, nội dung LOGO bị đẩy qua các tuần ZEN tới tận tuần thi khi một tuần bị hủy.
+- Thi kết thúc mô đun được **ghim** vào tuần trong lịch gốc. KTĐK thì trôi theo nội dung. Khi thiếu giờ, planner liệt kê phần dạy bị thiếu chứ không dời ngày thi.
+- Mã buổi: `Wnn` cho buổi thường, `Mnn` cho buổi bù. Số giáo án luôn đánh lại liên tục.
+- Kế hoạch buổi lưu hash của lịch. Sửa lịch mà không chạy lại planner thì audit báo `STALE_PLAN`.

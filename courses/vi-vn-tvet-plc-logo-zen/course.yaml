@@ -1,0 +1,1483 @@
+{
+  "blueprint_version": "tvet-0.1",
+  "audit_contract": "course-audit-vocational-1.0",
+  "status": "draft",
+  "course": {
+    "id": "vi-vn-tvet-plc-logo-zen",
+    "title": "Điều khiển lập trình cỡ nhỏ (PLC LOGO!, ZEN)",
+    "level": "cao-dang",
+    "language": "vi",
+    "occupations": [
+      "Công nghệ kỹ thuật điện - điện tử",
+      "Kỹ thuật máy lạnh và điều hòa không khí"
+    ],
+    "position": "Mô đun chuyên ngành tự chọn, học sau Trang bị điện, Khí cụ điện, PLC",
+    "scope_exclusions": [
+      "Sao chép nguyên văn giáo trình nội bộ",
+      "Phát lời giải lab chưa được giáo viên kiểm chứng cho người học"
+    ]
+  },
+  "module_program": {
+    "total_hours": 60,
+    "theory_hours": 14,
+    "practice_hours": 42,
+    "exam_hours": 4,
+    "source_id": "S-MODULE-TEXT",
+    "note": "Kiểm tra định kỳ tính trong giờ thực hành; chỉ thi kết thúc mô đun thuộc cột kiểm tra."
+  },
+  "time_policy": {
+    "minutes_per_hour": {
+      "theory": 45,
+      "practice": 60,
+      "assessment": 60
+    },
+    "basis": "1 giờ lý thuyết = 45 phút; 1 giờ thực hành/tích hợp = 60 phút (TT 04/2022/TT-BLĐTBXH, TT 05/2026, TT 79/2026 theo trích đoạn; chưa đọc toàn văn). GA20 của trường: buổi 4 giờ thực hành = 240 phút.",
+    "basis_locator": "plans/20261101-tvet-plc-teacher-agent/source-notes/06-tvet-regulations.md",
+    "confidence": "medium",
+    "default_phase_minutes": {
+      "on_dinh_lop": 10,
+      "dan_nhap": 5,
+      "gioi_thieu_chu_de": 5,
+      "ket_thuc_van_de": 15,
+      "huong_dan_tu_hoc": 5
+    }
+  },
+  "class_policy": {
+    "max_practice_group": 18,
+    "basis": "TT 04/2022 (18; nghề nguy hiểm 10). TT 79/2026 hiệu lực 10/11/2026 nâng lên 25/15; ưu tiên quy chế nội bộ của trường.",
+    "confidence": "medium"
+  },
+  "grading_policy": {
+    "continuous_weight": 1,
+    "periodic_weight": 2,
+    "test_average_share": 0.4,
+    "final_exam_share": 0.6,
+    "scale": 10,
+    "rounding_decimals": 1,
+    "pass_mark": 5.0,
+    "exam_eligibility": {
+      "min_attendance": 0.8,
+      "min_test_average": 5.0
+    },
+    "basis": "TT 04/2022/TT-BLĐTBXH; giữ nguyên trong TT 79/2026 theo trích đoạn",
+    "confidence": "high"
+  },
+  "hardware_assumptions": {
+    "logo": {
+      "base": "LOGO! 12/24RCE (LOGO! 8): 8 DI (I1, I2, I7, I8 dùng được 0-10 V), 4 relay 10 A thuần trở / 3 A tải cảm",
+      "expansion": "1 x DM8 12/24R (4 DI, 4 DO) để có đủ 6 ngõ ra cho bài đèn giao thông",
+      "software": "LOGO!Soft Comfort V8.4, ngôn ngữ FBD"
+    },
+    "zen": {
+      "base": "ZEN-10C1AR-A-V2: 6 ngõ vào AC, 4 relay; tối đa 3 module ZEN-8E1AR (4 vào/4 ra)",
+      "software": "ZEN-SOFT01-V4 (ZEN Support Software), cáp ZEN-CIF01 RS-232 + bộ chuyển USB-RS232",
+      "lifecycle": "Omron ngừng nhận đơn 2024-03-30, hỗ trợ đến 2029-06-30; dòng kế nhiệm CP2E"
+    },
+    "basis_locator": "plans/20261101-tvet-plc-teacher-agent/source-notes/05-hardware-software-facts.md",
+    "confidence": "medium",
+    "status": "assumed-until-teacher-confirms"
+  },
+  "equipment": [
+    {
+      "id": "pc",
+      "name": "Máy vi tính"
+    },
+    {
+      "id": "projector",
+      "name": "Tivi hoặc máy chiếu"
+    },
+    {
+      "id": "logo-soft",
+      "name": "LOGO!Soft Comfort V8.4"
+    },
+    {
+      "id": "logo-kit",
+      "name": "Kit thực hành PLC Siemens LOGO!"
+    },
+    {
+      "id": "zen-soft",
+      "name": "ZEN Support Software (lịch ghi ZEN-SOFT)"
+    },
+    {
+      "id": "zen-kit",
+      "name": "Kit thực hành PLC Omron ZEN"
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "K1",
+      "domain": "knowledge",
+      "text": "Mô tả được các thành phần của phần mềm lập trình cho PLC LOGO, ZEN.",
+      "lesson_ids": [
+        "B2",
+        "B8"
+      ],
+      "assessment_ids": [
+        "KTDK1",
+        "KTDK2",
+        "THI-KT"
+      ]
+    },
+    {
+      "id": "K2",
+      "domain": "knowledge",
+      "text": "Nhận biết được các loại ngõ vào ra của PLC LOGO, ZEN.",
+      "lesson_ids": [
+        "B1",
+        "B7"
+      ],
+      "assessment_ids": [
+        "KTDK1",
+        "KTDK2",
+        "THI-KT"
+      ]
+    },
+    {
+      "id": "K3",
+      "domain": "knowledge",
+      "text": "Mô tả được các lệnh sử dụng trong PLC LOGO, ZEN.",
+      "lesson_ids": [
+        "B2",
+        "B8"
+      ],
+      "assessment_ids": [
+        "KTDK1",
+        "KTDK2",
+        "THI-KT"
+      ]
+    },
+    {
+      "id": "S1",
+      "domain": "skill",
+      "text": "Lập trình được các hệ thống dây chuyền cơ bản sử dụng PLC LOGO, ZEN.",
+      "lesson_ids": [
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B9"
+      ],
+      "assessment_ids": [
+        "KTDK1",
+        "KTDK2",
+        "THI-KT"
+      ]
+    },
+    {
+      "id": "S2",
+      "domain": "skill",
+      "text": "Kết nối nguồn và thiết bị điều khiển ngoài cho bộ PLC LOGO, ZEN.",
+      "lesson_ids": [
+        "B1",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B9"
+      ],
+      "assessment_ids": [
+        "KTDK1",
+        "KTDK2",
+        "THI-KT"
+      ]
+    },
+    {
+      "id": "A1",
+      "domain": "autonomy",
+      "text": "Rèn luyện tính cẩn thận, chính xác, khoa học.",
+      "lesson_ids": [
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B9"
+      ],
+      "assessment_ids": [
+        "THI-KT"
+      ]
+    },
+    {
+      "id": "A2",
+      "domain": "autonomy",
+      "text": "Có ý thức, trách nhiệm trong việc bảo quản và giữ an toàn cho người và thiết bị.",
+      "lesson_ids": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "assessment_ids": [
+        "THI-KT"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "B1",
+      "title": "Giới thiệu chương trình mô đun; Giới thiệu chung về PLC LOGO",
+      "source_id": "S-MODULE-TEXT",
+      "source_locator": "Mở đầu + Chương 1",
+      "program_hours": {
+        "theory": 1,
+        "practice": 3
+      },
+      "prerequisite_ids": [],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "logo-soft",
+        "logo-kit"
+      ],
+      "lab_ids": [
+        "LOGO-PRAC-1"
+      ]
+    },
+    {
+      "id": "B2",
+      "title": "Các lệnh cơ bản lập trình cho PLC LOGO",
+      "source_id": "S-MODULE-TEXT",
+      "source_locator": "Chương 2",
+      "program_hours": {
+        "theory": 1,
+        "practice": 3
+      },
+      "prerequisite_ids": [
+        "B1"
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "logo-soft",
+        "logo-kit"
+      ],
+      "lab_ids": [
+        "LOGO-PRAC-2"
+      ]
+    },
+    {
+      "id": "B3",
+      "title": "Ứng dụng LOGO: lập trình điều khiển động cơ điện",
+      "source_id": "S-MODULE-TEXT",
+      "source_locator": "Mục 3.1",
+      "program_hours": {
+        "theory": 2,
+        "practice": 6
+      },
+      "prerequisite_ids": [
+        "B2"
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "logo-soft",
+        "logo-kit"
+      ],
+      "lab_ids": [
+        "LOGO-LAB-1"
+      ]
+    },
+    {
+      "id": "B4",
+      "title": "Ứng dụng LOGO: lập trình điều khiển đèn giao thông",
+      "source_id": "S-MODULE-TEXT",
+      "source_locator": "Mục 3.2",
+      "program_hours": {
+        "theory": 2,
+        "practice": 6
+      },
+      "prerequisite_ids": [
+        "B2"
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "logo-soft",
+        "logo-kit"
+      ],
+      "lab_ids": [
+        "LOGO-LAB-2"
+      ]
+    },
+    {
+      "id": "B5",
+      "title": "Ứng dụng LOGO: lập trình điều khiển đóng mở cửa tự động",
+      "source_id": "S-MODULE-TEXT",
+      "source_locator": "Mục 3.3",
+      "program_hours": {
+        "theory": 2,
+        "practice": 6
+      },
+      "prerequisite_ids": [
+        "B2"
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "logo-soft",
+        "logo-kit"
+      ],
+      "lab_ids": [
+        "LOGO-LAB-3"
+      ]
+    },
+    {
+      "id": "B6",
+      "title": "Ứng dụng LOGO: lập trình điều khiển băng tải công nghiệp",
+      "source_id": "S-MODULE-TEXT",
+      "source_locator": "Mục 3.4",
+      "program_hours": {
+        "theory": 2,
+        "practice": 6
+      },
+      "prerequisite_ids": [
+        "B2"
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "logo-soft",
+        "logo-kit"
+      ],
+      "lab_ids": [
+        "LOGO-LAB-4"
+      ]
+    },
+    {
+      "id": "B7",
+      "title": "Giới thiệu chung về PLC ZEN",
+      "source_id": "S-MODULE-TEXT",
+      "source_locator": "Chương 4",
+      "program_hours": {
+        "theory": 1,
+        "practice": 3
+      },
+      "prerequisite_ids": [
+        "B1"
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "zen-soft",
+        "zen-kit"
+      ],
+      "lab_ids": [
+        "ZEN-PRAC-1"
+      ]
+    },
+    {
+      "id": "B8",
+      "title": "Các lệnh cơ bản lập trình cho PLC ZEN",
+      "source_id": "S-MODULE-TEXT",
+      "source_locator": "Chương 5",
+      "program_hours": {
+        "theory": 1,
+        "practice": 3
+      },
+      "prerequisite_ids": [
+        "B7"
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "zen-soft",
+        "zen-kit"
+      ],
+      "lab_ids": [
+        "ZEN-PRAC-2"
+      ]
+    },
+    {
+      "id": "B9",
+      "title": "Ứng dụng PLC ZEN: động cơ, đèn giao thông, cửa tự động",
+      "source_id": "S-MODULE-TEXT",
+      "source_locator": "Mục 6.1-6.3",
+      "program_hours": {
+        "theory": 2,
+        "practice": 6
+      },
+      "prerequisite_ids": [
+        "B8",
+        "B3",
+        "B4",
+        "B5"
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "zen-soft",
+        "zen-kit"
+      ],
+      "lab_ids": [
+        "ZEN-LAB-1",
+        "ZEN-LAB-2",
+        "ZEN-LAB-3"
+      ]
+    }
+  ],
+  "labs": [
+    {
+      "id": "LOGO-PRAC-1",
+      "lesson_id": "B1",
+      "platform": "logo",
+      "title": "Đấu nối nguồn và ngõ vào/ra PLC LOGO! (relay và transistor)",
+      "requirement": "Đọc ký hiệu trên vỏ và bảng thông số để chọn đúng model (điện áp vào, relay hay transistor, có RC/Co). Đấu nguồn, ngõ vào và ngõ ra (relay hoặc transistor) đúng sơ đồ mục 1.2.1 (Hình 1.1–1.3). Ngắt nguồn khi đấu dây.",
+      "io_table": [],
+      "functions": [],
+      "rubric": [
+        "Giải mã đúng ký hiệu model (ví dụ 230RCo): nêu được điện áp vào, loại ngõ ra, có hay không có màn hình.",
+        "Chọn đúng model theo điện áp nguồn và loại tải; tải trên ngõ transistor không vượt 0,3 A (nếu vượt phải có relay trung gian).",
+        "Đấu ngõ vào đúng điện áp của model (không đưa 230 V vào model 24 V và ngược lại).",
+        "Đấu ngõ ra relay (cách ly với nguồn và ngõ vào) và transistor (cực chung M, nguồn 24 VDC) đúng Hình 1.2–1.3.",
+        "Lắp cầu chì ngoài cho các model relay yêu cầu cầu chì ngoài.",
+        "Kiểm tra nhãn model và điện áp nguồn, đối chiếu sơ đồ trước khi cấp điện."
+      ],
+      "safety": [
+        "Ngắt nguồn trước khi đấu dây; không chạm đầu nối khi đang có điện.",
+        "Kiểm tra nhãn model và điện áp trước khi cấp nguồn; cấp sai điện áp làm hỏng ngõ vào.",
+        "Tải transistor không vượt 0,3 A; tải lớn đi qua relay hoặc contactor trung gian.",
+        "Model relay (12/24RC, 24RC, 230RC) cần cầu chì ngoài."
+      ],
+      "common_faults": [
+        {
+          "fault": "Cấp 230 V vào model 24 V (hoặc ngược lại) làm hỏng ngõ vào.",
+          "remedy": "Đọc nhãn model trước khi cấp nguồn và đối chiếu điện áp."
+        },
+        {
+          "fault": "Đọc nhầm R/không R nên chọn sai loại tải.",
+          "remedy": "Đối chiếu ký hiệu trên vỏ với bảng thông số (không R là transistor)."
+        },
+        {
+          "fault": "Tải trên transistor vượt 0,3 A.",
+          "remedy": "Dùng relay hoặc contactor trung gian."
+        },
+        {
+          "fault": "VOM đo điện áp ngõ vào không có tải cho kết quả giả (ví dụ ~230 V nhưng ngõ vào hiển thị 0).",
+          "remedy": "Đo lại có tải (đèn thử hoặc điện trở); nếu điện áp sụt thì không có điện áp thật."
+        },
+        {
+          "fault": "Đầu nối ngõ vào lỏng hoặc đấu nhầm, ngõ vào hiển thị 0 dù công tắc đóng.",
+          "remedy": "Siết lại đầu nối và đo thông mạch khi công tắc đóng."
+        }
+      ],
+      "variants": [
+        "Giải mã ba mã model (ví dụ 12/24RCo, 24, 230RCo) và nêu điện áp, loại ngõ ra, có màn hình hay không.",
+        "Với LOGO! 230RC cần thêm 10 ngõ vào 230 VAC và 6 ngõ ra relay, chọn module DM8 và xác định số lượng module.",
+        "Chẩn đoán: I3 đóng nhưng màn hình hiển thị 0 dù VOM đo khoảng 230 V; nêu ba nguyên nhân và cách kiểm tra."
+      ],
+      "solution_outline": "",
+      "solution_basis": "textbook",
+      "verification": "draft",
+      "source_locator": "Giáo trình mục 1.1.2, 1.2.1 (Hình 1.1–1.3); source-notes/01 §LOGO-1.1.2, §LOGO-1.2.1",
+      "textbook_completeness": 3,
+      "open_issues": [
+        "Mức đầy đủ 3/5 là đánh giá của người soạn từ ghi chú nguồn (ghi chú không có mức cho chương này).",
+        "Số liệu mâu thuẫn trong giáo trình: 230RC 85–256 VAC (bảng) và 85–264 V (văn bản); mức 1 của model 24 là 12 VDC (bảng) và 15 VDC (văn bản); relay 10 A/3 A và 8 A/2 A; dòng vào 230RC 0,05 mA và 0,24 mA. Đối chiếu catalogue.",
+        "Giáo trình không ghi thế hệ và mã đặt hàng của model; không rõ bảng áp dụng cho thế hệ nào.",
+        "Model 24 ghi 4 transistor nhưng Hình 1.3 (image7) là LOGO!24L với 6 ngõ ra; ghi '16 đầu ra số' không khớp cấu hình mở rộng.",
+        "Giáo trình ghi 'không cần dây nối đất', nguy hiểm nếu dạy như quy tắc chung; đối chiếu manual về cực FE.",
+        "Giáo trình thiếu trình tự đấu nối chung (ngắt nguồn, đo điện áp, đối chiếu sơ đồ) và không nói LOGO không thay thế mạch dừng khẩn cấp; giáo viên bổ sung. Hình 1.4 (image10) chưa được kiểm tra bằng ảnh."
+      ]
+    },
+    {
+      "id": "LOGO-PRAC-2",
+      "lesson_id": "B2",
+      "platform": "logo",
+      "title": "Cài LOGO!Soft Comfort và nhập chương trình OR (S1//S2 → Q1)",
+      "requirement": "Cài đặt phần mềm LOGO!Soft Comfort theo các bước của giáo trình. Nhập chương trình OR: S1 song song với S2 điều khiển Q1 (đèn E1/cuộn K1). Nhập bằng phím trên LOGO (Program > Edit Prg, lập trình từ Q1 về ngõ vào) và bằng phần mềm (Connect F5). Mô phỏng (F3) và lưu project.",
+      "io_table": [
+        {
+          "address": "I1",
+          "device": "S1",
+          "description": "Ngõ vào OR, song song với S2."
+        },
+        {
+          "address": "I2",
+          "device": "S2",
+          "description": "Ngõ vào OR, song song với S1."
+        },
+        {
+          "address": "Q1",
+          "device": "Đèn E1 / cuộn K1",
+          "description": "Tải điều khiển bởi khối OR."
+        }
+      ],
+      "functions": [
+        "Co: I1, I2, Q1",
+        "X (ngõ vào không dùng của OR, mức 0)",
+        "BF: OR (3 ngõ vào)"
+      ],
+      "rubric": [
+        "Cài đặt phần mềm đủ các bước theo giáo trình và mở được chương trình.",
+        "Nhập khối OR bằng phím đúng quy trình: vào soạn thảo bằng tổ hợp 3 phím, lập trình từ Q1 về ngõ vào, ngõ vào không dùng ghi X.",
+        "Nhập OR bằng phần mềm: nối I1, I2 vào OR và OR vào Q1, dùng Connect (F5).",
+        "Mô phỏng (F3): S1 hoặc S2 đóng thì Q1 bật; cả hai mở thì Q1 tắt.",
+        "Tuân thủ quy tắc nối: một ngõ ra nối được nhiều ngõ vào, không nối nhiều ngõ ra vào một ngõ vào.",
+        "Chương trình trên LOGO chỉ được lưu khi đã hoàn tất."
+      ],
+      "safety": [
+        "Chỉ cài phần mềm từ nguồn hợp lệ do nhà trường cung cấp (giáo trình không nêu nguồn và bản quyền).",
+        "Ngắt nguồn LOGO khi đấu dây S1, S2 và tải Q1.",
+        "Tải Q1 không vượt dòng định mức của ngõ ra; transistor tối đa 0,3 A."
+      ],
+      "common_faults": [
+        {
+          "fault": "Lập trình từ ngõ vào sang ngõ ra.",
+          "remedy": "Lập trình từ ngõ ra Q1 về các ngõ vào (từ phải sang trái)."
+        },
+        {
+          "fault": "Nối nhiều ngõ ra vào cùng một ngõ vào.",
+          "remedy": "Chỉ nối một nguồn vào một ngõ vào theo quy tắc của giáo trình."
+        },
+        {
+          "fault": "Để trống ngõ vào không dùng của khối OR.",
+          "remedy": "Gán X (OR: X = 0)."
+        },
+        {
+          "fault": "Thoát khi chương trình chưa hoàn tất.",
+          "remedy": "Hoàn tất chương trình trước khi thoát; ESC lùi một bước khi cần."
+        }
+      ],
+      "variants": [
+        "Nhập lại khối OR bằng phím rồi đối chiếu kết quả với chương trình trên phần mềm.",
+        "Thay khối OR bằng khối AND cho cùng hai ngõ vào, mô phỏng lại và so sánh bảng trạng thái."
+      ],
+      "solution_outline": "",
+      "solution_basis": "textbook",
+      "verification": "draft",
+      "source_locator": "Giáo trình mục 2.2, 2.3 (ví dụ 2.3.8); source-notes/03 §2.2–2.3; source-notes/02 (bảng Co, BF)",
+      "textbook_completeness": 2,
+      "open_issues": [
+        "Mức đầy đủ 2/5 là đánh giá của người soạn: có các bước cài đặt và một ví dụ OR, nhưng thiếu chọn model, truyền chương trình, giám sát online; mục soạn thảo FBD trống.",
+        "Phiên bản chưa thống nhất: giáo trình ghi V7 nâng lên V8.1, lịch giảng ghi V8.4, ảnh màn hình là bản V5.0. Xác nhận bản dùng trên lớp.",
+        "Bước 'mở V7 (bắt buộc)' không được giải thích; giáo viên xác nhận nguồn cài đặt hợp lệ.",
+        "Ký hiệu phím mũi tên bị mất trong giáo trình (chỉ còn dấu phẩy và OK); giả định ◄ ► + OK cần kiểm tra trên LOGO thật."
+      ]
+    },
+    {
+      "id": "LOGO-LAB-1",
+      "lesson_id": "B3",
+      "platform": "logo",
+      "title": "Điều khiển động cơ: start/stop và đèn báo quá tải",
+      "requirement": "S1 là nút mở máy: nhấn thì động cơ chạy và giữ khi thả. S2 là nút dừng máy: nhấn thì động cơ dừng. Khi quá tải (rơ-le nhiệt F tác động), động cơ dừng và đèn báo sáng. Không có yêu cầu thời gian.",
+      "io_table": [
+        {
+          "address": "I1",
+          "device": "S1 (nút ON, thường hở)",
+          "description": "Mở máy."
+        },
+        {
+          "address": "I2",
+          "device": "S2 (nút OFF)",
+          "description": "Dừng máy; loại tiếp điểm chưa xác định."
+        },
+        {
+          "address": "I3",
+          "device": "F (tiếp điểm rơ-le nhiệt)",
+          "description": "Quá tải [suy luận, không có trong ảnh nguồn]."
+        },
+        {
+          "address": "Q1",
+          "device": "K / contactor động cơ",
+          "description": "Chạy động cơ."
+        },
+        {
+          "address": "Q2",
+          "device": "Đèn báo quá tải",
+          "description": "Sáng khi quá tải [suy luận]."
+        }
+      ],
+      "functions": [
+        "BF: AND, OR, NOT",
+        "SF: Latching relay (RS)"
+      ],
+      "rubric": [
+        "Đấu đúng I1, I2, I3, Q1, Q2; không hở, không chạm mạch.",
+        "Nhấn S1 thì Q1 (động cơ) chạy và giữ khi thả S1.",
+        "Nhấn S2 thì động cơ dừng ngay.",
+        "Giả lập quá tải (I3 mở): động cơ dừng và đèn Q2 sáng.",
+        "Chương trình được lưu; sau mất nguồn và cấp lại, LOGO chạy đúng trạng thái trước đó.",
+        "Nếu nhập trên phím, thao tác đúng quy trình mục 2.3."
+      ],
+      "safety": [
+        "Ngắt nguồn khi đấu dây; không chạm đầu nối khi đang có điện.",
+        "Xác nhận model nguồn (12/24RC DC hay 230RC AC) trước khi cấp điện; ảnh tài liệu đấu L1/N 230 V.",
+        "Không đấu động cơ trực tiếp vào tiếp điểm rơ-le LOGO; dùng contactor trung gian.",
+        "Có CB và tiếp địa vỏ."
+      ],
+      "common_faults": [
+        {
+          "fault": "S2 đấu thường hở nhưng logic viết như thường đóng (ngược).",
+          "remedy": "Kiểm tra loại tiếp điểm; dùng NOT khi cần."
+        },
+        {
+          "fault": "Không tự giữ: thả S1 thì động cơ dừng.",
+          "remedy": "Dùng khối RS hoặc hồi tiếp từ Q1."
+        },
+        {
+          "fault": "Hiểu sai ưu tiên S/R của RS (R ưu tiên).",
+          "remedy": "Kiểm tra đầu vào S và R; khi S = R = 1 thì Q = 0."
+        },
+        {
+          "fault": "I3 (thường đóng) đấu thành thường hở: động cơ không chạy.",
+          "remedy": "Đo thông mạch bằng đồng hồ ở trạng thái bình thường."
+        },
+        {
+          "fault": "Nối nhầm ngõ vào 'X' khi lập trình.",
+          "remedy": "Duyệt lại bằng phím mũi tên."
+        }
+      ],
+      "variants": [
+        "Thêm đèn báo 'đang chạy' ở ngõ ra thứ ba.",
+        "Đảo chiều quay có khóa chéo Q1/Q2, hoặc khởi động sao-tam giác.",
+        "Tự khởi động lại sau 10 s khi hết quá tải, tối đa 3 lần (Up/Down counter kết hợp On-delay)."
+      ],
+      "solution_outline": "Logic [SUY LUẬN]: B1 = RS, S = I1, R = OR(I2, NOT I3); Q1 = B1; Q2 = NOT I3. Cách thay thế: Q1 = (I1 OR Q1) AND NOT I2 AND I3. Nếu F là thường đóng thì I3 = 1 khi bình thường.",
+      "solution_basis": "inferred",
+      "verification": "draft",
+      "source_locator": "Giáo trình mục 3.1; source-notes/03 §LOGO-LAB-1",
+      "textbook_completeness": 2,
+      "open_issues": [
+        "Chưa kiểm chứng trên kit: toàn bộ I/O và logic là suy luận.",
+        "Sơ đồ mục 3.1.3 (image109) là mạch OR của ví dụ 1 (S1/S2 → Q1), không phải mạch start/stop; mục 3.1.4 trống; chưa có sơ đồ động cơ và rơ-le nhiệt.",
+        "Loại tiếp điểm của S2 và F (thường hở hay thường đóng) chưa xác định; quyết định này ảnh hưởng đến đầu vào R của RS.",
+        "Model nguồn chưa rõ: ảnh ghi 12/24 RC (DC) nhưng đấu L1/N 230 V.",
+        "Đèn báo Q2 và tiếp điểm F là bổ sung suy luận; giáo viên xác nhận có trong bộ thiết bị."
+      ]
+    },
+    {
+      "id": "LOGO-LAB-2",
+      "lesson_id": "B4",
+      "platform": "logo",
+      "title": "Đèn giao thông ngã tư (LOGO!)",
+      "requirement": "Đèn giao thông ngã tư lặp vô hạn theo thứ tự: X1 7 s, Đ2 10 s, V1 3 s, X2 7 s, Đ1 10 s, V2 3 s.",
+      "io_table": [
+        {
+          "address": "I1",
+          "device": "Công tắc Run/Enable (tùy chọn)",
+          "description": "Cho phép chạy [suy luận]."
+        },
+        {
+          "address": "Q1",
+          "device": "X1",
+          "description": "Đèn xanh hướng 1 [ký hiệu suy luận]."
+        },
+        {
+          "address": "Q2",
+          "device": "V1",
+          "description": "Đèn vàng hướng 1."
+        },
+        {
+          "address": "Q3",
+          "device": "Đ1",
+          "description": "Đèn đỏ hướng 1."
+        },
+        {
+          "address": "Q4",
+          "device": "X2",
+          "description": "Đèn xanh hướng 2."
+        },
+        {
+          "address": "Q5",
+          "device": "V2",
+          "description": "Đèn vàng hướng 2."
+        },
+        {
+          "address": "Q6",
+          "device": "Đ2",
+          "description": "Đèn đỏ hướng 2."
+        }
+      ],
+      "functions": [
+        "SF: Asynchronous pulse generator (TH = TL = 10 s)",
+        "SF: On-delay 7 s (x2)",
+        "BF: NOT, AND"
+      ],
+      "rubric": [
+        "Nối đủ sáu đèn vào đúng ngõ ra (Q1–Q6).",
+        "Đo bằng đồng hồ: X 7 s, V 3 s, Đ 10 s, sai số không quá 0,5 s.",
+        "Hai hướng không bao giờ cùng xanh.",
+        "Đèn đỏ của một hướng sáng đúng khi đèn xanh và vàng của hướng kia sáng.",
+        "Chạy lặp liên tục tối thiểu 3 chu kỳ.",
+        "Có bảng trạng thái hoặc giản đồ thời gian."
+      ],
+      "safety": [
+        "Ngắt nguồn trước khi đấu dây.",
+        "Dùng đèn LED hoặc bóng 12/24 V trên kit; không nối đèn 230 V vượt dòng tiếp điểm.",
+        "Dòng tải không vượt dòng định mức của ngõ ra (transistor 0,3 A)."
+      ],
+      "common_faults": [
+        {
+          "fault": "Thiếu ngõ ra (Q5, Q6) với model chỉ có Q1–Q4.",
+          "remedy": "Dùng module mở rộng DM8 hoặc chọn model đủ ngõ ra."
+        },
+        {
+          "fault": "Timer chạy sai vì chưa cấu hình đúng điều kiện trigger (On-delay không giữ).",
+          "remedy": "Kiểm tra giản đồ thời gian và tín hiệu Trg của từng On-delay."
+        },
+        {
+          "fault": "Đèn đỏ và đèn xanh cùng sáng.",
+          "remedy": "Kiểm tra khối NOT và điều kiện của từng đèn."
+        },
+        {
+          "fault": "Thời gian lệch do đặt sai đơn vị s/m.",
+          "remedy": "Kiểm tra tham số Par (đơn vị) của từng khối."
+        }
+      ],
+      "variants": [
+        "Thêm công tắc ban đêm: đèn vàng nhấp nháy (Flasher).",
+        "Thay đổi thời gian bằng Set Param, không nạp lại chương trình.",
+        "Thêm đèn đi bộ, nút gọi người đi bộ và đếm lùi hiển thị."
+      ],
+      "solution_outline": "Chu kỳ 20 s [SUY LUẬN]: B1 Async pulse (TH = TL = 10 s, En = I1) → P; Đ2 = P; Đ1 = NOT P. B2 On-delay 7 s (Trg = P) → T1; X1 = P AND NOT T1; V1 = T1. B4 On-delay 7 s (Trg = NOT P) → T2; X2 = NOT P AND NOT T2; V2 = T2.",
+      "solution_basis": "inferred",
+      "verification": "draft",
+      "source_locator": "Giáo trình mục 3.2; source-notes/03 §LOGO-LAB-2",
+      "textbook_completeness": 2,
+      "open_issues": [
+        "Chưa kiểm chứng trên kit: I/O và logic là suy luận.",
+        "Đề liệt kê tuần tự; đọc tuần tự cho chu kỳ 40 s với từng đèn sáng riêng là không hợp lý. Cách ghép hai pha 20 s là suy luận, cần hỏi giáo viên biên soạn.",
+        "Đề ghi '1 = sáng, 2 = tắt' (có thể là 1/0); bảng trạng thái trong ảnh bị mất.",
+        "Sáu ngõ ra nhưng LOGO 12/24RC (Hình image109) chỉ có Q1–Q4; cần module mở rộng DM8, model khác, hoặc giảm còn bốn đèn.",
+        "Ký hiệu X/V/Đ hiểu là xanh/vàng/đỏ là suy luận; xác nhận. Mục 3.2.3–3.2.4 trống."
+      ]
+    },
+    {
+      "id": "LOGO-LAB-3",
+      "lesson_id": "B5",
+      "platform": "logo",
+      "title": "Đóng mở cửa tự động (LOGO!)",
+      "requirement": "S2 mở cửa: cửa chạy mở đến công tắc hành trình mở thì dừng. S3 đóng cửa: chạy đến công tắc hành trình đóng thì dừng. S1 dừng cửa giữa chừng; sau đó có thể mở hoặc đóng tùy ý. Trạng thái mở, đóng, dừng hiển thị bằng đèn. Không có yêu cầu thời gian.",
+      "io_table": [
+        {
+          "address": "I1",
+          "device": "S1 (dừng, thường đóng)",
+          "description": "Dừng giữa chừng [suy luận]."
+        },
+        {
+          "address": "I2",
+          "device": "S2 (mở)",
+          "description": "Nút mở cửa."
+        },
+        {
+          "address": "I3",
+          "device": "S3 (đóng)",
+          "description": "Nút đóng cửa."
+        },
+        {
+          "address": "I4",
+          "device": "Công tắc hành trình mở",
+          "description": "Dừng khi cửa mở hết [suy luận]."
+        },
+        {
+          "address": "I5",
+          "device": "Công tắc hành trình đóng",
+          "description": "Dừng khi cửa đóng hết [suy luận]."
+        },
+        {
+          "address": "Q1",
+          "device": "Contactor mở (đèn 'đang mở' song song)",
+          "description": "Chạy mở cửa."
+        },
+        {
+          "address": "Q2",
+          "device": "Contactor đóng (đèn 'đang đóng' song song)",
+          "description": "Chạy đóng cửa."
+        },
+        {
+          "address": "Q3",
+          "device": "Đèn 'dừng'",
+          "description": "Báo trạng thái dừng."
+        }
+      ],
+      "functions": [
+        "SF: Latching relay (RS) x2",
+        "BF: OR, AND, NOT",
+        "SF: On-delay (tùy chọn)"
+      ],
+      "rubric": [
+        "S2 mở cửa, dừng đúng tại công tắc hành trình mở.",
+        "S3 đóng cửa, dừng đúng tại công tắc hành trình đóng.",
+        "S1 dừng cửa bất kỳ lúc nào; sau đó mở hoặc đóng đều chạy được.",
+        "Q1 và Q2 không bao giờ bật cùng lúc.",
+        "Đèn báo đúng ba trạng thái: mở, đóng, dừng.",
+        "Đấu đúng nút và công tắc hành trình theo bảng I/O."
+      ],
+      "safety": [
+        "Ngắt nguồn khi đấu dây; không đứng trong vùng chuyển động khi thử.",
+        "Khóa chéo phần cứng cho hai contactor để mở và đóng không cùng ON.",
+        "Công tắc hành trình dừng độc lập với phần mềm; che chắn khu vực cửa."
+      ],
+      "common_faults": [
+        {
+          "fault": "Q1 và Q2 cùng sáng do thiếu khóa chéo.",
+          "remedy": "Thêm AND NOT: Q1 = B1 AND NOT B2; Q2 = B2 AND NOT B1."
+        },
+        {
+          "fault": "Cửa không dừng đúng tại công tắc hành trình do đấu NO/NC nhầm.",
+          "remedy": "Đo bằng đồng hồ; dùng NOT với tiếp điểm thường đóng."
+        },
+        {
+          "fault": "Đảo chiều đột ngột làm cháy contactor.",
+          "remedy": "Thêm trễ On-delay khi đảo chiều và khóa cơ khí."
+        },
+        {
+          "fault": "Nhiễu từ nút nhấn.",
+          "remedy": "Kiểm tra dây nút nhấn."
+        }
+      ],
+      "variants": [
+        "Tự đóng sau 10 s khi mở xong (On-delay).",
+        "Thêm cảm biến hồng ngoại chống kẹt: đang đóng gặp vật cản thì mở lại.",
+        "Một nút bấm đổi trạng thái (Pulse relay), đếm số lần mở, còi cảnh báo 3 s trước khi chạy."
+      ],
+      "solution_outline": "Logic [SUY LUẬN]: B1 = RS mở: S = I2, R = OR(I1, I4, I3). B2 = RS đóng: S = I3, R = OR(I1, I5, I2). Q1 = B1 AND NOT B2; Q2 = B2 AND NOT B1; Q3 = NOT Q1 AND NOT Q2. Nên thêm On-delay 1 s trước khi đảo chiều để bảo vệ motor (ghi chú nguồn).",
+      "solution_basis": "inferred",
+      "verification": "draft",
+      "source_locator": "Giáo trình mục 3.3; source-notes/03 §LOGO-LAB-3",
+      "textbook_completeness": 1.5,
+      "open_issues": [
+        "Chưa kiểm chứng trên kit: I/O và logic là suy luận.",
+        "Logic R = OR(I1, I4, I3) coi S1 và công tắc hành trình là tiếp điểm thường hở (đầu vào = 1 khi kích hoạt). Ghi chú nguồn ghi S1 là thường đóng; khi đó cần NOT I1 (và NOT I4, NOT I5 nếu là thường đóng). Giáo viên xác nhận.",
+        "Đề không nêu: có được đảo chiều trực tiếp hay phải dừng; đèn 'dừng' bật khi nào; số lượng và loại đèn.",
+        "Nếu đèn báo tách khỏi contactor cần Q4 trở lên; model 12/24RC chỉ có Q1–Q4.",
+        "Mục 3.3.3–3.3.4 trống: không có sơ đồ hay chương trình. S3 là nút đóng ở bài này nhưng là công tắc hành trình ở bài 3.4 (tên thiết bị không nhất quán)."
+      ]
+    },
+    {
+      "id": "LOGO-LAB-4",
+      "lesson_id": "B6",
+      "platform": "logo",
+      "title": "Băng tải công nghiệp: đếm 10 quả táo (LOGO!)",
+      "requirement": "Start: băng chuyền hộp chạy. Khi hộp chạm công tắc hành trình S3: băng hộp dừng, băng táo chạy. Cảm biến S2 đếm táo. Đủ 10 quả: băng táo dừng, băng hộp chạy lại và bộ đếm được reset. Lặp lại cho đến khi nhấn Stop.",
+      "io_table": [
+        {
+          "address": "I1",
+          "device": "Start (S1, tên không nêu trong đề)",
+          "description": "Chạy băng hộp [suy luận]."
+        },
+        {
+          "address": "I2",
+          "device": "Stop",
+          "description": "Dừng cả hai băng [suy luận]."
+        },
+        {
+          "address": "I3",
+          "device": "S3 (công tắc hành trình hộp)",
+          "description": "Dừng băng hộp, chạy băng táo."
+        },
+        {
+          "address": "I4",
+          "device": "S2 (cảm biến táo)",
+          "description": "Đếm từng quả táo."
+        },
+        {
+          "address": "Q1",
+          "device": "Băng tải hộp",
+          "description": "Chạy băng hộp."
+        },
+        {
+          "address": "Q2",
+          "device": "Băng tải táo",
+          "description": "Chạy băng táo."
+        }
+      ],
+      "functions": [
+        "SF: Latching relay (RS) x2",
+        "SF: Up/Down counter (Par = 10)",
+        "BF: AND cạnh, OR, NOT"
+      ],
+      "rubric": [
+        "Start chạy băng hộp.",
+        "S3 dừng băng hộp và chạy băng táo.",
+        "Đếm đúng 10 quả (đưa từng quả qua S2).",
+        "Đủ 10 quả: băng táo dừng, băng hộp chạy lại.",
+        "Bộ đếm reset và chu trình lặp ổn định.",
+        "Stop dừng cả hai băng ở mọi trạng thái."
+      ],
+      "safety": [
+        "Cảm biến PNP/NPN phải phù hợp nguồn 24 V.",
+        "Nút Stop/E-Stop dùng dạng thường đóng.",
+        "Che chắn băng tải; không đưa tay vào băng khi đang chạy."
+      ],
+      "common_faults": [
+        {
+          "fault": "Hộp còn đè S3 khi băng hộp vừa chạy lại làm chu trình táo lặp ngay.",
+          "remedy": "Dùng cạnh lên hoặc On-delay ngắn."
+        },
+        {
+          "fault": "Đếm dư do cảm biến rung.",
+          "remedy": "Lọc bằng On-delay ngắn; chỉnh cảm biến."
+        },
+        {
+          "fault": "Không reset bộ đếm nên lần sau đếm tiếp.",
+          "remedy": "Nối chân R của bộ đếm đúng logic (R = NOT B2)."
+        },
+        {
+          "fault": "Stop không dừng khi đang đếm.",
+          "remedy": "Nối I2 vào R của mọi khối RS."
+        }
+      ],
+      "variants": [
+        "Số táo đặt qua Set Param, không sửa chương trình.",
+        "Hiển thị số đếm hiện tại trên màn hình LOGO (text/Message).",
+        "Hai số lượng (10 và 12) chọn bằng công tắc, đếm tổng số hộp và dừng sau 20 hộp."
+      ],
+      "solution_outline": "Logic [SUY LUẬN]: B1 = RS Run (S = I1, R = I2). B2 = RS chế độ táo (S = cạnh lên của I3 AND B1; R = OR(Q của B3, I2)). B3 = Up/Down counter (Cnt = I4, R = NOT B2, Par = 10). Q1 = B1 AND NOT B2; Q2 = B2.",
+      "solution_basis": "inferred",
+      "verification": "draft",
+      "source_locator": "Giáo trình mục 3.4; source-notes/03 §LOGO-LAB-4",
+      "textbook_completeness": 2,
+      "open_issues": [
+        "Chưa kiểm chứng trên kit: I/O và logic là suy luận.",
+        "Đề không nêu tên nút Start và Stop; I1 và I2 là gán của người soạn.",
+        "Tốc độ đếm của I4 chưa rõ: ghi chú chương 2.1 ghi 'trong vòng 4 Hz' (không rõ nghĩa) và '2 kHz' cho I5/I6. Kiểm tra datasheet trước khi dùng cảm biến táo.",
+        "Nội dung Counter nằm ngoài ghi chú nguồn; mục 3.4.3–3.4.4 trống."
+      ]
+    },
+    {
+      "id": "ZEN-PRAC-1",
+      "lesson_id": "B7",
+      "platform": "zen",
+      "title": "Lắp đặt PLC ZEN trên ray DIN và đấu nối nguồn, ngõ vào/ra",
+      "requirement": "Lắp CPU ZEN lên ray DIN theo 4 bước của giáo trình; nếu có module mở rộng thì tháo nắp CPU và đẩy module sang phải. Đấu nguồn AC 100–240 VAC (L, N đúng chân) hoặc DC 24 VDC (đúng cực +/−); đấu công tắc vào ngõ vào (SW1 vào I0, SW2 vào I1 theo Hình image119) và tải vào ngõ ra rơ-le. Kiểm tra dây trước khi cấp điện.",
+      "io_table": [],
+      "functions": [],
+      "rubric": [
+        "CPU lắp lên ray DIN đúng các bước; module mở rộng (nếu có) đẩy sang phải đúng cách.",
+        "Đấu nguồn AC đúng L/N (không đảo) hoặc nguồn DC đúng cực +/−.",
+        "Ngõ vào DC đúng: '−' nối COM, '+' qua công tắc; công tắc SW1/SW2 vào I0/I1 theo sơ đồ AC.",
+        "Ngõ ra đấu vào rơ-le độc lập, tải không vượt dòng định mức.",
+        "Trước khi cấp điện đã kiểm tra dây nguồn và ngõ ra; tháo tải khi chạy thử lần đầu.",
+        "Đối chiếu nhãn model và dòng định mức với nguồn cấp, ghi lại kết quả."
+      ],
+      "safety": [
+        "Cắt điện trước khi lắp hoặc đấu dây; không đảo L/N.",
+        "Đối chiếu dòng định mức của ZEN với nguồn cấp trước khi cấp điện.",
+        "Model AC: công tắc ngõ vào nối vào pha L (điện lưới tại nút nhấn); dùng kit cách ly; tháo tải khi chạy thử lần đầu."
+      ],
+      "common_faults": [
+        {
+          "fault": "Đảo L/N (AC) hoặc đảo cực nguồn DC.",
+          "remedy": "Đối chiếu sơ đồ trước khi cấp điện và sửa lại."
+        },
+        {
+          "fault": "Nối sai cực ngõ vào DC.",
+          "remedy": "Nối '−' vào COM, '+' qua công tắc."
+        },
+        {
+          "fault": "Dùng sai dải nguồn hoặc vượt dòng định mức.",
+          "remedy": "Đọc nhãn model; đối chiếu nguồn cấp và dòng định mức."
+        },
+        {
+          "fault": "Chạy thử lần đầu khi còn tải nối vào ngõ ra.",
+          "remedy": "Tháo tải trước khi chạy thử."
+        }
+      ],
+      "variants": [
+        "Thêm một module mở rộng 8EAR và đấu thêm ngõ vào/ra; ghi địa chỉ X/Y.",
+        "Lắp đủ ba module mở rộng (tối đa 24 điểm X0–Xb, Y0–Yb) và lập bảng địa chỉ I/O.",
+        "Đấu ngõ vào analog I4/I5 (0–10 V) trên model nguồn DC."
+      ],
+      "solution_outline": "",
+      "solution_basis": "textbook",
+      "verification": "draft",
+      "source_locator": "Giáo trình chương 4 mục 4.1–4.2 (Hình image119); source-notes/04 §Ch4",
+      "textbook_completeness": 3,
+      "open_issues": [
+        "Mức đầy đủ 3/5 là đánh giá của người soạn từ ghi chú nguồn.",
+        "Giáo trình không có bước cắt điện và tháo ray trước khi lắp; người soạn bổ sung.",
+        "Câu 'không nối trực tiếp dây đôi xoay chiều vào ngõ vào CPU' không rõ nghĩa; cần làm rõ. Việc dùng kit cách ly là suy ra từ ảnh.",
+        "Mã model 10C1AR-A và module 8EAR chỉ đọc từ ảnh (image117, image118), không có trong chữ; đối chiếu nhãn thực tế.",
+        "Sơ đồ nối dây chỉ có cho nguồn AC (Hình image119), không có cho DC. Thông số ghi sai đơn vị ('6.5 Hz', '30VA (W)')."
+      ]
+    },
+    {
+      "id": "ZEN-PRAC-2",
+      "lesson_id": "B8",
+      "platform": "zen",
+      "title": "Cài ZEN Support Software và nhập ladder tự giữ I0/I1 → Q0",
+      "requirement": "Cài ZEN Support Software. Nhập ladder: I0 nối tiếp I1 (thường đóng), tiếp điểm tự giữ Q0 song song với I0, cuộn Q0. Nhập bằng phím trên ZEN (khi ZEN ở STOP) và bằng phần mềm; truyền xuống ZEN, chuyển RUN, giám sát (mạch đóng chuyển xanh) và mô phỏng (nền vàng).",
+      "io_table": [
+        {
+          "address": "I0",
+          "device": "SW1",
+          "description": "Ngõ vào, tiếp điểm trong ladder (theo Hình image119)."
+        },
+        {
+          "address": "I1",
+          "device": "SW2",
+          "description": "Ngõ vào, tiếp điểm thường đóng (NC) trong ladder."
+        },
+        {
+          "address": "Q0",
+          "device": "Tải ngõ ra (không nêu tên)",
+          "description": "Ngõ ra có tiếp điểm tự giữ song song I0."
+        }
+      ],
+      "functions": [
+        "Tiếp điểm I0",
+        "Tiếp điểm I1 (NC, đổi bằng ALT)",
+        "Cuộn Q0 (Normal)",
+        "Nhánh tự giữ Q0 song song I0 (đường nối OR, ALT)"
+      ],
+      "rubric": [
+        "Cài đặt ZEN Support Software đủ các bước; tạo project mới và chọn đúng kiểu ZEN và mở rộng trong Property Settings.",
+        "Ladder đúng cấu trúc: I0 nối tiếp I1 (NC) → Q0; tiếp điểm tự giữ Q0 song song I0.",
+        "Nhập ladder trên phím khi ZEN ở STOP; đổi NO/NC bằng ALT; không vẽ đường nối khép kín.",
+        "Truyền xuống ZEN (Transfer to ZEN, có tick 'The settings are downloaded too') và chuyển sang RUN.",
+        "Giám sát: mạch đóng chuyển màu xanh; mô phỏng (Start/Stop Simulator) chạy trên nền vàng.",
+        "Thử với tải đã tháo: I0 đóng thì Q0 giữ; mở I1 thì Q0 tắt."
+      ],
+      "safety": [
+        "Tháo tải ngõ ra khi chạy thử lần đầu.",
+        "Cắt điện trước khi đấu dây; kiểm tra an toàn trước khi truyền chương trình.",
+        "Model AC: ngõ vào nối vào pha L (điện lưới tại nút nhấn); dùng kit cách ly khi đấu dây."
+      ],
+      "common_faults": [
+        {
+          "fault": "Đảo NO/NC của I1, làm Q0 không giữ hoặc không tắt.",
+          "remedy": "Đổi bằng ALT; I1 phải là thường đóng theo ladder."
+        },
+        {
+          "fault": "Sửa chương trình khi ZEN đang RUN.",
+          "remedy": "Chuyển STOP trước khi nhập hoặc sửa ladder."
+        },
+        {
+          "fault": "Tắt điện khi chưa ESC về Menu: mất chương trình.",
+          "remedy": "ESC về Menu trước khi tắt điện."
+        },
+        {
+          "fault": "Vẽ đường nối khép kín (vòng kín).",
+          "remedy": "Không vẽ đường nối khép kín; kiểm tra lại đường nối."
+        },
+        {
+          "fault": "Truyền xong nhưng ZEN vẫn ở STOP.",
+          "remedy": "ZEN/Change operating mode/RUN; kiểm tra thanh trạng thái chuyển sang RUN."
+        }
+      ],
+      "variants": [
+        "Mô phỏng hết chu trình trên phần mềm, sau đó giám sát khi RUN và đối chiếu kết quả.",
+        "Thay tự giữ bằng cuộn Set/Reset (ZEN có hai cách chốt) và so sánh với phương án tự giữ.",
+        "Đặt mật khẩu bảo vệ (chỉ tick Protection khi đã đặt mật khẩu) rồi truyền lại chương trình."
+      ],
+      "solution_outline": "",
+      "solution_basis": "textbook",
+      "verification": "draft",
+      "source_locator": "Giáo trình chương 5 (ZEN Support Software; lập trình bằng phím); Hình image119; source-notes/04 §Ch5",
+      "textbook_completeness": 3,
+      "open_issues": [
+        "Mức đầy đủ 3/5 là đánh giá của người soạn: quy trình phần mềm và phím đầy đủ, nhưng hộp thoại Edit Contact/Coil không đọc được (ảnh quá nhỏ) và không có bước nhập timer/counter bằng phím.",
+        "Chiều NO/NC của I0 không được ghi trong ghi chú; Hình image119 chỉ xác nhận I1 là thường đóng. Tên 'SW1', 'SW2' lấy từ hình; giáo trình không nêu nút start/stop.",
+        "Cáp ZEN-CIF01 là RS232 (cổng COM); máy tính hiện đại có thể không có COM, cần bộ chuyển USB–RS232 (chưa kiểm).",
+        "Tên phần mềm không nhất quán ('ZEN Soft', 'ZEN Support Software', 'ZEN-SOFT01'); ảnh là bản -V2 nhưng bảng bit theo Pre-V1/-V1."
+      ]
+    },
+    {
+      "id": "ZEN-LAB-1",
+      "lesson_id": "B9",
+      "platform": "zen",
+      "title": "Khởi động kiểu sao-tam giác (K1, K2, K3, T1) trên ZEN",
+      "requirement": "Nhấn S2: K1, T1 và K2 có điện, K1 tự giữ. Sau 10 s, tiếp điểm T1 thường đóng mở: K2 mất điện và K3 có điện. Nút dừng S1 (thường đóng) dừng mạch theo sơ đồ rơ-le. Đề không nêu K2 và K3 là gì.",
+      "io_table": [
+        {
+          "address": "I0",
+          "device": "S1 (dừng, thường đóng)",
+          "description": "Dừng mạch [suy ra từ sơ đồ rơ-le]."
+        },
+        {
+          "address": "I1",
+          "device": "S2 (chạy, thường hở)",
+          "description": "Khởi động [suy ra]."
+        },
+        {
+          "address": "Q0",
+          "device": "K1",
+          "description": "Cuộn chính, tự giữ [suy ra]."
+        },
+        {
+          "address": "Q1",
+          "device": "K2",
+          "description": "Giai đoạn sao [suy ra]."
+        },
+        {
+          "address": "Q2",
+          "device": "K3",
+          "description": "Giai đoạn tam giác [suy ra]."
+        }
+      ],
+      "functions": [
+        "Tiếp điểm I0 (N.O. trong ladder, nút dừng N.C.)",
+        "Tiếp điểm I1 (N.O.)",
+        "Tự giữ Q0",
+        "Timer X (ON delay) 10 s",
+        "Tiếp điểm N.C. chéo Q1/Q2 (khóa liên động)"
+      ],
+      "rubric": [
+        "Đấu dây đúng và an toàn theo bảng I/O.",
+        "Nhấn S2: K1 và K2 có điện; sau 10 s K2 mất điện và K3 có điện.",
+        "Q1 và Q2 không bao giờ cùng ON.",
+        "Nhấn S1: tất cả đầu ra tắt.",
+        "Nạp chương trình và giám sát bằng phần mềm đúng quy trình (chuyển RUN, giám sát màu xanh)."
+      ],
+      "safety": [
+        "Cắt điện trước khi đấu dây; không đảo L/N.",
+        "Tháo tải ngõ ra khi chạy thử lần đầu.",
+        "Khóa liên động K2/K3 để hai contactor không cùng ON."
+      ],
+      "common_faults": [
+        {
+          "fault": "Đảo N.O./N.C. của S1: động cơ không khởi động.",
+          "remedy": "Kiểm tra N.O./N.C. trong ladder (nút dừng thường đóng dùng tiếp điểm N.O.)."
+        },
+        {
+          "fault": "Lẫn I0/I1 giữa ladder và bảng I/O.",
+          "remedy": "Đối chiếu bảng I/O trước khi nhập."
+        },
+        {
+          "fault": "Quên khóa liên động K2/K3.",
+          "remedy": "Thêm tiếp điểm N.C. chéo của Q1 và Q2."
+        },
+        {
+          "fault": "Quên chuyển RUN sau khi nạp.",
+          "remedy": "ZEN/Change operating mode/RUN; kiểm tra thanh trạng thái."
+        },
+        {
+          "fault": "Quên ESC về Menu trước khi tắt nguồn (chương trình mất).",
+          "remedy": "ESC về Menu trước khi tắt điện."
+        }
+      ],
+      "variants": [
+        "Thêm nút dừng khẩn dùng I2 và đèn báo trạng thái.",
+        "Thêm trễ 0,5 s giữa lúc K2 mất điện và K3 có điện."
+      ],
+      "solution_outline": "Ladder [SUY RA]: R0 (I1 hoặc Q0) nối tiếp I0 → Q0 (tự giữ). R1: Q0 → cuộn T0 (X, 10 s). R2: Q0, T0 (N.C.), Q2 (N.C.) → Q1. R3: Q0, T0 (N.O.), Q1 (N.C.) → Q2.",
+      "solution_basis": "inferred",
+      "verification": "draft",
+      "source_locator": "Giáo trình mục 6.1 (Hình image154); source-notes/04 §6.1 (lịch bài 9.1)",
+      "textbook_completeness": 3,
+      "open_issues": [
+        "Chưa kiểm chứng trên ZEN: ladder và I/O là suy luận.",
+        "Tên 'sao-tam giác' là tên người soạn đặt; giáo trình không nói K2/K3 là gì và không có đoạn dừng ngoài S1 trên sơ đồ rơ-le.",
+        "Chương 6 chỉ có một ảnh (image154), không có ladder và bảng I/O; mục 6.1.3–6.4.4 trong ghi chú chỉ là dòng chấm.",
+        "Đề này khác bài 3.1 (LOGO-LAB-1): S1/S2 đảo vai (S1 dừng, S2 chạy); cần cảnh báo sinh viên."
+      ]
+    },
+    {
+      "id": "ZEN-LAB-2",
+      "lesson_id": "B9",
+      "platform": "zen",
+      "title": "Đèn giao thông ngã tư (ZEN)",
+      "requirement": "Đèn giao thông ngã tư lặp lại theo thứ tự: X1 7 s, Đ2 10 s, V1 3 s, X2 7 s, Đ1 10 s, V2 3 s, lặp vô hạn.",
+      "io_table": [
+        {
+          "address": "I0",
+          "device": "RUN (tùy chọn)",
+          "description": "Điều kiện chạy chung [suy ra]."
+        },
+        {
+          "address": "Q0",
+          "device": "X1",
+          "description": "Đèn xanh hướng 1 [ký hiệu suy luận]."
+        },
+        {
+          "address": "Q1",
+          "device": "V1",
+          "description": "Đèn vàng hướng 1."
+        },
+        {
+          "address": "Q2",
+          "device": "Đ1",
+          "description": "Đèn đỏ hướng 1."
+        },
+        {
+          "address": "Q3",
+          "device": "X2",
+          "description": "Đèn xanh hướng 2."
+        },
+        {
+          "address": "Q4",
+          "device": "V2",
+          "description": "Đèn vàng hướng 2."
+        },
+        {
+          "address": "Q5",
+          "device": "Đ2",
+          "description": "Đèn đỏ hướng 2."
+        }
+      ],
+      "functions": [
+        "Timer X (ON delay) x4: T0 = 7 s, T1 = 10 s, T2 = 17 s, T3 = 20 s",
+        "Tiếp điểm N.O./N.C. của timer và RUN",
+        "Ladder nhiều nhánh"
+      ],
+      "rubric": [
+        "Đúng thời gian từng pha (7 s, 3 s, 10 s).",
+        "Không có hai đèn xanh cùng sáng.",
+        "Chu kỳ lặp lại liên tục.",
+        "Nối dây nhiều ngõ ra đúng bảng I/O.",
+        "Ladder gọn, dùng tối đa 4 timer."
+      ],
+      "safety": [
+        "Cắt điện trước khi đấu dây; không đảo L/N.",
+        "Đối chiếu dòng định mức của ZEN với nguồn cấp.",
+        "Tháo tải ngõ ra khi chạy thử lần đầu."
+      ],
+      "common_faults": [
+        {
+          "fault": "Thiếu ngõ ra: model 10 I/O chỉ có Q0–Q3.",
+          "remedy": "Dùng model 20 I/O (Q0–Q7) hoặc module mở rộng."
+        },
+        {
+          "fault": "Cuộn T không reset nên chu kỳ không lặp.",
+          "remedy": "Kiểm tra cơ chế reset chu kỳ (xem open_issues)."
+        },
+        {
+          "fault": "Đặt thời gian sai đơn vị.",
+          "remedy": "Kiểm tra đơn vị và giá trị đặt của từng timer (7, 10, 17, 20)."
+        },
+        {
+          "fault": "Không tắt đèn pha trước khi bật pha mới.",
+          "remedy": "Kiểm tra điều kiện tắt của từng đèn theo bảng pha."
+        }
+      ],
+      "variants": [
+        "Đèn vàng nhấp nháy (mode F) ban đêm hoặc theo Weekly timer @0.",
+        "Đổi chu kỳ (ví dụ đèn xanh 10 s) hoặc thêm pha đỏ toàn phần 1 s."
+      ],
+      "solution_outline": "Ladder [SUY RA]: T0=7 s, T1=10 s, T2=17 s, T3=20 s (chế độ X), cả 4 cuộn được kích bởi RUN·T3(N.C.); khi T3 đủ 20 s, tiếp điểm T3(N.C.) mở làm reset cả 4 timer và chu kỳ bắt đầu lại (có thể có 1 chu kỳ quét chuyển tiếp). Q0 = RUN·T0(N.C.); Q1 = T0(N.O.)·T1(N.C.); Q5 = RUN·T1(N.C.); Q3 = T1(N.O.)·T2(N.C.); Q4 = T2(N.O.)·T3(N.C.); Q2 = T1(N.O.)·T3(N.C.). Ghép pha [SUY RA]: 0–7 s X1 + Đ2; 7–10 s V1 + Đ2; 10–17 s X2 + Đ1; 17–20 s V2 + Đ1; chu kỳ 20 s.",
+      "solution_basis": "inferred",
+      "verification": "draft",
+      "source_locator": "Giáo trình mục 6.2 (yêu cầu); source-notes/04 §6.2",
+      "textbook_completeness": 2,
+      "open_issues": [
+        "Chưa kiểm chứng trên ZEN: I/O và ladder là suy luận.",
+        "Đề liệt kê tuần tự, không nói đồng thời; cách ghép pha 20 s là suy luận, giáo viên xác nhận.",
+        "Cần 6 ngõ ra nhưng ZEN 10 I/O chỉ có Q0–Q3; phải dùng 20 I/O (Q0–Q7) hoặc module mở rộng.",
+        "Ký hiệu X/V/Đ hiểu là xanh/vàng/đỏ là suy luận, giáo viên xác nhận.",
+        "Đề trùng LOGO-LAB-2 (B4); giáo trình chỉ có yêu cầu (6.2.2), mục sơ đồ và chương trình (6.2.3–6.2.4) để trống. Mức đầy đủ 2/5.",
+        "Kiểm tra trên kit: chuyển tiếp ở mốc 20 s khi T3 tự reset."
+      ]
+    },
+    {
+      "id": "ZEN-LAB-3",
+      "lesson_id": "B9",
+      "platform": "zen",
+      "title": "Cửa tự động (ZEN, khóa liên động mở/đóng)",
+      "requirement": "S2 mở cửa: cửa chạy mở đến công tắc hành trình mở thì dừng. S3 đóng cửa: chạy đến công tắc hành trình đóng thì dừng. S1 dừng cửa giữa chừng; sau đó chọn mở hoặc đóng. Trạng thái mở, đóng, dừng hiển thị bằng đèn. Không có yêu cầu thời gian.",
+      "io_table": [
+        {
+          "address": "I0",
+          "device": "S1 (dừng, thường đóng)",
+          "description": "Dừng giữa chừng [suy ra]."
+        },
+        {
+          "address": "I1",
+          "device": "S2 (mở)",
+          "description": "Nút mở cửa."
+        },
+        {
+          "address": "I2",
+          "device": "S3 (đóng)",
+          "description": "Nút đóng cửa."
+        },
+        {
+          "address": "I3",
+          "device": "Công tắc hành trình mở (thường đóng)",
+          "description": "Đấu NC, an toàn khi đứt dây [suy ra]."
+        },
+        {
+          "address": "I4",
+          "device": "Công tắc hành trình đóng (thường đóng)",
+          "description": "Đấu NC; trên model DC là ngõ vào analog."
+        },
+        {
+          "address": "Q0",
+          "device": "Motor mở (đèn 'đang mở' song song)",
+          "description": "Chạy mở cửa."
+        },
+        {
+          "address": "Q1",
+          "device": "Motor đóng (đèn 'đang đóng' song song)",
+          "description": "Chạy đóng cửa."
+        },
+        {
+          "address": "Q2",
+          "device": "Đèn 'dừng'",
+          "description": "Báo trạng thái dừng."
+        }
+      ],
+      "functions": [
+        "Tiếp điểm N.O./N.C.",
+        "Tự giữ Q0 và Q1",
+        "Khóa liên động bằng tiếp điểm N.C. của Q0/Q1 (không dùng timer)"
+      ],
+      "rubric": [
+        "Mở và đóng đúng tới giới hạn hành trình.",
+        "S1 dừng giữa chừng; chạy lại được cả hai chiều.",
+        "Không chạy hai chiều cùng lúc.",
+        "Đèn đúng trạng thái mở, đóng, dừng.",
+        "Đấu công tắc hành trình đúng."
+      ],
+      "safety": [
+        "Thêm khóa phần cứng cho hai contactor để không ON cùng lúc.",
+        "Công tắc hành trình đấu thường đóng để an toàn khi đứt dây.",
+        "Cắt điện khi đấu dây; không đứng trong vùng cửa khi thử."
+      ],
+      "common_faults": [
+        {
+          "fault": "Công tắc hành trình đấu thường hở: cửa chạy ngay hoặc không dừng.",
+          "remedy": "Đấu thường đóng (NC) theo ghi chú nguồn."
+        },
+        {
+          "fault": "Thiếu khóa liên động: Q0 và Q1 cùng ON.",
+          "remedy": "Thêm tiếp điểm N.C. chéo Q0/Q1 trong ladder."
+        },
+        {
+          "fault": "Hai contactor đảo chiều cùng ON.",
+          "remedy": "Thêm khóa phần cứng."
+        },
+        {
+          "fault": "S1 (thường đóng) không dừng được cửa do đấu nhầm N.O.",
+          "remedy": "Kiểm tra N.O./N.C. của I0 trong ladder."
+        }
+      ],
+      "variants": [
+        "Thêm cảm biến hoặc nút chống kẹt: dừng và đảo chiều.",
+        "Tự đóng sau thời gian đặt (timer X)."
+      ],
+      "solution_outline": "Ladder [SUY RA]: R0: (I1 hoặc Q0)·I0·I3·Q1(N.C.) → Q0. R1: (I2 hoặc Q1)·I0·I4·Q0(N.C.) → Q1. R2: Q0(N.C.)·Q1(N.C.) → Q2. Khóa chéo chặn đảo chiều khi motor đang chạy; để đổi chiều phải dừng bằng S1.",
+      "solution_basis": "inferred",
+      "verification": "draft",
+      "source_locator": "Giáo trình mục 6.3; source-notes/04 §6.3",
+      "textbook_completeness": 2,
+      "open_issues": [
+        "Chưa kiểm chứng trên ZEN: I/O và ladder là suy luận.",
+        "Nếu dùng model DC, I4 là ngõ vào analog (ghi chú chương 4); không dùng làm công tắc hành trình đóng. Chọn model AC hoặc đổi địa chỉ.",
+        "Đề không nói đèn 'dừng' bật khi nào và số lượng đèn; đèn mở/đóng mắc song song cuộn contactor theo ghi chú."
+      ]
+    }
+  ],
+  "assessments": [
+    {
+      "id": "KTDK1",
+      "kind": "periodic",
+      "hour_column": "practice",
+      "scope_lesson_ids": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "hours": 1,
+      "placement": "floating",
+      "duration_basis": "assumed",
+      "duration_note": "Quy định: KTĐK viết 45-60 phút hoặc thực hành; chọn 1 giờ thực hành",
+      "format": "thực hành trên kit LOGO! theo phiếu chấm",
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "logo-soft",
+        "logo-kit"
+      ]
+    },
+    {
+      "id": "KTDK2",
+      "kind": "periodic",
+      "hour_column": "practice",
+      "scope_lesson_ids": [
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "hours": 1,
+      "placement": "floating",
+      "duration_basis": "assumed",
+      "duration_note": "Như KTDK1",
+      "format": "thực hành trên kit ZEN theo phiếu chấm",
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "zen-soft",
+        "zen-kit"
+      ]
+    },
+    {
+      "id": "THI-KT",
+      "kind": "final",
+      "hour_column": "exam",
+      "scope_lesson_ids": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9"
+      ],
+      "hours": 4,
+      "placement": "pinned",
+      "duration_basis": "schedule",
+      "format": "thực hành/tích hợp, tối thiểu 2 giáo viên chấm độc lập",
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector",
+        "zen-kit",
+        "zen-soft"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S-MODULE-TEXT",
+      "kind": "tai-lieu-giang-day",
+      "title": "Tài liệu giảng dạy Chuyên đề Điều khiển lập trình cỡ nhỏ (lưu hành nội bộ, 2025)",
+      "locator": "Bản .docx tải lên phiên 2026-11-01; không lưu trong repo. Phân tích: plans/20261101-tvet-plc-teacher-agent/source-notes/",
+      "accessed_at": "2026-11-01",
+      "scope_actually_read": "Toàn bộ văn bản sau chuyển đổi pandoc; một phần ảnh (xem source-notes)"
+    },
+    {
+      "id": "S-SCHEDULE",
+      "kind": "lich-trinh-giang-day",
+      "title": "Lịch trình giảng dạy HK I 2026-2027, lớp KTML&ĐHKK CĐ9+ K5",
+      "locator": "Bản .doc tải lên phiên 2026-11-01; số hóa: schedules/cd9-k5-2026.yaml",
+      "accessed_at": "2026-11-01",
+      "scope_actually_read": "Toàn bộ"
+    },
+    {
+      "id": "S-GA-FORM",
+      "kind": "mau-giao-an",
+      "title": "Giáo án số 20 (môn khác) dùng làm mẫu biểu",
+      "locator": "Bản .docx tải lên phiên 2026-11-01; phân tích: plans/20261101-tvet-plc-teacher-agent/research.md §3",
+      "accessed_at": "2026-11-01",
+      "scope_actually_read": "Toàn bộ"
+    }
+  ],
+  "review": {
+    "authoring_run": "AI soạn khung từ lịch trình và chương trình mô đun trong giáo trình; chưa có người duyệt.",
+    "subject_expert": {
+      "status": "not_run",
+      "reviewer": null
+    },
+    "teacher": {
+      "status": "not_run",
+      "reviewer": null
+    },
+    "learner_pilot": {
+      "status": "not_run",
+      "record_locator": null
+    },
+    "learning_effectiveness": "not_assessed"
+  }
+}

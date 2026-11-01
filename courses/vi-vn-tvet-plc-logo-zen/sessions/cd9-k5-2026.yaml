@@ -1,0 +1,907 @@
+{
+  "sessions_version": "tvet-sessions-1.0",
+  "course_id": "vi-vn-tvet-plc-logo-zen",
+  "schedule_file": "schedules/cd9-k5-2026.yaml",
+  "schedule_sha256": "4f206b6243a6b6da6af6ed67acb56f3254943d4d3f057ed156197cd0ff9d076b",
+  "unscheduled": [],
+  "sessions": [
+    {
+      "id": "W01",
+      "week": 1,
+      "start": "2026-09-07",
+      "end": "2026-09-12",
+      "ga_number": 1,
+      "previous_lesson_id": null,
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B1",
+          "items": [
+            "Giới thiệu chương trình mô đun",
+            "1.1",
+            "1.2"
+          ],
+          "hours": 2.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B1",
+          "items": [
+            "1.2"
+          ],
+          "hours": 2.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 170
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W02",
+      "week": 2,
+      "start": "2026-09-14",
+      "end": "2026-09-19",
+      "ga_number": 2,
+      "previous_lesson_id": "B1",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B2",
+          "items": [
+            "2.1",
+            "2.2",
+            "2.3"
+          ],
+          "hours": 2.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B2",
+          "items": [
+            "2.2",
+            "2.3"
+          ],
+          "hours": 2.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 170
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W03",
+      "week": 3,
+      "start": "2026-09-21",
+      "end": "2026-09-26",
+      "ga_number": 3,
+      "previous_lesson_id": "B2",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B3",
+          "items": [
+            "3.1",
+            "3.2",
+            "3.3"
+          ],
+          "hours": 1.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B3",
+          "items": [
+            "3.3",
+            "3.4"
+          ],
+          "hours": 3.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 185
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W04",
+      "week": 4,
+      "start": "2026-09-28",
+      "end": "2026-10-03",
+      "ga_number": 4,
+      "previous_lesson_id": "B3",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B3",
+          "items": [
+            "3.4"
+          ],
+          "hours": 1.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B3",
+          "items": [
+            "3.4"
+          ],
+          "hours": 3.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 185
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W05",
+      "week": 5,
+      "start": "2026-10-05",
+      "end": "2026-10-10",
+      "ga_number": 5,
+      "previous_lesson_id": "B3",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B4",
+          "items": [
+            "4.1",
+            "4.2",
+            "4.3"
+          ],
+          "hours": 1.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B4",
+          "items": [
+            "4.3",
+            "4.4"
+          ],
+          "hours": 3.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 185
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W06",
+      "week": 6,
+      "start": "2026-10-12",
+      "end": "2026-10-17",
+      "ga_number": 6,
+      "previous_lesson_id": "B4",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B4",
+          "items": [
+            "4.4"
+          ],
+          "hours": 1.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B4",
+          "items": [
+            "4.4"
+          ],
+          "hours": 3.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 185
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W07",
+      "week": 7,
+      "start": "2026-10-19",
+      "end": "2026-10-24",
+      "ga_number": 7,
+      "previous_lesson_id": "B4",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B5",
+          "items": [
+            "5.1",
+            "5.2",
+            "5.3"
+          ],
+          "hours": 1.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B5",
+          "items": [
+            "5.3",
+            "5.4"
+          ],
+          "hours": 3.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 185
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W08",
+      "week": 8,
+      "start": "2026-10-26",
+      "end": "2026-10-31",
+      "ga_number": 8,
+      "previous_lesson_id": "B5",
+      "blocks": [
+        {
+          "kind": "practice",
+          "lesson_id": "B5",
+          "items": [
+            "5.4"
+          ],
+          "hours": 4.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 200
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W09",
+      "week": 9,
+      "start": "2026-11-02",
+      "end": "2026-11-07",
+      "ga_number": 9,
+      "previous_lesson_id": "B5",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B6",
+          "items": [
+            "6.1",
+            "6.2",
+            "6.3"
+          ],
+          "hours": 1.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B6",
+          "items": [
+            "6.3",
+            "6.4"
+          ],
+          "hours": 3.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 185
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W10",
+      "week": 10,
+      "start": "2026-11-09",
+      "end": "2026-11-14",
+      "ga_number": 10,
+      "previous_lesson_id": "B6",
+      "blocks": [
+        {
+          "kind": "practice",
+          "lesson_id": "B6",
+          "items": [
+            "6.4"
+          ],
+          "hours": 3.0
+        },
+        {
+          "kind": "assessment",
+          "assessment_id": "KTDK1",
+          "hours": 1.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 140
+        },
+        {
+          "kind": "kiem_tra",
+          "minutes": 60
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W11",
+      "week": 11,
+      "start": "2026-11-16",
+      "end": "2026-11-21",
+      "ga_number": 11,
+      "previous_lesson_id": "B6",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B7",
+          "items": [
+            "7.1",
+            "7.2"
+          ],
+          "hours": 1.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B7",
+          "items": [
+            "7.2"
+          ],
+          "hours": 3.0
+        }
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "zen-kit",
+        "zen-soft"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 185
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W12",
+      "week": 12,
+      "start": "2026-11-23",
+      "end": "2026-11-28",
+      "ga_number": 12,
+      "previous_lesson_id": "B7",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B8",
+          "items": [
+            "8.1",
+            "8.2",
+            "8.3"
+          ],
+          "hours": 1.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B8",
+          "items": [
+            "8.2",
+            "8.3"
+          ],
+          "hours": 3.0
+        }
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "zen-kit",
+        "zen-soft"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 185
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W13",
+      "week": 13,
+      "start": "2026-11-30",
+      "end": "2026-12-05",
+      "ga_number": 13,
+      "previous_lesson_id": "B8",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B9",
+          "items": [
+            "9.1",
+            "9.2"
+          ],
+          "hours": 1.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B9",
+          "items": [
+            "9.1",
+            "9.2"
+          ],
+          "hours": 3.0
+        }
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "zen-kit",
+        "zen-soft"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 185
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W14",
+      "week": 14,
+      "start": "2026-12-07",
+      "end": "2026-12-12",
+      "ga_number": 14,
+      "previous_lesson_id": "B9",
+      "blocks": [
+        {
+          "kind": "theory",
+          "lesson_id": "B9",
+          "items": [
+            "9.2",
+            "9.3"
+          ],
+          "hours": 1.0
+        },
+        {
+          "kind": "practice",
+          "lesson_id": "B9",
+          "items": [
+            "9.2",
+            "9.3"
+          ],
+          "hours": 2.0
+        },
+        {
+          "kind": "assessment",
+          "assessment_id": "KTDK2",
+          "hours": 1.0
+        }
+      ],
+      "equipment_ids": [
+        "pc",
+        "projector",
+        "zen-kit",
+        "zen-soft"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "on_dinh_lop",
+          "minutes": 10
+        },
+        {
+          "kind": "dan_nhap",
+          "minutes": 5
+        },
+        {
+          "kind": "gioi_thieu_chu_de",
+          "minutes": 5
+        },
+        {
+          "kind": "giai_quyet_van_de",
+          "minutes": 125
+        },
+        {
+          "kind": "kiem_tra",
+          "minutes": 60
+        },
+        {
+          "kind": "ket_thuc_van_de",
+          "minutes": 15
+        },
+        {
+          "kind": "huong_dan_tu_hoc",
+          "minutes": 5
+        }
+      ],
+      "status": "skeleton"
+    },
+    {
+      "id": "W15",
+      "week": 15,
+      "start": "2026-12-14",
+      "end": "2026-12-19",
+      "ga_number": 15,
+      "previous_lesson_id": "B9",
+      "blocks": [
+        {
+          "kind": "assessment",
+          "assessment_id": "THI-KT",
+          "hours": 4.0
+        }
+      ],
+      "equipment_ids": [
+        "logo-kit",
+        "logo-soft",
+        "pc",
+        "projector",
+        "zen-kit",
+        "zen-soft"
+      ],
+      "notes": [],
+      "phases": [
+        {
+          "kind": "kiem_tra",
+          "minutes": 240
+        }
+      ],
+      "status": "skeleton"
+    }
+  ]
+}
