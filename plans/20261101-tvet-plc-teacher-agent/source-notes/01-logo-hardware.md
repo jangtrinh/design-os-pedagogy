@@ -77,8 +77,8 @@
 6. [LOGO-1.2.1 · Vận dụng — Hình 1.2, image5] Dùng LOGO! relay đóng cắt contactor 230VAC và đèn 24VDC có dùng chung một nguồn không?
    Đáp án: Được, vì tiếp điểm cách ly với nguồn và ngõ vào (L365). Kiểm tra dòng cuộn contactor so với 2A (văn bản) hoặc 3A (bảng L230).
 
-7. [LOGO-1.2.1 · Phân tích — chẩn đoán lỗi] LOGO!230RC: I3 đóng nhưng màn hình hiển thị I3 = 0. VOM kim đo giữa I3 và N được khoảng 230V. Nêu ba nguyên nhân và cách kiểm tra.
-   Đáp án mẫu: (a) Điện áp giả do VOM trở kháng cao; đo lại có tải (đèn thử hoặc điện trở), nếu điện áp sụt thì không có điện áp thật. (b) Đầu nối I3 lỏng hoặc đấu nhầm; siết lại và đo thông mạch khi công tắc đóng. (c) Chương trình không dùng I3 hoặc gán sai địa chỉ; kiểm tra trong LOGO!Soft Comfort. 230V đã vượt ngưỡng nên không phải do ngưỡng.
+7. [LOGO-1.2.1 · Phân tích — chẩn đoán lỗi] LOGO!230RC: I3 đóng nhưng màn hình hiển thị I3 = 0. đồng hồ vạn năng số đo giữa I3 và N được khoảng 230V. Nêu ba nguyên nhân và cách kiểm tra.
+   Đáp án mẫu: (a) Điện áp giả do đồng hồ số trở kháng cao; đo lại có tải (đèn thử hoặc điện trở), nếu điện áp sụt thì không có điện áp thật. (b) Đầu nối I3 lỏng hoặc đấu nhầm; siết lại và đo thông mạch khi công tắc đóng. (c) Chương trình không dùng I3 hoặc gán sai địa chỉ; kiểm tra trong LOGO!Soft Comfort. 230V đã vượt ngưỡng nên không phải do ngưỡng.
 
 8. [LOGO-1.2.2 · Vận dụng] LOGO! 230RC cơ bản (6 DI, 4 relay) cần thêm 10 ngõ vào 230VAC và 6 ngõ ra relay. Chọn module và số lượng?
    Đáp án: DM8 230R. 10 DI cần 3 module (12 DI); 6 DO cần 2 module (8 DO). Tổng sau mở rộng: 18 DI, 16 DO. Số module tối đa phải kiểm tra theo catalogue.

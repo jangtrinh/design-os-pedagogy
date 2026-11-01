@@ -1,0 +1,302 @@
+{
+  "content_version": "tvet-content-1.0",
+  "session_id": "W01",
+  "status": "draft",
+  "authoring": {
+    "model_tier": "sonnet",
+    "date": "2026-11-01"
+  },
+  "title_line": "Bài 1: Giới thiệu chương trình mô đun; Giới thiệu chung về PLC LOGO",
+  "lesson_section_ids": [
+    "B1-s1",
+    "B1-s2",
+    "B1-s3",
+    "B1-s4",
+    "B1-s5",
+    "B1-s6"
+  ],
+  "objectives": {
+    "knowledge": [
+      "Nêu được kế hoạch 15 tuần, hai KTĐK (tuần 10 và 14), thi kết thúc tuần 15 và công thức điểm 0,4/0,6 của mô đun.",
+      "Giải mã được mã model LOGO! và phân biệt ngõ ra relay với transistor về cách ly, điện áp tải, dòng tải.",
+      "Trình bày được cách đánh địa chỉ ngõ vào/ra khi ghép module mở rộng DM8."
+    ],
+    "skills": [
+      "Chọn đúng model theo điện áp nguồn và loại tải; tính được số module DM8 cần thêm.",
+      "Đấu nguồn, ngõ vào, ngõ ra relay của LOGO! đúng sơ đồ theo trình tự an toàn và kiểm tra chéo trước khi cấp điện.",
+      "Chẩn đoán được tình huống ngõ vào hiển thị 0 dù đo có điện áp."
+    ],
+    "attitude": [
+      "Tuân thủ nội quy xưởng điện, luôn cắt nguồn trước khi đấu dây, đọc nhãn trước khi cấp điện.",
+      "Cẩn thận, chính xác khi đối chiếu sơ đồ và kiểm tra chéo; hợp tác trong nhóm kit."
+    ]
+  },
+  "materials": [
+    "Kit thực hành PLC Siemens LOGO! (giả định LOGO! 12/24RCE + DM8 12/24R), mỗi kit 3 sinh viên",
+    "Máy tính cài LOGO!Soft Comfort V8.4, tivi hoặc máy chiếu",
+    "Trang bài học B1 (mô phỏng logic-sim, bảng so sánh, câu hỏi bản lề)",
+    "Thẻ trả lời A/B/C cho mỗi sinh viên, phiếu kiểm tra nhanh kiến thức nền",
+    "Phiếu thực hành và phiếu chấm LOGO-PRAC-1; phiếu thoát lớp",
+    "Mẫu vật: ít nhất một LOGO! ngõ ra transistor (hoặc ảnh nhãn và sơ đồ) và một LOGO! 230RC/230RCo để giải mã; VOM, bút thử điện, cầu chì ngoài, dây 1,5 mm²",
+    "Chương trình kiểm tra I/O nạp sẵn (mỗi ngõ vào bật một ngõ ra) trên mỗi kit"
+  ],
+  "organization": "Tập trung cả lớp ở phần mở đầu và giảng mẫu; chia nhóm theo số kit (mỗi kit 3 sinh viên, tối đa 18 người/nhóm thực hành) cho phần cùng làm và thực hành. Giáo viên đi vòng từng kit, ưu tiên các nhóm sắp cấp điện.",
+  "phases": [
+    {
+      "kind": "on_dinh_lop",
+      "minutes": 10,
+      "content": [
+        "Điểm danh, chia nhóm theo số kit (mỗi kit 3 sinh viên, mỗi nhóm thực hành tối đa 18 người).",
+        "Nội quy xưởng điện: giày dép cách điện, không đeo trang sức kim loại, tóc gọn; chỉ đóng aptomat khi có lệnh giáo viên; vị trí aptomat tổng, nút dừng khẩn cấp, bình chữa cháy; báo ngay mọi sự cố, tuyệt đối không tự ý sửa dây khi có điện.",
+        "Kiểm tra nhanh kiến thức nền Khí cụ điện/Trang bị điện: contactor, rơ-le nhiệt, nút nhấn NO/NC."
+      ],
+      "teacher": [
+        "Điểm danh và ghi vắng; chia lớp thành nhóm theo kit, ghi tên 3 sinh viên của mỗi kit lên bảng.",
+        "Đọc nhanh 5 điều nội quy xưởng, chỉ vào vị trí aptomat tổng, nút dừng khẩn cấp, bình chữa cháy.",
+        "Phát phiếu kiểm tra nhanh 5 câu (đáp án A/B/C trên thẻ), giơ thẻ đồng loạt, ghi nhanh số lượng đúng/sai từng câu lên bảng.",
+        "Đọc đáp án, nêu ngay câu có hơn 30% sai để nhắc lại ở bước giảng sau."
+      ],
+      "student": [
+        "Ký tên vào phiếu cam kết nội quy xưởng điện; chỉ ra vị trí aptomat tổng và nút dừng khẩn cấp cho bạn cùng nhóm.",
+        "Chọn vị trí theo kit, ghi tên 3 thành viên và vai luân phiên.",
+        "Trả lời 5 câu kiểm tra nhanh bằng thẻ A/B/C và tự chấm theo đáp án giáo viên đọc.",
+        "Ghi lại câu mình sai để hỏi lại nếu còn chưa rõ."
+      ],
+      "retrieval_questions": [
+        "Cuộn dây contactor nối vào đầu nào (A1/A2) và tiếp điểm chính nối vào đâu? Cuộn dây hút khi có điện áp định mức đặt lên A1-A2, đúng hay sai?",
+        "Tiếp điểm rơ-le nhiệt 95-96 là thường đóng hay thường hở? Nó thường mắc vào mạch nào (mạch lực hay mạch điều khiển)?",
+        "Nút nhấn thường hở (NO) và thường đóng (NC) khác nhau thế nào? Nút nào dùng làm nút START, nút nào làm STOP trong mạch khởi động từ?",
+        "Mạch tự giữ dùng tiếp điểm nào của contactor? Mắc song song hay nối tiếp với nút START?",
+        "Rơ-le trung gian khác contactor ở điểm nào về dòng chịu tải?"
+      ]
+    },
+    {
+      "kind": "dan_nhap",
+      "minutes": 5,
+      "content": [
+        "Tình huống mở đầu: đèn cầu thang nhà xưởng bật 30 giây rồi tắt; ngày mai cần đổi thành 45 giây và thêm một nút nhấn ở tầng 3.",
+        "So sánh mạch rơ-le cứng với mô-đun logic LOGO!."
+      ],
+      "teacher": [
+        "Đặt LOGO! thật cạnh ảnh một tủ rơ-le cứng, hỏi: muốn đổi 30 giây thành 45 giây và thêm nút nhấn thứ hai, mạch rơ-le cứng phải làm gì?",
+        "Cho nhóm đôi 1 phút liệt kê số thiết bị và số mối nối phải thay đổi, gọi 2 đến 3 nhóm trả lời.",
+        "Mở mô phỏng logic-sim ở bài B1 (hai nút nhấn S1, S2 vào khối OR điều khiển đèn); bấm nút để chứng minh \"S1 song song S2\" chính là khối OR."
+      ],
+      "student": [
+        "Thảo luận nhóm đôi, ghi hai phương án sửa mạch rơ-le cứng và số thiết bị phải thay đổi trên giấy.",
+        "Trình bày phương án trước lớp (mỗi nhóm một câu).",
+        "Dự đoán trạng thái đèn khi bấm S1, khi bấm S2, rồi so sánh với mô phỏng."
+      ]
+    },
+    {
+      "kind": "gioi_thieu_chu_de",
+      "minutes": 5,
+      "content": [
+        "Mục tiêu buổi học và sản phẩm cuối buổi (phiếu giải mã model, kit đấu đúng, phiếu chẩn đoán).",
+        "Kế hoạch mô đun: 15 tuần; tuần 1 đến 10 LOGO! (B1 đến B6), tuần 11 đến 14 ZEN (B7 đến B9), tuần 15 thi.",
+        "Hai KTĐK thực hành vào tuần 10 (LOGO!) và tuần 14 (ZEN), thi kết thúc mô đun tuần 15.",
+        "Điểm mô đun = 0,4 × điểm trung bình kiểm tra + 0,6 × điểm thi; thường xuyên hệ số 1, định kỳ hệ số 2; dự thi cần chuyên cần từ 80% và ĐTBKT từ 5,0."
+      ],
+      "teacher": [
+        "Chiếu lịch 15 tuần và công thức điểm (bảng ở mục B1-s1), nêu mốc tuần 10, 14, 15.",
+        "Ra một bài tính nhanh: ĐTBKT = 6,0 và điểm thi = 8,0, hỏi điểm mô đun.",
+        "Nêu mục tiêu buổi học và cách làm việc: nghe mẫu, trả lời câu hỏi bản lề, làm cùng, rồi tự làm trên kit."
+      ],
+      "student": [
+        "Ghi các mốc tuần 10, 14, 15 và công thức vào sổ tay.",
+        "Tính điểm mô đun cho ví dụ (đáp án 7,2) rồi so với bạn bên cạnh.",
+        "Nêu điều kiện dự thi bằng lời của mình và đặt một câu hỏi về cách đánh giá nếu có."
+      ]
+    },
+    {
+      "kind": "giai_quyet_van_de",
+      "minutes": 170,
+      "content": [
+        "Giảng mẫu có nghĩ thành tiếng: giải mã nhãn model, phân loại, relay và transistor.",
+        "Câu hỏi bản lề sau mỗi phần.",
+        "Làm cùng: chọn cấu hình và đếm module mở rộng, đánh địa chỉ.",
+        "Thực hành LOGO-PRAC-1: đấu nguồn, ngõ vào và ngõ ra theo trình tự an toàn."
+      ],
+      "teacher": [
+        "Làm mẫu có nghĩ thành tiếng, kiểm tra hiểu bằng câu hỏi bản lề, cùng làm ví dụ rồi giao thực hành độc lập có phiếu chấm."
+      ],
+      "student": [
+        "Giải mã nhãn thật, trả lời câu hỏi bản lề, cùng giải bài chọn module rồi tự đấu nối và kiểm tra chéo trên kit."
+      ],
+      "steps": [
+        {
+          "mode": "i_do",
+          "minutes": 15,
+          "title": "GV làm mẫu: giải mã nhãn model, ứng dụng và phân loại LOGO! (mục 1.1)",
+          "teacher": [
+            "Cầm kit LOGO! 12/24RCE và DM8 thật, vừa đọc nhãn vừa nghĩ thành tiếng: \"Tôi nhìn số đầu để biết điện áp, nhìn chữ R để biết relay hay transistor\".",
+            "Giải mã trên bảng ba mã: 12/24RCE, 230RCo, 24; chỉ rõ chữ R, C, E, o trên vỏ thật.",
+            "Nêu ba nhóm ứng dụng, lợi ích so với mạch rơ-le cứng và lưu ý LOGO! không thay thế mạch dừng khẩn cấp."
+          ],
+          "student": [
+            "Tìm và đọc nhãn model, nhãn điện áp trên kit của nhóm, ghi vào phiếu.",
+            "Điền bảng giải mã ký hiệu trên phiếu cùng giáo viên, tự giải mã thêm mã 230RC và so với bảng B1-s3.",
+            "Hỏi lại ngay khi chưa rõ chữ cái nào."
+          ],
+          "lesson_section_ids": [
+            "B1-s2",
+            "B1-s3"
+          ]
+        },
+        {
+          "mode": "check",
+          "minutes": 5,
+          "title": "Câu hỏi bản lề 1: giải mã model và dòng relay",
+          "teacher": [
+            "Chiếu câu B1-c4 và B1-c5; mỗi sinh viên giơ thẻ A/B/C cùng lúc sau 30 giây suy nghĩ.",
+            "Nếu hơn 80% đúng thì chuyển tiếp; từ 30 đến 80% thì cho trao đổi cặp 1 phút rồi hỏi lại; dưới 30% thì giải thích lại bằng nhãn thật."
+          ],
+          "student": [
+            "Giơ thẻ trả lời, giải thích cho bạn bên cạnh vì sao chọn.",
+            "Với đáp án sai: nói được bạn nhầm ở chỗ nào (230 hay 24, R hay không R, thuần trở hay tải cảm)."
+          ],
+          "check_ids": [
+            "B1-c4",
+            "B1-c5"
+          ]
+        },
+        {
+          "mode": "i_do",
+          "minutes": 15,
+          "title": "GV làm mẫu: sơ đồ nối dây ngõ vào, ngõ ra relay và transistor, trình tự an toàn (mục 1.2)",
+          "teacher": [
+            "Vẽ trên bảng sơ đồ ngõ vào (nút nhấn tới I) và ngõ ra relay, rồi ngõ ra transistor; vừa vẽ vừa nghĩ thành tiếng: \"Tải bao nhiêu ampe? Nguồn tải là gì? Có cần cách ly không?\".",
+            "Làm mẫu trình tự 6 bước trên kit khi ngắt nguồn: cắt nguồn, đọc nhãn, đối chiếu sơ đồ, đấu, kiểm tra, đo trước khi cấp điện; nói to từng bước kiểm tra.",
+            "Chỉ ra lỗi thường gặp: cấp 230 V vào model 24 V; VOM đo điện áp ma ở ngõ vào 230 V."
+          ],
+          "student": [
+            "Vẽ lại sơ đồ ngõ vào/ra relay và transistor vào phiếu và đánh dấu chỗ khác nhau (cách ly, cực chung M, dòng tải).",
+            "Điền bảng so sánh relay và transistor trên phiếu; đối chiếu với bảng B1-s4.",
+            "Nêu miệng bước kế tiếp mỗi khi giáo viên dừng giữa các bước của trình tự an toàn."
+          ],
+          "lesson_section_ids": [
+            "B1-s4",
+            "B1-s6"
+          ]
+        },
+        {
+          "mode": "check",
+          "minutes": 5,
+          "title": "Câu hỏi bản lề 2: điều khiển tải 230 V từ ngõ ra transistor và đưa 230 V vào ngõ vào",
+          "teacher": [
+            "Chiếu B1-c6 và B1-c7; thu đáp án bằng thẻ A/B/C.",
+            "Gọi một sinh viên chọn đáp án sai giải thích lý do của mình, rồi cả lớp bác bỏ bằng sơ đồ trên bảng."
+          ],
+          "student": [
+            "Giơ thẻ và giải thích đáp án cho bạn cùng kit.",
+            "Nếu chọn sai, vẽ lại sơ đồ đúng (relay trung gian) trên phiếu."
+          ],
+          "check_ids": [
+            "B1-c6",
+            "B1-c7"
+          ]
+        },
+        {
+          "mode": "we_do",
+          "minutes": 20,
+          "title": "Cùng làm: chọn cấu hình, đếm module DM8 và đánh địa chỉ",
+          "teacher": [
+            "Dẫn từng bước bài mẫu B1-we1 (10 vào, 7 ra) và hỏi cả lớp ở mỗi bước: \"Vì sao max chứ không cộng?\"; nhấn mạnh DM8 cùng họ nguồn và relay 5 A.",
+            "Giao B1-we2 (14 vào, 9 ra) cho nhóm đôi điền các bước trống; đi vòng kiểm tra từng nhóm và gợi ý bằng câu hỏi, không cho đáp án.",
+            "Chiếu câu B1-c8 và B1-c9 để kiểm tra địa chỉ và dòng relay DM8."
+          ],
+          "student": [
+            "Làm theo từng bước ví dụ 1, tự giải thích vì sao lấy max của hai số module.",
+            "Nhóm đôi hoàn thành các bước trống của ví dụ 2 và tự kiểm tra bằng bảng địa chỉ B1-s5.",
+            "Trả lời B1-c8 và B1-c9 bằng thẻ; giải thích cho bạn nếu khác đáp án."
+          ],
+          "lesson_section_ids": [
+            "B1-s5"
+          ],
+          "check_ids": [
+            "B1-c8",
+            "B1-c9"
+          ]
+        },
+        {
+          "mode": "you_do",
+          "minutes": 110,
+          "title": "Thực hành LOGO-PRAC-1: đấu nguồn, ngõ vào và ngõ ra LOGO! (nhóm theo kit)",
+          "teacher": [
+            "Phát phiếu thực hành và phiếu chấm; nhắc lại hai điều cấm: không đấu khi có điện, chưa được phép không đóng aptomat.",
+            "Đi vòng từng kit: kiểm tra nhãn model và điện áp đã ghi, kiểm tra mối nối trước khi cho đóng nguồn; chỉ hỏi gợi ý khi nhóm kẹt.",
+            "Chỉ cho phép đóng aptomat sau khi đã kiểm tra bằng mắt và nhóm đã đo điện áp nguồn; theo dõi ngay các nhóm cấp điện.",
+            "Gọi ngẫu nhiên một thành viên mỗi nhóm giải thích sơ đồ trước khi cấp điện; ghi nhanh vào phiếu quan sát những lỗi gặp (sai điện áp, nhầm L/N, thiếu cầu chì ngoài)."
+          ],
+          "student": [
+            "Mỗi kit 3 người luân phiên vai: người đấu dây, người kiểm tra chéo, người ghi phiếu; đổi vai sau mỗi phần.",
+            "Ngắt nguồn, đọc nhãn model và điện áp, giải mã ba mã model cho sẵn trên phiếu, chọn loại ngõ ra cho hai tình huống tải.",
+            "Đo điện áp nguồn trước khi nối vào LOGO!, đấu nguồn, ngõ vào và ngõ ra relay (có DM8) đúng sơ đồ, vẽ sơ đồ ngõ ra transistor.",
+            "Kiểm tra chéo, gọi giáo viên, cấp điện khi được phép, thử từng nút nhấn với chương trình kiểm tra I/O đã nạp sẵn.",
+            "Giải bài chẩn đoán ngõ vào hiển thị 0 trên phiếu, tháo dây ngược thứ tự và dọn kit."
+          ],
+          "lesson_section_ids": [
+            "B1-s3",
+            "B1-s4",
+            "B1-s5",
+            "B1-s6"
+          ],
+          "lab_id": "LOGO-PRAC-1"
+        }
+      ]
+    },
+    {
+      "kind": "ket_thuc_van_de",
+      "minutes": 15,
+      "content": [
+        "Chấm sản phẩm theo phiếu rubric LOGO-PRAC-1 (6 tiêu chí).",
+        "Mỗi nhóm trình bày 1 phút: model, điện áp, cách đấu một ngõ ra.",
+        "Phiếu thoát lớp (exit ticket): hai câu trắc nghiệm ngắn.",
+        "Dọn xưởng, ngắt nguồn, sắp xếp kit."
+      ],
+      "teacher": [
+        "Chấm từng nhóm theo 6 tiêu chí rubric trên kit, ghi điểm và lỗi vào phiếu chấm.",
+        "Mời mỗi nhóm trình bày 1 phút; đặt một câu hỏi \"vì sao\" (ví dụ vì sao tải 0,5 A không nối thẳng vào transistor).",
+        "Phát phiếu thoát lớp gồm câu B1-t2 và B1-t3; thu và đọc nhanh để biết lỗi chung.",
+        "Kiểm tra aptomat OFF, kit và dây về đúng chỗ trước khi cho nhóm ra về."
+      ],
+      "student": [
+        "Chuẩn bị kit để giáo viên chấm; tự chấm bản thân theo 6 mục tự kiểm tra trước.",
+        "Một thành viên trình bày trong 1 phút, thành viên khác bổ sung.",
+        "Làm phiếu thoát lớp 2 câu trong 3 phút.",
+        "Tháo dây, sắp xếp kit, ký tên vào sổ sử dụng xưởng."
+      ]
+    },
+    {
+      "kind": "huong_dan_tu_hoc",
+      "minutes": 5,
+      "content": [
+        "Làm lại self_test của bài B1 trên trang bài học.",
+        "Bài tập: LOGO! 230RC cơ bản cần thêm 10 ngõ vào 230 VAC và 6 ngõ ra relay, chọn module và số lượng.",
+        "Chuẩn bị bài B2: đọc mục 2.1 về LOGO!Soft Comfort."
+      ],
+      "teacher": [
+        "Giao bài tự học, chỉ cho sinh viên vị trí self_test và mục \"Mô đun này học gì\" trên trang bài học B1.",
+        "Giao bài tập về nhà: chọn module cho 230RC và tìm datasheet của model đang dùng để đối chiếu các số liệu trong bài.",
+        "Nhắc cài sẵn LOGO!Soft Comfort V8.4 trên máy cá nhân nếu có thể, nhắc mốc buổi sau."
+      ],
+      "student": [
+        "Ghi bài tập, hỏi lại tiêu chí nộp bài (nộp bằng phiếu giải trình các bước tính).",
+        "Mở trang bài học B1, thử làm nhanh một câu self_test để biết cách sử dụng.",
+        "Ghi các câu hỏi còn thắc mắc về model hoặc cách đấu dây để hỏi đầu buổi sau."
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "AN TOÀN: dùng nguồn một chiều 24 V cho kit (không phải 230 V) khi sinh viên tự đấu. Giáo viên là người đóng aptomat tổng/nhóm sau khi kiểm tra bằng mắt. Nếu bàn kit dùng LOGO! 230RC, mọi thao tác đấu và cấp điện do giáo viên giám sát trực tiếp, sinh viên không tự đo điện lưới 230 V.",
+    "AN TOÀN: nhắc LOGO! không thay thế mạch dừng khẩn cấp và thiết bị bảo vệ; nhắc lắp cầu chì ngoài cho ngõ ra relay (giáo trình không nêu giá trị, lấy theo manual/nhãn của kit). Câu \"không cần dây nối đất\" trong giáo trình không dạy như quy tắc chung; đấu PE/FE theo hướng dẫn kit.",
+    "KIỂM TRA TRÊN KIT TRƯỚC GIỜ DẠY: (1) đọc nhãn thật: mã đặt hàng (6ED1052-1MD...), thế hệ (0BA8 hay 0BA1 đến 0BA3), điện áp nguồn; (2) có DM8 12/24R hay không, DM8 có nhận được khi ghép không và địa chỉ I9 đến I12, Q5 đến Q8 hiển thị đúng trong LOGO!Soft Comfort (cấu hình phần cứng) hay không, nếu không có DM8 thì bỏ các bước đấu DM8 và dùng ví dụ giấy; (3) nguồn bàn kit đúng 24 VDC; (4) LOGO!Soft Comfort V8.4 cài sẵn và mở được; (5) đã nạp chương trình kiểm tra I/O; (6) có mẫu hoặc ảnh model transistor (LOGO! 24) vì kit mặc định là relay; (7) số kit để chia nhóm.",
+    "HIỂU LẦM CẦN ĐỂ Ý: cấp 230 V cho model 24 V hoặc ngược lại; cho rằng 230 V lớn hơn ngưỡng nên an toàn; ngõ ra transistor nối trực tiếp cuộn 230 VAC; dòng relay 10 A áp dụng cho cả tải cảm (thực tế 3 A); DM8 đếm lại địa chỉ từ I1; cộng số module vào và số module ra thay vì lấy giá trị lớn hơn; điện áp đồng hồ vạn năng số đo được có nghĩa là có điện áp thật ở ngõ vào 230 V; nhầm chữ R/không R; tin LOGO! thay được nút dừng khẩn cấp.",
+    "SỐ LIỆU GIÁO TRÌNH CÒN MÂU THUẪN, KHÔNG ĐƯA VÀO PHẦN HỌC VIÊN: relay 10 A/3 A (bảng) so với 8 A/2 A (văn bản mục 1.2.1); 230RC 85-256 VAC so với 85-264 V; ngưỡng mức 1 của model 24 là 12 VDC (bảng) hay 15 VDC (văn bản); dòng vào 230RC 0,05 mA so với 0,24 mA; mức 0/1 nêu là VDC trong bảng nhưng VAC trong văn bản; giáo trình ghi 230RC có 6 ngõ vào số, trong khi 230RCE (0BA8) có 8; LOGO! 24 ghi 4 transistor nhưng Hình 1.3 (24L) có 6 ngõ ra; \"16 đầu ra số\" không khớp 4 + 4 × 4 = 20; số module tối đa và thứ tự ghép không có. Bài đã dùng 10 A/3 A cho 12/24RCE (khớp datasheet của model này), 5 A cho relay DM8, ngưỡng 40 V/79 V cho model 230 V theo giáo trình. Cần đối chiếu catalogue/datasheet đúng model và thế hệ.",
+    "Địa chỉ ngõ ra mở rộng (Q5 đến Q8, Q9 đến Q12) là suy ra từ cách đánh địa chỉ liên tục, giáo trình chỉ nêu địa chỉ ngõ vào mở rộng; kiểm chứng trên LOGO!Soft Comfort trước khi dùng làm đáp án. Họ nguồn module phải trùng khối cơ bản (DM8 12/24R với 12/24RCE) cũng cần đối chiếu manual.",
+    "Đáp án cho bài tập về nhà (230RC thêm 10 vào 230 VAC + 6 ra relay): theo giáo trình, DM8 230R, 10 vào cần 3 module (12 vào), 6 ra cần 2 module (8 ra), nên lấy 3 module, tổng 18 vào, 16 ra (4 + 12); kiểm tra số module tối đa trước khi chấp nhận.",
+    "Mô đun giới thiệu chiếm khoảng 10 phút (gồm dẫn nhập và giới thiệu chủ đề); nếu thiếu thời gian, rút gọn phần trình bày nhóm ở pha kết thúc và để sinh viên đọc mục B1-s1 ở nhà. Pha thực hành 110 phút đã bao gồm đo, kiểm tra chéo và dọn kit; nếu còn dư, cho sinh viên làm thêm bài chẩn đoán I3 = 0 bằng VOM có tải thử.",
+    "Chương trình kiểm tra I/O chỉ nối ngõ vào với ngõ ra tương ứng để xác nhận đấu nối; không phải đáp án bài lập trình của các bài sau. Giáo trình thiếu trình tự đấu nối chung, bài đã bổ sung 6 bước (cắt nguồn, đọc nhãn, đối chiếu sơ đồ, đấu, kiểm tra, đo trước khi cấp điện).",
+    "Phiếu chẩn đoán I3 = 0 (230RC): ba nguyên nhân mẫu là điện áp ma do đồng hồ số trở kháng cao, đầu nối lỏng hoặc đấu nhầm, chương trình không dùng I3 hoặc gán sai địa chỉ; 230 V đã vượt ngưỡng nên không phải do ngưỡng."
+  ]
+}
