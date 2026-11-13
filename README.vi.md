@@ -89,3 +89,7 @@ Recovery hoàn tất giao dịch dở dang còn nguyên vẹn. File đã sửa h
 Tests dùng corpus và database tạm riêng. Link auditor kiểm tra đường dẫn/anchor cục bộ, không kiểm HTTP bên ngoài hay nguồn nghiên cứu có hỗ trợ claim không. Cần đọc diagnostics đúng phạm vi.
 
 [Trạng thái triển khai](docs/implementation-status.md) ghi vị trí bằng chứng và giới hạn. [Review phân số và pilot](docs/fraction-pilot.md) mô tả công việc còn cần con người. Soạn bài, coaching transcript, portfolio, agent adapters và domain mới vẫn là lựa chọn mở rộng có điều kiện.
+
+## Tác giả
+
+Tác giả: [Jang Trịnh](https://www.jang.work/?utm_source=github&utm_medium=readme&utm_campaign=design-os-pedagogy). Dự án, case study và bài viết khác tại [jang.work](https://www.jang.work/?utm_source=github&utm_medium=readme&utm_campaign=design-os-pedagogy).
