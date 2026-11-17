@@ -1,8 +1,8 @@
 {
-  "host": "jangtrinhs-MacBook-Pro-2.local",
-  "root": "/Users/jang/Products/Agent Teacher",
+  "host": "<your-mac>.local",
+  "root": "~/Products/Agent Teacher",
   "argv": [
-    "/Users/jang/Products/Agent Teacher/.venv/bin/python",
+    "~/Products/Agent Teacher/.venv/bin/python",
     "-B",
     "-m",
     "unittest",

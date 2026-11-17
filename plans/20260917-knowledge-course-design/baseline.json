@@ -1,6 +1,6 @@
 {
-  "root": "/Users/jang/Products/Agent Teacher",
-  "host": "jangtrinhs-MacBook-Pro-2.local",
+  "root": "~/Products/Agent Teacher",
+  "host": "<your-mac>.local",
   "stats": {
     "records": 86,
     "edges": 326,

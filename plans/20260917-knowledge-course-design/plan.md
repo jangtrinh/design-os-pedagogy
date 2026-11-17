@@ -1,7 +1,7 @@
 # Knowledge foundation for course design
 
 Date: 17 September 2026. Project: Agent Teacher.
-Verified checkout: `/Users/jang/Products/Agent Teacher` on `jangtrinhs-MacBook-Pro-2.local`.
+Verified checkout: `~/Products/Agent Teacher` on `<your-mac>.local`.
 
 ## Objective
 

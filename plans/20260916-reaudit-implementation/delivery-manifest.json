@@ -1,7 +1,7 @@
 {
-  "host": "jangtrinhs-MacBook-Pro-2.local",
-  "root": "/Users/jang/Products/Agent Teacher",
-  "archive": "/Users/jang/Products/Agent Teacher/plans/20260916-reaudit-implementation/Agent-Teacher-local-source-20260916.tar.gz",
+  "host": "<your-mac>.local",
+  "root": "~/Products/Agent Teacher",
+  "archive": "~/Products/Agent Teacher/plans/20260916-reaudit-implementation/Agent-Teacher-local-source-20260916.tar.gz",
   "archive_bytes": 19159814,
   "archive_sha256": "0f16ae2cbb76923c462cfab44acd28e24355514026c992d2f3664dd43ca3a455",
   "archive_members": 248,

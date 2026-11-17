@@ -1,7 +1,7 @@
 {
   "date": "2026-09-17",
-  "root": "/Users/jang/Products/Agent Teacher",
-  "host": "jangtrinhs-MacBook-Pro-2.local",
+  "root": "~/Products/Agent Teacher",
+  "host": "<your-mac>.local",
   "seconds": 16.383,
   "passed": true,
   "tests": {

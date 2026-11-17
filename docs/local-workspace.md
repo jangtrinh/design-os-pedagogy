@@ -1,13 +1,13 @@
 # Local workspace
 
-The requested checkout is `/Users/jang/Products/Agent Teacher`. Native commands have identified the complete checkout on `jangtrinhs-MacBook-Pro-2.local`. A different tool endpoint has returned `/Users/jangtrinh/Products/Agent Teacher` on `Jangs-Mac-Studio.local`, containing only two documents and an older process test. These observations do not establish that either tree was deleted or synchronized.
+The requested checkout is `~/Products/Agent Teacher`. Native commands have identified the complete checkout on `<your-mac>.local`. A different tool endpoint has returned `~/Products/Agent Teacher` under a different user account on `<second-mac>.local`, containing only two documents and an older process test. These observations do not establish that either tree was deleted or synchronized.
 
 ## Select the complete checkout
 
 Check the physical directory before running the project:
 
 ```sh
-cd "/Users/jang/Products/Agent Teacher"
+cd ~/"Products/Agent Teacher"
 pwd -P
 hostname
 git rev-parse --show-toplevel

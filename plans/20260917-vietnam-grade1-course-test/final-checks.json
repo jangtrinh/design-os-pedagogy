@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "host": "jangtrinhs-MacBook-Pro-2.local",
+  "host": "<your-mac>.local",
   "base_commit": "2a5231575a679f3adea2fffb17098ff0d85f5195",
   "passed": true,
   "tests": {

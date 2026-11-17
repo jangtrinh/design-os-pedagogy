@@ -1,6 +1,6 @@
 # Agent Teacher: re-audit implementation
 
-Approved: 2026-09-16. Original checkout: /Users/jang/Products/Agent Teacher.
+Approved: 2026-09-16. Original checkout: ~/Products/Agent Teacher.
 Observed Git baseline: e4b14823c4532e121a1a889a5366beea53bc28a5.
 Existing uncommitted work must be preserved; the baseline alone does not identify it.
 
