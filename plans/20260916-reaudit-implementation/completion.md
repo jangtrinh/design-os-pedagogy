@@ -1,8 +1,8 @@
 # Agent Teacher: local technical delivery
 
 Date: 16 September 2026.
-Verified host: jangtrinhs-MacBook-Pro-2.local.
-Complete checkout: `/Users/jang/Products/Agent Teacher`.
+Verified host: <your-mac>.local.
+Complete checkout: `~/Products/Agent Teacher`.
 
 ## Delivered changes
 

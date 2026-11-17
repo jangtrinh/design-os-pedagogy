@@ -9,7 +9,7 @@
     "tests",
     "-v"
   ],
-  "cwd": "/Users/jang/Products/Agent Teacher",
+  "cwd": "~/Products/Agent Teacher",
   "returncode": 0,
   "elapsed_seconds": 4.542,
   "stdout": "",

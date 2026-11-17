@@ -1,5 +1,5 @@
 {
-  "cwd": "/Users/jang/Products/Agent Teacher",
+  "cwd": "~/Products/Agent Teacher",
   "command": [
     ".venv/bin/python",
     "-B",
