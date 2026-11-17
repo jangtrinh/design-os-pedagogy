@@ -1,328 +1,143 @@
-# DESIGN:OS Agent Teacher (`design-os-pedagogy`)
+# DESIGN:OS Agent Teacher
 
-**Evidence-graded pedagogy library, cognitive-load curriculum tree runtime, and interactive mastery assessment engine for AI tutoring agents.**
-
-Equip AI agents to teach complex technical subjects using Bloom's revised taxonomy, worked-example fading, spaced retrieval, Socratic diagnostic probes, and verifiable learner state machines.
-
-<p align="center">
-  <img src="docs/images/cover.png" alt="DESIGN:OS Agent Teacher — 2:1 Axonometric Technical Architecture" width="840">
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/cover-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/cover-light.png">
+  <img src="docs/images/readme/cover-dark.png" alt="design:os by Jang" width="100%">
+</picture>
 </p>
 
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-PolyForm_Shield_1.0.0-202020?style=flat-square&labelColor=202020&color=444444" alt="PolyForm Shield 1.0.0 License"></a>
-  <img src="https://img.shields.io/badge/Claude_Code_%C2%B7_Codex_%C2%B7_Gemini_%C2%B7_Antigravity-skill-202020?style=flat-square&labelColor=202020&color=444444" alt="Compatible agents">
-  <a href="commands/doctor.md"><img src="https://img.shields.io/badge/diagnostics-%2Fdoctor-202020?style=flat-square&labelColor=202020&color=444444" alt="Doctor command"></a>
-  <a href="https://jangtrinh.github.io/design-os-pedagogy/"><img src="https://img.shields.io/badge/live_docs-GitHub_Pages-202020?style=flat-square&labelColor=202020&color=444444" alt="Live GitHub Pages"></a>
-  <a href="https://buymeacoffee.com/jangtrinh"><img src="https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
+Agent Teacher (`design-os-pedagogy`) is three things in one Python repository: a pedagogy knowledge library where every record carries its review status, a local app for rehearsing one teaching move on authored fraction cases, and a Grade 1 Vietnamese mathematics course that is checked by an executable audit. Nothing in it calls a language model.
+
+It is early work. Of the 117 library records, 106 are still unreviewed, 11 are source-checked and none has had expert review. The rehearsal has 3 cases and has not been piloted with real teachers. Passing tests and a clean graph do not show that the teaching works.
+
+FREE + source-available ([PolyForm Shield 1.0.0](LICENSE)). [Tiếng Việt](README.vi.md) · [Docs site](https://jangtrinh.github.io/design-os-pedagogy/)
+
+<p>
+  <a href="#quickstart">Quickstart</a> · <a href="#whats-in-the-repo">What's in the repo</a> · <a href="#the-rehearsal">Rehearsal</a> · <a href="#the-library">Library</a> · <a href="#the-grade-1-course">Course</a> · <a href="#checks">Checks</a> · <a href="#limits">Limits</a>
 </p>
-
-<p align="center">
-  <a href="#quickstart">Quickstart</a> · <a href="#what-it-makes">What it makes</a> · <a href="#installation">Install</a> · <a href="#how-it-works">How it works</a> · <a href="#commands--diagnostics">Commands</a> · <a href="#quality-bar--limitations">Limits</a>
-</p>
-
----
-
-## Why this exists
-
-When you ask a generic LLM to 'teach me X', it dumps a 2,000-word textbook summary that creates an illusion of competence without testing transfer or managing cognitive load. **`design-os-pedagogy`** gives AI agents a formal instructional design runtime grounded in cognitive science.
-
-| Dimension | Generic AI / Manual Workflow | DESIGN:OS Agent Teacher (`DESIGN:OS`) |
-| :--- | :--- | :--- |
-| **Instructional Flow** | Passive 2,000-word wall of text with zero learner checks | Active worked-example fading, Socratic probes, and gated mastery nodes |
-| **Curriculum Structure** | Flat bullet lists with hidden prerequisite gaps | Explicit DAG of prerequisite concepts and Bloom taxonomy target levels |
-| **Assessment Quality** | Trivial recall trivia ('What does API stand for?') | Diagnostic misconception probes and near/far transfer challenges |
-| **Evidence Grading** | Pop-psychology myths (e.g., VARK learning styles) | Strictly evidence-graded cognitive science (Sweller, Bjork, Roediger, Chi) |
-| **Privacy & Telemetry** | Opaque cloud telemetry or unverified third-party APIs | **Zero telemetry** — 100% local execution ([`PRIVACY.md`](PRIVACY.md) audited) |
-
----
 
 ## Quickstart
 
-### 1. Install the plugin or CLI
-
-**In Claude Code:**
-
-```text
-/plugin marketplace add jangtrinh/design-os-pedagogy
-/plugin install design-os-pedagogy@design-os-pedagogy
-```
-
-**Or from your terminal (Codex, Gemini CLI, Antigravity, OpenCode, or standalone CLI):**
+The rehearsal app and `scripts/self_check.py` use only the Python standard library. The registry, coverage, course and publication tools need the two packages in `requirements.txt` (PyYAML and markdown-it-py). Python 3.10 or later.
 
 ```bash
 git clone https://github.com/jangtrinh/design-os-pedagogy.git
 cd design-os-pedagogy
-python3 scripts/self_check.py
+
+# Open the rehearsal app (prints a local URL; --port 0 picks a free port, the default is 8876)
+python3 run_rehearsal.py --port 0
+
+# Tools that read the library and the course
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python -B tools/knowledge_registry.py
+.venv/bin/python -B tools/knowledge_coverage.py --stage S2
+.venv/bin/python -B tools/course_audit.py courses/vi-vn-grade-1-math
 ```
 
-### 2. Ask in plain English
+## What's in the repo
 
-Open your project in your AI coding agent and describe what you need:
-
-> "Design a 5-stage mastery curriculum tree for distributed consensus (Raft) with prerequisite DAGs and diagnostic transfer questions."
-
-> "Turn this codebase walkthrough into a worked-example fading sequence with interactive check-for-understanding probes."
-
-> "Audit our onboarding tutorial for cognitive load violations, missing prerequisite links, and passive wall-of-text explanations."
-
-### 3. Verify your setup
-
-```bash
-python3 scripts/self_check.py
-```
-
----
-
-## What it makes
-
-Every deliverable produced by `design-os-pedagogy` is backed by a deterministic verification gate rather than freehand AI guesswork.
-
-<p align="center">
-  <img src="docs/images/cover.png" alt="DESIGN:OS Agent Teacher Output Specimen" width="840"><br>
-  <sub>Prompt: <code>"Design a 5-stage mastery curriculum tree for distributed consensus (Raft) with prerequisite DAGs and diagnostic transfer questions."</code></sub>
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/flow-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/flow-light.png">
+  <img src="docs/images/readme/flow-dark.png" alt="design:os by Jang" width="100%">
+</picture>
 </p>
 
-| Deliverable / Mode | Best for | Output Format | Verification Gate |
-| :--- | :--- | :--- | :--- |
-| **Curriculum DAG Specs** | Decomposing a technical domain into prerequisite-ordered mastery nodes | `JSON / Markdown Curriculum Tree` | `DAG acyclicity & rubric check` |
-| **Worked-Example Fading Loops** | Transitioning learners from full examples -> partial completion -> independent problem solving | `Interactive Lesson Prompts` | `Cognitive-load gate PASS` |
-| **Diagnostic Rubrics** | Detecting specific mental-model bugs before advancing the learner | `Structured Assessment Spec` | `python3 scripts/self_check.py` |
+| Part | Where | State |
+| :--- | :--- | :--- |
+| Knowledge library | `00-system` to `90-agent-runtime`, mapped from [`00-navigation/MOC-Master.md`](00-navigation/MOC-Master.md) | 117 records, 376 links, registry errors 0. Mostly unreviewed |
+| Rehearsal app | [`rehearsal/`](rehearsal/), [`run_rehearsal.py`](run_rehearsal.py) | Implemented. 3 Vietnamese fraction cases |
+| Grade 1 course | [`courses/vi-vn-grade-1-math/`](courses/vi-vn-grade-1-math/) | Audit passes. Status `draft-for-teacher-review` |
+| Publication pipeline | [`tools/pedagogy_pipeline.py`](tools/pedagogy_pipeline.py) | Implemented. Drafts stay `unreviewed` |
+| Tutor runtime | [`90-agent-runtime/`](90-agent-runtime/) | Specification only. Not built |
 
----
+## The rehearsal
 
-## Installation
+You play the teacher. A simulated Grade 6 student gives an answer, and you choose what to do next and write what you would say. The app has 3 authored cases in [`rehearsal/data/fractions.vi.json`](rehearsal/data/fractions.vi.json): comparing fraction size, checking the reasoning behind a correct answer, and notation versus explanation. Each case runs through 8 steps: probe, interpret, teach, check, review, transfer, reflect, complete.
 
-Choose the setup that matches your AI coding agent. Every option installs the same canonical skill (`skills/design-os-pedagogy/SKILL.md`) and `/doctor` diagnostic suite.
+<p>
+<img src="docs/images/readme/rehearsal-cases.png" alt="design:os by Jang" width="100%">
+</p>
 
-### Claude Code
+<sub>design:os by Jang</sub>
 
-Run these two commands inside Claude Code:
+<p>
+<img src="docs/images/readme/rehearsal-session.png" alt="design:os by Jang" width="100%">
+</p>
+
+<sub>design:os by Jang</sub>
+
+- The student lines and the coaching feedback follow authored branches. Your free text is saved but not graded.
+- Sessions are stored in SQLite (`.data/rehearsal.sqlite3`, or a folder you pass with `--data-dir`). They keep revisions, handle duplicate submits, and can be reopened, replayed and exported as Markdown or JSON. The list shows the latest 100 sessions.
+- Each session records the version and fingerprint of the case pack. If the pack changes, older sessions can still be read and exported but not continued.
+- It is a local, single-user service, not a hosted multi-account system. It does not certify teaching skill.
+
+The full behaviour is in [`docs/rehearsal-contract.md`](docs/rehearsal-contract.md).
+
+## The library
+
+Start at [`00-navigation/MOC-Master.md`](00-navigation/MOC-Master.md). Records are Markdown with YAML front matter.
+
+| Area | What is there |
+| :--- | :--- |
+| `00-system` | Ontology, schemas, evidence policy and authoring contracts |
+| `10-foundations`, `20-stages` | Foundations, and guidance by education stage S0 to S7 |
+| `30-pedagogy`, `40-disciplines` | Methods, assessment and subject practice |
+| `50-practice-library`, `60-evidence` | Cases, source records (30 of them), claims and estimates |
+| `70-capabilities`, `80-professor-development` | Teaching capabilities CAP-01 to CAP-06, and professional development |
+| `90-agent-runtime` | Runtime specification, prompts and evaluation proposals |
+
+`tools/knowledge_registry.py` checks metadata, canonical IDs, explicit aliases and link types. Today it reports 117 records, 376 links, 0 errors, 0 unresolved links and 62 legacy warnings. `tools/knowledge_coverage.py` filters by stage, axis (AX-01 to AX-08) or capability, and reports review status without granting it.
+
+New modules go through `tools/pedagogy_pipeline.py`: a `--dry-run` preview, an import with `--input`, then a separate `--apply`. Imports stay `unreviewed`, nothing is committed for you, and `--inspect-publication` and `--recover-publication` handle an interrupted apply. See [`docs/publication.md`](docs/publication.md).
+
+## The Grade 1 course
+
+[`courses/vi-vn-grade-1-math/`](courses/vi-vn-grade-1-math/) is a Grade 1 mathematics course written against the Vietnamese 2018 general education programme: 35 weeks, 3 periods a week, 105 sessions and 24 outcomes. `tools/course_audit.py` recomputes 111 answer keys, counts 14 observational tasks and checks strand coverage (number 84, geometry 16, experience 5 sessions). `tools/render_course.py` turns the audited data into teacher-facing Markdown. The course is a draft for teacher review and has not been taught. See [`docs/course-audit.md`](docs/course-audit.md).
+
+## Checks
+
+```bash
+python3 scripts/self_check.py                    # required files and manifests are present
+.venv/bin/python -B -m unittest discover -s tests # 98 tests
+.venv/bin/python -B tools/knowledge_registry.py
+.venv/bin/python -B tools/verify_links.py
+```
+
+Tests use their own temporary corpus and database. `verify_links.py` checks local paths and anchors only; it does not fetch external links or check that a source supports a claim. There is no CI workflow, so run these before you commit. [`docs/implementation-status.md`](docs/implementation-status.md) lists where the evidence for each part lives.
+
+## Use it from an agent
+
+The repo ships plugin manifests for Claude Code, Codex, Factory and `.agents`, plus a `/doctor` command:
 
 ```text
 /plugin marketplace add jangtrinh/design-os-pedagogy
 /plugin install design-os-pedagogy@design-os-pedagogy
 ```
 
-### OpenAI Codex
+The skill text in `skills/design-os-pedagogy/SKILL.md` still describes a broader tutoring runtime than the code implements. Trust this README and the code over it.
 
-Install to your personal Codex skills directory:
+## Limits
 
-```bash
-git clone https://github.com/jangtrinh/design-os-pedagogy.git /tmp/design-os-pedagogy
-mkdir -p ~/.codex/skills/design-os-pedagogy ~/.codex/prompts
-cp -R /tmp/design-os-pedagogy/skills/design-os-pedagogy/* ~/.codex/skills/design-os-pedagogy/
-cp /tmp/design-os-pedagogy/prompts/doctor.md ~/.codex/prompts/design-os-pedagogy-doctor.md
-rm -rf /tmp/design-os-pedagogy
-```
+- 106 of 117 records are unreviewed and none has expert review. Older grades or `validated` flags do not replace review.
+- The rehearsal covers fractions only, in Vietnamese, with 3 cases. It has not been piloted with real teachers or learners; see [`docs/fraction-pilot.md`](docs/fraction-pilot.md).
+- Free-text answers are stored, not assessed.
+- The tutor runtime in `90-agent-runtime` is a specification.
+- The publisher writes two files in sequence, not as one atomic transaction.
 
-### Gemini CLI & Google Antigravity
+## DESIGN:OS
 
-```bash
-git clone https://github.com/jangtrinh/design-os-pedagogy.git /tmp/design-os-pedagogy
-mkdir -p ~/.gemini/skills/design-os-pedagogy
-cp -R /tmp/design-os-pedagogy/skills/design-os-pedagogy/* ~/.gemini/skills/design-os-pedagogy/
-rm -rf /tmp/design-os-pedagogy
-```
+Agent Teacher is one of the DESIGN:OS tools. The others: [Studio](https://github.com/jangtrinh/design-os-studio), [CLI](https://github.com/jangtrinh/design-os), [Bridge](https://github.com/jangtrinh/design-os-figma-plugin), [SVG Animation](https://github.com/jangtrinh/design-os-svg-animation), [3D Blender](https://github.com/jangtrinh/design-os-3d-blender), [Knowledge Builder](https://github.com/jangtrinh/design-os-knowledge-builder) and [mcp-bridge-go](https://github.com/jangtrinh/mcp-bridge-go). More on [jangtrinh.github.io](https://jangtrinh.github.io/).
 
-### OpenCode, Cursor, Windsurf & Other Agent Harnesses
+Changelog: [CHANGELOG.md](CHANGELOG.md) · Index for AI agents: [llms.txt](llms.txt) · Art direction: [ART-DIRECTION.md](ART-DIRECTION.md)
 
-```bash
-git clone https://github.com/jangtrinh/design-os-pedagogy.git /tmp/design-os-pedagogy
-mkdir -p ~/.agents/skills/design-os-pedagogy
-cp -R /tmp/design-os-pedagogy/skills/design-os-pedagogy/* ~/.agents/skills/design-os-pedagogy/
-rm -rf /tmp/design-os-pedagogy
-```
+## Contributing and license
 
-<details>
-<summary>Verify or uninstall</summary>
-
-**Verify installation:**
-
-```bash
-python3 scripts/self_check.py
-```
-
-Or run `/doctor` inside Claude Code / Codex to inspect installed skill paths, plugin manifests, and gate health.
-
-**Uninstall:**
-
-```bash
-rm -rf ~/.claude/skills/design-os-pedagogy ~/.codex/skills/design-os-pedagogy ~/.gemini/skills/design-os-pedagogy ~/.agents/skills/design-os-pedagogy
-```
-
-</details>
-
----
-
-## Usage & Prompt Cookbook
-
-Once installed, `skills/design-os-pedagogy/SKILL.md` activates automatically when your prompt matches its domain triggers. Browse [`docs/cookbook.md`](docs/cookbook.md) for copy-paste prompt recipes.
-
-**Generate & Scaffold**
-
-```text
-"Design a 5-stage mastery curriculum tree for distributed consensus (Raft) with prerequisite DAGs and diagnostic transfer questions."
-```
-
-**Audit & Verify**
-
-```text
-"Turn this codebase walkthrough into a worked-example fading sequence with interactive check-for-understanding probes."
-```
-
-**Export & Automate**
-
-```text
-"Audit our onboarding tutorial for cognitive load violations, missing prerequisite links, and passive wall-of-text explanations."
-```
-
----
-
-## Commands & Diagnostics
-
-| Command | Environment | What it does |
-| :--- | :--- | :--- |
-| `/doctor` | Claude Code / Codex | Read-only diagnostic check of installed skill paths, plugin manifests, and runtime prerequisites |
-| `python3 scripts/self_check.py` | Terminal / CI | Deterministic offline verification of manifests, skill contracts, and governance files |
-| `python3 scripts/self_check.py` | Terminal / CI | Verify pedagogy skill contracts, curriculum schema integrity, and repository delivery gates |
-
----
-
-## How it works
-
-1. **Intent Routing** — Your AI agent matches your request against `skills/design-os-pedagogy/SKILL.md` frontmatter triggers.
-2. **Progressive Context Loading** — Only the entry-point `SKILL.md` router loads initially; detailed recipes and scripts load on demand.
-3. **Deterministic Execution** — Domain scripts and contracts execute locally with reproducible inputs and outputs.
-4. **Gate Verification** — `scripts/self_check.py` and domain verifiers (`python3 scripts/self_check.py`) validate the artifact before completion.
-5. **Zero-Telemetry Delivery** — Verified files are written directly to your workspace with zero external network calls.
-
-```text
-User Prompt / CLI Invocation
-            │
-            ▼
-┌───────────────────────────────────────────────┐
-│ skills/design-os-pedagogy/SKILL.md
-│ Progressive disclosure router & hard rules    │
-└───────────┬───────────────────────────────────┘
-            │ loads on demand
-            ▼
-┌───────────────────────────────────────────────┐
-│ python3 scripts/self_check.py
-│ Deterministic build & contract enforcement    │
-└───────────┬───────────────────────────────────┘
-            │ verifies
-            ▼
-┌───────────────────────────────────────────────┐
-│ python3 scripts/self_check.py + /doctor       │
-│ Zero-telemetry local verification gate        │
-└───────────────────────────────────────────────┘
-```
-
-### What loads when
-
-`design-os-pedagogy` uses progressive context disclosure so your agent's context window stays fast and focused:
-
-| File | Loaded when |
-| :--- | :--- |
-| `skills/design-os-pedagogy/SKILL.md` | Always (~100–150 lines) — routing rules, triggers, and execution workflow |
-| `docs/cookbook.md` | When selecting multi-step prompt recipes or domain patterns |
-| `commands/doctor.md` / `prompts/doctor.md` | Only when running `/doctor` diagnostics |
-| `llms.txt` | When indexed by AI answer engines, RAG pipelines, or repo crawlers |
-
----
-
-## File structure
-
-```text
-design-os-pedagogy/
-├── .claude-plugin/
-│   ├── plugin.json                 # Claude Code plugin manifest
-│   └── marketplace.json            # Claude Code marketplace catalog
-├── .codex-plugin/
-│   └── plugin.json                 # OpenAI Codex plugin & interface manifest
-├── .agents/
-│   └── plugins/marketplace.json    # Cross-agent local plugin registry
-├── .factory-plugin/
-│   ├── plugin.json                 # Factory / Droid plugin manifest
-│   └── marketplace.json            # Factory marketplace metadata
-├── skills/
-│   └── design-os-pedagogy/
-│       └── SKILL.md                # Canonical agent skill entrypoint
-├── commands/
-│   └── doctor.md                   # /doctor diagnostic slash command
-├── prompts/
-│   └── doctor.md                   # Codex diagnostic prompt mirror
-├── scripts/
-│   └── self_check.py               # Deterministic repository & skill self-check
-├── docs/
-│   ├── cookbook.md                 # Copy-paste prompt recipes by job
-│   └── llms.txt                    # GEO / LLM discovery index
-├── PRIVACY.md                      # Zero-telemetry & local-first privacy commitment
-├── SECURITY.md                     # Vulnerability disclosure & security policy
-├── CONTRIBUTING.md                 # Contribution workflow & verification rules
-├── CODE_OF_CONDUCT.md              # Contributor Covenant code of conduct
-├── CHANGELOG.md                    # Release history
-├── llms.txt                        # Root LLM indexing manifest
-├── LICENSE                         # PolyForm Shield 1.0.0
-└── README.md
-```
-
----
-
-## Quality bar & Limitations
-
-### It's working if...
-
-- `python3 scripts/self_check.py` prints `ok: design-os-pedagogy self-check passed (design-os-pedagogy)` and exits `0`.
-- `python3 scripts/self_check.py` passes with zero contract or test regressions.
-- Your AI coding agent loads `skills/design-os-pedagogy/SKILL.md` automatically when given any prompt from [`docs/cookbook.md`](docs/cookbook.md).
-- Network traffic during execution remains zero (guaranteed by [`PRIVACY.md`](PRIVACY.md)).
-
-### When not to use
-
-- Pure reference API lookups where an experienced engineer just wants a one-line CLI flag answer.
-- Clinical, medical, or accredited K-12 compliance grading requiring licensed human oversight.
-- Automated code generation where the user wants the task finished rather than explained.
-
----
-
-## DESIGN:OS Ecosystem
-
-`design-os-pedagogy` is one of the 13 source-available engines in the **`DESIGN:OS`** ecosystem:
-
-| Engine | Live Docs | Repository | Layer |
-| :--- | :--- | :--- | :--- |
-| **DESIGN:OS CLI** | [jangtrinh.github.io/design-os](https://jangtrinh.github.io/design-os/) | [`jangtrinh/design-os`](https://github.com/jangtrinh/design-os) | `cli` |
-| **Knowledge Builder** | [jangtrinh.github.io/design-os-knowledge-builder](https://jangtrinh.github.io/design-os-knowledge-builder/) | [`jangtrinh/design-os-knowledge-builder`](https://github.com/jangtrinh/design-os-knowledge-builder) | `compiler` |
-| **Figma Plugin & CLI** | [jangtrinh.github.io/design-os-figma-plugin](https://jangtrinh.github.io/design-os-figma-plugin/) | [`jangtrinh/design-os-figma-plugin`](https://github.com/jangtrinh/design-os-figma-plugin) | `plugin` |
-| **SVG Animation Engine** | [jangtrinh.github.io/design-os-svg-animation](https://jangtrinh.github.io/design-os-svg-animation/) | [`jangtrinh/design-os-svg-animation`](https://github.com/jangtrinh/design-os-svg-animation) | `engine` |
-| **3D Blender Agent** | [jangtrinh.github.io/design-os-3d-blender](https://jangtrinh.github.io/design-os-3d-blender/) | [`jangtrinh/design-os-3d-blender`](https://github.com/jangtrinh/design-os-3d-blender) | `3d / cad` |
-| **OPAH ONE Drone** | [jangtrinh.github.io/design-os-drone-showcase](https://jangtrinh.github.io/design-os-drone-showcase/) | [`jangtrinh/design-os-drone-showcase`](https://github.com/jangtrinh/design-os-drone-showcase) | `hardware` |
-| **GitHub Pages Engine** | [jangtrinh.github.io/design-os-github-page](https://jangtrinh.github.io/design-os-github-page/) | [`jangtrinh/design-os-github-page`](https://github.com/jangtrinh/design-os-github-page) | `pages` |
-| **Apple Design OS** | [jangtrinh.github.io/design-os-apple](https://jangtrinh.github.io/design-os-apple/) | [`jangtrinh/design-os-apple`](https://github.com/jangtrinh/design-os-apple) | `swiftui` |
-| **Agent Teacher** | [jangtrinh.github.io/design-os-pedagogy](https://jangtrinh.github.io/design-os-pedagogy/) | [`jangtrinh/design-os-pedagogy`](https://github.com/jangtrinh/design-os-pedagogy) | `pedagogy` |
-| **Origami CAD** | [jangtrinh.github.io/design-os-origami](https://jangtrinh.github.io/design-os-origami/) | [`jangtrinh/design-os-origami`](https://github.com/jangtrinh/design-os-origami) | `packaging` |
-| **Voice UX Architecture** | [jangtrinh.github.io/design-os-voice-ux](https://jangtrinh.github.io/design-os-voice-ux/) | [`jangtrinh/design-os-voice-ux`](https://github.com/jangtrinh/design-os-voice-ux) | `voice-ai` |
-| **Code2Flow** | [jangtrinh.github.io/design-os-code2flow](https://jangtrinh.github.io/design-os-code2flow/) | [`jangtrinh/design-os-code2flow`](https://github.com/jangtrinh/design-os-code2flow) | `ast / audit` |
-| **Generative UI** | [jangtrinh.github.io/design-os-generative-ui](https://jangtrinh.github.io/design-os-generative-ui/) | [`jangtrinh/design-os-generative-ui`](https://github.com/jangtrinh/design-os-generative-ui) | `runtime` |
-
----
-
-## Author
-
-Built by [Jang Trịnh](https://www.jang.work/?utm_source=github&utm_medium=readme&utm_campaign=design-os-pedagogy). More projects, case studies and writing at [jang.work](https://www.jang.work/?utm_source=github&utm_medium=readme&utm_campaign=design-os-pedagogy).
-
----
-
-## Contributing, Governance & License
-
-- **Contributing**: See [`CONTRIBUTING.md`](CONTRIBUTING.md) for pull request guidelines and verification gates (`python3 scripts/self_check.py`).
-- **Code of Conduct**: Governed by [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
-- **Security & Privacy**: Zero telemetry — see [`SECURITY.md`](SECURITY.md) and [`PRIVACY.md`](PRIVACY.md).
-- **Changelog & LLM Index**: Track releases in [`CHANGELOG.md`](CHANGELOG.md) and machine-readable index in [`llms.txt`](llms.txt).
-- **License**: [PolyForm Shield 1.0.0](LICENSE) © [Jang Trinh](https://github.com/jangtrinh). Free to use and modify, including for paid client work; you may not resell it or build a competing product from it.
-
----
+- [CONTRIBUTING.md](CONTRIBUTING.md) · [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) · [SECURITY.md](SECURITY.md) · [PRIVACY.md](PRIVACY.md)
+- [PolyForm Shield 1.0.0](LICENSE). FREE to use and modify, including for paid client work; you may not resell it or build a competing product from it.
 
 If `design-os-pedagogy` saves you time, a star on GitHub helps other engineers and AI agents find it.
 
@@ -331,3 +146,7 @@ If `design-os-pedagogy` saves you time, a star on GitHub helps other engineers a
     <img src="https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee">
   </a>
 </p>
+
+Built by [Jang Trịnh](https://github.com/jangtrinh), creative technologist and autonomous system architect. More projects and writing at [jang.work](https://www.jang.work/?utm_source=github&utm_medium=readme&utm_campaign=design-os-pedagogy).
+
+[GitHub](https://github.com/jangtrinh) · [LinkedIn](https://www.linkedin.com/in/jangtrinh/) · [Hub](https://jangtrinh.github.io/) · [YouTube](https://www.youtube.com/@designosbyjang) · [X](https://x.com/Jangtrinhvn)
